@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ux.js</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Function Library &nbsp; Topic Method absl absl(bsl-object,callback,options[]) a bsl wrapper aget aget(url, callback, options={}) A wrapper for ux.ajax (GET) ajax ajax(url, call" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ux-absl.htm",
+   prevP: "webui_fa.htm",
+   currP: "ux_js.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ux.js",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ux.js",
+   sharesubject: "Beas Script 2026.09 - ux.js",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Ux.js",
+   mailpath: "WEB and Rest Service &gt; Libraries WEB APP 2.0 &gt; ux.js /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ux.js").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ux_js.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ux.js</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ux.js</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span style="font-weight: bold;">Function Library </span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Topic</span></p>
+</th>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">absl</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2"><a href="ux-absl.htm" class="topiclink">absl(bsl-object,callback,options[]) a bsl wrapper</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">aget</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="ux-aget.htm" class="topiclink">aget(url, callback, options={}) A wrapper for ux.ajax (GET)</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ajax</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2"><a href="ux-ajax.htm" class="topiclink">ajax(url, callback, options={}) A Wrapper for ux.ajax POST</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">apost</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ux-apost.htm" class="topiclink">apost(url, data, callback, options={}) A wrapper for ux.ajax (POST)</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">appTitleMenu</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2"><a href="ux-apptitlemenu.htm" class="topiclink">appTitleMenu(action,id,title,callback) Manipulate the app menu dropdown entries</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">autocomplete</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ux-autocomplete.htm" class="topiclink">autocomplete(id, url, options) Add auto-complete functionality to any input box.</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">click</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ux-click.htm" class="topiclink">click(ID, func) A wrapper for the listen function</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">dgrid</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ux-dgrid.htm" class="topiclink">Create table from Data or BSL call</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">dialog</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ux-dialog.htm" class="topiclink">dialog(title, content, options, onclose) A modal dialog box</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">focus</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ux-focus.htm" class="topiclink">focus(fs, f) set focus with rules</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">formatNumber</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2">formatNumber(Number,CountOfDecimals,UseGrouping) &nbsp; </p>
+<p class="p_Heading2">Convet Number to local string fomrat with defined decimal places</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">getElement</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ux-getelement.htm" class="topiclink">getElement(ID) search an element by Id or Name</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">listen</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="webux_listen.htm" class="topiclink">listen(eventName, ID, func)</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">loading</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2"><span class="f_Heading2" style="font-weight: normal;"><a href="ux-loading.htm" class="topiclink">loading(display) Show a loading mask to avoid the user click on any control</a></span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">saveAll</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2"><a href="ux-saveall.htm" class="topiclink">saveAll(url, data, callback, options={}) Send data to the backend and block the app in the meanwhile. It switch the &quot;Save&quot; button to &quot;Saving&quot; also.</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">set</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ux-set.htm" class="topiclink">set(idName, status, options) Provide a visual feedback to the input controls</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">tabs</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2"><a href="ux-tabs.htm" class="topiclink">tabs(id, action, params=null) Add functionality to ui.tabs</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">toJson</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2">toJson(string,boolean quoted) convert string to JSON String (convert &nbsp;' to '')</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span></p>
+<p class="p_Normal">Date/Time Functions</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Topic</span></p>
+</th>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">getDate()</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2">return company Date/Time as Date object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">getToday(Separator,Date)</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2"><a href="ux-gettoday.htm" class="topiclink">return date as string in local format</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">getTime(Separator,Time)</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2">GetTime(json date astring): return time as local string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">jsonDate2local</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2">jsonDate2local(d) convert JSON Date to local date string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">jsonDateTime2local</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2">jsonDateTime2local(d) convert Json DateTime String to local date time string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">min2time</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Heading2">min2time(Minutes) return string in format &quot;x Days hh:mm&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sec2time</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sec2tome(Seconds) return string in format &quot;x Days hh:mm:ss&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

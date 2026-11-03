@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>function</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Functions in the Beas Database &nbsp;Beas creates additional functions inside the database All functions starting with &quot;beas_&quot; MSSQL: for using functions, you need always the Pre" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "databasemodel.htm",
+   prevP: "sbo_sp_transactionnotification.htm",
+   currP: "databasefunctions.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "function",
+   mailsubject: "Feedback on: Beas Script 2026.09 - function",
+   sharesubject: "Beas Script 2026.09 - function",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "databasefunctions",
+   mailpath: "Database &gt; function /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - function").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "databasefunctions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>function</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">function</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="database" width="64" height="64" style="margin:0;width:64px;height:64px;border:none" src="database.png"/> <span style="font-weight: bold;">Functions in the Beas Database</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas creates additional functions inside the database</p>
+<p class="p_Normal">All functions starting with &quot;beas_&quot;</p>
+<p class="p_Normal">MSSQL: for using functions, you need always the Prefix &quot;dbo.&quot;, example : select dbo.beas_getdate()</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">beas_getdate()</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">Returns the Mandant - Date-Time-Stamp</p>
+<p class="p_Normal">same as <span class="f_CourierFixed">getCompanyTime()</span> from sap, but compatible to all sap-Versions.</p>
+<p class="p_Normal"><span class="f_Example">Example MSSQL:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="color: #666699;">dbo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">beas_getdate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">()</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">beas_getsetup(variable,default)</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Returns system variable from Beas. If the variable does not exist, this function returns the default value.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example MSSQL:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="color: #666699;">dbo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">beas_getsetup</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'fert_afoabgallow'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'J'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span></p>
+<p class="p_Normal">if <span class="f_CourierFixed">return </span>= <span class="f_CourierFixed">J</span>, user can't close a work order position</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example HANA:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_getsetup</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'fert_afoabgallow'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'J'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">beas_getlocal(clientname,variable,default)</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">Returns a local variable (Client-Variable) of Beas.</p>
+<p class="p_Normal">If the variable does not exist, this function returns the default value.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example MSSQL:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="color: #666699;">dbo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">beas_getlocal</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'mystationname'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'fert_afoabgallow'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'J'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">to_varchar(datetime date,varchar format)</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Alternative for HANA Syntax</p>
+<p class="p_Normal">converts date time to string</p>
+<p class="p_Normal">format is yyyy-mm-dd or yyymmdd</p>
+<p class="p_Normal">all other formats are returned as an empty string</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">select dbo.to_varchar(getdate(),'yyyy-mm-dd')</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rpad(varchar text,int length)</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">Alternative for HANA Syntax</p>
+<p class="p_Normal">Do not use space or replicate. Use &quot;dbo.rpad&quot;</p>
+<p class="p_Normal">this function converts this in &quot;replicate&quot; </p>
+<p class="p_Normal"><span class="f_CourierFixed">select dbo.rpad(' ',10)</span></p>
+<p class="p_Normal">is the same as</p>
+<p class="p_Normal"><span class="f_CourierFixed">select replicate(' ',10)</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For more information on MSSQL and Hana <span class="f_See">see</span> <a href="select.htm" class="topiclink">select</a></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

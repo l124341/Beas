@@ -1,0 +1,1380 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ui.js</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Topic Method columns 	columns(columns) Description &nbsp;Render a group of columns (responsive). &nbsp;Parameters &nbsp;array Array of json objects with the columns: [ column1, co" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "webui_radiobox.htm",
+   prevP: "libraries.htm",
+   currP: "ui_js.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ui.js",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ui.js",
+   sharesubject: "Beas Script 2026.09 - ui.js",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Ui.js",
+   mailpath: "WEB and Rest Service &gt; Libraries WEB APP 2.0 &gt; ui.js /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ui.js").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ui_js.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ui.js</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ui.js</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="UI_tab" width="357" height="478" style="margin:0;width:357px;height:478px;border:none" src="ui_tab.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Topic</span></p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">columns</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">columns(columns)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Render a group of columns (responsive).</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:122px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">array</p>
+</td>
+<td style="vertical-align:top; width:1083px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Array of json objects with the columns:</p>
+<p class="p_Normal">[ column1, column2, ...m columnN ]</p>
+<p class="p_Normal"><span style="font-weight: bold;">columnX definition:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ID</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(optional) The column ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">size</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Size for this column. Available sizes are: 3/4, 2/3, 1/2, 1/3, 1/4, 4/5, 3/5, 2/5, 1/5</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">content</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The column content</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:122px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:1083px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to create the columns</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:121px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:1084px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">columns</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">  </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[{</span><span class="f_CodeExample" style="color: #666699;">size</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1/5&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">content</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;This columns should be 1/5 of the size. (Or all width in a mobile)&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},</span><span class="f_CodeExample"> </span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="color: #666699;">size</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;3/5&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">content</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;This columns should be 3/5 of the size. (Or all width in a mobile)&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="color: #666699;">size</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1/5&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">content</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;This columns should be 1/5 of the size. (Or all width in a mobile)&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}]</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-weight: bold;">Preview:</span></p>
+<p class="p_Normal">In the preview of the example you can see how the above string can modify the size of the columns.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">section</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">section(content, options)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A simple container to divide your page into sections.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML content</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">object</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">json object with the options:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ID</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(optional) The control ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">hero</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The section is a hero. (true|false)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to create the section</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">section</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Put here the content&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:<br />
+In the preview of the example you can see the result of the string:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&quot;Insert content here.&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">title</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">title(content, options)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Create a title/subtitle (title/subtitle).</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML content</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">object</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">json object with the options:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">type</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Type of title: (title|subtitle)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">size</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The size: (1,2,3,4,5,6,7,8)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to render the title</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;This is a title&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:</p>
+<p class="p_Normal">In the preview of the example you can see the result of the string:</p>
+<p class="p_Heading2"><span class="f_Heading2">&quot;This is a title.&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">fa</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="webui_fa.htm" class="topiclink">fa(iconName, size) return a bitmap</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">box</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">box(content, options)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A simple box.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML content</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">object</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">JSON object with the options</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ID</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(optional) The ID for this tab</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to render the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">box</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;This is the box's content&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:</p>
+<p class="p_Normal">In the preview of the example you can see the result of the string:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">This is the content of the box.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">card</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">card(content, options)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The card component comprises several elements:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>header title, subtitle, icon, image</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>content (at this moment all your output after command header until a footer command is executed)</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>footer</p></td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">object</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">JSON object with the options</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">title</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The tab title</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">subtitle</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The tab subtitle</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">img1</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The image next to the title</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">img2</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The image next to the content</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">content</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The tab content</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">buttons</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Array ob json objects with the buttons definition:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:1px; border:none"><p class="p_Normal">title</p>
+</td>
+<td style="vertical-align:top; padding:1px; border:none"><p class="p_Normal">The button title</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:1px; border:none"><p class="p_Normal">link</p>
+</td>
+<td style="vertical-align:top; padding:1px; border:none"><p class="p_Normal">A link for the button</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:1px; border:none"><p class="p_Normal">onclick</p>
+</td>
+<td style="vertical-align:top; padding:1px; border:none"><p class="p_Normal">JS to execute onclick</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to render the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">card</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample"> title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;MyCard&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">subtitle</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;underline title&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">img1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;assets21/img/app_t20_demo.png&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">content</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;</span><br />
+<span class="f_CodeExample" style="color: #666699;">This</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">is</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">the</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">content</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><br />
+<span class="f_CodeExample" style="color: #666699;">You</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">can</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">put</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">anything</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">here</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><br />
+<span class="f_CodeExample">Button </span><span class="f_CodeExample" style="color: #0000ff;">3</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">will</span><span class="f_CodeExample"> call </span><span class="f_CodeExample" style="color: #666699;">a</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">JS</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;, buttons:[ {title:&quot;</span><span class="f_CodeExample">Button </span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;,link:&quot;</span><span class="f_CodeExample" style="color: #666699;">#</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;},{title:&quot;</span><span class="f_CodeExample">Button </span><span class="f_CodeExample" style="color: #0000ff;">2</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;,link:&quot;</span><span class="f_CodeExample" style="color: #666699;">#</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;},{title:&quot;</span><span class="f_CodeExample">Button </span><span class="f_CodeExample" style="color: #0000ff;">3</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;,link:&quot;&quot;, onclick:&quot;</span><span class="f_CodeExample">alert</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'JDG::JS-test'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;}] &nbsp;});</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:</p>
+<p class="p_Normal">In the preview of the example you can see the result of the string:</p>
+<p class="p_Normal"><img alt="UI_My_card" width="866" height="260" style="margin:0;width:866px;height:260px;border:none" src="ui_my_card.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">tabs</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">tabs(id, tabs)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Create a tab control.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The tab ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">array</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">An array of json objects with all options to render each tab:</p>
+<p class="p_Normal">[ tab1, tab2, ..., tabN ]</p>
+<p class="p_Normal">tabX structure:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ID</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(optional) The ID for this tab</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">title</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The tab title</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">icon</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The tab icon (You can use ui.fa() to render the icon)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">content</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The tab content</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to create the tab</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">tabs</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;tabExample01&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Tab1&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">icon</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">fa</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;fire&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">content</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Content&nbsp;for&nbsp;tab&nbsp;1&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Tab2&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">icon</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">fa</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;water&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)},</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Tab3&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">icon</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">fa</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;wind&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)}]</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:</p>
+<p class="p_Normal">In the preview of the example you can see the result of the string:</p>
+<p class="p_Normal"><img alt="UI_tabs" width="1075" height="118" style="margin:0;width:1075px;height:118px;border:none" src="ui_tabs.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">dgrid</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="ui-dgrid.htm" class="topiclink">dgrid(id) return a container for a table</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">message</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">message(errorCode, errorText)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Create a message box.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The error code. If it is lower than 0 is considered an error</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML with the message</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to create the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">message</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Ups. This is an error box!&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">form</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">form(id, action, content)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Render the html to represent a form.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The form ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The action to perform when you submit the form</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The content</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to create the form</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;formExample&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;?page=myApp&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">html_with_the_content</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal"><span class="f_Sripte">&lt;</span></p>
+<p class="p_Normal"><span class="f_Sripte"> &nbsp; html_with_the_content &nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">encodeHTML</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">encodeHTML(s)</a></span></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+<p class="p_Normal">Encode a string to be used as value in a HTML tag.</p>
+<p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+<p class="p_Normal">string &nbsp; &nbsp; &nbsp;The string to be encoded.</p>
+<p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+<p class="p_Normal">void</p>
+<p class="p_See"><span class="f_See">Example</span></p>
+<p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">encodeHTML</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;This &amp; this &quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">lt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">This</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">amp</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">this</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">lt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><span class="f_CodeExample" style="color: #666699;">is</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">a</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">gt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">button</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">button(id, label, options)</a></span></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Render the HTML to represent a button.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The title of the control</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">options</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">json object with all options to render the control:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">link</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the target URL for this button</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">type</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the type applied to the button</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">licon</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the left icon displayed into the button (You can use a fontaweson name)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">readonly</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the control as read-only</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">disabled</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the control as disabled</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to create the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">button</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;buttonExample01&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Open google.com&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">type</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;is-link&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> link</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;https://www.google.com&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">licon</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;spider&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:</p>
+<p class="p_Normal">In the preview of the example you can see the result of the string:</p>
+<p class="p_Normal"><img alt="UI_button_spider" width="203" height="70" style="margin:0;width:203px;height:70px;border:none" src="ui_button_spider.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">input</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="webui_input.htm" class="topiclink">input(label, name, value, options)</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">textarea</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">textarea(label, name, value, options)</a></span></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Render the HTML to represent an text area box.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's label</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's default value</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">options</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">json object with all options to render the control:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">placeholder</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the placeholder for the input, by default the control's tittle is used to.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">readonly</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the control as read-only</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">disabled</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the control as disabled</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">error</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Error if the user has selected nothing</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to create the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">textarea</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Remarks&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;notes&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="color: #666699;">placeholder</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Type your notes&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:</p>
+<p class="p_Normal">In the preview of the example you can see the result of the string:</p>
+<p class="p_Normal"><img alt="UI_textarea_remarks" width="723" height="165" style="margin:0;width:723px;height:165px;border:none" src="ui_textarea_remarks.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">select</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">select(label, name, value, kv, options)</a></span></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Render the HTML to represent an select box (dropdown).</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's label</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's default value</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">array</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">[ [key1,value1], ..., [keyN,valueN] ]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">options</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">json object with all options to render the control:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">licon</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the left icon displayed into the button (You can use a fontawesome name with the prefix &quot;fa-&quot;)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">readonly</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the control as read-only</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">disabled</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the control as disabled</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">error</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Error if the user has selected nothing</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The HTML to create the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Choose an option&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;select-example&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[[</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Option 1&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #0000ff;">2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Option 2&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #0000ff;">3</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Option 3&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]],</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="color: #666699;">licon</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;fa-bolt&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:</p>
+<p class="p_Normal">In the preview of the example you can see the result of the string:</p>
+<p class="p_Normal"><img alt="UI_select_Option" width="901" height="73" style="margin:0;width:901px;height:73px;border:none" src="ui_select_option.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">radiobox</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="webui_radiobox.htm" class="topiclink">radiobox(name, value, kv, options)</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">checkbox</p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">checkbox(label, name, checked, options)</a></span></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Render the HTML to represent a group of options (check box).</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's default value</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">array</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">[ [key1,value1], ..., [keyN,valueN] ]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">options</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">json object with all options to render the control:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">readonly</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the control as read-only</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">disabled</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the control as disabled</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The html to create the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_toc2"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">checkbox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Do you like our new framework?&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;checkbox-example&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_toc2"><span class="f_toc2">&nbsp;</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview</span>:</p>
+<p class="p_Normal">In the preview of the example you can see the result of the string:</p>
+<p class="p_Normal"><img alt="UI_checkbox" width="276" height="23" style="margin:0;width:276px;height:23px;border:none" src="ui_checkbox.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">more</p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:38px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">more(title, content)</a></span></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 38px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Render a line with more information collapsed.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The title of the control</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The content of the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The html to create the control</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Example"><span class="f_Example">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Sripte">&gt; </span><span class="f_CodeExample" style="color: #666699;">ui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">more</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Click here to expand the information&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;This is the information</span><br />
+<span class="f_CodeExample" style="color: #666699;">inside</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">of</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">this</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">control</span><br />
+<span class="f_CodeExample" style="color: #666699;">Hello</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">!!</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot; );</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Preview:</span></p>
+<p class="p_Normal">In the preview of the example you can see the result of the string - a link appears:</p>
+<p class="p_Normal"><a href="http://192.168.0.18:8081/beasweb/terminal20?program_id=terminal20&amp;page=t20_demo#ui_moreShow_4" onclick="return HMTrackTopiclink(this);" class="weblink">Click here to expand the information</a></p>
+<p class="p_Normal">- By clicking the link in the app, you can test how the information is expanded. You can close the displayed message box by tapping the &quot;Close&quot; button in the right top corner of the box.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

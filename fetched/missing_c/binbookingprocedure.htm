@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>binbookingprocedure</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="binbooking (procedure),procedure beas_binbooking" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="beas_binbooking [parameter] &nbsp;Booking-Transaction BIN-WAREHOUSE &nbsp;set new Quantity, Weight and Volume in the bin (beas_whsbin) and item-Entry (beas_whsbinitem) &nbsp;and write in the" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "beas_invhistory.htm",
+   prevP: "procedure.htm",
+   currP: "binbookingprocedure.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "binbookingprocedure",
+   mailsubject: "Feedback on: Beas Script 2026.09 - beas_binbooking",
+   sharesubject: "Beas Script 2026.09 - beas_binbooking",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "binbookingprocedure",
+   mailpath: "Database &gt; procedure &gt; beas_binbooking /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - binbookingprocedure").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "binbookingprocedure.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>binbookingprocedure</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">beas_binbooking</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span style="font-weight: bold;">beas_binbooking [parameter]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Booking-Transaction BIN-WAREHOUSE</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">set new Quantity, Weight and Volume in the bin (beas_whsbin) and item-Entry (beas_whsbinitem) </p>
+<p class="p_Normal">and write in the archive-table beas_whsbinjournal</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">transaction-number</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(oivk.transnum or oinm.transnum). if you work with sap8.8 or higher, work with oivk!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">instance-number</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(oivk.instance or oinm.instance)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">batchnumber</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(oitm.manbtchnum=Y: the batchnumer, oitm.mansernum='Y': the sri1.sysserial otherwise empty!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bincode</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">code of bin: beas_whsbin.bincode</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rfid</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">rfid-number (only, if you work with it, otherwise empty</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">quantity</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">quantity</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pers_id</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the personal-number (beas_pers.pers_id) or empty. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">station_id</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the current station-name (or empty)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">version</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the program-name and -version of your program</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Message</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">ok or the error-message in english</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Errorcode</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">0 = do nothing, 1=ok, &lt; 0 an Error</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Error-Code</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">1</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">ok</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">0</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">no action. More Info see Message</p>
+<p class="p_Normal">Example:</p>
+<p class="p_Normal">Transaction-Quantity is zero ...</p>
+<p class="p_Normal">Item xxxx has been booked ...</p>
+<p class="p_Normal">No bin-entry found for transaction ...</p>
+<p class="p_Normal">wrong booking-quantity for transaction ... Your quantity is (0 or &lt; 0)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-997</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Error Check Transaction-Table for Transaction (error in sql-statement on oinm or oivk/oivl)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-998</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Wrong Quantity (..) item xxx, Warehouse yyy. Open Qty is only ..., Your quantity is higher</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1000</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">item xxxx not found (in oitm)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1001</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">error select information from table oitm</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-2001</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">error select batch-information from table ibt1 or sri1</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-2002</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">batch number (or serial number) not found in ibt1 or sri1</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-2003</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">error booking batch number (or serial number) xxxx. Total Qty: ..., booked Qty: ..., booking Qty too high</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-2005</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">serial number xxx wrong. ou must set the field sri1.sysserial. This is a integer-field! (this check, if the field is numeric...)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-2006</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Wrong Quantity Item xxx. this is a serialnumber-item. Only Quantity 1 is allowed! Your Quantity: ...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-2008</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">error select booked-information (beas_whsbinjournal)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1002</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">bin... not found in warehouse ...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1003 </span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">error seek for bin... not found in warehouse (error in sql-statement)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1010</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">error update new quantity in bin (beas_whsbin)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1010</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">error get bin-Warehouse-Information beas_whsbinitem</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-9001</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">quantity in Warehouse.., Bin ... for item .. not enough! Current stock: ...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1004</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">error update beas_whsbinitem. Can not set new quantity (SQL-Error)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1005</span></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:2px; border:solid thin #000000;"><p class="p_Normal">error write protocoll in beas_whsbinjournal (SQL-Error)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">-1006</span></p>
+</td>
+<td style="vertical-align:top; width:728px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">error write new quantity in beas_oinm</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">@doctype</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">your</span><span class="f_CodeExample">&nbsp;document</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample">type&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">@docentry</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">your</span><span class="f_CodeExample">&nbsp;document</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">entry</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">@linenum</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">your</span><span class="f_CodeExample">&nbsp;document</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">line</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">String</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">@batchnum</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">your</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">batchnumber</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">or</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">serial</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">intrserial</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">as</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">string</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">or</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">empty</span><br />
+<span class="f_CodeExample" style="color: #666699;">@bincode</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">the</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">bincode</span><br />
+<span class="f_CodeExample" style="color: #666699;">@rfid</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">is</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">empty</span><br />
+<span class="f_CodeExample" style="color: #666699;">@quantity</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">the</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">quantity</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">for</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">this</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">bincode</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #666699;">@pers_id</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">the</span><span class="f_CodeExample">&nbsp;current&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_pers</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">pers_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">User</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">or</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">empty</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">@station</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">the</span><span class="f_CodeExample">&nbsp;current&nbsp;</span><span class="f_CodeExample" style="color: #666699;">station</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">id</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">client</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">not</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">server</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">@version</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">the</span><span class="f_CodeExample">&nbsp;current&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">and</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Version</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">your</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">program</span><br />
+<span class="f_CodeExample" style="color: #666699;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;get&nbsp;Transaction&nbsp;and&nbsp;Instance&nbsp;from&nbsp;this&nbsp;document-line</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">&nbsp;</span><br />
+<span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">oivk</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">oivk</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">instance</span><br />
+<span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">oivl</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">inner</span><span class="f_CodeExample">&nbsp;join&nbsp;</span><span class="f_CodeExample" style="color: #666699;">oivk</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">on</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">oivk</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">transseq</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">oivl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">transseq</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">and</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">layerid</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">inner</span><span class="f_CodeExample">&nbsp;join&nbsp;</span><span class="f_CodeExample" style="color: #666699;">oitm</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">on</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">oitm</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">itemcode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">oivl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">itemcode</span><br />
+<span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">where</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">oivl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">transtype</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">@doctype</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">and</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">oivl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">createdby</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">@docentry</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">and</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">oivl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">doclinenum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">@linenum</span><br />
+<span class="f_CodeExample" style="color: #666699;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Call&nbsp;the&nbsp;BinBooking</span><br />
+<span class="f_CodeExample" style="color: #666699;">dbo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">beas_binbooking</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@bincode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@rfid</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@pers_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@station</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@version</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the return = 1, then all is ok, otherwise display the error</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">STORNO</span></h1>
+<p class="p_Normal">you can create a Storno for a bin-transaction. For Storno set the Quantity &nbsp;&lt; 0</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">BIN-BIN-Transaction</span></h1>
+<p class="p_Normal">BIN-BIN-Transaction have no SAP-Document</p>
+<p class="p_Normal">Obj-Type is 99</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">for a BIN-BIN-Transaction insert into beas_oinm 2 records</p>
+<p class="p_Normal">with a instance-Number bigger then 99000 </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">isnull</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">max</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_oinm</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">isnull</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">max</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">+</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_oinm</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">99000</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">set</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">990000</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">then insert 2 lines in beas_oinm for the issue and receipt</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">insert</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">into</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_oinm</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">transtype</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">beas_ref</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">itemcode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">doclinenum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">docdate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">in0out1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">openqty</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">warehouse</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">values</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">99</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">''</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@itemcode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">getdate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(),</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@whscode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">insert</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">into</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_oinm</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">+</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">transtype</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">beas_ref</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">itemcode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">doclinenum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">docdate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">in0out1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">openqty</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">warehouse</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">values</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">99</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">''</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@itemcode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">getdate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(),</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@whscode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if Batchnum-Item, then insert the batchnumber in beas_oinm_batchnum (only for Information about this Transaction)</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">insert</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">into</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_oinm_batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">linenum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">values</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">insert</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">into</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_oinm_batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">linenum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">values</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">+</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">call the Booking-Procedure</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">dbo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">beas_binbooking</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@from</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">bincode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@from</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">rfid</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@pers_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@station</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@version</span><br />
+<span class="f_CodeExample" style="color: #666699;">dbo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">beas_binbooking</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">@transnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">+</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@batchnum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@to</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">bincode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@to</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">rfid</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@quantity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@pers_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@station</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">@version</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

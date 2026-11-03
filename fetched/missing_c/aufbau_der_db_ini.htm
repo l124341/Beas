@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>structure of the DB.INI</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="When calling &quot;check database&quot; a database update starts for automatic updating of new or changed columns or tables.&nbsp;" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+div#hmheader {display: none;}
+div.navdivs {display: none;} /*$$$ CHECK */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+hmHeaderTopic = false;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "windows.htm",
+   prevP: "databasemodel.htm",
+   currP: "aufbau_der_db_ini.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "structure of the DB.INI",
+   mailsubject: "Feedback on: Beas Script 2026.09 - structure of the DB.INI",
+   sharesubject: "Beas Script 2026.09 - structure of the DB.INI",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Aufbau_der_DB.INI",
+   mailpath: "Database &gt; structure of the DB.INI /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: false,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - structure of the DB.INI").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "aufbau_der_db_ini.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>structure of the DB.INI</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">structure of the DB.INI</span></h1>
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">When calling &quot;check database&quot; a database update starts for automatic updating of new or changed columns or tables. </p>
+<p class="p_Normal">The file DB.INI gets processed. The commands from the DB.INI are interpreted by the program.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Attention">ATTENTION:</span> Manual Database modification is <span style="font-weight: bold;">not</span> allowed!</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">These are possible commands for the DB.INI:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">version=&lt;versioninfo&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">current Version: 67xxxyy (xxx = versionnumber, yy=build)<br />
+<span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">version=6700008</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">versiondatum=&lt;versiondate&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">Date of the current version<br />
+<span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">versiondatum=4.07.2005</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">table=&lt;tablename&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">checks a table <br />
+<span class="f_CodeExample" style="color: #666699;">table</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_mrp_planung</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">udt=&lt;tablename&gt;=&lt;Description&gt;=&lt;type&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">Create a SAP Table</p>
+<p class="p_Normal">type: <span class="f_CourierFixed">Noobject, Masterdata,masterdatalines,Document, documentlines,Noobjectautoincrement</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">udt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">BEAS_TEST</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Desc</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Table</span><br />
+<span class="f_CodeExample" style="color: #666699;">udf</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">BEAS_TEST</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_Status</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Status</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">alpha</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">regular</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">20</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To Add UDF's to a udt you must write the table name (without @ symbol)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Do not use Prefix &quot;beas&quot;</p>
+<p class="p_Normal"><span class="f_Sripte" style="color: #800000;">beas_color</span> -&gt; <span style="color: #ff0000;">wrong</span></p>
+<p class="p_Normal"><span class="f_Sripte" style="color: #800000;">mycompany_colo</span>r -&gt; <span style="color: #008000;">correct</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">udf=&lt;tablename&gt;=&lt;columnname&gt;=&lt;description&gt;=&lt;type&gt;=&lt;type2&gt;=&lt;length&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">Creates a SAP-Field</p>
+<p class="p_Normal">type: Alpha,Float,Numeric,dec<br />
+type2 at Alpha:regular, adresse, telefon, text</p>
+<p class="p_Normal">type2 at Float: Rate,sum,Price,quantity,percent,measure</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">udf</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">OITM</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_myField</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">This</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">is</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">my</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">field</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">dec</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">quantity</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Do not use Prefix &quot;beas&quot;</p>
+<p class="p_Normal"><span class="f_Sripte" style="color: #800000;">beas_color</span> -&gt; <span style="color: #ff0000;">wrong</span></p>
+<p class="p_Normal"><span class="f_Sripte" style="color: #800000;">mycompany_colo</span>r -&gt; <span style="color: #008000;">correct</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">Column=&lt;tablename&gt;=&lt;columnname&gt;=&lt;datetype&gt;=&lt;description&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">checks a column <br />
+<span class="f_CodeExample" style="color: #666699;">column</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_mrp_planung</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">bezeichnung</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">nchar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #0000ff;">80</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)=</span><span class="f_CodeExample" style="color: #666699;">Bezeichnung</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">sapcolumn=&lt;tablename&gt;=&lt;columnname&gt;=&lt;datetpye&gt;=&lt;description&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">checks a SAP<br />
+<span class="f_CodeExample" style="color: #666699;">sapcolumn</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">OJDT</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">u_monat</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">int</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">monat</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">partition</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">in</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">month</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">Nummer</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">sapcolumninfo=&lt;description&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">Info to a &nbsp;SAP-column<br />
+<span class="f_CodeExample" style="color: #666699;">sapcolumninfo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Journalbuchung</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">primary=&lt;tablename&gt;=&lt;columname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a primary key for a column</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">primary</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_mrp_planung</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">id</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">default=&lt;tablename&gt;=&lt;columnname&gt;=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a default value for a column<br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">default</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_stl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">lfdnr</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">0</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">droptable=&lt;tablename&gt;=true/false=&lt;columname&gt;</span> </p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">drops a table : <br />
+true: drop if column exits, <br />
+false: drop, if column does not exist<br />
+without condition: drop in any case<br />
+<span class="f_CodeExample" style="color: #666699;">droptable</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_mrp_planung</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">bezeichnung</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">delcolumn=&lt;tablename&gt;=&lt;columname&gt;=&lt;datetpye&gt;=&lt;description&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">deletes a column<br />
+<span class="f_CodeExample" style="color: #666699;">delcolumn</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_mrp_planung</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">lfgdat_von</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">nchar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #0000ff;">12</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)=</span><span class="f_CodeExample" style="color: #666699;">Parameter</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">von</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">Lieferungsdatum</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">abgleich=&lt;sql-command&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">Processes the specified SQL-command if there is a name for &quot;abgleich&quot; (matching)<br />
+<span class="f_CodeExample" style="color: #666699;">abgleich</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">delete</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">beas_caft_var</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">where</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">varedit</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'N'</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">abgleichname=&lt;description&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">enables a matching</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">abgleichname</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">pk_typen</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">meldung=&lt;description&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">outputs a message</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">prozent=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">displays progress in percent</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:330px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">script=&lt;Scriptname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:684px; padding:0; border:solid thin #000000;"><p class="p_Normal">Calls and interprets a file with a BEAS-Script</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

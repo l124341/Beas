@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ux aget</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Description &nbsp;A wrapper for ux.ajax (GET) &nbsp;Parameters &nbsp;string URL to load function Callback function to execute after the command receive a reply object JSON object with" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ux-ajax.htm",
+   prevP: "ux-absl.htm",
+   currP: "ux-aget.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ux aget",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ux aget",
+   sharesubject: "Beas Script 2026.09 - ux aget",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Ux-aget",
+   mailpath: "WEB and Rest Service &gt; Libraries WEB APP 2.0 &gt; ux.js &gt; ux aget /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ux aget").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ux-aget.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ux aget</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ux aget</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A wrapper for ux.ajax (GET)</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameters</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:100px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:1466px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">URL to load</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:100px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">function</p>
+</td>
+<td style="vertical-align:top; width:1466px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Callback function to execute after the command receive a reply</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:100px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">object</p>
+</td>
+<td style="vertical-align:top; width:1466px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">JSON object with the options:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">contentType</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">json|multipart|standard</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">timeout</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Max time to wait a reply</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">loading</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Block the app while sending/receiving data. Default: true</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Return</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:100px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">void</p>
+</td>
+<td style="vertical-align:top; width:1466px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_See"><span class="f_See">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:100px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:1466px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ux</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">aget</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'http://www.google.es'</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">err</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">result</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">!</span><span class="f_CodeExample" style="color: #666699;">err</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">/*&nbsp;&amp;&amp;&nbsp;result&nbsp;hasn't&nbsp;errors&nbsp;*/</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ux</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">dialog</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">_t</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Received!&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample" style="color: #666699;">result</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">buttons</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:[{</span><span class="f_CodeExample" style="color: #666699;">id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'ok'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">_t</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Ok&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample">type</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;is-success&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}]</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">else</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ux</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">dialog</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">_t</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Error&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample" style="color: #666699;">_t</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;An&nbsp;unknown&nbsp;error&nbsp;happened.&nbsp;Please&nbsp;wait&nbsp;some&nbsp;seconds&nbsp;and&nbsp;try&nbsp;again.&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">buttons</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:[{</span><span class="f_CodeExample" style="color: #666699;">id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'ok'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">_t</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Ok&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample">type</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;is-danger&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}]</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ux</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">loading</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">No Preview available</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&quot;Push to execute&quot; - a link appears to execute a command.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

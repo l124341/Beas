@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>BEASV_WORKORDER</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Displays all work orders. Table: BEAS_FTHAUPT &nbsp;Column Description Table Info DocEntry Document Entry (internal number) BEAS_FTHAUPT.BELNR_ID DocNum Document Number (alp" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "beasv_workorder_pos.htm",
+   prevP: "views.htm",
+   currP: "beasv_workorder.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "BEASV_WORKORDER",
+   mailsubject: "Feedback on: Beas Script 2026.09 - BEASV_WORKORDER",
+   sharesubject: "Beas Script 2026.09 - BEASV_WORKORDER",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "BEASV_WORKORDER",
+   mailpath: "Database &gt; views &gt; BEASV_WORKORDER /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - BEASV_WORKORDER").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "beasv_workorder.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>BEASV_WORKORDER</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">BEASV_WORKORDER</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Displays all work orders.</p>
+<p class="p_Normal">Table: BEAS_FTHAUPT</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_TableHeader"><span class="f_TableHeader">Column</span></p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_TableHeader"><span class="f_TableHeader">Description</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_TableHeader"><span class="f_TableHeader">Table Info</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">DocEntry</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Document Entry (internal number)</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.BELNR_ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">DocNum</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Document Number (alphanumeric)</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.AUFTRAG</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">DocDate</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Date of creation</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.BELDAT</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">DeliveryDate</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Planned delivery date</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.LFGDAT</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">CardCode</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Customer CardCode, Link: OCRD.CardCode</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If the info is not customer order/related, this is empty.</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.KND_ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">MailAddress</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Street</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.KNDSTRASSE</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">MailZipCode</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ZipCode</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.KNDPLZ</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">MailCity</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">City</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.KNDORT</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Phone1</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Phone Number</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.KNDTELEFON1</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Lock</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Work order locked? 1=yes,0=No</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.SPERRUNG</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Closed</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Work order closed? 1=yes,0=No</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.ABGKZ</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Priority</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Work order Priority. Linked to </p>
+<p class="p_Normal">BEAS_PRJ.PRIOR_ID</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.PRIOR_ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">StartDate</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Planned start date of work order</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.ANFZEIT</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">EndDate</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Planned end date of work order</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.ENDZEIT</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">PrintStatus</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Status Print work order: 1=printed, 0=not printed</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.DRUCKKZ</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ItemCode</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ItemCode from first work order position</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.ItemCode</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">OrderBitmap</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Bitmap for this work order</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.BITMAPCLOSE</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">WorkTime</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sum of all work times in minutes</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_ARBZEIT</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Receipt_count</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Count of receipts </p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ReservedTime</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sum of reserved work time (current open times)</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_RESOURCEN</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ScheduleAutomatically</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_beas_Version">Automatic Scheduling Active 1/0<br />
+<span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.TIMECALCULATE</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">PrjCode</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Project Code (Linked to OPRJ)</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.PROJECT</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">PRJUID</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Project Task Code</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.PRJUID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BPLid</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Branch</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.BPLid</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">WorkOrderStatus</p>
+</td>
+<td style="vertical-align:top; width:220px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Status of Work order</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.STATUS_ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">UDF1...UDF4</p>
+</td>
+<td style="vertical-align:top; width:220px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Free fields</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BEAS_FTHAUPT.UDF1...4</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

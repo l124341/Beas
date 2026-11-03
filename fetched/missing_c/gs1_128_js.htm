@@ -1,0 +1,886 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>gs1_128.js</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="This object decodes a GS1-128 code bar and returns each AI found in the bar code as an associative array." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "class_serials_jx.htm",
+   prevP: "beas_js.htm",
+   currP: "gs1_128_js.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "gs1_128.js",
+   mailsubject: "Feedback on: Beas Script 2026.09 - gs1_128.js",
+   sharesubject: "Beas Script 2026.09 - gs1_128.js",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Gs1_128.js",
+   mailpath: "WEB and Rest Service &gt; Libraries WEB APP 2.0 &gt; gs1_128.js /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - gs1_128.js").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "gs1_128_js.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>gs1_128.js</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">gs1_128.js</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">This object decodes a GS1-128 code bar and returns each AI found in the bar code as an associative array.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To include this library in your app, just add this code to your app source code in Beas, between the &quot;_header()&quot; and &quot;_footer()&quot;:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">&lt;script&nbsp;src=&quot;assets21/js/gs1_128.js&quot;&gt;&lt;/script&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Object members</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:260px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method Summary</span></p>
+</th>
+<th style="vertical-align:top; width:1159px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="gs1_128_js.htm#decode" class="topiclink">decode</a></p>
+</td>
+<td style="vertical-align:top; width:1159px; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">decode(&nbsp;bc&nbsp;)</span></p>
+<p class="p_Normal">Decode a GS1-128 ba rcode</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="gs1_128_js.htm#getdate" class="topiclink">getdate</a></p>
+</td>
+<td style="vertical-align:top; width:1159px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">getdate(&nbsp;yymmdd&nbsp;)</span></p>
+<p class="p_Normal">Format the bar code date as a date with the format YYYY-MM-DD</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:259px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method Detail</span></p>
+</th>
+<th style="vertical-align:top; width:1160px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:259px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a id="decode" class="hmanchor"></a>decode</p>
+<p class="p_Normal"><span class="f_CodeExample">decode( bc )</span></p>
+</td>
+<td style="vertical-align:top; width:1160px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Decode a GS1-128 bar-code and return an associative array with all AI detected and the values for them.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Parameters:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CourierFixed"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1')">{string}&nbsp;bc</a></span></p>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 24px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The bar code to decode</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Ex. <span style="font-size: 8pt; font-family: Consolas; color: #6a9955;">Ê97rm01bÊ10LOT01234Ê98BWÊ99C-1001Ê3102012345</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Consolas; color: #6a9955;">Ê00123456789012345678</span><span style="font-size: 8pt; font-family: Consolas; color: #6a9955; background-color: #ffff00;">97rm01b</span><span style="font-size: 8pt; font-family: Consolas; color: #6a9955;">Ê10LOT01234Ê98BWÊ99C-1001Ê3102012345</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="margin: 0 0 2px 24px;">&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Returns:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CourierFixed">{associative&nbsp;array}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2')">Example</a></span></p>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">var</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">res</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">gs1_128</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">decode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Ê97rm01bÊ10LOT01234Ê98BWÊ99C-1001Ê3102012345&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="color: #666699;">console</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">log</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">res</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="color: #0000ff;">10</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;LOT01234&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">97</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;rm01b&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">98</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BW&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">99</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;C-1001&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">310</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;2012345&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:259px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a id="getdate" class="hmanchor"></a>getdate</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">getdate(&nbsp;yymmdd&nbsp;)</span></p>
+</td>
+<td style="vertical-align:top; width:1160px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Format the bar-code date as a date with the format YYYY-MM-DD</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Parameters:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CodeExample"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3')">{string}&nbsp;yymmdd</a></span></p>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 24px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The bar-code date with the format YYMMDD</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="margin: 0 0 2px 24px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 2px 24px;">&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Returns:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CourierFixed">{string}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;">The&nbsp;date&nbsp;with&nbsp;the&nbsp;format&nbsp;YYYY-MM-DD</p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4')">Example</a></span></p>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CourierFixed">var&nbsp;res&nbsp;=&nbsp;gs1_128.getdate(&nbsp;&quot;770817&quot;&nbsp;);</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CourierFixed">console.log(&nbsp;res&nbsp;);</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 72px;"><span class="f_CourierFixed" style="font-style: italic;">2077-08-17</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Additional Info</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This is the list of AI supported by this object</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:260px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">AI</span></p>
+</th>
+<th style="vertical-align:top; width:435px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+<th style="vertical-align:top; width:64px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</th>
+<th style="vertical-align:top; width:668px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Length</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">00</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Serial Shipping Container Code (SSCC)</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">18</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">01</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Global Trade Item Number (GTIN) ( Item Code )</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">14</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; height:21px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">02</p>
+</td>
+<td style="vertical-align:top; width:435px; height:21px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">GTIN of Contained Trade Items</p>
+</td>
+<td style="vertical-align:top; width:64px; height:21px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; height:21px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">14</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">10</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Batch/Lot Number (DistNumber)</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-20</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">11</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Production Date</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">date</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">12</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Due Date</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">date</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">13</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Packaging Date</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">date</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">15</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Best Before Date (YYMMDD)</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">date</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">17</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Expiration Date</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">date</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">20</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Product Variant</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">numeric</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">2</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">21</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Serial Number</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-20</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">22</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Secondary Data Fields</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-20</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">240</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Additional Product Identification</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">241</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Customer Part Number</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">250</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Secondary Serial Number</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">30</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Count of items</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-8</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">310n-369n</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Other information about the item</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">37</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Number of Units Contained</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-8</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">390n</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Amount payable (local currency)</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-15</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">391n</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Amount payable (with ISO currency code)</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3-8</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">392n</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Amount payable per single item (local currency)</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-15</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">393n</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Amount payable per single item (with ISO currency code)</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3-18</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">400</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Customer Purchase Order Number</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">401</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Consignment Number</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">402</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Bill of Lading</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">17</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">403</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Routing code</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">410</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Ship To/Deliver To Location Code (Global Location Number)</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">13</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">411</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Bill To/Invoice Location Code (Global Location Number)</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">13</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">412</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Purchase From Location Code (Global Location Number)</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">13</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">413</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Ship for, Deliver for, or Forward to Location Code (Global Location Number)</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">13</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">414</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Identification of a physical location (Global Location Number)</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">number</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">13</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">420</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Ship To/Deliver To Postal Code (Single Postal Authority)</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-20</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">421</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Ship To/Deliver To Postal Code (with ISO country code)</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3-15</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">422</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Country of Origin (ISO country code)</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">423</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Country or countries of initial processing</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3-15</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">424</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Country of processing</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">425</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Country of disassembly</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">426</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Country of full process chain</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">7001</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">NATO Stock Number (NSN)</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">13</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">7002</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">UN/ECE Meat Carcasses and cuts classification</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">7003</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">expiration date and time</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">10</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">703x</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Processor approval (with ISO country code); n indicates sequence number of several processors</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8001</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Roll Products: Width/Length/Core Diameter/Direction/Splices</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">14</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8002</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Mobile phone identifier &nbsp; &nbsp; &nbsp; &nbsp;</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-20</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8003</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Global Returnable Asset Identifier</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">14-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8004</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Global Individual Asset Identifier</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8005</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Price per Unit of Measure</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8006</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">identification of the components of an item</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">18</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8007</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">International Bank Account Number</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8008</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Date/time of production</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8-12</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8018</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Global Service Relationship Number</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">18</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8020</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Payment slip reference</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-25</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8100</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Coupon Extended Code: Number System and Offer</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8101</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Coupon Extended Code: Number System, Offer, End of Offer</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">10</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">8102</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Coupon Extended Code: Number System preceded by 0</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">2</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">90</p>
+</td>
+<td style="vertical-align:top; width:435px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Mutually Agreed Between Trading Partners</p>
+</td>
+<td style="vertical-align:top; width:64px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">1-30</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">91-99</p>
+</td>
+<td style="vertical-align:top; width:435px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Internal Company Codes</p>
+</td>
+<td style="vertical-align:top; width:64px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">string</p>
+</td>
+<td style="vertical-align:top; width:668px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Heading2">x</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

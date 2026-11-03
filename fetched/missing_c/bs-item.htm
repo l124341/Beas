@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>BS Item</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="item (sbo-form)" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Item-Properties for SAP Business One Forms. &nbsp;item=itemuid=property... &nbsp;row Read/Write Current Row Only Grid, Start with 1 rowcount (or maxrow) Rows of the Grid Grid ge" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bs-create-objects.htm",
+   prevP: "bs-form.htm",
+   currP: "bs-item.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "BS Item",
+   mailsubject: "Feedback on: Beas Script 2026.09 - BS Item",
+   sharesubject: "Beas Script 2026.09 - BS Item",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "BS-Item",
+   mailpath: "SAP UI-API &gt; BS Item /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - BS Item").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bs-item.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>BS Item</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">BS Item</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">Item-Properties for SAP Business One Forms.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">item=itemuid=property...</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">row</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Read/Write Current Row</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Only Grid, Start with 1</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rowcount (or maxrow)</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Rows of the Grid</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Grid</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getrow</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Current Row of the Grid</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Grid</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">click</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Click the object</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">all objects</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">enabled=false/true</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set Enable true/false or get the status in &quot;value&quot;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">all objects</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">visible=false/tue</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set Visible true/false or get the status in &quot;value&quot;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">all objects</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">caption or text=&lt;Text&gt;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set the Caption </p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Button</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">description</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set the Description of the Oject</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">all objects</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">left</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set or Read the left-Property</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">all objects</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">top</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set or Read the top-Property</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">all objects</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set or Read the height-Property</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">all objects</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; height:12px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">width</span></p>
+</td>
+<td style="vertical-align:top; height:12px; padding:0; border:solid thin #000000;"><p class="p_Normal">Set or Read the width-Property</p>
+</td>
+<td style="vertical-align:top; height:12px; padding:0; border:solid thin #000000;"><p class="p_Normal">all objects</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">active=false/true</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set or Read the active-Property</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Edit-Object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">value (or blank)</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set or Read the value-Property</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Edit-Object,TextEdit, Combobox, Checkbox</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">blank</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set a empty value to field</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Edit-Object,TextEdit, Combobox, Checkbox</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">string</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set or Read the string-Property</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Edit-Object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">valon</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns or sets a string specifying the data source value when the item is not selected</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">checkbox,Optionbtn</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">valoff</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns or sets a string specifying the data source value when the item is &nbsp;selected</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">checkbox,Optionbtn</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">row=[x]=col=y</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Grid-Object: Row and Col from Objektes </p>
+<p class="p_Normal">Row is not mandatory. In this case the current row is set</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setcellfocus=row=col</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set focus to a specific cel of a matrix.</p>
+<p class="p_Normal">Row and col are mandatory</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">backcolor</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set a backcolor to background. The value is an RGB value in long representation. You can use the standard Visual Basic colors, for example, vbBlue and vbYellow. </p>
+<p class="p_Normal">The valid range for a normal RGB color is 0 to 16,777,215 (&amp;HFFFFFF).</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">forecolor</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Set a ForeColor to field. The value is an RGB value in long representation. You can use the standard Visual Basic colors, for example, vbBlue and vbYellow. </p>
+<p class="p_Normal">The valid range for a normal RGB color is 0 to 16,777,215 (&amp;HFFFFFF).</p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Attention</span></h1>
+<p class="p_Normal">You can only set visible fields. Otherwise you get a error. You can disable the error-message with <span class="f_CourierFixed">setvar=sys_disableerrormessage=true</span></p>
+<p class="p_Normal">in error case the Value <span class="f_CourierFixed">sys_itemsetvalue</span> is set to -1</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Example">Examples</span>:</h1>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=myVar=&lt;item 10&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=myVar=&lt;item 10=value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;item 10=value&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item=10=value=Hello</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">item=1=enabled=false</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">item=mybutton=caption=NewSave</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_Normal">Matrix:<br />
+<span class="f_CourierFixed">messagebox=X-Pos: &lt;item 38=x&gt;</span><br />
+<span class="f_CourierFixed">messagebox=Item in current Row: &lt;item 38=col=1&gt;, Rowcount: &lt;item 38=rowcount&gt;, Visible Rows: &lt;item 38=visualrowcount&gt;</span><br />
+<span class="f_CourierFixed">item=38=col=1=ART01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item=38=row=3=col=U_MyField=value=ART01</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Check valid field</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=sys_itemsetvalue=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=sys_disableerrormessage=true</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item.38.column.U_myfield.value=hello world</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;sys_itemsetvalue&gt; = -1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;messagebox=error$Please activate field MYFIELD in SAP Form settings.</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;return failure</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For a loop in a matrix you can specify the row with [..]</p>
+<p class="p_Normal"><span class="f_CourierFixed">for=loop=1=&lt;item.38.rowcount&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;messagebox=&lt;item=38=row=[loop]=col=1=value&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">next</span></p>
+<p class="p_Normal">Geben Sie hier den Text ein.</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

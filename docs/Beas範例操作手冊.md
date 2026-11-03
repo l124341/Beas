@@ -1053,7 +1053,13 @@ end function
 4. 用 SQL 取第一個途程位置(依 **`SortId`** 排序,**不是** `POS_ID`)的資源之 `WMS_PRODLINE`(因為 BSL 沒有提供此欄位)。
 5. 用 SQL 更新工單位置的 `WMS_PRODLINE`(原文說明:此欄位在 Beas 中沒有額外功能,且沒有 BSL PUT 可用,所以例外使用 update)。
 
-> 資料表欄位查證:官方資料庫文件(`docs/ref/資料庫.md`)**沒有說明** `BEAS_FTPOS.WMS_PRODLINE`,也沒有 `BEAS_APLATZ.WMS_PRODLINE`。這個範例對 Beas 資料表做 `update`,官方自己的說明已提醒無法保證(見本節開頭)。欄位的完整對照見[附錄:資料表欄位查證](#範例用到的資料表欄位查證)。
+> 資料表欄位查證(依 `fetched/ref/database_202606.pdf`,此為 2026.06 版文件站的檔案,PDF 建立日期為 2022-02-21):
+>
+> - `BEAS_FTPOS.WMS_PRODLINE` 有(第 139 頁,「Production Line」),`BEAS_FTAPL.SortId` 也有(第 127 頁)。
+> - ⚠ **`BEAS_APLATZ.WMS_PRODLINE` 在 PDF 裡沒有**(`BEAS_APLATZ` 123 個欄位中無此欄位)。而本範例的 SQL 讀的正是 `"BEAS_APLATZ"."WMS_PRODLINE"`。可能是較新的欄位,也可能有誤,請在你的資料庫確認。
+> - 這個範例對 Beas 資料表做 `update`,官方自己的說明已提醒無法保證(見本節開頭)。
+>
+> 欄位的完整對照見[附錄:資料表欄位查證](#範例用到的資料表欄位查證)。
 
 ---
 
@@ -1118,7 +1124,7 @@ end function
 - `CreateWorkOrderPositionEnd`:呼叫 BSL `GetNextBatchNumber`(它會觸發 `GetBatchNumber`)取得新批號,寫入 `BEAS_FTPOS.CHARGE_ID`。
 - `GetBatchNumber`:若工單位置已有批號(`CHARGE_ID` 非空)就直接沿用;否則依「工單號+行號+日期+時間」產生新批號。
 
-> 資料表欄位查證:`BEAS_FTPOS.CHARGE_ID` 在官方資料庫文件中**沒有說明**(只有品管表 `qs_fthaupt.Charge_id` 被提到)。本範例直接 `update` 這個欄位,無法由官方文件證實;使用前請實測,並留意官方對「直接更新 Beas 資料表」的保證聲明。見[附錄:資料表欄位查證](#範例用到的資料表欄位查證)。
+> 資料表欄位查證:依 `fetched/ref/database_202606.pdf`(2026.06 版文件站的檔案,PDF 建立日期 2022-02-21),`BEAS_FTPOS.CHARGE_ID` 存在(第 136 頁),官方說明為「Batch — **only for information. No functionality!**」,也就是只供參考、Beas 本身沒有任何功能。所以把批號存在這個欄位並不會與 Beas 內部功能衝突,但「何時讀取、是否沿用」完全是自己腳本的邏輯。仍請留意官方對「直接更新 Beas 資料表」的保證聲明。見[附錄:資料表欄位查證](#範例用到的資料表欄位查證)。
 
 ---
 
@@ -1138,6 +1144,8 @@ end function
 本範例說明的是「單一腳本」做法。相關項目:BSL `Workorder`、WindowEvents `form_opened`、JBScript 的 `openwindow`、`SQL`、`messagebox`。
 
 > 說明:原文頁面此處**沒有附程式碼**,僅有概述。
+
+> 關於 JBScript 指令頁:本範例頁連結到 `jbsmessagebox.htm`、`jbsopenwindow.htm`、`jbssql.htm`。使用者已嘗試 2021.03、2026.02、2026.04、2026.06、2026.09 等版本,這三頁**全部 404,官方文件本來就沒有**,無法取得(伺服器的「多個選項」回應列出的只是殘留索引)。所以 JBScript 的 `openwindow`、`SQL`、`messagebox` 語法,只能依本手冊 3.1(`cleanStock`)等範例推測,無官方說明可查。
 
 **`form_opened` 事件(官方說明)**:在視窗**框架開啟之後**、**文件開啟之前**執行,用來管理視窗上方的頁籤(新增、變更等)。
 
@@ -1302,7 +1310,7 @@ openwindow=dw=beas_WorkOrder_Structur
 openwindow=dw=beas_WorkOrder_Structur<tab>belnr_id=6002253<tab>belpos_id=10
 ```
 
-參數:`DocEntry` / `belnr_id`(基礎文件)、`LineNumber` / `belpos_id`(基礎文件行)。官方頁面**沒有列出 `zeilentyp` 各值的意義**(已查閱 `fetched/missing_b/` 全部頁面,包括視窗客製化各頁,仍找不到),所以下面程式碼中 `zeilentyp = 0`(工單)與 `= 10`(工單位置)的對應,仍是依範例上下文的解讀,未獲官方確認。
+參數:`DocEntry` / `belnr_id`(基礎文件)、`LineNumber` / `belpos_id`(基礎文件行)。官方頁面**沒有列出 `zeilentyp` 各值的意義**(已查閱 `fetched/missing_b/` 全部頁面,包括視窗客製化各頁,以及 `fetched/ref/database_202606.pdf`;使用者也搜尋過所有已抓頁面,`zeilentyp` 只出現在範例頁與 `custom-artikel_struktur_browse.htm`,都只是使用、沒有定義,仍找不到),所以下面程式碼中 `zeilentyp = 0`(工單)與 `= 10`(工單位置)的對應,仍是依範例上下文的解讀,未獲官方確認。
 
 **運作說明**
 
@@ -3047,24 +3055,29 @@ end function
 
 ### 範例用到的資料表欄位查證
 
-本手冊的範例直接讀寫 Beas 資料表。對照官方資料庫文件(`docs/ref/資料庫.md`)的結果:
+本手冊的範例直接讀寫 Beas 資料表。查證來源有兩個:
 
-| 範例 | 資料表.欄位 | 官方資料庫文件 |
+- `docs/ref/資料庫.md`(2026.09 線上文件的資料庫章節)。
+- `fetched/ref/database_202606.pdf`:完整的資料庫描述(362 頁,Crystal Reports 產生)。**這份 PDF 取自 2026.06 版文件站,不是 2026.09;PDF 本身的建立日期是 2022-02-21**。據使用者的調查,2025.09 與 2026.06 兩版的檔案大小一致(1,311,665 bytes,未逐位元比對),內容很可能自 2022 年以來沒有更新,所以較新的欄位可能不在裡面。以下「PDF 頁」為 PDF 的實際頁碼。
+
+| 範例 | 資料表.欄位 | 查證結果 |
 |---|---|---|
-| 4.4 批號保留 | `BEAS_FTPOS.CHARGE_ID` | **未說明**(`BEAS_QSFTHAUPT.CHARGE_ID` 是 QC 訂單的欄位,不同表) |
-| 4.3 WMS 生產線 | `BEAS_FTPOS.WMS_PRODLINE`、`BEAS_APLATZ.WMS_PRODLINE` | **未說明** |
-| 4.3 WMS 生產線 | `order by "SortId"`(來自 `BEAS_FTAPL` 的查詢) | `SortId` 是檢視 `BEASV_WORKORDER_BOM`、`BEASV_WORKORDER_ROUTING` 的**排序欄位**;官方未說明 `BEAS_FTAPL` 本身有沒有這個欄位 |
-| 3.1 清空庫存 | `BEAS_RESERVATION_LINE` | 只出現**表名**(BOM 檢視的 `Reserved` 欄位),沒有欄位說明 |
-| 3.2 收貨後處理 | `BEAS_FTPOS.UDF2` | **未說明**(官方只有 `BEAS_FTHAUPT.UDF1…4` 的整段對應) |
-| 4.1 範例 4 | `BEAS_FTHAUPT.UDF4` | 以「`UDF1…UDF4`」整段對應出現,沒有個別說明 |
-| 11.7 CreateWorkOrderEnd | `BEAS_FTHAUPT.SPERRUNG` | 有說明:對應檢視欄位 `Lock` |
-| 4.6 結案工單 | `BEAS_FTHAUPT.ABGKZ` | 有說明:對應檢視欄位 `Closed` |
-| 多個範例 | `BELNR_ID`、`BELPOS_ID` | 有說明:對應檢視的 `DocEntry`、`LineNumber` |
-| 11.7 CreateWorkOrderEnd | `BEAS_APLATZ_STILLSTAND` | **未說明**(官方 `CreateWorkOrderEnd` 頁自己的範例使用) |
-| 5.1 QC | `BEAS_QSFTPOS.QS_ID`、`MESSWERTC`、`SPERRGRUNDID`、`MINIMAL` | 有說明,但出處是 BSL 頁 `bslqcordermeasurementget.htm`,不在資料庫章節;`MAXIMAL` 未確認 |
+| 4.4 批號保留 | `BEAS_FTPOS.CHARGE_ID` | PDF 第 136 頁有:說明為「Batch — **only for information. No functionality!**」,也就是只供參考、Beas 本身沒有功能。範例把批號存在這個欄位是合理的用法,但要自己負責讀取(`BEAS_QSFTHAUPT.CHARGE_ID` 是另一張 QC 表) |
+| 4.3 WMS 生產線 | `BEAS_FTPOS.WMS_PRODLINE` | PDF 第 139 頁有:「Production Line」 |
+| 4.3 WMS 生產線 | **`BEAS_APLATZ.WMS_PRODLINE`** | ⚠ **PDF 中 `BEAS_APLATZ`(第 27–30 頁,123 個欄位)沒有這個欄位**。`WMS_PRODLINE` 在整份 PDF 只出現在 `BEAS_FTPOS`(第 139 頁)與 `BEAS_OWHS_BINDEFLINE`(第 190 頁)。範例讀取 `"BEAS_APLATZ"."WMS_PRODLINE"`,可能是比 PDF 新的欄位,也可能有誤,**請在你的資料庫查詢實際結構確認** |
+| 4.3 WMS 生產線 | `BEAS_FTAPL.SortId` | PDF 第 127 頁有:「Sorting」(先前我寫「官方未說明」,這裡更正) |
+| 3.1 清空庫存 | `BEAS_RESERVATION_LINE`(`ItemCode`、`WhsCode`) | PDF 第 262 頁有表,`ItemCode`、`WhsCode`、`Quantity`(Reserved Quantity)都有 |
+| 3.2 收貨後處理 | `BEAS_FTPOS.UDF2` | PDF 第 139 頁有:「User Field 2」 |
+| 4.1 範例 4 | `BEAS_FTHAUPT.UDF4` | PDF 第 132 頁有:「User Field 4」 |
+| 11.7 CreateWorkOrderEnd | `BEAS_FTHAUPT.SPERRUNG` | PDF 第 132 頁有:「Block,Yes=J」 |
+| 4.6 結案工單 | `BEAS_FTHAUPT.ABGKZ` | PDF 第 131 頁有:「Closed,Yes=J」 |
+| 多個範例 | `BEAS_FTPOS.BELNR_ID`、`BELPOS_ID` | 有:工單號(內部計數)與工單位置 |
+| 11.7 CreateWorkOrderEnd | `BEAS_APLATZ_STILLSTAND`(`APLATZ_ID`、`DATUM_BIS`) | PDF 第 35 頁有表,兩個欄位都有 |
+| 5.1 QC | `BEAS_QSFTPOS.QS_ID`、`MESSWERTC`、`SPERRGRUNDID`、`MINIMAL`、`MAXIMAL` | PDF 第 237 頁五個欄位都有(先前 `MAXIMAL` 未確認,這裡補上) |
+| 6.1 設定精靈 | `BEAS_APL_HEADER.ItemCode`、`DESCRIPTION` | PDF 第 24 頁有:`ItemCode` 為 Routing ID,`DESCRIPTION` 為 Description |
 | 3.2、4.x | `IBT1`、`OBTN`、`OITM` 等 | SAP 標準資料表,不屬於 Beas 文件 |
 
-> 官方 `database.htm` 連結到一份完整的資料庫文件 `database.pdf`,不在目前抓到的頁面中。要確認「未說明」的欄位,需要這份 PDF 或實際查詢資料庫結構。
+> 其他查證結果:`zeilentyp` 在 PDF 中出現 **0 次**(它是視窗上的欄位,不是資料庫欄位),所以 PDF 無法回答 `zeilentyp = 0 / 10` 的意義;QC 範例中的 `dw_1` / `dw_2` 對應哪組資料,PDF 也無法回答。使用者也已用其他方式搜尋所有已抓頁面,結論相同:官方文件沒有說明。
 
 ### Beas 視窗事件一覽(官方 `window events (beas)`)
 

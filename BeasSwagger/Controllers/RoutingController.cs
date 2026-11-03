@@ -13,7 +13,8 @@ public class RoutingController(IBeasGateway gw, BeasScriptRunner runner) : Contr
     [HttpPost("add")]
     public async Task<ActionResult<BeasResult>> Add(RoutingRequest req, CancellationToken ct)
     {
-        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.RoutingAdd(req), null, ct));
+        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.RoutingAdd(req),
+            () => BeasBslBuilder.RoutingAdd(req), ct));
     }
 
     /// <summary>更新工藝</summary>

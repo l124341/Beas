@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>date and time</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="datetime-format,format datetime,time-format" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Convert string to date: setvar=cdatum=&lt;today,yyyy/mm/dd&gt; messagebox=&lt;cdatum,date yyyymmdd&gt; 23:30 &nbsp; &nbsp; &nbsp;=&gt; 20030201 23:30 &nbsp;More info see: format &nbsp; Normally it is sufficient" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "",
+   prevP: "",
+   currP: "date_and_time.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "date and time",
+   mailsubject: "Feedback on: Beas Script 2026.09 - date and time",
+   sharesubject: "Beas Script 2026.09 - date and time",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Date_and_time",
+   mailpath: "Keywords &gt; DateTime format /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - date and time").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "date_and_time.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>date and time</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">date and time</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Convert string to date:</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=cdatum=&lt;today,yyyy/mm/dd&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;cdatum,date yyyymmdd&gt; 23:30 &nbsp; &nbsp; &nbsp;=&gt; 20030201 23:30</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">More info see: <a href="format.htm" class="topiclink">format</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Normally it is sufficient to use the date <span class="f_CourierFixed">&lt;mydate&gt;</span></p>
+<p class="p_Normal">This returns the standard-format (depending on the language) without time.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">These are the possible defaults for formatting: </p>
+<p class="p_Normal"><span class="f_CourierFixed">date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>language-depending display and print</p>
+<p class="p_Normal"><span class="f_CourierFixed">dbdate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>database-depending pass-on to the SELECT-command</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;Please do not use quotation marks</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">select * from ordr where docdate=&lt;today,dbdate&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the variable is format &quot;datetime&quot; then you've follow formats</p>
+<p class="p_Normal"><span class="f_CourierFixed">userdate &nbsp; &nbsp; &nbsp; &nbsp;</span>Date-Format current user</p>
+<p class="p_Normal"><span class="f_CourierFixed">dayname &nbsp; &nbsp; &nbsp; &nbsp;</span>Name of current Day in the language from current user</p>
+<p class="p_Normal"><span class="f_CourierFixed">week &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Week-Number (system-calender), example 01, 02 ...</p>
+<p class="p_Normal"><span class="f_CourierFixed">yearweek &nbsp; &nbsp; &nbsp; &nbsp;</span>Year + Week, example 2012/41</p>
+<p class="p_Normal"><span class="f_CourierFixed">time &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Time in current User-Format</p>
+<p class="p_Normal"><span class="f_CourierFixed">datetime &nbsp; &nbsp; &nbsp; &nbsp;</span>Date + Time in current User-Format</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">datetime ldt_date</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ldt_date=&lt;today&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;ldt_date,dayname&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><img alt="help-achtung" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-achtung.gif"/><span class="f_Heading1">How to use date values</span></h1>
+<p class="p_Normal">If you pass-on date values you should use the international formatting yyyy/mm/dd</p>
+<p class="p_Normal"><span class="f_CourierFixed">datetime dt_parm1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dt_parm1=&lt;today,yyyy/mm/dd&gt;</span></p>
+<p class="p_Normal">Only this provides correct international functionality. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you want to reduce the result of a SQL-command with a date, use <span class="f_CourierFixed">str_parm</span>.<span class="f_CourierFixed">dt_parm1</span> / <span class="f_CourierFixed">str_parm</span>.<span class="f_CourierFixed">dt_parm2</span>. <span class="f_CourierFixed">dt_parm2</span> always contains the time 24:00</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">Time-Format</span></h1>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">Character &nbsp; &nbsp; &nbsp; &nbsp;Meaning</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">h &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Hour with no leading zero (for example, 1)</p>
+<p class="p_Normal"><span class="f_CourierFixed">hh &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Hour with leading zero if appropriate (for example, 01)</p>
+<p class="p_Normal"><span class="f_CourierFixed">m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Minute with no leading zero (must follow h or hh)</p>
+<p class="p_Normal"><span class="f_CourierFixed">mm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Minute with leading zero if appropriate (must follow h or hh)</p>
+<p class="p_Normal"><span class="f_CourierFixed">s &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Second with no leading zero (must follow m or mm)</p>
+<p class="p_Normal"><span class="f_CourierFixed">ss &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Second with leading zero (must follow m or mm)</p>
+<p class="p_Normal"><span class="f_CourierFixed">ffffff &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Microseconds with no leading zeros. You can enter one to six f's; each f represents a fraction of a second (must follow s or ss)</p>
+<p class="p_Normal"><span class="f_CourierFixed">AM/PM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Two-character, upper-case abbreviation (AM or PM as appropriate)</p>
+<p class="p_Normal"><span class="f_CourierFixed">am/pm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Two-character, lower-case abbreviation (am or pm as appropriate)</p>
+<p class="p_Normal"><span class="f_CourierFixed">A/P &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>One-character, upper-case abbreviation (A or P as appropriate)</p>
+<p class="p_Normal"><span class="f_CourierFixed">a/p &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>One-character, lower-case abbreviation (a or p as appropriate)</p>
+<p class="p_Normal"><span class="f_CourierFixed">[time] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>The keyword [Time] tells PowerBuilder to use the time format specified in the Microsoft Windows control panel.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Usage</span></p>
+<p class="p_Normal">24-hour format is the default. Times display in 24-hour format unless you specify AM/PM, am/pm, A/P, or a/p.</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">Format &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Displays</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">h:mm AM/PM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9:45 PM</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">hh:mm A/P &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;09:45 P</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">h:mm:ss am/pm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9:45:33 pm</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">h:mm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;21:45</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">h:mm:ss &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;21:45:33</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">h:mm:ss:f &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;21:45:33:2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">h:mm:ss:fff &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;21:45:33:234</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">h:mm:ss:ffffff &nbsp; &nbsp; &nbsp; &nbsp;21:45:33:234567</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">m/d/yy h:mm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1/30/03 21:45</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">message=&lt;timefield,hh:mm:ss AM/PM&gt;</span>: 08:00:00 PM</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Date-Format</span></h1>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following table shows characters that have special meaning in date display formats.</p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">Character &nbsp; &nbsp; &nbsp; &nbsp;Meaning &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Example</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">d &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Day number with no leading zero &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9</p>
+<p class="p_Normal"><span class="f_CourierFixed">dd &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Day number with leading zero if appropriate &nbsp; &nbsp; &nbsp; &nbsp;09</p>
+<p class="p_Normal"><span class="f_CourierFixed">ddd &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Day name abbreviation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Mon</p>
+<p class="p_Normal"><span class="f_CourierFixed">dddd &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Day name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Monday</p>
+<p class="p_Normal"><span class="f_CourierFixed">m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Month number with no leading zero &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6</p>
+<p class="p_Normal"><span class="f_CourierFixed">mm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Month number with leading zero if appropriate &nbsp; &nbsp; &nbsp; &nbsp;06</p>
+<p class="p_Normal"><span class="f_CourierFixed">mmm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Month name abbreviation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Jun</p>
+<p class="p_Normal"><span class="f_CourierFixed">mmmm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Month name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;June</p>
+<p class="p_Normal"><span class="f_CourierFixed">yy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Two-digit year &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;97</p>
+<p class="p_Normal"><span class="f_CourierFixed">yyyy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Four-digit year &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1997</p>
+<p class="p_Normal">Colons, slashes, and spaces display as entered in the mask.</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">Format &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Displays</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">[red]m/d/yy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #ff0000;">1/30/03</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">d-mmm-yy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>30-Jan-03</p>
+<p class="p_Normal"><span class="f_CourierFixed">dd-mmmm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>30-January</p>
+<p class="p_Normal"><span class="f_CourierFixed">mmm-yy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Jan-03</p>
+<p class="p_Normal"><span class="f_CourierFixed">dddd, mmm d, yyyy &nbsp; &nbsp; &nbsp; &nbsp;</span>Friday, Jan 30, 2003</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">Example for datetime</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">message=&lt;timestampfield,MMMM d yyyy hh:mm:ss AM/PM&gt;</span>: January 1 2006 08:00:00 PM</p>
+<p class="p_Normal"><span class="f_CourierFixed">message=&lt;timestampfield,MMMM d, yyyy HH:mm:ss AM/PM&gt;</span>: December 31, 2006 20:00:00 PM</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">for convert date in sql-statements work with format-string <span class="f_CourierFixed">dbdate</span>!</p>
+<p class="p_Normal"><span class="f_CourierFixed">select * from mytable where date_id between &lt;fromdate,dbdate&gt; and &lt;todate,dbdate&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">write datetime-field</span></p>
+<p class="p_Normal">set a datetime-field with format yyyy/mm/dd hh:mm</p>
+<p class="p_Normal">Example: </p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.fromdate.value=&lt;today,yyyy/mm/dd&gt; &lt;now,time&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

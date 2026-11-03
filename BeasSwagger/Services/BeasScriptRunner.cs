@@ -23,12 +23,19 @@ public class BeasInterfaceNotSupportedException(string message) : Exception(mess
 /// <summary>依接口選擇對應的 script 產生器,再交給 IBeasScriptClient 執行。</summary>
 public class BeasScriptRunner(IBeasScriptClient client, IOptions<BeasOptions> opt)
 {
+    /// <summary>
+    /// 依接口選擇 script 產生器。規則:
+    /// 選 Bsl 但該端點沒有 Bsl 版 → 501(不會偷偷改用 Script);
+    /// 選 Script 但該端點只有 Bsl 版 → 明確指定才 501,未指定(使用全域預設)則自動用 Bsl。
+    /// pre(前置 SQL)只在 Script 路徑使用。
+    /// </summary>
     public Task<BeasResult> RunAsync(BeasRequest req, Func<(string requestId, string script)>? script,
-        Func<(string requestId, string script)>? bsl, CancellationToken ct)
+        Func<(string requestId, string script)>? bsl, CancellationToken ct, IReadOnlyList<BeasSqlStatement>? pre = null)
     {
         var which = req.Interface ?? opt.Value.Interface;
         (string id, string text) built;
-        if (which == BeasInterface.Bsl && bsl is not null)
+        bool viaScript = false;
+        if (which == BeasInterface.Bsl)
         {
             if (bsl is null)
                 throw new BeasInterfaceNotSupportedException("此功能尚未實作 Beas Service Layer 版本,請改用 Interface=Script");
@@ -36,12 +43,11 @@ public class BeasScriptRunner(IBeasScriptClient client, IOptions<BeasOptions> op
         }
         else if (script is null)
         {
-            // 只有 Bsl 版的功能:請求明確指定 Script 才拒絕;未指定時自動使用 Bsl
-            if (req.Interface == BeasInterface.Script)
+            if (req.Interface == BeasInterface.Script || bsl is null)
                 throw new BeasInterfaceNotSupportedException("此功能只有 Beas Service Layer 版本,請改用 Interface=Bsl(或不指定)");
-            built = bsl!();
+            built = bsl();
         }
-        else built = script();
-        return client.RunScriptAsync(built.id, built.text, req.Connection, ct);
+        else { built = script(); viaScript = true; }
+        return client.RunScriptAsync(built.id, built.text, req.Connection, ct, viaScript ? pre : null);
     }
 }

@@ -17,14 +17,15 @@ Swagger 端點 → 組出 Beas Script → `INSERT INTO <db>."BEAS_COMMON_INPUT"(
   - `production/finished-receipt`、`production/return-good`(入庫/半成品退回,`ue_reservation=receiptwo`,base_linenum2=0 為父項)
   - `production/finished`(完工回報,`ue_api_time`)
   - `bom/create`、`bom/change`、`bom/create-version`(`ue_api_bom`)
-  - `routing/add`(`ue_api_routing`)
+  - `routing/add`(`ue_api_routing`;REQUESTID=`Rot:`+Mes+CreateDate,結果回傳新行 pos_id)、`routing/sql-result-back`(`Rot:`+Mes+CreateTime)
+  - `routing/change`、`routing/delete`:照原 DLL **直接對 `BEAS_APL_WKZ`、`BEAS_APL` 下 DELETE**(整條途程),`change` 是「先刪整條途程再建立只有這一個工序的新途程」(刪除與寫入 INPUT 同一交易,**會移除該料號其他所有工序**)。預設關閉:需 `Beas:Script:AllowDirectSqlWrite=true`,否則回 HTTP 403;只有 Script 版。SQL 固定在程式內且值參數化(原 DLL 是字串串接)。
   - `workorder/change-bom`(`ue_api_wo` 的 `bom_replaceitem`:取代工單 BOM 某行料號,欄位 Woid/Woposition/Woitemposition/NewItem 來自原 DLL;Bsl 版為 `PUT WorkorderBom`)
   - `workorder/import-single`、`workorder/import-more`(`ue_api_wo`;建立後工單號用 `<mywo.docentry>` 取得,屬性名稱為推測)
   - 各 `sql-result-back`、`workorder/del-result-back`:對應原 DLL 的 `sqlresultback`/`delresultback`,只讀一次 `BEAS_COMMON_OUTPUT`(依 REQUESTID 取 COUNTID 最大且 ANSWERTEXT 非空的一筆),查不到回「尚無結果」由呼叫端重試;`del-result-back` 預設 REQUESTID=`wobominsert`+CreateTime(原 DLL 寫死),`sql-result-back` 預設 Mes+CreateTime(推測),兩者都可用 `RequestId` 直接覆寫
   - `bom/check`、`bom/max-level`:唯讀 SQL 查 `BEAS_STL`(`Services/IBeasQueryClient.cs`,只允許單一 SELECT、值參數化;欄位名稱取自 api_bom 說明,未對真實資料庫驗證;Mock 模式只回傳將執行的 SQL)
 - 其餘端點仍是 Mock,文件沒有對應語法:BOM 刪除、check-version、search-other-version、routing change/delete、unit、scrap、scrapdetail、workorder 的 import-with-machine。
 - `Beas:UseMock=true` 時只回傳產生的 script,不寫庫;改 `false` 後才真的寫入。
-- `Beas:Script:OdbcConnectionString` 要與原 `connection()` 一致(預設是 HANA 的猜測值)。
+- `Beas:Script:OdbcConnectionString` 預設已與原 DLL 的 `connection()` 一致:`Driver=HDBODBC32;ServerNode=…;uid=…;pwd=…;DATABASE=…`(HANA;`HDBODBC32` 為 32 位元驅動,64 位元環境請改 `HDBODBC`)。
 
 ## 待確認
 - `BomItem`、`WorkOrderItem`、`ChangeBomItem` 的欄位是推測的,Excel 沒有定義,請依 DLL 調整。

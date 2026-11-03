@@ -22,11 +22,13 @@ if (builder.Configuration.GetValue<bool>("Beas:UseMock", true))
 {
     builder.Services.AddSingleton<IBeasScriptClient, MockBeasScriptClient>();
     builder.Services.AddSingleton<IBeasQueryClient, MockBeasQueryClient>();
+    builder.Services.AddSingleton<IBeasCommandClient, MockBeasCommandClient>();
 }
 else
 {
     builder.Services.AddSingleton<IBeasScriptClient, OdbcBeasScriptClient>();
     builder.Services.AddSingleton<IBeasQueryClient, OdbcBeasQueryClient>();
+    builder.Services.AddSingleton<IBeasCommandClient, OdbcBeasCommandClient>();
 }
 
 builder.Services.AddEndpointsApiExplorer();
@@ -45,6 +47,7 @@ app.Use(async (ctx, next) =>
 {
     try { await next(); }
     catch (BeasInterfaceNotSupportedException e) { ctx.Response.StatusCode = 501; await ctx.Response.WriteAsJsonAsync(new BeasResult(false, e.Message)); }
+    catch (BeasDirectSqlDisabledException e) { ctx.Response.StatusCode = 403; await ctx.Response.WriteAsJsonAsync(new BeasResult(false, e.Message)); }
     catch (ArgumentException e) { ctx.Response.StatusCode = 400; await ctx.Response.WriteAsJsonAsync(new BeasResult(false, e.Message)); }
 });
 app.MapGet("/", () => Results.Redirect("/swagger"));

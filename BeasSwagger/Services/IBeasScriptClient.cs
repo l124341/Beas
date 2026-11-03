@@ -7,7 +7,8 @@ namespace BeasSwagger.Services;
 /// <summary>把 Beas Script 寫入 BEAS_COMMON_INPUT,再輪詢 BEAS_COMMON_OUTPUT 取結果。</summary>
 public interface IBeasScriptClient
 {
-    Task<BeasResult> RunScriptAsync(string requestId, string script, BeasConnection? conn, CancellationToken ct = default);
+    // pre:(選填)與寫入 INPUT 同一個交易、先執行的 SQL(例如 routing.change 先刪舊途程);需 AllowDirectSqlWrite。
+    Task<BeasResult> RunScriptAsync(string requestId, string script, BeasConnection? conn, CancellationToken ct = default, IReadOnlyList<BeasSqlStatement>? pre = null);
 }
 
 public class BeasScriptOptions
@@ -16,22 +17,27 @@ public class BeasScriptOptions
     public string OdbcConnectionString { get; set; } = "";
     public int PollIntervalSeconds { get; set; } = 5;
     public int MaxPolls { get; set; } = 10;
+    /// <summary>是否允許直接對 Beas 資料表寫入 SQL(routing/delete、routing/change)。預設 false;Beas 文件不建議直接改 Beas 表。</summary>
+    public bool AllowDirectSqlWrite { get; set; } = false;
 }
 
 public class MockBeasScriptClient(ILogger<MockBeasScriptClient> log) : IBeasScriptClient
 {
-    public Task<BeasResult> RunScriptAsync(string requestId, string script, BeasConnection? conn, CancellationToken ct = default)
+    public Task<BeasResult> RunScriptAsync(string requestId, string script, BeasConnection? conn, CancellationToken ct = default, IReadOnlyList<BeasSqlStatement>? pre = null)
     {
         log.LogInformation("MOCK script {RequestId}\n{Script}", requestId, script);
-        // Data 回傳將送出的 script,方便在 Swagger 上檢查內容
-        return Task.FromResult(new BeasResult(true, "[MOCK] 未實際寫入資料庫", new { requestId, script }));
+        // Data 回傳將送出的 script(與會先執行的 SQL),方便在 Swagger 上檢查內容
+        return Task.FromResult(new BeasResult(true, "[MOCK] 未實際寫入資料庫",
+            new { requestId, script, preStatements = pre?.Select(s => new { s.Sql, args = s.Args }) }));
     }
 }
 
 public class OdbcBeasScriptClient(IOptions<BeasConnection> defaults, IOptions<BeasScriptOptions> opt) : IBeasScriptClient
 {
-    public async Task<BeasResult> RunScriptAsync(string requestId, string script, BeasConnection? conn, CancellationToken ct = default)
+    public async Task<BeasResult> RunScriptAsync(string requestId, string script, BeasConnection? conn, CancellationToken ct = default, IReadOnlyList<BeasSqlStatement>? pre = null)
     {
+        if (pre is { Count: > 0 } && !opt.Value.AllowDirectSqlWrite)
+            throw new BeasDirectSqlDisabledException("直接寫入 Beas 資料表未啟用(Beas:Script:AllowDirectSqlWrite=false)");
         var c = conn ?? defaults.Value;
         var o = opt.Value;
         if (string.IsNullOrWhiteSpace(o.OdbcConnectionString))
@@ -50,6 +56,11 @@ public class OdbcBeasScriptClient(IOptions<BeasConnection> defaults, IOptions<Be
         // 1. 寫入(參數化,避免 script 內的單引號破壞 SQL)
         await using (var tx = await con.BeginTransactionAsync(ct))
         {
+            if (pre is not null)
+            {
+                try { foreach (var s in pre) OdbcSql.Run(con, (OdbcTransaction)tx, s, c.Database); }
+                catch (OdbcException ex) { await tx.RollbackAsync(ct); return new BeasResult(false, "前置 SQL 失敗,已還原: " + ex.Message); }
+            }
             using var ins = new OdbcCommand(
                 $@"INSERT INTO {c.Database}.""BEAS_COMMON_INPUT"" (COMMONTYP,TEXTPARAMETER,REQUESTID) VALUES ('script', ?, ?)",
                 con, (OdbcTransaction)tx);

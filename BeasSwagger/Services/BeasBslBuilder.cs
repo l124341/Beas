@@ -191,7 +191,7 @@ public static class BeasBslBuilder
         var doc = new Dictionary<string, object?> { ["RoutingId"] = item, ["replace"] = false, ["line"] = new[] { line } };
         var sb = Begin();
         Post(sb, "ls_json", "Routing", J(doc), "routing add");
-        return Finish(sb, "routingadd" + V(r.Mes, "Mes") + item);
+        return Finish(sb, BeasScriptBuilder.RoutingRequestId(r));
     }
 
     /// <summary>工單匯入:每個品項一次 Workorder POST({"WorkorderPos":[...]}),MES 單號寫入 AdditionalText;回傳所有工單號。</summary>

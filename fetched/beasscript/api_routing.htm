@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_api_routing</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="api_routing,object routing" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="api_routing is a Object for Administration of Work schedule." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "routing_header.htm",
+   prevP: "relationcolors.htm",
+   currP: "api_routing.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_api_routing",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_api_routing",
+   sharesubject: "Beas Script 2026.09 - ue_api_routing",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Api_routing",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_api_routing /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_api_routing").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "api_routing.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_api_routing</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_api_routing</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span class="f_CourierFixed">api_routing</span> is a Object for Administration of Work schedule.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Only be used in Beas, not beasgui!</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can declare the object with:</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=&lt;mybom&gt;=ue_api_routing</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Methods</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getbykey=&lt;item&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">load=&lt;item&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Loads a Work schedule</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">load_or_new</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Load a work schedule or creates a new one</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">new=&lt;item&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Create a Work Schedule, or loads if already exists</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addline</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Add a new Row</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setrow=&lt;row&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Set the actual Row</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">update</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Update / Save the actual Work Schedule.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=add</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Add a Resource.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">header</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Aall header function for <a href="routing_header.htm" class="topiclink">routing header</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:159px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">goto_pos=&lt;pos_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:510px; padding:0; border:solid thin #000000;"><p class="p_Normal">Seeks pos in the bom-list and sets the current position to this position</p>
+<p class="p_Normal">if the position is not found, api_bom will return -1 in variable <span class="f_CourierFixed">value</span> </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing.getbykey=&lt;routing-id&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing.goto_pos=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;value&gt; n= 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;routing.description=modified description</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">All Methods will return &nbsp;a Variable &quot;value&quot; (&quot;1=ok / 0=error&quot; ).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:223px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:184px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Column name in table</span></p>
+</th>
+<th style="vertical-align:top; width:261px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rowcount</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">Count of all Rows. ReadOnly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">currentrow</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">Actual Row. ReadOnly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">position ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">operation</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ag_id</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">link to beas_ag</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">workcenter</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">aplatz_id</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">link to beas_aplatz</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">description</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bez</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">description2</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">anweisung</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">second description (not editable in program)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">activ</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">aktivformel</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">active formula<br />
+<span class="f_CourierFixed">&quot;&quot; = activ</span><br />
+<span class="f_CourierFixed">N= deactivated</span><br />
+<span class="f_CourierFixed">G=x &nbsp; &nbsp;if amount &gt; x</span><br />
+<span class="f_CourierFixed">K=x &nbsp; &nbsp;if amount &lt; x</span><br />
+<span class="f_CourierFixed">Z=x=y if amount between x and y</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">zeitaufndkz</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">zeitaufndat</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setupforcalculator</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">traplatz</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setupforsched</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tr2aplatz</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">maschinetime</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">thaplatz</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">labortime</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tnaplatz</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">maschinelabortime</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">teaplatz</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">use</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">nutzen</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">number</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">anzahl</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">idletime</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tl</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">wagegroup</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lohngruppe</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shareableresource</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">mehrmasch_bed</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timesper</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menge_je</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timesin</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menge_zeitje</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">1 (minute) or 60 (hours)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clockmandantory</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bde</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">y/n</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">maschinegrouping</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">mehrmaschinenbelegung</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">y/n</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">picture1 ... 3</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bild1 ...3</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">3 Pictures</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">inspectionplanqc</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">qs_id</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">cardcode</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">cardcode</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">udf1 ... 4</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">udf1 ... 4</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">4 user fields</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=routingpos</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">when empty, then current posid from routingpos</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=resourcepos</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">wkzpos_id</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=resourceid</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">wkz_id</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=quantity</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menge</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=description</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">zusatzinfo</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=resourcetyp</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resourcentyp</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=setupforesched</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tr</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=maschinetime</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">te</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=timesper</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menge_je</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=timesin</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menge_zeitje</span></p>
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">1 (minute) or 60 (hours)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=rowcount</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">Count of Rows. ReadOnly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource=currentrow</span></p>
+</td>
+<td style="vertical-align:top; width:184px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:261px; padding:0; border:solid thin #000000;"><p class="p_Normal">Current Row. ReadOnly</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">also all columns from the Table &quot;BEAS_APL&quot; and / or Customer specific Columns.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example (for insertion of routing):</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=routing=ue_api_routing</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=new=A001</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=header=description=my first routing</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=addline</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=description=work</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=workcenter=A001</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=maschinetime=50</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=update</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=routing</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example (for insertion of routing with corresponding resources):</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=routing=ue_api_routing</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=new=A001</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=header=description=my first routing</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=addline</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=description=work</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=workcenter=A001</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=maschinetime=50</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=addline</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=resourcepos=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=resourceid=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=quantity=2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=description=Res_01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=resourcetyp=W</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=addline</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=resourcepos=20</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=resourceid=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=quantity=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=description=Res_02</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=resource=resourcetyp=W</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">routing=update</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=routing</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

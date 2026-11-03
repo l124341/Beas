@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bs Beas Service Layer</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="The Beas Service Layer has a connection to a HTTP server and to all functionality of the Beas framework." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bs-statements.htm",
+   prevP: "bs-sql.htm",
+   currP: "bs-bsl.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bs Beas Service Layer",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bs Beas Service Layer",
+   sharesubject: "Beas Script 2026.09 - bs Beas Service Layer",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Bs-BSL",
+   mailpath: "Beas script &gt; BeasScript Tutorial &gt; bs Beas Service Layer /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bs Beas Service Layer").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bs-bsl.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bs Beas Service Layer</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bs Beas Service Layer</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">The Beas Service Layer has a connection to a HTTP server and to all functionality of the Beas framework.</p>
+<p class="p_Normal">Beas does not work with services, but function calls. A running service is not required, because the Beas Service Layer is fully integrated in the Beas core.</p>
+<p class="p_Normal"><img alt="bsl-overview" width="386" height="226" style="margin:0;width:386px;height:226px;border:none" src="bsl-overview.jpg"/></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://www.youtube.com/watch?v=KrrfCo4z5BA&amp;feature=youtu.be" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Beas Service Layer command GET with BeasScript</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/FPDYQ8oKigc" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Beas Service Layer command POST with BeasScript</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/XumBVWmA26s" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Beas Service Layer and datastore</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Working with BSL as a placeholder</span></p>
+<p class="p_Normal">You can return the result directly from BSL. Only GET functions are possible. </p>
+<p class="p_Normal">The syntax is ODATA, UTF8.</p>
+<p class="p_Normal">Variables: String</p>
+<p class="p_Normal">Format: BSL </p>
+<p class="p_Normal">Numbers: num(x)</p>
+<p class="p_Normal">Default Format is JSON if you do not define another.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">bsl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.[</span><span class="f_CodeExample" style="color: #666699;">odata</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">syntax</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]&gt;</span></p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Return the item name of item 0815</p>
+<p class="p_Normal"><img alt="beasscript-logo-small" width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="beasscript-logo-small.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">bsl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;0815&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)/</span><span class="f_CodeExample" style="color: #666699;">ItemName</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Placeholders inside the main placeholder <span style="color: #008000;">&lt;&gt;</span> must be defined with <span style="color: #800000;">[]</span><br />
+Strings must be formatted with &quot;<span style="color: #4bacc6;">,bsl</span>&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">setvar</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ls_itemcode</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">0815</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">messagebox</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #008000;">&lt;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">bsl</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Item</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #800000;">[</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ls_itemcode</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #4bacc6;">,</span><span class="f_CodeExample" style="font-size: 10pt; color: #4bacc6;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">]</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemName</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$</span><span class="f_CodeExample" style="font-size: 10pt;">value</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #008000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Read Bin Management Warehouse Type</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">WareHouse</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #a04db3;">&quot;SAP-BIN&quot;</span><span class="f_CodeExample" style="color: #ff0000;">)/</span><span class="f_CodeExample" style="color: #0000ff;">WhsBinType</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #0000ff;">$</span><span class="f_CodeExample" style="color: #8080ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">Bin</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">managed</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">warehouse</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: This is only working with one Parameter. Comma is not allowed in the place holder string.</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample">bsl</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">Warehouse</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #0000ff;">&quot;SAP-BIN('01')?$select&nbsp;WhsCode</span><span class="f_CodeExample" style="color: #0000ff; background-color: #ffff00;">,</span><span class="f_CodeExample" style="color: #0000ff;">WhsName&gt;</span>&nbsp;&lt;-&nbsp;<span style="font-weight: bold; color: #ff0000;">Wrong</span>,&nbsp;comma&nbsp;not&nbsp;allowed&nbsp;in&nbsp;the&nbsp;&lt;..&gt;&nbsp;placeholder&nbsp;string,&nbsp;because&nbsp;after&nbsp;a&nbsp;comma&nbsp;you&nbsp;define&nbsp;the&nbsp;format!</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Error handling</span></p>
+<p class="p_Normal">If there is a syntax error, Beas displays this as an error message and returns an empty string.</p>
+<p class="p_Normal">In a placeholder <span class="f_CourierFixed">&lt;object.ret_code&gt;</span> and <span class="f_CourierFixed">&lt;object.ret_text&gt;</span> it is possible to read complete text.</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">ls_itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">0815</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Produce&nbsp;an&nbsp;Syntax&nbsp;error</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">ls_itemName</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">NotExistCommand</span><span class="f_CodeExample" style="color: #ff0000;">([</span><span class="f_CodeExample" style="color: #0000ff;">ls_test</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">])/</span><span class="f_CodeExample" style="color: #0000ff;">ItemName</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #0000ff;">$</span><span class="f_CodeExample" style="color: #8080ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Check&nbsp;Result</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #0000ff;">object</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=(&lt;</span><span class="f_CodeExample" style="color: #0000ff;">object</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">&gt;)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #0000ff;">object</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">ret_text</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Comma in placeholder is not supported. Use Pipeline</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ll_DocEntry</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">6002479</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ll_LineNumber</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">10</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Note:&nbsp;use&nbsp;Pipeline,&nbsp;becaus&nbsp;comman&nbsp;in&nbsp;place&nbsp;holder&nbsp;not&nbsp;supported</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lc_bookedQty</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">WorkorderPos</span><span class="f_CodeExample" style="color: #ff0000;">([</span><span class="f_CodeExample" style="color: #3366ff;">ll_DocEntry</span><span class="f_CodeExample" style="color: #ff0000;">]|[</span><span class="f_CodeExample" style="color: #3366ff;">ll_LineNumber</span><span class="f_CodeExample" style="color: #ff0000;">]).</span><span class="f_CodeExample" style="color: #3366ff;">QuantityProduced</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">$Value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">booked</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lc_bookedQty</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">See</span> <span class="f_Example">Example</span>: </p>
+<p class="p_Normal"><a href="example_change_wms_prodline.htm" class="topiclink">After work order creation - get WMS Production Line</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Working with instance object</span></p>
+<p class="p_Normal">It is possible to define the service layer as and object. Use this option if you must work with a body or if you need a fast result for one result line.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Fast result line</span></p>
+<p class="p_Normal">This option is very fast, because it does not create a datastore.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">bsl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">b</span><br />
+<span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)?</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemName</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">ItemCode</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ItemName</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">More see <a href="bsue_bsl.htm" class="topiclink">ue_besl</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Return as formatted string</span></p>
+<p class="p_Normal">With GetString the result is a string in JSON format or in the format defined in <span class="f_CourierFixed">$format</span>.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">bsl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">b</span><br />
+<span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">getstring</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)?</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemName</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">$format</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">xml</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">linefeed</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ret_vale</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Function calls</span></p>
+<p class="p_Normal">Get next Batch Number for a work order</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">bsl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">get</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">WorkorderPos</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">GetNextBatchNumber</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample">6002478,40</span><span class="f_CodeExample" style="color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Return only one value (best performance)</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">b</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">get</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Itemcode</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #a04db3;">&quot;a001&quot;</span><span class="f_CodeExample" style="color: #ff0000;">)/</span><span class="f_CodeExample" style="color: #3366ff;">ItemName</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">$value</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #0000ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">then</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #0000ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">ret_value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Work with aggregate functions</span></p>
+<p class="p_Normal">Support<span class="f_CourierFixed"> $sum, $min, $max, $avg</span> and <span class="f_CourierFixed">$count</span></p>
+<p class="p_Normal">return Stock informations</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">bsl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">get</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">WareHouseStock</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #a04db3;">&quot;BW&quot;</span><span class="f_CodeExample" style="color: #ff0000;">)/</span><span class="f_CodeExample" style="color: #3366ff;">OnHand</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">$sum</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ret_value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Return as object</span></p>
+<p class="p_Normal">With &quot;get&quot; a JSON object is generated. All properties are readable with the JSON object.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">instance&nbsp;bsl&nbsp;b</span><br />
+<span class="f_CodeExample">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">body</span><span class="f_CodeExample" style="color: #ff0000;">=[</span><span class="f_CodeExample">define&nbsp;the&nbsp;body&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample">json&nbsp;string</span><span class="f_CodeExample" style="color: #ff0000;">...)]</span><br />
+<span class="f_CodeExample">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">get</span><span class="f_CodeExample" style="color: #ff0000;">=[</span><span class="f_CodeExample">beas&nbsp;service&nbsp;layer&nbsp;get&nbsp;command</span><span class="f_CodeExample" style="color: #ff0000;">]</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;b.ret_code&gt;</span> -&gt; <span class="f_CourierFixed">0</span> = ok, <span class="f_CourierFixed">400</span> = Syntax error, <span class="f_CourierFixed">404</span> = not found, all other messages are error messages</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;b.ret_text&gt;</span> = Error message</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;b.ret_value&gt;</span> = The return value of the Beas Service Layer, but only text information</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return the result in a JSON object:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">json</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">j</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">b</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;parse&nbsp;Item&nbsp;781</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">get</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">Item</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #a04db3;">&quot;781&quot;</span><span class="f_CodeExample" style="color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Return&nbsp;ItemName</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #0000ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">ItemName</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;copy&nbsp;in&nbsp;a&nbsp;json&nbsp;object&nbsp;-&nbsp;with&nbsp;reference&nbsp;to&nbsp;the&nbsp;bsl&nbsp;object</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #8080ff;">parse</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">b</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Working with BSL as datastore</span></p>
+<p class="p_Normal">There is a new <span class="f_CourierFixed">bsl</span> method in the <span class="f_CourierFixed">ue_datastore</span>.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">d</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Read&nbsp;Data&nbsp;from&nbsp;Beas&nbsp;Service&nbsp;Layer</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">Item</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #a04db3;">&quot;781&quot;</span><span class="f_CodeExample" style="color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Now&nbsp;all&nbsp;functions&nbsp;available&nbsp;from&nbsp;Datastore&nbsp;object</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #0000ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">ItemCode</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">In case of the <span class="f_CourierFixed">&lt;d.red_code&gt;</span>,<span class="f_CourierFixed">&lt;d.ret_text&gt;</span> error, you can read the information.</p>
+<p class="p_Normal"><a href="example_timereceipt-rules.htm" class="topiclink">Example: Userevent time receipt - check booked material positions</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Working with BSL in the drop-down</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">WhsCode</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">dropdown</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">WareHouse</span><span class="f_CodeExample" style="color: #ff0000;">?</span><span class="f_CodeExample" style="color: #0000ff;">$filter</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">Transaction</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;IncomingGoods&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you do not define select, Beas automatically creates the current drop-down with visual information.</p>
+<p class="p_Normal">If fields are defined, the Grid information is returned with a correct Title Name.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following example creates a drop-down list with Bitmap, Warehouse Code and WhsName:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">WhsCode</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">dropdown</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">Warehouse</span><span class="f_CodeExample" style="color: #ff0000;">?</span><span class="f_CodeExample" style="color: #0000ff;">$</span><span class="f_CodeExample" style="color: #8080ff;">select</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">WhsBitmapName</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">WhsCode</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">WhsName</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Working with DataWindow</span></p>
+<p class="p_Normal">A list of all items.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">Item</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This option can be slow if the DataField in the DataWindow is not the same as the BSL result.</p>
+<p class="p_Normal">Beas as follows:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Checks if the datastore schema is same as result schema. If yes, it copies the data directly.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>If datastore schema is not exactly the same as the result schema, it inserts this field mapping line by line, which is a slow process.</p>
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

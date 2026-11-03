@@ -1,0 +1,700 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bs Type String</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Beas Variables always string, if defined with &quot;setvar&quot;" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bs_date.htm",
+   prevP: "bscriptoperators.htm",
+   currP: "bs_string.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bs Type String",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bs Type String",
+   sharesubject: "Beas Script 2026.09 - bs Type String",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bs_string",
+   mailpath: "Beas script &gt; BeasScript Tutorial &gt; bs Type String /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bs Type String").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bs_string.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bs Type String</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bs Type String</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Beas Variables always string, if defined with &quot;setvar&quot;</p>
+<p class="p_Normal">Alternative is to declare variable with <span class="f_CourierFixed">instance string</span> or <span class="f_CourierFixed">local string</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: <a href="userevent.htm" class="topiclink">userevents</a> always works with string declared with &quot;setvar&quot;.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Max. length of strings: &nbsp;theoretical no limitation, limitation only based on windows</p>
+<p class="p_Normal">Strings always saved in UTF8 format.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Working with SQL Database:</p>
+<p class="p_Normal">if you want to use string in SQL Database fields, you must convert this with format &quot;dbstring&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myText</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">update</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">myTable</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">set</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">myField</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">myText</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">dbstring</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">...</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can set the format with</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_mystring</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">format</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">or</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;%</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">var</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ls_mystring&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;format1&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;format&nbsp;2&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,...</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:245px; height:16px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</th>
+<th style="vertical-align:top; width:520px; height:16px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,date&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Converts string to date-format</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,num&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Deletes thousand-dot-separator and replaces comma with dot. (for German decimal-format) </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,space x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Enlarges String to x chars.<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_CourierFixed">&lt;abc,space 4&gt;</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span>returns &quot;abc &quot;. <span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_CourierFixed">&lt;abc,space 2&gt;</span> returns &quot;ab&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,lefttrimrow xRow xLeft&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Extracts row xRow and trims xLeft chars from the left. The remaining blank spaces from the right are deleted</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,lefttrim xLeft&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Trims xLeft chars from the left and deletes blank spaces </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,left xLeft&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns xLeft chars from the left</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,trim&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Deletes all space, tabs, cr_lf and char(160) from left and right site from the string and all &quot;&lt;P&gt;&lt;/P&gt;&quot; from right side</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,lasttoken x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Returns the last token</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">red</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">blue</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">yellow</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">lasttoken</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,&gt;</span></p>
+<p class="p_Normal">&nbsp;<br />
+Returns<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">: </span><span class="f_CourierFixed">yellow</span></p>
+<p class="p_Normal">the &nbsp;variable you can set in &quot;&quot; or define with char(). You can't work with placeholder.</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> token is char 9</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">lasttoken</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">char</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #0000ff;">9</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)&gt;</span><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,token xToken xTokensign&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Returns the xToken from the string</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Separator is &quot;=&quot; or the specified token sign. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">a</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">c</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">d</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">token</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">2</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,&gt;</span><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;b&quot;</span></p>
+<p class="p_Normal">the second variable you can set in &quot;&quot; or define with char(). You can't work with placeholder.</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> token is char 9</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">token</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">2</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">char</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #0000ff;">9</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)&gt;</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CourierFixed">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,right xRight&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns xRight chars from the right of the string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_ImageCaption"> </span><span class="f_CourierFixed">&lt;string,len&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns the len from string</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;hello world,len&gt; </span>return<span class="f_CourierFixed"> 11</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_ImageCaption"> </span><span class="f_CourierFixed">&lt;string,lower&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Converts string to lower string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,upper&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Converts string to upper string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,mid pos length&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns a part-sequence of the string</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">World</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">mid</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">4</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">Returns:<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_CourierFixed">o</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,pos x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">gets the position of the first appearance of the character x.</p>
+<p class="p_Normal">x can be included in &quot;...&quot; </p>
+<p class="p_Normal">x can be done with char(ascii) </p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">hello</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">world</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">pos</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">char</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #0000ff;">9</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)&gt;</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">&nbsp;</span>returns&nbsp;6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,default x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If String=NULL or String=leer then use the default &quot;x&quot; </p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">column</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">default</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">hello</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">:</span>&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;content&nbsp;of&nbsp;<span class="f_CourierFixed">column</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">&nbsp;</span>then&nbsp;returns<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">&nbsp;&quot;</span><span class="f_CourierFixed">hallo</span><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,isnull x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">like default but only if content is &quot;NULL&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,padr xtoken=xlength&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">fills the String up to &quot;xlength&quot; chars from the left with the token &quot;xToken&quot;.</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">padr</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">5</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">Return:<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_CourierFixed">00001</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,monthname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If string is date then returns the month</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,datename&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If string is date then returns the week-day</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,rtf&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Converts CR_LF to RTF-CR_LF</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,time&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Formats string to time in current user-language, e. g. 15 gets &nbsp;15:00 or 3:00 pm</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,time2sec&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Convert time to seconds</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,string2price&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Formatted a price field in a price</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Decimal separators would be corrected, thousands separators and currency removed.</p>
+<p class="p_Normal">e.g. English $ 1,234.56 to German system</p>
+<p class="p_Normal">1234.56</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,string2currency&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Formatted a price field in a currency field</p>
+<p class="p_Normal">e.g. USD 1,234.56 will be USD</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,tosql&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">replace all ' to &quot;</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_string</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">my</span><span class="f_CodeExample">&nbsp;name&nbsp;</span><span class="f_CodeExample" style="color: #666699;">is</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'tom'</span><br />
+<span class="f_CodeExample" style="color: #666699;">sql</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">update</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">mycolumn</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">N</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'&lt;ls_string,tosql&gt;'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">primarycol</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'test'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Now Beas updates the string: my name is &quot;tom&quot;, because a string with ' generate an error.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Better is using &quot;dbstring&quot;.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,dbstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Replace string to SQL-String</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to insert a string directly in a SQL-command, then always use this format.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">MSSQL:</span></p>
+<p class="p_Normal">set <span class="f_CourierFixed">N'</span> before the string</p>
+<p class="p_Normal">set <span class="f_CourierFixed">'</span> after the string</p>
+<p class="p_Normal">replace <span class="f_CourierFixed">'</span> in the string</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_string</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Hello&nbsp;'World'&nbsp;&quot;</span></p>
+<p class="p_Normal">Result: <span class="f_CourierFixed">N'Hello ''World'' '</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_string</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;my&nbsp;name&nbsp;is&nbsp;'tom'&nbsp;&quot;</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1001&quot;</span><br />
+<span class="f_CodeExample" style="color: #666699;">sql</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">update</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">mycolumn</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_string</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">dbstring</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">primarycol</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'test'</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,ascii&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Display the ascii-values from string</p>
+<p class="p_Normal"><span class="f_Example">Example</span> &lt;ABC,ascii&gt; return (65) (66) (67)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,trimhtml&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:520px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Trims trailing and leading empty HTML tags.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span>:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;p&gt;&lt;/p&gt;Hello World</span> to <span class="f_CourierFixed">Hello World</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">Hello&lt;br&gt;World&lt;span&gt;&lt;/span&gt;</span> to <span class="f_CourierFixed">Hello&lt;br&gt;World</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">WEB-Developement</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,json2string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><p class="p_Normal">Converts JSON to String</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//Wolrd/tTab/'Quote/'</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_text</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_json</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">json2string</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Hello/Word&nbsp;&nbsp;&nbsp;Tab'Quote'</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,tojson&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><p class="p_Normal">Converts String to JSON Format. Opposite from json2string</p>
+<p class="p_Normal">Returns value with double quote</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,tojsondate&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><p class="p_Normal">Converts String to JSON Date format</p>
+<p class="p_Normal">Returns value with double quote</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,html2text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><p class="p_Normal">Replaces all <span class="f_CourierFixed">&lt;</span>, <span class="f_CourierFixed">&gt;</span> and <span class="f_CourierFixed">'</span> to <span class="f_CourierFixed">{ }</span> and <span class="f_CourierFixed">´</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,html2textarea&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><p class="p_Normal">Replaces all <span class="f_CourierFixed">&lt;textarea</span> and <span class="f_CourierFixed">&lt;/textarea</span> to <span class="f_CourierFixed">{textarea</span> and <span class="f_CourierFixed">{/textarea</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,html2num x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><p class="p_Normal">This method is to check a numeric value in a string &nbsp;and return it. The default behavior is to use the decimal system on base 10. It is possible to use a system based on 16 or 2 by using the x parameter. It is highly recommended to use this method to prevent SQL injections.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Examples</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">0815</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">html2num</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;815</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">World</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">html2num</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;0</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">A100</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">html2num</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">16</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;A100</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">XYZ500</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">html2num</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">16</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;0</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1100101</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">html2num</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;1100101</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; height:205px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,text2html&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; height:205px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Check HTML sequence. close all opened attributes</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">replace <span class="f_CourierFixed">`</span> to <span class="f_CourierFixed">&amp;#38;</span></p>
+<p class="p_Normal">replace <span class="f_CourierFixed">&lt;</span> to <span class="f_CourierFixed">&amp;lt; </span>if this not a allowed attribut</p>
+<p class="p_Normal">replace &gt; to <span class="f_CourierFixed">&amp;gt; </span>if this not a allowed attribut</p>
+<p class="p_Normal">replace <span class="f_CourierFixed">&quot;</span> to <span class="f_CourierFixed">&amp;quot;</span></p>
+<p class="p_Normal">replace<span class="f_CourierFixed"> line feed </span>to<span class="f_CourierFixed"> &lt;br\&gt;</span></p>
+<p class="p_Normal">close all opened html attributs</p>
+<p class="p_Normal">delete bad html attributs </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">allowed attributes:</p>
+<p class="p_Normal">all for table and standard formatting</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_result=%var(&quot;ls_result&quot;,&quot;checkhtml&quot;)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_html=&quot;</span><span class="f_CourierFixed" style="color: #008000;">&lt;P&gt;Hello World</span><span class="f_CourierFixed">&quot;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;ls_html,text2html&gt;</span></p>
+<p class="p_Normal">=&gt; <span class="f_CourierFixed" style="color: #008000;">&lt;P&gt;Hello World</span><span class="f_CourierFixed" style="color: #ff0000;">&lt;/P&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,dbhtml&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><p class="p_Normal">replace ` to &amp;#8242;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,url2string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><p class="p_Normal">Converts a URL-String to normal String</p>
+<p class="p_Normal">Replaces all %-Placeholders</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,tourl&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Convert to URL-format</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">replaces all ascii &lt; 33 and &gt; 128 in %hex-values</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_text=hello world</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">meldung=info$$&lt;ls_text,tourl&gt;</span></p>
+<p class="p_Normal">display &quot;hello%20world&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,htmlcharset2string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Convert a HTML / XML - String to Ansi String</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Replaces all &amp;xxx; - sequence with correct sign</p>
+<p class="p_Normal"><span class="f_CourierFixed">&amp;#[decimal];</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&amp;#x[hexadecimal];</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">and the following special signs:</p>
+<p class="p_Normal"><span class="f_CourierFixed">nbsp</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">amp</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">quot</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lt</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">gt</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">apos</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">szlig</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">copy</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">reg</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">trade</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">laquo</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">qaquo</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bull</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">middot</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">uml</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">cent</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">euro</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">pund</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">curren</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">yen</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">fnof</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can use it to convert strings from a XML file to Unicode Standard</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Display</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&amp;&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Special</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">sign</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">amp</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">HEX</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">#x26</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Decimal</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">#</span><span class="f_CodeExample" style="color: #0000ff;">38</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #666699;">meldung</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">html2charset2string</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Hexa decimal</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:245px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Format</span></p>
+</th>
+<th style="vertical-align:top; width:361px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,tohex&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Convert an integer (0-255) in hexadecimal with 2 digits</p>
+<p class="p_Normal">0 = 00, 5=05, 255=FF...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,tolonghex&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Convert to long hex with 3 Numbers</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> 255=0000FF, 256 = 000100 and so on</p>
+<p class="p_Normal">(for coloring in HTML)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:245px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;string,hex2int&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:361px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">convert a Hex-Value to Integer, Example FF = 255</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Erst</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">%&amp;</span><span class="f_CodeExample" style="color: #666699;">FCsten</span><br />
+<span class="f_CodeExample" style="color: #666699;">meldung</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">url2string</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">10</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

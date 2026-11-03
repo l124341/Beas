@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bs String Functions</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="STRING FUNCTIONS trim(var) deletes blank spaces from the right charadd(var1,var2,var3...) combines placeholders setvar=ls_string1=Hello setvar=ls_string2=World setvar=ls_res" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsdatetimefunctions.htm",
+   prevP: "bsnumericfunctions.htm",
+   currP: "bsstringfunctions.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bs String Functions",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bs String Functions",
+   sharesubject: "Beas Script 2026.09 - bs String Functions",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsStringFunctions",
+   mailpath: "Beas script &gt; BeasScript Tutorial &gt; bs Variable Operators &gt; bs String Functions /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bs String Functions").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsstringfunctions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bs String Functions</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bs String Functions</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span class="f_Heading1">STRING FUNCTIONS</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">trim(var)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">deletes blank spaces from the right</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">charadd(var1,var2,var3...)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">combines placeholders</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_string1=Hello</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_string2=World</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_result=%charadd(&lt;ls_string1&gt;,&lt;ls_string2&gt;)</span></p>
+<p class="p_Normal">ls_result = &quot;HelloWorld&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lower</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">converts to lower-case</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">upper</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">converts to upper-case</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ulower</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">transfer first letter to uppercase</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">cr2crlf</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">converts cr char to cr-lf char</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; height:23px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">crlf2cr</span></p>
+</td>
+<td style="vertical-align:top; width:525px; height:23px; padding:0; border:solid thin #000000;"><p class="p_Normal">converts cr-lf char to cr char</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ctlf2space</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">replace all cr-lf with space (delete all line breaks)<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_beas_Version">beas 9.1 PL:08</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">replace(var,fromvalue,tovalue)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">converts from the variable &quot;var&quot; all chars &quot;fromvalue&quot; to &quot;tovalue&quot; wandeln. &quot;fromvalue&quot; and &quot;tovalue&quot; can contain several chars and must not have the same length. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: delete all line feeds and replace this with a space</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_test</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">hello</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">cr_lf</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">world</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_test</span><span class="f_CodeExample" style="color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #3366ff;">replace</span><span class="f_CodeExample" style="color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_test</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,&lt;</span><span class="f_CodeExample" style="color: #3366ff;">cr_lf</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">char</span><span class="f_CodeExample">&nbsp;32</span><span class="f_CodeExample" style="color: #ff0000;">&gt;)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">len(var)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">returns the length of the variable</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">intoken(var,starttoken,endtoken)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">returns the string-sequence between start-token and end-token, e. g. </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_value</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample" style="color: #3366ff;">color</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">red</span><span class="f_CodeExample" style="color: #ff0000;">]</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">!</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_color</span><span class="f_CodeExample" style="color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #3366ff;">intoken</span><span class="f_CodeExample" style="color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,[</span><span class="f_CodeExample" style="color: #3366ff;">color</span><span class="f_CodeExample" style="color: #ff0000;">:,])</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ls_color</span> is: &quot;red&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos(var1,var2)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">Gets the Pos from var2 in var1</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_search</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_result</span><span class="f_CodeExample" style="color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #3366ff;">pos</span><span class="f_CodeExample" style="color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_search</span><span class="f_CodeExample" style="color: #ff0000;">&gt;)</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Pos</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_result</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">Display: Pos: 7</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">len(var1)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the count of Letters</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_result</span><span class="f_CodeExample" style="color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #3366ff;">len</span><span class="f_CodeExample" style="color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">&gt;)</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Len</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_reslult</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">Display: Len: 10</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">right(var1,count)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">Gets right letters from the String</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_result</span><span class="f_CodeExample" style="color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #3366ff;">right</span><span class="f_CodeExample" style="color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,</span><span class="f_CodeExample">5</span><span class="f_CodeExample" style="color: #ff0000;">)</span></p>
+<p class="p_Normal">result = &quot;World&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">left(var1,count)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">Gets right letters from the String</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_result</span><span class="f_CodeExample" style="color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #3366ff;">left</span><span class="f_CodeExample" style="color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,</span><span class="f_CodeExample">5</span><span class="f_CodeExample" style="color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_result</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">result = &quot;Hello&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:241px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">mid(var,start,length)</span></p>
+</td>
+<td style="vertical-align:top; width:525px; padding:0; border:solid thin #000000;"><p class="p_Normal">only chars starting with &quot;start&quot; with length &quot;length&quot;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">big</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_result</span><span class="f_CodeExample" style="color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #3366ff;">mid</span><span class="f_CodeExample" style="color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_string</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,</span><span class="f_CodeExample">7</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">3</span><span class="f_CodeExample" style="color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_result</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">result = &quot;big&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

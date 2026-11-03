@@ -1,0 +1,1040 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>htmlserver</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="This object can only be used in WEPAPP development." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+div#hmheader {display: none;}
+div.navdivs {display: none;} /*$$$ CHECK */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+hmHeaderTopic = false;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "httpserver.htm",
+   prevP: "ie_internernet-connection.htm",
+   currP: "htmlserver.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "htmlserver",
+   mailsubject: "Feedback on: Beas Script 2026.09 - htmlserver",
+   sharesubject: "Beas Script 2026.09 - htmlserver",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Htmlserver",
+   mailpath: "Beas script &gt; BS Object reference &gt; HTTP and WEB Server &gt; htmlserver /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: false,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - htmlserver").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "htmlserver.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>htmlserver</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">htmlserver</span></h1>
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">This object can only be used in WEPAPP development.</p>
+<p class="p_Normal">Do not create this object. The naming of the object is <span class="f_CourierFixed">shtml</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">html (?, out)</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sends the html-script to the body of full html-script. <span class="f_See">See</span> <a href="htmlprint.htm" class="topiclink">htmlprint</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">php, phpscript</span></p>
+</td>
+<td style="vertical-align:top; width:453px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sends a php-script to the connector (runs only if the connector is php). <span class="f_See">See </span><a href="phpscript.htm" class="topiclink">phpscript</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">js, java, javascript</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sends the command to the java-area <span class="f_See">See </span><a href="javascript.htm" class="topiclink">javascrpt</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setuser</span></p>
+</td>
+<td style="vertical-align:top; width:453px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the current user in the actual session</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setlanguage</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the current language <span class="f_CourierFixed">shtml=setlanguage=E</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">insertmenu</span></p>
+</td>
+<td style="vertical-align:top; width:453px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">loads the menu-script in the actual session. <span class="f_See">See </span><a href="insertmenu.htm" class="topiclink">insertmenu</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">message</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">message=typ$messageid$message</span></p>
+<p class="p_Normal">inserts in the [messagearea] the message</p>
+<p class="p_Normal">typ=error, ok or info. <span class="f_See">See</span> &quot;<a href="message.htm" class="topiclink">message</a>&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sqltable</span></p>
+</td>
+<td style="vertical-align:top; width:453px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">object to work with tables. <span class="f_See">See</span> <a href="sqltable.htm" class="topiclink">sqltable</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">login</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><p class="p_Normal">login</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=login=&lt;user&gt;=&lt;pwd&gt;=&lt;stationid&gt;=&lt;location&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">logout</span></p>
+</td>
+<td style="vertical-align:top; width:453px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">logout from the current session after the current page</p>
+<p class="p_Normal">if you send a full logout, use requesttype=logout</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">print</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><p class="p_Normal">print-object. <span class="f_See">See</span> <a href="print2.htm" class="topiclink">print</a>. <span class="f_CourierFixed">shmtl=print=command</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">debug</span></p>
+</td>
+<td style="vertical-align:top; width:453px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sends current variable-List</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sessionvariable, setglobal</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets a global Session-Variable</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=sessionvariable=myvariable=myvalue</span></p>
+<p class="p_Normal">in script</p>
+<p class="p_Normal"><span class="f_CourierFixed">? Current Variable @session.myvariable@</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">localvariable, setlocal</span></p>
+</td>
+<td style="vertical-align:top; width:453px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets a local window-variable</p>
+<p class="p_Normal">this variable is only visible in the current window</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=windowvariable=myvariable=myvalue</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">? Current Variable @local.myvariable@</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=continue=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">sets the system-Variable &quot;&lt;shtml.continue&gt;&quot; and means: Continue or do not continue the Msster-Window-Script</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Example"><span class="f_Example">Example in a Sub-Function</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=continue=false</span></p>
+<p class="p_Normal">in the Master-Script</p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;shtml.continue&gt; = true then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;// ... next function</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">links and window</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=callrequest=&lt;requestname&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Placeholder for simple calling a request in the same window</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">? &lt;a href=@callrequest=myrequest@&gt;Click Start&lt;/a&gt;</span></p>
+<p class="p_Normal">If the user click on &quot;Click Start&quot; then the request-function</p>
+<p class="p_Normal">&quot;myrequest&quot; in the same window is calling</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=callrequest=&lt;text&gt;=&lt;request&gt;=&lt;columns&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Creates a direct Link to call a request</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">shtml=callrequest=edit item=edititem=col_item</span></p>
+<p class="p_Normal">translate and output the text &quot;edit item&quot; </p>
+<p class="p_Normal">if click: call the request &quot;edititem&quot; with url-Parameter the content from &quot;col_item&quot;. Generate follow html:</p>
+<p class="p_Normal"><span class="f_CourierFixed">? &lt;a href=&quot;....requesttype=edititem&amp;page=..&amp;col_item=..&quot;&gt;edit text&lt;/a&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can set default-Values for Variable with &quot;:&quot;, if the Variable not existing. You can set with &quot;::&quot; the content withour searching for the Value</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> Set Variable col_area allways to &quot;P&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=callrequest=edit typ=edittyp=col_area::P</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">page=dscription=</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; page=parameter</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">generates a html-sequence for a link to jump to the page</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">shtml=page=logout</span></p>
+<p class="p_Normal">generates the following script</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;a id=link href=index.php?page=pagename&gt; description &lt;/a&gt;</span></p>
+<p class="p_Normal">beas insert the correct php-file, check the pagename and description</p>
+<p class="p_Normal">if you set the parameter, Beas sends this to the index.php</p>
+<p class="p_Normal">Logout:</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=page=logout</span></p>
+<p class="p_Normal">Other window:</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=page=My Own Page=mypage=&amp;itemcode=&lt;is_itemcode&gt;</span></p>
+<p class="p_Normal">you can set this with beas-placeholder</p>
+<p class="p_Normal"><span class="f_CourierFixed">[html]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">@page=main@&lt;br&gt;@page=My Own Page=mypage@&lt;br&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">[/html]</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">go2page=page</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">goes to the page/app, executes and sets this page as the current page</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">shtml=go2page=&lt;newpage&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">special sides</p>
+<p class="p_Normal"><span class="f_CourierFixed">this &nbsp; Current Page</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">back &nbsp; Last Page with the last parameter</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">to generate Placeholder</p>
+<p class="p_Normal"><span class="f_CourierFixed">@page=page?parameter...@</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">go2request=&lt;requestname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">calls a request directly</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=go2request=myupdaterequest [=page/app]</span></p>
+<p class="p_Normal">if you don't set the page/app then you call the current page/app. Urgent: in the login-sequence you must set &quot;login&quot; as page.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">windowname=page</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Executes the Script of this window but don't leave the current window</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ajax=replaceid=ajaxcommand=ajaxparameter</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">generates 2 java-functions to receipt ajax-information</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">replaceid</span> = the textarea to replace</p>
+<p class="p_Normal"><span class="f_CourierFixed">ajaxcommand</span> = set the variable ajaxcommand </p>
+<p class="p_Normal"><span class="f_CourierFixed">ajaxparameter</span> = set the variable ajaxvariable</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">1. set a Area for the result with &quot;id&quot;<br />
+ &nbsp; <span class="f_CourierFixed">shtml=html=&lt;p id=&quot;mylist&quot;&gt; &lt;/p&gt;</span></p>
+<p class="p_Normal">2. <span class="f_CourierFixed">shtml=ajax=mylist=list=1</span></p>
+<p class="p_Normal">3. in the page - ajax</p>
+<p class="p_Normal"> &nbsp; &nbsp;there are the following parameters: <span class="f_CourierFixed">ajaxcommand</span> and <span class="f_CourierFixed">ajaxparm</span></p>
+<p class="p_Normal"> &nbsp; &nbsp;in this script: return a result</p>
+<p class="p_Normal">4. Beas replaces the area &quot;mylist&quot;with the result in the page</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can generate a link directly in html-placeholder</p>
+<p class="p_Normal"><span class="f_CourierFixed">@ajax=text=replaceid=ajaxcommand=ajaxparameter@</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ajax2=function=ajaxcommand,ajaxparameter</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates the Call-Function [functionname]_start, the Receipt from Ajax call the function [functionname_receipt]. The second command you must create self. <span class="f_See">See</span> <a href="ajax2.htm" class="topiclink">ajax2</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=var2hiddeninput=mask</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">creates hidden-input fields for all local variables with this mask. <span class="f_See">See</span> <a href="var2hiddeninput.htm" class="topiclink">var2hiddeninput</a></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=htmlareastart</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Pushes the actual area in variable &quot;htmlareapush&quot; and clears the actual html-script. Restores with <a href="htmlareaend.htm" class="topiclink">htmlareaend</a>.  <a href="htmlareastart.htm" class="topiclink">htmlareastart</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=htmlareaend=&lt;var&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">copy the current html-script in varialbe &quot;var&quot; and restore the html-area from &quot;htmlareapush&quot;. see <a href="htmlareaend.htm" class="topiclink">htmlareaend</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=area=&lt;areaname&gt;=&lt;shtmlscript&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Adds the shtml-Script to the area &quot;arename&quot;</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">it is the same as <span class="f_CourierFixed">shtml=htmlareastart .. shtml=htmlareaend</span></p>
+<p class="p_Normal">But only with one line</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> add a html-Source to Area &quot;selects&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=area=selects=&lt;b&gt;Hello world&lt;/b&gt;</span></p>
+<p class="p_Normal">To Display this Area</p>
+<p class="p_Normal"><span class="f_CourierFixed">? @selects@</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=expand</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Create a Icon for hidden/unidden-Areas</p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="expand.htm" class="topiclink">expand</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=send2common=&lt;var&gt;[=&lt;priority&gt;]</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Executes a script directly or sends it to the common interface</a>.</td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If variable <span class="f_CourierFixed">&lt;shtml.asynchron&gt;</span> is active (1) &nbsp;the script &lt;var&gt; is executing asynchronous from the Beas-common-interface, otherwise directly.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">#define ls_script</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">for ll_loop=1 to 10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">next</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">#end</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=send2common=&lt;ls_script&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if asynchronous functioning is active, Beas executes the script on the Beas-common-service, otherwise directly.</p>
+<p class="p_Normal">if asynchronous, the web client can continue its work directly.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Asynchronous working:</p>
+<p class="p_Normal">all defined variables are sent to the Beas-common-interface. </p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_test=hello world</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">#define ls_Script</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_test2=&lt;ls_test&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">#end</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">create the folowing script for the Beas-common-interface:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_test=hello world</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_test2=&lt;ls_test&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Attention!</span></p>
+<p class="p_Normal">This only works with not declared variables!</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can check with variable <span class="f_CourierFixed">&lt;shtml.asynchron&gt;</span> if the system is active</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Priority</span></p>
+<p class="p_Normal">High work load will queue the script to the common interface. To control the priority of a script, use the <span class="f_CourierFixed">&lt;priority&gt;</span> value. The lower this value is the smaller the waiting time becomes.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=send2common=&lt;ls_script&gt;=-1 // urgent</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=send2common=&lt;ls_script&gt;=-100 // very urgent!</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=send2common=&lt;ls_script&gt;=500 // do it when you are free</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Format-Function</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=del_htmlattrib=&lt;var&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Deletes all html-Attribs in the Variable</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=col_text=&lt;b&gt;Hello&lt;/b&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=del_htmlattrib=col_text</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">? @col_text@</span></p>
+<p class="p_Normal">=&gt; output normal &quot;Hello&quot; &nbsp;without &lt;b&gt; and &lt;/b&gt;</p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">Session-Functions</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=window=&lt;name&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the new app as current app and execute this main-script</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=design</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the design. <span class="f_See">see</span> <a href="design.htm" class="topiclink">design</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=setlanguage=&lt;language&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the language for the current session</p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">formulars</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=form=&lt;propertie&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Generates Simple Forms. <span class="f_See">See</span> <a href="form.htm" class="topiclink">form</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=inputinfo=&lt;text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Sets variable <span class="f_CourierFixed">&lt;shtml.inputinfo&gt; </span>with translated text and calls the Beas-Script-Function &quot;inputinfo&quot;. Uses this for inserting a Help-Text for the input-fields.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=formstart</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates Script</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;form name=&quot;f1&quot; action=&quot;@home@&quot;&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=formend</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Creates Script &lt;/form&gt;</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if you set a parameter, the function var2hiddeninput is called before <span class="f_CourierFixed">&lt;/form&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can set:</p>
+<p class="p_Normal">variable,begin of variable,variable:value = withoutvariable</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&quot;<span class="f_CourierFixed">col_</span>&quot; send all Variables beginning with &quot;col_&quot;</p>
+<p class="p_Normal">&quot;<span class="f_CourierFixed">requesttype:update</span>&quot; send the Variable &quot;requesttype&quot; with this value</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">The currentform have the <br />
+variable col_mycolor=mycolor and </p>
+<p class="p_Normal">variable col_width=50</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=formstart</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">? &lt;input name=&quot;col_itemcode&quot;&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=formend=page,col_,requesttype:update=col_width</span></p>
+<p class="p_Normal">the last command creates the following script</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;input type=&quot;hidden&quot; name=&quot;page&quot; value=&quot;itemedit&quot;&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;input type=&quot;hidden&quot; name=&quot;col_mycolor&quot; value=&quot;mycolor&quot;&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;input type=&quot;hidden&quot; name=&quot;requesttype&quot; value=&quot;update&quot;&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;/form&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">search=&lt;requesttype&gt;=&lt;var&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Creates a Search-Picture</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Ref: the same page with this command defined requesttype</p>
+<p class="p_Normal">and all defined variables</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=col_itemcode=ABC</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=col_warehouse=01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=search=itemlist=col_</span></p>
+<p class="p_Normal">Start the same window but only the request-function &quot;itemlist&quot; with all Variables beginning with &quot;col_&quot;</p>
+<p class="p_Normal">Creates a URL with</p>
+<p class="p_Normal">.<span class="f_CourierFixed">..?page=&lt;pagename&gt;&amp;col_itemcode=ABC&amp;col_warehouse=01&amp;requesttype=itemlist</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you set as requesttype=sqltable:&lt;objectname&gt;, you can call the Search-SQL-List directly </p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=search=sqltable:itemlistsql=col_</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if a search-function is called, Beas will fill the variable <span class="f_CourierFixed">is_bsearch</span> with  <span class="f_CourierFixed">&lt;a href=&quot;url-String&quot;&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shmtl=setfocus=fieldname</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">sets focus to the first field with this name</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">shtml=html=&lt;form&gt;&lt;input name=&quot;col_itemcode&quot;&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">shtml=setfocus=col_itemcode</span></p>
+<p class="p_Normal">sets focus to this field</p>
+<p class="p_Normal">this function generates the following script:</p>
+<p class="p_Normal"><span class="f_CourierFixed">window.onload = function() { document.getElementsByName(&quot;col_itemcode&quot;)[0].focus(); &nbsp;document.getElementsByName(&quot;col_itemcode&quot;)[0].select();}</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=var2hiddeninput=mask</span></p>
+</td>
+<td style="vertical-align:top; width:432px; padding:2px; border:solid thin #000000;"><p class="p_Normal">create hidden-input fields for all local variables with this mask. see <a href="var2hiddeninput.htm" class="topiclink">var2hiddeninput</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:203px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shtml=doublecheck=set/check</span></p>
+</td>
+<td style="vertical-align:top; width:432px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Checks Double-Action (example Back-Button)</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">for this all &quot;<span class="f_CourierFixed">col_</span>&quot;-variables are copied to session-Variable &quot;<span class="f_CourierFixed">doublecheck</span>&quot;</p>
+<p class="p_Normal">with &quot;check&quot; the command checks if the variables are the same. If not, the variable will be deleted.</p>
+<p class="p_Normal">If the variable is not empty, you cancel the function.</p>
+<p class="p_Normal">If empty, set the variable with this command.</p>
+<p class="p_Normal"><span class="f_CourierFixed">set</span> = set the doublecheck</p>
+<p class="p_Normal"><span class="f_CourierFixed">check</span> = check and delete doublecheck-Variable, if difference</p>
+<p class="p_Normal"><span class="f_CourierFixed">checkreset</span> = check and delete doublecheck-Variable, if difference. If not ok, then delete all <span class="f_CourierFixed">col_</span> - Variables and set scriptcontinue to &quot;true&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">System-Functions</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">reloadscript</span></p>
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><p class="p_Normal">reloads all scripts from database to the server (call this after changing source)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">reload</span></p>
+</td>
+<td style="vertical-align:top; width:453px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">reloads or replaces parts of the memory</p>
+<p class="p_Normal">reload=userrights &nbsp; -&gt; Reload the user rights</p>
+<p class="p_Normal">reload=language=&lt;new language&gt; -&gt; change Language for current Session</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:183px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:453px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Session-Variable</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;currentpage&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">current page</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;requesttype&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">requesttype</p>
+<p class="p_Normal">ajax - ajax-request</p>
+<p class="p_Normal">update - update-request</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;PHPSESSID&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Session-Id</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;clientname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Name of Client</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">shtml-Variable</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.session_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Session_id (PHPSESSID)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.station_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Station-Id, Reference to beas_sys_station.station_id</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.user_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current User-Id</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.pers_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Personnel (beas_pers.pers_id)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.username&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Name of User</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.shift&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Shift of the User</p>
+<p class="p_Normal">(you can set this shift only in the login-function with Variable &quot;col_shift&quot;)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.requesttype&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current request-Type - <span class="f_See">see</span> Session-Variable requesttype</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.isajax&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">if request-Type is ajax, this variable is true</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.islogin&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">if user is loged in, this variable is true</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.program.description&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Name of current program (description in program-declaration)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.program.id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">ID of the current program (beas_webprogram.programid)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.program.</span><br />
+<span class="f_CourierFixed">statiocheckname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">return the Property from &quot;stationcheckname&quot; 0=No Check, 1=Check and 2=Check allways. If allways disable, if no web-Station-Clients in the Station-List is defined</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.program.</span><br />
+<span class="f_CourierFixed">locationcheck&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">return locationcheck-Property. 0=No Check, 1=Check, 2=Check mandatory</p>
+<p class="p_Normal">is always 0, if no location is defined</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.connecttype&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Type of Login</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">U</span>=Personnel Username + Pwd</p>
+<p class="p_Normal"><span class="f_CourierFixed">T</span>=Personnel Cardnumber (Terminal)</p>
+<p class="p_Normal"><span class="f_CourierFixed">C</span>=Contactperson (OCPR) name + Pwd (user_id=cardcode, uersname=contact-name)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.windowmenutext&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Menu text of the current window</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.currentpage&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Name of the current window</p>
+<p class="p_Normal">other name: <span class="f_CourierFixed">&lt;shtml.is_page&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.pictureurl&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the URL or path of &nbsp;pictures. default &quot;static/gfx/&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;var2url=col..,page&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">generates a full URL-Parameter list vor all Variables with this Mask. In this example for all Variable beginning with &quot;col&quot; and &quot;page&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.continue&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Information to continue or not continue the window-Master-Script</p>
+<p class="p_Normal">you can set this with &quot;<span class="f_CourierFixed">shtml=continue=true/false</span>&quot;</p>
+<p class="p_Normal">and can check this with <span class="f_CourierFixed">&lt;shtml.continue&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.access=[accessid]&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">return the content of access for the [accessid] for current app</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">You can create a new object from the type &quot;access&quot;</p>
+<p class="p_Normal">In the Application-Access-Settings you can set this per Authorization-Group.</p>
+<p class="p_Normal">with this placeholder you can check if the user with his authorization-group has access to this function. Normal is 1 = ok, 0=block</p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;shtml.access=forum_del&gt; &lt;&gt; 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; return failure</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.asynchron&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">if asynchronous working is active: 1=Yes, 0=No (0=Standard)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Location</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.location_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Location. Reference to table beas_sys_location</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shmtl.location_udf?&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">UDF1 to UDF4 from current location</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> <span class="f_CourierFixed">&lt;shtml.location_udf1&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Global Variables</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.path&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">local path of php-file on the php-server</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.indexname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">name of the php-file without path, e.c. index.php</p>
+<p class="p_Normal">shortform: <span class="f_CourierFixed">&lt;home&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.url&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">url-adress</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.comm&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">connector-path for interface php &lt;-&gt; beas-html-server</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Setup Variable</span></p>
+<p class="p_Normal">(User-Setup for an App)</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.setup1&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">value from first setup-Variable</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.setup2&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">value from 2. setup-Variable</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.setup3&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">value from 3. setup-Variable</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;shtml.setup4&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">value from 4. setup-Variable</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Standard-Post-Variables</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">is_user</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">User to Login</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">is_pws</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Pwd from User</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ib_logout</span></p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">if true, Beas will log out the session</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:196px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">col_shift</span></p>
+</td>
+<td style="vertical-align:top; width:442px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Shift</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

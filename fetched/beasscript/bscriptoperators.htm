@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bs Type Decimal</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="If you need variables for calculating numbers with decimal values, it is better to work with variables declared with &quot;dec&quot;" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bs_string.htm",
+   prevP: "bsplaceholdermiscellaneous.htm",
+   currP: "bscriptoperators.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bs Type Decimal",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bs Type Decimal",
+   sharesubject: "Beas Script 2026.09 - bs Type Decimal",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "BscriptOperators",
+   mailpath: "Beas script &gt; BeasScript Tutorial &gt; bs Type Decimal /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bs Type Decimal").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bscriptoperators.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bs Type Decimal</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bs Type Decimal</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">If you need variables for calculating numbers with decimal values, it is better to work with variables declared with &quot;dec&quot;</p>
+<p class="p_Normal">This variable type allows you to use many math functions.</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Here you must work with a placeholder too. </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Assign values to variables and add them together:</p>
+<p class="p_Normal"><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">// assign the value 5.3 to x and define x as decimal value</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">dec&nbsp;x</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">5.3</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;assign&nbsp;the&nbsp;value&nbsp;2.2&nbsp;to&nbsp;y</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">dec&nbsp;y</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">2.2</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;assign&nbsp;the&nbsp;result&nbsp;to&nbsp;z&nbsp;(x&nbsp;+&nbsp;y)</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">dec&nbsp;z</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">z</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">x</span><span class="f_CodeExample" style="color: #ff0000;">&gt;+&lt;</span><span class="f_CodeExample" style="color: #3366ff;">y</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">z</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">Wrong:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">dec</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">z</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;+&lt;</span><span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: if the placeholder is not a decimal value, you must convert it to a number.</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">dec</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">y</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">z</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">x</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">5.3</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">y</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">2.2</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">z</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">y</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">+</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">x</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">num</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample">6</span><span class="f_CodeExample" style="color: #ff0000;">)&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span><br />
+The&nbsp;assignment&nbsp;operator&nbsp;(=)&nbsp;assigns&nbsp;a&nbsp;value&nbsp;to&nbsp;a&nbsp;variable.<br />
+&nbsp;<br />
+Assignment<br />
+<span class="f_CodeExample" style="font-size: 10pt;">dec&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">x</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt;">x</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">10</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span><br />
+The&nbsp;addition&nbsp;operator&nbsp;(+)&nbsp;adds&nbsp;numbers:<br />
+&nbsp;<br />
+Adding<br />
+<span class="f_CodeExample" style="color: #666699;">dec</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">z</span><br />
+<span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">2</span><br />
+<span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3</span><br />
+<span class="f_CodeExample" style="color: #666699;">z</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;&nbsp;*&nbsp;&lt;</span><span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span><br />
+The&nbsp;multiplication&nbsp;operator&nbsp;(*)&nbsp;multiplies&nbsp;numbers.<br />
+&nbsp;<br />
+Multiplying<br />
+<span class="f_CodeExample" style="color: #666699;">dec</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">z</span><br />
+<span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">2</span><br />
+<span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3</span><br />
+<span class="f_CodeExample" style="color: #666699;">z</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;&nbsp;*&nbsp;&lt;</span><span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_TitleinText"><span class="f_TitleinText">BeasScript Arithmetic Operators</span></p>
+<p class="p_Normal">Arithmetic operators are used to perform arithmetic on numbers:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Operator &nbsp; &nbsp; &nbsp; &nbsp;Description</p>
+<p class="p_Normal">+ &nbsp; &nbsp; &nbsp; &nbsp;Addition</p>
+<p class="p_Normal">- &nbsp; &nbsp; &nbsp; &nbsp;Subtraction</p>
+<p class="p_Normal">* &nbsp; &nbsp; &nbsp; &nbsp;Multiplication</p>
+<p class="p_Normal">/ &nbsp; &nbsp; &nbsp; &nbsp;Division</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Brackets and many math functions supported</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">dec</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">x</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">x</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">5</span><span class="f_CodeExample" style="color: #ff0000;">+</span><span class="f_CodeExample">3</span><span class="f_CodeExample" style="color: #ff0000;">*</span><span class="f_CodeExample">6</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">x</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;23.00000</span></p>
+<p class="p_Normal">&nbsp;<br />
+Arithmetic operators are fully described in  <a href="datawindowexpression.htm" class="topiclink">datawindow expression</a> </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">&nbsp;</span></p>
+<p class="p_TitleinText"><span class="f_TitleinText">BeasScript String Operators</span></p>
+<p class="p_Normal">For Strings and all other formats operators are not available.</p>
+<p class="p_Normal">The system adds all placeholders</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">string</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">txt1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">txt2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">txt3</span><br />
+<span class="f_CodeExample" style="color: #666699;">txt1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Martin</span><br />
+<span class="f_CodeExample" style="color: #666699;">txt2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Doe</span><br />
+<span class="f_CodeExample" style="color: #666699;">txt3</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">txt1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">txt2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">txt3</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Return:&nbsp;John&nbsp;Doe</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">Alternative&nbsp;variant&nbsp;is&nbsp;setvar.&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">txt1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Martin</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">txt2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Doe</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">txt3</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">txt1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">txt2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">txt3</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

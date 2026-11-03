@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>xgantt-field</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Work with xgantt-field &lt;xgantt.datafield.[id]&gt; &nbsp; Example: xgantt=nodes=&lt;ii_nodeid&gt;=4=2018/6/19 &nbsp;Example description: &nbsp;ii_nodeid: &nbsp;the active node id 4: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;specifie" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "api_xgantt_workorder.htm",
+   prevP: "timescale.htm",
+   currP: "xgantt-field.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "xgantt-field",
+   mailsubject: "Feedback on: Beas Script 2026.09 - xgantt-field",
+   sharesubject: "Beas Script 2026.09 - xgantt-field",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Xgantt-field",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_xgantt &gt; xgantt-field /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - xgantt-field").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "xgantt-field.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>xgantt-field</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">xgantt-field</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Work with xgantt-field</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;xgantt.datafield.[id]&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace; color: #800000;">xgantt=nodes=&lt;ii_nodeid&gt;=4=2018/6/19</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Example description:</span> </p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace;">ii_nodeid:  </span><span style="font-family: 'Courier New',Courier,monospace;">the active node id</span></p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace;">4: &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-family: 'Courier New',Courier,monospace;">specified time &quot;routingstart&quot; </span></p>
+<p class="p_Normal"><span style="font-family: 'Courier New',Courier,monospace;">2018/6/19: &nbsp;Startdate</span><span style="font-family: 'Courier New',Courier,monospace; color: #800000;"> </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">0</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">Id</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Work sequence ID (String)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">1</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">Start</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Start of Work sequence (Start Transition period)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">2</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">End</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">End of work sequence (end of downtime)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">3</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">Fixstart</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">1/0 Work sequence fixed at routing start</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">4</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">routingstart</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Start processing time (green area)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">5</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">routingend</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">End of processing time</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">6</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">routingcut</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">1/0 Schedule conflict (red shading)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">7</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">deliverycut</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">1/0 Delivery date exceeded?</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">8</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">time</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Duration</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">9</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">linenumber</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sequence number - sorted according to the structure of the production order</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">10</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">strutcrcode</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Structural layout (as string information)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">11</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">sortnumber</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sorting by structural composition (number)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">12</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">belnr_id</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Document number</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">13</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">belpos_id</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Document position ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">14</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">pos_id</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Position</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">15</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">pos2_id</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Parallel resource Position</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">16</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">resourcetyp</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Resource type</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:68px; padding:0; border:solid thin #000000;"><p class="p_Normal">E</p>
+</td>
+<td style="vertical-align:top; width:190px; padding:0; border:solid thin #000000;"><p class="p_Normal">Parallel Resource</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:68px; padding:0; border:solid thin #000000;"><p class="p_Normal">W</p>
+</td>
+<td style="vertical-align:top; width:190px; padding:0; border:solid thin #000000;"><p class="p_Normal">Tool</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:68px; padding:0; border:solid thin #000000;"><p class="p_Normal">F</p>
+</td>
+<td style="vertical-align:top; width:190px; padding:0; border:solid thin #000000;"><p class="p_Normal">External work process</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:68px; padding:0; border:solid thin #000000;"><p class="p_Normal">R</p>
+</td>
+<td style="vertical-align:top; width:190px; padding:0; border:solid thin #000000;"><p class="p_Normal">Work sequence (green area)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:68px; padding:0; border:solid thin #000000;"><p class="p_Normal">L</p>
+</td>
+<td style="vertical-align:top; width:190px; padding:0; border:solid thin #000000;"><p class="p_Normal">Delivery date (red dot)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">17</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">resource_id</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Resource ID (can also be a tool)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">18</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">resourcename</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Name of Resource</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">19</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">resourcegroup</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Resource group</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">20</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">orderinfo</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">freely definable order labeling</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">21</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">posinfo</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">freely definable assembly labeling</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">22</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">routinginfo</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">freely definable work sequence labeling</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">23</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">priority</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Priority of the manufacturing order</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">24</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">prjcode</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Project number</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">25</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">marker</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Work sequence marked Y/N</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">26</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">status</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Status of the production order</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:71px; padding:0; border:solid thin #000000;"><p class="p_Normal">new</p>
+</td>
+<td style="vertical-align:top; width:188px; padding:0; border:solid thin #000000;"><p class="p_Normal">newly created</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:71px; padding:0; border:solid thin #000000;"><p class="p_Normal">print</p>
+</td>
+<td style="vertical-align:top; width:188px; padding:0; border:solid thin #000000;"><p class="p_Normal">printed</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:71px; padding:0; border:solid thin #000000;"><p class="p_Normal">inwork</p>
+</td>
+<td style="vertical-align:top; width:188px; padding:0; border:solid thin #000000;"><p class="p_Normal">currently logged in</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:71px; padding:0; border:solid thin #000000;"><p class="p_Normal">work</p>
+</td>
+<td style="vertical-align:top; width:188px; padding:0; border:solid thin #000000;"><p class="p_Normal">partially reported</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Info: Completed or blocked production orders or work sequences are not displayed because they are not scheduled and do not require any resources.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">27</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">aps</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">1/0: marked as planned</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">28</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">free</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Transit Start</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">29</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">free</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Transit End</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">30</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">free</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Idle Start</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">31</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">free</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Idle End</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">32</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">udf1</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Material Date</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">33</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">udf2</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">Material field</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">34</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">udf3</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">User-defined field</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:44px; padding:0; border:solid thin #000000;"><p class="p_Normal">35</p>
+</td>
+<td style="vertical-align:top; width:97px; padding:0; border:solid thin #000000;"><p class="p_Normal">udf4</p>
+</td>
+<td style="vertical-align:top; width:624px; padding:0; border:solid thin #000000;"><p class="p_Normal">User-defined field</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

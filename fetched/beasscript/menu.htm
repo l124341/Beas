@@ -1,0 +1,819 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>menu</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="button enable disable,button text,disable menu,disable menu button,enable menu,enable menu button,menu enable,menu enable disable,menu text" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="The Menu engine administer Buttons, Menu items and tools&nbsp;" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "menu2.htm",
+   prevP: "app.htm",
+   currP: "menu.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "menu",
+   mailsubject: "Feedback on: Beas Script 2026.09 - menu",
+   sharesubject: "Beas Script 2026.09 - menu",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Menu",
+   mailpath: "Beas script &gt; BS Object reference &gt; system &gt; menu /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - menu").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menu.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>menu</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">menu</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">The Menu engine administer Buttons, Menu items and tools </p>
+<p class="p_Normal"></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can add a button with &quot;addbutton....&quot;. Every Button can also be set as a Menu entry. This is done automatically.</p>
+<p class="p_Normal"><img alt="sap-toolbar" width="1185" height="31" style="margin:0;width:1185px;height:31px;border:none" src="sap-toolbar.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Button standard names:</span></p>
+<p class="p_Normal">(see ue_menu.of_menureset)</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:81px;"><p class="p_Normal"><span style="font-weight: bold;">Index</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">(Beas menu)</span></p>
+</th>
+<th class="fielddescription" style="width:82px;"><p class="p_Normal"><span style="font-weight: bold;">BeasKey</span></p>
+</th>
+<th class="fielddescription" style="width:33px;"><br />
+</th>
+<th class="fielddescription" style="width:52px;"><p class="p_Normal"><span style="font-weight: bold;">SAP ID</span></p>
+</th>
+<th class="fielddescription" style="width:74px;"><p class="p_Normal"><span style="font-weight: bold;">Beas ID</span><br />
+<span style="font-weight: bold;">(imenu[])</span></p>
+</th>
+<th class="fielddescription" style="width:112px;"><p class="p_Normal"><span style="font-weight: bold;">Word ID</span></p>
+</th>
+<th class="fielddescription" style="width:294px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">01</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">preview:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="preview" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="preview.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">519</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">16</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">Preview</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Preview (Macro)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">02</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">print</span>: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="print" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="print.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">520</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">7</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">Print</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Print (Macro)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">03</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">email:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="email" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="email.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">6657</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">18</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">EMail</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">EMail (Macro)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">04</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">fax:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="fax" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="fax.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">6659</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">17</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">Fax</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Create Fax document</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">05</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">excel:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="excel" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="excel.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">7169</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">20</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">Excel</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Create Excel document</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">06</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">word:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="word" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="word.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">7170</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">19</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">Word</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Create Word document</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">07</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">pdf:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="pdf" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="pdf.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">7176</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">21</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">PDF</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Create PDF document</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">08</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">search:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="find" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="find.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">1281</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">2</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">Search</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Find</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">09</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">new:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="add" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="add.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">1282</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">4</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">New / Add Line</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Add, Add Line</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; height:22px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">10</span></p>
+</td>
+<td class="fielddescription" style="width:82px; height:22px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">edit:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; height:22px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="openentry" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="openentry.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; height:22px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:74px; height:22px; background-color:#F7F7F7;"><p class="p_Normal">1</p>
+</td>
+<td class="fielddescription" style="width:112px; height:22px; background-color:#F7F7F7;"><p class="p_Normal">Open</p>
+</td>
+<td class="fielddescription" style="width:294px; height:22px; background-color:#F7F7F7;"><p class="p_Normal">Open, Edit, Choose</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">11</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">copy: &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="duplicate" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="duplicate.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><br />
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">5</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">Duplicate</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Duplicate</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">12</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">del:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="del" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="del.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">6</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">Remove</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Remove</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">13</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">previous:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">p_auf:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="previousRecord" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="previousrecord.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">1289</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">11</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">--</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Previous Record</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">14</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">next:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">p_ab:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="nextRecord" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="nextrecord.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">1288</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">12</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">--</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Next Record</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">15</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">refresh:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="RefreshRecord" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="refreshrecord.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">1304</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">22</p>
+</td>
+<td class="fielddescription" style="width:112px;"><br />
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Refresh records / List</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">16</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">filter:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="filter" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="filter.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">4870</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">3</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Filter (current not supported)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">17</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">sort:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="sort" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="sort.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">4869</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">23</p>
+</td>
+<td class="fielddescription" style="width:112px;"><br />
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Sort Record</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">18</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">layout:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="layout" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="layout.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">5895</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">8</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Layout / Macro </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">19</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">setup:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="formSettings" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="formsettings.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">5890</p>
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">15</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">Window settings</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Form/Window settings</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">20</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">report:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="queryManager" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="querymanager.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">4865</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">9</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Query manager / Reports</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">20</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">Status</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><br />
+</td>
+<td class="fielddescription" style="width:52px;"><br />
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">10</p>
+</td>
+<td class="fielddescription" style="width:112px;"><br />
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">not in use</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">21</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">export:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">13</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Export bitmap</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">22</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">verwendung:</span><br />
+<span class="f_CourierFixed">crossreference:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="crossreference" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="crossreference.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><br />
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">14</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">Cross reference</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Open cross reference window (example item usage)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">inventhistory:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal"><img alt="inventhistory" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="inventhistory.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">Invent.History</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Item inventory history</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">90</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">ok:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><br />
+</td>
+<td class="fielddescription" style="width:52px;"><br />
+</td>
+<td class="fielddescription" style="width:74px;"><br />
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">Edit form: OK/Update/Add<br />
+Choose list: Choose</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">91</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">close: &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">2</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">Edit form: &amp; End<br />
+Choose list: &amp; End<br />
+&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Cancel / End form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">92</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">eingabe:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><br />
+</td>
+<td class="fielddescription" style="width:52px;"><br />
+</td>
+<td class="fielddescription" style="width:74px;"><br />
+</td>
+<td class="fielddescription" style="width:112px;"><br />
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Input field in Button list</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">93</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">auswahl:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><p class="p_Normal">-</p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal">-</p>
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">-</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">not used</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">96</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><br />
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="help" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="help.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal">275</p>
+</td>
+<td class="fielddescription" style="width:74px;"><br />
+</td>
+<td class="fielddescription" style="width:112px;"><br />
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Help</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">97</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">formula:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Form referring report</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span class="f_CourierFixed">23</span></p>
+</td>
+<td class="fielddescription" style="width:82px;"><p class="p_Normal"><span class="f_CourierFixed">aenderung:</span><br />
+<span class="f_CourierFixed">changelog:</span></p>
+</td>
+<td class="fielddescription" style="width:33px;"><p class="p_Normal"><img alt="changelog" width="20" height="20" style="margin:0;width:20px;height:20px;border:none" src="changelog.png"/></p>
+</td>
+<td class="fielddescription" style="width:52px;"><br />
+</td>
+<td class="fielddescription" style="width:74px;"><p class="p_Normal">24</p>
+</td>
+<td class="fielddescription" style="width:112px;"><p class="p_Normal">Change log</p>
+</td>
+<td class="fielddescription" style="width:294px;"><p class="p_Normal">Change Log</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">999</span></p>
+</td>
+<td class="fielddescription" style="width:82px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">inventhistory:</span></p>
+</td>
+<td class="fielddescription" style="width:33px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:74px; background-color:#F7F7F7;"><p class="p_Normal">25</p>
+</td>
+<td class="fielddescription" style="width:112px; background-color:#F7F7F7;"><p class="p_Normal">Item history</p>
+</td>
+<td class="fielddescription" style="width:294px; background-color:#F7F7F7;"><p class="p_Normal">Inventory history</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menu.redraw</span></p>
+</td>
+<td style="vertical-align:top; width:538px; padding:2px; border:solid thin #000000;"><p class="p_Normal">redraw</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menu.menuredraw</span></p>
+</td>
+<td style="vertical-align:top; width:538px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Redraw the whole menu inc. Authorization and multi-language</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties</span></p>
+<p class="p_Normal">menu.property.name=value</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">disable=&lt;name&gt; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:538px; padding:2px; border:solid thin #000000;"><p class="p_Normal">disable entry</p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=disable=myButton</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=redraw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">enable=&lt;name&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:538px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">enable entry</p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=enable=myButton</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=redraw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">text=&lt;name&gt;=&lt;Text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:538px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Change Menu Text</p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=text=myButton=&lt;new text&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=redraw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">width</span></p>
+</td>
+<td style="vertical-align:top; width:538px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Change the width of the button</p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=width=myButton=300</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=redraw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">forecolor</span></p>
+</td>
+<td style="vertical-align:top; width:538px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menu=forecolor=myButton=255</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=redraw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">fontsize</span></p>
+</td>
+<td style="vertical-align:top; width:538px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortid=&lt;name&gt;=&lt;order&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:538px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Change order of Buttons</p>
+<p class="p_Normal">Example move Button to left</p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=sortid=myButton=1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bitmap</span></p>
+</td>
+<td style="vertical-align:top; width:538px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">postype</span></p>
+</td>
+<td style="vertical-align:top; width:538px; padding:2px; border:solid thin #000000;"><p class="p_Normal">0=bottom</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you have buttons inside the INI sequence, you do not need to redraw.</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">NOTE: If you create / modify buttons somewhere else, you must use redraw.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Disable the ok-Button</p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=disable=ok:</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

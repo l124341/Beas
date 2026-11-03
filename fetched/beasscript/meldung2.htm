@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>messagebox</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="errormessage,fehlermeldung,infomessage,meldung,message,messagebox,messagenumber,messagetranslate,sqlmeldung,translate message" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Displays a message box or message &nbsp;in the foot line." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "key.htm",
+   prevP: "jscript.htm",
+   currP: "meldung2.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "messagebox",
+   mailsubject: "Feedback on: Beas Script 2026.09 - messagebox",
+   sharesubject: "Beas Script 2026.09 - messagebox",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Meldung2",
+   mailpath: "Beas script &gt; BS Statements &gt; messagebox /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - messagebox").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "meldung2.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>messagebox</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">messagebox</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">Displays a message box or message &nbsp;in the foot line.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=</span><span class="f_CourierFixed" style="color: #008000;">&lt;typ&gt;</span><span class="f_CourierFixed">$$</span><span class="f_CourierFixed" style="color: #0000ff;">&lt;text&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Error message in Tool bar</p>
+</td>
+<td style="vertical-align:top; width:766px; padding:2px; border:solid thin #000000;"><p class="p_Normal">BeasScript:<span class="f_CourierFixed"> messagebox=</span><span class="f_CourierFixed" style="color: #008000;">error</span><span class="f_CourierFixed">$$</span><span class="f_CourierFixed" style="color: #0000ff;">Hello World</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-error" width="582" height="38" style="margin:0;width:582px;height:38px;border:none" src="message-error.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Info message in Tool bar</p>
+</td>
+<td style="vertical-align:top; width:766px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">BeasScript:<span class="f_CourierFixed"> messagebox=</span><span class="f_CourierFixed" style="color: #008000;">info</span><span class="f_CourierFixed">$$</span><span class="f_CourierFixed" style="color: #0000ff;">Hello World</span></p>
+<p class="p_Normal"><img alt="message-info" width="586" height="36" style="margin:0;width:586px;height:36px;border:none" src="message-info.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Ok message in Tool bar</p>
+</td>
+<td style="vertical-align:top; width:766px; padding:2px; border:solid thin #000000;"><p class="p_Normal">BeasScript:<span class="f_CourierFixed"> messagebox=</span><span class="f_CourierFixed" style="color: #008000;">ok</span><span class="f_CourierFixed">$$</span><span class="f_CourierFixed" style="color: #0000ff;">Hello World</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-ok" width="586" height="41" style="margin:0;width:586px;height:41px;border:none" src="message-ok.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">OK message</p>
+</td>
+<td style="vertical-align:top; width:766px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">BeasScript:<span class="f_CourierFixed"> messagebox=</span><span class="f_CourierFixed" style="color: #008000;">ok</span><span class="f_CourierFixed">$</span><span class="f_CourierFixed" style="color: #0000ff;">ok</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-okok" width="582" height="37" style="margin:0;width:582px;height:37px;border:none" src="message-okok.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Simple popup message</p>
+</td>
+<td style="vertical-align:top; width:766px; padding:2px; border:solid thin #000000;"><p class="p_Normal">BeasScript<span class="f_CourierFixed">: messagebox=</span><span class="f_CourierFixed" style="color: #0000ff;">hello world</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-simple" width="497" height="150" style="margin:0;width:497px;height:150px;border:none" src="message-simple.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Messagebox with Placeholder</p>
+</td>
+<td style="vertical-align:top; width:766px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">BeasScript:</p>
+<p class="p_Normal"><span class="f_CourierFixed">string </span><span class="f_CourierFixed" style="color: #008000;">ls_name</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">ls_name</span><span class="f_CourierFixed">=James Bond</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=</span><span class="f_CourierFixed" style="color: #0000ff;">Hello </span><span class="f_CourierFixed" style="color: #008000;">&lt;ls_name&gt;</span><span class="f_CourierFixed" style="color: #0000ff;"> Today is </span><span class="f_CourierFixed" style="color: #008000;">&lt;today,dddd dd mmmm yyyy&gt;, &lt;now,hh:mm am/pm&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-placeholder" width="497" height="150" style="margin:0;width:497px;height:150px;border:none" src="message-placeholder.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Question</p>
+</td>
+<td style="vertical-align:top; width:766px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Simple Variant: use command question</span></p>
+<p class="p_Normal">BeasScript:</p>
+<p class="p_Normal"><span class="f_CourierFixed">question=</span><span class="f_CourierFixed" style="color: #0000ff;">Is this correct?</span><span class="f_CourierFixed">=</span><span class="f_CourierFixed" style="color: #008000;">yesfunction()</span><span class="f_CourierFixed">=</span><span class="f_CourierFixed" style="color: #008000;">nofunction()</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">function yesfunction</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=</span><span class="f_CourierFixed" style="color: #0000ff;">Thank you</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">end function</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">function nofunction</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=</span><span class="f_CourierFixed" style="color: #0000ff;">Sorry. Next time i'll be better</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">end function</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="question-message" width="497" height="150" style="margin:0;width:497px;height:150px;border:none" src="question-message.jpg"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Extended message box</span></h1>
+<p class="p_Normal">In follow variant you can create a complex messagebox</p>
+<p class="p_Normal">Beas Script</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=</span><span class="f_CourierFixed" style="color: #008000;">&lt;typ&gt;</span><span class="f_CourierFixed">$</span><span class="f_CourierFixed" style="color: #0000ff;">popup=true</span><span class="f_CourierFixed">&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #0000ff;">&lt;parameter&gt;</span><span class="f_CourierFixed">&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #0000ff;">&lt;parameter&gt;</span><span class="f_CourierFixed">&lt;tab&gt; ....</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox({&quot;</span><span class="f_CourierFixed" style="color: #0000ff;">popup&quot;=true,&quot;parameter&quot;=&quot;...&quot;,&quot;parameter&quot;=&quot;...&quot;</span><span class="f_CourierFixed">})</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-extented" width="682" height="396" style="margin:0;width:682px;height:396px;border:none" src="message-extented.jpg"/></p>
+<p class="p_Normal">You have many properties. Use the Script assistant to generate the source code</p>
+<p class="p_Normal"><img alt="message-assistant" width="690" height="484" style="margin:0;width:690px;height:484px;border:none" src="message-assistant.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Properties</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">The following properties are available:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</td>
+<td class="fielddescription" style="width:662px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">type</span></p>
+</td>
+<td class="fielddescription" style="width:662px; background-color:#F7F7F7;"><p class="p_Normal">First Parameter is the type of window</p>
+<p class="p_Normal">messagebox=&lt;type&gt;$&lt;properties&gt;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td class="fielddescription" style="width:478px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">error</span></p>
+</td>
+<td class="fielddescription" style="width:478px; background-color:#F7F7F7;"><p class="p_Normal">Error message in foot-line (popup=false) </p>
+<p class="p_Normal">or with ERROR Icon (popup=true)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px;"><p class="p_Normal"><span class="f_CourierFixed">sql</span></p>
+</td>
+<td class="fielddescription" style="width:478px;"><p class="p_Normal">SQL message </p>
+<p class="p_Normal">(SQL-Code and SQL-Errtext) in foot line</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">info</span></p>
+</td>
+<td class="fielddescription" style="width:478px; background-color:#F7F7F7;"><p class="p_Normal">Blue message in foot-line (pupup=false)</p>
+<p class="p_Normal">Or with INFO Icon (popup=true)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px;"><p class="p_Normal"><span class="f_CourierFixed">ok</span></p>
+</td>
+<td class="fielddescription" style="width:478px;"><p class="p_Normal">ok message in the foot line (popup=false)<br />
+or with OK Icon (popup=true)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">question</span></p>
+</td>
+<td class="fielddescription" style="width:478px; background-color:#F7F7F7;"><p class="p_Normal">With a Yes / No Question.</p>
+<p class="p_Normal">Insert automatically Button 1 and Button 2</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return value beas Script</p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;messagereturnvalue&gt; n= 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;// yes script</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;messagereturnvalue&gt; n= -1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;// no script</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=</span><span class="f_CourierFixed" style="color: #008000;">question</span><span class="f_CourierFixed">$id=**&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">text=</span><span class="f_CourierFixed" style="color: #008000;">Can i help you</span><span class="f_CourierFixed">&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">modal=true&lt;tab&gt;popup&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">title=</span><span class="f_CourierFixed" style="color: #008000;">Question Message</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;messagereturnvalue&gt; n= 1 then </span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;"> &nbsp;// Script clicking first button</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;messagereturnvalue&gt; n= -1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;"> &nbsp;// Script for second button</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-question" width="410" height="177" style="margin:0;width:410px;height:177px;border:none" src="message-question.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return value PowerScript</p>
+<p class="p_Normal">No &nbsp;= -1, Yes = 1</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px;"><p class="p_Normal"><span class="f_CourierFixed">questino-no</span></p>
+</td>
+<td class="fielddescription" style="width:478px;"><p class="p_Normal">Like Question but default = No</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">text</span></p>
+</td>
+<td class="fielddescription" style="width:478px; background-color:#F7F7F7;"><p class="p_Normal">Return the translated Text in variable<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_CourierFixed">value</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:133px;"><p class="p_Normal"><span class="f_CourierFixed">none</span></p>
+</td>
+<td class="fielddescription" style="width:478px;"><p class="p_Normal">Remove existing message into SBO status bar. This type only applies to SBO status bar.</p>
+<p class="p_Normal">It is mandatory to set a value into test</p>
+<p class="p_Normal"><span class="f_CourierFixed">message=None$XXX</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal"><span class="f_CourierFixed">id=xx</span></p>
+</td>
+<td class="fielddescription" style="width:662px;"><p class="p_Normal">ID of Message</p>
+<p class="p_Normal">Use this, to define unique ID (Better support) and for translation in other language</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">text</span></p>
+</td>
+<td class="fielddescription" style="width:662px; background-color:#F7F7F7;"><p class="p_Normal">Errortext of Message</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Line Feed</p>
+<p class="p_Normal">Normal text: <span class="f_CourierFixed">&lt;cr_lf&gt;</span>, html: <span class="f_CourierFixed">&lt;br /&gt;</span>)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you insert the placeholder <span class="f_CourierFixed">&lt;html&gt;&lt;body&gt;</span> , Beas will display the text in an HTML-format</p>
+<p class="p_Normal">if you don't set a <span class="f_CourierFixed">&lt;style&gt;</span> between <span class="f_CourierFixed">&lt;html&gt;</span> and <span class="f_CourierFixed">&lt;body&gt;</span> , Beas will insert it in standard style.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">hello</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">br</span><span class="f_CodeExample" style="color: #ff0000;">/&gt;</span><span class="f_CodeExample" style="color: #3366ff;">world</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">or</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$id</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">2442324</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tab</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">text</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">i</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">world</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">i</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you work with HTML, use HTML syntax</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">10&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">gt</span><span class="f_CodeExample" style="color: #ff0000;">;</span><span class="f_CodeExample">&nbsp;5</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;display&nbsp;10&nbsp;&gt;&nbsp;5</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">double quotes, single quotes</p>
+<p class="p_Normal">only double and single quotes converted automatically.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;world&quot;</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;working&nbsp;fine</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you don't want to send HTML-tags, for example item description, you can convert this with the &quot;tohtml&quot; function</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">Item</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Name</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">tohtml</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">With this concept the system convert all html tags to visible text information.</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal"><span class="f_CourierFixed">popup=true</span></p>
+</td>
+<td class="fielddescription" style="width:662px;"><p class="p_Normal">Use a separate Window for output the Message</p>
+<p class="p_Normal">Standard: off</p>
+<p class="p_Normal">if you set the placeholder &quot;<span class="f_CourierFixed">&lt;body&gt;</span>&quot; in the text, Beas will be set the popup-Value to true</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">shared</span></p>
+</td>
+<td class="fielddescription" style="width:662px; background-color:#F7F7F7;"><p class="p_Normal">Display Message and continue the program </p>
+<p class="p_Normal">otherwise the current program is waiting (modal - only for current window)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal"><span class="f_CourierFixed">noalert</span></p>
+</td>
+<td class="fielddescription" style="width:662px;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">title</span></p>
+</td>
+<td class="fielddescription" style="width:662px; background-color:#F7F7F7;"><p class="p_Normal">Title of the popup window</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; height:107px;"><p class="p_Normal"><span class="f_CourierFixed">button1 ... button4</span></p>
+</td>
+<td class="fielddescription" style="width:662px; height:107px;"><p class="p_Normal">Set button 1 (the second button)</p>
+<p class="p_Normal">with <span class="f_CourierFixed">button1command</span> you can set the function to execute</p>
+<p class="p_Normal">linefeeds=<span class="f_CourierFixed">&lt;linefeed&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You need command &quot;form.close&quot; to close the message</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=info$popup=true&lt;tab&gt;text=Button Click Test&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">button1</span><span class="f_CourierFixed">=Hello world&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">button1command</span><span class="f_CourierFixed">=</span><span class="f_CourierFixed" style="color: #000000;">message=click on hello world</span><span class="f_CourierFixed" style="color: #0000ff;">&lt;linefeed&gt;</span><span class="f_CourierFixed" style="color: #000000;">form.close</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">topic</span></p>
+</td>
+<td class="fielddescription" style="width:662px; background-color:#F7F7F7;"><p class="p_Normal">Link to help (topic id)</p>
+<p class="p_Normal">only the own documentation of Beas. To link to another documentation or internet pages, use button command.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal"><span class="f_CourierFixed">setup</span></p>
+</td>
+<td class="fielddescription" style="width:662px;"><p class="p_Normal">link to configuration wizzard</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">bitmap</span></p>
+</td>
+<td class="fielddescription" style="width:662px; background-color:#F7F7F7;"><p class="p_Normal">Bitmap of the left top side</p>
+<p class="p_Normal">Error: <span class="f_CourierFixed">bmp/gfx/big_cancel</span></p>
+<p class="p_Normal">info: &nbsp; <span class="f_CourierFixed">bmp/gfx/big_ok</span></p>
+<p class="p_Normal">question: <span class="f_CourierFixed">bmp/gfx/big_question</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=info$</span><span class="f_CourierFixed" style="color: #008000;">bitmap=bmp\gfx\big_advertising.png</span><span class="f_CourierFixed">&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">popup=true&lt;tab&gt;text=Hello, important message!</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-bitmap" width="410" height="176" style="margin:0;width:410px;height:176px;border:none" src="message-bitmap.jpg"/></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal"><span class="f_CourierFixed">yes / no</span></p>
+</td>
+<td class="fielddescription" style="width:662px;"><p class="p_Normal">set value for <span class="f_CourierFixed">messagereturnaction</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example BeasScript:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=question$popup=true&lt;tab&gt;text=Is this ok&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #008000;">yes=yesanswer</span><span class="f_CourierFixed">&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #008000;">no=nowanswer</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=Answer = &nbsp;&lt;messagereturnaction&gt; : &lt;messagereturnvalue&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Result is</p>
+<p class="p_Normal">Button Yes: yesanswer : &nbsp;1<br />
+Button No: &nbsp; noanswer : -1</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">yestext</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">notext</span></p>
+</td>
+<td class="fielddescription" style="width:662px; background-color:#F7F7F7;"><p class="p_Normal">you can overwrite the text for button &quot;OK&quot; and &nbsp;&quot;Cancel&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=question$popup=true&lt;tab&gt;text=Is this ok&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #008000;">yestext=All ok&lt;tab&gt;notext=Not ok</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal"><span class="f_CourierFixed">readcheck=id</span></p>
+</td>
+<td class="fielddescription" style="width:662px;"><p class="p_Normal">Use this if you give the user the possibility to ignore this message in future</p>
+<p class="p_Normal">The ID must be unique and can be the same number as ID property</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">BeasScript: <span class="f_CourierFixed">messagebox=info$popup=true$text=This is my warning message$readcheck=beas0001</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-readid" width="410" height="177" style="margin:0;width:410px;height:177px;border:none" src="message-readid.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the User clicks on &quot;do not show anymore&quot;, Beas will not open the message again</p>
+<p class="p_Normal">This is user-database related.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you want that the User see all messages again:</p>
+<p class="p_Normal">- open SAP User - Setup</p>
+<p class="p_Normal">- choose the User</p>
+<p class="p_Normal">- right click</p>
+<p class="p_Normal">- show disabled messages</p>
+<p class="p_Normal"><img alt="message-user" width="364" height="259" style="margin:0;width:364px;height:259px;border:none" src="message-user.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Info</p>
+<p class="p_Normal">Don't use Beas as prefix. Use own company name as prefix for the ID</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Working with HTML Messages</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if keyword &quot;&lt;html&gt;&quot; or &quot;&lt;body&gt; inside the message text, Beas displays the text in an internet explorer window</p>
+<p class="p_Normal">if you don't define &lt;body&gt;, Beas will use HTML Standard format.<br />
+if you define only &lt;body&gt;, Beas will use its own CSS Style.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Don't use escape signs in the Text.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=info$popup=true&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #008000;">text=&lt;body&gt;Hello world&lt;/body&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-html1" width="410" height="177" style="margin:0;width:410px;height:177px;border:none" src="message-html1.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can use every HTML style and create HTML tables.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Define First line of HTML ad variable htmltext</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// with #define we don't need the &amp; sign for define next row. </span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// it's simple to define in this way</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">#define</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">htmltext</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">i</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">i</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">this</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">is</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">a</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">good</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">example</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">br</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">/&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">small</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">I</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">like</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">this</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">type</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">of</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messages</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">small</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">table</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">border</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">2</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tr</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">td</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">ItemCode</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">td</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">td</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">Description</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">td</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">tr</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">#end</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Create&nbsp;a&nbsp;datastore&nbsp;and&nbsp;read&nbsp;first&nbsp;10&nbsp;items</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;add&nbsp;this&nbsp;with&nbsp;table&nbsp;attributes&nbsp;to&nbsp;the&nbsp;variable&nbsp;htmltext</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_datastorevalues</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">top</span><span class="f_CodeExample">&nbsp;10&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">order</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">by</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">for</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ll_loop</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">rowcount</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">setrow</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ll_loop</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">addvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">htmltext</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tr</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">td</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode,</span><span class="f_CodeExample" style="color: #3366ff;">tohtml</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">td</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">td</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">tohtml</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">td</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">tr</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">next</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">d</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;add&nbsp;end&nbsp;of&nbsp;table</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">addvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">htmltext</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">table</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;and&nbsp;display&nbsp;this.&nbsp;Use&nbsp;keyword&nbsp;&lt;body&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$popup</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">true</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tab</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">text</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">html</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">htmltext</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">html</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal"><img alt="message-html2" width="526" height="368" style="margin:0;width:526px;height:368px;border:none" src="message-html2.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Escape signs</span></p>
+<p class="p_Normal">The system converts escape signs automatically! </p>
+<p class="p_Normal">Correct: <span class="f_CourierFixed">text=Hello &quot;World&quot;. </span>Result:<span class="f_CourierFixed"> Hello &quot;World&quot;</span></p>
+<p class="p_Normal">Wrong:  <span class="f_CourierFixed">text=Hello /&quot;World/&quot;</span>. &nbsp;Result: <span class="f_CourierFixed">Hello /&quot;World/&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you want to display a HTML 1:1 with escape signs you can open the used window directly:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">openchild</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">system_message</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">psr</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tab</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">as_typ</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tab</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">modal</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">true</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tab</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">as_content</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #a04db3;">&quot;World/&quot;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Working with pictures</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the Background we don't have a WEB Server. Everything is file-based.</p>
+<p class="p_Normal">We always need the full path from the local system or the complete network path.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Attribute to display pictures</p>
+<p class="p_Normal"><span style="font-size: 12pt; font-family: Consolas; color: #0000cd; background-color: #ffffff;">&lt;</span><span style="font-size: 12pt; font-family: Consolas; color: #a52a2a; background-color: #ffffff;">img</span><span style="font-size: 12pt; font-family: Consolas; color: #ff0000; background-color: #ffffff;">&nbsp;src</span><span style="font-size: 12pt; font-family: Consolas; color: #0000cd; background-color: #ffffff;">=&quot;pic_trulli.jpg&quot;&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=htmltext=&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">Example with picture&lt;br/&gt;&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">&lt;</span><span class="f_CourierFixed" style="color: #0000ff;">img src=&quot;</span><span class="f_CourierFixed" style="color: #ff0000;">&lt;system.homefolder&gt;bmp\gfx\big_time.png</span><span class="f_CourierFixed" style="color: #0000ff;">&quot;</span><span class="f_CourierFixed" style="color: #008000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=info$popup=true&lt;tab&gt;text=</span><span class="f_CourierFixed" style="color: #008000;">&lt;body&gt;&lt;htmltext&gt;&lt;/body&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-html3" width="353" height="167" style="margin:0;width:353px;height:167px;border:none" src="message-html3.jpg"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Translation concept</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With the message id &nbsp;you can define every message as unique id</p>
+<p class="p_Normal">In translation system you can define the translation per language and id</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Standard messages:</p>
+<p class="p_Normal">in file [homefolder]\program\language_e.src you can find the complete translation table</p>
+<p class="p_Normal">in area &quot;M:[id]&quot; you can see the message id's and on right side the Text</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> M:feinb1 = Item &lt;art_id&gt; does not exist!<br />
+&nbsp;<br />
+You can use it with</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">string</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">art_id</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">art_id</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Sofa001</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$feinb1$</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">But for better reading of source code</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$feinb1$Item</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">art_id</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">does</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">not</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">exist</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Own translation</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For multi-language customization, you can define your own translation table.</p>
+<p class="p_Linklink_link"><span class="f_Linklink_link">AddOn Administration (Beas) &gt; Edit &gt; Language &gt; Edit Message &gt; Define Language, Message No and Message text</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-translation" width="736" height="332" style="margin:0;width:736px;height:332px;border:none" src="message-translation.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Now you can use it<br />
+As example we use German text and user interface is currently English</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">string ls_itemcode</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ls_itemcode=Sofa001</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=info$</span><span class="f_CourierFixed" style="color: #008000;">id=beas0001</span><span class="f_CourierFixed">&lt;tab&gt;popup&lt;tab&gt;text=</span><span class="f_CourierFixed" style="color: #008000;">Verwende nicht den Artikel &lt;ls_itemcode&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="message-translation-example" width="410" height="177" style="margin:0;width:410px;height:177px;border:none" src="message-translation-example.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">or as simple variant - in bottom line</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=info$</span><span class="f_CourierFixed" style="color: #008000;">beas0001</span><span class="f_CourierFixed">$</span><span class="f_CourierFixed" style="color: #008000;">Verwende nicht den Artikel &lt;ls_itemcode&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Message with Protocol</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">with (properties) after message type you can define additional log entries</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">message=error</span><span class="f_CourierFixed" style="color: #008000;">(propertie,propertie2)</span><span class="f_CourierFixed">$messageid$message</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:316px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shortprotocol</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">beas create a short protocoll in extra / system / protocoll and a short version in help/suport</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:316px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">longprotocol</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">beas create a short protocoll in extra / system / protocoll and a long version in help/suport</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:316px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">errorprotocol</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">beas create a protocoll as error-protocoll in help/support / report</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=error(shortprotocol)$$This is my next with copy in shortprotocol</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

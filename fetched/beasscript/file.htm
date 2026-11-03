@@ -1,0 +1,972 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>file</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="file object, function in area file system &nbsp;Name Read Write Description filecopy &nbsp;x 	Copy a file &nbsp;Copy a file Return will be stored in &quot;value&quot; &nbsp;file.filecopy=c:\sou" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "window.htm",
+   prevP: "datastore_example.htm",
+   currP: "file.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "file",
+   mailsubject: "Feedback on: Beas Script 2026.09 - file",
+   sharesubject: "Beas Script 2026.09 - file",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "File",
+   mailpath: "Beas script &gt; BS Object reference &gt; file /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - file").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "file.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>file</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">file</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">file object, function in area file system</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:235px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Name</span></p>
+</th>
+<th style="vertical-align:top; width:56px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:top; width:48px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:632px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filecopy</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Copy a file</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Copy a file</p>
+<p class="p_Normal">Return will be stored in &quot;value&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">filecopy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">c</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\sourcefile</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">txt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\sourcefile</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">txt</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">error$Error</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">opening</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Sourcefile</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">2&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">error$Error</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">writing</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Targetfile</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ok$Copy</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ok</span><span class="f_CodeExample" style="color: #ff0000;">!</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filemove</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Move the file</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Copy a file</p>
+<p class="p_Normal">Return will be stored in &quot;value&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">filemove</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">c</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\sourcefile</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">txt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\sourcefile</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">txt</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">error$Error</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">opening</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Sourcefile</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">2&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">error$Error</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">writing</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Targetfile</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ok$Copy</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ok</span><span class="f_CodeExample" style="color: #ff0000;">!</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">fileexists,fileexist</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Check if the file exists</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Check if the file exists.</p>
+<p class="p_Normal">Return is stored in &quot;value&quot;:</p>
+<p class="p_Normal">1 = File exists</p>
+<p class="p_Normal">0 = File do not exists</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.fileexists=&lt;filename&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;value&gt; = 0 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;meldung=error$File &lt;filename&gt; is not exist</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filelength</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Return the length of the file</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">tools=filelength=&lt;file&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Get the length of the file ( max. 2 GByte )</p>
+<p class="p_Normal">Return value will be stored in &quot;value&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">filelength</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">testlog</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">loc</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info$Log</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample" style="color: #3366ff;">Filesize</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Bytes</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filesave</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Storing contents of variable in a file</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return</p>
+<p class="p_Normal"><span class="f_CourierFixed">0=error</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">1=ok</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">filesave</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">varname</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">local</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">string</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">myvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">HelloWorld</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">local</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">string</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">myfile</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">c</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\temp\testfile</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">txt</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">filesave</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">myfile</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">myvar</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">message</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">error$file</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">not</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">saved</span><span class="f_CodeExample" style="color: #ff0000;">!</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">elseif</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">message</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ok$ok</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filesaveudf8</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Storing contents of a variable in an ANSI coding file</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filedelete</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Delete the file with the given name</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return will be stored in &quot;value&quot;:</p>
+<p class="p_Normal">1 = OK</p>
+<p class="p_Normal">0 = Error</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.filedelete=&lt;cfile&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;value&gt; = 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;messagebox=error$can not delete fole &lt;cfile&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">fileload</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Load file in a variable</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Load the file into a variable</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.fileload=&lt;filename&gt;=varname=[&lt;encoding&gt;]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">returns the text in variable &lt;varname&gt;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span>:</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.getfile=choose text file=*.txt=Textfile,*.txt</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">file.fileload=&lt;filename&gt;=ls_filetext</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;ls_filetext&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Encoding</span></p>
+<p class="p_Normal">if the file is ANSI or UTF8 you can convert this file in other endcoding-type</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can convert in</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:151px; padding:2px; border:solid thin #000000;"><p class="p_Normal">utf16le</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:151px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">uce2le</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:151px; padding:2px; border:solid thin #000000;"><p class="p_Normal">utf16be</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:151px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">uce2be</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_See"><span class="f_See">see</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">createdirectory</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Create a new directory</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">createdirectory</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">directoryname</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">createdirectory</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">c</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\temp</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;errorscript</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">directoryexists</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Check if the directory exists</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">directoryexists</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">c</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\temp</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;directory&nbsp;exists...</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getdirectory</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">User can choose a directory (open directory choose form)</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.getdirectory=&lt;defaultdirectory&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">user can Choose a directory</p>
+<p class="p_Normal">return in value &quot;value&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getdirectory</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">c</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">you</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">choosed</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">the</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">directory</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">directoryread, dir</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Read all information from directory in a datastore</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">read all entries from a directory</p>
+<p class="p_Normal">no command, but solution with <a href="dtw.htm" class="topiclink">ue_datastorevalues</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dtw=dir=&lt;folder&gt;=&lt;filetype&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Information about File type</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Types are: </p>
+<p class="p_Normal">0--Read/write files </p>
+<p class="p_Normal">1--Read-only files </p>
+<p class="p_Normal">2--Hidden files </p>
+<p class="p_Normal">4--System files </p>
+<p class="p_Normal">16--Subdirectories &nbsp;</p>
+<p class="p_Normal">32--Archive (modified) files &nbsp;</p>
+<p class="p_Normal">16384--Drives 32768--Exclude read/write files from the list</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;example&nbsp;read&nbsp;directory&nbsp;with&nbsp;ue_datastorevalues</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">dtw</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_test</span><span class="f_CodeExample" style="color: #ff0000;">=</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">dtw</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_datastorevalues</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Read&nbsp;Temp-Folder</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">dtw</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">dir</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">c</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\temp\</span><span class="f_CodeExample" style="color: #ff0000;">*.*=</span><span class="f_CodeExample">32</span><br />
+<span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">for</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dtw</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">rowcount</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">dtw</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">setrow</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_test</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_test</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dtw</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dtw</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">filesize</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">next</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">dtw</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_test</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getfolder</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getfile</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">User can choose a file (open choose file form)</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Open Windows-Choose-File-Box</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Get a file.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return will be stored in variable <span class="f_CourierFixed">&lt;filename&gt;</span> with pathname </p>
+<p class="p_Normal">and the pathname in <span class="f_CourierFixed">&lt;filepath&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">two format</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Short-Format</span></h1>
+<p class="p_Normal"><span class="f_CourierFixed">file.getfile=&lt;title&gt;=&lt;extension&gt;=&lt;filter,defaut&gt;</span> </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Long Format</span></h1>
+<p class="p_Normal">Parameter with &quot;&lt;tab&gt;&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.getfile=propertie=value&lt;tab&gt;propertie=&lt;value&gt; (..)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:175px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">title</span></p>
+</td>
+<td style="vertical-align:top; width:620px; padding:2px; border:solid thin #000000;"><p class="p_Normal">A string whose value is the title of the dialog box.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:175px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">path</span></p>
+</td>
+<td style="vertical-align:top; width:620px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">A string whose value is the initial directory name. The default is the current directory.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:175px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">extension</span></p>
+</td>
+<td style="vertical-align:top; width:620px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Extenstion, Example &quot;*.*&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:175px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filter</span></p>
+</td>
+<td style="vertical-align:top; width:620px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Filter</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">filter=Graphic Files,*.bmp;*.gif;*.jpg;*.jpeg,text-Files,*.txt</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:175px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">flag</span></p>
+</td>
+<td style="vertical-align:top; width:620px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">The Flag argument is used to pass one or more options that determine the appearance of the dialog box. </a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">For each option, the value of the flag is 2^(index -1), where index is an integer associated with each option as shown in the following table. You can pass multiple options by passing an aggregate flag, calculated by adding the values of the individual flags.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you do not pass an aFlag, the Explorer-style open file dialog box is used. If you do pass a flag, the old-style dialog box is used by default. Some options do not apply when the Explorer-style dialog box is used. For those that do apply, add the option value for using the Explorer-style dialog box (2) to the value of the option if you want to display an Explorer-style dialog box. </p>
+<p class="p_Normal">For example, passing the flag 32768 (2^15) to the GetFileSaveName function opens the old-style dialog box with the Read Only check box selected by default. Passing the flag 32770 opens the Explorer-style dialog box with the Read Only check box selected by default</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Index &nbsp; &nbsp; &nbsp; &nbsp;Constant name &nbsp; &nbsp; &nbsp; &nbsp;Description</p>
+<p class="p_Normal">1 &nbsp; &nbsp; &nbsp; &nbsp;OFN_CREATEPROMPT &nbsp; &nbsp; &nbsp; &nbsp;If the specified file does not exist, prompt for permission to create the file. If the user chooses to create the file, the dialog box closes; otherwise the dialog box remains open.</p>
+<p class="p_Normal">2 &nbsp; &nbsp; &nbsp; &nbsp;OFN_EXPLORER &nbsp; &nbsp; &nbsp; &nbsp;Use an Explorer-style dialog box.</p>
+<p class="p_Normal">3 &nbsp; &nbsp; &nbsp; &nbsp;OFN_EXTENSIONDIFFERENT &nbsp; &nbsp; &nbsp; &nbsp;The file extension entered differed from the extensions specified in extension.</p>
+<p class="p_Normal">4 &nbsp; &nbsp; &nbsp; &nbsp;OFN_FILEMUSTEXIST &nbsp; &nbsp; &nbsp; &nbsp;Only the names of existing files can be entered.</p>
+<p class="p_Normal">5 &nbsp; &nbsp; &nbsp; &nbsp;OFN_HIDEREADONLY &nbsp; &nbsp; &nbsp; &nbsp;Hide the Read Only check box.</p>
+<p class="p_Normal">6 &nbsp; &nbsp; &nbsp; &nbsp;OFN_LONGNAMES &nbsp; &nbsp; &nbsp; &nbsp;Use long file names. Ignored for Explorer-style dialog boxes.</p>
+<p class="p_Normal">7 &nbsp; &nbsp; &nbsp; &nbsp;OFN_NOCHANGEDIR &nbsp; &nbsp; &nbsp; &nbsp;Restore the current directory to its original value if the user changed the directory while searching for files. This option has no effect for GetFileOpenName on Windows NT, 2000, and XP.</p>
+<p class="p_Normal">8 &nbsp; &nbsp; &nbsp; &nbsp;OFN_NODEREFERENCELINKS &nbsp; &nbsp; &nbsp; &nbsp;Return the path and file name of the selected shortcut (.lnk file); otherwise the path and file name pointed to by the shortcut are returned.</p>
+<p class="p_Normal">9 &nbsp; &nbsp; &nbsp; &nbsp;OFN_NOLONGNAMES &nbsp; &nbsp; &nbsp; &nbsp;Use short file names (8.3 format). Ignored for Explorer-style dialog boxes.</p>
+<p class="p_Normal">10 &nbsp; &nbsp; &nbsp; &nbsp;OFN_NONETWORKBUTTON &nbsp; &nbsp; &nbsp; &nbsp;Hide the Network button. Ignored for Explorer-style dialog boxes.</p>
+<p class="p_Normal">11 &nbsp; &nbsp; &nbsp; &nbsp;OFN_NOREADONLYRETURN &nbsp; &nbsp; &nbsp; &nbsp;The file returned is not read only and is not in a write-protected directory.</p>
+<p class="p_Normal">12 &nbsp; &nbsp; &nbsp; &nbsp;OFN_NOTESTFILECREATE &nbsp; &nbsp; &nbsp; &nbsp;Do not create the file before the dialog box is closed. This option should be specified if the application saves the file on a network share where files can be created but not modified. No check is made for write protection, a full disk, an open drive door, or network protection. A file cannot be reopened once it is closed.</p>
+<p class="p_Normal">13 &nbsp; &nbsp; &nbsp; &nbsp;OFN_NOVALIDATE &nbsp; &nbsp; &nbsp; &nbsp;Invalid characters are allowed in file names.</p>
+<p class="p_Normal">14 &nbsp; &nbsp; &nbsp; &nbsp;OFN_OVERWRITEPROMPT &nbsp; &nbsp; &nbsp; &nbsp;Used in Save As dialog boxes. Generates a message box if the selected file already exists.</p>
+<p class="p_Normal">15 &nbsp; &nbsp; &nbsp; &nbsp;OFN_PATHMUSTEXIST &nbsp; &nbsp; &nbsp; &nbsp;Only valid paths and file names can be entered.</p>
+<p class="p_Normal">16 &nbsp; &nbsp; &nbsp; &nbsp;OFN_READONLY &nbsp; &nbsp; &nbsp; &nbsp;Select the Read Only check box when the Save dialog box is created.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">Example</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">short</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Format</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getfile</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myfiles</span><span class="f_CodeExample" style="color: #ff0000;">=*.</span><span class="f_CodeExample" style="color: #3366ff;">txt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Textfile</span><span class="f_CodeExample" style="color: #ff0000;">,*.</span><span class="f_CodeExample" style="color: #3366ff;">txt</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">var</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example Tab-Format</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Check&nbsp;Access</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">window</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">mode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">update</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;get&nbsp;file</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getfile</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">title</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">choose</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tab</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">path</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">setup</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">mydefaultpath</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">var</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;set&nbsp;file&nbsp;in&nbsp;my&nbsp;column&nbsp;filename</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;set&nbsp;path&nbsp;to&nbsp;default&nbsp;path</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setsetup</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">mydefaultpath</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">filepath</span><span class="f_CourierFixed">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shell</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Execute shell command</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">to variants from Shell:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you have more than one line, Beas creates a batch-file in the temp-Folder, copies your script in this file and calls it.</p>
+<p class="p_Normal">if you have only one line, Beas calls the file and sends the command.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Shell One Line</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:355px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">file.shell=calc</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">open the calculator</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:355px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">file.shell=myword.doc</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">open word (if installed) and open the document &quot;myword.doc&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:355px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">file.shell=www.beasgroup.com</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">open the internet-address www.beasgroup.com</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:355px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setvar=myparameter=p=4986</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=myurl=&lt;js.encodeURI('[myparameter]');&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">file.shell=http://blog.beas-support.com/?&lt;myurl&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set parameter to &quot;p=4986&quot;, convert to URI-Code and open the internetexplorer with the beas-Blog with the URI-String</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Shell with File-Action</span></p>
+<p class="p_Normal">if you want print a document, use tools=shell</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.shell=file=action</span></p>
+<p class="p_Normal"><span class="f_Example">Example</span>: Print a PDF-File:</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.shell=myword.pdf=print</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Shell as Batch</span></p>
+<p class="p_Normal">if you want to call a batch-file, you can use</p>
+<p class="p_Normal">[shell]</p>
+<p class="p_Normal">script</p>
+<p class="p_Normal">[/shell]</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">beas create a batch-File with this script and call this.</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=myvar=Hello World</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">[shell]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">echo off</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">echo &lt;myvar&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">pause</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">[/shell]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to print a PDF file directly to a defined printer (if you've installed Acrobat Reader), example:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">[shell]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #903c39;">&quot;c:\program files (x86)\adobe\acrobat reader dc\reader\acroRd32.exe&quot; /n /s /h /t &quot;H:\file.pdf&quot; &quot;&lt;printername&gt;&quot; </span></p>
+<p class="p_Normal"><span class="f_CourierFixed">[/shell]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Dos-Window is minimized</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">run</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">Execute a program</a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">runs a program with parameters:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.run=&lt;program&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">file.run=maximized=&lt;program&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">file.run=minimized=&lt;program&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">file.run=normal=&lt;program&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="help-achtung" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-achtung.gif"/> only executable programs like EXE, COM or BAT are processed. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With the parameter maximized, minimized or normal you can specify the mode of the window. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="help-hinweis" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-hinweis.gif"/> you can also use the command &quot;<span class="f_CourierFixed">tools=shell=&lt;file-name&gt;</span>&quot; for opening documents, images...</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><img alt="help-beispiel" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-beispiel.gif"/><span class="f_Example">Example: opening help (*.chm) incl. Topic</span></h1>
+<p class="p_Normal"><span class="f_CourierFixed">file.run=hh [path\filename.chm]::/[topic.htm]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=mytopic=capitel1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">file.run=hh projekt\customer\myhelp.chm::/&lt;mytopic&gt;.htm</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">runandwait</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">execute a program and wait for ending</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">runandwaittime</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">time to wait before the called Application, batch,.. will be closed</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B1','TOGGLE0186B1_ICON')">set runandwaittime</a></td></tr></table></div>
+<div id="TOGGLE0186B1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">declare=systools=ue_system_tools</p>
+<p class="p_Normal"><span style="font-weight: bold;">systools=runandwaittime=120</span></p>
+<p class="p_Normal">systools=userunandwait=true</p>
+<p class="p_Normal">systools=runbeas=script=opennewwindow=artikel_browse.psr</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">userunandwait</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">should the runandwait function be used instead of &nbsp;the normal run. yes/no</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B2','TOGGLE0186B2_ICON')">Use &quot;userunandwait&quot;</a></td></tr></table></div>
+<div id="TOGGLE0186B2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">declare=systools=ue_system_tools</p>
+<p class="p_Normal">systools=runandwaittime=120</p>
+<p class="p_Normal"><span style="font-weight: bold;">systools=userunandwait=true</span></p>
+<p class="p_Normal">systools=runbeas=script=opennewwindow=artikel_browse.psr</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rundll</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B3','TOGGLE0186B3_ICON')">Execute rundll32</a></td></tr></table></div>
+<div id="TOGGLE0186B3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.rundll=&lt;command&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">execute rundll32.exe </p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">runbeas</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B4','TOGGLE0186B4_ICON')">Execute beas as parallel task</a></td></tr></table></div>
+<div id="TOGGLE0186B4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">start Beas in a separat task with the same user, pwd, database and server</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">example</span>: execute the Script c:\temp\myscript</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.runbeas=script=$c:\temp\myscript.src</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getfilesavename</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B5','TOGGLE0186B5_ICON')">Open dialog for save a file (open windows standard dialog window)</a></td></tr></table></div>
+<div id="TOGGLE0186B5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Open windows-standard-window for save a file.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">file.getfilesavename=Title=Extension=filefilter=startingdirectory=default filename</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">filefilter,startingdirectory and default filename are optional</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">file</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getfilesavename</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Filename</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">XLS</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Excel</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">(*.</span><span class="f_CodeExample" style="color: #3366ff;">XLS</span><span class="f_CodeExample" style="color: #ff0000;">),*.</span><span class="f_CodeExample" style="color: #3366ff;">XLS</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">C</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\temp</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">success</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">message</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CompatibleInformation"><span class="f_CompatibleInformation">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B1\',\'TOGGLE0186B1_ICON\')');
+HMInitToggle('TOGGLE0186B1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B2\',\'TOGGLE0186B2_ICON\')');
+HMInitToggle('TOGGLE0186B2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B3\',\'TOGGLE0186B3_ICON\')');
+HMInitToggle('TOGGLE0186B3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B4\',\'TOGGLE0186B4_ICON\')');
+HMInitToggle('TOGGLE0186B4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B5\',\'TOGGLE0186B5_ICON\')');
+HMInitToggle('TOGGLE0186B5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

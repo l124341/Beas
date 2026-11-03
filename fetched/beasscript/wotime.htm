@@ -1,0 +1,1042 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>wotime</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Creates Work order-Time-Entry &nbsp;	Important information The time receipt uses &quot;old&quot; objects which use additional instance variables. &nbsp;If the variable is defined, the variables ha" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "arriving.htm",
+   prevP: "api_time.htm",
+   currP: "wotime.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "wotime",
+   mailsubject: "Feedback on: Beas Script 2026.09 - wotime",
+   sharesubject: "Beas Script 2026.09 - wotime",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Wotime",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_api_time &gt; wotime /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - wotime").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "wotime.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>wotime</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">wotime</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Creates Work order-Time-Entry</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Important information</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Comment">T</span>he time receipt uses &quot;old&quot; objects which use additional instance variables. </p>
+<p class="p_Normal">If the variable is defined, the variables have higher priority than the properties.</p>
+<p class="p_Normal">This functionality cannot be deleted, otherwise compatibility to old customization functions would be lost.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=e_whscode=B</span></p>
+<p class="p_Normal">If this variable is defined, the system uses WareHouse &quot;B&quot; for all Bill of Material positions.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Problem:</p>
+<p class="p_Normal">After the first transaction, the system always writes the Default warehouse in the instance variables.</p>
+<p class="p_Normal">If you make a second transaction in the same window, it uses the same warehouse from the first transaction.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Workaround:</p>
+<p class="p_Normal">Make a sandbox with pushvar and popvar</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">// Save current variables (Sandbox)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-weight: bold; color: #ff0000;">pushvar</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// now make the time receipt</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=wotime=...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// at end restore all variables</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #ff0000;">popvar</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Start work time: <span class="f_See">see</span> wostart</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Method</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</td>
+<td class="fielddescription" style="width:797px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">woreset</span></p>
+</td>
+<td class="fielddescription" style="width:797px; background-color:#F7F7F7;"><p class="p_Normal">Resets all Inputs</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px;"><p class="p_Normal"><span class="f_CourierFixed">addwotimeline, addline, new</span></p>
+</td>
+<td class="fielddescription" style="width:797px;"><p class="p_Normal">Adds a new Row.</p>
+<p class="p_Normal">Basically you should only work / &nbsp;add one row at a time.</p>
+<p class="p_Normal">( Add, Save, Reset )</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">add / save</span></p>
+</td>
+<td class="fielddescription" style="width:797px; background-color:#F7F7F7;"><p class="p_Normal">Saves Data</p>
+<p class="p_Normal">If you specify a Row Number only this will be stored, otherwise all Rows.</p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=addline</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=add </span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px;"><p class="p_Normal"><span class="f_CourierFixed">setrow=x, currentrow=x</span></p>
+</td>
+<td class="fielddescription" style="width:797px;"><p class="p_Normal">Sets the current Position</p>
+<p class="p_Normal">With <span class="f_CourierFixed">&lt;objectname.currentrow&gt;</span> you can get the Current Row</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">timecalc, timecalculate, zeitberechnung</span></p>
+</td>
+<td class="fielddescription" style="width:797px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Calculates the time</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Mandatory fields:</p>
+<p class="p_Normal"><span class="f_CourierFixed">fromtime, fromdate, totime, todate, user</span> </p>
+<p class="p_Normal">Optional: <span class="f_CourierFixed">ftstmpnumber, buchnr_id</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Result will be stored in <span class="f_CourierFixed">&lt;objectname.duration&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=wotime=ue_api_time</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=addline</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=barcode=1000443</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;return&gt; = -1 then </span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; return failure</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=docdate=&lt;today,yyyy/mm/dd&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=fromdate=2006/08/02</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=fromtime=10:00</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=totime=14:00</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=user=5000</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=timecalc</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=save</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=wotime</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if &nbsp;you set variable <span class="f_CourierFixed">setvar=sys_parallelcalculate=N</span> &nbsp;, Beas calculates the time without parallel-calculation (ignored other order-messages)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px;"><p class="p_Normal"><span class="f_CourierFixed">display=y/n</span></p>
+</td>
+<td class="fielddescription" style="width:797px;"><p class="p_Normal">If &quot;N&quot;, then prevent queries and Output (for server application)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">order_logon</span></p>
+</td>
+<td class="fielddescription" style="width:797px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Logon a routing position</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This is a part of object ue_bdemodul. </p>
+<p class="p_Normal">Use this syntax:</p>
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_bdemodul=order_logon=parameter=value&lt;tab&gt;parameter=...&lt;tab&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Parameter</p>
+<p class="p_Normal"><span class="f_CourierFixed">belnr_id, belpos_id, pos_id, pers_id,aplatz_id, oldbatchnum, newbatchnum, barcode, timetype_id, typ, date, time</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Simple Logon</p>
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_bdemodul=order_logon=belnr_id=100&lt;tab&gt;belpos_id=10&lt;tab&gt;pos_id=30&lt;tab&gt;pers_id=5</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in Variable &quot;returnvalue&quot; you can check, if all ok</p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;returnvalue&gt; = true then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;messagebox=ok$ok</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">if you need this as service or in silend-mode, you can set this</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=mbde=ue_bdemodul</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">mbde=display=N</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">mbde=order_logoin=...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">mbde=getmessage</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">message=&lt;shortmessage&gt; / &lt;longmessage&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=mbde</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Attention">Attention:</span> You need terminal FDC License.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:164px;"><p class="p_Normal"><span class="f_CourierFixed">order_logoff</span></p>
+</td>
+<td class="fielddescription" style="width:797px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Logoff from running time receipt</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You need the &quot;BUCHNR&quot; id from current running </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">select top 1 &quot;BUCHNR_ID&quot; into ll_buchnr_id from &quot;BEAS_FTSTMP&quot; where &quot;PERS_ID&quot;=&lt;ls_pers_id,dbstring&gt; and &quot;BELNR_ID&quot;=&lt;belnr_id&gt; </span></p>
+<p class="p_Normal"><span class="f_CourierFixed">and &quot;BELPOS_ID&quot;=&lt;belpos_id&gt; and &quot;POS_ID&quot;=&lt;pos_id&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=wotime=ue_api_time</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=addline</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=order_logoff=&lt;ll_buchnr_id&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=save</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Attention">Attention:</span> You need terminal FDC License.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_beas_Version"><span class="f_beas_Version">avaiable with beas 9.3-000-006-000</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties </span></p>
+<p class="p_Normal"><span class="f_beas_Version">(beas 9.3 PL2)</span></p>
+<p class="p_Normal">Older Versions use &quot;old name&quot;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span style="font-weight: bold;">Old name</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">AddScrapId</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">addscrappid</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Adds a scrap line</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">wotime=scrap=5</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=addscrappid=scrap_id1=3</span><br />
+<span class="f_CourierFixed">wotime=addscrappid=scrap_id2=2</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">Barcode</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">barcode</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Message about BarCode with link to Number Sequence of the work sequence. <span class="f_CourierFixed">beas_ftapl.nummer</span>. Automatic &nbsp;determines  <span class="f_CourierFixed">belnr_id,belpos_id,pos_id</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">BPLid</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">bplid</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Branch Id (OBLP.BPLId)</p>
+<p class="p_Normal">Only for information!</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">BPLName</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">bplname</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Name of Branch (OBPL.BPLName)</p>
+<p class="p_Normal">if you set bplid, beas get the name automatically. </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Check_Presence</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">check_presence</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">true = Check, if the User is presence (only, if activated in the Configuration)</p>
+<p class="p_Normal">false = disable the User-Presence-Check</p>
+<p class="p_Normal">Default=true</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">CloseEntry</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">close, abgkz</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Closes Work Sequence</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">CloseEntry</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">cancel</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">1 = cancellation this entry (price = 0) - other way to delete the entry </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">CostCenter</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">costcenter, kstst_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">cost center <span class="f_CourierFixed">oprc.prccode </span>determined aus beas_aplatz.kstst_id</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">CostElementId</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">timetype_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Defines Cost Lement (TimeType_id)</p>
+<p class="p_Normal"><span class="f_Attention">Attention:</span> The object don't copy this from Routing position to Time Receipt</p>
+<p class="p_Normal">If you need this property, you must set this manually.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">CurrentRow</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">currentrow</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Sets / Adds Current Row. Only existing rows can be set.</p>
+<p class="p_Normal">To add a new row you need to use <span class="f_CourierFixed">addline</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">DocDate</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">docdate</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Date for journal entry</p>
+<p class="p_Normal">only for new entry. You can't change this propertie in an exist entry!</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">DocEntry</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">belnr_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Document Number</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Duration</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">time, minute, dauer, duration</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Length in minutes</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">ExternalCosts</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">costs, fagprice</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Additional costs</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">FromDate</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">fromdate</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Start Date in Format: yyyy/mm/dd</p>
+<p class="p_Normal">Also set the end date to &quot;Today&quot;</p>
+<p class="p_Normal">If you want to set a different end date, use the Command &quot;fromdate&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">FromMinute</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">fromminute</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">from minute (minutes)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">FromTime</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">fromtime</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">from time in Format: hh:mm</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">Ftstmp_Buchnr_id</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">ftstmp_buchnr_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">if you set this, Beas will delete this entry after create the time receipt</p>
+<p class="p_Normal">Urgend: if you will close the workorder-position, then you must set the variable <span class="f_CourierFixed">setvar=e_buchnr_id=&lt;beas_ftstmp_buchnr_id&gt;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">LineNumber</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">belpos_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Assembly</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">LineNumber2</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Work sequence</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">LineNumber3</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">resourcenpos_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_See">see</span> parallel. </p>
+<p class="p_Normal">Returns the parallel resource of the current work step.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">ManualBooking</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">manualbooking</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Define if the time request should create material issue/receipt document too</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">DEFAULT = Yes !! Backflush function is disabled!</p>
+<p class="p_Normal">If you want to activate the backflush function, you must define the property to &quot;N&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=manualbooking=N</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Receipt function</p>
+<p class="p_Normal">If this is the last operation, Beas creates the receipt document.</p>
+<p class="p_Normal">If you want to overwrite the batch number, you can define this with</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=e_setbatchnum=&lt;your batch number&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">OrderName</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ordername</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Name of the Order <span class="f_CourierFixed">beas_fthaupt.auftrag</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">Parallel</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">parallel</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Sets this to J, if this a parallel resource</p>
+<p class="p_Normal">you need to provide <span class="f_CourierFixed">resourcepos_id</span>. </p>
+<p class="p_Normal">In that case no material posting will take place</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">PersonnelId</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">user, pers_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Employee Number (Personalstamm BEAS <span class="f_CourierFixed">beas_personal.pers_id</span>))</p>
+<p class="p_Normal">Current user is <span class="f_CourierFixed">&lt;system.pers_id&gt;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">QuanittyGood</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">quantity, menge_gut</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Quantity in Consumption unit of the related Assembly</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">QuanittyScrap</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">scrap, menge_schlecht</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Rejected quantity in Consumption unit of the related Assembly</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">QuantityGoodRUoM</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">quantity_rm</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Quantity in Confirm Quantity</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The Confirm UoM can be defined in </p>
+<p class="p_Normal">Routing Position -&gt; Extended -&gt; Confirm in units and -&gt; Factor per inventory UoM</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The system calculates<br />
+QuantityGoodRUoM * Factor per Invent</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Stock Unit = kg</p>
+<p class="p_Normal">Consumption Unit of Assembly = g</p>
+<p class="p_Normal">Factor = 1000</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Routing Position</p>
+<p class="p_Normal">Confirm Unit = ml</p>
+<p class="p_Normal">Confirm factor = 3</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Confirm Quantity in Confirm Unit * Confirm Factor / Consumption Factor = Quantity in Stock Unit</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">1ml * 3 &nbsp;= 3 g / 1000 = 0.003 kg</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Calculation to Stock Unit of Assembly</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Confirm Quantity in Confirm Unit / Confirm Factor / Consumption Factor = Quantity in Stock Unit</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">QuantityScrapRUoM</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">scrap_rm</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Rejected quantity [feedback unit]</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">Remarks</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">info</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Info</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ResourceId</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">workcenter, resource_id, aplatz_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Work Station <span class="f_CourierFixed">beas_aplatz.aplatz_id</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">RUoM</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">unit_rm</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Feedback unit. If emtpy, storage unit</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">RUoMFactor</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">faktor_rm</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Amount Inventory per feedback unit (conversion factor)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">SetLeaving</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">setleaving</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">if active (1, true, yes), then personnel is leaving (time-system)if </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">SystemNumber</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">entry, nr</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Current Number(If 0 than new)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">SystemNumber</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">nr, entry, load, buchnr_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">Must be set if you work on a a existing Contract.</p>
+<p class="p_Normal">The parameter you have to pass is the <span class="f_CourierFixed">&quot;BEAS_ARBZEIT&quot;.&quot;BUCHNR_ID&quot;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Example</a></span></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">wotime.load=dtw.buchnr_id</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">TimeObligation</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">timeobligation, bde</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">Completion confirmation of time is required? </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">TimeReceiptRunningId</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">ftstmpnumber</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal"><span style="text-decoration: underline;">For timecalculate</span> you must set this variable, if you logoff a current timestamp (= <span class="f_CourierFixed">&quot;BEAS_FTSTMP&quot;.&quot;BUCHNR_ID&quot;</span> )</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">TimeType</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">messagetype</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">set the time type <span class="f_CourierFixed">normal time=A, tool time=R, time 2 (H)=H, time 3 (N)=N</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">ToDate</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">todate</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">End-Date in Format yyyy/mm/dd</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ToMinute</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">tominute</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">bis-minutes</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">ToolId</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">wkz_id</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">the tool-Id (use only, if beas_wkz.choosable=int)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ToTime</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">totime</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">to-time</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px;"><p class="p_Normal"><span class="f_CourierFixed">udf=&lt;fieldname&gt;</span></p>
+</td>
+<td class="fielddescription" style="width:149px;"><p class="p_Normal"><span class="f_CourierFixed">udf=&lt;fieldname&gt;=&lt;content&gt;</span></p>
+</td>
+<td class="fielddescription" style="width:519px;"><p class="p_Normal">You can add new columns in the table &quot;beas_arbzeit&quot; and can fill this fields with this command</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> db.ini</p>
+<p class="p_Normal"><span class="f_CourierFixed">column=beas_arbeit=myfield=varchar(50)</span></p>
+<p class="p_Normal">Saves a time via wotime</p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=udf=myfield=hello world</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:155px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Udf1...15</span></p>
+</td>
+<td class="fielddescription" style="width:149px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">udf1 ... udf15</span></p>
+</td>
+<td class="fielddescription" style="width:519px; background-color:#F7F7F7;"><p class="p_Normal">UDF &nbsp;- Field</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Events</span></p>
+<p class="p_Normal">The following Functions will be executed at the time a booking is handled.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:579px;"><p class="p_Normal"><span style="font-weight: bold;">Event</span></p>
+</td>
+<td class="fielddescription" style="width:985px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:579px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">workordermanagement:timerecordingstart</span></p>
+</td>
+<td class="fielddescription" style="width:985px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Event time recording start</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Variables</p>
+<p class="p_Normal"><span class="f_CourierFixed">e_belnr_id,e_belpos_id,e_pos_id</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">e_row</span>: actual row</p>
+<p class="p_Normal"><span class="f_CourierFixed">e_pers_id</span>= employee Number</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Alternatively, you can access properties of the object:</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=wotime=ue_api_time</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// load a timeorder</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wotime=load=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// Booking</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">function timerecordingstart</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;wotime.belnr_id&gt; n= 20 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; ...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">return true</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas always uses <span class="f_CourierFixed">wotime </span>as declaration<span class="f_CourierFixed">.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The whole process can be aborted with <span class="f_CourierFixed">return failure.</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:579px;"><p class="p_Normal"><span class="f_CourierFixed">workordermanagement:timerecordingend</span></p>
+</td>
+<td class="fielddescription" style="width:985px;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Error Messages</span></p>
+<p class="p_Normal">Error Messages will be stored in the Variable &quot;errormessage&quot;.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span style="font-weight: bold;">ID</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal"><span style="font-weight: bold;">Message</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1000</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">Unknown Personal Number</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1100</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">userfunction timerecordingstart() returned &quot;failure&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1101</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">userfunction timerecordingend() returned &quot;failure&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1102</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">Unknown &nbsp;Work Order or</p>
+<p class="p_Normal">(AE_FAW2) invalid resource (get all information &nbsp;from BEAS_APLATZ. Entry not found or SQL Error)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1103</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">already closed</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1155</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">(rueckmeldabgkz43) Preceding work sequence needs to be completed first.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1156</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">(AW_FAW1AB) Preceding work sequence confirmed. Reported: already posted: .... A confirmation of is impossible</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1167</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">Error select BEAS_FTAPL_WKZ ue_api_time.wo_time Errorplace:1167 (get price from parallel routing position)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1195</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">(afogrpressource0234) No confirmations possible for group resources. Please select a resource.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1199</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">error select last quantity from delivery ue_api_time of_wotime (Table PDN1) or</p>
+<p class="p_Normal">error select sum qty from time receipt (Table BEAS_ARBZEIT)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1330</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">(bderstanw44) Please log on first in the presence registration!</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1441</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">(afoanmqs95532) Quality assurance in working order sequence is not OK. Registration is not possible!</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1442</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">SQL Error get related QC measure position (BEAS_QSFTMESSUNG)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1443</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">(afoanmqs9435) In work sequence the QC-inspection has not yet started. Registration is not possible! &nbsp; &nbsp; &nbsp; &nbsp;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1445</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">SQL Error search for related QC Order</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1500</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">Booking failed</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1600</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">(AE_STEMP1) Error while writing BDE-Entry</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1800</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">SQL Error loading routing position (not found, wrong itemcode, syntax error) </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1801</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">(fsperrung1) Order (BEAS_FTHAUPT) or Position (BEAS_FTPOS) or routing position (BEAS_FTAPL) &nbsp;locked or closed or logon for position is locked or Logon on routing position is locked.</p>
+<p class="p_Normal">You can save a time receipt on closed routing position, if you set <span class="f_CourierFixed">setup=fert_afoabgallow=N</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1881</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">(ftstmpminqty234) The minimum value is not reached- Maintenance sequence can not be closed!</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">1882</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">(ftstplanqty4954) Planned quantity is exceeded. Planned Quantity ... , Currently receipt ... , Total ....</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">1888</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">(ftstmpminbqty523) Minimum quantity not reached. Minimum quantity to confirm</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">2000</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">(AE_FAW3FAG) Foreign production step: &quot;Prize entry is compelling, but has not occurred&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">2001</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">(AE_FAW3) Time Entry is compelling, but has not occurred.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">2114</span></p>
+</td>
+<td class="fielddescription" style="width:655px; background-color:#F7F7F7;"><p class="p_Normal">Currency not found</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:70px;"><p class="p_Normal"><span class="f_CourierFixed">9991</span></p>
+</td>
+<td class="fielddescription" style="width:655px;"><p class="p_Normal">Error get old journal entrys</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

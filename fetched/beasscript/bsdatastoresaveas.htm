@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>SaveAs / Export</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="with save as method it is possible to export the data from a datastore to file or value" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "datastore_example.htm",
+   prevP: "parallel_connection.htm",
+   currP: "bsdatastoresaveas.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "SaveAs / Export",
+   mailsubject: "Feedback on: Beas Script 2026.09 - SaveAs / Export",
+   sharesubject: "Beas Script 2026.09 - SaveAs / Export",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsDatastoresaveas",
+   mailpath: "Beas script &gt; BS Object reference &gt; datastore &gt; SaveAs / Export /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - SaveAs / Export").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsdatastoresaveas.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>SaveAs / Export</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">SaveAs / Export</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">with save as method it is possible to export the data from a datastore to file or value</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Supported types:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">json</span> return as json, jsonarray or xml string in value &quot;value&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">psr</span> &nbsp;as PSR-File</p>
+<p class="p_Normal"><span class="f_CourierFixed">xml</span> &nbsp;as XML-File in UTF8</p>
+<p class="p_Normal"><span class="f_CourierFixed">csv</span> &nbsp;as CSV-File in UTF8</p>
+<p class="p_Normal"><span class="f_CourierFixed">text</span> &nbsp;as Text-File in UTF8</p>
+<p class="p_Normal"><span class="f_CourierFixed">excel, xls</span> as Excel5-File in UTF8</p>
+<p class="p_Normal"><span class="f_CourierFixed">clipboard</span> copy Data in Clipboard in Text-Format</p>
+<p class="p_Normal"><span class="f_CourierFixed">dbase3</span> as Dbase-File </p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">export to json</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_TitleinText"><span class="f_TitleinText">without parameter: </span></p>
+<p class="p_Normal">Simple export in JSON format. All parameter as String</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">intance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds.saveas=json</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">messagebox=&lt;value&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">Return&nbsp;as&nbsp;example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">[</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemcode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP_B_S&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemname&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemcode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP_B_S_V&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemname&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemcode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP_BBD&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemname&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&nbsp;with&nbsp;Best&nbsp;Before&nbsp;Date&nbsp;(WMS)&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">]</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_TitleinText"><span class="f_TitleinText">with parameter</span></p>
+<p class="p_Normal">extended export to different formats</p>
+<p class="p_Normal">Parameter delimiter with &lt;tab&gt;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">format</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Define export format</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">In the format parameter delimiter is comma</p>
+<p class="p_Normal">property,property=value,property</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">xml</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Export in XML format</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">top</span><span class="f_CodeExample">&nbsp;2&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #a04db3;">'FP'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">order</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">by</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">format</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">xml</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">Return as example:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;?</span><span class="f_CodeExample" style="color: #3366ff;">xml</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">version</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;1.0&quot;</span><span class="f_CodeExample" style="color: #ff0000;">?&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">row</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">FP</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">Finished</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Product&nbsp;Normal</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">row</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">row</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">FP_B_S</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">&gt;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">Finished</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Product</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">row</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">Note: Beas convert all strings/Dates/Numbers in <a href="json-format.htm" class="topiclink">JSON Format</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">json</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Export in JSON format (Standard)</p>
+<p class="p_Normal">see see <a href="json-format.htm" class="topiclink">JSON Format</a></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">top</span><span class="f_CodeExample">&nbsp;2&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #a04db3;">'FP'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">order</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">by</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">format=json</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;value&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&nbsp;&nbsp;[</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&nbsp;&nbsp;&nbsp;&nbsp;{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemcode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemname&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&nbsp;&nbsp;&nbsp;&nbsp;{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemcode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP_B_S&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;itemname&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&nbsp;&nbsp;]</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">array</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Export in JSON Array format</p>
+<p class="p_Normal">example</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">top</span><span class="f_CodeExample">&nbsp;2&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #a04db3;">'FP'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">order</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">by</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">format</span><span class="f_CodeExample" style="color: #ff0000;">=array</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">return </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;value&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP_B_S&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&nbsp;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">]</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">trim</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">delete all spaces left and right side of strings</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">format=json,trim</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">notempty</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">don't export empty fields</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">format=json,notempty</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">notnull</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">don't export null fields</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">format=json,notnull</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">noheader</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">don't export header</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">linefeed</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">insert linefeed after every line</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">level=2</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">metadata</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">for array format: insert metadata of the export &nbsp;in the json string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">odataversion</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">define the json format: &nbsp;2= odata2 format, 4=odata4 format</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">fieldmapping=&lt;properties&gt;</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">define field mapping</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">with this you can change the title and type of fields in xml/json format</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">fieldname=Title,fieldname=Title</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">fieldname must be always lowercase</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">top</span><span class="f_CodeExample">&nbsp;2&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #a04db3;">'FP'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">order</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">by</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">fieldmapping</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ItemNumber</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Description=long</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">return</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;value&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #a04db3;">ItemNumber</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #a04db3;">Description</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&nbsp;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #a04db3;">ItemNumber</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP_B_S&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #a04db3;">Description</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Finished&nbsp;Product&nbsp;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">if title is not defined, the system don't export this</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">fieldmapping</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ItemNumber,itemname=</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">return</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;value&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #a04db3;">ItemNumber</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #a04db3;">ItemNumber</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP_B_S&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">if property &quot;onlydefineditems&quot; defined, the system export only defined items</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">fieldmapping</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ItemNumber&lt;tab&gt;onlydefineditems</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">return</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;value&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #a04db3;">ItemNumber</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #a04db3;">ItemNumber</span><span class="f_CodeExample" style="color: #a04db3;">&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;FP_B_S&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">onlydefineditems</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">export only fields defined with fieldmapping</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">onlyitem=true/false</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">only json format. Define the value type</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">true: <span class="f_CourierFixed">@value={},</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">false: <span class="f_CourierFixed">@value:[{},{}...]</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">maxsize</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">define max size of generated string. Default=8192 chars (Unicode) = 16 MByte</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">dbstring: Beas own data format</a> </td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">dbstring</span> is a very small beas-data-container to copy data from a beas to a beas-application</p>
+<p class="p_Normal">if you don't set a file name, Beas returns the result in variable &quot;<span class="f_CourierFixed">value</span>&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">intance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">dbstring</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">singlestring: as one string</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:none"><p class="p_Normal">Export datasource in one Variable</p>
+<p class="p_Normal">Parameter (tab separeted)</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:87px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">delimiter</span></p>
+</td>
+<td style="vertical-align:top; width:329px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Delimiter Sign between datastore columns. Default: Empty</p>
+<p class="p_Normal">if you need &quot;tab&quot; as delimiter, then use &quot;tab&quot; and not &quot;&lt;tab&gt;&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:87px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">nextline</span></p>
+</td>
+<td style="vertical-align:top; width:329px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Sign for next line. Default: &lt;cr lf&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:87px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dateformat</span></p>
+</td>
+<td style="vertical-align:top; width:329px; padding:2px; border:solid thin #000000;"><p class="p_Normal">DateTime Format</p>
+<p class="p_Normal">Default yyyy/mm/dd hh:mm</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:87px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">decimal</span></p>
+</td>
+<td style="vertical-align:top; width:329px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Decimal Format. Default: #0.000000&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example:</p>
+<p class="p_Normal">Delimiter = ;<br />
+Nextline = &lt;tab&gt;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">intance&nbsp;datastore&nbsp;lds</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">saveas</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">singlestring</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">delimiter</span><span class="f_CodeExample" style="color: #ff0000;">=;&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tab</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #3366ff;">nextline</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">tab</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

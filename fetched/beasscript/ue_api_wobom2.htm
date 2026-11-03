@@ -1,0 +1,763 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_api_wobom</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="api_wobom is an Object for the administration of a Work order Bill of Materials" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ue_chargenbuchung.htm",
+   prevP: "ue_fert_aufloesen.htm",
+   currP: "ue_api_wobom2.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_api_wobom",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_api_wobom",
+   sharesubject: "Beas Script 2026.09 - ue_api_wobom",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Ue_api_wobom2",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_api_wobom /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_api_wobom").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_api_wobom2.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_api_wobom</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_api_wobom</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span class="f_CourierFixed">api_wobom</span> is an Object for the administration of a Work order Bill of Materials</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">NOTE: </span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Use <a href="bslworkorderbom.htm" class="topiclink">BeasServiceLayer WorkorderBom </a> to manage / change Bill of Material positions.</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">This object is only available for compatibility.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can declare the object with:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">wobomobjectname</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_wobom</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_wobom</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">1244</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">10</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">addline</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">A001</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">2</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">udf1</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">hello</span><span class="f_CodeExample" style="color: #ffffff;">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">world</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">save</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to insert a new line, work with sorting by &quot;POS_TEXT&quot;</p>
+<p class="p_Normal"><span class="f_Example">Example: </span>you have bom position 10 and 20 and want insert position 15</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_wobom</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">1244</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">10</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">addline</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">A001</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">2</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;define&nbsp;the&nbsp;position&nbsp;(text&nbsp;information)</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">pos_text</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">15</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;sort&nbsp;(beas&nbsp;use&nbsp;numberic&nbsp;sort,&nbsp;means:&nbsp;convert&nbsp;information&nbsp;to&nbsp;numberic&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sortbypostext</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;save</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">save</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Methods</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:230px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Method</span></p>
+</th>
+<th style="vertical-align:top; width:598px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getbykey=&lt;belnr_id&gt;=&lt;belpos_id&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Loads the Work order Bill of Materials list</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This function loads the bill of materials list of this work order position</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Attention:</span></p>
+<p class="p_Normal">if you execute the load function 2 times with the same work order position, Beas will not reload the Bill of materials.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;load&nbsp;work&nbsp;order&nbsp;bill&nbsp;of&nbsp;mateiral</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">1244</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">10&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;try&nbsp;to&nbsp;load&nbsp;again&nbsp;-&gt;&nbsp;beas&nbsp;do&nbsp;nothing,&nbsp;because&nbsp;it's&nbsp;loaded</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">1244</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">20</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;reload&nbsp;first&nbsp;bom&nbsp;-&gt;&nbsp;beas&nbsp;load&nbsp;it&nbsp;again,&nbsp;because&nbsp;curent&nbsp;Position&nbsp;20&nbsp;is&nbsp;loaded</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">1244</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">10</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Attention"><span class="f_Attention">Attention: </span></p>
+<p class="p_Normal">if you want to insert a new line, you must execute</p>
+<p class="p_Heading1"><span class="f_CourierFixed">wobom=addline</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">new=&lt;belnr_id&gt;=&lt;belpos_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><p class="p_Normal">Creates a new BoM.<br />
+<span class="f_Attention">Attention:</span> It is always recommended to load a BoM first, otherwise a primary key problem can occur.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addline</span></p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><p class="p_Normal">Add a new bill of material row</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setrow=&lt;row&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><p class="p_Normal">Set the actual Row</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">update</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">save</span></p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Update / Save the bom</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the program can't save it, it returns an error message and</p>
+<p class="p_Normal">value <span class="f_CourierFixed">&lt;wombom.ret_code&gt;</span> = -1</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if all ok, beas return <span class="f_CourierFixed">&lt;wobom.ret_code&gt;</span> = 1</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Attention">Attention: </span>Beas inserts all not existing information (sorting information)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">goto_pos=&lt;pos_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Seek pos in the BoM list and sets the current position to this position</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if position not found, api_wobom will return -1 in variable <span class="f_CourierFixed">&lt;wobom.ret_code&gt; </span>otherweise it return in <span class="f_CourierFixed">&lt;wobom.ret_code&gt;</span> = 1 an din <span class="f_CourierFixed">&lt;wobom.ret_value&gt;</span> the current row</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wobom.getbykey=&lt;belnr_id&gt;=&lt;belpos_id</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wobom.goto_pos=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;wobom.ret_code&gt; n= 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;//...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">goto_postext=&lt;pos_text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Seeks pos text information in the BoM list and sets the current position to this position</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if position not found, api_wobom will return -1 in variable <span class="f_CourierFixed">&lt;wobom.ret_code&gt; </span>otherweise it return in <span class="f_CourierFixed">&lt;wobom.ret_code&gt;</span> = 1 an din <span class="f_CourierFixed">&lt;wobom.ret_value&gt;</span> the current row</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">belnr_id</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">belpos_id</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">goto_postext</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">10</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample" style="color: #ffffff;">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #ffffff;">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample" style="color: #ffffff;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//...</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample" style="color: #ffffff;">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortbypostext</span></p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Sorts the BoM list by visible position number (POS_TEXT)</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to insert a new line, work with sorting by &quot;POS_TEXT&quot;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> you have a BoM position 10 and 20 and want to insert position 15</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_wobom</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">1244</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">10</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">addline</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">A001</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">2</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;define&nbsp;the&nbsp;position&nbsp;(text&nbsp;information)</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">pos_text</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">15</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;sort&nbsp;(beas&nbsp;use&nbsp;numberic&nbsp;sort,&nbsp;means:&nbsp;convert&nbsp;information&nbsp;to&nbsp;numberic&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sortbypostext</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;save</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">save</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:230px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortbyposid</span></p>
+</td>
+<td style="vertical-align:top; width:598px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Sorts the BoM list by pos_id </a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to insert a new line, work with sorting by &quot;POS_ID&quot;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> you have a BoM position 10 and 20 and want to insert position 15</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This only works if you always define the pos_id!</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_wobom</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">1244</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">10</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">addline</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">A001</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">2</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;define&nbsp;the&nbsp;position&nbsp;(text&nbsp;information)</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">pos_id</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">15</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;sort&nbsp;(beas&nbsp;use&nbsp;numberic&nbsp;sort,&nbsp;means:&nbsp;convert&nbsp;information&nbsp;to&nbsp;numberic&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sortbyposid</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;save</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">wobom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">save</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+<p class="p_Normal">You can use the property name OR the table column name</p>
+<p class="p_Normal">For all other not documented properties: use direct the table name</p>
+<p class="p_Normal"><span class="f_Attention">Attention:</span> Beas does not check the value. If you insert wrong values, you have this in the database!</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:223px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:136px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Columnname in Table BEAS_FTSTL</span></p>
+</th>
+<th style="vertical-align:top; width:47px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">read</span></p>
+</th>
+<th style="vertical-align:top; width:52px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">write</span></p>
+</th>
+<th style="vertical-align:top; width:363px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rowcount</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">Count of all Rows. ReadOnly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">currentrow</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">Actual Row. ReadOnly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">Internal position number</p>
+<p class="p_Normal">Update: Don't change the pos_id. Please use the POS_TEXT</p>
+<p class="p_Normal">Attention: The pos_id don't define the sorting!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos_text</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos_text</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">visible position number (alpha numeric)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortid</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortid</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Defines the sorting inside the complete Bill of materials list</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Numeric value</p>
+<p class="p_Normal">Defines the sorting. If you create a new line, you can define a special sorting definition.</p>
+<p class="p_Normal">- 1 = after position, which pos_id is lower as the pos_id from current line (good setting for integration hub)</p>
+<p class="p_Normal">- 2 = order by pos_id, resort the complete bill of material</p>
+<p class="p_Normal">- 3 = order by pos_text - alphanumeric</p>
+<p class="p_Normal">- 4 = order by pos_text - numberic</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For more information <span class="f_See">see</span> integartion hub - Definition Target</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wobom.pos_id=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wobom.sort_id=-2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">wobom.save</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">art1_id</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Changes / inserts the material number in the BoM position. </a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The system gets all information and writes this in the BoM position, for example length, width, height, warehouse, raw material etc.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you want to change the other properties, define the item code first, and then the other properties.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">version</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">u_beas_ver</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Item Version number</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if version information is available, Beas inserts the description and drawing number of this version.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">variant</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shortvariant</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">short variant (A-Z)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">configuration</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">vri</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">configuration number</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">fixquantity</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menge_verbrauch_ve</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">fix quantity. scrap quantity. beas calculate this quantity only 1 time and not per assembly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">quantity</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menge_verbrauch</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">quantity per assembly in use unit</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">per</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menge_je</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">defines &quot;quantity per&quot;, example per 1000 assemblies</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">calcutatedscrap</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ausschuss</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">calculated scrap quantity. You can change, define this manually. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">roundingtype</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">round_type</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">Define rounding type 0-4</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">roundingdec</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">round_dec</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">Rounding - count of decimal places</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">length, width, height</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">abm1,abm2,abm3</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">info</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">info</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">info line in BoM </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">additionaltext</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">usertext</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">additional user text</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">warehouse</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">whscode</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">warehouse code</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">matchcode</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">match</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">match code of &nbsp;this item</p>
+<p class="p_Normal">Beas inserts the additional costs information automatically (fields VK_ZUSCHLAG, GK_ZUSCHLAG)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">materialgroup</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">gruppe</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">material group of this item</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rawmaterial</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">wst_id</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">rawmaterial of this item</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">density</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dichte</span></p>
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">density of this field</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">udf1 ... udf15</span></p>
+</td>
+<td style="vertical-align:top; width:136px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:47px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:363px; padding:0; border:solid thin #000000;"><p class="p_Normal">all udf fields</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

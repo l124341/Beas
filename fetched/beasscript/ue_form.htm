@@ -1,0 +1,712 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_form</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Opens or creates a window &nbsp;Open a window declare=lform.ue_form lform.psr=&lt;filename&gt; lform.s_parm1=parameter // Variant open lform.show &nbsp;// Variant open modal lform.showdia" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ue_json.htm",
+   prevP: "file2datastore.htm",
+   currP: "ue_form.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_form",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_form",
+   sharesubject: "Beas Script 2026.09 - ue_form",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Ue_form",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_form /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_form").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_form.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_form</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_form</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Opens or creates a window</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Open a window</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">psr</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">s_parm1</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">parameter</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Variant&nbsp;open</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">show</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Variant&nbsp;open&nbsp;modal</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">showdialog</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Create own window</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">statement</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">style</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">edit</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">browse</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">showdialog</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">fieldname</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in the form instance you have full access from and to both windows.</p>
+<p class="p_Normal">You can see results from child window after closing the child window</p>
+<p class="p_Normal">You can read all values from the child.dw_1 window with &lt;lform.fieldname&gt;, if return code &lt;lform.ret_code&gt; = 1</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the window, which you open, you have access to all properties with form.return.[property]</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">form</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">s_parm1</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:210px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:35px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:55px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:706px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">b_parm1 ... b_parm2</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">set str_parm boolean parameter. You can read this in created window with &lt;str_parm.b_parm1&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">belnr_id, belpos_id, pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">set str_parm workorder number parameter</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">c_parm1 ... c_parm6</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">set str_parm numberic parameter. You can read this in created window with &lt;str_parm.c_parm1&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">columndefenition</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">set columndefinition for browser view</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">docentry, linenum</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">set str_parm document/linenum parameter</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dt_parm1 ... dt_parm2</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">set str_parm date parameter. You can read this in created window with &lt;str_parm.dt_parm1&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dw_1...dw_7</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">define datawindow properties in created window</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You have access to all datawindows properties from created window</p>
+<p class="p_Normal"><span class="f_Example">Example: </span>Create window with choosing itemcode, default is &quot;Sofa&quot;</p>
+<p class="p_Normal">Changed title and inserted a drop-down command</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you change the item code, Beas must define the item name. You can define this with a global function</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dwname</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myWindow</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">'Sofa'</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">title</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Item</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Code</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">title</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Description</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dropdown</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">style</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">edit</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">showdialog</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;function&nbsp;for&nbsp;change&nbsp;item&nbsp;code</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">global</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lform_dw_1_item_itemcode_itemchanged</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">into</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">dbstring</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">global</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dwname</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">defines the name of window. If you create a new window, you must define the name</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dwname</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myWindow</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">space</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample">50</span><span class="f_CodeExample" style="color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">as</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;BEAS_DUMMY&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">showdialog</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">// internal Name of created window: myWindow</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.height</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Define height for new edit window. If column need more height, Beas creates a second column</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.name</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Define internal name for created form (same as dwname)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.title</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Define title for new edit window</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">global function</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Define Events and Methods for the new window</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">All existing global functions, which start with the object name of ue_form will be available in the created form too</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">mynewform</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">mynewform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">'Sofa'</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">mynewform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">design</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">edit</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">mynewform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">showdialog</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destry</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">mynewform</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">global</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">mynewform_form_opened</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">title</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Item</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Code</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">title</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Description</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">global</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">item</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">define item properties from dw_1</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you have direct access to all dw_1.item - properties</p>
+<p class="p_Normal">if you write only &quot;item&quot;, beas set as prefix &quot;dw_1.&quot; automatically</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemcode.title=abc</span></p>
+<p class="p_Normal">is same as </p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.itemcode.title=abc</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">psr</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Name of PSR file of window, which you want to open</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">// Open Item edit window for item A001</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">psr</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">artikel_edit</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">psr</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">s_parm1</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">A001</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">show</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">destroy</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ret_code, ret_value, ret_text</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Reads and writes return information</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">s_parm1 ... s_parm5</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set str_parm parameter. You can read this in the created window with &lt;str_parm.s_parm1&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setvar</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Defines Variable in child window, which you can read in parent window</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can define in the child window variables. With &quot;form.return&quot; you have access to the lform object. from parent window</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dwname</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">mywindow</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">psr</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">showdialog</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Color</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ret_color</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in the window &quot;mywindow&quot; </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">global</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">form_close</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">form</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ret_color</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">color</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">form</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">global</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">show</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">displays the window and continues the script</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">psr</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">artikel_edit</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">psr</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">s_parm1</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">A001</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">showdialog</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">opens the window and waits for closing this</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Open dialog and waiting</p>
+<p class="p_Normal">if user click on ok, the<span class="f_CourierFixed"> &lt;lform.ret_code&gt; = 1</span> and all columns insode <span class="f_CourierFixed">&lt;lform.[colnames]&gt;</span></p>
+<p class="p_Normal">if user click on cancel, then <span class="f_CourierFixed">&lt;lform.ret_code&gt; = -1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">example:</span> asking for date</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=lform=ue_form</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lform.dwname=datearea</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lform.sql=select getdate() as from_date,getdate() as to_date from &quot;BEAS_DUMMY&quot;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-weight: bold;">lform.showdialog</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;lform.ret_code&gt; = 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; messagebox=date area &lt;lform.from_date,date&gt; to &lt;lform.to_date,date&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=lform</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sql=&lt;sql statement&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">SQL statement for window which you want to create</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This command allow you to create a new window</p>
+<p class="p_Normal">You can have a connection to a table (<span class="f_CourierFixed">select &quot;ItemCode&quot; from &quot;OITM&quot; where ...&quot;</span>)<br />
+If beas have field information of a field (related window, format information, dropdowns, title), then beas using this.<br />
+&nbsp;<br />
+Or you can create a window without table connection. In this case use table &quot;BEAS_DUMMY&quot;, example <span class="f_CourierFixed">select space(50) as myField from &quot;BEAS_DUMMY</span>&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can move information from current window in simple way</p>
+<p class="p_Normal"><span class="f_CourierFixed">select 100 as quantity,&lt;dw_1.item.itemcode.value,dbstring&gt; as itemcode from &quot;BEAS_DUMMY&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The name of Field is the title of field too. If you use an underline, beas replace this with space</p>
+<p class="p_Normal">example</p>
+<p class="p_Normal"><span class="f_CourierFixed">select getdate() as from_date from &quot;BEAS_DUMMY&quot;</span></p>
+<p class="p_Normal">create title: &quot;From Date&quot; and column &quot;from_date&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> Open a new window</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dwname</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myWindow</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;100&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">as</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">space</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample">50</span><span class="f_CodeExample" style="color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">as</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;BEAS_DUMMY&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">showdialog</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ret_code</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">choosed</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if keyword &quot;BEAS_DUMMY&quot; inside the SQL Statement, beas use automatically style mode &quot;edit&quot;, otherwise &quot;list&quot;. You can change this with </p>
+<p class="p_Normal"><span class="f_CourierFixed">lfrom.style=edit/browse</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">style</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">defines the style of the created window: edit form or style form</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">only if you create a new window with lform.sql</p>
+<p class="p_Normal">if the keyword &quot;BEAS_DUMMY&quot; inside the system use automatically &quot;style=edit&quot;, otherwise &quot;style.browse&quot;</p>
+<p class="p_Normal">But you can overwrite this with</p>
+<p class="p_Normal">lform.style</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can define style edit for EditForm or browse as browse form</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lform.style=edit</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">text.distance</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Distance between text and columns for new window in edit style</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">text.left</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Distance between left border and text field for new window in edit style</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">title</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">define title</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">update</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:706px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">defines function of OK/UPDATE/ADD Mode</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if this flag is off, beas don't switch the button &quot;OK&quot; to &quot;Update&quot; if you change anything</p>
+<p class="p_Normal">if you define a own window with lform.sql then beas disable this option automatically. But you can overwrite this and can write your own update function in global function &quot;lform_form_update&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">You're an UDT @U_COLOR</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;U_Color&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;U_Description&nbsp;from&nbsp;&quot;</span><span class="f_CodeExample" style="color: #3366ff;">@U_ColorTable</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&nbsp;where&nbsp;&quot;</span><span class="f_CodeExample" style="color: #3366ff;">U_Color</span><span class="f_CodeExample" style="color: #a04db3;">&quot;='red'</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">update</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">true</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">title</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Color</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">dwname</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">colordefinition</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lform</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">show</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lform</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">global</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lform_form_update</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Only&nbsp;update,&nbsp;this&nbsp;is&nbsp;not&nbsp;an&nbsp;add&nbsp;Methode</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">update</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;@U_Color_Table&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">set</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;U_Description&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">u_description</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">dbstring</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;U_Color&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">dw_1</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">u_color</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">dbstring</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">global</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

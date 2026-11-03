@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_file2datastore</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Reads and Converts an XML file &nbsp;object=ue_file2datastore=command &nbsp;You can use this object with datastorevalues.importfromxml &nbsp;load=&lt;file&gt; loads an xml file setarea=&lt;area&gt;" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ue_form.htm",
+   prevP: "excel.htm",
+   currP: "file2datastore.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_file2datastore",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_file2datastore",
+   sharesubject: "Beas Script 2026.09 - ue_file2datastore",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "file2datastore",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_file2datastore /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_file2datastore").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "file2datastore.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_file2datastore</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_file2datastore</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Reads and Converts an XML file</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_file2datastore=command</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can use this object with <a href="dtw.htm" class="topiclink">datastorevalues.importfromxml</a></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:272px; padding:2px; border:solid thin #000000;"><p class="p_Normal">load=&lt;file&gt;</p>
+</td>
+<td style="vertical-align:top; width:672px; padding:2px; border:solid thin #000000;"><p class="p_Normal">loads an xml file</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:272px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">setarea=&lt;area&gt;</p>
+</td>
+<td style="vertical-align:top; width:672px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">deletes all outside of this area</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;area1&gt;&lt;area2&gt;&lt;value&gt;test&lt;/value&gt;&lt;/area2&gt;&lt;area&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=load=&lt;xmlfile&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=setarea=area2</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Result:</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;value&gt;test&lt;/value&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:272px; padding:2px; border:solid thin #000000;"><p class="p_Normal">filetype</p>
+</td>
+<td style="vertical-align:top; width:672px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">sets the file type</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">xml = XML Type</p>
+<p class="p_Normal">xls = Excel</p>
+<p class="p_Normal">odbc = ODBC</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">all other CSV and Text file</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">with checkfiletype you can analyse the source file (not excel)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For an example, <span class="f_See">see</span> convert</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:272px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">checkfiletype</p>
+</td>
+<td style="vertical-align:top; width:672px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">checks &nbsp;the type of file</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">works for XML and CSV/TXT &nbsp;File formats (not excel)</p>
+<p class="p_Normal">checks if this is an xml file <br />
+if not, checks the delimiter, quotation marks and so on</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=load=&lt;file&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=checkfiletype</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=type &lt;lfile.filetype&gt;, delimiter &lt;lfile.delimiter&gt; &lt;lfile.quotationmarks&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:272px; padding:2px; border:solid thin #000000;"><p class="p_Normal">convert</p>
+</td>
+<td style="vertical-align:top; width:672px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">creates datastore with values from a file</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example: </span>import xml or csv file</p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=checkfiletype</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=load=&lt;filename&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=convert</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> import excel file</p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=filetype=xls</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=load=&lt;xmlfile&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=convert</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> Generally (without excel)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Result: ids_value with all values</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:272px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">readcolumns</p>
+</td>
+<td style="vertical-align:top; width:672px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">reads all tags from an XML File</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=load=&lt;xmlfile&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=readcolumns</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in ids_header you have all columns and columns length</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:272px; padding:2px; border:solid thin #000000;"><p class="p_Normal">readvalues</p>
+</td>
+<td style="vertical-align:top; width:672px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Reads all values from XML File</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=load=&lt;xmlfile&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=readcolumns</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=readvalues</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in ids_values you have all values</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:272px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">createdatastore</p>
+</td>
+<td style="vertical-align:top; width:672px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">creates datastore ids_values from header definition</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=load=&lt;xmlfile&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=readcolumns</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=createdatastore</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">ids_values is created, but without values</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:272px; padding:2px; border:solid thin #000000;"><p class="p_Normal">saveaspsr=&lt;filename&gt;</p>
+</td>
+<td style="vertical-align:top; width:672px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">saves imported file to a psr file</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:132px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">headerline</span></p>
+</td>
+<td style="vertical-align:top; width:215px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">is_headerline=1</span></p>
+</td>
+<td style="vertical-align:top; width:409px; padding:2px; border:solid thin #000000;"><p class="p_Normal">in which line is the header in csv file</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:132px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">delimiter</span></p>
+</td>
+<td style="vertical-align:top; width:215px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">is_delimiter=&lt;tab&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:409px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">line feed in csv file</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:132px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">quotationmarks</span></p>
+</td>
+<td style="vertical-align:top; width:215px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">is_quotationmark=&lt;empty&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:409px; padding:2px; border:solid thin #000000;"><p class="p_Normal">quotationmark in csv file, example &quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:132px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">linefeed</span></p>
+</td>
+<td style="vertical-align:top; width:215px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">is_linefeed=&lt;cr_lf&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:409px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">line feed sign</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:132px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filetype</span></p>
+</td>
+<td style="vertical-align:top; width:215px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">is_filetype</span></p>
+</td>
+<td style="vertical-align:top; width:409px; padding:2px; border:solid thin #000000;"><p class="p_Normal">type of import file</p>
+<p class="p_Normal">xml, xls or empty for all other</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:132px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dsn</span></p>
+</td>
+<td style="vertical-align:top; width:215px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">is_dsn</span></p>
+</td>
+<td style="vertical-align:top; width:409px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set DSN for type ODBC</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">XML Attributes</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Defines the meaning of tag attributes in XML Files</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example: </span><span class="f_CourierFixed">&lt;attrib colname=&quot;ItemCode&quot; description=&quot;Bill of Material Itemcode&quot;&gt;</span></p>
+<p class="p_Normal">Means: Tag name = &quot;ItemCode&quot; and not &quot;attrib&quot;<br />
+For Import programm the Description of this Column is &quot;Bill of Material&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example for allowed XML Files</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;1001&quot;</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">pos</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">10</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">pos</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">attribute</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;A002&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;10&quot;</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">pos</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">20</span><span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">pos</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">attribute</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;A003&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;2&quot;</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">Not allowed is a mix of substructures and values outside the tag definition</p>
+<p class="p_Normal">Example:</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;bom&gt;10&lt;itemcode&gt;a001&lt;/itemcode&gt;&lt;/bom&gt;</span></p>
+<p class="p_Normal">In this example beas ignore the value &quot;10&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Instance variable</span></p>
+</th>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">XMLAttribColName</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">is_XMLAttribColName</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the name of Tag Field</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile.XMLAttribColName=colname</span></p>
+<p class="p_Normal">XML-File</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;attrib colname=&quot;ItemCode&quot;&gt;</span></p>
+<p class="p_Normal">the program replace the tagname &quot;attrib&quot; with &quot;ItemCode&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default: COL_NO</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">XMLAttribDescription</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">is_XMLAttribDescription</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the description of this tag in the import program</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile.XMLAttribDescription=ItemCode</span></p>
+<p class="p_Normal">XML-File</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;x884544xx description=ItemCode&gt;</span></p>
+<p class="p_Normal">The Tag Name is x884544</p>
+<p class="p_Normal">In Import you see in Preview &quot;ItemCode&quot; as fieldname</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default: FIELDNAME</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">XMLAttribLength</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">is_XMLAttribLength</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the max. length of this field</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default: LEN</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">XMLAttribType</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">is_XMLAttribType</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the type of the field (current without function)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default: TYPE</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">XMLAttribValue</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">is_XMLAttribValue</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define, in which attribute you can define the value</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile.XMLAttribValue=VALUE</span></p>
+<p class="p_Normal">XML-File</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;itemcode value=&quot;A001&quot; /&gt;</span></p>
+<p class="p_Normal">is the same as</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;itemcode&gt;A001&lt;/itemcode&gt;</span></p>
+<p class="p_Normal">in this way you can define sub structure in shorter way</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;itemcode value=&quot;A001&quot;&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt; ... substru ..&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;/itemcode&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default: TYPE</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">XMLAttribColDescription</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">is_XMLAttribColDescription</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define a translation for a tag</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile.XMLAttribColName=COL_ID</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile.XMLAttribColDescription=NAME</span></p>
+<p class="p_Normal">XML-File</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;attrib col_name=&quot;x1&quot; name=&quot;ItemCode&quot;/&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;attrib col_name=&quot;x1&quot;&gt;A001&lt;/attrib&gt;</span></p>
+<p class="p_Normal">In this case the tag name &quot;x1&quot; will be replaced with &quot;ItemCode&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if beas find the AttributName - in this case &quot;NAME&quot;, then beas ignore all values and other attributes for this tag.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default: not defined</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">XMLAttribExpand</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">il_XMLAttribExpand</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If activ, the program define a separat column for each attribut</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;item drawing=&quot;a1000&quot; ref=&quot;5&quot; version=&quot;20&quot; value=A001&quot;&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;bom itemcode=&quot;material1&quot;/&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;bom itemcode=&quot;material2&quot;/&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;/item&gt;</span></p>
+<p class="p_Normal">create follow columns</p>
+<p class="p_Normal">item, drawing, ref, version, itemcode</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default: 0 (disable)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Place Holder</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">filetype</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Return current file type (xml/xls or empty for all other)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">source</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Return loaded Source code</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">errormessage</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Return last errormessage</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">filename</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Name of current file</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">column2string</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Creates all columns as a string</a> </td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=load=&lt;xmlfile&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lfile=readcolumns</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;lfile.column2string&gt; </span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

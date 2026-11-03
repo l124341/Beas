@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_calendar</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Calender-Object &nbsp; Properties dw=dw_x set the Datawindow (dw_1, dw_2 ... dw_6). In this Datawindow the calendar is painted example: paint the calender in dw_2 declare=ikl=ue_" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ue_common.htm",
+   prevP: "bitmap.htm",
+   currP: "calendar.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_calendar",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_calendar",
+   sharesubject: "Beas Script 2026.09 - ue_calendar",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Calendar",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_calendar /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_calendar").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "calendar.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_calendar</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_calendar</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Calender-Object</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dw=dw_x</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the Datawindow (dw_1, dw_2 ... dw_6). In this Datawindow the calendar is painted</p>
+<p class="p_Normal">example: paint the calender in dw_2</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=ikl=ue_calendar</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl=dw=dw_2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.redraw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">x, y, width, height</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Coordinates</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">xscript,yscript,widthscript,heightscript</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">enable automatic-Resize with this placeholder. Accent %-Functions!</p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.widthscript=%sub(&lt;window.width&gt;,60)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can set the dynamic-Koordinate </p>
+<p class="p_Normal"><span class="f_CourierFixed">xscript/yscript: &nbsp;min</span> = minimal value</p>
+<p class="p_Normal"><span class="f_CourierFixed">widthscript/heightscript: </span></p>
+<p class="p_Normal"> &nbsp;  <span class="f_CourierFixed">max</span> = maximal value, </p>
+<p class="p_Normal"> &nbsp;  <span class="f_CourierFixed">center</span> = total width - 2* x</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.x=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.widthscript=center</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">the coordinate is a reference to the </p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">reftotab=(tab-Objectname)</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set a coordinate-reference to the tab (ue_tab)</p>
+<p class="p_Normal">example</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=ikl=ue_calendar</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=ue_tab=etab</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.reftotab=etab</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.reftotabpage=&lt;tab-name&gt;</span></p>
+<p class="p_Normal">now x from ikl = &lt;etab.clientx&gt;, y from ikl = &lt;etab.clienty&gt; and display the calender only, if the tabpage is activ</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">reftotabpage=&lt;tabpage-name&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the tabpage-name, in which the calender is visible. See reftotab.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">header1</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">S=Standard (Display month and Year), other=disable</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">header2</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">S=Standard (Display the weekday-Name), other=disable</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">grid</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Set the Grid</p>
+<p class="p_Normal"><span class="f_CourierFixed">dynamic</span> (Standard) = dynamicikl</p>
+<p class="p_Normal">0 .. 99 = PB-Pixel</p>
+<p class="p_Normal"><span class="f_Example">Example: </span>Set grid to 10 Pixel</p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.grid=10</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">displaycursor=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">mark day with a red rectangle</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">displaytoday=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">mark today with a blue rectangle</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">border=r/no</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">border=r (default): draw a border around the calendar</p>
+<p class="p_Normal">border=no: disable the border</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bordercolor=&lt;rgb:red:green:blue&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the bordercolor</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clickcommand</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the command for Click on a day</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Info Datastore</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">sqlfontcolor</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">define a info datastore</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can create an info datastore. This is linked to the current date as field <span class="f_CourierFixed">dateid</span> in format yyyymmdd</p>
+<p class="p_Normal">Example:</p>
+<p class="p_Normal"><span class="f_CourierFixed">cast(to_Varchar(`BEAS_RESOURCEN`.`VON`,'YYYYMMDD' ) as char(8))</span></p>
+<p class="p_Normal">&nbsp;<br />
+You must load only a date area. Use @1 and @2 for check the date<br />
+<span class="f_Example">Example:</span> <span class="f_CourierFixed">`DATE_ID` between @1 and @2 </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can define 3 text fields per day and a tooltip </p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The datastore can return the following information</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">info,info2</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">First and second text field </p>
+<p class="p_Normal">Return can be every format</p>
+<p class="p_Normal">Decimal: beas use #0.0 or the format which you define with &quot;infoformat&quot;</p>
+<p class="p_Normal">if you set a infocompute expression, beas ignore this.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infotag</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set a info tag information (string)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tooltip</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">return a tooltip, if you don't overwrite this with tooltipcompute (String)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">italic, height, weight, color</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the additional properties for the text information (return: Number/Decimal)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Other solution is, you define this as compute field, which have access to all fields in the datastore</p>
+<p class="p_Normal">All compute fields must return string. Don't use &quot;. Exmple Color: string(255)</p>
+<p class="p_Normal">Correct: 'Hello' &nbsp;or 33<br />
+Wring: &quot;Hello&quot; or string (33)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.infocompute='('+info+')'</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.infocompute=if(qty&gt;qty2 and qty&gt;0,info,'')</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infodata</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the info data store, linked to the calendar</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infoformat, info2format, info3format</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Format of number, if the return field is a number </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infocompute, info2compute, info3compute</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Create a result from a formula field</p>
+<p class="p_Normal">Return result must be a string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infocolor, info2color, info3color</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the color font</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infocolorcompute, info2colorcompute, info3colorcompute</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the color as a formula</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infoweight, info2weight, info3weight</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the weight</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infoheight, info2height, info3height</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the height of the font</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infoitalic, info2italic, info3intalic</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set italic 0/1</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">infobackground, info2background, info3background</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the background color </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tooltipcompute</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set tool tip as compute field</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">toolComputeRows</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">additional tool tip<br />
+If you have additional rows, Beas adds this information to tool tip per row</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">declare</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">declare this object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">disable</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">delete the calendar-view and disable the view</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">enable</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">enable the view without redraw</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">destroy</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">disable the view and destroy the object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setdate</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the current date without redraw</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">jumptodate=&lt;date&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Jumps to the specified date and rebuilds the calendar.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">monthbefore</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">select the month before and make a redraw</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">monthnext</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">select the next month and make a redraw</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">redraw</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">draw the calendar (without disable dw_x.redraw)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">redrawfast</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">draw the calender (first setredraw(false) - redraw calendar - setredraw(true))</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setday=date=x,y,width,height</span></p>
+</td>
+<td style="vertical-align:top; width:394px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the cursor to this date and Position</p>
+<p class="p_Normal">(if you click on a day, beas send this command automatically)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:237px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setplaceholder</span></p>
+</td>
+<td style="vertical-align:top; width:394px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set placeholder for sqlfontcolor @3, @4 ... @10</p>
+<p class="p_Normal"><span class="f_CourierFixed">ikl.setplaceholder=@3=&lt;today,dbdate&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

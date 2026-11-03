@@ -1,0 +1,599 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_api_bom</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="api_bom,object bom,ue_api_bom" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="api_bom is a Object for Administration of the parts lists." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bom_header.htm",
+   prevP: "api_batchnumber.htm",
+   currP: "api_bom.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_api_bom",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_api_bom",
+   sharesubject: "Beas Script 2026.09 - ue_api_bom",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Api_bom",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_api_bom /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_api_bom").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "api_bom.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_api_bom</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_api_bom</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal"><span class="f_CourierFixed">api_bom</span> is a Object for Administration of the parts lists.</p>
+<p class="p_Normal">Current this object is not complete and don't work with unit system (factor between different untits)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can declare the object with:</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=&lt;mybom&gt;=ue_api_bom</span></p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Methods:</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:181px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:601px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">getbykey=&lt;bom-id&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">load=&lt;bom-id&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">load_or_new=&lt;bom_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:601px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Loads a BoM </a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if it does not exist:</p>
+<p class="p_Normal">returns -1, value=-1, output an error message</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if exists:</p>
+<p class="p_Normal">return 1, value=-1</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you use <span class="f_CourierFixed">load_or_new</span> and the BoM does not exist, Beas does not create an error message. </p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">new=&lt;bom-id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:601px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Creates a BoM </a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the BoM exists, function returns -1</p>
+<p class="p_Normal">beas 9.1-004-065: and sets variable &quot;value&quot; to -1</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if all OK, </p>
+<p class="p_Normal">&lt; 9.1-004-065: return 0, &quot;value&quot; = 0</p>
+<p class="p_Normal">&gt;= 9.1-004-065: return 1, &quot;value&quot; = 1</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">addline</span></p>
+</td>
+<td style="vertical-align:top; width:601px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Adds a Row</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setrow=&lt;row&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:601px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the actual Row</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">update</span></p>
+</td>
+<td style="vertical-align:top; width:601px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Updates (saves ) the actual Parts List.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; height:155px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">goto_pos=&lt;pos_id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:601px; height:155px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Seeks pos in the bom-list and set current position to this position</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if position not found, api_bom will return -1 in variable <span class="f_CourierFixed">value</span> </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bom.getbykey=&lt;bom-id&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bom.goto_pos=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;value&gt; n= 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;bom.length=100</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Alternative: You can use &quot;pos_id&quot;</p>
+<p class="p_Normal">set current line to the pos_id or create new line, if not existing</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">bom.getbykey=&lt;bom-id&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bom.goto_pos_id=10</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">itemcodechange</span><br />
+<span class="f_CourierFixed">(itemcode,art1_id)</span></p>
+</td>
+<td style="vertical-align:top; width:601px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Changes itemcode (field art_id) in the current row</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">set fields description, length, height, width, round_type and round_dec and setnull input_unit</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bom.getbykey=&lt;bom-id&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bom.goto_pos=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;value&gt; n= 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;bom.itemcodechange=&lt;ls_new_item&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bom.update</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">header</span></p>
+</td>
+<td style="vertical-align:top; width:601px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="bom_header.htm" class="topiclink">BoM - header</a> function</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">import</span></p>
+</td>
+<td style="vertical-align:top; width:601px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="bomimport.htm" class="topiclink">Import-Functions</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">renumber</span></p>
+</td>
+<td style="vertical-align:top; width:601px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Renumber pos_text</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Renumber the pos_text in Step 10, related to current sorting (field sortid)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Properties</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:180px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:146px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Column name in Table</span></p>
+</th>
+<th style="vertical-align:top; width:457px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">rowcount</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Count of all Rows. ReadOnly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">currentrow</span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Actual Row. ReadOnly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Sets the internal position number</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Attention">Attention:</span> It's not possible to change POS_ID from existing entries!!</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you load the item before, Beas search for this row. if it does not exist, Beas inserts a new row.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the pos_id from current row is NULL or 0 then beas replace the pos_id in current row</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the pos_id from current row &gt; 0 then beas create a new line.</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 1</span></p>
+<p class="p_Normal">is field &quot;<span class="f_CourierFixed">sortid</span>&quot; is null, beas set pos_id in field <span class="f_CourierFixed">sortid</span></p>
+<p class="p_Normal">if field &quot;<span class="f_CourierFixed">pos_text</span>&quot; is null, beas_set pos_id in field <span class="f_CourierFixed">pos_text</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Attention">Attention:</span> if you change pos_id, you don't change the sort or visible position text.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">pos_text</span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">pos_text</span></p>
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">visible position number</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">sortid</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">sortid</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sort</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">length </span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">abm1</span></p>
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Length</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">width </span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">abm2</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Width</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">height</span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">abm3</span></p>
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Height</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">art1_id</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">itemcode for bom</p>
+<p class="p_Normal">see itmecode change</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">quantity</span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">menge_verbrauch</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">menge_lager</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">quantity_unit</span></p>
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Change Quantity </p>
+<p class="p_Normal"><span class="f_Attention">Attention:</span> this api can't work with different units</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">quantityperpiece</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">menge_je</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Quantity for each building group. If you enter 0 than Fixed quantity</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">activ</span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">aktiv</span></p>
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Position active? Can be set with [1,J,T,Y]<br />
+Standard: Active.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Position</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">usertext</span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">usertext</span></p>
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">User Text</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">info</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">info</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Info</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">whscode</span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">whscode</span></p>
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">whscode</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">shortvariant</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">shortvariant</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Breakdown assemblies with this short variant</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">udf1 ... udf15</span></p>
+</td>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">udf1 ... udf15</span></p>
+</td>
+<td style="vertical-align:top; width:457px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">udf1 ... udf4</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:180px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">userfields</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">XXXX</span></p>
+</td>
+<td style="vertical-align:top; width:457px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">You can assign values to any field of table BEAS_STL you simply has to set the value, to any specific field. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">bom=U_XXX=YYY</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Properties for import</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:147px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Field</span></p>
+</th>
+<th style="vertical-align:top; width:181px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><br />
+</th>
+<th style="vertical-align:top; width:352px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:147px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">headerdefinition</span></p>
+</td>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">field,field,field</span></p>
+</td>
+<td style="vertical-align:top; width:352px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Defintion of header import</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:147px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">delimeter</span></p>
+</td>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tab&gt; or , or other sign</span></p>
+</td>
+<td style="vertical-align:top; width:352px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">the Delimeter. Standard is <span class="f_CourierFixed">&lt;tab&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:147px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">createrouting</span></p>
+</td>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">true/false</span></p>
+</td>
+<td style="vertical-align:top; width:352px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if true, beas create one routing-position</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:147px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">replacemode</span></p>
+</td>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">replace/update</span></p>
+</td>
+<td style="vertical-align:top; width:352px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if &quot;<span class="f_CourierFixed">replace</span>&quot; then beas delete the full bom</p>
+<p class="p_Normal">if &quot;<span class="f_CourierFixed">update</span>&quot; then beas make an update</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">also all Columns from the Table &quot;BEAS_STL&quot; and / or Customer specific Columns.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_bom</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">new</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">A001</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;in&nbsp;error&nbsp;case:&nbsp;cancel!</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">bom</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">header</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">description</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">my</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">bom</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">addline</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">B001</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">quantity</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">4</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">bom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">update</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;don't&nbsp;forget:&nbsp;close&nbsp;api&nbsp;!!!</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">bom</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

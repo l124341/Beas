@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>selectpredefined</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Definition Description itemcode &nbsp;itemversion &nbsp;bom &nbsp;Bill of Materials Header (BEAS_STL_HEADER) routing Routing Header (BEAS_APL_HEADER) whscode Warehouse (OWHS) oitw_w" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "dropdown-sql-format.htm",
+   prevP: "bsdropdownselect.htm",
+   currP: "selectpredefined.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "selectpredefined",
+   mailsubject: "Feedback on: Beas Script 2026.09 - selectpredefined",
+   sharesubject: "Beas Script 2026.09 - selectpredefined",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Selectpredefined",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; item &gt; DropDown &gt; Select &gt; selectpredefined /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - selectpredefined").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "selectpredefined.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>selectpredefined</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">selectpredefined</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:153px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Definition</span></p>
+</th>
+<th style="vertical-align:top; width:910px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:153px; height:17px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:910px; height:17px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">itemversion</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">bom </span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Bill of Materials Header (BEAS_STL_HEADER)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">routing</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Routing Header (BEAS_APL_HEADER)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">whscode</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Warehouse (OWHS)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">oitw_whscode</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Item Warehouses (OITW)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">aplpos</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Routing positions (BEAS_APL)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">agtyp</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Routing type (BEAS_AGTYP)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">personal</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Personnel entries (BEAS_PERS)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">obtn</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Batch Numbers</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">timetype_id</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Cost types (from settings)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">kstst_id</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Cost centers (OPRC)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">aplatz_id</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Resources (BEAS_APLATZ)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">resourcetype</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Type of resources (BEAS_APLATZ_TYPE)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">resourcegroup</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Resource groups (BEAS_APLATZGRUPPE)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">resourcecostrate </span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Resource cost rates (BEAS_APLATZ_COSTRATEHEAD)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">ag_id</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Operation catalog (BEAS_AG)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">unit</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Units</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">itemunit</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Item Units (linked with UoM Group. [oitm_itemcode]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">unitpergroup</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">UoM from a Unit group [oitm_ugpentry]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">sachb_id</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SAP User u_name from OUSR</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">usercode</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SAP User user_code from OUSR</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">accessgroup</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">User Accessgroup BEAS_ACCESSGROUP</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">location </span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Location definition (OLCT)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">language</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Beas Language (BEAS_SYS_SPR)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">cardcode</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Business partner (OCRD) [filter]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">schema_id</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Calculation schema (BEAS_PK_SCHEMA)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">milestone</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Mile stones (BEAS_MILESTONE)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">wst_id</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Raw Material (BEAS_WST)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">materialgruppe</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Material Group (BEAS_MATGRP)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">fttyp</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Work order type (BEAS_FTTYP)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">verschnitt</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Scrap (BEAS_VERSCHNITT)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">currency</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of Currencies (OCRN)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">project</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of Projects (OPRJ)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">projecttask</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of Project tasks (BEAS_PRJ_LINE) [filter]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">projectstatus</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Project status (BEAS_PRJSTATUS)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">docseries</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Doc Number series (NNM1) [objcode]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">wagetype </span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Wage type (currently not supported)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">abwgrund</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Absence reason (BEAS_ABWGRUND)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">costcarrier</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Personell cost carrier (BEAS_COSTCARRIER)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">stdrgl</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Period rule (BEAS_STUNDENREGEL)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">schicht_id</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Shift definition (BEAS_RGLARBZEIT_HEADER)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tagmuster</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Day template (BEAS_TAGMUSTER)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">workorder</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of open work orders (BEAS_FTHAUPT) [filter]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">workorderbelpos</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of work order positions (BEAS_FTPOS) [filter]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">workorderpos</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of work order Bill of Material (BEAS_FTSTL) [filter]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">workorderrouting</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of routing positions (BEAS_FTAPL) [filter]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">workorderall</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of all work orders (BEAS_FTHAUPT)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">banchname</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Branches (OBPL)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">salesorder</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of open Sales orders </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">preinvoice</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of open pre invoices</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">qsplan</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">List of active &nbsp;qs plan (BEAS_QSARTIKELHAUPT) [filter]</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">qsgroup</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">QC Groups</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">qsblock</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">QC block reasons</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">qsvaluation</span></p>
+</td>
+<td style="vertical-align:top; width:910px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">QC valuation reasons</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:153px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">question</span></p>
+</td>
+<td style="vertical-align:top; width:910px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Ask for Yes/No in a drop-down list. Return J or N</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>create own window</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Example for creating an own window with multiple tabs:" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "problem_vertical_scroll.htm",
+   prevP: "fastbutton.htm",
+   currP: "ue_tab_create_own_window.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "create own window",
+   mailsubject: "Feedback on: Beas Script 2026.09 - create own window",
+   sharesubject: "Beas Script 2026.09 - create own window",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ue_tab_Create_own_window",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; tab (ue_tab) &gt; create own window /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - create own window").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_tab_create_own_window.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>create own window</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">create own window</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">Example for creating an own window with multiple tabs:</p>
+<p class="p_Normal"><img alt="ue_tab_solution" width="472" height="259" style="margin:0;width:472px;height:259px;border:none" src="ue_tab_solution.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">create a psr-file</p>
+<p class="p_Normal">(this example from beas_ftpos with retrival argument 1=2 = empty)</p>
+<p class="p_Normal">for every tab create a groupbox and set all fields for this tab in this area</p>
+<p class="p_Normal">set all fields in the group and the groupbox self to invisible.</p>
+<p class="p_Normal">create the t_master-textobject</p>
+<p class="p_Normal"><img alt="ue_tab2" width="657" height="328" style="margin:0;width:657px;height:328px;border:none" src="ue_tab2.jpg"/></p>
+<p class="p_Normal">save the psr-file</p>
+<p class="p_Normal">example tabexample.psr</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start Beas, insert the Menu-Entry in extra / addon administration and restart Beas (or reopen the menu):</p>
+<p class="p_Normal"><span class="f_CourierFixed">bmenu=add=bereich=extra,name=tab-example,befehl=opennewwindow=tabexample.psr</span></p>
+<p class="p_Normal"><img alt="ue_tab3" width="654" height="277" style="margin:0;width:654px;height:277px;border:none" src="ue_tab3.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">open the window, </p>
+<p class="p_Normal">Ctrl+N+B</p>
+<p class="p_Normal">in retrieve-event in the first page insert script:</p>
+<p class="p_Normal"><span class="f_CourierFixed">insertrow</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="ue_tab2a" width="625" height="317" style="margin:0;width:625px;height:317px;border:none" src="ue_tab2a.jpg"/></p>
+<p class="p_Normal">Update, Close and open the Demo-Window</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Open Debug-Window (Ctrl+N+D) - Script and insert this script</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">etab</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_tab</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Position</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">x</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">y</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">200</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">widthscript</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">max</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">heightscript</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">max</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Generate&nbsp;the&nbsp;Areas</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Name&nbsp;of&nbsp;the&nbsp;tab</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">add</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">tab1</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Additional</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Area</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">addarea</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">tab1</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">gb_tab1</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;second&nbsp;tab</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">add</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">tab2</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Drawing</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample" style="color: #3366ff;">Info</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;and&nbsp;area</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">addarea</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">tab2</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">gb_tab2</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;redraw</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">etab</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">redraw</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="ue_Tab4" width="664" height="420" style="margin:0;width:664px;height:420px;border:none" src="ue_tab4.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">and execute. Now you can see the tabs. </p>
+<p class="p_Normal">If everything is correct, copy the script in Ctrl+N+B in &quot;retrieve&quot; WITHOUT the redraw-command<img alt="ue_Tab5" width="548" height="479" style="margin:0;width:548px;height:479px;border:none" src="ue_tab5.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">close and open the window and you can see the result.</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

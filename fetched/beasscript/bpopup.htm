@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bpopup</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="bpopup,popup - Visual Popup-Menu" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="bpopup &nbsp;Dynamic Popup Menu. You can control Bitmap, comment, name, command and Page Number &nbsp; add add a text bpopup=add=&lt;bitmap&gt;=&lt;description&gt;=&lt;pagenumber&gt;=&lt;command1^comm" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsbuttoncreate.htm",
+   prevP: "tab.htm",
+   currP: "bpopup.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bpopup",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bpopup",
+   sharesubject: "Beas Script 2026.09 - bpopup",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Bpopup",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; bpopup /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bpopup").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bpopup.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bpopup</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bpopup</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Dynamic Popup Menu.</p>
+<p class="p_Normal">You can control Bitmap, comment, name, command and Page Number</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal">add</p>
+</td>
+<td style="vertical-align:top; width:1142px; padding:2px; border:solid thin #000000;"><p class="p_Normal">add a text</p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=add=&lt;bitmap&gt;=&lt;description&gt;=&lt;pagenumber&gt;=&lt;command1^command2..&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">or in CSV Format</p>
+<p class="p_Normal">bpopup=bitmap=...&lt;tab&gt;page=...&lt;tab&gt;...command=openwindow=test.psr&lt;wintab&gt;param=x</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Available properties:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:198px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bitmap</span></p>
+</td>
+<td style="vertical-align:top; width:259px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the bitmap</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:198px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">name</span></p>
+</td>
+<td style="vertical-align:top; width:259px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">title of text</p>
+<p class="p_Normal">if title start with &quot;!&quot; beas don't translate this text, otherwise beas translate the text</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:198px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">page</span></p>
+</td>
+<td style="vertical-align:top; width:259px; padding:2px; border:solid thin #000000;"><p class="p_Normal">page nr</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:198px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">command</span></p>
+</td>
+<td style="vertical-align:top; width:259px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the script to execute</p>
+<p class="p_Normal">if you use openwindow, then don't use &lt;tab&gt; - use &lt;wintab&gt; in the command string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:198px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">value1, value2</span></p>
+</td>
+<td style="vertical-align:top; width:259px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the value</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:198px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">typ</span></p>
+</td>
+<td style="vertical-align:top; width:259px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the typ</p>
+<p class="p_Normal">0 normal, 1 with input, 2 with input area</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">add a line</p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=add=line</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=add==-=&lt;pagenumber&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">type</p>
+</td>
+<td style="vertical-align:top; width:1142px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">last entry was an entry from</p>
+<p class="p_Normal">0 = Normal</p>
+<p class="p_Normal">1 = with 1 input field</p>
+<p class="p_Normal">2 = with 2 input fields</p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=add=&lt;bitmap&gt;=&lt;description&gt;=&lt;pagenumber&gt;=&lt;command1^command2..&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=typ=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=value1=hello</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">command:</p>
+<p class="p_Normal">the command or function which you want to call</p>
+<p class="p_Normal">Line feed with Sign ^</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Type 1+2</p>
+<p class="p_Normal">You can read the values in the command {value1} and {value2}</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox={value1}^messagebox={value2}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you need the values outside of the bpopup, you must set a Variable</p>
+<p class="p_Normal"><span class="f_CourierFixed">bmp\key.png=Insert your key=1=setvar=ls_myvalue={value1}^callmyfunction()</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal">value1, value2</p>
+</td>
+<td style="vertical-align:top; width:1142px; padding:2px; border:solid thin #000000;"><p class="p_Normal">for type 1 and 2</p>
+<p class="p_Normal">you can set the default value for value1 and value2</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">bitmap=&lt;page&gt;=&lt;picturename&gt;</p>
+</td>
+<td style="vertical-align:top; width:1142px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the page-icon (first line)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal">width</p>
+</td>
+<td style="vertical-align:top; width:1142px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the width of popup window</p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=width=1200</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">reset</p>
+</td>
+<td style="vertical-align:top; width:1142px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">reset the menu</p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=reset</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal">redraw</p>
+</td>
+<td style="vertical-align:top; width:1142px; padding:2px; border:solid thin #000000;"><p class="p_Normal">redraw the menu</p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=redraw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">visible=object=true/false</p>
+</td>
+<td style="vertical-align:top; width:1142px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">set a menu entry visible / invisible</a> </td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">with this command you can make menu entries invisible in the event </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent bpopupredraw</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=visible=redit=false</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In this example you make &quot;resource group edit&quot; invisible</p>
+<p class="p_Normal">You must set the object name</p>
+<p class="p_Normal">You can see the name of object in the debug window</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.1 PL: 08</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:157px; padding:2px; border:solid thin #000000;"><p class="p_Normal">addrightclickmenu</p>
+</td>
+<td style="vertical-align:top; width:1142px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">menu=addrightclickmenu=x</span></p>
+<p class="p_Normal">not part of bpopup, but is a function for the bpopup:</p>
+<p class="p_Normal">insert the right</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can declare a menu like this:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=reset</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=add=&lt;bitmap&gt;=&lt;description&gt;=&lt;pagenumber&gt;=&lt;command1^command2..&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=redraw</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&quot;<span class="f_CourierFixed">redraw</span>&quot; will trigger a redraw of the menu</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">The PopMenu will be closed if:</span></p>
+<p class="p_Normal">- the cursor is moved over the first entry </p>
+<p class="p_Normal">- ESC</p>
+<p class="p_Normal">- after you made a selection with Mouse or Enter</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Menu page will change if:</span></p>
+<p class="p_Normal">- Right mouse click on Menu</p>
+<p class="p_Normal">- Cursor left / right</p>
+<p class="p_Normal">- Ctrl+Shift</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Example</a></span></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=reset</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// after reset you need a empty add</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=add</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Key-Line with input field</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=add=bmp\key.png=Insert your key=1=messagebox={value1}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=typ=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=value1=abcdef</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// second tab with command</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=add=bmp\layout.png=Set layout=2=messagebox=calling function layout</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Bitmap Page 1 and 2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// add Standard-Right-Click</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">menu=addrightclickmenu=3</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=bitmap=1=bmp\clients.png</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=bitmap=2=bmp\constructionfirm.png</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Display</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=width=1200</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bpopup=redraw</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With Script, you can build fine looking PopUp Menus with Bitmaps</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">rclick</span> &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;right click</p>
+<p class="p_Normal"><span class="f_CourierFixed">addkey=shift=... &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>shift</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

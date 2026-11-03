@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_terminal</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="object &quot;ue_terminal&quot; for Control the Terminal used from the APP-System in Window &quot;menu_terminal.psr&quot; &nbsp;This object is declared with declare=terminal=ue_terminal terminal=comman" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "windowsetup.htm",
+   prevP: "regexpression.htm",
+   currP: "terminal.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_terminal",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_terminal",
+   sharesubject: "Beas Script 2026.09 - ue_terminal",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Terminal",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_terminal /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_terminal").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "terminal.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_terminal</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_terminal</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">object &quot;ue_terminal&quot; for Control the Terminal</p>
+<p class="p_Normal">used from the APP-System in Window &quot;menu_terminal.psr&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This object is declared with</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=terminal=ue_terminal</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">terminal=command=property</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:446px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:1286px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setprogram=x</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sets the current application</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">settimeout=x</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sets timeout in sec</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setdw=dw_x</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sets the datawindow for terminal-GUI</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">displaygui=&lt;program&gt;=&lt;accessgroup&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">displays the gui for the program and accessgroup</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">displaygui=&lt;accessgroup&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">displays the gui for the current program and &nbsp;chosen accessgroup</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">deletegui</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">deletes all buttons - go to login-screen</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">appid=x</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">starts the app</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">timeoutreset</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">restarts the timeout-Counter</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">logout</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">logs out current user</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">login=&lt;cardnumber&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">logs in the current user</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">timer</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">displays time, date etc.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tkey=x</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">inserts x in LoginScreen</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">info=x</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">opens info - Window</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">resize</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Resizes the Window</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">settermialmenu</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sets the main terminal menu and the current window to maximized status</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">terminalinit</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">timeoutactive=&lt;YesNo&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(de)activates the timeout for a logged in user Default is true (timeout on)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">arrivaltimeout</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">redrawgui</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:446px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">editchange</span></p>
+</td>
+<td style="vertical-align:top; width:1286px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">terminal=info=x</span></h1>
+<p class="p_Comment"><span class="f_Comment">this function opens an integrated sub-window </span></p>
+<p class="p_Comment"><span class="f_Comment">you can set more lines</span></p>
+<p class="p_Comment"><span class="f_Comment">Commands:</span></p>
+<p class="p_Comment"><span class="f_CourierFixed">terminal=info=&lt;typ&gt;=&lt;text&gt;</span></p>
+<p class="p_Comment"><span class="f_CourierFixed">terminal=display</span></p>
+<p class="p_Comment"><span class="f_CourierFixed">terminal=close</span></p>
+<p class="p_Comment"><span class="f_Comment">&nbsp;</span></p>
+<p class="p_Comment"><span class="f_Comment" style="font-weight: bold;">Types</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:266px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">1=&lt;text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:589px; padding:2px; border:solid thin #000000;"><p class="p_Normal">New Line with one Text</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">2=&lt;text&gt;&lt;tab&gt;&lt;text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:589px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">New Line with two Columns</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">3=&lt;text&gt;&lt;tab&gt;&lt;text&gt;&lt;tab&gt;&lt;text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:589px; padding:2px; border:solid thin #000000;"><p class="p_Normal">New Line with three Columns</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bitmap=&lt;bitmapfilename&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:589px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Inserts a Bitmap (png, gif, jpg)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">inputfield=&lt;script&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:589px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Inserts an input field. After an Item change, call this script. Use &lt;cr_lf&gt; for new Line and &lt;inputfield&gt; for check the input</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">info=&lt;text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:589px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates an info-Message with this text. You can work with multiple Lines. Use &lt;cr_lf&gt; and display this for 5 sec</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> &nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">terminal=info=your message is ok&lt;cr_lf&gt;press key</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">wait</span></p>
+</td>
+<td style="vertical-align:top; width:589px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates a Wait-Message. Max Visible: 99 sec or you close this with &quot;<span class="f_CourierFixed">terminal=info=close</span>&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">terminal=info=wait</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">... commands</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">terminal=info=close</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">error</span></p>
+</td>
+<td style="vertical-align:top; width:589px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates an Error-Message with this text. You can work with multiple Lines. Use &lt;cr_lf&gt; and displays this for 99 sec or waits for a user-action (example: User pressed a key or System-Logout)</p>
+<p class="p_Example"><span class="f_Example">Example: &nbsp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">terminal=info=your message is wrong&lt;cr_lf&gt;press key</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">printtext=&lt;multiple line&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:589px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Inserts more than one line. Use &lt;cr_lf&gt; for next line</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">errorbitmap</span></p>
+</td>
+<td style="vertical-align:top; width:589px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">inserts an error-Bitmap</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">okbitmap</span></p>
+</td>
+<td style="vertical-align:top; width:589px; padding:2px; border:solid thin #000000;"><p class="p_Normal">inserts an ok-Bitmap</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">display [=x]</span></p>
+</td>
+<td style="vertical-align:top; width:589px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Displays the message for x seconds or standard-Timeout for seconds. </p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">terminal=info=okbitmap</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">terminal=info=This is my Message</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">terminal=info=display=5</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">close, disable</span></p>
+</td>
+<td style="vertical-align:top; width:589px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Closes the message</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:266px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">inputchange</span></p>
+</td>
+<td style="vertical-align:top; width:589px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Checks inputfield (is triggered after changing the inputfield)</p>
+<p class="p_Normal">Replaces &lt;cr_lf&gt; and &lt;inputfield&gt; </p>
+<p class="p_Normal">Executes the Value of the script. <span class="f_See">See</span> &quot;inputfield&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">terminal</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">close</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">terminal</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">99</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">bmp</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">gfx</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">big_time</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">png</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">terminal</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">printtext</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">hola</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">terminal</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">printtext</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">hola</span><span class="f_CodeExample">&nbsp;2</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">terminal</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">info</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">display</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">5</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

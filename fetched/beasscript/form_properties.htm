@@ -1,0 +1,1735 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>form methods and properties</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Properties Name Read Write Description actualprocess x S &nbsp;Return the actual process authorization.set authorization.overload &lt;authorization&gt; &nbsp; x x x 	Set the" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "formsave.htm",
+   prevP: "window.htm",
+   currP: "form_properties.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "form methods and properties",
+   mailsubject: "Feedback on: Beas Script 2026.09 - form methods and properties",
+   sharesubject: "Beas Script 2026.09 - form methods and properties",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Form_properties",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; form methods and properties /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - form methods and properties").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "form_properties.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>form methods and properties</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">form methods and properties</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:235px; background-color:#C0C0C0;"><p class="p_Normal"><span style="font-weight: bold;">Name</span></p>
+</th>
+<th class="fielddescription" style="width:44px; background-color:#C0C0C0;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th class="fielddescription" style="width:47px; background-color:#C0C0C0;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th class="fielddescription" style="width:964px; background-color:#C0C0C0;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">actualprocess</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x<br />
+S</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="jbsdocumentactualprocess.htm" class="topiclink">Return the actual process</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">authorization.set</span><br />
+<span class="f_CourierFixed">authorization.overload</span><br />
+<span class="f_CourierFixed">&lt;authorization&gt;</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+<p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Set the authorization for the current form</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can set form authorization with</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.authorization.set=full/read/no</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can overload the form autorization with</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.authorization.overload=full/read/no</span></p>
+<p class="p_Normal">(we use this with open form with extented rights)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can read the current authorization with</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;form.authorization&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">The following settings are available:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:71px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:122px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+<th style="vertical-align:top; width:71px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Alternative</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:71px; padding:2px; border:solid thin #000000;"><p class="p_Normal">full</p>
+</td>
+<td style="vertical-align:top; width:122px; padding:2px; border:solid thin #000000;"><p class="p_Normal">full access</p>
+</td>
+<td style="vertical-align:top; width:71px; padding:2px; border:solid thin #000000;"><p class="p_Normal">1</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:71px; padding:2px; border:solid thin #000000;"><p class="p_Normal">read</p>
+</td>
+<td style="vertical-align:top; width:122px; padding:2px; border:solid thin #000000;"><p class="p_Normal">read access</p>
+</td>
+<td style="vertical-align:top; width:71px; padding:2px; border:solid thin #000000;"><p class="p_Normal">2</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:71px; padding:2px; border:solid thin #000000;"><p class="p_Normal">no</p>
+</td>
+<td style="vertical-align:top; width:122px; padding:2px; border:solid thin #000000;"><p class="p_Normal">no access</p>
+</td>
+<td style="vertical-align:top; width:71px; padding:2px; border:solid thin #000000;"><p class="p_Normal">-1</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Compatibility</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Overload</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">authorization</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">overload</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">sysrechtvoll</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1</span><br />
+<span class="f_CodeExample" style="color: #666699;">zugriff</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">full</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Set </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">authorization</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">set</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">zugriff</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Read</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">authorization</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #666699;">zugriff</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">czugriff</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//..</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">iws.is_authorization</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">authorization.load=id</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Load authorization and close form if no access</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas uses this form in the master script while opening the form.</p>
+<p class="p_Normal">Close form automatically after red message &quot;beaszugr054^no access&quot; if user does not have access.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">blockupdate=true/false</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Disable update function if you activate this flag. </a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Button blocks update </p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.blockupdate=true</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_PowerBuilderVariable">ib_blockupdate, sys_keineaktualisierung J/N</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">border=yes/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">avtivate/deactivate the border (only Beas)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">bringtotop=yes/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">always bring the form to top (only Beas)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">cancel</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Cancel current form (close without update)</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Cancel current form without update</p>
+<p class="p_Normal">Beas executes the following events</p>
+<p class="p_Normal">if form in mode UPDATE or ADD: <span class="f_CourierFixed">formevent syscancel</span></p>
+<p class="p_Normal"><span class="f_Example">Example</span>: Cancel form after executing all open processes</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">wait</span><br />
+<span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">cancel</span></p>
+<p class="p_Normal"><span class="f_Example">Example</span>: Question if any data is changed</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">formevent</span><span class="f_CodeExample">&nbsp;close</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">ok</span><br />
+<span class="f_CodeExample" style="color: #666699;">question</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">you</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">changed</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">data</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Do</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">you</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">want</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">to</span><span class="f_CodeExample">&nbsp;close&nbsp;</span><span class="f_CodeExample" style="color: #666699;">the</span><span class="f_CodeExample">&nbsp;form&nbsp;</span><span class="f_CodeExample" style="color: #666699;">without</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">update</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?==</span><span class="f_CodeExample" style="color: #666699;">cancel</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Compatible information (don't use it)</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">syntax: <span class="f_CompatibleInformation">close:cancel</span></p>
+<p class="p_Normal">Variable: <span class="f_CompatibleInformation">syscancel</span> <span class="f_CompatibleInformation">ja</span>=check update, <span class="f_CompatibleInformation">close</span>=close process is running</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">center=yes/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">center form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">checksql</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Define if the form check the SQL from main datawindow</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">3 = check all (Standard)</p>
+<p class="p_Normal">2 = check SQL Syntax, but not GetWhere/GetOrder</p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp;(browser list/sort/filter not working)</p>
+<p class="p_Normal">1 = don't read SQL Statement</p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp;(browser list/sort/filter not working, SQL Event not executed, templates not working)</p>
+<p class="p_beas_Version"><span class="f_PowerBuilderVariable">il_checksql</span><span class="f_beas_Version"> beas 9.3 PL 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">click.[property]</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Return properties from last mousclick</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; height:17px;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</td>
+<td class="fielddescription" style="width:396px; height:17px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; height:17px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">form.click.dw</span></p>
+</td>
+<td class="fielddescription" style="width:396px; height:17px; background-color:#F7F7F7;"><p class="p_Normal">Click on dw (dw_1....7) <span class="f_PowerBuilderVariable">is_clickdw</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">form.click.y</span></p>
+</td>
+<td class="fielddescription" style="width:396px;"><p class="p_Normal">Mouse click position y <span class="f_PowerBuilderVariable">il_clicky</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">form.click.x</span></p>
+</td>
+<td class="fielddescription" style="width:396px; background-color:#F7F7F7;"><p class="p_Normal">Mouse click position x <span class="f_PowerBuilderVariable">il_clickx</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">form.click.object</span></p>
+</td>
+<td class="fielddescription" style="width:396px;"><p class="p_Normal">Name of clicked object <span class="f_PowerBuilderVariable">is_clickobject</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">form.click.objecttype</span></p>
+</td>
+<td class="fielddescription" style="width:396px; background-color:#F7F7F7;"><p class="p_Normal">Object type, example: <span class="f_CourierFixed">dataform, column, text, compute</span> ... <span class="f_PowerBuilderVariable">is_clickobjecttype</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">form.click.row</span></p>
+</td>
+<td class="fielddescription" style="width:396px;"><p class="p_Normal">Click on row <span class="f_PowerBuilderVariable">il_clickrow</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">client.x,y,width,height</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">Return the position of the client inside the current form</p>
+<p class="p_Normal"><span class="f_Example">Example</span> <span class="f_CourierFixed">&lt;form.client.x&gt;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">clickmode</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Return actual click mode: &quot;button&quot;, &quot;left&quot; for left click or &quot;right&quot; right click</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">clickmode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;right&nbsp;</span><span class="f_CodeExample" style="color: #666699;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;right&nbsp;mouse&nbsp;click</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">clicking</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Rowfocus or Rowchange reason a mouse click?</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">return &quot;<span class="f_CourierFixed">true</span>&quot; in rowchange or focus change, if reason a mouse click</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">it's false after rowchange/focus change before beas execute the click scripts</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Have only effect in rowchange/focuschange event</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">close</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">close form with &quot;UPDATE&quot;, if add/update mode is running</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if update / add process is running, Beas does not close the form and make only an update</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">form.close</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If Beas only closes the form, it calls the following userevents:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Before update<br />
+<span class="f_CourierFixed">formevent close:ok</span></p>
+<p class="p_Normal">After update, before closing form<br />
+<span class="f_CourierFixed">formevent close:ok:cancel</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Compatibility information (don't use it)</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">syntax: <span class="f_CompatibleInformation">close:ok</span></p>
+<p class="p_Normal">Variable: <span class="f_CompatibleInformation">syscancel</span>, <span class="f_CompatibleInformation">close</span>=close process is running</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">closesetfocus=parent/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Define which form should have focus after closing</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.closesetfocus=parent</span> &nbsp; parent form receives &nbsp;the focus (default)</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.closesetfocus=no</span> &nbsp; &nbsp; &nbsp; &nbsp; don't set focus. Next form receives the focus</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want open a new form from child form and you want to close your child form, the new form must have the focus. In this situation set <span class="f_CourierFixed">form.closesetfocus=no</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Preview form (Preview Icon)</p>
+<p class="p_Normal">1. Beas opens form &quot;current form&quot;, &quot;Report....&quot;<br />
+2. Beas closes this form and opens the report itself</p>
+<p class="p_Normal">&nbsp;<br />
+In this situation the form must lose the focus</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">is_closesetfocus=parent/no</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">closewindowmessage</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Define which message comes if you click on X (right top)</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you change anything and you click on &quot;X&quot;, Beas asks</p>
+<p class="p_Normal">&nbsp;<br />
+&quot;Do you want to save the changes? YES/NO&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">with this property you can change this message</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:31px;"><p class="p_Normal"><span style="font-weight: bold;">ID</span></p>
+</td>
+<td class="fielddescription" style="width:575px;"><p class="p_Normal"><span style="font-weight: bold;">Message</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:31px; background-color:#F7F7F7;"><p class="p_Normal">0</p>
+</td>
+<td class="fielddescription" style="width:575px; background-color:#F7F7F7;"><p class="p_Normal">Do you want save the changes? (only in update/add mode)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:31px;"><p class="p_Normal">1</p>
+</td>
+<td class="fielddescription" style="width:575px;"><p class="p_Normal">Do you want close the window (always)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:31px; background-color:#F7F7F7;"><p class="p_Normal">2</p>
+</td>
+<td class="fielddescription" style="width:575px; background-color:#F7F7F7;"><p class="p_Normal">Do you want close the window (only in update/add mode)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:31px;"><p class="p_Normal">-1</p>
+</td>
+<td class="fielddescription" style="width:575px;"><p class="p_Normal">No message</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">controlmenu=yes/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">Activate the control-Menu of the current form (only Beas)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">enabled=yes/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">Enable-propertie from form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">focus.[property]</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Return information about object with current focus</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; height:17px;"><p class="p_Normal"><span style="font-weight: bold;">Command</span></p>
+</td>
+<td class="fielddescription" style="width:397px; height:17px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; height:17px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">form.focus.dw</span></p>
+</td>
+<td class="fielddescription" style="width:397px; height:17px; background-color:#F7F7F7;"><p class="p_Normal">Click on dw (dw_1....7) <span class="f_PowerBuilderVariable">is_clickdw</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">form.focus.y</span></p>
+</td>
+<td class="fielddescription" style="width:397px;"><p class="p_Normal">Mouse click position y <span class="f_PowerBuilderVariable">il_clicky</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">form.focus.x</span></p>
+</td>
+<td class="fielddescription" style="width:397px; background-color:#F7F7F7;"><p class="p_Normal">Mouse click position x <span class="f_PowerBuilderVariable">il_clickx</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">form.focus.object</span></p>
+</td>
+<td class="fielddescription" style="width:397px;"><p class="p_Normal">Name of clicked object <span class="f_PowerBuilderVariable">is_clickobject</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">form.focus.objecttype</span></p>
+</td>
+<td class="fielddescription" style="width:397px; background-color:#F7F7F7;"><p class="p_Normal">Object type, example: <span class="f_CourierFixed">dataform, column, text, compute</span> ... <span class="f_PowerBuilderVariable">is_clickobjecttype</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">form.focus.row</span></p>
+</td>
+<td class="fielddescription" style="width:397px;"><p class="p_Normal">Click on row <span class="f_PowerBuilderVariable">il_clickrow</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">getvaliddw</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Return existing datawindows as formated dropdown value</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return result in return object in field value</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1 &lt;tab&gt; dw_1.dataobject &lt;cr_lf&gt; ...</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span>:<br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_datawindows</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">window</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">artikel_browse</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">getvaliddw</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">handle</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+<p class="p_Normal" style="text-align: center;">S</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">Return the handle number of this form.</p>
+<p class="p_Normal">You can send information to this form with follow script</p>
+<p class="p_Normal"><span class="f_CourierFixed">send=&lt;handleid&gt;=&lt;eventid&gt;=command</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">inserttype</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">define the inserttype for command &quot;new&quot;</a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">0 (Default): at the end</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">1 = next line</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">example: <span class="f_CourierFixed">form.inserttype=1 </span><span class="f_beas_Version">beas 9.2 PL: 01</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">last.[property]</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B1','TOGGLE0186B1_ICON')">Return information on the object which lost focus</a></td></tr></table></div>
+<div id="TOGGLE0186B1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:210px;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th class="fielddescription" style="width:398px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">form.last.dw</span></p>
+</td>
+<td class="fielddescription" style="width:398px;"><p class="p_Normal">Dataform (dw_x) who lost focus<span class="f_PowerBuilderVariable"> &nbsp;is_lastdw </span><span class="f_PowerBuilderVariable" style="color: #bfbfbf;">(old: &lt;sys_lastdwfocus&gt;)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">form.last.object</span></p>
+</td>
+<td class="fielddescription" style="width:398px; background-color:#F7F7F7;"><p class="p_Normal">Object who last focus<span class="f_PowerBuilderVariable"> &nbsp; ls_lastobject </span><span style="font-size: 8pt; color: #bfbfbf;">(old: &lt;dwo-changed&gt;) &lt;dwo&gt; &lt;dw_x_lastdwo&gt; </span><span class="f_PowerBuilderVariable">(dw_x.is_last_object)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">form.last.row</span></p>
+</td>
+<td class="fielddescription" style="width:398px;"><p class="p_Normal">Last row<span class="f_PowerBuilderVariable"> &nbsp; il_lastrow </span><span style="font-size: 8pt; color: #bfbfbf;">(old: &lt;dwo-row&gt;)</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">maxbox=yes/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">activate the maxbox-Control of the current form (only beas)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; height:11px;"><p class="p_Normal"><span class="f_CourierFixed">maximized</span></p>
+</td>
+<td class="fielddescription" style="width:44px; height:11px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; height:11px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px; height:11px;"><p class="p_Normal">maximized the form (only beas)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">mode</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+<p class="p_Normal" style="text-align: center;">S</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="formmode.htm" class="topiclink">Define and read current form mode (OK/UPDATE/READ)</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">move=x=y</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">move Form<br />
+also works within beasgui</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">modify</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B2','TOGGLE0186B2_ICON')">Interface for modifying the form</a></td></tr></table></div>
+<div id="TOGGLE0186B2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This is the interface to the ue_formsetup object, with which you can modify a form</p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="windowsetup.htm" class="topiclink">formsetup</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">form.modify.[property].value</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:108px;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th class="fielddescription" style="vertical-align:middle; width:33px;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th class="fielddescription" style="vertical-align:middle; width:47px;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th class="fielddescription" style="width:442px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal">transfervalidfields</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:33px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:442px;"><p class="p_Normal">Transfer current column information in the modify form (used by right mouse click)</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.modify=transferfields</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">name</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">Name of first dataform dw_1 without folder and &quot;.psr&quot; <span class="f_PowerBuilderVariable">is_name</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">openscript</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">Set and return the command description to open this form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">printdw</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B3','TOGGLE0186B3_ICON')">set or return dataform for printing</a></td></tr></table></div>
+<div id="TOGGLE0186B3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Example">Example</span>: if you click on print icon and you want, that beas print dw_2:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.printdw=dw_2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">pint</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="print.htm" class="topiclink">print</a></p>
+<p class="p_Normal"><span class="f_PowerBuilderVariable">is_printdw </span><span class="f_CompatibleInformation">(old: &lt;sys_printdw&gt;)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">redraw=yes/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">redraw=yes &nbsp; &nbsp;redraw the form</p>
+<p class="p_Normal">redraw=no &nbsp; &nbsp; &nbsp;freeze the form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">redrawallcolumns</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B4','TOGGLE0186B4_ICON')">redraw all extended properties from all columns</a></td></tr></table></div>
+<div id="TOGGLE0186B4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if you defined additional columns with dw_x.item.columnname.formatstring outside open/new event or if you change this type of properties, you must send a redraw. You can use this command to redraw all columns</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.itemcode.background.ok=23000</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">form.redrawallcolumns</span></p>
+<p class="p_beas_Version"><span class="f_beas_Version">Beas 2020.02</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">reload</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B5','TOGGLE0186B5_ICON')">Reload the form</a></td></tr></table></div>
+<div id="TOGGLE0186B5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Execute the Reloading process</p>
+<p class="p_Normal">1. execute event &quot;retrieve&quot;. </p>
+<p class="p_Normal">2. update form. if any data changed, Beas runs the complete update process</p>
+<p class="p_Normal">3. start resizing process</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you set the parameter &quot;retrieve&quot;, Beas does not reload the dataform definition and make only the retrieve process</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span>:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.reload</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.reload=retrieve</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CompatibleInformation"><span class="f_CompatibleInformation">Old syntax: retrieve, reload</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">return.[property]=value</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B6','TOGGLE0186B6_ICON')">Define the return value for current window</a></td></tr></table></div>
+<div id="TOGGLE0186B6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can write information back to preview window, if you work with ue_form object</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">declare</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">myform</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ue_form</span><br />
+<span class="f_CodeExample" style="color: #666699;">myform</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">psr</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">mypsrfile</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">psr</span><br />
+<span class="f_CodeExample" style="color: #666699;">myform</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">showdialog</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">myform</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ret_code</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">return</span><span class="f_CodeExample">&nbsp;value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">myform</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ret_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in myform.psr</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">return</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">valid</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">return</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ret_code</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">return</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ret_value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=...</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">return</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ret_text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=...</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">return</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ret_s_parm1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=...</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can write all str_parm values</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">the placeholder <span class="f_CourierFixed">&lt;form.return.valid&gt;</span> return true, if the parent window is existing</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">resize</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">start manual the resizing of the form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">resizable=&lt;yes/no&gt;</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">set the form to resizable / not resizable</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">resizemode=u/f/c</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal"><a href="formresizemode.htm" class="topiclink">Set or read the resize mode</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">resized</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">return true, if user resized window, false if not</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ret_code</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Return return code from last function call in this object </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">ret_value</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Return text value information from last function call in this object</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ret_text</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Return text information from last function call in this object</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">save</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="formsave.htm" class="topiclink">Save / Update all Data</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">setconvert</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B7','TOGGLE0186B7_ICON')">You can manipulate the convert object (place holder)</a></td></tr></table></div>
+<div id="TOGGLE0186B7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">form.setconvert.property=value</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:108px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:middle; width:33px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:47px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:442px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:108px; padding:2px; border:solid thin #000000;"><p class="p_Normal">inlinesql</p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:442px; padding:2px; border:solid thin #000000;"><p class="p_Normal">convert &lt;select ...&gt; commands? true/false</p>
+<p class="p_Normal">(Standard=true)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">setconvert</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">inlinesql</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Hello&nbsp;World'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_DUMMY&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;Hello&nbsp;world</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">&nbsp;</span><br />
+<span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">setconvert</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">inlinesql</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">false</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Hello&nbsp;World'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_DUMMY&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;select&nbsp;'Hello&nbsp;World'&nbsp;from&nbsp;&quot;BEAS_DUMMY</span><span class="f_CourierFixed" style="font-style: italic; font-weight: bold;">&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">systemborder</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B8','TOGGLE0186B8_ICON')">activate/dectivate the system border (Tab and Buttons)</a></td></tr></table></div>
+<div id="TOGGLE0186B8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you deactivate the border, beas make &quot;dw_master&quot; unvisible</p>
+<p class="p_Normal">This dataform display the tab sheets and buttons.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Disable buttons row</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.systemborder=false &nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Enable buttons row</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.systemborder=true</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CompatibleInformation"><span class="f_CompatibleInformation">Old syntax: rahmen=0/1</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">template</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B9','TOGGLE0186B9_ICON')">Template functions</a></td></tr></table></div>
+<div id="TOGGLE0186B9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Control templates</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.2 PL: 06</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">form.template.[property]</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Name</span></p>
+</th>
+<th style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><br />
+</th>
+</tr>
+</thead>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.template.dw=dw_x</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal">define or return the dataform which will save in the template (default = dw_1) &nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">template</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">dw</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">dw_2</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">is_templatedw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.template.choose</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal">set this template as current template<br />
+<span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">template</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">choose</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">myTemplate</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.template.sql.x</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal">SQL Value from current Template. x=1 to 6</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">template</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">sql</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.template.sql.sqlwehre</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal">return the current template sql where</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.template.sql.sqlorder</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal">return the current template sql order</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.template.template_id</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal">return the current template id</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form.template.zoom</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><p class="p_Normal">return the current zoom factor</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">tabsheet</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BA','TOGGLE0186BA_ICON')">Tabsheet properties</a></td></tr></table></div>
+<div id="TOGGLE0186BA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">Work with bottom tabs.</p>
+<p class="p_Normal">With every tab you can define a new window (PSR File) inside the current form (master window)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Part of object window</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="window.htm" class="topiclink">form</a> &gt; tabsheet</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="tab00001" width="593" height="111" style="margin:0;width:593px;height:111px;border:none" src="tab00001.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:235px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Name</span></p>
+</th>
+<th style="vertical-align:top; width:56px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:top; width:48px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:632px; background-color:#C0C0C0; padding:0; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BB','TOGGLE0186BB_ICON')">Define the height of tabhseet</a></td></tr></table></div>
+<div id="TOGGLE0186BB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.tabsheet.height=88</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you need the position of dw_1 (first formular), use</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;window.client.y&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:235px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">choose=page</span></p>
+</td>
+<td style="vertical-align:top; width:56px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:48px; padding:0; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:632px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BC','TOGGLE0186BC_ICON')">Choose tab &lt;page&gt;</a></td></tr></table></div>
+<div id="TOGGLE0186BC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can choose to another tab</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">form.tabsheet.choose=2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">title=&lt;text&gt;</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BD','TOGGLE0186BD_ICON')">set or read the title of the form &nbsp;</a></td></tr></table></div>
+<div id="TOGGLE0186BD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if you set the title, work with &quot;title&quot;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;set&nbsp;title</span><br />
+<span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">translate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">My</span><span class="f_CodeExample">&nbsp;form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;display&nbsp;title</span><br />
+<span class="f_CodeExample">title</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To set only the beas-Title and not the sap-form-Title</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">world</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return current tilte</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">topic</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">Define the topic of beas help: <span class="f_CourierFixed">form.topic=itemmasterdat.htm</span> <span class="f_PowerBuilderVariable">is_topic </span><span class="f_CompatibleInformation">&lt;sys_topic&gt;</span></p>
+<p class="p_Normal">Alias: topicid</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">torightdown</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">set form to right down of MDI-form (only beas)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">type</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BE','TOGGLE0186BE_ICON')">return type / form of form</a></td></tr></table></div>
+<div id="TOGGLE0186BE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return values:</p>
+<p class="p_Normal"><span class="f_CourierFixed">report</span> = Report form (Print preciew)<br />
+<span class="f_CourierFixed">browse</span> = browse form </p>
+<p class="p_Normal"><span class="f_CourierFixed">structure</span> = Structure form</p>
+<p class="p_Normal"><span class="f_CourierFixed">edit</span> = Edit form (1 line)<br />
+<span class="f_CourierFixed">editbrowse</span> = Editable browser form</p>
+<p class="p_Normal"><span class="f_CourierFixed">choose</span> = choose form</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas sets this with command <span class="f_CourierFixed">menu.typ=&lt;property&gt;</span></p>
+<p class="p_Normal">This command defines the default buttons<br />
+It is a part of settings in Ctrl+N+B</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can overwrite this with </p>
+<p class="p_Normal">form.type=...</p>
+<p class="p_Normal">This command don't change the default buttons. <br />
+But other functions, example check B1UP functions, check the property</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_See"><span class="f_See">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;set&nbsp;buttons&nbsp;for&nbsp;browse&nbsp;form</span><br />
+<span class="f_CodeExample" style="color: #666699;">menu</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">typ</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">browse</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;but&nbsp;form&nbsp;is&nbsp;a&nbsp;structure&nbsp;view</span><br />
+<span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">type</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">structure</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Alias for write:<span class="f_CourierFixed"> form.typ</span></p>
+<p class="p_Normal"><span class="f_beas_Version">beas 9.2 PL 06,</span> <span class="f_PowerBuilderVariable">iws.is_type </span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">udf</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BF','TOGGLE0186BF_ICON')">Define UDF fields</a></td></tr></table></div>
+<div id="TOGGLE0186BF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the UDF fields for the main window</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">udf</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">variablename</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;=[&lt;</span><span class="f_CodeExample" style="color: #666699;">datawindow</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;]=[&lt;</span><span class="f_CodeExample" style="color: #666699;">fieldname</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_See"><span class="f_See">Example</span>:</p>
+<p class="p_Normal">Variable=<span class="f_CourierFixed">routing</span> (routing1...4)</p>
+<p class="p_Normal">DataWindow = <span class="f_CourierFixed">dw_1</span></p>
+<p class="p_Normal">Fieldname = <span class="f_CourierFixed">srouting</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">udf</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">routing</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">dw_1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">srouting</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Definition must be in settings or form.load event</p>
+<p class="p_Normal"><span class="f_PowerBuilderVariable">is_setudf</span> <span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">visible=yes/no</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">visible from the form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">formstate=&lt;state&gt;</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C0','TOGGLE0186C0_ICON')">Set the state of form (only Beas! not in SAP-area!)</a></td></tr></table></div>
+<div id="TOGGLE0186C0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">formstate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">minimized</span><br />
+<span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">formstate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">maximized</span><br />
+<span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">formstate</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">normal</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">x,y,width,height</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C1','TOGGLE0186C1_ICON')">Position of form</a></td></tr></table></div>
+<div id="TOGGLE0186C1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you set x, y and Beas runs in SAP-Area, then set the position in the SAP-Form, not in the MDI-Form.</p>
+<p class="p_Normal">if you start Beas without SAP, &nbsp;set the position in the MDI-Form</p>
+<p class="p_Normal">if you set the form unvisible, set only the Beas-form, but not the SAP-Form to invisible.</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">xcenter,ycenter</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><p class="p_Normal">return the middle point of form, example: If form has a width from 1000, <span class="f_CourierFixed">&lt;form.xcenter&gt;</span> return 500</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px;"><p class="p_Normal"><span class="f_CourierFixed">zoom</span></p>
+</td>
+<td class="fielddescription" style="width:44px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px;"><p class="p_Normal">return current zoom percent factor from actual form <span class="f_PowerBuilderVariable">ii_zoom</span></p>
+<p class="p_Normal">if you set this: only for follow components. Beas does not redraw the form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:235px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">form</span></p>
+</td>
+<td class="fielddescription" style="width:44px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:47px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:964px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C2','TOGGLE0186C2_ICON')">Reference to a form</a> </td></tr></table></div>
+<div id="TOGGLE0186C2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">current</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;x&nbsp;position&nbsp;from&nbsp;current&nbsp;form</span><br />
+<span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">parent</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;x&nbsp;position&nbsp;from&nbsp;parent&nbsp;form</span><br />
+<span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">artikel_browse</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;x&nbsp;position&nbsp;from&nbsp;first&nbsp;instance&nbsp;of&nbsp;the&nbsp;form&nbsp;with&nbsp;same&nbsp;name</span><br />
+<span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">editing</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;x&nbsp;position&nbsp;of&nbsp;this&nbsp;form</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">form</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">editing</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">dw_1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">itemcode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;the&nbsp;value&nbsp;of&nbsp;this&nbsp;item</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B1\',\'TOGGLE0186B1_ICON\')');
+HMInitToggle('TOGGLE0186B1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B2\',\'TOGGLE0186B2_ICON\')');
+HMInitToggle('TOGGLE0186B2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B3\',\'TOGGLE0186B3_ICON\')');
+HMInitToggle('TOGGLE0186B3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B4\',\'TOGGLE0186B4_ICON\')');
+HMInitToggle('TOGGLE0186B4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B5\',\'TOGGLE0186B5_ICON\')');
+HMInitToggle('TOGGLE0186B5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B6\',\'TOGGLE0186B6_ICON\')');
+HMInitToggle('TOGGLE0186B6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B7\',\'TOGGLE0186B7_ICON\')');
+HMInitToggle('TOGGLE0186B7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B8\',\'TOGGLE0186B8_ICON\')');
+HMInitToggle('TOGGLE0186B8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B9\',\'TOGGLE0186B9_ICON\')');
+HMInitToggle('TOGGLE0186B9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BA\',\'TOGGLE0186BA_ICON\')');
+HMInitToggle('TOGGLE0186BA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BB\',\'TOGGLE0186BB_ICON\')');
+HMInitToggle('TOGGLE0186BB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BC\',\'TOGGLE0186BC_ICON\')');
+HMInitToggle('TOGGLE0186BC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BD\',\'TOGGLE0186BD_ICON\')');
+HMInitToggle('TOGGLE0186BD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BE\',\'TOGGLE0186BE_ICON\')');
+HMInitToggle('TOGGLE0186BE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BF\',\'TOGGLE0186BF_ICON\')');
+HMInitToggle('TOGGLE0186BF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C0\',\'TOGGLE0186C0_ICON\')');
+HMInitToggle('TOGGLE0186C0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C1\',\'TOGGLE0186C1_ICON\')');
+HMInitToggle('TOGGLE0186C1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C2\',\'TOGGLE0186C2_ICON\')');
+HMInitToggle('TOGGLE0186C2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

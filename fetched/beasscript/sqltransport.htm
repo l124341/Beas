@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>sqltransfer</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="sqltransfer,sqltransport,sql-transport,Weitergabe von Daten" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Transfer of table-content via PSR-file. Part of the Userobjects tools." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "string2array.htm",
+   prevP: "beasscriptshell.htm",
+   currP: "sqltransport.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "sqltransfer",
+   mailsubject: "Feedback on: Beas Script 2026.09 - sqltransfer",
+   sharesubject: "Beas Script 2026.09 - sqltransfer",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Sqltransport",
+   mailpath: "Beas script &gt; BS Object reference &gt; tools &gt; sqltransfer /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - sqltransfer").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "sqltransport.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>sqltransfer</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">sqltransfer</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">Transfer of table-content via PSR-file. Part of the Userobjects <span class="f_CourierFixed">tools</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can use PSR-files not only for forms but also as a storage of table-content. &nbsp; </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This function allows you the creation and loading of PSR-containers. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:413px; padding:0; border:solid thin #000000;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">tools</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">sqltransfer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">save</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">file</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;=&lt;</span><span class="f_CodeExample" style="color: #666699;">sqlquery</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:978px; padding:0; border:solid thin #000000;"><p class="p_Normal">Saves the result of the sql-query to the PSR-file.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:413px; padding:0; border:solid thin #000000;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">tools</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">sqltransfer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">read</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">table</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;=&lt;</span><span class="f_CodeExample" style="color: #666699;">file</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:978px; padding:0; border:solid thin #000000;"><p class="p_Normal">Saves the content of the PSR-file to the specified table. The target-table can have more columns but in no way not less columns. </p>
+<p class="p_Normal"><img alt="help-achtung" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-achtung.gif"/></p>
+<p class="p_Normal">The table content is deleted before saving the PSR!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:413px; padding:0; border:solid thin #000000;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">tools</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">sqltransfer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">newread</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">table</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;=&lt;</span><span class="f_CodeExample" style="color: #666699;">file</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;=&lt;</span><span class="f_CodeExample" style="color: #666699;">where</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">clause</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:978px; padding:0; border:solid thin #000000;"><p class="p_Normal">First all entries of the table which match the WHERE-clause are deleted, then the content of the PSR-file is imported. Be careful with Primary-key constraints!</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example Save</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">input</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Filename</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">cfile</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_document_default</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">psr</span><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">cancel</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">cfile</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;==</span><span class="f_CodeExample" style="color: #666699;">cancel</span><br />
+<span class="f_CodeExample" style="color: #666699;">tools</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">sqltransfer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">save</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">projekt\</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">cfile</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;=</span><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">*</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">beas_belege</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example Load</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">tools</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">getfile</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Filename</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">psr</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample">filename</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;==</span><span class="f_CodeExample" style="color: #666699;">cancel</span><br />
+<span class="f_CodeExample" style="color: #666699;">question</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Attention</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">!</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Current</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Data</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Delete</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">!==</span><span class="f_CodeExample" style="color: #666699;">cancel</span><br />
+<span class="f_CodeExample" style="color: #666699;">tools</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">sqltransfer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">read</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beas_sys_spr_texte</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample">filename</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #666699;">typ</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'beleg'</span><br />
+<span class="f_CodeExample" style="color: #666699;">retrieve</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">retrieve</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

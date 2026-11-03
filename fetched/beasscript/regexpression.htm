@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_regexp</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="machlength,match,matchcount,matchpos,reg,replace,search,test" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Regular expressions &nbsp;Regular expressions provide tools for developing complex pattern matching and textual search-and-replace algorithms. By creating patterns to match specific..." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "terminal.htm",
+   prevP: "purchase_request.htm",
+   currP: "regexpression.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_regexp",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_regexp",
+   sharesubject: "Beas Script 2026.09 - ue_regexp",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Regexpression",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_regexp /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_regexp").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "regexpression.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_regexp</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_regexp</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Regular expressions</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Regular expressions provide tools for developing complex pattern matching and textual search-and-replace algorithms. By creating patterns to match specific strings, a developer has total control over searching, extracting, or replacing data. In short, to master regular expressions is to master your data. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">re</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">re</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_regexp</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">re</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">init</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">\stest\b</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">true</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">true</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">re</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">replace</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">atest</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">test</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">testb</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">atestb</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;test&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">wert</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">message</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">Result from &lt;value&gt; : <span class="f_CourierFixed"> atest wert testb atestb &quot;test&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:477px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Command</span></p>
+</th>
+<th style="vertical-align:top; width:1254px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:477px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">group=&lt;matchindex&gt;=&lt;groupindex&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">long &lt;matchindex&gt; </span></p>
+<p class="p_Normal"><span class="f_CourierFixed">long &lt;groupindex&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns string for matched Groupcount </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Returns string in <span class="f_CourierFixed">&lt;ls_group&gt;</span> / NULL</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">groupcount=&lt;matchindex&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">long &lt;matchindex&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns Groupindex for matched Index of found Patten </p>
+<p class="p_Normal">Returns groupindex in <span class="f_CourierFixed">&lt;value&gt;</span> / -1</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">init=&lt;seachstring&gt;=&lt;global&gt;=&lt;IgnoreCase&gt; </span><br />
+<span class="f_CourierFixed">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;<br />
+<span class="f_CourierFixed">init</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Initializes the object. </p>
+<p class="p_Normal">Parameter:</p>
+<p class="p_Normal">Pattern string defines the regular expression &nbsp; </p>
+<p class="p_Normal">IgnoreCase boolean (1 = true / 0 = false) default = false</p>
+<p class="p_Normal">global boolean (1 = true / 0 = false) default = false</p>
+<p class="p_Normal">If regular expression should test against all possible matches.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">match=&lt;matchindex&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns the matched string from the matchindex</p>
+<p class="p_Normal">Returns string into &lt;value&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">matchcount</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns the number of matches &nbsp;into &lt;value&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">matchlenght=&lt;matchindex&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns the total length of the matched string into &lt;value&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">matchpos=&lt;matchindex&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns the position within the original string where the match occurred into &lt;value&gt; </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">replace=&lt;searchstring&gt;=&lt;replacestring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns the replaced string or the original string if nothing is found into &lt;value&gt;</p>
+<p class="p_Normal">Parameter: </p>
+<p class="p_Normal">searchstring is the original string </p>
+<p class="p_Normal">repalcestring is the string you want to replace.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">search=&lt;searchstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns a matchindex into &lt;value&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:477px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">test=&lt;searchstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1254px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Test the Pattern against the string and</p>
+<p class="p_Normal">returns 1 if found otherwise 0<span style="font-size: 12pt; font-family: 'Times New Roman',Times,Georgia,serif;"> </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Microsoft beefs Up VBScript with Regular expressions</p>
+<p class="p_Normal">http://msdn.microsoft.com/en-us/library/ms974570.aspx</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Patterns working </span><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">:</span></h1>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">----------------[ Position matching ]----------------------------------------------</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">^ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Only match the beginning of a string.</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">$ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Only match the ending of a string.</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\b &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches any word boundary</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches any non-word boundary</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">----------------[ Litterals ]----------------------------------------------</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">Alphanumeric &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches alphabetical and numerical characters literally.</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\n   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches a new line</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\f  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches a form feed</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\r  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches carriage return</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\t  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches horizontal tab</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\v  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches vertical tab</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\?  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches ?</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\*  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches *</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches +</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches .</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\|  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches |</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\{  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches {</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\}  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches }</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\\  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches \</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\[  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches [</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\]  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches ]</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\(  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches (</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\)  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\xxx  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches the ASCII character expressed by the octal number xxx. ( &quot;\50&quot; matches &quot;(&quot; or chr (40). )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\xdd  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches the ASCII character expressed by the hex number dd. ( &quot;\x28&quot; matches &quot;(&quot; or chr (40). )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\uxxxx  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches the ASCII character expressed by the UNICODE xxxx. ( &quot;\u00A3&quot; matches &quot;£&quot;. )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">----------------[ Character Classes ]----------------------------------------------</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">[xyz]   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Match any one character enclosed in the character set. ( &quot;[a-e]&quot; matches &quot;b&quot; in &quot;basketball&quot;. )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">[^xyz]  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Match any one character not enclosed in the character set. ( &quot;[^a-e]&quot; matches &quot;s&quot; in &quot;basketball&quot;. )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;Match any character except \n.</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\w  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Match any word character. Equivalent to [a-zA-Z_0-9].</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\W  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Match any non-word character. Equivalent to [^a-zA-Z_0-9].</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\d  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Match any digit. Equivalent to [0-9].</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;Match any non-digit. Equivalent to [^0-9].</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\s &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;Match any space character. Equivalent to [ \t\r\n\v\f].</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">\S  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Match any non-space character. Equivalent to [^ \t\r\n\v\f].</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">----------------[ Repetition ]----------------------------------------------</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">{x}   &nbsp; &nbsp; &nbsp; &nbsp;Match exactly x occurrences of a regular expression. ( &quot;\d{5}&quot; matches 5 digits. )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">{x,}  &nbsp; &nbsp; &nbsp; &nbsp;Match x or more occurrences of a regular expression. ( &quot;\s{2,}&quot; matches at least 2 space characters. )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">{x,y}  &nbsp; &nbsp; &nbsp; &nbsp;Matches x to y number of occurrences of a regular expression. ( &quot;\d{2,3}&quot; matches at least 2 but no more than 3 digits. )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">?  &nbsp; &nbsp; &nbsp; &nbsp;Match zero or one occurrences. Equivalent to {0,1}. ( &quot;a\s?b&quot; matches &quot;ab&quot; or &quot;a b&quot;. )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">*  &nbsp; &nbsp; &nbsp; &nbsp;Match zero or more occurrences. Equivalent to {0,}.</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">+  &nbsp; &nbsp; &nbsp; &nbsp;Match one or more occurrences. Equivalent to {1,}.</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">----------------[ Alternation &amp; Grouping ]----------------------------------------------</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">()   &nbsp; &nbsp; &nbsp; &nbsp;Grouping a clause to create a clause. May be nested. &quot;(ab)?(c)&quot; matches &quot;abc&quot; or &quot;c&quot;.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">Alternation combines clauses into one regular expression and then matches any of the individual clauses. ( &quot;(ab)|(cd)|(ef)&quot;  &nbsp; &nbsp; &nbsp; &nbsp;matches &quot;ab&quot; or &quot;cd&quot; or &quot;ef&quot;. )</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">----------------[ BackReferences ]----------------------------------------------</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">()\n   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Matches a clause as numbered by the left parenthesis</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">&quot;(\w+)\s+\1&quot;  &nbsp; &nbsp; &nbsp; &nbsp;matches any word that occurs twice in a row, such as &quot;hubba hubba.&quot; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">--------------------------------------------------------------</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">addition of the the group() and groupcount() methods to get the content of matched groups</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">RegExp Object in Powerbuilder</span></h1>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">===============================</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">string &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pattern - Searchstring</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">bool &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;IgnoreCase</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">bool &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Global – Page or Line</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">intialize(Pattern,IgnoreCase,Global) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Set Operationmode an Pattern</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">intialize() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Re intialize from  &nbsp; &nbsp; &nbsp; &nbsp;Instance Variables</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">--------------------------------------------------------------</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">bool=Test( teststring ) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;True / False</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">string=Replace( seachstring, replacestring )  &nbsp; &nbsp; &nbsp; &nbsp;Returns Resultstring</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">Search(seachstring) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Returns the number of matches / notfound -1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">MatchCollection Object</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">===============================</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">long &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Count</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">Matchcount() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Returns the number of matches </span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">--------------------------------------------------------------</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">Match Object</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">===============================</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">long &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FirstIndex </span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">long &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Length</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">string &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Value</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">string=match(Index) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Returns the string that matches</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">long=matchlenght(Index) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Returns lenght auf the matchstring</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">long=matchposition(Index) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Returns position of the matchstring in the seachstring</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">--------------------------------------------------------------</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">Group</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">===============================</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">long=groupcount(MatchIndex) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Returns mumber of groupmatches from the index / nothing found -1</span></p>
+<p class="p_Normal"><span style="font-size: 8pt; font-family: Arial,Helvetica,sans-serif;">string=group(MatchIndex,Groupindex) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Returns Groupstring / nothing found null</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

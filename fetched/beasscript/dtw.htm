@@ -1,0 +1,907 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>datastore</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="datastore" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="With datastore you can store any data in the memory or can save it in the database.	" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "parallel_connection.htm",
+   prevP: "backward_compatibility_command.htm",
+   currP: "dtw.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "datastore",
+   mailsubject: "Feedback on: Beas Script 2026.09 - datastore",
+   sharesubject: "Beas Script 2026.09 - datastore",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Dtw",
+   mailpath: "Beas script &gt; BS Object reference &gt; datastore /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - datastore").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "dtw.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>datastore</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">datastore</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">With datastore you can store any data in the memory or can save it in the database. &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_Normal">datastores are very simple to use</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">declare datastore with the name lds</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">read data from database</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">....</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">destroy (very important)</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lds</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can access the values with Place holders <span class="f_CourierFixed">&lt;objectname.spaltenname&gt;</span> and / or within the multi mode with <span class="f_CourierFixed">&lt;datastorename.spaltenname&gt;</span> (inside the Multimode you need to provide the objectname.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Set a field with a value:</p>
+<p class="p_Normal"><span class="f_CourierFixed">objectname.columnname.value=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Get a field value:</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;objectname.columnname.value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The attribute &quot;value&quot; &nbsp;is not compelling on this occasion</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;we&nbsp;don't&nbsp;use&nbsp;&quot;select&nbsp;*&quot;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;faster&nbsp;is&nbsp;command&nbsp;&quot;select&nbsp;(fieldfrom=&quot;tablename&quot;)&nbsp;...&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #3366ff;">fieldfrom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample" style="color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;go&nbsp;to&nbsp;first&nbsp;row</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">setrow</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;myitem&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">u_beas_match</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">yes</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lds</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Videos:</span></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/or2HQA3TyNM" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Display content of a datastore</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/alGJz5YInm0" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Extended Datastore Import</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/XumBVWmA26s" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">bsl and datastore</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 16pt; font-weight: bold;">Commands:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:285px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method</span></p>
+</th>
+<th style="vertical-align:top; width:863px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">multimode=&lt;0/1&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Activate multi mode.</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Now you can use more than one datastore at a time.</p>
+<p class="p_Normal">Default = 0</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example Multi mode:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">multimode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">add</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">tomtom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">*</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;&quot;OITM&quot;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">for</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">tomtom</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">rowcount</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">setrow</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">tomtom</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">next</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example Simple Modus</span></p>
+<p class="p_Normal">Only one Datastore can be defined / used.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">add</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">*</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">&quot;OITM&quot;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">for</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">rowcount</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">setrow</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">next</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">select=&lt;sqlstatement&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Generate datastore with this sql-Statement</a></p>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">instance&nbsp;datastore&nbsp;lds<br />
+lds=select&nbsp;top&nbsp;5&nbsp;&quot;ItemCode&quot;&nbsp;from&nbsp;&quot;OITM&quot;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span><br />
+Work&nbsp;with&nbsp;&quot;select&nbsp;*&quot;<br />
+Do&nbsp;not&nbsp;use&nbsp;the&nbsp;sign&nbsp;&quot;*&quot;.&nbsp;This&nbsp;is&nbsp;very&nbsp;slow<br />
+Use&nbsp;the&nbsp;following&nbsp;syntax:&nbsp;(fieldfrom=&lt;table&gt;)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">select&nbsp;(fieldfrom=&quot;OITM&quot;)&nbsp;from&nbsp;&quot;OITM&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to change data, you must define it &nbsp;as update table datastore</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">see</span> property updatetable</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Select Version 2</p>
+<p class="p_Normal">The select command Version 2 is little faster and the SQL command &quot;as&quot; iw working</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">lds=select&nbsp;&quot;OITM&quot;.&quot;ItemCode&quot;,&quot;OWHS&quot;.&quot;WhsName&quot;&nbsp;FROM&nbsp;&quot;OITM&quot;&nbsp;inner&nbsp;join&nbsp;&quot;OWHS&quot;&nbsp;(...)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">create fields</p>
+<p class="p_Normal">oitm_itemcode and owhs_whscode</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&quot;as&quot; is not working</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">lds.select&nbsp;&quot;OITM&quot;.&quot;ItemCode&quot;&nbsp;as&nbsp;myfield,&quot;OWHS&quot;.&quot;WhsName&quot;&nbsp;FROM&nbsp;&quot;OITM&quot;&nbsp;inner&nbsp;join&nbsp;&quot;OWHS&quot;&nbsp;(...)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">create fields</p>
+<p class="p_Normal">oitm_myfield and owhs_whscode</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With the following command the &quot;as&quot; command is working in the correct way:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">lds.(v2)select&nbsp;&quot;OITM&quot;.&quot;ItemCode&quot;&nbsp;as&nbsp;myfield,&quot;OWHS&quot;.&quot;WhsName&quot;&nbsp;FROM&nbsp;&quot;OITM&quot;&nbsp;inner&nbsp;join&nbsp;&quot;OWHS&quot;&nbsp;(...)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">this command creates the following fields:</p>
+<p class="p_Normal">myfield and owhs_whscode</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">bsl=&lt;odata get command&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Import via beas service layer</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Import from beas service layer</p>
+<p class="p_Normal">Define get command via ODATA Syntax</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Item</span><span class="f_CodeExample" style="color: #ff0000;">?</span><span class="f_CodeExample" style="color: #3366ff;">$select</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ItemCode</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">ItemName</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This import the complete Item List, only column ItemCode and ItemName</p>
+<p class="p_Normal">If you want to rename the fields, you can use the command &quot;as&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Item</span><span class="f_CodeExample" style="color: #ff0000;">?</span><span class="f_CodeExample" style="color: #3366ff;">$select</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ItemCode</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">ItemName</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">as</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">MyItemName</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In this case the second column has the name &quot;MyItemName&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/XumBVWmA26s" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">BSL and datastore</a></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">execute &lt;procedure&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')"> &nbsp;Generate datastore with the result from the sql-procedure</a></p>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=lds=ue_datastorevalues</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=execute beas_invhistory 'C11772'</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">add=&lt;sql&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">add=&lt;psr-file&gt;</span><br />
+<span class="f_CourierFixed">multimode:</span><br />
+<span class="f_CourierFixed">add=mytds=&lt;sql&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Adds a DataStore.</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you use an existing DataStore name, it will be destroyed and created again automatically.</p>
+<p class="p_Normal">If you use a SQLStatement, the Datastore will be created dynamically. It contains all columns returned by the Statement. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you provide a psr File, the DataStore will be created dynamically. It contains all columns which has been defined inside the psr<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">.</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setrow=&lt;row&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Set the actual row.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setrow=-x,+x,top,buttom</span><br />
+<span class="f_CourierFixed"> &nbsp; setrow=top</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; setrow=&lt;loop&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; setrow=+5 &nbsp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; setrow=tomtom=10</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')"> &nbsp;Set the current row.</a></p>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">top &nbsp; &nbsp; &nbsp; &nbsp;-&gt; &nbsp; &nbsp;Beginning</p>
+<p class="p_Normal">bottom &nbsp;-&gt; &nbsp; &nbsp;Ende</p>
+<p class="p_Normal">+x &nbsp; &nbsp; &nbsp; &nbsp;-&gt; &nbsp; &nbsp;Current Pos + x</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">destroy</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Destroy all Datastores.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">dir=&lt;director&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Read directory in datastore</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">create new datastore with column <span class="f_CourierFixed">filename</span> and <span class="f_CourierFixed">filesize</span> and read the files from directory in the datastore.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">sort=&lt;sortarguments&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sort the Datastore</p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=sort=itemcode d</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">filter=&lt;arguments&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Filter the Datastore</p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=filter=substring(itemcode,1,1)='1'</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">find=&lt;argument&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">search the argument in the datastore</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">set the new position and set the row in value &quot;<span class="f_CourierFixed">&lt;value&gt;</span>&quot;</p>
+<p class="p_Normal">value</p>
+<p class="p_Normal">-1 &nbsp; &nbsp;= error in argument</p>
+<p class="p_Normal">0 &nbsp; &nbsp; = nothing found</p>
+<p class="p_Normal">&gt; 0 &nbsp;= the position</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=find=substring(itemcode,1,1)='1'</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">insertrow</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Insert a row the then end end set the Cursor on that row<br />
+<span class="f_CourierFixed">lds=insertrow</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">deleterow</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Delete the current row and set the cursor to the next row.</p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=deleterow</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setitem=&lt;colname&gt;=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Set Item.</p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=setitem=itemname=hello</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">rowscopy=&lt;datasdlatore&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Copy currnent Line from Datastore in End from other Datastore</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Not in Multi Mode</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">source</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">daastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">destination</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">source</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">top</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">*</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><br />
+<span class="f_CodeExample" style="color: #a04db3;">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destination</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">updatetable</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">oitm_archive</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destination</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">top</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">*</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM_ARCHIVE&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">source</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">rowscopy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">oitm_archive</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">oitm_archive</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">update</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;display&nbsp;result</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">tools</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">isql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">*</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM_ARCHIVE&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">rowscopytodwx=&lt;dw_x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">copy datastore in datawindow dw_x</p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=rowscopytodwx=dw_1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">updatetable=&lt;table&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">updatetable=&lt;table[,primary[,primary]]&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:863px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Define Update properties</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you define the update properties, you can change and write back all data</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Attention"><span class="f_Attention">Attention!</span></p>
+<p class="p_Normal">if you use this improperly, you can kill the data in the current database.</p>
+<p class="p_Normal">You can set the primary key with Beas 9.3 PL 1 and later.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">First you must define the table and the optional primary key</p>
+<p class="p_Normal">In HANA it's mandatory to define the primary key</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Table&nbsp;=&nbsp;MyColorTable</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Primary&nbsp;Key&nbsp;=&nbsp;Color</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">updatetable</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">MyColorTable</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">Color</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;read&nbsp;Data</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Color&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Description&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;MyColorTable&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Color&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">'red'</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;change&nbsp;value</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">description</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Red</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">Color</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;save&nbsp;back</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">update</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you have more than one primary key, you can define this with a comma </p>
+<p class="p_Example"><span class="f_Example">Example work order position</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">updatetable</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">BEAS_FTPOS</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">BELNR_ID</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">BELPOS_ID</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Difference between update with and without primary key</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Define only table</span></p>
+<p class="p_Normal">Beas works with delete and insert</p>
+<p class="p_Normal"><span class="f_CourierFixed">delete from [table] where [all fields have old value]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">insert [all fields] into [table]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Especially in HANA this is not always working correctly.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Define the Primary key</span></p>
+<p class="p_Normal">This is fast at runtime</p>
+<p class="p_Normal">Beas working with update command and primary key in the where area</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">update [table] set [field]=&lt;newvalue&gt; where [primarykeyfield1]=&lt;old value from primary key&gt; and (second primary) and (third primary)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It's important to set the correct primary key!</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">update</span></p>
+</td>
+<td style="vertical-align:top; width:863px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Updates the DataStore</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:285px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method</span></p>
+</th>
+<th style="vertical-align:top; width:573px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">addfield=fieldname=length=typ</span></p>
+</td>
+<td style="vertical-align:top; width:573px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Add a field to the Datastore<br />
+typ=n,i or d=numeric, d=datetime, otherwise Chars</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">fieldreset</span></p>
+</td>
+<td style="vertical-align:top; width:573px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">reset all fields which has been declared with &quot;addfield&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">getparent=&lt;datastorename&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:573px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">get reference datastorevalue from the parent window</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance datastore mydts</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">mydts=getparent=mydtsfromparentwindow</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">getparentcopy=&lt;datastorevalue&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:573px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">get copy from the parent datastorevalue</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=mydts=ue_datastorevalues</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">mydts=getparentcopy=mydtsfromparentwindow</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">blobread=&lt;id&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:573px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Read a Blob</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">You need to provide a unique ID which will be create by blobwrite.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Returnvalue is the files which was created.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Following Variables will be filled:</p>
+<p class="p_Normal"><span class="f_CourierFixed">sys_blobreturn</span> &nbsp; &nbsp;&quot;ok&quot; oder Error</p>
+<p class="p_Normal"><span class="f_CourierFixed">sys_blobfile</span> &nbsp; &nbsp; &nbsp; &nbsp;Filename or Error Message</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The file will be created inside the temporary System Path.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Read will use the current Connection.</p>
+<p class="p_Normal">Error codes:</p>
+<p class="p_Normal"><span class="f_CourierFixed">100</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Not found</p>
+<p class="p_Normal"><span class="f_CourierFixed">-1000</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Create File-Error</p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Otherwise SQL Error Code</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">blobwrite=&lt;id&gt;=&lt;filename&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:573px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Write the file into the the Database</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">It will return a unique ID.</p>
+<p class="p_Normal">If you don't provide a unique ID than it will be generated automatically.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Write will use the current Connection.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return Value:</p>
+<p class="p_Normal"><span class="f_CourierFixed">sys_blobid</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;id:&lt;unique ID&gt;</p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; or Error Message</p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; e.g.. &quot;file not exist&quot;</p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; or SQL-Error text</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">Export / Import</span></h1>
+<p class="p_Normal"><iframe width="560" height="315" src="https://www.youtube.com/embed/alGJz5YInm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:285px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Methode</span></p>
+</th>
+<th style="vertical-align:top; width:574px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">saveas=&lt;typ&gt;=&lt;filename&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bsdatastoresaveas.htm" class="topiclink">Export the DataStore into value or file in different formats</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">importfromfile=&lt;filename&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Import a file in csv or text format</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Analyse the format of file and import this</p>
+<p class="p_Normal">is using <a href="file2datastore.htm" class="topiclink">file2datastore</a> - checkfileformat</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can read excel and xml file. But it's better to use <span class="f_CourierFixed">importfromxmlfile</span> or <span class="f_CourierFixed">importfromexcel</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;import&nbsp;your&nbsp;file</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">importfromfile</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">c</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">\temp\myimportfile</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">csv</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Check&nbsp;result</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample">&nbsp;1&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Import</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">error</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">for</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ll_loop</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">rowcount</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">setrow</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ll_loop</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;output&nbsp;the&nbsp;field&nbsp;names</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">lds</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">myfield</span><span class="f_CodeExample" style="color: #ff0000;">...&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">next</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lds</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If this a text file, then the command analyse the format</p>
+<p class="p_Normal">with Priority 1. TAB, 2. Semilikon, 3. Comma</p>
+<p class="p_Normal">Check if Quotations marker is use</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">First line must be the header</span></p>
+<p class="p_Normal">Second and follow on the Data</p>
+<p class="p_Normal">Line Feed is allways CR_LF</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Header Name: allowed only A-Z, a-z, 0-9 and Underline. All other signs convert to Underline.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return in variable &quot;<span class="f_CourierFixed">value</span>&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">ok = &quot;1&quot;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">error = &nbsp;&quot;-1 &quot; + error information</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">importfromdbfile</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Import from file in beas dbstring format</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lds.saveas=dbstring=c:\temp\test.db</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lds.importfromdbfile=c:\temp\test.db</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">importfromexcel</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Import a excel file</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Attention">Attention:</span> Excel must be installed. </p>
+<p class="p_Normal">the Program open Excel, load the file and save this in CSV format</p>
+<p class="p_Normal">Then the command read the CSV String</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return in variable &quot;value&quot;</p>
+<p class="p_Normal">ok = &quot;1&quot;</p>
+<p class="p_Normal">error = &nbsp;&quot;-1 &quot; + error information</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">importfromxml=&lt;filename&gt;[&lt;tab&gt;Properties]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">importfromfile=&lt;filename&gt;[&lt;tab&gt;Properties]</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">import a xmlfile</a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">read and import xml file or all other file formats which supported by ue_file2datastore</p>
+<p class="p_Normal">this use the object <a href="file2datastore.htm" class="topiclink">ue_file2datastore</a></p>
+<p class="p_Normal">In second parameter you can define properties for ue_file2datastore, tab separated. See csv example</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return in variable &quot;value&quot;</p>
+<p class="p_Normal">ok = &quot;1&quot;</p>
+<p class="p_Normal">error = &nbsp;&quot;-1 &quot; + error information</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/alGJz5YInm0" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Extended Datastore Import</a></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B1','TOGGLE0186B1_ICON')">example import XML File</a></td></tr></table></div>
+<div id="TOGGLE0186B1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">file test.xml:</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;bomimport&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;&lt;bom&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &lt;itemcode&gt;abc&lt;/itemcode&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;&lt;/bom&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;&lt;routing&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &lt;pos&gt;10&lt;/pos&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;&lt;/routing&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;/bomimport&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance datastore d</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">d.importfromfxml=c:\temp\import\</span><span class="f_CourierFixed" style="font-weight: bold;">test.xml</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">generate follow columns<br />
+<span style="font-style: italic;">columnname = firstlevel#secondlevel#property</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport#bom#itemcode</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport#routing#pos_id</span></p>
+<p class="p_Normal">area</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">insert two lines</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">First line:</p>
+<p class="p_Normal"><span class="f_CourierFixed">area=bomimport#bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport#bom#itemcode=abc</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport#routing#pos_id=NULL</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">second line</p>
+<p class="p_Normal"><span class="f_CourierFixed">area=bomimport#routing</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport#bom#itemcode=NULL</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport#routing#pos_id=10</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B2','TOGGLE0186B2_ICON')">Import CSV file, with Comma as delimiter</a></td></tr></table></div>
+<div id="TOGGLE0186B2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">File test.csv</p>
+<p class="p_Normal"><span class="f_CourierFixed">col1,col2,col3</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">test1,test2,test3</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For import use</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance datastore d</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">d.importfromfile=c:\temp\import\test.csv=</span><span class="f_CourierFixed" style="font-weight: bold;">filetype=csv</span><span class="f_CourierFixed">&lt;tab&gt;</span><span class="f_CourierFixed" style="font-weight: bold;">delimiter=,</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">List about all properties see  <a href="file2datastore.htm" class="topiclink">ue_file2datastore</a></p>
+<p class="p_Normal">This produce a datastore</p>
+<p class="p_Normal"><span class="f_CourierFixed">col1 | col2 | col3 | area</span></p>
+<p class="p_Normal">with 1 row:</p>
+<p class="p_Normal"><span class="f_CourierFixed">test1 | test2 | test3 |</span></p>
+<p class="p_Normal">Area is in this case always empty</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">importfromxmlstring=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Import from string. Format see <span class="f_CourierFixed">importfromxml</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:285px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">importdbstring=&lt;dbstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Import from string in Datastore from Format &quot;<span class="f_CourierFixed">dbstring</span>&quot;</p>
+<p class="p_Normal">return errormessage in &quot;<span class="f_CourierFixed">value</span>&quot;. If empty, all is ok</p>
+<p class="p_Normal">example:</p>
+<p class="p_Normal"><span class="f_CourierFixed">lds1.saveas=dbstring</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lds2.importdbstring=&lt;value&gt;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B1\',\'TOGGLE0186B1_ICON\')');
+HMInitToggle('TOGGLE0186B1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B2\',\'TOGGLE0186B2_ICON\')');
+HMInitToggle('TOGGLE0186B2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

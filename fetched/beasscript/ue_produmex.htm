@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_produmex</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="This object supports the communication with PRODUMEX application." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "api_itemcode.htm",
+   prevP: "tracerreport.htm",
+   currP: "ue_produmex.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_produmex",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_produmex",
+   sharesubject: "Beas Script 2026.09 - ue_produmex",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ue_produmex",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_produmex /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_produmex").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_produmex.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_produmex</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_produmex</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This object supports the communication with PRODUMEX application.</p>
+<p class="p_Normal">Communication is performed via the SBO Communication Module of WMS (table &quot;PMX_NOTQ&quot;)</p>
+<p class="p_Normal">From Beas side the Common Interface module must be active to receive messages from WMS.</p>
+<p class="p_Normal">Only in Versions &gt; Beas &nbsp;9.3 PL3 HF1</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Declare:</span></h1>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">produmex</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_produmex</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">produmex</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">methods</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">parameter</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">produmex</span></p>
+<h1 style="background: #ffffff; margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:258px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Method</span></p>
+</td>
+<td style="vertical-align:top; width:135px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Properties</span></p>
+</td>
+<td style="vertical-align:top; width:537px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Description</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:258px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">proposalpicking_basefilter</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:135px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filter</span></p>
+</td>
+<td style="vertical-align:top; width:537px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Define a filter to load lines to generate a proposal picking in WMS based on a specific filter. This filter is from the &quot;Material Requirements&quot; window (variable &lt;basefilter&gt;)</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">object</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_produmex</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">proposal_picking</span><span class="f_CodeExample" style="color: #ff0000;">_</span><span class="f_CodeExample" style="color: #3366ff;">basefilter</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">AND</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;BEAS_FTHAUPT&quot;</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #a04db3;">&quot;BELNR_ID&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">XXX</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:258px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">proposalpicking_document_create</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:135px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:537px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Create the lines to be sent to WMS to generate a pick list in the table &quot;BEAS_WMS_PROPOSALPICKING&quot; . </p>
+<p class="p_Normal">If we previously defined a base filter, the system will try to read lines based on that filter: If no filter was previously defined, the system will read the information from the screen.</p>
+<p class="p_Normal">When the document is created, Beas saves &lt;value&gt; the ID of the created proposal picking in the variable.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">object</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_produmex</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">proposal_picking_document_create</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:258px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">proposalpicking_document_send</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:135px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ProposalPicking ID</span></p>
+</td>
+<td style="vertical-align:top; width:537px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Create the petition to WMS to create the pick list in the table &quot;PMX_INLD&quot; .</p>
+<p class="p_Normal">On WMS side, this function requires the NotificationListener started to read the petition.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">object</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_produmex</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">proposal_picking_document_send=XXX</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 style="background: #ffffff; margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></h1>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Create PickList for WO 419 and send to WMS</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">declare=produmex=ue_produmex</span><br />
+<span class="f_CodeExample">produmex=proposalpicking_basefilter=AND</span><span class="f_CodeExample" style="color: #ffffff;">&nbsp;</span><span class="f_CodeExample">BEAS_FTPOS.BELNR_ID</span><span class="f_CodeExample" style="color: #ffffff;">&nbsp;</span><span class="f_CodeExample">=</span><span class="f_CodeExample" style="color: #ffffff;">&nbsp;</span><span class="f_CodeExample">419</span><br />
+<span class="f_CodeExample">produmex=proposalpicking_document_create</span><br />
+<span class="f_CodeExample">produmex=proposalpicking_document_send=&lt;value&gt;</span><br />
+<span class="f_CodeExample">destroy=produmex</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

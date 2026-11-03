@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>choosebox</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="open a new window with input-felds &nbsp;// open choose window Create a Choose box &nbsp;// NOTE: You must write all in one line. &amp; Signs are not allowed tools=choosebox=titel=Choos" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "clipboard.htm",
+   prevP: "bsbeasfunction.htm",
+   currP: "auswahl.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "choosebox",
+   mailsubject: "Feedback on: Beas Script 2026.09 - choosebox",
+   sharesubject: "Beas Script 2026.09 - choosebox",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Auswahl",
+   mailpath: "Beas script &gt; BS Statements &gt; choosebox /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - choosebox").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "auswahl.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>choosebox</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">choosebox</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">open a new window with input-felds</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// open choose window</span></p>
+<p class="p_Normal">Create a Choose box</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// NOTE: </span><span class="f_CourierFixed" style="font-weight: bold; color: #008000;">You must write all in one line</span><span class="f_CourierFixed" style="color: #008000;">. &amp; Signs are not allowed</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tools=choosebox=</span><span class="f_CourierFixed" style="color: #800080;">titel=Choose Window</span><span class="f_CourierFixed">/</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #0000ff;">myitem</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #ff0000;">Choose item</span><span class="f_CourierFixed">=S= =select &quot;ItemCode&quot;,&quot;ItemName&quot; from &quot;OITM&quot;/</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #0000ff;">mycardcode</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #ff0000;">Choose Supplier</span><span class="f_CourierFixed">=S= =select &quot;CardCode&quot;,&quot;CardName&quot; from &quot;OCRD&quot;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Return the result in variable: aa + &quot;:&quot; + field name, example: &lt;aa:myitem&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=Item: &lt;aa:</span><span class="f_CourierFixed" style="color: #0000ff;">myitem</span><span class="f_CourierFixed">&gt;, CardCode: &lt;aa:</span><span class="f_CourierFixed" style="color: #0000ff;">mycardcode</span><span class="f_CourierFixed">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Field definition</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:132px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="color: #0000ff;">name</span><br />
+<span style="color: #ff0000;">[,DisplayName]</span></p>
+</td>
+<td style="vertical-align:top; width:648px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the object name</p>
+<p class="p_Normal">after comma the display name (optional)</p>
+<p class="p_Normal">Name to display (use German word-id), if you want to work international<br />
+If DisplayName starts with &quot;!&quot;, the system does not translate it</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">special is &quot;<span class="f_CourierFixed" style="color: #800080;">titel</span>&quot;. With this key-word you can set the title</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">title=Hello world</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas returns the value in the field aa:name</p>
+<p class="p_Normal">if you need a other displaytext, you can set the text after <span class="f_CourierFixed">name + comma + word (or wordId)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:132px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">type</p>
+</td>
+<td style="vertical-align:top; width:648px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">N = numeric, S = String, D=Date, W=String, not changeable (only by drop-down)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:132px; padding:2px; border:solid thin #000000;"><p class="p_Normal">default</p>
+</td>
+<td style="vertical-align:top; width:648px; padding:2px; border:solid thin #000000;"><p class="p_Normal">default string </p>
+<p class="p_Normal">Type D: you can use &quot;<span class="f_CourierFixed">bom</span>&quot; (=begin of month) as default value</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:132px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">dropdown</p>
+</td>
+<td style="vertical-align:top; width:648px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">drop-down command</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">select returnvalue,displayvalue,displayvalue ... from table where ...</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">value=returnvaule:displayvalue,returnvalue:displayvalue</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">for displayvalue use German word ID</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return all values in Variable aa:[name]. Example </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">tools</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">choosebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myvalue</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">insert</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">S</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">number</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">insert</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">number</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">N</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">0</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Canceled?</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">1</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Display&nbsp;value</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">result</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">aa</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">myvalue</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">aa</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">number</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tools=choosebox=titel=my choose list/</span><span class="f_CourierFixed" style="color: #0000ff;">myvalue</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #ff0000;">insert value</span><span class="f_CourierFixed">=S/</span><span class="f_CourierFixed" style="color: #0000ff;">number</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #ff0000;">insert number</span><span class="f_CourierFixed">=N=0/</span><span class="f_CourierFixed" style="color: #0000ff;">mylist</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #ff0000;">choose color</span><span class="f_CourierFixed">=S=noedit:red=value=red:r,blue:b,yellow:y/</span><span class="f_CourierFixed" style="color: #0000ff;">mydate</span><span class="f_CourierFixed">,insert date=D=monatanfang</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;aa:</span><span class="f_CourierFixed" style="color: #0000ff;">myvalue</span><span class="f_CourierFixed">&gt; &lt;aa:</span><span class="f_CourierFixed" style="color: #0000ff;">number</span><span class="f_CourierFixed">&gt; &lt;aa:</span><span class="f_CourierFixed" style="color: #0000ff;">mylist</span><span class="f_CourierFixed">&gt;</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>tracing</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="The tracer record every mouse- and keyboard action, create printscreens and record settings" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "tools.htm",
+   prevP: "setprofilestring.htm",
+   currP: "tracing.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "tracing",
+   mailsubject: "Feedback on: Beas Script 2026.09 - tracing",
+   sharesubject: "Beas Script 2026.09 - tracing",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Tracing",
+   mailpath: "Beas script &gt; BS Object reference &gt; system &gt; tracing /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - tracing").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "tracing.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>tracing</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">tracing</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">The tracer record every mouse- and keyboard action, create printscreens and record settings</p>
+<p class="p_Normal">It's a part of debug system</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">tracing functions</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:248px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:870px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">copyrecord=&lt;dw_x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">copies the tracing table in the window dw_x</p>
+<p class="p_Normal">follow fields required</p>
+<p class="p_Normal"><span class="f_CourierFixed">string(50) as psrfile,string(20) as command,string(1000) as description,datetime() as erftstamp,space(100) as path</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">createzip</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">creates html file tracing.html </p>
+<p class="p_Normal">creates zip file in temp-folder tracing.zip with all the necessary files (tracing.html and all printscreens)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dellastentry</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">deletes the last entry. You can't delete the last entry</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">editpng=filename</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">edits this file</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getlastentry</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the last entry in Value &quot;ls_command&quot; and &quot;ls_description&quot; and &quot;ll_records&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getmaxstack</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the max. count of record lines in value</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=getmaxstack</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getmode</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">gets current mode in variable &quot;value&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getrow</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">gets current row from current tracing in Variable &quot;value&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=getrow</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">goback</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">goes one position back</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=goback</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">mode</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets tracing mode</p>
+<p class="p_Normal">0 = off</p>
+<p class="p_Normal">1 = only text</p>
+<p class="p_Normal">2 = only text - more details</p>
+<p class="p_Normal">3 = with printscreen</p>
+<p class="p_Normal">4 = with variable information</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">reset</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">deletes all entries</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">saverecord=&lt;dw_x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">copies the record session from datawindow in the trace table</p>
+<p class="p_Normal">For the required fields <span class="f_See">see</span> &quot;copyrecord&quot; above</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setmaxstack</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the max. count of record lines. Standard=200</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setrow</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the current row in record</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=setrow=1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">updatelastentry</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">updates last entry</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">view</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns html file from current record in variable &quot;ls_html&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=view</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">viewextern</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">creates tracing.html and open this with the standard browser</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Record</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:248px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:870px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds entry in tracing</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=add=comments</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setup</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds setup info in tracing</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=setup=&lt;setupvariable&gt;=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">printscreen</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">creates a print screen of the current window and inserts this in the tracing list</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=printscreen</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">error</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">inserts a error message (red line)</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=tracing=error=&lt;errormessage&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">message</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #000000;"><p class="p_Normal">inserts a manual message (green line)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

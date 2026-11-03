@@ -233,4 +233,26 @@ public static class BeasBslBuilder
         }
         return Finish(sb, "changebom" + m + V(createTime, "CreateTime"));
     }
+
+    /// <summary>
+    /// 版本建立/更新:ItemVersion POST(版本不存在就建立,存在就更新)。僅送出有值的欄位,避免把既有資料清空。
+    /// StatusId 未指定時,BSL 會使用狀態表的第一筆。Remark 在 ItemVersion 沒有對應欄位,不送出。
+    /// </summary>
+    static (string requestId, string script) ItemVersion(string prefix, string itemCode, string versionId, string? description, string? drawingNumber)
+    {
+        var item = V(itemCode, "ItemCode");
+        var ver = V(versionId, "Version");
+        var doc = new Dictionary<string, object?> { ["ItemCode"] = item, ["IVersionId"] = ver };
+        Add(doc, "Description", V(description, "Description"));
+        Add(doc, "DrawingNumber", V(drawingNumber, "Znr"));
+        var sb = Begin();
+        Post(sb, "ls_json", "ItemVersion", J(doc), prefix);
+        return Finish(sb, prefix + item + ver);
+    }
+
+    public static (string requestId, string script) VersionCreate(VersionCreateRequest r) =>
+        ItemVersion("versioncreate", r.ItemCode, r.Version, r.Description, null);
+
+    public static (string requestId, string script) VersionUpdate(VersionUpdateRequest r) =>
+        ItemVersion("versionupdate", r.ItemCode, r.VersionId, r.Description, r.Znr);
 }

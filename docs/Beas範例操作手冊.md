@@ -1,7 +1,7 @@
 # Beas 範例操作手冊(繁體中文)
 
 > 來源:`fetched/examples/`(Beas Script 2026.09 官方文件的 Examples 章節,共 53 頁)。
-> 補充來源:`fetched/missing/`(14 頁)與 `fetched/missing_b/`(214 頁):使用者事件、Configuration Wizard、DI-API、視窗事件與視窗客製化等,用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面;`missing_b` 共 214 頁已全部整理:與本手冊範例直接相關的由我逐頁閱讀並寫入各節,其餘 194 頁整理成參考文件;`fetched/missing_c/` 的 64 頁(WEB 函式庫、資料庫、SAP UI-API、關鍵字等)也已整理。`docs/ref/` 共 8 份參考文件(見[第 11.11 節](#1111-參考文件索引)),`fetched/missing_b/` 與 `fetched/missing_c/` 合計 278 頁都已處理。參考文件由 AI 子代理整理,我已用腳本核對頁數、程式碼逐行與表格內容,但翻譯措辭未逐句審閱。
+> 補充來源:`fetched/missing/`(14 頁)與 `fetched/missing_b/`(214 頁):使用者事件、Configuration Wizard、DI-API、視窗事件與視窗客製化等,用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面;`missing_b` 共 214 頁已全部整理:與本手冊範例直接相關的由我逐頁閱讀並寫入各節,其餘 194 頁整理成參考文件;`fetched/missing_c/` 的 64 頁(WEB 函式庫、資料庫、SAP UI-API、關鍵字等)也已整理。`docs/ref/` 共 8 份參考文件(見[第 11.11 節](#1111-參考文件索引)),`fetched/missing_b/` 與 `fetched/missing_c/` 合計 278 頁都已處理。 另有 `fetched/extra/`(5 頁):`jbsapplicationisql`、`print2`、`message`、`e-bsl-itemexample` 已分別併入 3.1、7.5、9.10、10.4 節;`hmkwindex` 是整份文件的關鍵字索引,用來找出尚未抓取的頁面(見 `缺漏頁面清單.md`)。參考文件由 AI 子代理整理,我已用腳本核對頁數、程式碼逐行與表格內容,但翻譯措辭未逐句審閱。
 > 編排方式:依原文章節順序整理。**程式碼一律保留原文,不做修改**;說明文字翻譯為繁體中文。
 > 原文頁面裡的截圖未收錄,手冊中以「(原文附截圖)」標示。
 > 標示「⚠ 原文疑似筆誤」的地方,是翻譯時發現原文內容前後不一致之處,程式碼仍保持原樣,使用前請自行確認。
@@ -715,6 +715,43 @@ return 1;
 > - `if (b.returnCode) != 0` 缺少外層括號,語法上不完整。
 > 以上程式碼均保持原文,正式使用前請先測試。
 
+
+**JBScript 補充:`application.isql`(官方說明,`fetched/extra/jbsapplicationisql.htm`)**
+
+這是目前找得到的、**專門說明 JBScript 指令的唯一官方頁面**。另有 3 個 BSL 頁面(`bslinterruptionpost.htm`、`bslodata_functions.htm`、`employeetimesstatus.htm`)的範例也用 `#jbs` 開頭,並使用 `let`、`bsl.get(...)`、`bsl.post("…",{…})`、`alert(...)`、`for (… in …)` 這類寫法,與 3.1 相同,可作為 JBScript 寫法的旁證(這些頁面本身沒有說明語法)。`application.isql` 執行 SQL 指令,並把結果顯示在新視窗中,是顯示 SQL 結果最簡單的方式。
+
+```
+application.isql(String SqlCommand);
+application.isql(objects properties);
+```
+
+範例(程式碼以 `#jbs` 標記開頭,與 3.1 的 `cleanStock` 相同):
+
+```
+#jbs
+// Very simple variant: only sql statement
+application.isql('select "ItemCode","ItemName","OnHand" from "OITM"');
+```
+
+```
+#jbs
+// by object: you can define more properties.
+application.isql({sql:'select "ItemCode","ItemName","OnHand" from "OITM"',title:"my window"});
+```
+
+- 若傳入的是**物件**,系統會把欄位標題換成標準說明;否則使用 SQL 指令中的欄位名。
+- 物件可用的屬性:
+
+| 屬性 | 說明 |
+|---|---|
+| `sql` | SQL 指令或程序呼叫 |
+| `title` | 視窗標題 |
+| `name` | 視窗名稱。若變更它,就可以對這個視窗做客製化(例如用 B1UP),因為所有變更都和視窗名稱有關 |
+| `master` | 主區域(master area)的 BeasScript |
+| `init` | 加入初始化區域(init area)的 BeasScript |
+| `script` | 加入「after retrieve」(取回資料之後)的 BeasScript |
+
+官方備註:若需要功能更多的視窗,請參考新的表單(new form)。
 ---
 
 ### 3.2 收貨後處理 — after receipt
@@ -1148,7 +1185,7 @@ end function
 
 > 說明:原文頁面此處**沒有附程式碼**,僅有概述。
 
-> 關於 JBScript 指令頁:本範例頁連結到 `jbsmessagebox.htm`、`jbsopenwindow.htm`、`jbssql.htm`。使用者已嘗試 2021.03、2026.02、2026.04、2026.06、2026.09 等版本,這三頁**全部 404,官方文件本來就沒有**,無法取得(伺服器的「多個選項」回應列出的只是殘留索引)。所以 JBScript 的 `openwindow`、`SQL`、`messagebox` 語法,只能依本手冊 3.1(`cleanStock`)等範例推測,無官方說明可查。
+> 關於 JBScript 指令頁:本範例頁連結到 `jbsmessagebox.htm`、`jbsopenwindow.htm`、`jbssql.htm`。使用者已嘗試 2021.03、2026.02、2026.04、2026.06、2026.09 等版本,這三頁**全部 404,官方文件本來就沒有**,無法取得(伺服器的「多個選項」回應列出的只是殘留索引)。所以 JBScript 的 `openwindow`、`SQL`、`messagebox` 語法,只能依本手冊 3.1(`cleanStock`)等範例推測,無官方說明可查。官方 JBScript 說明目前只找到 `jbsapplicationisql.htm` 這一頁(`application.isql`,見 3.1 末尾)。
 
 **`form_opened` 事件(官方說明)**:在視窗**框架開啟之後**、**文件開啟之前**執行,用來管理視窗上方的頁籤(新增、變更等)。
 
@@ -2080,6 +2117,25 @@ end function
 >
 > ⚠ 更新模式:官方變數說明指出,`e_Refresh = true` 時處理的是「暫時、未存進資料庫」的工單。範例沒有檢查 `e_Refresh`;若你的環境會觸發更新模式,建議自行在腳本開頭判斷(例如 `e_Refresh` 為 true 就直接結束),避免對暫時的工單執行列印。這是依官方變數說明的建議,範例本身未處理,也未實測。
 
+
+### 7.5 列印目前的 DataWindow — print 指令
+
+(官方說明,`fetched/extra/print2.htm`)
+
+`print` 指令**列印目前的 DataWindow**。
+
+| 寫法 | 說明 |
+|---|---|
+| `print` | 標準列印:先顯示訊息框「Do you want to print the view?」,確認後列印視窗 |
+| `sofortdruck` | 同 `print`,但**立即列印,不顯示訊息框** |
+
+可用參數選擇 3 種列印格式:
+
+| 參數 | 說明 |
+|---|---|
+| (不帶參數) | 不做任何變更,直接列印 |
+| `dw` | 開啟列印通道,先列印視窗標題,再列印 DataWindow。**這個模式不支援換頁(formfeed)** |
+| `ub` | 視窗標題取自 DataWindow(Print - Document name),加上一個顯示標題的表頭,再把 DataWindow 送到印表機。支援換頁。**帶有 HEADER 的 DataWindow(例如報表)在這個模式下無法運作** |
 ---
 
 ## 8. 連接器
@@ -2550,6 +2606,40 @@ destroy=itemprice
 
 價格表索引**從 0 起算**,所以 `setcurrentline=1` 是第二個價格表。
 
+
+### 9.10 傳送訊息 — Messages
+
+(官方說明,`fetched/extra/message.htm`)
+
+`Messages` 是代表「管理」模組中訊息的商業物件,可透過 SAP Business One 的訊息服務傳送訊息。官方並說明:可以改用功能更多的 `MessagesService`。來源資料表:`OALR`。物件類型 `81`(`oMessages`)。
+
+方法:`add`。
+
+| 屬性 | 說明 |
+|---|---|
+| `AttachmentEntry` | 附件檔的識別碼(欄位名 `AtcEntry`),為 SAP Business One 在新增附件時指定的值 |
+| `MessageText` | 訊息內文(欄位名 `MsgData`),memo 型別,最多 64,000 字元 |
+| `Priority` | 優先順序:`0` = low、`1` = Normal、`2` = High |
+| `recipients` | 收件者物件(見 `docs/ref/API_物件.md` 的 recipients) |
+| `subject` | 訊息主旨,最多 50 字元 |
+
+```
+// Send Email from test to manager
+// ===============================
+declare vmessage=ue_api_sbo
+vmessage=getbusinessobject=81
+vmessage=messagetext=this is the contect of message
+vmessage=subject=Message from test to manager
+vmessage=recipients=add
+vmessage=recipients=setcurrentline=0
+vmessage=recipients=usercode=manager
+vmessage=recipients=nameto=test
+vmessage=recipients=sendinternal=1
+vmessage=add
+destroy vmessage
+```
+
+> ⚠ 原文範例內文拼成 `contect`(應為 content),程式碼保持原文。範例的註解寫「Send Email」,但程式碼設定的是 `sendinternal=1`;官方頁面沒有說明這會不會寄出電子郵件。
 ---
 
 ## 10. BSL(Beas Service Layer)範例
@@ -2717,6 +2807,73 @@ end if
 end global
 ```
 
+
+### 10.4 BSL:建立 / 更新品項結構 — create / update item structure
+
+(官方說明,`fetched/extra/e-bsl-itemexample.htm`)
+
+建立一個**組裝件**,並同時建立它的物料清單(Bill of Materials)與途程位置(Routing)。相關指令請參閱 `Item/POST`。
+
+這個範例用 JavaScript 物件的寫法呼叫 `bsl.post("<實體>",{…})`,與 10.1 的 `b.post=…` 寫法不同,和 3.1 `cleanStock` 裡的 `bsl.post("Issue",ls_transaction)` 同一種風格。
+
+範例建立的資料:
+
+| 呼叫 | 建立的內容 |
+|---|---|
+| `Item` | 主階品項 `MyItem`(組裝件),及 4 個零件:`MyItem-Normal`(一般)、`MyItem-Batch`(批號管理)、`MyItem-Serial`(序號管理)、`MyItem-BatchVersion`(批號管理 + 品項版本 `IVersionId` = `001`) |
+| `ItemVersion` | `MyItem-BatchVersion` 的兩個版本 `001`、`002`,狀態皆為 `release` |
+| `BillOfMaterial` | 物料清單 `MyItem`,5 行(行號 10–50),其中第 40 行指定使用版本 `002` |
+| `Routing` | 途程 `MyItem`,1 行,`CatalogId` = `OP-IN.STD.001` |
+
+程式碼註解中的官方提醒:`Barcode` 會一併建立;各種單位(`ProductionUnit`、`PurchaseUnit`、`SalesUnit`…)也可用 `"UoM":"Pcs"` 一次指定全部;**單位必須已存在於 UoM 資料表**。
+
+```
+let item1="MyItem";
+bsl.post("Item",{"ItemCode":item1,"ItemName":"Main Level order",
+   "Barcode":"0440000441000", // Create the Barcode with sub entry
+    "ManageSerialNumbers":false,
+    "ManageBatchNumbers":false,
+    "BatchnumberGeneration":"N",
+    "Breakdown":"A",
+    "ProcurementMethod":"M",
+    "ProductionUnit":"box",   // All different UoMs. Alternative you can use "UoM":"Pcs" for all defintions.
+    "PurchaseUnit":"Pcs",   // the UoM must existing in the UoM table
+    "InventoryUoMEntry":"Pcs",
+    "SalesUnit":"Pcs",
+    "DefaultWareHouse":"01",
+    "ProductionLotSizeUnit":0,
+    "ProductionLotSize":0
+   });
+// Normal item
+bsl.post("Item",{"ItemCode":(item1+"-Normal"),"ItemName":"Material Normal","Barcode":"50440000441001",
+ "Breakdown":"K", "ManageSerialNumbers":false,  "ManageBatchNumbers":false,  "UoM":"Pcs","DefaultWareHouse":"01"});
+// Batch managed item
+bsl.post("Item",{"ItemCode":(item1+"-Batch"),"ItemName":"Material batch managed",
+ "Breakdown":"K", "ManageSerialNumbers":false,  "ManageBatchNumbers":true,  "UoM":"Pcs","DefaultWareHouse":"01"});
+// Serial managed item
+bsl.post("Item",{"ItemCode":(item1+"-Serial"),"ItemName":"Material Serial managed",
+ "Breakdown":"K", "ManageSerialNumbers":true,  "ManageBatchNumbers":false,  "UoM":"Pcs","DefaultWareHouse":"01"});
+// Batch and item version managed item
+bsl.post("Item",{"ItemCode":(item1+"-BatchVersion"),"ItemName":"Material Batch VersionControl",
+ "Breakdown":"K", "ManageSerialNumbers":false,  "ManageBatchNumbers":true,  "UoM":"Pcs","DefaultWareHouse":"01","IVersionId":"001"});
+// And 2 Versions for this batch managed item
+bsl.post("ItemVersion",{"ItemCode":(item1+"-BatchVersion"),"IVersionId":"001","Description":"Material Batch - Version 1","status":"release"});
+bsl.post("ItemVersion",{"ItemCode":(item1+"-BatchVersion"),"IVersionId":"002","Description":"Material Batch - Version 2","status":"release"});
+// Bill of Material
+bsl.post("BillOfMaterial",{"BillOfMaterialId":item1,"Description":"Bom ","RoutingId":item1,"Line":[
+    {"LineNumber":10,"ItemCode":(item1+"-Normal") ,"Quantity":1,"RoundingType":-1},
+    {"LineNumber":20,"ItemCode":(item1+"-Batch") ,"Quantity":2.1,"RoundingType":-1},
+    {"LineNumber":30,"ItemCode":(item1+"-Serial") ,"Quantity":1,"RoundingType":-1},
+    {"LineNumber":40,"ItemCode":(item1+"-BatchVersion") ,"Quantity":1,"RoundingType":-1,"IVersionId":"002"},
+    {"LineNumber":50,"ItemCode":(item1+"-Batch") ,"Quantity":1,"RoundingType":-1}
+   ]});
+// Routing position
+bsl.post("Routing",{"RoutingId":item1,"Description":"WEB APP SSCC TestRouting","Line":[
+ {"CatalogId":"OP-IN.STD.001"}
+ ]});
+```
+
+> ⚠ 原文標題把 `structure` 拼成 `structur`。`Breakdown` 的 `"A"` / `"K"`、`RoundingType: -1` 在這一頁沒有說明,本手冊不推測其意義。
 ---
 
 ## 11. 使用者事件(User events)說明

@@ -1,0 +1,448 @@
+/* Text Styles */
+hr { color: #000000 }
+body, table, tr, th /* Normal */
+{
+ font-size: 11pt;
+ font-family: 'Titillium Web';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_Attention /* Attention */
+{
+ font-weight: bold;
+ color: #e74c3c;
+}
+span.f_beas_Version /* beas-Version */
+{
+ font-size: 9pt;
+ font-style: italic;
+ color: #3498db;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_CompatibleInformation /* CompatibleInformation */
+{
+ font-size: 8pt;
+ font-style: italic;
+ color: #00ccff;
+}
+span.f_ConfigurationWizard /* Configuration Wizard */
+{
+}
+span.f_CourierFixed /* Courier Fixed */
+{
+ font-size: 9pt;
+ font-family: 'Courier New',Courier,monospace;
+ color: #993300;
+}
+span.f_Example /* Example */
+{
+ font-style: italic;
+ font-weight: bold;
+}
+span.f_Heading1 /* Heading 1 */
+{
+ font-size: 12pt;
+ font-weight: bold;
+ letter-spacing: 1px;
+}
+span.f_Heading2 /* Heading 2 */
+{
+ font-weight: bold;
+}
+span.f_Heading3 /* Heading 3 */
+{
+ font-size: 10pt;
+ font-weight: bold;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 12pt;
+ font-weight: bold;
+}
+span.f_Hyperlink /* Hyperlink */
+{
+ font-family: 'Titillium Web SemiBold';
+ color: #f87d24;
+ text-decoration: underline;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_Linklink_link /* Link (link - link) */
+{
+ font-weight: bold;
+ color: #323487;
+}
+span.f_Linklink_link /* Link (link-link) */
+{
+ font-style: italic;
+ color: #993300;
+}
+span.f_ListParagraph /* List Paragraph */
+{
+}
+span.f_NoSpacing /* No Spacing */
+{
+ font-family: Corbel;
+}
+span.f_Note /* Note */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_object /* object */
+{
+ font-family: 'Arial Black',Gadget,sans-serif;
+ letter-spacing: 1px;
+ background-color: #ff9900;
+}
+span.f_Performancenotes /* Performance notes */
+{
+ background-color: #c7f0d2;
+}
+span.f_PowerBuilderVariable /* PowerBuilder Variable */
+{
+ font-size: 8pt;
+ color: #9b59b6;
+}
+span.f_ScreenPath /* Screen Path */
+{
+}
+span.f_See /* See */
+{
+ font-style: italic;
+ font-weight: bold;
+}
+span.f_Sripte /* Sripte */
+{
+ font-size: 9pt;
+ font-family: 'Courier New',Courier,monospace;
+ color: #993300;
+}
+span.f_TableHeader /* Table Header */
+{
+ font-weight: bold;
+}
+span.f_TitleinText /* Title in Text */
+{
+ font-weight: bold;
+}
+span.f_toc1 /* toc 1 */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+}
+span.f_toc2 /* toc 2 */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+}
+span.f_toc3 /* toc 3 */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+}
+span.f_TOCHeading /* TOC Heading */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+}
+span.f_WindowName /* Window Name */
+{
+ font-size: 8pt;
+ font-style: italic;
+}
+/* Paragraph styles */
+p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */
+{
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 2px 0;
+}
+.p_Attention /* Attention */
+{
+ font-size: 11pt;
+}
+.p_beas_Version /* beas-Version */
+{
+ font-size: 9pt;
+}
+.p_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ line-height: 1.0;
+ white-space: nowrap;
+ page-break-inside: avoid;
+ margin: 0 0 0 0;
+}
+.p_Comment /* Comment */
+{
+ font-size: 11pt;
+}
+.p_CompatibleInformation /* CompatibleInformation */
+{
+ font-size: 8pt;
+}
+.p_ConfigurationWizard /* Configuration Wizard */
+{
+ font-size: 11pt;
+ text-align: justify;
+ border-color: #e74c3c;
+ border-style: solid;
+ border-width: 4px;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ padding: 2px 2px 2px 2px;
+ margin: 1px 3px 1px 3px;
+}
+.p_Example /* Example */
+{
+ font-size: 11pt;
+}
+.p_Heading1 /* Heading 1 */
+{
+ font-size: 12pt;
+ text-indent: -24px;
+ margin: 0 3px 3px 24px;
+}
+.p_Heading2 /* Heading 2 */
+{
+ font-size: 11pt;
+ text-indent: -38px;
+ margin: 0 0 0 38px;
+}
+.p_Heading3 /* Heading 3 */
+{
+ font-size: 10pt;
+ text-indent: -34px;
+ margin: 0 0 16px 34px;
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 2px 0;
+}
+.p_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+}
+.p_Linklink_link /* Link (link - link) */
+{
+ font-size: 11pt;
+}
+.p_Linklink_link /* Link (link-link) */
+{
+ font-size: 11pt;
+}
+.p_ListParagraph /* List Paragraph */
+{
+ font-size: 11pt;
+ margin: 0 0 0 19px;
+}
+.p_Note /* Note */
+{
+ font-size: 11pt;
+ text-align: justify;
+ border-color: #f1c40f;
+ border-style: solid;
+ border-width: 4px;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ padding: 2px 2px 2px 2px;
+ margin: 1px 3px 1px 3px;
+}
+.p_Notes /* Notes */
+{
+ font-size: 11pt;
+}
+.p_object /* object */
+{
+ font-size: 11pt;
+ border-color: #0000ff;
+ border-style: solid;
+ border-width: 3px;
+ background: #0000ff;
+ padding: 4px 4px 4px 4px;
+ margin: 0 0 0 0;
+}
+.p_Performancenotes /* Performance notes */
+{
+ font-size: 11pt;
+}
+.p_PowerBuilderVariable /* PowerBuilder Variable */
+{
+ font-size: 8pt;
+}
+.p_ScreenPath /* Screen Path */
+{
+ font-size: 11pt;
+ border-color: #2ecc71;
+ border-style: solid;
+ border-width: 4px;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
+ padding: 2px 2px 2px 2px;
+ margin: 1px 3px 1px 3px;
+}
+.p_See /* See */
+{
+ font-size: 11pt;
+}
+.p_TableHeader /* Table Header */
+{
+ font-size: 11pt;
+ background: #dddddd;
+}
+.p_TitleinText /* Title in Text */
+{
+ font-size: 11pt;
+}
+.p_toc1 /* toc 1 */
+{
+ font-size: 10pt;
+ margin: 0 0 7px 0;
+}
+.p_toc2 /* toc 2 */
+{
+ font-size: 10pt;
+ margin: 0 0 7px 15px;
+}
+.p_toc3 /* toc 3 */
+{
+ font-size: 10pt;
+ margin: 0 0 7px 29px;
+}
+.p_WindowName /* Window Name */
+{
+ font-size: 8pt;
+}
+/* Table styles */
+table.ScriptExample {
+ width: 100%;
+ background-color: #E5E5E5;
+ border: solid 2px #DDDDDD;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.ScriptExample tr.ScriptExample {
+ text-align: left;
+}
+table.ScriptExample th.ScriptExample, table.ScriptExample td.ScriptExample {
+ vertical-align: top;
+ padding: 2px;
+ border: solid thin #DDDDDD;
+}
+table.ScriptExample th.ScriptExample {
+ background-color:#dddddd;
+}
+table.fielddescription {
+ width: 100%;
+ background-color: #E5E5E5;
+ border: solid 2px #CECECE;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.fielddescription tr.fielddescription {
+ text-align: left;
+}
+table.fielddescription th.fielddescription, table.fielddescription td.fielddescription {
+ vertical-align: top;
+ padding: 1px;
+ border: solid thin #CECECE;
+}
+table.fielddescription th.fielddescription {
+ background-color:#c4c4c4;
+}
+div.hmrotate90  { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; }
+div.hmrotate270 { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; transform: rotate(180deg); }
+
+a.imagetogglelink {
+  position: relative;
+  display: inline-block;
+}
+svg.image-toggle-magnifier { /* Magnifier icon for image toggles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40pt;
+  height: 40pt;
+  max-width: 80%;
+  max-height: 80%;
+  fill: #FFFFFF;
+  stroke: #808080;
+  stroke-width: 0.5pt;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+img.image-toggle:hover + svg.image-toggle-magnifier, svg.image-toggle-magnifier:hover {
+  opacity: 1;
+}
+
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border:1px solid #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}
+
+a.dropdown-toggle /* dropdown toggle caption */
+{
+  cursor: pointer;
+}
+a.inline-toggle /* inline toggle caption */
+{
+  cursor: pointer;
+}
+img.dropdown-toggle-icon /* toggle icon */
+{
+  cursor: pointer;
+}
+/* CSS for responsive image maps */
+
+.hmImageMap a.hmHotspotRect { display:block; position:absolute; border: 1px solid transparent; background:#000; opacity:0.01 }
+.hmImageMap a.hmHotspotEllipse { display:block; position:absolute; border-radius:50%; border: 1px solid transparent; background:#000; opacity:0.01 }
+.hmImageMap:hover a.hmHotspotRect {opacity:0.3 }
+.hmImageMap:hover a.hmHotspotEllipse { opacity:0.3 }
+a.hmHotspotRect:hover { border:1px solid #000; background:#FFF; opacity:0.3 }
+a.hmHotspotEllipse:hover { border:1px solid #000; background:#FFF; opacity:0.3 }

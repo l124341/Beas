@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>messages</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Messages is a business object that represents the messages in the Administration module. This object enables you to send messages through SAP Business One messaging service." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "multilanguagetranslations.htm",
+   prevP: "line.htm",
+   currP: "messages.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "messages",
+   mailsubject: "Feedback on: Beas Script 2026.09 - messages",
+   sharesubject: "Beas Script 2026.09 - messages",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Messages",
+   mailpath: "SAP DI API &gt; DI-API: Objects &gt; messages /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - messages").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "messages.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>messages</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">messages</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="sap-sdk" width="224" height="45" style="margin:0;width:224px;height:45px;border:none" src="sap-sdk.jpg"/></p>
+<p class="p_Normal">Messages is a business object that represents the messages in the Administration module. This object enables you to send messages through SAP Business One messaging service.</p>
+<p class="p_Normal">You can use the MessagesService, which enables more functions than the Messages object. </p>
+<p class="p_Normal">Source table: <span class="f_CourierFixed">OALR</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Methods (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">.</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:168px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">AttachmentEntry</span></p>
+</td>
+<td style="vertical-align:top; width:482px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the identification key of the attachment file, as assigned by SAP Business One when adding an Attachment Entry to alert message. </p>
+<p class="p_Normal">(field name: AtcEntry).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:168px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">MessageText</span></p>
+</td>
+<td style="vertical-align:top; width:482px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns a memo type string that specifies the message text. </p>
+<p class="p_Normal">(field name: MsgData).</p>
+<p class="p_Normal">Length: 64,000 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:168px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Priority</span></p>
+</td>
+<td style="vertical-align:top; width:482px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns a valid value that determines the message priority. </p>
+<p class="p_Normal">0=low</p>
+<p class="p_Normal">1=Normal</p>
+<p class="p_Normal">2=High</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:168px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">recipients</span></p>
+</td>
+<td style="vertical-align:top; width:482px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"><a href="recipients.htm" class="topiclink">recipients</a></span>-object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:168px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">subject</span></p>
+</td>
+<td style="vertical-align:top; width:482px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the message subject. with 50 Characters</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><img alt="beasscript-logo-small" width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="beasscript-logo-small.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Send&nbsp;Email&nbsp;from&nbsp;test&nbsp;to&nbsp;manager</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;===============================</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_sbo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbusinessobject</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">81</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">messagetext</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">this</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">is</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">the</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">contect</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">of</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">message</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">subject</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Message</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">test</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">manager</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">recipients</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">add</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">recipients</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">setcurrentline</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">0</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">recipients</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">usercode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">manager</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">recipients</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">nameto</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">test</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">recipients</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">sendinternal</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">vmessage</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">add</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">vmessage</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

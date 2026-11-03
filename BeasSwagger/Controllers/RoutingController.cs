@@ -6,13 +6,15 @@ namespace BeasSwagger.Controllers;
 
 [ApiController]
 [Route("api/routing")]
-public class RoutingController(IBeasGateway gw) : ControllerBase
+public class RoutingController(IBeasGateway gw, BeasScriptRunner runner) : ControllerBase
 {
     /// <summary>增加工藝</summary>
     /// <remarks>DLL 函數:<c>add</c></remarks>
     [HttpPost("add")]
-    public async Task<ActionResult<BeasResult>> Add(RoutingRequest req) =>
-        Ok(await gw.InvokeAsync("Routing.add", req));
+    public async Task<ActionResult<BeasResult>> Add(RoutingRequest req, CancellationToken ct)
+    {
+        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.RoutingAdd(req), null, ct));
+    }
 
     /// <summary>更新工藝</summary>
     /// <remarks>DLL 函數:<c>change</c></remarks>

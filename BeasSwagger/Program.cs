@@ -6,16 +6,27 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<BeasConnection>(builder.Configuration.GetSection("Beas:Connection"));
 builder.Services.AddControllers().AddJsonOptions(o =>
-    o.JsonSerializerOptions.PropertyNamingPolicy = null); // 保留欄位原名(VERSCHN 等)
+{
+    o.JsonSerializerOptions.PropertyNamingPolicy = null; // 保留欄位原名(VERSCHN 等)
+    o.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+});
+builder.Services.Configure<BeasOptions>(builder.Configuration.GetSection("Beas"));
+builder.Services.AddSingleton<BeasScriptRunner>();
 
 builder.Services.Configure<BeasScriptOptions>(builder.Configuration.GetSection("Beas:Script"));
 // 尚未實作 script 的函數仍走 Mock(只回傳收到的參數)
 builder.Services.AddSingleton<IBeasGateway, MockBeasGateway>();
 // UseMock=true:只產生 script 不寫庫;false:真的寫 BEAS_COMMON_INPUT
 if (builder.Configuration.GetValue<bool>("Beas:UseMock", true))
+{
     builder.Services.AddSingleton<IBeasScriptClient, MockBeasScriptClient>();
+    builder.Services.AddSingleton<IBeasQueryClient, MockBeasQueryClient>();
+}
 else
+{
     builder.Services.AddSingleton<IBeasScriptClient, OdbcBeasScriptClient>();
+    builder.Services.AddSingleton<IBeasQueryClient, OdbcBeasQueryClient>();
+}
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -29,6 +40,12 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Beas v1"); c.RoutePrefix = "swagger"; });
+app.Use(async (ctx, next) =>
+{
+    try { await next(); }
+    catch (BeasInterfaceNotSupportedException e) { ctx.Response.StatusCode = 501; await ctx.Response.WriteAsJsonAsync(new BeasResult(false, e.Message)); }
+    catch (ArgumentException e) { ctx.Response.StatusCode = 400; await ctx.Response.WriteAsJsonAsync(new BeasResult(false, e.Message)); }
+});
 app.MapGet("/", () => Results.Redirect("/swagger"));
 app.MapControllers();
 app.Run();

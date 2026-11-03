@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_json</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="work with JSON format in BeasScript &nbsp;you can decalre a json object with declare=j=ue_json or &nbsp;instance json j &nbsp;both create the object ue_json at end you must destroy the ob" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "api_interruption.htm",
+   prevP: "ue_form.htm",
+   currP: "ue_json.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_json",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_json",
+   sharesubject: "Beas Script 2026.09 - ue_json",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Ue_json",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_json /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_json").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_json.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_json</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_json</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">work with JSON format in BeasScript</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can decalre a json object with</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=j=ue_json</span></p>
+<p class="p_Normal">or </p>
+<p class="p_Normal"><span class="f_CourierFixed">instance json j</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">both create the object ue_json</p>
+<p class="p_Normal">at end you must destroy the object with</p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=j</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:199px;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</td>
+<td class="fielddescription" style="width:354px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:199px; background-color:#F7F7F7;"><p class="p_Normal">parse</p>
+</td>
+<td class="fielddescription" style="width:354px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Parse a string and create a JSON object</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Parse a string, BSL object or Datastore and create a JSon Object</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Example: Parse string</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance json j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.parse={&quot;test1&quot;: &quot;Algo&quot;,&quot;test2&quot;: &quot;Benzon&quot;}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;j.test1&gt; &lt;j.test2&gt;</span></p>
+<p class="p_Normal">This create a Json object with 2 Properties:</p>
+<p class="p_Normal">The Script return &quot;Algo Benzon&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Example Parse string and parse Json object</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">a</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">a.parse { &nbsp; &nbsp;&quot;name&quot;:&quot;John&quot;, &nbsp; &nbsp;&quot;age&quot;:30, &nbsp; &nbsp;&quot;cars&quot;: [ &nbsp; &nbsp; &nbsp; &nbsp;{ &quot;name&quot;:&quot;Ford&quot;, &quot;models&quot;:[ &quot;Fiesta&quot;, &quot;Focus&quot;, &quot;Mustang&quot; ] }, &nbsp; &nbsp; &nbsp; &nbsp;{ &quot;name&quot;:&quot;BMW&quot;, &quot;models&quot;:[ &quot;320&quot;, &quot;X3&quot;, &quot;X5&quot; ] }, &nbsp; &nbsp; &nbsp; &nbsp;{ &quot;name&quot;:&quot;Fiat&quot;, &quot;models&quot;:[ &quot;500&quot;, &quot;Panda&quot; ] } &nbsp; &nbsp;] }</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// create string of all models</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_jtest</span><span class="f_CodeExample" style="color: #ff0000;">=</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">for</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ll_loop</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">a</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">cars</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">2.</span><span class="f_CodeExample" style="color: #3366ff;">models</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">addvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_jtest</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">a</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">cars</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">2.</span><span class="f_CodeExample" style="color: #3366ff;">models</span><span class="f_CodeExample" style="color: #ff0000;">.[</span><span class="f_CodeExample" style="color: #3366ff;">ll_loop</span><span class="f_CodeExample" style="color: #ff0000;">]&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">next</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;320X3X5</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_jtest</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;&nbsp;name,models</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">a</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">cars</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">1.</span><span class="f_CodeExample" style="color: #3366ff;">getfieldnames</span><span class="f_CodeExample" style="color: #ff0000;">()&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;&quot;BMW&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">a</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">cars</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">2.</span><span class="f_CodeExample" style="color: #3366ff;">name</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;&quot;Fiesta&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">a</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">cars</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">1.</span><span class="f_CodeExample" style="color: #3366ff;">models</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">a</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Example: Parse Datastore</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">datastore</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">d</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">'RM'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">and</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">'S'</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">parse</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">d</span></p>
+<p class="p_Normal">Result is the datastore in Json Object, example:<br />
+<img alt="json_example1" width="372" height="203" style="margin:0;width:372px;height:203px;border:none" src="json_example1.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Example: Parse BSL (beas service layer)</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">bsl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">Item</span><span class="f_CodeExample" style="color: #ff0000;">()?</span><span class="f_CodeExample" style="color: #3366ff;">$select</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ItemCode</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">ItemName</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">$filter</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ItemCode</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">gt</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">'RM'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">and</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ItemCode</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">lt</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">'S'</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">parse</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">b</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Limitation:<br />
+BSL results with $expand not supported</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:199px;"><p class="p_Normal">&lt;string&gt;</p>
+</td>
+<td class="fielddescription" style="width:354px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">returns a json property</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">returns a value of a json object</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance json j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.parse={&quot;Today&quot;:&quot;2019/10/05&quot;,&quot;Color&quot;:{&quot;Red&quot;:1,&quot;Blue&quot;:2,&quot;Green&quot;:3},&quot;TestArray&quot;:[{&quot;a&quot;:1,&quot;b&quot;:2}]}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// This produce follow object structure</span></p>
+<p class="p_Normal"><img alt="json_example_get1" width="258" height="201" style="margin:0;width:258px;height:201px;border:none" src="json_example_get1.jpg"/></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;j.Today&gt;</span><span class="f_CourierFixed" style="color: #008000;"> &nbsp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Display: 2019/10/05</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;j.Color.Red&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Display: 1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;j.TestArray.1.b&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Display: 2</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Array functionality support limited</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:199px; background-color:#F7F7F7;"><p class="p_Normal">&lt;getfieldnames()&gt;</p>
+</td>
+<td class="fielddescription" style="width:354px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Returns field Names from the root level</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Current only root level supported</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance json j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.parse={&quot;Today&quot;:&quot;2019/10/05&quot;,&quot;Color&quot;:{&quot;Red&quot;:1,&quot;Blue&quot;:2,&quot;Green&quot;:3},&quot;TestArray&quot;:[{&quot;a&quot;:1,&quot;b&quot;:2}]}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;j.getfieldnames()&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:199px;"><p class="p_Normal">&lt;stringify&gt;</p>
+</td>
+<td class="fielddescription" style="width:354px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Returns complete json object as string in a json format</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance json j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.parse={&quot;Color&quot;:{&quot;Red&quot;:1,&quot;Blue&quot;:2,&quot;Green&quot;:3}}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.set=Color.Blue=21</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.set=Color.Yellow=4</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;j.stringify&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Display: {&quot;Color&quot;: {&quot;Red&quot;: 1,&quot;Blue&quot;: &quot;21&quot;,&quot;Green&quot;: 3,&quot;Yellow&quot;: &quot;4&quot;}}</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:199px; background-color:#F7F7F7;"><p class="p_Normal">set</p>
+<p class="p_Normal">setnumber</p>
+<p class="p_Normal">setboolean</p>
+<p class="p_Normal">setdate</p>
+</td>
+<td class="fielddescription" style="width:354px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Changes or adds a property in a json object</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Generate a json object or change existing json objects</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Example: Simple json</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance json j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.set=Hello=world </span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.setnumber=TestNumber=1.4</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.setdate=myDateTime=&lt;today&gt; &lt;time&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.setboolean=TestBoolean=false</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Generates a json with the following result:</p>
+<p class="p_Normal"><img alt="json_example_set" width="304" height="98" style="margin:0;width:304px;height:98px;border:none" src="json_example_set.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Note:<br />
+The json object does not support date or date time fields. Always type &quot;String&quot; generate.</p>
+<p class="p_Normal">If you define the content with &quot;setdate&quot;, the system convert this in correct Date/DateTime Json format</p>
+<p class="p_Normal">Current you can't define arrays or objects.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> Replace field in sub object</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy=j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance json j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.parse={&quot;Today&quot;:&quot;2019/10/05&quot;,&quot;Color&quot;:{&quot;Red&quot;:1,&quot;Blue&quot;:2,&quot;Green&quot;:3}}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Replace entry</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.set=Color.Blue=21</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Add Entry</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.set=Color.Yellow=4</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Result:</p>
+<p class="p_Normal"><img alt="json_example_set2" width="227" height="111" style="margin:0;width:227px;height:111px;border:none" src="json_example_set2.jpg"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Create a json object and create 2 properties</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">set</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">test1</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Algo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">set</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">test2</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Benzon</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">test1</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Display:&nbsp;Algo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">stringify</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Display&nbsp;complete&nbsp;object:&nbsp;&nbsp;{&quot;test1&quot;:&nbsp;&quot;Algo&quot;,&quot;test2&quot;:&nbsp;&quot;Benzon&quot;}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Parse a json string and return values from properties</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">parse</span><span class="f_CodeExample" style="color: #ff0000;">={</span><span class="f_CodeExample" style="color: #a04db3;">&quot;test1&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Algo&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;test2&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Benzon&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">test1</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Display&nbsp;&quot;Algo&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Json with SubObject</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">json</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">parse</span><span class="f_CodeExample" style="color: #ff0000;">={</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Color&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Red&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">}</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Blue&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">}</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">]</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">j</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">Color</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample">1.</span><span class="f_CodeExample" style="color: #3366ff;">Red</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Display:&nbsp;1</span></p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

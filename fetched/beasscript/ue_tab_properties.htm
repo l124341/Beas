@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Properties</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Insert UDF 5 in Routing Position" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="&lt;tabobject&gt;=debug=true/false Activate debug mode &lt;tabobject&gt;=add=&lt;tab name&gt;=&lt;text&gt; Add a rider. tabname=name of the rider. &nbsp;text=Labeling of a rider. There is no automati" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "fastbutton.htm",
+   prevP: "addtabsheet.htm",
+   currP: "ue_tab_properties.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Properties",
+   mailsubject: "Feedback on: Beas Script 2026.09 - Properties",
+   sharesubject: "Beas Script 2026.09 - Properties",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ue_tab_properties",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; tab (ue_tab) &gt; Properties /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Properties").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_tab_properties.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Properties</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">Properties</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=debug=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Activate debug mode</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=add=&lt;tab name&gt;=&lt;text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Add a rider.<br />
+tabname=name of the rider. </p>
+<p class="p_Normal">text=Labeling of a rider. There is no automatic translation</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=reset</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Reset all riders</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=name=&lt;tab name&gt;=&lt;newtext&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Change the name of a rider</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">Change Text for ue_tab &quot;ltab&quot;, rider &quot;itemtab&quot; to &quot;hello world&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=name=itemtab=hello world</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=losefocus=&lt;name&gt;=&lt;script&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Losefocus-Script. If the rider loses its focus, the script defined here is executed.</p>
+<p class="p_Normal">Also, various events can alternatively be used. </p>
+<p class="p_Normal">The script deposited so has a low priority. </p>
+<p class="p_Normal">If false is given back or the value is set to -1, no TAB change is carried out.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=getfocus=&lt;name&gt;=&lt;script&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Getfocus-Script. The here defined script is run when the rider gets its focus. Alternatively, various events can also be used.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=refdw=&lt;tabname&gt;=dw_x</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Over this a Data Window can be allocated to the tab. </a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">ue_Tab takes over the positioning and visible control, but doesn't build up the DW and makes no retrieve. In Losefocus is set visible = false.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">dw_2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">init</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">myitemgroup</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">psr</span><br />
+<span class="f_CodeExample" style="color: #666699;">dw_2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">design</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">liste</span><br />
+<span class="f_CodeExample" style="color: #666699;">dw_2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">retrieve</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">str_parm</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">s_parm1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #666699;">etab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">add</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">itemgroup</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">spr</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">Artikelgruppe</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #666699;">etab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">refdw</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">itemgroup</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">dw_2</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=refrtf=&lt;tabname&gt;=&lt;column&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Standard text field, associated with the specified field name.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=redraw</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Screen rebuild</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=dw=dw_x</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Determines in which DataWindow (1 .6) the object is visualized.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=x,y,width,height</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Position and size. 0-0 = upper left corner of the selected object.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=xscript,yscript,widthscript,heightscript</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Dynamic position and size. If these properties are set, the coordinates are automatically calculated after a resize, e.g. automatic fixation on the right side.</p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=widthscript=%sub(&lt;window.width&gt;,2500)</span></p>
+<p class="p_Normal">Up to beas2008-0-13: use &quot;max&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">etab.widthscript=max</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab_heightscript=max</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=color=&lt;rgb:r:g:b&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">set the font color</p>
+<p class="p_Normal">For more info <span class="f_See">see</span> RGB.</p>
+<p class="p_Normal"><span class="f_Example">Example: </span>Red text in Tab &quot;page1&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=color=page1=&lt;rgb:192:0:0&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=visible=&lt;tabname&gt;=&lt;script&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Script for visible control. Return false / true sets the visibility.</p>
+<p class="p_Normal">Multi-line script: line feed indicates with &lt;cr_lf&gt;</p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=visible=firsttab=if &lt;myvalue&gt; = 1 then&lt;cr_lf&gt;return true&lt;cr_lf&gt;end if&lt;cr_lf&gt;return false</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=setcurrenttab=name</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Changes to the defined tabs. Name = name of the tab (not the title). Can also be the number.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=setunvisible</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Destroy all objects, but do not destroy the object. </p>
+<p class="p_Normal">Now redraw with &quot;<span class="f_CourierFixed">redraw</span>&quot;</p>
+<p class="p_Normal">to disable and make the object invisible:</p>
+<p class="p_Normal">tb=enable=false</p>
+<p class="p_Normal">tb=setunvisible</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=buttonadd=tabname=buttonname=text=command</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Adds a button to the specified tab .</p>
+<p class="p_Normal"><span class="f_CourierFixed">tabname</span>=Name of the tab</p>
+<p class="p_Normal"><span class="f_CourierFixed">buttoname</span>=Name of the button</p>
+<p class="p_Normal"><span class="f_CourierFixed">text</span>=Caption of the button</p>
+<p class="p_Normal"><span class="f_CourierFixed">command</span>=Command which will be executed automatically. It can also be used the events. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=preupdate</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Start preupdate-Event for the current tab</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=update</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Start update-Event for the current tab</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=buttonreset</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">All button settings are reset.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=addarea=&lt;tabname&gt;=&lt;object&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">An area which is encircled from the mentioned object.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=addobject=&lt;tabname&gt;=&lt;objectname&gt;=x,y,width,height</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">addobject=&lt;tabname&gt;=&lt;objectname&gt;=nextlinefrom=&lt;objectname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Object name (eg a field) to add to tabulator</p>
+<p class="p_Normal">As width / height may also be used 9999 . It is always fit accordingly.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">with &quot;<span class="f_CourierFixed">nextlinefrom=fromobjectname</span>&quot; the field has the same x, width and height as the &quot;<span class="f_CourierFixed">fromobjectname</span>&quot; and <span class="f_CourierFixed">y</span> = <span class="f_CourierFixed">y</span> from the &quot;<span class="f_CourierFixed">fromobjectname</span>&quot; <span class="f_CourierFixed">+ 64</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to create a text field and right column, create first the column and then the text field. Only in this way you can have an underlined text field.</p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addnewobject=fbatch=myfield=column=userfield1=nextlinefrom=setscrap</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addnewobject=fbatch=myfield_t=text=hello=nextlinefrom=setscrap_t</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=redraw</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=addnewobject=&lt;tabname&gt;=&lt;objectname&gt;=&lt;columntyp&gt;=&lt;propertie&gt;=&lt;nextlinefrom/x,y,width,height&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_Attention">IMPORTANT: </span>This function is only available for compatibility.</p>
+<p class="p_Normal">Please use the <a href="bsbuttoncreate.htm" class="topiclink">dw_1.create</a> command.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Create new object (only text, column, bitmap) and link this to the tab name.</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Description</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">dropdown</span>: propertie = id userfield1 ... userfieldx Create Dropdown-Field</p>
+<p class="p_Normal"><span class="f_CourierFixed">column</span>: propertie = id userfield1 ... userfieldx</p>
+<p class="p_Normal"><span class="f_CourierFixed">checkbox:</span> create checkbox with Y/N. Id = userfield1 ... userfieldx <span class="f_beas_Version">(beas 9.3 PL 1)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">text</span>: propertie = Text</p>
+<p class="p_Normal"><span class="f_CourierFixed">bitmap</span>: propertie = Bitmapname</p>
+<p class="p_Normal"><span class="f_CourierFixed">// example new fields im item-Window</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent postopen</span><br />
+<span class="f_CourierFixed">etab=addnewobject=stamm=class_f=column=userfield2=3010=88=400=60</span><br />
+<span class="f_CourierFixed">etab=addnewobject=stamm=class_f_t=text=Business=3410=88=400=60</span><br />
+<span class="f_CourierFixed">etab=addnewobject=stamm=class_b=column=userfield2=nextlinefrom=class_f</span><br />
+<span class="f_CourierFixed">etab=addnewobject=stamm=class_b_t=text=Business=nextlinefrom=class_f_t</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Comment"><span class="f_Comment">with &quot;nextlinefrom&quot; you can set the position relative to a other field.</span></p>
+<p class="p_Comment"><span class="f_Comment">It is better to work with t&quot;nextlinefrom&quot;</span></p>
+<p class="p_Comment"><span class="f_Comment">&nbsp;</span></p>
+<p class="p_Comment"><span class="f_Comment">You can use &quot;addnewobject&quot; only for existing fields in the datastore. Not all Windows have the &quot;userfieldx&quot;-Fields in the Datastore.</span></p>
+<p class="p_Comment"><span class="f_Comment">&nbsp;</span></p>
+<p class="p_Comment"><span class="f_Comment">You must set first the Column and then the textfield. Only then the Textfield makes an underline to the Column. </span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=object=&lt;tabname&gt;=&lt;objectname&gt;=&lt;propertie&gt;=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">A property of a defined object can be set. This is only &nbsp;drawn accordingly after a redraw.</p>
+<p class="p_Normal">Property:</p>
+<p class="p_Normal"><span class="f_CourierFixed">width, height, x, y, protect, visible</span></p>
+<p class="p_Normal"><span class="f_Example">Example</span>: set item itemcode in area stamm to protect</p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=object=stamm=itemcode=protect=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=object=stamm=description=height=500</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=udf=&lt;tabname&gt;=&lt;udfname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets the visibility and name of the 4-UDF fields (udfname1-4) to the specified tab.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=debugobjectlist</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">List all objects in the debug-window</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;tabobject&gt;=draw1tab=true</span></p>
+</td>
+<td style="vertical-align:top; width:511px; padding:0; border:solid thin #000000;"><p class="p_Normal">Normally Beas does not draw the tab if there is only one tab.</p>
+<p class="p_Normal">if you set this parameter, Beas always draws the tab.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">Variables</span> (up to beas2008-0-13)</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:313px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; padding:2px; border:solid thin #000000;"><p class="p_Normal">x-coordinate</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.y&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">y-coordinate</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.width&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; padding:2px; border:solid thin #000000;"><p class="p_Normal">width</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.height&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">height</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.clientx&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; padding:2px; border:solid thin #000000;"><p class="p_Normal">x-coordinate from the client-area</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.clienty&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">y-coordinate from the client-area</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.clientwidth&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; padding:2px; border:solid thin #000000;"><p class="p_Normal">width from the client-area</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.clientheight&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">height from the client-area</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.currenttab&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Number of current Tab</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;objectname.currenttabname&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:512px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Name of current Tab</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Userevents</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:313px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">windowevent tabfirstredraw objectname</span></p>
+</td>
+<td style="vertical-align:top; width:512px; padding:2px; border:solid thin #000000;"><p class="p_Normal">First redraw </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:313px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">windowevent tabredraw objectname</span></p>
+</td>
+<td style="vertical-align:top; width:512px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">execute bevor redraw the tab</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span>:</p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <span style="text-decoration: underline;"><a href="https://youtu.be/yXSt-zq2SDI" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Insert UDF 5 in Routing Position</a></span></p>
+<p class="p_beas_Version"><span class="f_beas_Version">(you need beas 9.2 PL: 03)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: </p>
+<p class="p_Normal">Create Dropdown-Field in Routing-Position in first Tab after the &quot;Number of payslips&quot;-Field</p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent postopen</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addnewobject=stamm=bomfield=dropdown=userfield1=nextlinefrom=anzls</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addnewobject=stamm=bomfield_t=text=bom - Position=nextlinefrom=anzls_t</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item.bomfield.dropdown.select pos_id,art1_id from beas_stl where itemcode = '&lt;itemcode&gt;'</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span>:</p>
+<p class="p_Normal">New tab in the calculation menu (Tabobject = etab, Datawindow=dw_2, sub-Tab=fbatch)</p>
+<p class="p_Normal">You need the event: postevent, because the datawindow is create after open-Event!</p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent postopen</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addobject=fbatch=myfield=1500,100,300,60</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=add=mytab=my tab</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addobject=mytab=myfield_t=40=240=605=60</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addobject=mytab=myfield=610=240=290=60</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">Add Tab sheet in the item-Window with 2 new fields</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent postopen</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=add=tab01=Onglet</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addnewobject=tab01=itemcode1=column=userfield1=320=90=370=60</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addnewobject=tab01=itemcode1_t=text=Code=20=90=300=60</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addnewobject=tab01=description1=column=userfield2=nextlinefrom=code</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addnewobject=tab01=description1_t=text=Description=nextlinefrom=code_t</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">sql=select itemcode, itemname from oitm where itemcode=N'&lt;itemcode&gt;'</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemcode1.value=&lt;wert1&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item.description1.value=&lt;wert2&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">Set the Item-Comments in the first page too:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent postopen</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// First set column to &quot;stamm&quot;-page</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addobject=stamm=usertext=30=860=1480=600</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent etab_getfocus_usertext</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// if tab &quot;usertext&quot; then set the column to this page</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addobject=usertext=usertext=20=00=10000=480</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent etab_getfocus_stamm</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// if tab &quot;stamm&quot; then set the column to this page </span></p>
+<p class="p_Normal"><span class="f_CourierFixed">etab=addobject=stamm=usertext=30=860=1480=600</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">Rename tab &quot;General&quot; into Item master data form</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent postopen</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">etab=name=stamm=General modified name</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">Rename ltab &quot;Foreign language&quot; located into &quot;Remarks&quot; tab of Item master data form</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent tabfirstredraw ltab</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">ltab=name=nflangbez=hello world</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end event</span></p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

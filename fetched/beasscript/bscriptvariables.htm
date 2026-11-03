@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bs Variables</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="BeasScript &nbsp;variables are containers for storing data values." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bs-variable-operators.htm",
+   prevP: "bscriptcomments.htm",
+   currP: "bscriptvariables.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bs Variables",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bs Variables",
+   sharesubject: "Beas Script 2026.09 - bs Variables",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "BscriptVariables",
+   mailpath: "Beas script &gt; BeasScript Tutorial &gt; bs Variables /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bs Variables").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bscriptvariables.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bs Variables</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bs Variables</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">BeasScript &nbsp;variables are containers for storing data values.</p>
+<p class="p_Normal">Variables can be defined with setvar or can be declared with int, number, and date.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Variables defined with setvar are always data type String.</p>
+<p class="p_Normal">Many functions support only variables defined with setvar, example <a href="userevent.htm" class="topiclink">userevents</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In this example, x, y, and z, are variables:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;6&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">Operators&nbsp;not&nbsp;working&nbsp;with&nbsp;variables&nbsp;defined&nbsp;with&nbsp;setvar<br />
+To&nbsp;read&nbsp;a&nbsp;variable,&nbsp;you&nbsp;must&nbsp;insert&nbsp;the&nbsp;variable&nbsp;in&nbsp;brackets&nbsp;&lt;..&gt;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">y</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">Alternatively, you can work with declared local variable </p>
+<p class="p_Normal">Supported variable types: <span class="f_CourierFixed">Decimal, Integer, String, Boolean, Datetime</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3.5</span><br />
+<span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;+</span><span class="f_CodeExample" style="color: #0000ff;">5</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;8.5</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you need a variable which is visible outside the current function, you can define it as an instance variable:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">instance&nbsp;decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3.5</span><br />
+<span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;+</span><span class="f_CodeExample" style="color: #0000ff;">5</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;return&nbsp;8.5</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Much Like Algebra:</p>
+<p class="p_Normal">In this example, price1, price2, and total, are variables:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">price1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">5</span><br />
+<span class="f_CodeExample" style="color: #666699;">decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">price2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3.5</span><br />
+<span class="f_CodeExample" style="color: #666699;">decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">total</span><br />
+<span class="f_CodeExample" style="color: #666699;">total</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">price1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">+</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">price2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">total</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In programming, just like in algebra, we use variables (like price1) to hold values.</p>
+<p class="p_Normal">In programming, just like in algebra, we use variables in expressions <span class="f_CourierFixed">(total= &lt;price1&gt; + &lt;price2&gt;)</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">From the example above, you can calculate the total to be 8.5.</p>
+<p class="p_Normal">BeasScript variables are containers for storing data values.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">BeasScript Identifiers</span></p>
+<p class="p_Normal">All BeasScript variables must be identified with unique names.</p>
+<p class="p_Normal">These unique names are called identifiers.</p>
+<p class="p_Normal">Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+<p class="p_Normal">Write all names in lower case!</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The general rules for constructing names for variables (unique identifiers) are:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Names can contain letters, digits, underscores, and dollar signs.</p>
+<p class="p_Normal">Names must begin with a letter</p>
+<p class="p_Normal">Names can also begin with _ (but we will not use it in this tutorial), but not with $</p>
+<p class="p_Normal">Names are case sensitive (y and Y are different variables, write always all in lower case)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">The Assignment Operator</span></p>
+<p class="p_Normal">In BeasScript, the equal sign (=) is an &quot;assignment&quot; operator and &nbsp;an &quot;equal to&quot; operator.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3.5</span><br />
+<span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;+</span><span class="f_CodeExample" style="color: #0000ff;">3</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">(It calculates the value of <span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">+</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #0000ff;">3</span> and puts the result into <span class="f_CourierFixed">x</span>. The value of <span class="f_CourierFixed">x </span>is incremented by 6.)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The &quot;equal to&quot; operator is written like = in BeasScript</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">BeasScript Data Types</span></p>
+<p class="p_Normal">BeasScript variables can hold numbers like 100 and text values like &quot;Martin&quot;.</p>
+<p class="p_Normal">In programming, text values are called text strings.</p>
+<p class="p_Normal">BeasScript can handle many types of data, but for now, just think of numbers and strings.</p>
+<p class="p_Normal">In BeasScript you can use single or double quote for define Text, but this is not mandatory</p>
+<p class="p_Normal">You must declare variables with decimal, string or you can define string variables with <span class="f_CourierFixed">setvar</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;save&nbsp;3.14&nbsp;in&nbsp;String&nbsp;variable&nbsp;&quot;pi&quot;</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">pi</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3.14</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Save&nbsp;text&nbsp;&quot;Martin&quot;&nbsp;in&nbsp;variable&nbsp;&quot;person&quot;</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">person</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Martin&quot;</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Save&nbsp;text&nbsp;&quot;Yes&nbsp;I&nbsp;am!&quot;&nbsp;in&nbsp;variable&nbsp;&quot;answer&quot;.&nbsp;quotes&nbsp;not&nbsp;mandatory</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">answer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Yes</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">I</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">am</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">!</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Declaring (Creating) BeasScript Variables</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can define variables with </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">myVariable</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample">value</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">This is always from type String and used in most of places in Beas.</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: <a href="userevent.htm" class="topiclink">UserEvents</a> support only variables declared with setvar.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Or you define Variables </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">Decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">pi</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3.14</span><br />
+<span class="f_CodeExample">String&nbsp;</span><span class="f_CodeExample" style="color: #666699;">person</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Martin&quot;</span></p>
+<p class="p_Normal">If variable type is defined as string, quotes are mandatory</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: it's not possible to declare more than one variable in one line.</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">WRONG:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">Decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">a</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3.14</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">2.4</span></p>
+<p class="p_Normal">Correct:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">Decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">a</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">3.14</span><br />
+<span class="f_CodeExample" style="color: #666699;">Decimal</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">2.4</span><br />
+<span class="f_CodeExample" style="color: #0000ff;">&nbsp;</span></p>
+<p class="p_TitleinText"><span class="f_TitleinText">Visibility of variables</span></p>
+<p class="p_Normal">BeasScript is always window-based. It is possible to declare &quot;global&quot; variables, but it's not recommended to use them.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Declaration</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setvar</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Variable is visible inside the current window from the moment of declaration.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">decimal, string, datetime, boolean</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Variable is visible only inside the current function. Variable is not visible in functions that are called from the current function.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">instance decimal</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance string</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Variable is visible inside current window from the moment of declaration.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Select</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="BS: Create Drop-down from the select command. &nbsp; The SQL-Command is executing during the creation of the drop-down-list The SQL statement is executed directly before the drop" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "selectpredefined.htm",
+   prevP: "bsdropdownscript.htm",
+   currP: "bsdropdownselect.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Select",
+   mailsubject: "Feedback on: Beas Script 2026.09 - dropdown Select",
+   sharesubject: "Beas Script 2026.09 - dropdown Select",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsdropdownSelect",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; item &gt; DropDown &gt; Select /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Select").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsdropdownselect.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Select</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">dropdown Select</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">BS: Create Drop-down from the select command.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The SQL-Command is executing during the creation of the drop-down-list</p>
+<p class="p_Normal">The SQL statement is executed directly before the drop-down window is displayed. Placeholder for WHERE condition is possible.</p>
+<p class="p_Normal">The first select field is always returned to the input field</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Best place to define is </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">global</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">form_opened</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;definnition</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if result related to another field, which the use can change, then the best place is the event &quot;click on dropodown icon of the field&quot;, example for udf1:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">global</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">dw_1_item_udf1_p_click</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;definition</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">global</span></p>
+<p class="p_Normal">&nbsp;<br />
+<span class="f_Example">Example</span>:: </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">global&nbsp;function&nbsp;form_opened</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">dw_1.item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">udf1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">dropdown</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">order</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">by</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">end&nbsp;global</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><img alt="dropdownselect1field" width="200" height="198" style="margin:0;width:200px;height:198px;border:none" src="dropdownselect1field.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">With 2 values</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">global&nbsp;function&nbsp;form_opened</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">dw_1.item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.udf1.</span><span class="f_CodeExample" style="color: #666699;">dropdown</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;,&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">order</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">by</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">end&nbsp;global</span></p>
+<p class="p_Normal"><img alt="dropdownselect2fields" width="335" height="198" style="margin:0;width:335px;height:198px;border:none" src="dropdownselect2fields.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Return information</span></p>
+<p class="p_Normal">All other fields saved in variables: dd:[fieldname]</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: If you choose &quot;<span class="f_CourierFixed">B_RM</span>&quot; in this drop-down, Beas creates the following variables:</p>
+<p class="p_Normal"><span class="f_CourierFixed">dd:itemcode = &quot;B_RM&quot;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dd:itemname = &quot;Raw Material / Normal&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Field Width</span></p>
+<p class="p_Normal">The size of field with is calculated automatically</p>
+<p class="p_Normal">If you define a field name with post fix &quot;__Number&quot; you can change the field width</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: You want to see only Description, but you want tot return the itemcode</p>
+<p class="p_Normal">You can change the width to 1 pxl (0 is not allowed)</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">dw_1.item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.udf1.</span><span class="f_CodeExample" style="color: #666699;">dropdown</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;&nbsp;as&nbsp;i__1,&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">order</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">by</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="dropdownselectwidth1" width="270" height="200" style="margin:0;width:270px;height:200px;border:none" src="dropdownselectwidth1.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Note">Note: You change the width and the name of return value.</span><br />
+In this case the itemcode is saved in variable <span class="f_CourierFixed">dd:i__1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Pre defined Drop-downs</span></p>
+<p class="p_Normal">You can work with pre-defined select commands. <br />
+With the comma separator you can define additional properties.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">mycolumn</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">dropdown</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="background-color: #ffff00;">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000; background-color: #ffff00;">:</span><span class="f_CodeExample" style="color: #666699; background-color: #ffff00;">oitm</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">ddfilter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Descrption&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">like</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;*grp*&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="selectpredefined.htm" class="topiclink">list of pre-defined drop-downs:</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Formatted Drop-downs</span></p>
+<p class="p_Normal">You can set the format in the drop-down window, example set title, color and many more properties.</p>
+<p class="p_Normal"><img alt="dropdownformat" width="529" height="205" style="margin:0;width:529px;height:205px;border:none" src="dropdownformat.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="dropdown-sql-format.htm" class="topiclink">dropdown-sql-format</a></p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

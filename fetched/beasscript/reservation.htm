@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_reservation</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Reservation-Object ue_reservation declare=reservation=ue_reservation &nbsp; after_sap_documents=object=docentry Call this after an SAP document is created. This function deletes th" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "tables.htm",
+   prevP: "api_maintenance.htm",
+   currP: "reservation.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_reservation",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_reservation",
+   sharesubject: "Beas Script 2026.09 - ue_reservation",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Reservation",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_reservation /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_reservation").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "reservation.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_reservation</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_reservation</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Reservation-Object ue_reservation</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=reservation=ue_reservation</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:268px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">after_sap_documents=object=docentry</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Call this after an SAP document is created. This function deletes the reservations for this document.</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> After delivery</p>
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_reservation=after_sap_documents=15=10</span></p>
+<p class="p_Normal">This function works with objects:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>15 (dln1) = Delivery notes</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>60 (ige1) = receipts</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>59 (ign1) = issue</p></td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addreservation=&lt;properties&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Add a reservation. <span class="f_See">See</span> <a href="addreservation.htm" class="topiclink">addreservation</a>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">delreservation=&lt;properties&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Delete one ore more reservations. For the parameters, <span class="f_See">see</span> <a href="addreservation.htm" class="topiclink">addreservation</a>.</p>
+<p class="p_Attention"><span class="f_Attention">Note: </span>More than 4 parameters must be provided. If the quantity is not set, Beas deletes all reservation entries.</p>
+<p class="p_Attention"><span class="f_Attention">&nbsp;</span></p>
+<p class="p_See"><span class="f_See">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_reservation=delreservation=itemcode=A005&lt;char 9&gt;whscode=BW&lt;char 9&gt;....basetype=WO&lt;char 9&gt;base_docentry=500&lt;char 9&gt;base_linenum=10&lt;char 9&gt;base_linenum2=20</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">movereservation=&lt;properties&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Moves the reservation to an other warehouse / bincode</p>
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_reservation=movereservation=from_whscode=..&lt;tab&gt;to_whscode=..&lt;tab&gt;itemcode=...&lt;tab&gt;from_bincode=...&lt;tab&gt;to_bincode=...&lt;tab&gt;distnumber=..&lt;tab&gt;linked=&lt;where-sql-fragment for base-document&gt;&lt;tab&gt;quantity=...</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If not the full quantity is moved, then Beas creates a second entry.</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas9.0-000-001-007</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addreservation_for_workorder</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Inserts reservation type P or A for work orders which are linked with open customer orders.</p>
+<p class="p_Normal">(no parameter)</p>
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_reservation=addreservation_for_workorder</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">delivery_load=&lt;parameters with tab&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Loads the document with textfield in dw_2.</p>
+<p class="p_Normal">Use shipping_delivery_line.psr.</p>
+<p class="p_Normal"><span class="f_CourierFixed">delivery_load=docentry=&lt;docentry&gt;=doctype=&lt;doctype&gt;&lt;tab&gt;[picklist=&lt;pkl1.absentry&gt;]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;&lt;tab&gt;as_type=picklist&lt;tab&gt;al_absentry=&lt;str_parm.c_parm1,#0&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">delivery_create=&lt;docentry&gt;=&lt;doctype&gt;=&lt;additional parameters with tab&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates delivery. Returns docentry in value &quot;e_docentry&quot;. If there is an error, then e_docentry=0.</p>
+<p class="p_Normal">Property list: you can set properties</p>
+<p class="p_Normal">Commands: <span class="f_CourierFixed">&lt;docentry&gt;=&lt;doctype&gt;=&lt;additional parameter&gt;</span></p>
+<p class="p_Normal">Additional parameters:</p>
+<p class="p_Normal"><span class="f_CourierFixed">cardcode,numatcard,trackno,comments,trnspcode,documentsowner</span></p>
+<p class="p_Normal">For more details, <span class="f_See">see</span> <a href="create_delivery.htm" class="topiclink">delivery create</a>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">transfer=&lt;properties&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates transfer for the reservation. For more details, <span class="f_See">see</span> <a href="reservation_transfer.htm" class="topiclink">Transfer</a>.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Work order</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:268px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setreservation</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Sets reservation or booking list for a work order.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">issuewo</span></p>
+</td>
+<td style="vertical-align:top; width:574px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates an issue from a planning document for production.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:268px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">backflushcheck</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Only for reservation window: Checks if the chosen quantity is correct and sets the <span class="f_CourierFixed">ib_ok variable</span> to true/false.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Purchase</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:268px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">incomminggoods</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates incoming goods from a purchase order or a pre-invoice from a planning document. <span class="f_See">See</span> <a href="incomminggoods2.htm" class="topiclink">incomminggoods</a> for more details.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Reservation window </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:268px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">loaddocumententry</span></p>
+</td>
+<td style="vertical-align:top; width:574px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Sets reservation or booking list for a work order.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example Video:</span></p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/-giw6cEdQsk" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Create issue document from a work order bill of material window</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To check the reservation for each document:</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ll_docentry=4</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ll_linenum=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_type=17</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">select sum(quantity) from beas_reservation_line where base_docentry=&lt;ll_docentry&gt; and base_linenum=&lt;ll_linenum&gt; and base_type=&lt;ls_type&gt; and reservationtype='S'</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">message=reservation for this document: &lt;wert1&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Display the reserved entries for this document:</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ll_docentry=4</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ll_linenum=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_type=17</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tools=isql=select whscode,bincode,batchnum,quantity from beas_reservation_line where base_docentry=&lt;ll_docentry&gt; and base_linenum=&lt;ll_linenum&gt; and base_type=&lt;ls_type&gt; and reservationtype='S'</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

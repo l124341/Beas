@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Crypt</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Properties cryptalgorithm=&lt;string&gt; Selects the encryption algorithm for encryption and decryption. &nbsp;Possible values are: &quot;pki&quot;, &quot;aes&quot;, &quot;rijndael&quot;, &quot;blowfish&quot;, &quot;blowfish2&quot;, &quot;" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "crypt_charset.htm",
+   prevP: "api_chilcat.htm",
+   currP: "crypt.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Crypt",
+   mailsubject: "Feedback on: Beas Script 2026.09 - Crypt",
+   sharesubject: "Beas Script 2026.09 - Crypt",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Crypt",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_api_chilkat &gt; Crypt /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Crypt").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "crypt.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Crypt</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">Crypt</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:283px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">cryptalgorithm=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:674px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Selects the encryption algorithm for encryption and decryption. </p>
+<p class="p_Normal">Possible values are: &quot;<span class="f_CourierFixed">pki</span>&quot;, &quot;<span class="f_CourierFixed">aes</span>&quot;, &quot;<span class="f_CourierFixed">rijndael</span>&quot;, &quot;<span class="f_CourierFixed">blowfish</span>&quot;, &quot;<span class="f_CourierFixed">blowfish2</span>&quot;, &quot;<span class="f_CourierFixed">des</span>&quot;, &quot;<span class="f_CourierFixed">3des</span>&quot;, &quot;<span class="f_CourierFixed">rc2</span>&quot;, &quot;<span class="f_CourierFixed">arc4</span>&quot;, &quot;<span class="f_CourierFixed">twofish</span>&quot;, &quot;<span class="f_CourierFixed">pbes1</span>&quot; and &quot;<span class="f_CourierFixed">pbes2</span>&quot;. The &quot;<span class="f_CourierFixed">pki</span>&quot; encryption algorithm is not a specific algorithm, but instead tells the component to encrypt/decrypt using public-key encryption with digital certificates. The other choices, rijndael, blowfish, and twofish, are symmetric encryption algorithms that do not involve digital certificates and public/private keys.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The original Chilkat implementation of <span class="f_CourierFixed">Blowfish</span> has a 4321 byte-swapping issue (the results are 4321 byte-swapped). The new implementation (&quot;<span class="f_CourierFixed">blowfish2</span>&quot;) does not byte swap. This should be used for compatibility with other Blowfish software.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Password-based encryption (<span class="f_CourierFixed">PBE</span>) is selected by setting this property to &quot;<span class="f_CourierFixed">pbes1</span>&quot; or &quot;<span class="f_CourierFixed">pbes2</span>&quot;. Password-based encryption is defined in the PKCS5 Password-Based Cryptography Standard at http://www.rsa.com/rsalabs/node.asp?id=2127. If PBE is used, the underlying encryption algorithm is specified by the PbesAlgorithm property.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:283px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">encodingmode=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:674px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Controls the encoding of binary data to a printable string for many methods. The valid modes are &quot;<span class="f_CourierFixed">Base64</span>&quot;, &quot;<span class="f_CourierFixed">QP</span>&quot; (for quoted-printable), &quot;<span class="f_CourierFixed">URL</span>&quot; (for url-encoding), and &quot;<span class="f_CourierFixed">Hex</span>&quot;.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:283px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">compressstringenc=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:674px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Compresses a string and returns an encoded string of the compressed data. </a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The string input argument is Unicode. The Charset property controls the conversion of the Unicode string to a multi-byte string before the &nbsp;compression is applied. For example, if the Charset is set to &quot;iso-8859-1&quot;, the input string argument is first converted from Unicode (2 bytes per char) to iso-8859-1 (1 byte per char) before compressing according to the CompressionAlgorithm property (&quot;<span class="f_CourierFixed">BZIP2</span>&quot;). If the Charset property is set to &quot;<span class="f_CourierFixed">unicode</span>&quot;, then no character encoding conversion will happen, and the full Unicode string is compressed.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Compressed data is typically binary data which is not a printable string. This method encodes the output compressed data to a printable string according to the EncodingMode property, which can be set to &quot;<span class="f_CourierFixed">Base64</span>&quot;, &quot;<span class="f_CourierFixed">QP</span>&quot; (for quoted-printable), or &quot;<span class="f_CourierFixed">Hex</span>&quot;.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return in variable &quot;<span class="f_CourierFixed">value</span>&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">cypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_chilkat</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">crypt</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">init</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">cryptalgorithm</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">none</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">encodingmode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">base64</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_var</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">compressstringenc</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_var</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">crypt</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:283px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">inflatestringenc=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:674px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">The opposite of <span class="f_CourierFixed">CompressStringENC</span>. The <span class="f_CourierFixed">Charset</span>, <span class="f_CourierFixed">EncodingMode</span>, and <span class="f_CourierFixed">CompressionAlgorithm</span> properties should match what was used when compressing.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">returns in variable: <span class="f_CourierFixed">value</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:283px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">encryptstring=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:674px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Encrypts a string and returns the encrypted data as a byte array.</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The minimal set of properties that should be set before encrypting are: <span class="f_CourierFixed">CryptAlgorithm</span>, <span class="f_CourierFixed">SecretKey</span>, <span class="f_CourierFixed">Charset</span>. Other properties that control encryption are: <span class="f_CourierFixed">CipherMode</span>, <span class="f_CourierFixed">PaddingScheme</span>, <span class="f_CourierFixed">KeyLength</span>, <span class="f_CourierFixed">IV</span>. When decrypting, all property settings must match, otherwise garbled data are returned. The Charset property controls the exact bytes that get encrypted. Beas works with Unicode strings, thus the input string is Unicode. If Unicode is to be encrypted (i.e. 2 bytes per character), the Charset property is set to &quot;<span class="f_CourierFixed">Unicode</span>&quot;. To implicitly convert the string to another charset before the encryption is applied, set the Charset property to something else, such as &quot;<span class="f_CourierFixed">iso-8859-1</span>&quot;, &quot;<span class="f_CourierFixed">Shift_JIS</span>&quot;, &quot;<span class="f_CourierFixed">big5</span>&quot;, &quot;<span class="f_CourierFixed">windows-1252</span>&quot;, etc. The complete list of possible charsets is listed here: <a href="crypt_charset.htm" class="topiclink">Crypt_Charset</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">returns in variable: <span class="f_CourierFixed">value</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:283px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">encryptstringenc</span></p>
+</td>
+<td style="vertical-align:top; width:674px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Encrypts a string and returns the encrypted data as an encoded (printable) string.</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"> The minimal set of properties that should be set before encrypting are: <span class="f_CourierFixed">CryptAlgorithm</span>, <span class="f_CourierFixed">SecretKey</span>, <span class="f_CourierFixed">Charset</span>, and <span class="f_CourierFixed">EncodingMode</span>. Other properties that control encryption are: <span class="f_CourierFixed">CipherMode</span>, <span class="f_CourierFixed">PaddingScheme</span>, <span class="f_CourierFixed">KeyLength</span>, IV. When decrypting (with <span class="f_CourierFixed">DecryptStringENC</span>), all property settings must match otherwise garbled data are returned. The Charset property controls the exact bytes that get encrypted. Beas works with Unicode strings, thus the input string is Unicode. If Unicode is to be encrypted (i.e. 2 bytes per character) then set the Charset property to &quot;<span class="f_CourierFixed">Unicode</span>&quot;. To implicitly convert the string to another charset before the encryption is applied, set the Charset property to something else, such as &quot;<span class="f_CourierFixed">iso-8859-1</span>&quot;, &quot;<span class="f_CourierFixed">Shift_JIS</span>&quot;, &quot;<span class="f_CourierFixed">big5</span>&quot;, &quot;<span class="f_CourierFixed">windows-1252</span>&quot;, etc. The complete list of possible charsets is listed here: <a href="crypt_charset.htm" class="topiclink">Crypt_Charset</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The EncodingMode property controls the encoding of the string that is returned. It can be set to &quot;<span class="f_CourierFixed">Base64</span>&quot;, &quot;<span class="f_CourierFixed">QP</span>&quot;, or &quot;<span class="f_CourierFixed">Hex</span>&quot;.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">returns in variable: <span class="f_CourierFixed">value</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_chilkat</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">crypt</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">init</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">cryptalgorithm</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">none</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">encodingmode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">base64</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_var</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">encryptstringenc</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_var</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">crypt</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:283px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">decryptstringenc=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:674px; padding:2px; border:solid thin #000000;"><p class="p_Normal">The reverse of<span class="f_CourierFixed"> EncryptStringENC</span>.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Decrypts string-encoded encrypted data and returns the original string.</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The property settings used when encrypting the string must match the settings when decrypting. Specifically, the Charset, EncodingMode, CryptAlgorithm, CipherMode, PaddingScheme, KeyLength, IV, and SecretKey properties must match.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">returns in variable: <span class="f_CourierFixed">value</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_chilkat</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">crypt</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">init</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">cryptalgorithm</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">none</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">encodingmode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">base64</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_var</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">World</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">encryptstringenc</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_var</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_crypt</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Encripted</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_crypt</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">crypt</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">decryptstringenc</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">ls_crypt</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Decripted</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">crypt</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:283px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">reencode=</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;&lt;fromstring&gt;=&lt;fromcode&gt;=&lt;tocode&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:674px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Provides a means for converting from one encoding to another (such as base64 to hex). This is helpful for programming environments where byte arrays are a real pain-in-the-***. The fromEncoding and toEncoding may be &quot;<span class="f_CourierFixed">base64</span>&quot;, &quot;<span class="f_CourierFixed">hex</span>&quot;, &quot;<span class="f_CourierFixed">quoted-printable</span>&quot; (or &quot;<span class="f_CourierFixed">qp</span>&quot;), or &quot;<span class="f_CourierFixed">url</span>&quot;.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">returns in variable: <span class="f_CourierFixed">value</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:283px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">cryptpassword=&lt;password&gt;[=&lt;salt&gt;]</span></p>
+</td>
+<td style="vertical-align:top; width:674px; padding:2px; border:solid thin #000000;"><p class="p_Normal">This method creates a hash for the given password. If a salt is passed, it is used in the hash algorithm. If there was no salt passed, the method generates a random salt and save it to <span class="f_CourierFixed">&lt;ls_salt&gt;.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bs Date Functions</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Default Date Placeholders &nbsp;today current date (UMC from Server + Offset Administration - Timezone) &nbsp;heute x today (UMC from Server + Offset Administration - Timezone) +/- spe" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsplaceholdermiscellaneous.htm",
+   prevP: "bsstringfunctions.htm",
+   currP: "bsdatetimefunctions.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bs Date Functions",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bs Date Functions",
+   sharesubject: "Beas Script 2026.09 - bs Date Functions",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsDatetimeFunctions",
+   mailpath: "Beas script &gt; BeasScript Tutorial &gt; bs Variable Operators &gt; bs Date Functions /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bs Date Functions").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsdatetimefunctions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bs Date Functions</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bs Date Functions</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Default Date Placeholders </span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:169px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">today</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">current date (UMC from Server + Offset Administration - Timezone) </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">heute x</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">today (UMC from Server + Offset Administration - Timezone) +/- specified days </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">heute_bis</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">today UMC from Server + Offset Administration - Timezone) 12:00 pm</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">year</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">current year &nbsp;UMC from Server + Offset Administration - Timezone) </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">month</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">current month UMC from Server + Offset Administration - Timezone) </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">now</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">current time &nbsp;(UMC from Server + Offset Administration - Timezone) </p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">DATETIME FUNCTIONS</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">eom(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">end of month<span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;"> </span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">%</span><span class="f_CodeExample" style="color: #666699;">eom</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #666699;">today</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">yyyy</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">mm</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">dd</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bom(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">begin of month</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">eoy(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">end of year</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">boy(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">begin of year</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">month(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">number of month</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">day(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">number of day</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dayofweek(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">day of week (1=Monday)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">relativedate(date,numberof days)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">Date after/before adding/subtracting numberofdays </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">workday(date,numberofdays)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">Date after adding numberofdays workdays</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">weekyear(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">week in format yyyycc. Value is taken from factory calendar</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">weekstring(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">format week in yyyy/cc</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_week</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #666699;">weekstring</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #666699;">today</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">yyyy</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">mm</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">dd</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;)</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_week</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">return for date 2011/02/24: &nbsp;&quot;2011/01&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">week(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">week in format cc. This value is taken from the factory calendar, e.g. it is depending on the settings</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">CalendarWeek(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">week in format cc. This value is calculated according to ISO 8601</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">CalendarYearWeek(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">week in format yyyycc. This is the calculated value.</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">firstdayofweek(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">returns the first day of this week</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lastdayofweek(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">returns the last day of this week</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_week</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=%</span><span class="f_CodeExample" style="color: #666699;">weekstring</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(&lt;</span><span class="f_CodeExample" style="color: #666699;">today</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">yyyy</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">mm</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">dd</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;)</span><br />
+<span class="f_CodeExample" style="color: #666699;">messagebox</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_week</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_Normal">return for date 2011/02/24: &nbsp;&quot;2011/02/27&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">week2date(Jahrwoche yyyyww)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">converts week to date</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">monthname(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">name of month</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dayname(date)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">name of week-day</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dbdatetime(date,time)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">converts date, time to the database-format which can be specified in the WHERE-clause (depending on the Database-Server)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:194px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add_month(date,int month)</span></p>
+</td>
+<td style="vertical-align:top; width:404px; padding:0; border:solid thin #000000;"><p class="p_Normal">return date + count of month</p>
+<p style="background: #ffffff; margin: 2px 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #666699;">setvar</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">=</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #666699;">ls_date</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">=</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">2016</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">/</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">05</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">/</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">01</span></p>
+<p style="background: #ffffff; margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #666699;">setvar</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">=</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #666699;">ls_date</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">=%</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #666699;">add_month</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">(&lt;</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #666699;">ls_date</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">&gt;,</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">3</span><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; font-weight: bold; color: #ff0000;">)</span></p>
+<p class="p_Normal">result:</p>
+<p style="background: #ffffff; margin: 2px 0 2px 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #993300;">2016/08/01</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

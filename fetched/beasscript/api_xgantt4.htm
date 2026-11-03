@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_xgantt</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="object=ue_xgantt=command &nbsp; Methods &nbsp; Properties Properties for the last active object example: &nbsp;messagebox=&lt;xgantt.alldata&gt; &nbsp;node &lt;xgantt.alldata&gt; All data from note a" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "group.htm",
+   prevP: "windowsetup.htm",
+   currP: "api_xgantt4.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_xgantt",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_xgantt",
+   sharesubject: "Beas Script 2026.09 - ue_xgantt",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Api_xgantt4",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_xgantt /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_xgantt").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "api_xgantt4.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_xgantt</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_xgantt</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_xgantt=command</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Methods</span></h1>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Properties</span></h1>
+<p class="p_Normal">Properties for the last active object</p>
+<p class="p_Example"><span class="f_Example">example: </span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;xgantt.alldata&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:58px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">node</span></p>
+</td>
+<td style="vertical-align:top; width:176px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;xgantt.alldata&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:428px; padding:0; border:solid thin #000000;"><p class="p_Normal">All data from note as csv-String</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:58px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">node</span></p>
+</td>
+<td style="vertical-align:top; width:176px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;xgantt.datafield.x&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:428px; padding:0; border:solid thin #000000;"><p class="p_Normal">The datavalue from the Node. x = index from the datatable.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">xgantt - Standardmethodes</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clear</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clear all</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">deletelinkrecord=&lt;idstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">deletenoderecord=&lt;idstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">detectdatatablefieldname=&lt;index&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">detectdatatablename=&lt;index&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">configurationname=&lt;filenamestring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">endloading</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">exportgraphicstofile(string,typ)</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">Export to file. </p>
+<p class="p_Normal"><span style="font-weight: bold;">xgantt=exportgraphicstofile=file=type</span><br />
+<span style="font-weight: bold;">&nbsp;</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_Example">Example:</span> xgantt=exportgraphicstofile=C:\Temp\gantt.png=7<br />
+&nbsp;<br />
+<img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Available values:</a></p>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">VMF — 0 — File will be written in the format VMF.</p>
+<p class="p_Normal">WMF — 1 — File will be written in the format WMF.</p>
+<p class="p_Normal">BMP — 2 — File will be written in the format BMP.</p>
+<p class="p_Normal">EPS — 3 — Deprecated</p>
+<p class="p_Normal">GIF — 4 — File will be written in the format GIF.</p>
+<p class="p_Normal">JPG — 5 — File will be written in the format JPG.</p>
+<p class="p_Normal">PCX — 6 — Deprecated</p>
+<p class="p_Normal">PNG — 7 — File will be written in the format PNG.</p>
+<p class="p_Normal">TIF — 8 — File will be written in the format TIF.</p>
+<p class="p_Normal">EMF — 9 — File will be written in the format EMF.</p>
+<p class="p_Normal">WMFWithEMFIncluded — 10 — File will be written in the format WMF, additionally including the format EMF.</p>
+<p class="p_Normal">EMFWithEMFPlusIncluded — 11 — File will be written in the format EMF, additionally including the format EMF+.</p>
+<p class="p_Normal">EMFPlus — 12 — File will be written in the format EMF+</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">fithistogramsintoview=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">Adjust histogram</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">fitrangeintoview=date=date=long</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">Adjust timescale</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">groupnodes=&lt;boolean&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">true: activate group/structur, false=deactiate</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">insertnoterecord=&lt;csvstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">insertlinkrecord=&lt;csvstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">open=filenamestring</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">Load csv-String</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">optimizetimescalestartend=int</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">Optimized scale because of the content.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pagelayout</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">printdirect</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">printersetup</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">printit</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">Printing with dialog box &quot;Print&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">printpreview</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">recalculateallstructurecodes</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">reset</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">saveasex=&lt;filestring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrolltodate=&lt;date&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">is not yet</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrolltonode</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">is not yet</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrolltonoteline</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">is not yet</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">showexportgraphicsdialog</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortgroups</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortnodes</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">suspendupdate=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><p class="p_Normal">Immediate data update on / off</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">updatelinkrecord=&lt;csvstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">updatenoderecord=&lt;csvstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">updaterownumberfields=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">zoom</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">width=long</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height=long</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">left, x=long</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">top, y=long</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:263px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">visible=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:400px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">XGantt-Property</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">arrangement=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">1=grouping, 2=structure</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dataoutputformat=string</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">diagramalternatingrowbackcolor=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">diagrambackcolor=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">diagramhistogramheightratio=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dialogfont=string</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">doubleoutputformat=string</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">editnewnode=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">enabled=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">enablesupplytextentryevent=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">eventreturnstatus=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">eventssecuritycheck=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">extendeddatatables=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">extendededitingbehavior=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filepath=string</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">group=&lt;groupobject&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_See">see</span> group</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">groupingfield=long=string</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">Groupingfield-Index-Nr for Group x</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">groupingorderfield=long=string</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">groupingsortorder=long=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">1. Group-Nr 0-2</p>
+<p class="p_Normal">2. Sortid &nbsp; &nbsp; &nbsp;(1=Ascending &nbsp; &nbsp; 2=Descending)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">hierarchydatafieldindex=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">Structurdisplay for fieldindex ...</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt=hierarchydatafieldindex=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt=arrangement=2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt=groupnodes=true</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">layer=&lt;layerobject&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timescale=&lt;timescale&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_See">See</span> <a href="timescale.htm" class="topiclink">Timescale</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timescaleb=x=y=z</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">sets Timescale from date today-x to today+y</p>
+<p class="p_Normal">if z=1 then fit display</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timescalestart=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">Date Start Scale</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timescaleend=&lt;string&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">Date End Scale</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timescaleunit=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">Unit TimeScale</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timescaleunitperstep=long</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">showtooltip=boolean</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">shows tooltip</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortfield=&lt;long&gt;=&lt;long&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">Groupingfield GroupIndex,DatabasefieldIndex</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sortorder=&lt;long&gt;=&lt;long&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">Groupingorder &nbsp;GroupIndex,DatabasefieldIndex</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">summarybarsvisible=&lt;long&gt;=&lt;boolean&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><p class="p_Normal">Summarybar visible GroupIndex, True/False</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">zoomfactor=&lt;long&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:265px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">zoomingpermousewheelallowed=&lt;boolean&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:397px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

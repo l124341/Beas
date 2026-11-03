@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>planned</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="object=ue_reservation=planned=&lt;command&gt;=property &nbsp;Concept of planned Document: &nbsp;1. Create a Document with type (issue, transfer and so on) 2. Insert lines per Batchnum/Warehou" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+div#hmheader {display: none;}
+div.navdivs {display: none;} /*$$$ CHECK */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+hmHeaderTopic = false;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "setreservation.htm",
+   prevP: "incomminggoods2.htm",
+   currP: "planned.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "planned",
+   mailsubject: "Feedback on: Beas Script 2026.09 - planned",
+   sharesubject: "Beas Script 2026.09 - planned",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Planned",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_reservation &gt; planned /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: false,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - planned").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "planned.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>planned</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">planned</span></h1>
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<h1 class="p_Heading1"><span class="f_CourierFixed">object=ue_reservation=planned=&lt;command&gt;=property</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal">Concept of planned Document:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">1. Create a Document with type (issue, transfer and so on)</p>
+<p class="p_Normal">2. Insert lines per Batchnum/Warehouse</p>
+<p class="p_Normal">3. Create the issue, transfer and so on</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Table: <span class="f_CourierFixed">beas_plandocument, beas_plandocument_line</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can create the planned Document from Reservation or other</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:205px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">new=&lt;doctype&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:679px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Creates a new planned Document</p>
+<p class="p_Normal">sets docentry, doctype and lifetime before new</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=res=ue_reservation</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=ref2=WO201</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=comments=Issue for Workorder</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=doctype=issue</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=new</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=addline=&lt;..&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">docdate=&lt;date&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:679px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the planned document-date. Set this argument first (first docdate, then new)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ref2</span></p>
+</td>
+<td style="vertical-align:top; width:679px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the ref2 for the document. Set this argument first (first ref2, then new)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">comments</span></p>
+</td>
+<td style="vertical-align:top; width:679px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the comments for the document. Set this argument first (first comments, then new)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">docentry=&lt;pdocentry&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:679px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the current docentry (example if you reopen the object and lost the instance ec WEBAPPS-Developement)</p>
+<p class="p_Normal">set this before you set &quot;new&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">doctype=&lt;pdoctype&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:679px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the current doctype</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">livetime</span></p>
+</td>
+<td style="vertical-align:top; width:679px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets livetime - Property (set this before you set &quot;new&quot;)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addline=&lt;properties&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:679px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets line to the current planned document (only datastore, not database), delimited with tab</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><span class="f_CourierFixed">itemcode=xxx&lt;char 9&gt;quantity=5&lt;tab&gt; ...</span></p>
+<p class="p_Normal">with parameter &quot;save&quot; you create the database-update directly</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">updateline</span></p>
+</td>
+<td style="vertical-align:top; width:679px; padding:2px; border:solid thin #000000;"><p class="p_Normal">saves the added lines to database</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">delete</span></p>
+</td>
+<td style="vertical-align:top; width:679px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">deletes the current plan-document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addfromreservation=&lt;filter&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:679px; padding:2px; border:solid thin #000000;"><p class="p_Normal">loads List from reservation</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=res=ue_reservation</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=new=issue</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=addfromreservation=beas_reservation_line.base_type='wo' and beas_reservation_line.base_docentry=48</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=issuewo</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:205px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:679px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">doctype</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">issuewo</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Work order-Issue</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">btransfer</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Batchnum-Transfer (ue_reservation.transfer_batch)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">AddLine-Properties</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">res_docentry</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">docentry reservation-Line</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">res_linenum</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">linenum of reservation-Line</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">base_doctype</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the base-document, example: wo for Workorder</p>
+<p class="p_Normal"><span class="f_CourierFixed">17</span> = customer order</p>
+<p class="p_Normal"><span class="f_CourierFixed">wo</span> = work order</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Purchase</p>
+<p class="p_Normal"><span class="f_CourierFixed">13</span> = Purchase Reserve Invoice</p>
+<p class="p_Normal"><span class="f_CourierFixed">22</span> = Purchase Order</p>
+<p class="p_Normal"><span class="f_CourierFixed">540000006</span> = Purchase Quotation</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">base_docentry</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the base-docentry, example: the beas_fthaupt.belnr_id</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">base_linenum</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the base-linenum, example: the beas_ftpos.belpos_id, customer-order: 0</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">base_linenum2</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the base-linenum2, example: the beas_ftstl.pos_id, customer-order: rdr1.linenum</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">set_quantity</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the Qty to book</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">quantity</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the issue-Quantity</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">itemcode</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">whscode</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">warehouse</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">batchnum, distnumber</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the batchnumber or serial-internal-Number</p>
+<p class="p_Normal">if a receipt-function</p>
+<p class="p_Normal">then the serial-number or serial/batchnumber, comma-separated or with &quot; &amp;#44; &quot; max 1024 Sign<br />
+or empty for automatic-generation</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">status</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Status Batchnumber (only for receipt)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">mnfserial</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Batch Attribut 1 (only for receipt) </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lotnumber</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Batch Attribut 2 (only for receipt)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">indate</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Admission Date (only for receipt)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">mnfdate</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Manufacturing Date (only for receipt)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">expdate</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Expiry date (only for receipt)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">details, notes</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Batchnum - Notes (varchar 255): &nbsp;(only for receipt)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">bincode</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the bincode or osri.sysserial as string</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rfid</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">rfid</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">linenum</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">linetype</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">type of line</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">udf1 ... udf4</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">UDF1 to UDF4</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">price</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">currency</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">save</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">save the line. </p>
+<p class="p_Normal">ATTENTION: If you add more then one line, then don't use this propertie!</p>
+<p class="p_Normal">Add All Lines and after then use &quot;<span class="f_CourierFixed">planned=updateline</span>&quot;. This is faster</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Batch-Properties</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">generate more entries in one step ...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">totalqty</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">total quantity. beas make entrys with quantity while sum of quantity &lt;= totalqty</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">counterlen</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Length of counter</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">format</span></p>
+</td>
+<td style="vertical-align:top; width:719px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Format for batch/distnumber. Placeholder for counter: {counter]</p>
+<p class="p_Normal">Example: format=ABC-{counter}</p>
+<p class="p_Normal">This string is the new batch number / distnumber</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:166px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">counterstart</span></p>
+</td>
+<td style="vertical-align:top; width:719px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Begin of Counter</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> Generate Line for 100 Serialnumbers</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=res=ue_reservation</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=new=incommingpo</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">res=planned=addline=itemcode=A0002&lt;tab&gt;whscode=01&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">base_docentry=&lt;5&gt;&lt;tab&gt;base_linenum=&lt;1&gt;&lt;tab&gt;base_doctype=22&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">quantity=1&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">linetype=incommingpo&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">totalqty=100&lt;tab&gt;format=ABC-{counter}&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">counterstart=20&lt;tab&gt;counterlen=4&lt;tab&gt;&amp;</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">save</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This command generates 100 Serial number-Entrys in beas_plandocument with</p>
+<p class="p_Normal">&quot;ABC-0020&quot;,&quot;ABC-00021&quot; ...</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

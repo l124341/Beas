@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_bsl</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Working with Beas Service Layer &nbsp;declare this with &nbsp;declare=b=ue_bsl or instance bsl b &nbsp;with this object you can use the beas service layer as object Example: Get informat" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bitmap.htm",
+   prevP: "newitem.htm",
+   currP: "bsue_bsl.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_bsl",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_bsl",
+   sharesubject: "Beas Script 2026.09 - ue_bsl",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsUe_bsl",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_bsl /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_bsl").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsue_bsl.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_bsl</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_bsl</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Working with Beas Service Layer</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">declare this with</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=b=ue_bsl</span></p>
+<p class="p_Normal">or</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">with this object you can use the beas service layer as object</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> Get information from Item</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.get=Item(&quot;RM&quot;)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.jstring&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Save result in JSON String</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance json j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.get=Item(&quot;RM&quot;)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.parse=b</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For more information <span class="f_See">see</span>:</p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://www.youtube.com/watch?v=KrrfCo4z5BA" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">beas service layer command GET with beas script</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/FPDYQ8oKigc" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">beas service layer command POST with beas script</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Methods</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Result</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">b.get</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Execute odata get command</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.get=Item(&quot;RM&quot;)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.jstring&gt;  </span>&lt;= return result as JSON string</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.ItemName&gt;</span> &lt;= return ItemName from first row</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.code&gt; &lt;b.text&gt;</span> &lt;= return return code and return text (status/Error text</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">json j</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">j.parse=b</span> &nbsp;&lt;= move result to a json object</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">b.getstring</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Execute odata get command and return result as java string in &lt;b.value&gt;</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The result is in property &lt;b.value&gt;</p>
+<p class="p_Normal">if result has only 1 line</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-style: italic;">{&quot;value&quot;:{{&quot;ItemCode&quot;:&quot;RM&quot;,&quot;ItemName&quot;:&quot;Raw Material / Normal&quot;}}</span></p>
+<p class="p_Normal">if result has &gt; 1 line</p>
+<p class="p_Normal"><span class="f_CourierFixed">{&quot;value&quot;: </span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-weight: bold;">[</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">{&quot;ItemCode&quot;:&quot;RM&quot;,&quot;ItemName&quot;:&quot;Raw Material / Normal&quot;},{&quot;ItemCode&quot;:&quot;RM_B&quot;,&quot;ItemName&quot;:&quot;Raw Material / Batch&quot;},{&quot;ItemCode&quot;:&quot;RM_B_N&quot;,&quot;ItemName&quot;:&quot;Raw Material / Batch&quot;},</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-weight: bold;">]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.getstring=Item(&quot;RM&quot;)?$select=ItemCode,ItemName</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.value&gt;</span></p>
+<p class="p_Normal">=&gt; <span style="font-style: italic;">{&quot;value&quot;: {&quot;ItemCode&quot;:&quot;RM&quot;,&quot;ItemName&quot;:&quot;Raw Material / Normal&quot;}}</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">b.post</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Execute odata post</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">With post command you can execute the ODATA Post </p>
+<p class="p_Normal"><span class="f_CourierFixed">post=[command]=[json string]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example: </span>Creates Sales Delivery document in sap</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.post=SalesDelivery=&amp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">&nbsp;&nbsp;{&quot;CardCode&quot;:&quot;S001&quot;,&quot;DocumentLines&quot;:&nbsp;[&amp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">&nbsp;&nbsp;{&quot;ItemCode&quot;:&nbsp;&quot;RM&quot;,&quot;WhsCode&quot;:&quot;01&quot;,&nbsp;&quot;Quantity&quot;:2&nbsp;}]}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">messagebox=&lt;b.code&gt;,&nbsp;&lt;b.text&gt;,&nbsp;&lt;b.value&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">Return&nbsp;follow&nbsp;information</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">0&nbsp;=</span>&nbsp;all&nbsp;ok</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">79&nbsp;</span>=&nbsp;the&nbsp;created&nbsp;docentry&nbsp;number</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">{&quot;DocEntry&quot;:79,&quot;DocNum&quot;:79,&quot;TransactionId&quot;:7000}&nbsp;</span>all&nbsp;information&nbsp;as&nbsp;json&nbsp;string</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">b.select</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Executes fast BSL get command</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">This command is faster as b.get</p>
+<p class="p_Normal">But with follow limitation</p>
+<p class="p_Normal">- return only 1 line</p>
+<p class="p_Normal">- you can't parse this in json object</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.select=Item(&quot;RM&quot;)/ItemName/Value</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.value&gt; &nbsp; &nbsp; </span>=&gt; return item name</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.ItemName&gt;  </span>=&gt; return item Name</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.select=Item(&quot;RM&quot;)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.value&gt; &nbsp; &nbsp; </span>=&gt; return empty string</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.ItemName&gt;  </span>=&gt; return item Name</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:577px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:1154px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Result</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:577px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;b.code&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1154px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">return code from last get/post command </p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.get=Item(&quot;wrongitemcode&quot;)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.code&gt; / &lt;b.text&gt;</span></p>
+<p class="p_Normal">=&gt; &nbsp;&quot;<span style="font-style: italic;">404 / The requerst resource is not found</span>&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:577px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;b.text&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1154px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">return text from last get/post command</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:577px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;b.value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1154px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">return value from last get/post command</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:577px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;b.jstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1154px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">return complete result in json format from last <span class="f_CourierFixed">get</span> command</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:577px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">&lt;b.[fieldname]&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:1154px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">return field name from last <span class="f_CourierFixed">get/select</span> command</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">instance bsl b</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">b.get=Item(&quot;RM&quot;)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;b.ItemName&gt;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

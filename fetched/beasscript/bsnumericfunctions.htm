@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bs Numeric Functions</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="With this &nbsp; NUMERIC FUNCTIONS		 Function Description max(value1,value2,value3,...) max value of the specified variable &nbsp;min(value1,value2,...) min value of the specified va" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsstringfunctions.htm",
+   prevP: "bs-variable-operators.htm",
+   currP: "bsnumericfunctions.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bs Numeric Functions",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bs Numeric Functions",
+   sharesubject: "Beas Script 2026.09 - bs Numeric Functions",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsNumericFunctions",
+   mailpath: "Beas script &gt; BeasScript Tutorial &gt; bs Variable Operators &gt; bs Numeric Functions /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bs Numeric Functions").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsnumericfunctions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bs Numeric Functions</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bs Numeric Functions</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">With this </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">NUMERIC FUNCTIONS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</td>
+<td class="fielddescription" style="width:564px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">max(value1,value2,value3,...)</span></p>
+</td>
+<td class="fielddescription" style="width:564px; background-color:#F7F7F7;"><p class="p_Normal">max value of the specified variable </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px;"><p class="p_Normal"><span class="f_CourierFixed">min(value1,value2,...)</span></p>
+</td>
+<td class="fielddescription" style="width:564px;"><p class="p_Normal">min value of the specified variable</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">numadd(value1,value2..)</span></p>
+</td>
+<td class="fielddescription" style="width:564px; background-color:#F7F7F7;"><p class="p_Normal">add values</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px;"><p class="p_Normal"><span class="f_CourierFixed">sub(value1,value2,..)</span></p>
+</td>
+<td class="fielddescription" style="width:564px;"><p class="p_Normal">subtract (-)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">percent(actualvalue,relatedvalue)</span></p>
+</td>
+<td class="fielddescription" style="width:564px; background-color:#F7F7F7;"><p class="p_Normal">determines percent value</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px;"><p class="p_Normal"><span class="f_CourierFixed">mul(value1,value2,..)</span></p>
+</td>
+<td class="fielddescription" style="width:564px;"><p class="p_Normal">multiply</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">dif(value1,value2,..)</span></p>
+</td>
+<td class="fielddescription" style="width:564px; background-color:#F7F7F7;"><p class="p_Normal">divide</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px;"><p class="p_Normal"><span class="f_CourierFixed">mod(value1,value2)</span></p>
+</td>
+<td class="fielddescription" style="width:564px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Return the Modulus Value</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Modulus is the remainder of the euclidean division of one number by another. % is called the modulo operation.</p>
+<p class="p_Normal">For instance, 9 divided by 4 equals 2 but it remains 1. Here, 9 / 4 = 2 and 9 % 4 = 1.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="modulus1" width="192" height="397" style="margin:0;width:192px;height:397px;border:none" src="modulus1.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Calculation</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The modulo operation can be calculated using this equation:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">a % b = a - floor(a / b) * b</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">floor(a / b) represents the number of times you can divide a by b</p>
+<p class="p_Normal">floor(a / b) * b is the amount that was successfully shared entirely</p>
+<p class="p_Normal">The total (a) minus what was shared equals the remainder of the division</p>
+<p class="p_Normal">Applied to the last example, this gives:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">5 % 7 = 5 - floor(5 / 7) * 7 = 5</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Modular Arithmetic</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">That said, your intuition was that it could be -2 and not 5. Actually, in modular arithmetic, -2 = 5 (mod 7) because it exists k in Z such that 7k - 2 = 5.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You may not have learned modular arithmetic, but you have probably used angles and know that -90° is the same as 270° because it is modulo 360. It's similar, it wraps! So take a circle, and say that it's perimeter is 7. Then you read where is 5. And if you try with 10, it should be at 3 because 10 % 7 is 3.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in BeasScript you can use the %mod() function</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">decimal lc_value1,lc_value2,lc_result</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_value1=9</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_value2=4</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_result=%mod(lc_value1,lc_value2)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;lc_result&gt;</span></p>
+<p class="p_Normal">// this return &quot;1&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">decimal lc_value1,lc_value2,lc_result</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_value1=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_value2=4</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_result=%mod(lc_value1,lc_value2)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;lc_result&gt;</span><br />
+// this return 2</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:240px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">round(value1,roundtyp,rounddec)</span></p>
+</td>
+<td class="fielddescription" style="width:564px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Round the value with type</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:89px;"><p class="p_Normal"><span style="font-weight: bold;">RoundType</span></p>
+</td>
+<td class="fielddescription" style="width:457px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:89px; background-color:#F7F7F7;"><p class="p_Normal">-1</p>
+</td>
+<td class="fielddescription" style="width:457px; background-color:#F7F7F7;"><p class="p_Normal">without</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:89px;"><p class="p_Normal">0</p>
+</td>
+<td class="fielddescription" style="width:457px;"><p class="p_Normal">&lt; 0.5 =0, &nbsp;&gt;= 0.5 = 1</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:89px; background-color:#F7F7F7;"><p class="p_Normal">1</p>
+</td>
+<td class="fielddescription" style="width:457px; background-color:#F7F7F7;"><p class="p_Normal">&gt; 0 &nbsp; &nbsp; =1, example: 0.001 = 1, 1.1 = 2</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:89px;"><p class="p_Normal">2</p>
+</td>
+<td class="fielddescription" style="width:457px;"><p class="p_Normal">&lt; 1 &nbsp; &nbsp; =1, example: 0.99 &nbsp; = 0, 1.2 = 1</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:89px; background-color:#F7F7F7;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">3</span></p>
+</td>
+<td class="fielddescription" style="width:457px; background-color:#F7F7F7;"><p class="p_Normal">multiple from .. see example</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">round dec</span></p>
+<p class="p_Normal">Type 0, 1 and 2: Count of decimal place</p>
+<p class="p_Normal">Type 3: Multiple-factor</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">decimal lc_value1,lc_value2,lc_result</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_value1=10.51234</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_result=%round(lc_value,1,2)</span></p>
+<p class="p_Normal">// this return 10.52 <br />
+// because it's rounding up with 2 decimal places</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_result=%round(lc_value,2,2)</span></p>
+<p class="p_Normal">// this return 10.51 - rounding down</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_value1=11.51234</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_result=%round(lc_value,1,0)</span></p>
+<p class="p_Normal">// reutrn 12<br />
+&nbsp;</p>
+<p class="p_Normal">// Example multiple by</p>
+<p class="p_Normal">10 pieces fit on one pallet</p>
+<p class="p_Normal">I have 15 pieces</p>
+<p class="p_Normal">round to the total quantity that fits on the required pallets</p>
+<p class="p_Normal">In this case, I need at least 2 pallets. </p>
+<p class="p_Normal">On it fit 20 pieces</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dec lc_pcs,lc_bypallet,lc_result</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_pcs=15</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_bypallet=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_result=%round(lc_pcs,3,lc_bypallet)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>tab</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="tab=add=&lt;name&gt;=&lt;psr&gt;,tab=clear,tab=filter=&lt;nr&gt;=&lt;datawindow-filter&gt;,tab=order=&lt;nr&gt;=&lt;sql-order-klausel&gt;,tab=protect=&lt;nr&gt;=1/0,tab=redraw,tab=searchwhere,tab=text=&lt;nr&gt;=&lt;neuerText&gt;,tab=where=&lt;nr&gt;=&lt;sql-where-klausel&gt;" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Controls the TABSHEET with these commands: &nbsp; &nbsp;Function Description tab=clear Deletes tab sheets tab=add=&lt;name&gt;=&lt;psr-file&gt; &nbsp; &nbsp; [ = output-name] Adds a tab sheet. The te" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bpopup.htm",
+   prevP: "tabsheet2.htm",
+   currP: "tab.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "tab",
+   mailsubject: "Feedback on: Beas Script 2026.09 - tab",
+   sharesubject: "Beas Script 2026.09 - tab",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Tab",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; tab /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - tab").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "tab.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>tab</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">tab</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">Controls the TABSHEET with these commands:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="tab00001" width="593" height="111" style="margin:0;width:593px;height:111px;border:none" src="tab00001.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:207px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</th>
+<th style="vertical-align:top; width:377px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=clear</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Deletes tab sheets</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=add=&lt;name&gt;=&lt;psr-file&gt;</span><br />
+<span class="f_CourierFixed"> &nbsp; &nbsp;[ = output-name]</span></p>
+</td>
+<td style="vertical-align:top; width:377px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Adds a tab sheet. The text is translated afterwards. Blank spaces and special character are not allowed. </p>
+<p class="p_Normal">If you specify an output-name it gets the name (here are special characters like öäü allowed). Output-name is not mandatory. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=protect=&lt;nr&gt;=1/0</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Makes a tab invisible</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=text=&lt;nr&gt;=&quot;NewText&quot;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Displays next text</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=redraw</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Redraws tab sheets</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=searchwhere=&lt;nr&gt;=&lt;argument&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Default SQL-WHERE-clause for the tab</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=order=&lt;nr&gt;=&lt;argument&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Default SQL-ORDER-clause for the tab</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=searchfilter=&lt;argument&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define DataWindow Main Filter. The system always adds this to the filter</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=filter=&lt;nr&gt;=&lt;argument&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Default DataWindow-filter for the tab</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=sort=&lt;nr&gt;=[sortname]=&lt;sort argument&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Default sort argument. <span class="f_Note">Note: First argument is a description and then the argument</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tab=printdw=dw_x</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Set default datawindow for print out</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Instead of &nbsp;&lt;nr&gt; you can also specify the name of the Tabsheets.</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> protect Tab sheet 2:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=protect=2=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=redraw</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> Rename Tab sheet 2:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=text=2=New Name</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=redraw</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><iframe width="560" height="315" src="https://www.youtube.com/embed/S_8WZVXAzEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">TAB - basic information</span></p>
+<p class="p_Normal">Adds a new tab. If you change from one tab to another the current input data, the current filter and the current sort is saved, the new form (psr-File) gets loaded and the filter, order and sort for the new form is applied. </p>
+<p class="p_Normal">There is always only one current form which means the &quot;tabs&quot; are &quot;simulated&quot;. </p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">TAB ADD</span></h1>
+<p class="p_Normal">With <span class="f_CourierFixed">tab=add=&lt;name&gt;=PSR-file</span> you can add a tab. The first form that is loaded specifies the tabs, which means that the first tab has to reference to its own form with the command &quot;this&quot;. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> article_edit.psr, Tab article_description.psr, article_images.psr</p>
+<p class="p_Normal">You specify the tabs in article_edit which becomes the &quot;master-form&quot;</p>
+<p class="p_Normal">In the master-script (or with CTRL+N+B in the TAB-area without tab=add) you specify this: </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=add=master data=this &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// self-reference</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=add=description=article-description.psr</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=add=Images=article-images.psr</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// in the identifier öäü are not allowed. Therefore separate naming:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=add=qs=qslink.psr=QA plan</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">Multi-lingual ability</span></p>
+<p class="p_Normal">The name of the tab is processed by the translator. Multilingual ability is available without further programming. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">TAB-Where-clause</span></p>
+<p class="p_Normal">With <span class="f_CourierFixed">tab=searchwhere=&lt;TabNr&gt;=&lt;WHERE-ARGUMENT&gt;</span> you can specify a default WHERE-clause of the SQL-command of the &nbsp;DataWindows. This is a &quot;WHERE2-clause&quot;, the clause which is used by all search-systems. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This enables you to specify a SQL-filter in the MASTER-Script when you start the program which you can deactivate with the search systems, e. g. &quot;Display all&quot; at start with the possibility to include archives. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=searchwhere=1=&quot;FTHAUPT&quot;.&quot;ABGKZ&quot;='N'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If this command is in the Master-Script only the pending production orders are displayed. </p>
+<p class="p_Normal">the command</p>
+<p class="p_Normal"><span class="f_CourierFixed">sqlfilter=1=1</span></p>
+<p class="p_Normal">or</p>
+<p class="p_Normal"><span class="f_CourierFixed">tab=searchwhere=1=1=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">retrieve=retrieve</span></p>
+<p class="p_Normal">resets it while displaying the form.</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>formo</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="center (beas-window),enable (beas-window),freeze,height (beas-window),maximized (beas-window),message send (window handle),move (beas-window),redraw,resizable (beas-window),send (handle),status´,template,title (beas-window),torightdown (beas-window),visible (beas-window),width (beas-window),window,window handle send,windowstate (beas-window),x (beas-window),y (beas-window)" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="The window object presents a Beas form. &nbsp;Object Model &nbsp;form &nbsp;-&gt; dw_1 -&gt; Item -&gt; dw_2..7, dw_edit and dw_master &nbsp;-&gt; Item -&gt; Tab Sheet -&gt; ue_tab -&gt; menu -&gt; Template" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "form_properties.htm",
+   prevP: "file.htm",
+   currP: "window.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "formo",
+   mailsubject: "Feedback on: Beas Script 2026.09 - form",
+   sharesubject: "Beas Script 2026.09 - form",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Window",
+   mailpath: "Beas script &gt; BS Object reference &gt; form /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - formo").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "window.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>formo</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">form</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">The window object presents a Beas form.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Object Model</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="window.htm" class="topiclink">form</a> </p>
+<p class="p_Normal">-&gt; <a href="dw_1.htm" class="topiclink">dw_1</a> -&gt; <a href="item_dw.htm" class="topiclink">Item</a></p>
+<p class="p_Normal">-&gt; <a href="dw_1.htm" class="topiclink">dw_2..7, dw_edit and dw_master</a> &nbsp;-&gt; <a href="item_dw.htm" class="topiclink">Item</a></p>
+<p class="p_Normal">-&gt; Tab Sheet</p>
+<p class="p_Normal">-&gt; ue_tab</p>
+<p class="p_Normal">-&gt; menu</p>
+<p class="p_Normal">-&gt; Template</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Available objects in a form</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px;"><p class="p_Normal"><span style="font-weight: bold;">Object</span></p>
+</td>
+<td class="fielddescription" style="width:625px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">dw_1</span></p>
+</td>
+<td class="fielddescription" style="width:625px; background-color:#F7F7F7;"><p class="p_Normal">Data form <a href="dw_1.htm" class="topiclink">dw_1</a><br />
+if you open a form, you must set the psr file, which you use for dw_1<br />
+Without a formular for dw_1 you can't open a form</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px;"><p class="p_Normal"><span class="f_CourierFixed">dw_2...dw_7, dw_Edit, dw_mast</span></p>
+</td>
+<td class="fielddescription" style="width:625px;"><p class="p_Normal">7 additional dataforms can be defined in sum </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">rtf, rte, rte_1</span></p>
+</td>
+<td class="fielddescription" style="width:625px; background-color:#F7F7F7;"><p class="p_Normal">Richtext object <a href="rte.htm" class="topiclink">rtf</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px;"><p class="p_Normal"><span class="f_CourierFixed">menu</span></p>
+</td>
+<td class="fielddescription" style="width:625px;"><p class="p_Normal"><a href="menu.htm" class="topiclink">Menu</a>, Buttons and right click menu</p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="addbutton.htm" class="topiclink">addbutton</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">master tab</span></p>
+</td>
+<td class="fielddescription" style="width:625px; background-color:#F7F7F7;"><p class="p_Normal">You can define Tab's. For each tab you define a dw_1 - dataform<br />
+BUT: You don't change the form</p>
+<p class="p_Normal"><span class="f_See">see</span> <a href="tab.htm" class="topiclink">tab</a>,@ <a href="addtabsheet.htm" class="topiclink">addtabsheet</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px;"><p class="p_Normal"><span class="f_CourierFixed">ole_web</span></p>
+</td>
+<td class="fielddescription" style="width:625px;"><p class="p_Normal">Internetobject. <span class="f_See">See</span> <a href="ie_internernet-connection.htm" class="topiclink">ie</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ole_1</span></p>
+</td>
+<td class="fielddescription" style="width:625px; background-color:#F7F7F7;"><p class="p_Normal">Work with ole, example <a href="excel.htm" class="topiclink">ue_excel</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:288px;"><p class="p_Normal"><span class="f_CourierFixed">ue_tab</span></p>
+</td>
+<td class="fielddescription" style="width:625px;"><p class="p_Normal">Sub tabs. <span class="f_See">See</span> <a href="ue_tab_create_own_window.htm" class="topiclink">ue_tab</a></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Additional functions</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Additional function, related to forms object</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</td>
+<td class="fielddescription" style="width:622px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">tabsheet</span></p>
+</td>
+<td class="fielddescription" style="width:622px; background-color:#F7F7F7;"><p class="p_Normal">Set current Master tab.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px;"><p class="p_Normal"><span class="f_CourierFixed">addtabsheet</span></p>
+</td>
+<td class="fielddescription" style="width:622px;"><p class="p_Normal">Add an tab. <span class="f_See">See</span> <a href="addtabsheet.htm" class="topiclink">addtabsheet</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">seteingabe</span></p>
+</td>
+<td class="fielddescription" style="width:622px; background-color:#F7F7F7;"><p class="p_Normal">In the Button area you can activate an input field. With this command you can insert a value. </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px;"><p class="p_Normal"><span class="f_CourierFixed">event</span></p>
+</td>
+<td class="fielddescription" style="width:622px;"><p class="p_Normal">Call an event<br />
+For user event:</p>
+<p class="p_Normal"><span class="f_CourierFixed">event=user=myevent</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">key</span></p>
+</td>
+<td class="fielddescription" style="width:622px; background-color:#F7F7F7;"><p class="p_Normal">set keys: masterkey, <a href="key.htm" class="topiclink">key</a>, keymenu</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px;"><br />
+</td>
+<td class="fielddescription" style="width:622px;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">addwinpos, savewinpos, reswinpos</span></p>
+</td>
+<td class="fielddescription" style="width:622px; background-color:#F7F7F7;"><p class="p_Normal">Work with default position and size</p>
+<p class="p_Normal">addwinpos: load current form position</p>
+<p class="p_Normal">savewinpos: save current form position</p>
+<p class="p_Normal">reswinpos: set to default form position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px;"><p class="p_Normal"><span class="f_CourierFixed">stamp</span></p>
+</td>
+<td class="fielddescription" style="width:622px;"><p class="p_Normal">Display in the footer line the last change/creator (only outside SAP B1)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">beashelp</span></p>
+</td>
+<td class="fielddescription" style="width:622px; background-color:#F7F7F7;"><p class="p_Normal">Function for display information in the footer (only outside SAP B1)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:291px;"><p class="p_Normal"><span class="f_CourierFixed">instanceedit</span></p>
+</td>
+<td class="fielddescription" style="width:622px;"><p class="p_Normal">Delete instance objects. <span class="f_See">See</span> <a href="instanceedit.htm" class="topiclink">instanceedit</a></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Compatible Instance variables</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">This instance variables was used in the past. Please don't use it.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">Variable</span></p>
+</td>
+<td class="fielddescription" style="width:513px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">neuaufbau</span></p>
+</td>
+<td class="fielddescription" style="width:513px; background-color:#F7F7F7;"><p class="p_Normal">If &quot;ja&quot; while opening the form and retrieve the forms <span class="f_PowerBuilderVariable">ib_retrievemode=true</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">sysupdate</span></p>
+</td>
+<td class="fielddescription" style="width:513px;"><p class="p_Normal">if &quot;J&quot; while running the update process <span class="f_PowerBuilderVariable">ib_updatemode=true</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">sys_aktualisieren</span></p>
+</td>
+<td class="fielddescription" style="width:513px; background-color:#F7F7F7;"><p class="p_Normal">if &quot;J&quot; if form is going to update mode <span class="f_PowerBuilderVariable">ib_formmode_update=true</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">sysneu</span></p>
+</td>
+<td class="fielddescription" style="width:513px;"><p class="p_Normal">if &quot;J&quot; if this a new entry (add mode) <span class="f_PowerBuilderVariable">ib_formmode_new=true</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">sysredraw</span></p>
+</td>
+<td class="fielddescription" style="width:513px; background-color:#F7F7F7;"><p class="p_Normal">if &quot;J&quot; then beas don't redraw the current form or execute item change events <span class="f_PowerBuilderVariable">ib_redraw</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">sysclicky</span></p>
+</td>
+<td class="fielddescription" style="width:513px;"><p class="p_Normal">click x pos <span class="f_PowerBuilderVariable">il_clickx</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">sysclickx</span></p>
+</td>
+<td class="fielddescription" style="width:513px; background-color:#F7F7F7;"><p class="p_Normal">click y pos <span class="f_PowerBuilderVariable">il_clicky</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">sysclickdwo</span></p>
+</td>
+<td class="fielddescription" style="width:513px;"><p class="p_Normal">object name <span class="f_PowerBuilderVariable">is_clickobject</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">sysclicktype</span></p>
+</td>
+<td class="fielddescription" style="width:513px; background-color:#F7F7F7;"><p class="p_Normal">object type <span class="f_PowerBuilderVariable">is_clickobjectname</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">sysclickrow</span></p>
+</td>
+<td class="fielddescription" style="width:513px;"><p class="p_Normal">click on row <span class="f_PowerBuilderVariable">il_clickrow</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">sysedit</span></p>
+</td>
+<td class="fielddescription" style="width:513px; background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:210px;"><p class="p_Normal"><span class="f_CourierFixed">syscancel</span></p>
+</td>
+<td class="fielddescription" style="width:513px;"><p class="p_Normal">return cancel process status </p>
+<p class="p_Normal">ii_cancel=1 = &quot;ja&quot; (update check process)<br />
+ii_cancel=2 = &quot;close&quot; (close process)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

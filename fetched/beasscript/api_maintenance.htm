@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ue_maintenance</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Object for administrate maintenance &nbsp;Object name: &nbsp;ue_maintenance &nbsp;declare=mtc=ue_maintenance &nbsp;The Object is designed to manage actions related with an existing Maintenance p" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "reservation.htm",
+   prevP: "api_interruption.htm",
+   currP: "api_maintenance.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ue_maintenance",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ue_maintenance",
+   sharesubject: "Beas Script 2026.09 - ue_maintenance",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Api_maintenance",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_maintenance /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ue_maintenance").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "api_maintenance.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ue_maintenance</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ue_maintenance</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Object for administrate maintenance</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Object name:</span> &nbsp;ue_maintenance</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=mtc=ue_maintenance</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Object is designed to manage actions related with an existing Maintenance plan.</p>
+<p class="p_Normal">Currently, you cannot create Maintenance plans with this object, and only the following actions can be managed:</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">import_compments</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">Imports components from a work order</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">change_component</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">Changes components</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add_history</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">adds history entry</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; height:22px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">automatictasks</span></p>
+</td>
+<td style="vertical-align:top; width:517px; height:22px; padding:0; border:solid thin #000000;"><p class="p_Normal">runs automatic tasks, creates work orders, service calls and so on</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add_workorder</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">adds work order to a maintenance order</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add_servicecall</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">adda service call to a maintenance order</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add_activity</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">addd an activity to a maintenance order</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">order</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">created or updates a maintenance order.</p>
+<p class="p_Normal"><span class="f_See">see</span> order</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Function order</span></p>
+<p class="p_Normal">(Table: beas_maintanance_calendar)</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">order.new</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">initial a new order.</p>
+<p class="p_Normal">order.new</p>
+<p class="p_Normal">order.setparameter</p>
+<p class="p_Normal">order.add</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">order.add</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">inserts the order that you defined with order.new and order.parameters...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">order.load</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">order.update</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">without function</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties order</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">maintenancenr</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">Maintenance nr. Mandatory!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">planid</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">Plan ID from maintenance. Mandatory!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">date</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">the Date. Mandatory!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Statusid, status</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">the Status. 0=Plan,1=In Work, 2=Closed</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Remarks</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">Remark information</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">udf1..udf4</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">UDF's</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">servicecallid</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">belnr_id</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><p class="p_Normal">the work order reference</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">recurrence_id</span></p>
+</td>
+<td style="vertical-align:top; width:517px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example - add an order:</span><br />
+<span class="f_CourierFixed"> declare=mtc=ue_maintenance</span><br />
+<span class="f_CourierFixed">mtc.order.new</span><br />
+<span class="f_CourierFixed">mtc.order.maintenancenr=1</span><br />
+<span class="f_CourierFixed">mtc.order.planid=plan1</span><br />
+<span class="f_CourierFixed">mtc.order.date=&lt;today&gt;</span><br />
+<span class="f_CourierFixed">mtc.order.add</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

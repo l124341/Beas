@@ -1,0 +1,1199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Tables</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="beas_document_header id unigue ID docnum document No. with Prefix and Suffix (Char) num_docnum document No as numeral docentry internal document No. &nbsp;docdate formatted" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "documentparameter.htm",
+   prevP: "verkaufsbelege.htm",
+   currP: "documenttables.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Tables",
+   mailsubject: "Feedback on: Beas Script 2026.09 - Document Tables",
+   sharesubject: "Beas Script 2026.09 - Document Tables",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "documentTables",
+   mailpath: "Beas script &gt; BS Object reference &gt; printobject &gt; Sales reports &gt; Tables /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Tables").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "documenttables.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Tables</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">Document Tables</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">beas_document_header</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">id</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">unigue ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">docnum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">document No. with Prefix and Suffix (Char)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_docnum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">document No as numeral</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">docentry</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">internal document No. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">docdate</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">formatted reference date</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">docduedate</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">formatted reference date</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">taxdate</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">formatted reference date</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">printdate</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">formatted printing date (always current date)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">showcatalognr</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">if Y then according to SBO only the catalognr of the business partner and not the itemcode gets printed </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">cardcode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">Customer No. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">cardname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">Customer name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">cardfname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">foreign language name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">lictradnum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">UID-No. of the business partner</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">addid</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">ID-Nr2 of the business partner</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">comments</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">Comments</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">vatidincmp</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">address</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">address business partner</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">iban</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">IBAN of business partner</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">language</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">document language (BEAS-language type)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">languageitem</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">item language (BEAS-language type)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">languageseparator</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">decimal separator</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">languagethousendseparator</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">thousend separator</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">languagedateformat</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">date format</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">netto</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">net sum (sum of all single prices before discount), formatted in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">discount</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">discount, formatted in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">discountpercent</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">discount in percent </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">nettosum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">net sum after discount, formatted in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">vatsum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">sum of taxes, formatted in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">doctotal</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">gross sum, formatted in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">currency</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_netto</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">net as numeral</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_discount</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">discount sum as numeral</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_nettosum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">net after discount</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_prepaymentsum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">prepaymentsum in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_prepaymentpercent</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">prepayment in percent</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_prepaymentvat</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">prepayment tax in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_freightsum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">freightsum in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_freightvat</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">freightsum tax in document-currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_vatsum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">tax sum as numeral</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_doctotal</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">gross sum as numeral</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">num_discountpercent</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">discount</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">weight_mg</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">total weight in mg</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">volume_mm2</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">total volume in mm²</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contactname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">contact name customer</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contacttitel</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">Titel</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contactposition</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">Position</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contactaddress</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">address</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contacttel1</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contacttel2</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contactmobile</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contactfax</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contactemail</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">contactpager</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">shiptocode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">shipaddress</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">formatted shipping address</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">shiplictradnum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">UID-No. delivery address</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">transportcode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">slpcode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">contact person of the own company</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownercode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">owner of document (Code)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownerfirstname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">owner of document firstname</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownermiddlename</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownerlastname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownerjobtitle</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownerofficetel</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownermobile</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownerpager</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">ownerfax</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">owneremail</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">paymentconditionname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">paymentconditionname translated</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">paymentconditioncode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">paymentcondition-Code not translated</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">paymentdiscountname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">discountname translated. If there is no discount the paymentconditions are dispayed</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">paymentdiscountcode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">discount-code</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">paymentconditiontext</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">discount conditions</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companyname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">name of the own company</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companyadress_as_line</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">address in one line</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companyprintheader</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companyphone1</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companyphone2</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companypfax</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companyemail</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companymanager</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companyrevoffice</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companytaxidnum</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">companyfreezoneno</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">report_header</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">report header &nbsp;(each page) - can be formatted as RTF</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">report_start</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">first fix header text </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">textheader</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">text header of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">textfooter</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">text footer of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">document_end</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">fix endtext of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">report_end</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">last fix text footer</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_CourierFixed">report_footer</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">footer of the report (fix, each page)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">paytocode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">from header (oinv.paytocode)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicecardcode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">If there is an entry for a consolidate partner (bill to) for the business partner at accounting the information of the consolidate partner is displayed in invoicexxxxx. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicecardname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">Name from customer address - if there is an entry for a bill to address, this name and address are displayed.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoiceaddress2</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoiceaddress3</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicestreet</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoiceblock</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicezipcode</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicecity</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicecounty</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicestate</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicecountry</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">code of country</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicecountryname</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><p class="p_Normal">translated countryname</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicephone1</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoicefax</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:171px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">invoiceemail</span></p>
+</td>
+<td style="vertical-align:top; width:625px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">beas_document_line</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">id</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">fix ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">line</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">consecutive number. Use it for sorting. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">linenum</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">internal line No. of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">linepos</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">visible line No. of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">linetype</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">line type:</p>
+<p class="p_Normal">S=Zwischensumme (subtotal) , A=Alternativartikel (alternative item), T=Textfeld (text field)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">baseref</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">reference to the base document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">basetype</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">type of the base document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">baseline</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">internal line No. of the base document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">baselinepos</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">free</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">basedocnum</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">free</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">linestatus</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">Status of the line. O=Open, C=Close</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">itemdode</p>
+<p class="p_Normal">If in SAP is set: show part number (catalog number), the itemcode is inserted anyway. </p>
+<p class="p_Normal">So you can decide what should be displayed when creating a report. </p>
+<p class="p_Normal">See beas_document_header.showcatalognr.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">catalognr</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">catalog number of the business partner (is always filled - independent from the setting 'show catalog number' </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">description</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">description of the item </p>
+<p class="p_Normal">- if translation available then it gets translated in the ITEM LANGUAGE</p>
+<p class="p_Normal">- if no translation in ITEM LANGUAGE available then DOCUMENT LANGUAGE is used</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">matchcode</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">Matchcode of item master data</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">drawingnumber</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">drawing number of item master data</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">longtext</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">long text (maybe RTF) </p>
+<p class="p_Normal">If sales report: </p>
+<p class="p_Normal"> &nbsp; if item language = database language then own long text,</p>
+<p class="p_Normal"> &nbsp; else foreign language text. </p>
+<p class="p_Normal"> &nbsp; If there is a translation in the item language, then its sales description has higher priority. </p>
+<p class="p_Normal">If receipt document</p>
+<p class="p_Normal"> &nbsp; purchase order longtext of item master data. If translation available for item language its purchase order description has higher priority.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">project</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">barcode</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">field &quot;codebars&quot; from line of document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">vendornum</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">from line of document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">serialnum</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">from line of document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">sernumflag</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">if serial No. item then Y</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">batchnumflag</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">if batch No. item then Y</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">suppcatnum</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">from item master data</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">quantity</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">formatted quantity in document unit of M.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">openquantity</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">open quantity formatted</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">quantityunit</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">document quantity of unit:</p>
+<p class="p_Normal">according to SBO-translation: if sales: see sales unit in item master data, if purchase: see purchase unit in item master data</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_quantity</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">quantity as numeral in document unit of M. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_openqty</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">open quantity as numeral in document unit of M. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_in_sale</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">conversionfactor to store unit</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">packunit</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">free</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_in_pack</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">free</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">factor1...4</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">factors for packaging</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_width</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">with</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">width_unit</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_length</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">length_unit</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_weight</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">weight_unit</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_volume</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">volume_unut</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">shipdate</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">shipping date as a String</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">price</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">Single price in document currency as a String</p>
+<p class="p_Normal">Single price refers to each document unit of M. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">discount</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">discount price</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">discountpercent</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">discount percent</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">priceafterdiscount</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">price after discount</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">pricetotal</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">line price in document currency as a String. If subtotals the subtotalprice is dispayed</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Characteristic SETARTIKEL (treetype=S)</p>
+<p class="p_Normal">Opposite to the SBO-default here is displayed the sum of the single components. </p>
+<p class="p_Normal">You can setup with the visibility of SBO (suppress depending on the Treetype) if you want to display the single item (Treetype=I) or the total item price. ONLY the lineprice net and gross is summed, no discount or price before discount.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">priceaftervat</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">total price after taxes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_price</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">as numeral</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_discount</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_discountpercent</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_priceafterdiscount</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_pricetotal</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">num_priceaftervat</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">currency</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">output currency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">whscode</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">Storage code</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #800000;">vatgroup</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">tax group</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">vatreportcode</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">invoice text (translated) of the tax group</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">freight_linetotal</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">sum of freight costs (from rdr2 or inv2 ...)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:143px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">freight_vatsum</span></p>
+</td>
+<td style="vertical-align:top; width:654px; padding:0; border:solid thin #000000;"><p class="p_Normal">sum taxes (from rdr2, inv2...)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

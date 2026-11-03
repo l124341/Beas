@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>import</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Import functions (ue_api_bom.of_importfunction) &nbsp;Concept: 1. load source Bill of Materials list in the import datastore 2. optional: set filter in source 3. load new BoM list" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "versioncontrol.htm",
+   prevP: "bom_header.htm",
+   currP: "bomimport.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "import",
+   mailsubject: "Feedback on: Beas Script 2026.09 - import",
+   sharesubject: "Beas Script 2026.09 - import",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bomimport",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_api_bom &gt; import /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - import").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bomimport.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>import</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">import</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Import functions</p>
+<p class="p_Normal">(ue_api_bom.of_importfunction)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Concept:</p>
+<p class="p_Normal">1. load source Bill of Materials list in the import datastore</p>
+<p class="p_Normal">2. optional: set filter in source</p>
+<p class="p_Normal">3. load new BoM list with standard function</p>
+<p class="p_Normal">4. copy import datastore to new BoM</p>
+<p class="p_Normal">5. modify sorting and other functionality</p>
+<p class="p_Normal">6. save new BoM</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">object=ue_api_bom=import=(...)</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">checkstring</span></p>
+</td>
+<td style="vertical-align:top; width:484px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Check if value from string a bom or routing in dbstring - Format</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return value</p>
+<p class="p_Normal">&quot;&quot; = no</p>
+<p class="p_Normal">&quot;bom&quot; = bill of material - dbstring</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Check if Clipboard a valid bill of material string</p>
+<p class="p_Normal"><span class="f_CourierFixed">object=ue_api_bom=import=checkstring=&lt;clipboard&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;value&gt; = bom then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; messagebox=ok$Clipboard is a bill of material import string</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">loadbom=&lt;bom code&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">loadrouting=&lt;routing code&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:484px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Load BoM in the import datastore</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=bomimport=ue_api_bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.loadboam=A001</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setlds=&lt;datastoreobject&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:484px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Set a ue_datastorevalues-object to import datastore</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=lds=ue_datastorevalues</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=select * from &quot;BEAS_STL&quot; where &quot;ItemCode&quot;='A001'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=bomimport=ue_api_bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.setlds=lds</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">loadfromstring=&lt;area&gt;=&lt;format&gt;=&lt;importstring&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:484px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Load from string </a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">import from a string</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">area</span></p>
+<p class="p_Normal">you can set the &quot;area&quot;, example &quot;routing&quot; - then it's importing only the area from XML-File. You can use this if you create the importstring with &quot;<span class="f_CourierFixed">import.copy2clipboard</span>&quot;. If area is empty, then the importstring is only the data </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">format</span></p>
+<p class="p_Normal">the Format of the string. Current and default is &quot;<span class="f_CourierFixed">dbstring</span>&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=lds=ue_datastorevalues</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lds=select * from &quot;BEAS_STL&quot; where &quot;ItemCode&quot;='A001'</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lds.saveas=dbstring</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_exportstring=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=bomimport=ue_api_bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.loadfromstring===&lt;ls_exportstring&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setrow=&lt;row&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:484px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">set current row for import datastore</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">insertrow</span></p>
+</td>
+<td style="vertical-align:top; width:484px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">insert a new row in import datastore</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">art1_id</span></p>
+</td>
+<td style="vertical-align:top; width:484px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">change material (BEAS_STL.ART1_ID). All primary information will copy from item code into the import datastore</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">checkbom</span></p>
+</td>
+<td style="vertical-align:top; width:484px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">check all fields (not ART1_id), set all quantity fields. Source Quantity is INPUT_QTY. Mandatory is the INPUT_QTY, INPUT_FACTOR (default=1)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filter=version/date/variant=property</span></p>
+</td>
+<td style="vertical-align:top; width:484px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Delete all entries outside the defined filter</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=bomimport=ue_api_bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.loadbom=A001</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// delete all, which not valid to Version 1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// result is only bom version 1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.version=1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Available methods:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">date</span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Check Date gluetig_von,gueltig_bis</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">version</span></p>
+</td>
+<td style="vertical-align:top; width:402px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Check Version versionfrom, versionto, versionarea</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">variant</span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Check Variant A-Z</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pos_id</span></p>
+</td>
+<td style="vertical-align:top; width:402px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Delete all Position which not inside the pos_id - string</p>
+<p class="p_Normal">Example: </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.filter.pos_id=10,20,50</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Import only 10,20,50, but not all other</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">delvalidation</span></p>
+</td>
+<td style="vertical-align:top; width:484px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Delete Validation properties</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Delete all Version information, Date Validation etc.</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=bomimport=ue_api_bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.loadbom=A001</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.version=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.delvalidation</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">import=typ</span></p>
+</td>
+<td style="vertical-align:top; width:484px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Import the import datastore in the current datastore</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">option type</p>
+<p class="p_Normal">pos_id = replace all with same pos_id, add all other</p>
+<p class="p_Normal">pos_text = replace all with same pos_text, add all other</p>
+<p class="p_Normal">itemcode = replace all with same itemcode (art1_id), all all other</p>
+<p class="p_Normal">replace = delete current position, add new positions</p>
+<p class="p_Normal">add (standard) = add all new positions</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example: </span>Copy A001-V1 to A001-V2<br />
+Replace by pos_id</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare=bomimport=ue_api_bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// the new bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.load=A001-V2</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">// the old bom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.loadbom=A001-V1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">// now import</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bomimport.import.import=pos_id</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">copy2clipboard</span></p>
+</td>
+<td style="vertical-align:top; width:484px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Copy import table in Clipboard in xml/dbstring - Format</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">for Bill of Materials</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">[beas-import]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">[format]dbstring[/format]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">[typ]bom[/typ]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #008000;">[item]&lt;itemcode&gt;</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #0000ff;"> &nbsp;[billofmaterial]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #0000ff;"> &nbsp;&lt;database dbstring&gt;</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #0000ff;"> &nbsp;[/billofmaterial]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #008000;">[/item]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">[/beas-import]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal">For Routing </p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">[beas-import]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">[format]dbstring[/format]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">[typ]routing[/typ]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #008000;">[item]&lt;itemcode&gt;</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #0000ff;"> &nbsp;[routing]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #0000ff;"> &nbsp;&lt;database dbstring&gt;</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #0000ff;"> &nbsp;[/routing]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed" style="color: #008000;">[/item]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">[/beas-import]</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">copy2string</span></p>
+</td>
+<td style="vertical-align:top; width:484px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Copy import table in Variable &quot;value&quot; in dbstring - Format</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

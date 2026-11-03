@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>variant (object)</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="You can use this object if you create a Work order and work with Scripts." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "http_and_web_server.htm",
+   prevP: "api_xgantt_workorder.htm",
+   currP: "variant.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "variant (object)",
+   mailsubject: "Feedback on: Beas Script 2026.09 - variant (object)",
+   sharesubject: "Beas Script 2026.09 - variant (object)",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Variant",
+   mailpath: "Beas script &gt; BS Object reference &gt; variant (object) /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - variant (object)").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "variant.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>variant (object)</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">variant (object)</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">You can use this object if you create a Work order and work with Scripts.</p>
+<p class="p_Normal">Do not declare this object.</p>
+<p class="p_Normal">(this object is in ue_produktconfig_script)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">User-Function</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addbom</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">you can use this command in the variant-script in the assembly to create new BoM-positions</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addrouting</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">you can use this command in the variant-script in the assembly to create new Routing positions</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addparallelresource</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">you can use this command in the variant-script in the assembly to create a parallel-Resource-Position </p>
+<p class="p_Normal">Properties:</p>
+<p class="p_Normal"><span class="f_CourierFixed">ressource, activ, alternativ, description, costelement, timereservation</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">variant.addparallelresource=resource_id=1000,description=you can use this, ...</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">propertie=field</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">you can set the properties in the BoM- and Routing-position in the position-variantscript </p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">variant.menge_verbrauch=5</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties for BoM</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or art_id)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">quantity</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or menge_lager, menge_verbrauch)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">quantity by</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or menge_je)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">roundingtype</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or round_type) 0=rounding at .5, 1=rounding up, 2=rounding off, 3=multiple of, -1=no rounding</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">roundingdec</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or round_dec): count of decimal place for round type 1 or 2</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">routingpoisition</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or aplanpos_id) link to the routing (beas_ftapl.pos_id)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">length</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or abm1)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">width</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or abm2)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or abm3)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">activ</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or aktiv, actice). set 1, true, j or y for success</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">warehouse</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or whscode): the warehouse for issue</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">additionaltext</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or usertext)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">udf1..15</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">udf1 to 15</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">price</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the price (higher prior as the standard-price-finding - only by create the calculation. Only by calculation. </p>
+<p class="p_Normal">use format <span class="f_CourierFixed">variant.price=&lt;newprice,#0.000000&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">itemname</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the itemname</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties for Routing</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource_id</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or aplatz_id): link to resource beas_aplatz.aplatz_id</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">operation</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or ag_id): link to cataloge beas_ag. if you change this propertie, beas don't load the other properties from the catalog! It is a define only for this field without functionality!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clockmandantory</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(linked with field bde) set true/1/Y/J for success</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">desciption</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or bez)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setup</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the field traplatz and tr2aplatz and define the setup-time</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setup_calculation</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or traplatz) set only the setup-time for calculation</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setup_scheduling</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or tr2aplatz) set only the setup-time for schedulung</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">time</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or teaplatz) set the time per piece</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">costelement</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or timetype_id)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timefor</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or menge_je) linked to field &quot;menge_je&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">timein</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or menge_zeitje) set only 1 = per minutes, 60=per hour</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">usefaktor</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or nutzen)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">worksteps</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or anzahl)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">idletime</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or tl)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">overlapptime</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or ueblgrz)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrapfactor</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or ausschussfaktor)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">qcinspectionplan</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or qs_id)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">payslips</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or anzls)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">udf1...15</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">udf 1 .... udf15</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">external_price</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or fag_price)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">external_priceper</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or fag_priceje)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">external_minprice</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or fag_minprice)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">external_transportprice</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or fag_transportprice)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">external_transportpriceper</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or fag_transportpricea)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">external_currency</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or currency)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">supplier</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or cardcode)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">feedback_unit</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or rm_me_id)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">feedback_factor</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or rm_faktor)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">activ</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">(or aktiv, actice). set 1, true, j or y for success</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">aktivformel</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">you can set this to &quot;N&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource_fc</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Resource-Full cost. If this value is not 0, Beas will use this resource-cost for full cost.</p>
+<p class="p_Normal">Only in Precalculation. Not compatible with Postcalculation.</p>
+<p class="p_Normal">Inserts Costs in Field &nbsp;&quot;<span class="f_CourierFixed">beas_pk_pos.ag_vollkosten</span>&quot;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Attention</span>: Use decimal-Variables. This is the only way to avoid problems with the decimal-Sign</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dec lc_fc</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// use &quot;.&quot; as decimal-Sign</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">lc_fc=5.1234</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// now convert to string</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">variant.resource_mc=&lt;lc_fc,#0.000000&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resource_mc</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Same as resource_fc, but for he Marginal Cost-Price.</p>
+<p class="p_Normal">Insert Costs in Field &nbsp;&quot;<span class="f_CourierFixed">beas_pk_pos.ag_grenzkosten</span>&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">System-Function</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">workplan_nextpos (resteworkplan)</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the tool-counter to 0. beas use this, if the next labor-Pos is insert</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resetcounter</span></p>
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the workorderplan and bom-counter to 0</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resetcreate</span></p>
+</td>
+<td style="vertical-align:top; width:615px; padding:2px; border:solid thin #000000;"><p class="p_Normal">destroys all create-commands</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:615px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>sqlca format placeholders</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Working with place holder: &nbsp;You must always convert Beas variables and placeholders in the correct format. &nbsp;select &quot;ItemName&quot; from &quot;OITM&quot; where &quot;ItemCode&quot;=&lt;dw_1.item.itemcode.v" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "sqlca-error-handling.htm",
+   prevP: "sqlca-into.htm",
+   currP: "sqlca-format-placeholders.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "sqlca format placeholders",
+   mailsubject: "Feedback on: Beas Script 2026.09 - sqlca format placeholders",
+   sharesubject: "Beas Script 2026.09 - sqlca format placeholders",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Sqlca-format-placeholders",
+   mailpath: "Beas script &gt; BS Object reference &gt; sqlca (SQL) &gt; sqlca select &gt; sqlca format placeholders /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - sqlca format placeholders").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "sqlca-format-placeholders.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>sqlca format placeholders</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">sqlca format placeholders</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Working with place holder:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You must always convert Beas variables and placeholders in the correct format.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">&lt;dw_1.item.itemcode.value</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #008000;">,dbstring</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">&gt;</span></p>
+<p style="background: #ffffff; margin: 2px 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="background: #ffffff; margin: 0 0 0 0;">Use the following format:</p>
+<div style="text-align: left; text-indent: 0; background: #ffffff; padding: 0 0 0 0; margin: 2px 0 0 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:137px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">String</p>
+</td>
+<td style="vertical-align:top; width:1003px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">dbstring</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:137px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Number</p>
+</td>
+<td style="vertical-align:top; width:1003px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">num(6)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:137px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">DateTiem</p>
+</td>
+<td style="vertical-align:top; width:1003px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">dbdate</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="background: #ffffff; margin: 2px 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff; margin: 2px 0 0 0;">&nbsp;</p>
+<p style="background: #ffffff; margin: 2px 0 0 0;"><span style="font-weight: bold;">Format dbstring</span></p>
+<p style="background: #ffffff; margin: 2px 0 0 0;">Use dbstring format for format string commands to SQL String format</p>
+<p class="p_Example"><span class="f_Example">Example 1:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemName&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">&lt;dw_1.item.itemcode.value</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #008000;">,dbstring</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">&gt;</span></p>
+<p style="background: #ffffff; margin: 2px 0 0 0;">&nbsp;</p>
+<p style="background: #ffffff; margin: 2px 0 0 0;">Differences between MSSQL and HANA</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ls_itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">my</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Item&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">..</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">dbstring</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p style="background: #ffffff; margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff; margin: 0 0 0 0;">Convert - Result in MSSQL: &nbsp; &nbsp; &nbsp;  <span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">N</span><span class="f_CodeExample" style="color: #a04db3;">'my &quot;Item&quot;'</span></p>
+<p style="background: #ffffff; margin: 2px 0 0 0;">Convert - Result in HANA: &nbsp; &nbsp; &nbsp; &nbsp;  <span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #a04db3;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">'my &quot;Item&quot;'</span><br />
+<span class="f_CodeExample">&nbsp;</span></p>
+<p style="background: #ffffff; margin: 2px 0 0 0;"><span style="font-weight: bold;">Format dbdate</span></p>
+<p style="background: #ffffff; margin: 2px 0 0 0;">use <span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #993300;">dbdate</span> to format dates in sql-string:<span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #993300;"> </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #993300;"> </span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">select</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;kwid&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;BEAS_KALENDER&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;datum_id&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">mydatecolumn</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">dbdate</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p style="background: #ffffff; margin: 0 0 0 0;">&nbsp;</p>
+<p style="background: #ffffff; margin: 2px 0 0 0;"><span style="font-weight: bold;">Format num()</span></p>
+<p style="background: #ffffff; margin: 2px 0 0 0;">use format <span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #993300;">num(x)</span> for decimal:</p>
+<p style="background: #ffffff; margin: 2px 0 0 0;">x=count of decimal numbers. In beas standard we use always 6 decimal places.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">sql</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">update</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;MYTABLE&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">set</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;quantity&quot;</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">myquantity</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">dbnum(6)</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note:</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">If you don't use the correct format, the SQL command will not be stable in a different environment.</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span> </p>
+<p class="p_Normal">- Problem with Unicode</p>
+<p class="p_Normal">- Problem with ' inside Strings </p>
+<p class="p_Normal">- Problem with windows regional settings for Dates and Numbers</p>
+<p class="p_Normal">- Problem with different syntax between MSSQL and HANA</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

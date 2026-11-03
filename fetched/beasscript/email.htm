@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>EMail</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="In contrast to the SAP-Message-Variant and the MAPI-variant this object can directly access almost all known server types." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ftp.htm",
+   prevP: "crypt_charset.htm",
+   currP: "email.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "EMail",
+   mailsubject: "Feedback on: Beas Script 2026.09 - EMail",
+   sharesubject: "Beas Script 2026.09 - EMail",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "EMail",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_api_chilkat &gt; EMail /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - EMail").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "email.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>EMail</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">EMail</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In contrast to the SAP-Message-Variant and the MAPI-variant this object can directly access almost all known server types.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The object requires for this an Active-X component, which normally is installed automatically. If due to lack of rights, the installation did not take place, it can be fetched later. For this call <span class="f_Linklink_link">C: \ program files \ Beas software \ Bea \ cd \ beasreg.bat</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">E-mail functions are addressed with:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_chilkat</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">init</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">.&lt;</span><span class="f_CodeExample" style="color: #3366ff;">command</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #3366ff;">propertie</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">FTP-functions are addressed with</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lu_ftp</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_chilkat</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_ftp</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ftp</span><span class="f_CodeExample" style="color: #ff0000;">.&lt;</span><span class="f_CodeExample" style="color: #3366ff;">command</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #3366ff;">propertie</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Chilkat object is described in detail by the producer of the object</p>
+<p class="p_Normal"><a href="http://www.chilkatsoft.com" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">www.chilkatsoft.com</a></p>
+<p class="p_Normal">The beas-object ue_chilkat serves only as an intermediary between BeasScript and the Chilkat object. There are no details described, but the available methods and properties.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">When the email object is declared, it is automatically initialized.</p>
+<p class="p_Normal">All credentials are determined automatically from the user settings (email, password, SMTP, etc.).</p>
+<p class="p_Normal">Thus, if all data are properly stored, only the recipient or text, body and attachments must be indicated.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_chilkat</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">init</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">text</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">subject</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">subject</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">text</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">mailto</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">address</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">name</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,&lt;</span><span class="f_CodeExample" style="color: #3366ff;">adress</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample" style="color: #3366ff;">adress</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">addcc</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">address</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">name</span><span class="f_CodeExample" style="color: #ff0000;">&gt;,&lt;</span><span class="f_CodeExample" style="color: #3366ff;">adress</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample" style="color: #3366ff;">adress</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">addfile</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">addfile</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">filename</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">sendmail</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">n</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">-</span><span class="f_CodeExample">1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;....&nbsp;not&nbsp;sendet...</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lu_email</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">init</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">initializes the object with all standard-parameter from the current user!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">smtphost</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets the smtp server, hostname or ip</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">smtpport</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets smtp port, default=25</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">smtpssl</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">smtpssl</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">smtpuser</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">smtpusername</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">smtppwd</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">smtppassword</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">subject</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">subject of the email</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">body</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the body-text</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">apptobody</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">appends to body</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addhab</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds html alternative body</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addmbcc</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds multiple bcc</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addmcc</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds multiple cc</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">mailfrom</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">from &nbsp;(<span class="f_CourierFixed">name, email</span>)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addbcc</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds bcc (<span class="f_CourierFixed">name, email</span>)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addmto</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds multiple to</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addcc</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds cc (<span class="f_CourierFixed">name, email</span>)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addfile</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds file attachment</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">adddata</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">adds clipboard as attach</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clearbcc</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">clears bcc</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clearcc</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">clears cc</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clearto</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">clear to</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clearbademail</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">clears bad email addresses</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dropatt</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">drops attachments</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">fromaddress</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets from address</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getstatus</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">gets status in variable &quot;value&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">mailer</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sends the email</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lerrortxt</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">gets last error to screen from mailman2</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lerrortxtel</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">gets last error to screen from email2</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">issmtpdsncap</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">displays check (to display)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">ismrep</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">checks if the mail is a multipart/report mail (to display)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">isnulocked</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">checks if mailman is locked (to display) and variable &quot;value&quot;. 1=free, other is locked.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">quicksend</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sends a email in a simple way:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_chilkat</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">email</span><span class="f_CodeExample" style="color: #ff0000;">.&lt;</span><span class="f_CodeExample" style="color: #3366ff;">command</span><span class="f_CodeExample" style="color: #ff0000;">&gt;=</span><span class="f_CodeExample" style="color: #3366ff;">propertie</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">lu_email</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">quicksend</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #3366ff;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">As</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">String</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">As</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">String</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">subject</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">As</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">String</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">body</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">As</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">String</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">smtpServer</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">As</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">String</span><span class="f_CodeExample" style="color: #ff0000;">)</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sethtmlbody</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets html as body</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">replace</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sets replace pattern (<span class="f_CourierFixed">setreplacepattern=p1=p2</span>)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">smtplogindom</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">smtplogindomain</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">smtpauthnmeth</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">smtpauthnmeth</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sendind</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">SendIndividual</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sendmail</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">sends the email</p>
+<p class="p_Normal">if variable &quot;<span class="f_CourierFixed">mailwithouterror</span>&quot; &lt;&gt; J, then an errormessage will be displayed on the screen</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">starttls</span></p>
+</td>
+<td style="vertical-align:top; width:480px; padding:2px; border:solid thin #000000;"><p class="p_Normal">starts TLS (long)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:133px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">version</span></p>
+</td>
+<td style="vertical-align:top; width:480px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Version from Chilkat MailMan2-Object</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span></p>
+<p class="p_Normal">More info see <a href="http://www.chilkatsoft.com" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">www.chilkatsoft.com</a> (Chilkat EMail ActiveX) &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

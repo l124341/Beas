@@ -1,0 +1,1128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>item</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="item (datawindow, beas Script)" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Object item, which is a part of datawindow inside the window object" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsitemdropdown.htm",
+   prevP: "export___import.htm",
+   currP: "item_dw.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "item",
+   mailsubject: "Feedback on: Beas Script 2026.09 - datawindow item",
+   sharesubject: "Beas Script 2026.09 - datawindow item",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Item_dw",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; item /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - item").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "item_dw.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>item</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">datawindow item </span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">Object item, which is a part of datawindow inside the window object</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="window.htm" class="topiclink">Window</a> -&gt; <a href="dw_1.htm" class="topiclink">dw_1</a> -&gt; <a href="item_dw.htm" class="topiclink">Item</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span> - define / write a property</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemcode.visible=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemcode_t.text=Itemname</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span> &nbsp;- if fields are in e.g. dw_2 (datawindow 2):</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_2.item.itemcode.visible=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_2.item.itemcode_t.text=Itemname</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you have more than one row, you can define the row which you read/write</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=row=3</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemcode</span><span class="f_CourierFixed" style="background-color: #ffff00;">:[row]</span><span class="f_CourierFixed">.value=myvalue</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;item.itemcode</span><span class="f_CourierFixed" style="background-color: #ffff00;">:[row]</span><span class="f_CourierFixed">.value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">Properties</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:223px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:middle; width:37px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">read</span></p>
+</th>
+<th style="vertical-align:middle; width:37px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">write</span></p>
+</th>
+<th style="vertical-align:top; width:568px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">alignment=0...3</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Alignment 0 - (Default) Left, 1 Right, 2 Center, 3 Justified</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">autohscroll=1/0</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">set horizontalscroll in column items</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.mycolumn.autohscroll=1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">autovscroll=1/0</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">set verticalscroll in column items</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.mycolumn.autovscroll=1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">background.&lt;type&gt;=&lt;color&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">You can work with dynamic background colors</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With the following commands you can define background colors for different statuses.</p>
+<p class="p_Normal">it only works for columns, not other item types</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:126px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">background.ok</span></p>
+</td>
+<td style="vertical-align:top; width:308px; padding:0; border:solid thin #000000;"><p class="p_Normal">Color if all ok </p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.background.ok=&lt;color:backgroundcolor_ok&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.redraw</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:126px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">background.error</span></p>
+</td>
+<td style="vertical-align:top; width:308px; padding:0; border:solid thin #000000;"><p class="p_Normal">Color if error (field-Status=error)</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.background.error=&lt;color:backgroundcolor_error&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">..</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.status=error</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">redrawallcolumns</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:126px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">background.empty</span></p>
+</td>
+<td style="vertical-align:top; width:308px; padding:0; border:solid thin #000000;"><p class="p_Normal">color if field is empty of field-Status=empty</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> OpenEvent. OK=green, Empty=read Background</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.itemcode.background.ok=&lt;color:backgroundcolor_ok&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">with property status you can change the status of the field and related to this the background</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.status=error</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.redraw</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">or with setstatus you can change the status and can redraw the column automatically</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.setstatus=error</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you change many properties outside the load event, you can start the redraw for all columns with this command.<br />
+<span class="f_CourierFixed">redrawallcolumns</span></p>
+<p class="p_Normal">for redraw all fields</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">bitmapname=bmp\&lt;bitmapname&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Name of bitmapfile </p>
+<p class="p_Normal">(bmp, jpg, gif, png)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">bold=true/false</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Set wight / bold on / off</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span>:</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.bold=true</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you set this outside the retrieve / load mode, you must set the command.<br />
+<span class="f_CourierFixed">redrawallcolumns</span></p>
+<p class="p_Normal">to redraw all fields</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">color</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Define the font color for this item</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: Red</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.color=&lt;rgb:255:0:0&gt; </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can send a formula, too</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.color='255~tif (left(ag_id,1)=&quot;A&quot;,255,0)'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">or better with the modify command</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.modify.mycolumn.color='255~tif (left(mysecondfield,1)=&quot;A&quot;,255,0)'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you set this outside the retrieve / load mode, you must set the command<br />
+<span class="f_CourierFixed">redrawallcolumns</span></p>
+<p class="p_Normal">for redraw all fields</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">coltype</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">dbcolumnname</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Return the column name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">dbname</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Return name of linked database column name</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;item.mycolumn.dbname&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">dbtablename</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Return name of linked database table name</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;item.mycolumn.dbtable&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">detailbitmap</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Create yellow arrow left of the column</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Not working in lists, only edit forms.</span></p>
+<p class="p_Normal">item.[itemname].detailbitmap=[command]</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: <a href="example_opensalesorder.htm" class="topiclink">open sales order from work order</a></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">destroy</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Destroy this column</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.mycolumn_pp.destroy</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">displayonly=1/0</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Only Column: set input-field to only view</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">dropdown</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="bsitemdropdown.htm" class="topiclink">Create drop-down window or open it</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">expression=&lt;expressionvalue&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">set expression (formel) (only computeobject)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">escapement</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Define the rotation of a field (0-3600)</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Rotation on a field in 1/10° (0 - 3600)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: rotate the field &quot;itemcode&quot; 3 times</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">for ll_1=1 to 3</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;for ll_2=1 to 3650 step 100</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp;dw_1.item.itemcode.escapement=&lt;ll_2&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; next</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">next</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">format=&lt;format string&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Display format. Only Column and Compute Example: #,##0.00 &nbsp;= 3,000.34</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">formatstring</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">You can set more than one Format in one String</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Properties:</p>
+<p class="p_Normal"><span class="f_CourierFixed">background.ok (or bok)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">background.error (or berr)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">background.empty (or bemp)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">status</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">bold</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">italic</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">color</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">text</span> (Only Textfield or the Textfield &quot;<span class="f_CourierFixed">columnname</span>+&quot;<span class="f_CourierFixed">_t</span>&quot; from column, replace comma to &quot;&amp;|&quot;)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">item.mycolumn=formatstring=bok=&lt;rgb:100:255:100&gt;,berr=&lt;rgb:255:100:100&gt;,bold=true,italic=true,text=My Field Description</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you set design-Properties as bold, italic e.c. and your Script is not in open- or itemchange-event, you must make a redraw .</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.mycolumn.redraw</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">hscrollbar=1/0</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Specifies whether a horizontal scroll bar </a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">is displayed in the control when all the data cannot be displayed at one time. Values are:</p>
+<p class="p_Normal">1 – Horizontal scroll bar is displayed.</p>
+<p class="p_Normal">0 – Horizontal scroll bar is not displayed.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">italic=true=false</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">set italic on / off</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Italic on/off</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.italic=true</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you set this outside the retrieve / load mode, you must set the command<br />
+<span class="f_CourierFixed">redrawallcolumns</span></p>
+<p class="p_Normal">for redraw all fields</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">mandatory=true/false</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Set field as mandatory</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">with this command you can set the field as mandatory field.</p>
+<p class="p_Normal">if it's empty, you can't update the data</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">password=1/0</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Only Column: set to password-field. You can see only &quot;***&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">protect=1/0</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Activates and deactivates editing of a field</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">redraw</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Redraw item properties</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you change design properties, example bold, italic, color, background color outside the load / retrieve events, you must redraw the properties</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.mycolumn.redraw</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">or for all commands</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">redrawallcolumns</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">rightclicktrigger</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="jbsitemrightclicktrigger.htm" class="topiclink">Define function of right-click</a></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setfocus=&lt;column&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Set focus to this column</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.setfocus</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tabsequence=&lt;x&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Set tab order from columns</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">(only Columns): A number from 0 to 32000 specifying the position of the column in the tab order. A value of 0 takes the column out of the tab order and makes it read-only.</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.mycolumn.tabsequence=20</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">tag</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">Return the tag property from a item</a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas uses this to define click commands.</p>
+<p class="p_Normal">You can get the actual value</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;item.mycolumn.tag&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">text=&lt;textvalue&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B1','TOGGLE0186B1_ICON')">Change text property from text- or column field</a></td></tr></table></div>
+<div id="TOGGLE0186B1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Text-object: set the Text to display<br />
+Column-object: set the Text of the object - title field (object name +&quot;_t&quot;)</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Don't convert special character &quot;~&quot; which present an escape sign in the datawindow syntax</span></p>
+<p class="p_Normal">Example ~t is tab, ~r~n is line feed and so on.</p>
+<p class="p_Normal">If ~ inside text, convert the string to DataWindow-Text syntax</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">title=&lt;textvalue&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B2','TOGGLE0186B2_ICON')">Only Columns with text field &quot;&lt;columnname_t&gt;&quot;: Define description of the column</a></td></tr></table></div>
+<div id="TOGGLE0186B2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">dw_1.item.itemcode.title=The Item Code</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">type</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B3','TOGGLE0186B3_ICON')">Return type of column</a></td></tr></table></div>
+<div id="TOGGLE0186B3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return the type of column: column, text, bitmap, compute</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">simulatetype</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B4','TOGGLE0186B4_ICON')">Define special type for columns, type &quot;char&quot;</a></td></tr></table></div>
+<div id="TOGGLE0186B4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">define a &quot;simulation&quot; type for columns type char</p>
+<p class="p_Normal">use this example for udf or userfield</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">item.udf5.simulatetype=date</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">convert every manual entry to date format</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">item.udf5.simulatetype=#0.00</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">convert every manual entry to decimal format with 2 decimal places<br />
+String to Number is always working, if # is inside the format</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">visible=1/0</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">set visible true/false</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">status</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B5','TOGGLE0186B5_ICON')">set status of a column</a></td></tr></table></div>
+<div id="TOGGLE0186B5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">change status between OK, error or empty</p>
+<p class="p_Normal">redraw background color, front color and some other properties, which you can define with formatstring</p>
+<p class="p_Normal">if you change it outside open/new event, you must send an redraw</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.itemcode.status=error</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.itemcode.redraw</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setstatus</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B6','TOGGLE0186B6_ICON')">Set status of a column and redraw the column</a></td></tr></table></div>
+<div id="TOGGLE0186B6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">change status between OK, error or empty</p>
+<p class="p_Normal">redraw background color, front color and some other properties, which you can define with formatstring</p>
+<p class="p_Normal">Same as command &quot;status&quot;, but it redraw the column automatically <span class="f_beas_Version">Beas 2020.02</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.itemcode.setstatus=error</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">vsrollbar=1/0</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:37px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B7','TOGGLE0186B7_ICON')">Specifies whether a vertical scroll bar</a></td></tr></table></div>
+<div id="TOGGLE0186B7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">displays in the control when not all the data can be displayed at one time. Values are:</p>
+<p class="p_Normal">1 – Vertical scroll bar is displayed.</p>
+<p class="p_Normal">0 – Vertical scroll bar is not displayed.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">x,y,width,height</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:37px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:568px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B8','TOGGLE0186B8_ICON')">Set or read coordinate in powerbuilder unit</a></td></tr></table></div>
+<div id="TOGGLE0186B8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.item.mycolumn.x=200</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ll_y=&lt;dw_1.item.mycolumn.y&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span class="f_Heading1">Value</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:223px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:middle; width:34px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:38px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:573px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">checkid</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:573px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" style="font-style: normal; font-weight: normal; color: #000000; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186B9','TOGGLE0186B9_ICON')">Check the value</a></td></tr></table></div>
+<div id="TOGGLE0186B9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">replace follow ascii-entrys ~t = , &lt; &gt; ' &quot; &amp; ß with _ - : | | ' ' ss</p>
+<p class="p_Normal">warning-message, if space found</p>
+<p class="p_Normal">if more than 1 row, then check of unique</p>
+<p class="p_Normal">example in itemchanged-Event:</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.wkz_id.checkid</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">default=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:38px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:573px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">only column: if column is null, set value from column</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemcode.default=myvalue</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setnull</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:573px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">only column: set value from column to NULL</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemcode.setnull</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setvalue</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:38px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:573px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">set value for a column and send the event &quot;itemchanged&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemcode.setvalue=hello world</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">translate</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:573px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Translate the value in the current language (all rows!)</p>
+<p class="p_Normal">only for columns!</p>
+<p class="p_Normal"><span class="f_CourierFixed">item.itemname.translate</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">value=&lt;value&gt; </span></p>
+</td>
+<td style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:38px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:573px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BA','TOGGLE0186BA_ICON')">Set or get the value from column</a> </td></tr></table></div>
+<div id="TOGGLE0186BA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">dw_1.item.mycolumn.value=&quot;hello world&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Get Value</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;dw_1.item.itemcode.value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">or values from all lines</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=ls_items=</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">for ll_loop=1 to &lt;dw_1.rowcount&gt; </span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; setvar=ls_items=&lt;ls_items&gt;&lt;dw_1.item.itemcode:[ll_loop].value&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">next</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;ls_values&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if column type is text, Beas return the text of this object</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">values</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:573px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BB','TOGGLE0186BB_ICON')">Return the values from a drop-down item</a></td></tr></table></div>
+<div id="TOGGLE0186BB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span>:</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;item.menge_zeitje.values&gt;</span></p>
+<p class="p_Normal">returns</p>
+<p class="p_Normal">displaynam[tab]value/displayname[tab]value...</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:223px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">displayvalue</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:38px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:573px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BC','TOGGLE0186BC_ICON')">Return the value which you see, e.g. from Drop-down</a></td></tr></table></div>
+<div id="TOGGLE0186BC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In dropdown you can define 1=red,2=blue</p>
+<p class="p_Normal">in screen you see red, blue and so on</p>
+<p class="p_Normal">with this command it's possible to return the visible information</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">..value&gt; = 2</p>
+<p class="p_Normal">..displayvalue&gt; = blue</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 2 HF 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B1\',\'TOGGLE0186B1_ICON\')');
+HMInitToggle('TOGGLE0186B1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B2\',\'TOGGLE0186B2_ICON\')');
+HMInitToggle('TOGGLE0186B2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B3\',\'TOGGLE0186B3_ICON\')');
+HMInitToggle('TOGGLE0186B3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B4\',\'TOGGLE0186B4_ICON\')');
+HMInitToggle('TOGGLE0186B4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B5\',\'TOGGLE0186B5_ICON\')');
+HMInitToggle('TOGGLE0186B5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B6\',\'TOGGLE0186B6_ICON\')');
+HMInitToggle('TOGGLE0186B6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B7\',\'TOGGLE0186B7_ICON\')');
+HMInitToggle('TOGGLE0186B7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B8\',\'TOGGLE0186B8_ICON\')');
+HMInitToggle('TOGGLE0186B8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B9\',\'TOGGLE0186B9_ICON\')');
+HMInitToggle('TOGGLE0186B9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BA\',\'TOGGLE0186BA_ICON\')');
+HMInitToggle('TOGGLE0186BA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BB\',\'TOGGLE0186BB_ICON\')');
+HMInitToggle('TOGGLE0186BB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BC\',\'TOGGLE0186BC_ICON\')');
+HMInitToggle('TOGGLE0186BC','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

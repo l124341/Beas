@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>bs SAP-Fields</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="You must convert the return value: &nbsp;SAP Decimal-Field &nbsp;&lt;item.5.value,sbonum&gt; SAP Price-Field &lt;item.5.value,sboprice&gt; SAP Date &lt;item.5.value,sbodate&gt; SAP Currency from Price" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bscalling_functions.htm",
+   prevP: "standards.htm",
+   currP: "sap-fields.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "bs SAP-Fields",
+   mailsubject: "Feedback on: Beas Script 2026.09 - bs SAP-Fields",
+   sharesubject: "Beas Script 2026.09 - bs SAP-Fields",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "SAP-Fields",
+   mailpath: "Beas script &gt; BeasScript Tutorial &gt; bs Plaeholders &gt; bs SAP-Fields /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - bs SAP-Fields").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "sap-fields.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>bs SAP-Fields</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">bs SAP-Fields</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">You must convert the return value:</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal">SAP Decimal-Field </p>
+</td>
+<td style="vertical-align:top; width:514px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;item.5.value,sbonum&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">SAP Price-Field</p>
+</td>
+<td style="vertical-align:top; width:514px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;item.5.value,sboprice&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal">SAP Date</p>
+</td>
+<td style="vertical-align:top; width:514px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;item.5.value,sbodate&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">SAP Currency from Price-Field</p>
+</td>
+<td style="vertical-align:top; width:514px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;item.5.value,string2currency&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Convert beas-Script-Number to SAP-Numeric</p>
+</td>
+<td style="vertical-align:top; width:514px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">item.5.value=&lt;ls_variable,tosbonum&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:252px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Round value with SAP B1 Rules</p>
+</td>
+<td style="vertical-align:top; width:514px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;item.5.value,sboround&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;item.5.value,sboround [ls_currency]&gt;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">More information</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Round the value with SAP Price rounding rounding rule </p>
+<p class="p_Normal">if you do not define the currency in the second parameter, Beas uses the Main Currency.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Rounding type: Business rule</p>
+<p class="p_Normal">Example with 2 decimal places: </p>
+<p class="p_Normal">0.123 -&gt; 0.120<br />
+0.125 -&gt; 0.13</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you set the currency in the format string, beas check, if you have a special rule in the currency setup.</p>
+<p class="p_Normal"><img alt="currency_setup" width="582" height="330" style="margin:0;width:582px;height:330px;border:none" src="currency_setup.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas supports only the setting in column &quot;Decimal&quot;, but not the rounding definition in &quot;Rounding&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If not, Beas uses the default price rounding, which you can set in <span class="f_Linklink_link">General settings &gt; display &gt; Prices:</span></p>
+<p class="p_Normal"><img alt="general_settings_display" width="590" height="392" style="margin:0;width:590px;height:392px;border:none" src="general_settings_display.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.2 PL: 05</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,1171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>create</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="button erstellen,create,Konzepte,textobject erstellen" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Create new visual objects (Button, Textfield, Column) in a form" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "del.htm",
+   prevP: "bpopup.htm",
+   currP: "bsbuttoncreate.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "create",
+   mailsubject: "Feedback on: Beas Script 2026.09 - create",
+   sharesubject: "Beas Script 2026.09 - create",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsButtonCreate",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; create /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - create").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsbuttoncreate.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>create</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">create</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">Create new visual objects (Button, Textfield, Column) in a form</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Create Button</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">in a Beas form you can create buttons on different areas: Top, right and bottom side and inside the formula.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="create-button" width="509" height="288" style="margin:0;width:509px;height:288px;border:none" src="create-button.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Best event to create button: form_loaded</p>
+<p class="p_Normal">Syntax:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function form_loaded</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=button=</span><span class="f_CourierFixed" style="color: #ff0000;">text=ButtonText</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #008000;">name=ButtonName</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #0000ff;">Position=Area,{x,y,width,height}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example to create Buttons in all areas</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// ******* Event form_opened ********</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">global function form_loaded</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=button=</span><span class="f_CourierFixed" style="color: #ff0000;">text=Pos0</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #008000;">name=mpos0</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #0000ff;">position=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=button=</span><span class="f_CourierFixed" style="color: #ff0000;">text=Pos1</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #008000;">name=mpos2</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #0000ff;">position=2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Left</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=button=</span><span class="f_CourierFixed" style="color: #ff0000;">text=Pos1-A</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #008000;">name=mpos1a</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #0000ff;">position=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=button=</span><span class="f_CourierFixed" style="color: #ff0000;">text=Pos1-B</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #008000;">name=mpos1b</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #0000ff;">position=1</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">create=button=</span><span class="f_CourierFixed" style="color: #ff0000;">text=PR</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #008000;">name=mpos1r</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #0000ff;">x=1700,y=30,height=66,width=180</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:144px;"><p class="p_Normal"><span style="font-weight: bold;">Part of Command</span></p>
+</td>
+<td class="fielddescription" style="width:934px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:144px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">create=button</span></p>
+</td>
+<td class="fielddescription" style="width:934px; background-color:#F7F7F7;"><p class="p_Normal">Command to create a button</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:144px;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #ff0000;">text=Pos0</span></p>
+</td>
+<td class="fielddescription" style="width:934px;"><p class="p_Normal">Define the text</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:144px; background-color:#F7F7F7;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #ff0000;">menutext=[text]</span></p>
+</td>
+<td class="fielddescription" style="width:934px; background-color:#F7F7F7;"><p class="p_Normal">This is optional: If you define a menu text, Beas inserts it in the right-click menu, too. </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:144px;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #008000;">name=mpos0</span></p>
+</td>
+<td class="fielddescription" style="width:934px;"><p class="p_Normal">Every Button needs an unique name</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_Note">Note:&nbsp;Use&nbsp;your&nbsp;own&nbsp;postfix</span><br />
+<span class="f_Example">Example:</span>&nbsp;mycompany_buttonname</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:144px; background-color:#F7F7F7;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">position</span></p>
+</td>
+<td class="fielddescription" style="width:934px; background-color:#F7F7F7;"><p class="p_Normal">Position<br />
+0=bottom, 1=left, 2=top<br />
+in beas you don't need to define x/y/width or height. The framework calculate automatically correct position and size</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in Beas 9.3 PL 2 you can define<br />
+<span class="f_CourierFixed">position=bottom</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">position=top</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">position=right</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:144px;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0000ff;">x/y/width/height</span></p>
+</td>
+<td class="fielddescription" style="width:934px;"><p class="p_Normal">Define direct position if you want to insert a button inside the window</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can use most additional properties:<br />
+bitmap, forecolor, backcolor, fontsize, textstyle, tooltip, width. <span class="f_See">See</span> <a href="bsbuttoncreate.htm#complete" class="topiclink">complete Reference</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For every button a function is needed, which is executed by clicking on the button</p>
+<p class="p_Normal">for Position 0-2 the main object is dw_master, if inside the form, then dw_1...7</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function </span><span class="f_CourierFixed" style="color: #ff0000;">dw_master</span><span class="f_CourierFixed">_item_</span><span class="f_CourierFixed" style="color: #008000;">mpos2</span><span class="f_CourierFixed">_</span><span class="f_CourierFixed" style="color: #000000;">click</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:207px;"><p class="p_Normal"><span style="font-weight: bold;">Part of function</span></p>
+</td>
+<td class="fielddescription" style="width:1331px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:207px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #ff0000;">dw_master</span></p>
+</td>
+<td class="fielddescription" style="width:1331px; background-color:#F7F7F7;"><p class="p_Normal">Datawindow ( = dw_master, if outside the main window, dw_1...dw_7 if inside)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:207px;"><p class="p_Normal"><span class="f_CourierFixed">item</span></p>
+</td>
+<td class="fielddescription" style="width:1331px;"><p class="p_Normal">type of object from dw_master ( = item)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:207px; background-color:#F7F7F7;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #008000;">mpos2</span></p>
+</td>
+<td class="fielddescription" style="width:1331px; background-color:#F7F7F7;"><p class="p_Normal">Name of object</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:207px;"><p class="p_Normal"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">click</span></p>
+</td>
+<td class="fielddescription" style="width:1331px;"><p class="p_Normal">Type of activity (click, rclick...)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Simple creation of this function</span></p>
+<p class="p_Normal">1. open the window with created buttons</p>
+<p class="p_Normal">2. open customizing script editor</p>
+<p class="p_Normal">Ctrl+DoubleClick on the Button -&gt; Beas opens a window for the &quot;New function&quot;<br />
+You can insert a comment and your Name.</p>
+<p class="p_Normal">3. Click on &quot;OK&quot; -&gt; Beas creates the correct function inside the script editor</p>
+<p class="p_Normal">4. Insert your function</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function </span><span class="f_CourierFixed" style="color: #ff0000;">dw_master</span><span class="f_CourierFixed">_item_</span><span class="f_CourierFixed" style="color: #008000;">mpos2</span><span class="f_CourierFixed">_</span><span class="f_CourierFixed" style="color: #000000;">click</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #000000;">messagebox=Hello, this is my first function</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Create right-click entry</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Only Beas 9.3 PL 2 and later:</p>
+<p class="p_Normal">With command</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">create=rightclick=name=</span><span class="f_CourierFixed" style="color: #ff0000;">my_object_name</span><span class="f_CourierFixed">,text=displaytext,bitmap=bmp\bitmapname</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The name of called function is<br />
+<span class="f_CourierFixed">global function dw_master_item_button_</span><span class="f_CourierFixed" style="color: #ff0000;">my_object_name</span><span class="f_CourierFixed">_click</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">global function form_loaded</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=</span><span class="f_CourierFixed" style="color: #000000;">rightclick</span><span class="f_CourierFixed">=</span><span class="f_CourierFixed" style="color: #ff0000;">text=Hello Boyum</span><span class="f_CourierFixed">,</span><span class="f_CourierFixed" style="color: #008000;">name=boyum_hello</span><span class="f_CourierFixed">,bitmap=bmp\active.png</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #800000;">global function </span><span class="f_CourierFixed" style="color: #000000;">dw_master_item_button_</span><span class="f_CourierFixed" style="color: #008000;">boyum_hello_click</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=clicked on Hello Boyum</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="create-rightclick" width="504" height="411" style="margin:0;width:504px;height:411px;border:none" src="create-rightclick.jpg"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Create new Field </a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A field has 2 parts:<br />
+1. Text field, 2. Input field</p>
+<p class="p_Normal">The input field need a reference to the database layer of the Report</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="create-field1" width="771" height="383" style="margin:0;width:771px;height:383px;border:none" src="create-field1.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the Script Editor you can see available fields of the &nbsp;database layer</p>
+<p class="p_Normal"><img alt="create-field2" width="736" height="366" style="margin:0;width:736px;height:366px;border:none" src="create-field2.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">for create new fields you can use UDF5 ... UDF15<br />
+and userfield1...x</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">UDF1..4: These fields are available. You can make these fields visible in the Configuration Wizard<br />
+In most windows UDF 5..15 are available. These fields are linked with Database and you can use this fields for customizing</p>
+<p class="p_Normal">In many windows userfield1...x available. These fields are not linked with Database. <br />
+All UDF and userfields always have type String and length of 50 characters.<br />
+<span class="f_CourierFixed">Userfields</span> allow to insert up to 16 KByte, but only, if the name of this field (property &quot;name&quot;) start with &quot;<span class="f_CourierFixed">userfield</span>&quot; or &quot;<span class="f_CourierFixed">template</span>&quot;<br />
+<span class="f_Example">Example:</span> <span class="f_CourierFixed">name=userfield_test&lt;tab&gt; ..</span>.<br />
+If you use another name and insert more than 50 chars, you will receive the error message &quot;(itemchanged13249) incorrect entry! Please correct!&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Best place to define new fields outside the tab area is form_loaded </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Syntax to create new field</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function form_loaded</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf5,</span><span class="f_CourierFixed" style="color: #008000;">id=udf5</span><span class="f_CourierFixed">,x=800,y=292,length=200</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">name = field name</p>
+<p class="p_Normal"><span style="color: #008000;">id=udf5</span> = link to database layer</p>
+<p class="p_Normal">&nbsp;<br />
+Both can be the same. But link a field from database layer only ONE time to a visible column.<br />
+&nbsp;</p>
+<p class="p_Normal">Create a field on this defined position. You can fill it, and Beas loads and saves the value.<br />
+<img alt="create-field3" width="349" height="195" style="margin:0;width:349px;height:195px;border:none" src="create-field3.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">Description of the field</span><br />
+The description is always on the left side. The Description field (text object) has same name as the input field +&quot;_t&quot;, example &quot;udf5_t&quot;</p>
+<p class="p_Normal">You can create this in one line together with the column </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function form_loaded</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf5,id=udf5,x=1000,y=292,length=220</span><span class="f_CourierFixed" style="background-color: #ffff00;">&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; </span><span class="f_CourierFixed" style="background-color: #ffff00;">,</span><span class="f_CourierFixed">text=BoyumTxt,x2=750,width2=220</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="create-field4" width="346" height="202" style="margin:0;width:346px;height:202px;border:none" src="create-field4.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Field inside TAB Area</span></h1>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In many windows there is a tab area inside the Datawindow</p>
+<p class="p_Normal">Tab Area are not the Tab on top. The tab area is always inside the Datawindow</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span> Operation Catalog - General / Extented / Tool</p>
+<p class="p_Normal">Fields inside a tab area are in same Datawindow, but in different cases Datawindow 2, 3 and so on</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="create-fieldtab" width="636" height="212" style="margin:0;width:636px;height:212px;border:none" src="create-fieldtab.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Name of the tab object is &quot;etab&quot;. In some windows we've tab objects inside main tab area with another name.</p>
+<p class="p_Normal">Every tab-element have own name, example the first tab has name etab.stamm</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can see the object name and tab name in debug window if mouse over the tab name</p>
+<p class="p_Normal"><img alt="create-fieldtabdebug" width="368" height="178" style="margin:0;width:368px;height:178px;border:none" src="create-fieldtabdebug.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">These tab objects are created in form_load, form_loaded or other events. <br />
+The correct place to define a field in a tab is</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function etab_firstredraw</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use property &quot;related&quot; to define the position to another field.<br />
+<span class="f_Example">Example:</span></p>
+<p class="p_Normal">Insert a field &quot;BoyumTxt&quot; down of &quot;Number of payslips&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function etab_firstredraw</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf5,id=udf5,text=BoyumTxt</span><span class="f_CourierFixed" style="color: #008000;">,related=anzls</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span><br />
+<span class="f_CourierFixed">&nbsp;</span></p>
+<p class="p_Normal"><img alt="create-fieldtab2" width="675" height="330" style="margin:0;width:675px;height:330px;border:none" src="create-fieldtab2.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Attention"><span class="f_Attention">Attention:</span></p>
+<p class="p_Normal">In this window there are empty areas which are not always empty<br />
+<span class="f_Example">Example:</span> Area &quot;Processing&quot; / &quot;Personnel&quot; ... Beas displays additional fields related of other settings, here related to cost counts.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Alternative: Define position manually</span></p>
+<p class="p_Normal">With tabobject, tabpage you can define the tab area<br />
+Position x=0/y=0 is left top of the Tab, not of the window</p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf5,id=udf5,text=BoyumTxt,</span><span class="f_CourierFixed" style="color: #008000;">tabobject=etab,tabpage=stamm</span><span class="f_CourierFixed">,x=...y=...,x2=...,wdith2=...</span></p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Numeric fields, Date Fields</span></h1>
+<p class="p_Normal">User fields are always string fields and not numeric or date fields.</p>
+<p class="p_Normal">But it is possible to simulate numeric or date fields</p>
+<p class="p_Normal">Concept: Define the type of field <span class="f_beas_Version">(beas 9.3 PL 2)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Operation catalog - new field Number field with 2 decimal places</p>
+<p class="p_Normal">you need </p>
+<p class="p_Normal"><span class="f_CourierFixed">alignment=1  </span>= right alignment</p>
+<p class="p_Normal"><span class="f_CourierFixed">type=#0.00 &nbsp; </span>= numeric, 2 decimal places</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function etab_firstredraw </span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// add new field, right alignment</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf5,id=udf5,text=BoyumNum,</span><span class="f_CourierFixed" style="color: #008000;">related=anzls,alignment=1,type=#0.00</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">as date field</p>
+<p class="p_Normal">you need</p>
+<p class="p_Normal"><span class="f_CourierFixed">dropdown=date </span>= Calendar</p>
+<p class="p_Normal"><span class="f_CourierFixed">type=date &nbsp; &nbsp; </span>= replace input in correct date format</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function etab_firstredraw </span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// add new field, right alignment</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf5,id=udf5,text=BoyumDate,</span><span class="f_CourierFixed" style="color: #008000;">related=anzls,dropdown=date,type=date</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Examples</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Insert new long text field in routing position</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">in this example we create a new database field and insert this in the routing position - edit form:</p>
+<p class="p_Normal"><iframe width="560" height="315" src="https://www.youtube.com/embed/ChJ2jeUAjzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Complete Reference of all properties</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Information for Beas 9.3 PL 1 and older with line break and lower case</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you work with &quot;&amp;&quot; to switch to next line, insert the comma always in next line</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf5,</span><span class="f_CourierFixed" style="background-color: #ffff00;">ID</span><span class="f_CourierFixed">=udf5,x=1000,y=292,length=220</span><span class="f_CourierFixed" style="background-color: #ffff00;">,</span><span class="f_CourierFixed">&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; text=BoyumTxt,x2=750,width2=220=200</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In this example there are 2 errors:<br />
+Only lower case is allowed<br />
+Space before keywords is not allowed. In this case there is a space or tab for keyword &quot;text&quot;</p>
+<p class="p_Normal">Correct version:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function form_loaded</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf5,</span><span class="f_CourierFixed" style="background-color: #ffff00;">id=</span><span class="f_CourierFixed">udf5,x=1000,y=292,length=220&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; </span><span class="f_CourierFixed" style="background-color: #ffff00;">,</span><span class="f_CourierFixed">text=BoyumTxt,x2=750,width2=220=200</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td class="fielddescription" style="width:687px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">create=text</span></p>
+</td>
+<td class="fielddescription" style="width:687px; background-color:#F7F7F7;"><p class="p_Normal">Create a Text Object </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px;"><p class="p_Normal"><span class="f_CourierFixed">create=column</span></p>
+</td>
+<td class="fielddescription" style="width:687px;"><p class="p_Normal">Create a Input Field </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">create=button</span></p>
+</td>
+<td class="fielddescription" style="width:687px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Create a Button</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">SAP: Define x+y position</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can insert the button inside the form</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.create=button=name=mybutton,text=my button text,x=100,y=100</span></p>
+<p class="p_Normal">current not inside tabs.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can define the button in bottom button list, on right side or top button list</p>
+<p class="p_Normal">see position</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">create=button=name=mybutton,text=my button,position=2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px;"><p class="p_Normal"><span class="f_CourierFixed">create=bitmap</span></p>
+</td>
+<td class="fielddescription" style="width:687px;"><p class="p_Normal">Create a Bitmap (only Beas)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">create=compute</span></p>
+</td>
+<td class="fielddescription" style="width:687px; background-color:#F7F7F7;"><p class="p_Normal">Create a Computed Field (only Beas)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px;"><p class="p_Normal"><span class="f_CourierFixed">create=checkbox</span></p>
+</td>
+<td class="fielddescription" style="width:687px;"><p class="p_Normal">Create a Checkbox-Field. <span class="f_Note">Note: you must set checkboxon and checkboxoff properties.</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">create=rightclick</span></p>
+</td>
+<td class="fielddescription" style="width:687px; background-color:#F7F7F7;"><p class="p_Normal">Create a right-click pop-up menu entry <span class="f_beas_Version">(beas 9.3 PL 2)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><a id="complete" class="hmanchor"></a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Properties: [ use comma for seperation ]</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:108px; background-color:#C0C0C0;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th class="fielddescription" style="width:56px; background-color:#C0C0C0;"><p class="p_Normal"><span style="font-weight: bold;">Object</span></p>
+</th>
+<th class="fielddescription" style="width:688px; background-color:#C0C0C0;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">alignment</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">column, compute</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal">The alignment of the control's text within its borders. 0 - (Default) Left, 1 - Right, 2 - Center, 3 - Justified</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">position</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">button</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">define position of the button</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">0=bottom</p>
+<p class="p_Normal">1=right</p>
+<p class="p_Normal">2=top</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">create=button=text=my button,name=mybutton,position=2</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">band</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">all</p>
+</td>
+<td class="fielddescription" style="width:688px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">The band or layer in the DataWindow object that contains the control.</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The returned text is one of the following, where # is the level number of a group: <span class="f_CourierFixed">detail, footer, header, header.#, summary, trailer.#, foreground, background.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">bitmap</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">bitmap, button</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><p class="p_Normal">Name of the bitmap file (bmp, gif, jpg, png)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">checkboxoff</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">column</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal">Only Checkbox: set the &quot;OFF&quot;-Value. Standard =N (if <span class="f_CourierFixed">checkboxon</span> = Y or J) or 0 (if <span class="f_CourierFixed">checkboxon</span>=1)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">checkboxon</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">column</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Only Checkbox: set the &quot;ON&quot;-Value. Standard=Y</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you set &quot;Y&quot; or &quot;J&quot;, beas set <span class="f_CourierFixed">checkboxoff</span> to &quot;N&quot;</p>
+<p class="p_Normal">if you set &quot;1&quot;, beas set <span class="f_CourierFixed">checkboxoff</span> to &quot;0&quot;</p>
+<p class="p_Example"><span class="f_Example">Example BoM-Position:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">global function form_loaded</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=checkbox=related=description,id=udf5,name=myfield,tab=41,text=MyField,&amp;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #ff0000;">checkboxon=Y,checkboxoff=N</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">dropdown</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">column</p>
+</td>
+<td class="fielddescription" style="width:688px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Changes the type of the Column to DropDown </a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_beas_Version"><span class="f_beas_Version">Available with Beas 2020.05</span></p>
+<p class="p_Normal">This field become a drop-down icon</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Available drop-down types:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; height:22px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Drop-down type</span></p>
+</td>
+<td style="vertical-align:top; height:22px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">color</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Choose color</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">bmp</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Choose internal bitmap</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">values</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Choose from values</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dropdown=values=red,blue,yellow</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">or</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dropdown=values=1=red,2=blue,3=yellow</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">bsl</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">get command from BSL</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sql</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Select command (all results must be type String</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">date</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Drop-down Calendar</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For more information <span class="f_See">see</span> Chapter Beas <a href="item_dw.htm#dropdown" class="topiclink">Item Object</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">In Work order add additional fields</p>
+<p class="p_Normal"><img alt="dropdownExample" width="373" height="402" style="margin:0;width:373px;height:402px;border:none" src="dropdownexample.png"/></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">global function etab_firstredraw</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf7&lt;tab&gt;id=udf7&lt;tab&gt;text=BoyumDate&lt;tab&gt;related=bplname&lt;tab&gt;</span><span class="f_CourierFixed" style="font-weight: bold; color: #0000ff;">dropdown=date&lt;tab&gt;type=date</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf8&lt;tab&gt;id=udf8&lt;tab&gt;text=BoyumBitmap&lt;tab&gt;related=udf7&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #0000ff;">dropdown=bmp</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf9&lt;tab&gt;id=udf9&lt;tab&gt;text=BoyumColor&lt;tab&gt;related=udf8&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #0000ff;">dropdown=color</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf10&lt;tab&gt;id=udf10&lt;tab&gt;text=BoyumValues&lt;tab&gt;related=udf9&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #0000ff;">dropdown=values=red,blue,yellow</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf11&lt;tab&gt;id=udf11&lt;tab&gt;text=BoyumNormal&lt;tab&gt;related=udf10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=name=udf12&lt;tab&gt;id=udf12&lt;tab&gt;text=BoyumItemList&lt;tab&gt;related=udf11&lt;tab&gt;</span><span class="f_CourierFixed" style="color: #0000ff;">dropdown=select &quot;ItemCode&quot;,&quot;ItemName&quot; from &quot;OITM&quot;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">expression</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">compute</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Formula for the compute field</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> today() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_Normal">field1 + field2</p>
+<p class="p_Normal">For more information <span class="f_See">see</span> PowerBuilder DataWindow help</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">fontsize</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">button</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal">define font size (30 .... 60)</p>
+<p class="p_Normal">Note: Not possible for buttons in the bottom</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">forecolor</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">button</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><p class="p_Normal">define fore color. example Red=255</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Not possible for buttons in the bottom</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">format</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">column, compute</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal">Output Format. (only for type Column and Compute), Default: &quot;[general]&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">height</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Height of the Object</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Optional</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Default 58 (SBO: 20)</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Don't define this if you create a button on the bottom, top or right side</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">id</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">column</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal">Only for columns. Name of the column that should be used ( e.g. userfield1, udf5 ..15)</p>
+<p class="p_Normal">Each Field can only be used once.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">menutext</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">button</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><p class="p_Normal">Text for right click menu</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">name</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal"><span style="font-weight: bold;">MANDATORY!</span> Unique name of the Object.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">related</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Related to another object. Set buttom of this object</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Field udf5 bottom from field &quot;udf4&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.create=column=related=udf4,text=myField</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the related field is part of a tab object, the new field is part of the same tab object and page</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">tab</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">column</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal">Only for columns: define the order of tab</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">tabobject</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><p class="p_Normal">object is part of tab area ... (normal &quot;etab&quot;)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">tabpage</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal">object is part of tab page (1...x or name of tab page) </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">text</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">column, text, button</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">Define Text, Only for Columns, Text and Button Objects: </a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Column Objects:</span> Describe the Description of the column. Beas creates additional text object (columnname_t) left of the column</p>
+<p class="p_Normal">Define x2 for position from text object</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Text Object and Buttons:</span> Define Text of this object</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">textstyle</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">button</p>
+</td>
+<td class="fielddescription" style="width:688px;"><p class="p_Normal">define text style 0=normal, 1=weight, 2=italic, 3=weigt+italic</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">tooltip</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">column, button, text</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><p class="p_Normal">define a tool tip</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">type</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">column</p>
+</td>
+<td class="fielddescription" style="width:688px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B1','TOGGLE0186B1_ICON')">Define type of column (date, numeric...)</a></td></tr></table></div>
+<div id="TOGGLE0186B1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 2</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">udf fields and userfields always from type &quot;String&quot;</p>
+<p class="p_Normal">With this command you can simulate another field types. But it is only a simulation</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Parameter:</p>
+<p class="p_Normal">date</p>
+<p class="p_Normal">#0 or #0.00 for number</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas converts the string in date or number and use the format, which you define</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">type=#0.00</span>: User make an input: 3</p>
+<p class="p_Normal">Beas inserts in field: 3.00</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">type=date</span>: User insert 1.10.19</p>
+<p class="p_Normal">Beas inserts - related to current settings, 01.10.2019</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note:</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Beas uses the current window regional setting for thedate format. The date is saved as string with the current date format from current window user. It is not a real date field. If </span><span class="f_Note" style="font-weight: bold;">SAP Date format is different from the format defined in the Windows Regional settings, the system uses the Windows regional settings</span><span class="f_Note">!</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">underline</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">text, column</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><p class="p_Normal">underline text (true/false or 1/0)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">values</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">column</p>
+</td>
+<td class="fielddescription" style="width:688px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B2','TOGGLE0186B2_ICON')">Define Values from a dropdown &nbsp;</a></td></tr></table></div>
+<div id="TOGGLE0186B2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Selection text: Value</p>
+<p class="p_Normal">e.g.<br />
+<span class="f_CourierFixed">red:1/yellow:2/green:3</span><br />
+The selection text will also be translated by the multilanguage engine</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">visible</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><p class="p_Normal">Visibly yes/no (1/0)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">width</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B3','TOGGLE0186B3_ICON')">Width of the field</a></td></tr></table></div>
+<div id="TOGGLE0186B3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Optional.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Default: 200 (SBO: 90)</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Don't set this, if you define a button</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">This needs no definition, if you work with &quot;related&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">width2</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">column</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B4','TOGGLE0186B4_ICON')">Define the width of the text field (optional)</a></td></tr></table></div>
+<div id="TOGGLE0186B4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=text=Myfield,</span><span class="f_CourierFixed" style="color: #008000;">x2=100</span><span class="f_CourierFixed">,name=myfield,id=udf5,</span><span class="f_CourierFixed" style="color: #008000;">x=1000</span><span class="f_CourierFixed">,y=300,</span><span class="f_CourierFixed" style="color: #800080;">width2=200</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In this example the calculated width for text object is<span style="color: #008000;"> 900</span>, but you overwrite with<span style="color: #800080;"> 200</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">x</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B5','TOGGLE0186B5_ICON')">X-Position</a></td></tr></table></div>
+<div id="TOGGLE0186B5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Define the x position from the object</p>
+<p class="p_Normal">If it is a part of a tab object, it relates to the X/Y position of the tab object</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">x2</span></p>
+</td>
+<td class="fielddescription" style="width:56px; background-color:#F7F7F7;"><p class="p_Normal">column</p>
+</td>
+<td class="fielddescription" style="width:688px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B6','TOGGLE0186B6_ICON')">X-Position for Text object from column object</a></td></tr></table></div>
+<div id="TOGGLE0186B6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you define a column object, you can define the related text field to. X-Position is &quot;x2&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">create=column=text=Myfield,x2=100,name=myfield,id=udf5,x=1000,y=300</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you work with related you don't need to define this</p>
+<p class="p_Normal">width from text field is x - x2</p>
+<p class="p_Normal">In this example 900</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:108px;"><p class="p_Normal"><span class="f_CourierFixed">y</span></p>
+</td>
+<td class="fielddescription" style="width:56px;"><p class="p_Normal">all</p>
+</td>
+<td class="fielddescription" style="width:688px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B7','TOGGLE0186B7_ICON')">Y-Position </a></td></tr></table></div>
+<div id="TOGGLE0186B7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Specific Feature for SBO Form:  </span>if &quot;max&quot; then on the lower edge</p>
+<p class="p_Normal"><span style="font-weight: bold;">Specific Feature for BEAS Form:  </span>if 0 then it will automatically placed on the lower edge.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If it is a part of a tab object, it relates to the X/Y position of the tab object</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example Video:</span></p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/_KJCCpJYnSY" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Create Label for each line from a sap b1 receipt document</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/pD9TDcJ0h9A" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Function: Open material issue form from time receipt window</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/-giw6cEdQsk" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Create issue document from work order bill of material window</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B1\',\'TOGGLE0186B1_ICON\')');
+HMInitToggle('TOGGLE0186B1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B2\',\'TOGGLE0186B2_ICON\')');
+HMInitToggle('TOGGLE0186B2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B3\',\'TOGGLE0186B3_ICON\')');
+HMInitToggle('TOGGLE0186B3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B4\',\'TOGGLE0186B4_ICON\')');
+HMInitToggle('TOGGLE0186B4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B5\',\'TOGGLE0186B5_ICON\')');
+HMInitToggle('TOGGLE0186B5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B6\',\'TOGGLE0186B6_ICON\')');
+HMInitToggle('TOGGLE0186B6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B7\',\'TOGGLE0186B7_ICON\')');
+HMInitToggle('TOGGLE0186B7','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

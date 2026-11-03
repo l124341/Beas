@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>rte</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="rte,RTF-Object,Visual RTF-Object" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="rte is a RTF-visualobject which can be activated and edited." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "redraw.htm",
+   prevP: "bsitemtooltip.htm",
+   currP: "rte.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "rte",
+   mailsubject: "Feedback on: Beas Script 2026.09 - rte",
+   sharesubject: "Beas Script 2026.09 - rte",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Rte",
+   mailpath: "Beas script &gt; BS Object reference &gt; form &gt; rte /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - rte").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "rte.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>rte</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">rte</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">rte is a RTF-visualobject which can be activated and edited.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Using this you have to apply the resize-command. </p>
+<p class="p_Normal">(<span class="f_CourierFixed">setvar=sys_resize=c or u</span>)</p>
+<p class="p_Normal">//</p>
+<p class="p_Normal">All properties and functions are addressed by <span class="f_CourierFixed">rte_1=..</span>.</p>
+<p class="p_Normal">e.g.</p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1=visible=true</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">(*1)</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">X-position. if &quot;min&quot; then automatically minimal position<br />
+<img alt="help-achtung" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-achtung.gif"/><br />
+you can only specify the position if auto-resize is set (variable sys_resize=u or c) </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">y</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Y-position. if &quot;min&quot; then automatically minimal position</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">width</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">width. if &quot;max&quot; then automatically maximal width</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">height. if &quot;max&quot; then automatically maximal height</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">visible</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">visibility. &nbsp;on with 1/j/y/t ...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">enabled</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">activated. on with 1/j/y/t...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">redraw / setredraw</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">redraw on/off</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">backcolor</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies the numeric value of the background color of the text editing area of the RichTextEdit. Values are -2 to 16,777,215.</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> <span class="f_CourierFixed">rte_1=backcolor=&lt;color:backroundcolor_activ&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">border</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether the control has a border. Values are:</p>
+<p class="p_Normal">TRUE - Has a border<br />
+FALSE - Does not have a border</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">borderstyle</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies the style of the border of the control. Values are: box, lowered, raised, shadowbox</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">clear</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Clears the selected text (if any) from the control (but does not place it in the clipboard).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">copy</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Copies (but does not delete) the selected contents of the RichTextEdit control (if any) to the clipboard.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">copyrtf</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Copies the selected contents of the RichTextEdit control to a string in rich text format in value</p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1=copyrtf</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setitem=myrtftext=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">cut</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Cuts (deletes) the selected contents from the RichTextEdit control (if any) to the clipboard.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">displayonly=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether users can make changes to the contents. Values are:</p>
+<p class="p_Normal">TRUE - The content, including text and input files, is protected (the user cannot edit it)</p>
+<p class="p_Normal">FALSE - The user can edit the content</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">documentname=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies the name that will display in the print queue when the user prints the contents of the control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dragauto=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether PowerBuilder will put the control automatically into Drag mode. Values are:</p>
+<p class="p_Normal">TRUE - When the control is clicked, the control is automatically in Drag mode.</p>
+<p class="p_Normal">FALSE - When the control is clicked, the control is not automatically in Drag mode. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">headerfooter=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether the RichTextEdit control has a header/footer section. This property must be set in the painter and cannot be changed during execution. </p>
+<p class="p_Normal">Values are:<br />
+TRUE - The control has a header/footer section<br />
+FALSE - The control does not have a header/footer section<br />
+If a document has a header or footer and is opened in a control that does not support a header/footer section, then header/footer information in the document is ignored. If the document is then saved in the same file, the header/footer information is lost.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">hscrollbar=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether the RichTextEdit control has a horizontal scrollbar. Values are:TRUE - A scrollbar displays</p>
+<p class="p_Normal">FALSE - A scrollbar does not display</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">insertnewtextdocument=filename</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">insert new textdocument. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">inserttextdocument=filename</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">add textdocument</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">insertnewrtfdocument=filename</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">insert rtf-document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">insertrtfdocument=filename</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">add rtf-document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">leftmargin=&lt;pos&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies the width of the left margin on the printed page.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">paste</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Inserts the contents of the clipboard (if any) at the insertion point in the control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pastertf=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Inserts a string at the insertion point when the string contains text in rich text format. You can specify whether to insert the string in the header or footer band, as well as the main body (detail band).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">printpreview=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Flips between Preview of the document (where header/footer, page size, and so on, are shown) and normal RTE control display.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">popmenu=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether the user has access to a pop-up menu by clicking the right mouse button on the control. The menu allows the user to cut and paste, insert a file, and select formatting options. Values are:</p>
+<p class="p_Normal"><span class="f_CourierFixed">true</span> - Pop-up menu is enabled<br />
+<span class="f_CourierFixed">false</span> - Pop-up menu is disabled</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">print=&lt;pagerange&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Prints the contents of the control.</p>
+<p class="p_Normal">pagerange: A string describing the pages you want to print. To print all pages, specify an empty string (&quot;&quot;). To specify a subset of pages, use dashes to specify a range and commas to separate ranges and individual page numbers—for example, &quot;1-3&quot; or &quot;2,5,8-10&quot;.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">replacetext=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Replaces selected text with given string. If no text has been selected, insert given string at cursor location.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">resizable=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">true = Control is realizable</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">returnsvisible=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether carriage returns are visible. Values are:</p>
+<p class="p_Normal">true - Carriage returns are visible</p>
+<p class="p_Normal">false - Carriage returns are hidden</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rigthtmargin=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies the width of the right margin on the printed page.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rulerbar=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether a ruler bar is visible above the editing area. If visible, the user can use it to see measurements while setting tabs and margins on the tab bar (see the TabBar property). Values are:</p>
+<p class="p_Normal">true - Ruler bar is visible</p>
+<p class="p_Normal">false - Ruler bar is hidden</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">savedocument=&lt;filename&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">save as Rtf-File, Encoding ANSI!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">spacesvisible=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scroll=&lt;linenum&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Scrolls a multiline edit control or the edit control of a DataWindow a specified number of lines up or down.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrollnextpage</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Scrolls to the next page of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrollntextrow</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Scrolls to the next row of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrollpriorpage</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Scrolls to the prior page of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrollpriorrow</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Scrolls to the prior instance of the document</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">scrolltorow=&lt;linenum&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Scroll to row..</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">selecttext=fromline=fromchar=toline=tochar</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Selects text beginning and ending at a line and character position</p>
+<p class="p_Normal"><span class="f_Example">example:</span> select all: </p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1.selectrow=1=1=999=999</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">selecttext</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Selects text in the RichTextEdit control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">selectedtext</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the selected text in string &quot;value&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1.selectedtext</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">meldung=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">selecttextline</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">select the current line</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">selecttextword</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">select the current word</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setaligment=left/right/center/justifiy</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets the alignment of the selected paragraphs</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setfocus</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">set focus to the control</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setposition=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">specifies the position of a control in the front-to-back order within a control.</p>
+<p class="p_Normal"><span class="f_CourierFixed">behind</span> - Position objectname behind &nbsp;precedingobject in the order</p>
+<p class="p_Normal"><span class="f_CourierFixed">totop</span> - Position objectname on top of all other controls<br />
+<span class="f_CourierFixed">tobottom</span> - Position objectname behind all other controls</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">settextcolor=&lt;rgbvalue&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the color of selected text </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tabbar=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether a bar for setting tabs is visible above the editing area. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tabvisible=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether tabs are visible. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">toolbar=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether a tool bar for formatting text is visible above the editing area.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">topmargin=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies the width of the top margin on the printed page.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">undo</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Cancels the last edit </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">undodepth=&lt;value&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets the maximum number of activities that Undo will undo.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">vscrollbar</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether the RichTextEdit control has a vertical scrollbar</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">wordwrap</span></p>
+</td>
+<td style="vertical-align:top; width:498px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether text wraps automatically to the next line when the line reaches the margin</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following values can be queried via &lt;...&gt;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:224px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;rte_1.modified&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:501px; padding:0; border:solid thin #000000;"><p class="p_Normal">Specifies whether the document has been modified since it was opened or last saved. The control's &quot;dirty&quot; flag is modified, indicating that the document is in an unsaved state. Values are:</p>
+<p class="p_Normal"><span class="f_CourierFixed">true</span> - The document has been modified</p>
+<p class="p_Normal"><span class="f_CourierFixed">false</span> - The document has not been modified</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">&lt;rte_1.selectedtext&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:501px; padding:0; border:solid thin #000000;"><p class="p_Normal">return the selected text</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Events</span></h1>
+<h1 class="p_Heading1">Events are triggered as global functions or are passed-on to declared objects.</h1>
+<h1 class="p_Heading1">These are the Events:</h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rte_modified</span></p>
+</td>
+<td style="vertical-align:top; width:500px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rte_getfocus</span></p>
+</td>
+<td style="vertical-align:top; width:500px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:225px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rte_rbuttondown</span></p>
+</td>
+<td style="vertical-align:top; width:500px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Example:</span></h1>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function resize</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// Info:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">//</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1=width=max</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1=height=100</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1=x=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1=y=120</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1=width=max</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=e_height=%sub(&lt;window:client:height&gt;,120)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1=height=&lt;e_height&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">//</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">global end</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">global function rte_modified</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=e_modify=yes</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end global</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Event &quot;Retrieve&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=sys_resize=f</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1=backcolor=&lt;color:backroundcolor_aktiv&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">rte_1=visible=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=e_modify=No</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">*1) From Sybase - Powerbuilder 10 - Documentation</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

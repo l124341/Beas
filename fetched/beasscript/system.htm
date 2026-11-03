@@ -1,0 +1,2344 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>system</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="access,authorization,recht,system,user,zugriff" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="System objects &nbsp;	Windows, Forms &nbsp;Property / Function Read Write Description system.windows.name x &nbsp;Returns all names of active windows as drop-down value field syste" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "addonsend.htm",
+   prevP: "sql-compatibilty-informations.htm",
+   currP: "system.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "system",
+   mailsubject: "Feedback on: Beas Script 2026.09 - system",
+   sharesubject: "Beas Script 2026.09 - system",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "System",
+   mailpath: "Beas script &gt; BS Object reference &gt; system /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - system").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "system.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>system</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">system</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="beasscript-logo-small" width="73" height="28" style="margin:0;width:73px;height:28px;border:none" src="beasscript-logo-small.png"/> </p>
+<p class="p_Normal">System objects</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Windows, Forms</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:210px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:35px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:55px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:559px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.windows.name</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:559px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Returns all names of active windows as drop-down value field</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.windows.id</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:559px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Returns all current internal IDs with name as drop-down value field</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.window.x.....</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:559px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Reference to a window</a> </td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.window.current.x </span><span class="f_CourierFixed" style="color: #008000;">// return x position from current window</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.window.parent.x </span><span class="f_CourierFixed" style="color: #008000;">// return x position from parent window</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.window.artikel_browse.x </span><span class="f_CourierFixed" style="color: #008000;">// return x position from first instance of the window with same name</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.window.editing.x </span><span class="f_CourierFixed" style="color: #008000;">// return x position of this window</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.window.editing.dw_1.item.itemcode.value&gt; </span><span class="f_CourierFixed" style="color: #008000;">// return the value of this item</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.zoom</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:559px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Define zoom factor</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">set the zoom-factor for all windows (not for the currently open windows)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas works with the zoom-factor from the SAP setup</p>
+<p class="p_Normal">you can manipulate this zoom-setting with this command.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">tools=zoom=&lt;factor&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system=zoom=120</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas works with the zoom-factor from the SAP setup</p>
+<p class="p_Normal">you can manipulate this zoom-setting with this command.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you set the zoom-factor only for current window:</p>
+<p class="p_Normal"><span class="f_CourierFixed">window.zoom=&lt;factor&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">only for a datawindow</p>
+<p class="p_Normal">dw_1.modify=datawindow.zoom=&lt;factor&gt;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">get current zoom:</p>
+<p class="p_Normal">message=&lt;window.zoom&gt;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.design</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:559px; padding:2px; border:solid thin #000000;"><p class="p_Normal">current design <span class="f_PowerBuilderVariable">gapp.is_design</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">signature, brightmorning, goldenthread, fiori</span></p>
+<p class="p_Normal">you can set this with</p>
+<p class="p_Normal"><span class="f_CourierFixed">app.skinstyle=style</span> </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.buttonstyle</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:559px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Returns Button style</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">1 = SAP Design</span></p>
+<p class="p_Normal">can have compatibility problems if you created script with</p>
+<p class="p_Normal"><span class="f_CourierFixed">windowevent click b1</span></p>
+<p class="p_Normal">Change this to 0, if you can't change the customized script</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">0 = old style &nbsp;</span></p>
+<p class="p_Normal">Action buttons not always on the left side</p>
+<p class="p_Normal">Search button visible in some windows</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.designedit</span></p>
+</td>
+<td style="vertical-align:top; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:55px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:559px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Defines Design information</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system=designedit=[propertie]=[value]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">set Design-Properties, example:</p>
+<p class="p_Normal"><span class="f_CourierFixed">system=designedit=line_with=1</span></p>
+<p class="p_Normal">(not for current opened windows)</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">line_width=x</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">width-propertie of underline from textfield to column</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">line_shortcorrection=x</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set correction-propertie</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">line_ycorrection=x</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">set y-correction-propertie</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rectangle_width</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">width-propertie rectancle from column</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">font_height=x (fontsize=x)</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the font-height for text-fields</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">column_height=x</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the column-font-height</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">column_edit_height=x</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the editable column-font-height</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">tabsheet_zoom_percent=x%</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the %-factor for width of tabsheets</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">zoom=x</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #000000;"><p class="p_Normal">set the zoom-factor for all datawindows</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">User, Access and Language</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:210px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:33px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:53px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:578px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.user</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current User ID (OUSR.U_NAME) <span class="f_PowerBuilderVariable">gapp.is_sachb_id</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.pers_id</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Personal ID (BEAS_PERS.PERS_ID) <span class="f_PowerBuilderVariable">gapp.is_pers_id</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.usersign</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current internal User ID (OUSR.Internal_K) <span class="f_PowerBuilderVariable">gapp.il_usersign</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.superuser</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Return true, if use have admin rights <span class="f_PowerBuilderVariable">gapp.ib_supervisor</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.portaluser</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Beas Service Portal User <span class="f_PowerBuilderVariable">gapp.is_portaluser</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.windowsuser</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current user which connected to windows <span class="f_PowerBuilderVariable">gapp.is_windowuser</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.windows_language</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Return the current language from windows regional settings <span class="f_PowerBuilderVariable">gapp.is_windows_language</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.authorization.load</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Reload the authorization list (beas and SAP B1 authorizations)</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">After changing the authorization, you can reload the data in the internal authorization cache</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.authorization.load</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">see</span> placeholder</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.authorization.check=id&gt; </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">alternative name</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.recht.load, system.access.load, system.zugriff.load</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Compatibility mode: The commands below are working, as well:</p>
+<p class="p_Normal"><span class="f_CourierFixed">zugriff=load</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">gapp.ids_access</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">use object gapp.of_recht</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.authorization.check=id</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Checks if user has access to this ID</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">check if the user has authorization to this function</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;system.authorization.check=ART_EDIT&gt; = 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;messagebox=User have full access</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return values</p>
+<p class="p_Normal"><span class="f_CourierFixed">1</span> = full access<br />
+<span class="f_CourierFixed">2</span> = read access<br />
+<span class="f_CourierFixed">-1</span> = no access</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can check all beas and sap authorization settings</p>
+<p class="p_Normal">if this a sap authorization, you must set the prefix &quot;SAP:&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span> </p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;syst:em.authorization.check=SAP:Boy-Validation&gt; = 1 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;messagebox=User have full access to Boy-Validaton system</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">alternative name</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.recht.check=id&gt;, &lt;system.access.check=id&gt;, </span><br />
+<span class="f_CourierFixed">&lt;system.zugriff.check=id&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Compatibility mode: The commands below are working, as well:</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;zugriff=id&gt;</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">&nbsp;</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">&nbsp;</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Open a form without permission - OVERWRITE window authorization:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If the user should access a form without permission you can deactivate the permission-management when opening the form: </p>
+<p class="p_Normal"><span class="f_CourierFixed">openwindow=&lt;windowname&gt;=&lt;parameter&gt;=masterbef=zugriff=voll</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.license.[property]</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Returns License information</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&lt;system.license.[property]&gt;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:181px; background-color:#DDDDDD; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:378px; background-color:#DDDDDD; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">basiccount</span></p>
+</td>
+<td style="vertical-align:top; width:378px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Count of basic licenses</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">terminalmode</span></p>
+</td>
+<td style="vertical-align:top; width:378px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">1 = run in terminal mode license</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">demmomode</span></p>
+</td>
+<td style="vertical-align:top; width:378px; padding:2px; border:solid thin #000000;"><p class="p_Normal">1 = demo is active</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">installationnumber</span></p>
+</td>
+<td style="vertical-align:top; width:378px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">return the installation number</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">systemnumber</span></p>
+</td>
+<td style="vertical-align:top; width:378px; padding:2px; border:solid thin #000000;"><p class="p_Normal">return the system number</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">database</span></p>
+</td>
+<td style="vertical-align:top; width:378px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">return the licensed database name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">licenseerror</span></p>
+</td>
+<td style="vertical-align:top; width:378px; padding:2px; border:solid thin #000000;"><p class="p_Normal">return the last license error message</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:181px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">[license id]</span></p>
+</td>
+<td style="vertical-align:top; width:378px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Return 1, if user have the access to this license id, </p>
+<p class="p_Normal">Return -1, if user don't have access to this license id</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">BEAS_APS</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">BEAS_BASIC</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">BEAS_MTC</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">BEAS_PROJECT</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">BEAS_PCONFIG</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">BEAS_PCONFIGSALES</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:53px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Translation Methods</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation=:init</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">loads the language-table (current language)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation=:init=&lt;sprache&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">loads the specified language</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation=:$&lt;phrase&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">translates the specified phrase word by word</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation=&lt; &nbsp;&gt;%%&lt;substitute&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">translates the substitute text. If there is no translation then uses the original text </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation=:check=&lt;language&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">checks if language is current. If not language gets current</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation=:on / :off</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">adjusts the options:</p>
+<p class="p_Normal">Debug=D=learning mode</p>
+<p class="p_Normal">Off=no initialisation </p>
+<p class="p_Normal">On=default </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation=:getsystem</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">gets the the current language of Windows and sets it as current BEAS-language. No activation</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.translation=:debug</span></p>
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><p class="p_Normal">activates the learning mode. All strange words get logged. </p>
+<p class="p_Normal">(compatiblity)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:377px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="help-hinweis" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-hinweis.gif"/> Special behavior</p>
+<p class="p_Normal">if a word starts with &quot;&lt;&quot; then there is no translation (reserved as placeholder command)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="help-beispiel" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-beispiel.gif"/><span class="f_Heading1"> Example</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Individual words can be translated as follows: (POWERSCRIPT)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">MyText = gapp.of_sprache(&quot;MyText&quot;)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">or with BEASSCRIPT</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;spr:MyText&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example for translating a table (BEASSCRIPT)</p>
+<p style="text-indent: -27px; margin: 0 0 0 27px;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-indent: -27px; margin: 0 0 0 27px;">..after retrieve</p>
+<p style="text-indent: -27px; margin: 0 0 0 27px;"><span class="f_CourierFixed">for=loop=1=&lt;rowcount&gt;</span></p>
+<p style="text-indent: -27px; margin: 0 0 0 27px;"><span class="f_CourierFixed"> &nbsp;setrow=&lt;loop&gt;</span></p>
+<p style="text-indent: -27px; margin: 0 0 0 27px;"><span class="f_CourierFixed"> &nbsp;sprache=&lt;bez&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;setitem=bez=&lt;sprache&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">next</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can get the current language with &lt;currentspr_id&gt; (BEASSCRIPT):</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">meldung=Current language: &lt;currentspr_id&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Change to an other language (BEASSCRIPT):</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">sprache:init E</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">System Functions and Variables</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:210px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:35px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:47px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:578px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.betamodus</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns true if beta mode is active</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">gapp.of_mget(&quot;betamodus&quot;,&quot;N&quot;) J/N</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; height:12px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.common</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; height:12px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; height:12px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; height:12px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns true if common service is active &nbsp;</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">if gapp.of_common()=1=active / 0=not active</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.helponline</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Opens online help system</p>
+<p class="p_Normal">You can define the link</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.helponline=mychapter#myanker</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.databasetype</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Returns <span class="f_CourierFixed">MSSQL</span> or <span class="f_CourierFixed">HANA </span>- defined fix in the program  <span class="f_PowerBuilderVariable">gapp.is_databasetype</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.debug</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Debug functions</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a id="debug" class="hmanchor"></a>Returns current Debug Level : messagebox=&lt;system.debug&gt; <span class="f_PowerBuilderVariable">gapp.is_debug</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Available functions:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px;"><p class="p_Normal"><span style="font-weight: bold;">Function</span></p>
+</td>
+<td class="fielddescription" style="width:370px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px; background-color:#F7F7F7;"><p class="p_Normal">on</p>
+</td>
+<td class="fielddescription" style="width:370px; background-color:#F7F7F7;"><p class="p_Normal">activates the debug</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.debug=on</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px;"><p class="p_Normal">off</p>
+</td>
+<td class="fielddescription" style="width:370px;"><p class="p_Normal">disables debug, but does not close it</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px; background-color:#F7F7F7;"><p class="p_Normal">close</p>
+</td>
+<td class="fielddescription" style="width:370px; background-color:#F7F7F7;"><p class="p_Normal">closes debug window</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px;"><p class="p_Normal">level=[0...2]</p>
+</td>
+<td class="fielddescription" style="width:370px;"><p class="p_Normal">defines debug level</p>
+<p class="p_Normal">In this way you can change the level inside your script</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.debug=level=2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">.... my script</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.debug=level=1</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px; background-color:#F7F7F7;"><p class="p_Normal">html</p>
+</td>
+<td class="fielddescription" style="width:370px; background-color:#F7F7F7;"><p class="p_Normal">returns debug log as html in variable &quot;&lt;value&gt;&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.debug=html</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px;"><p class="p_Normal">html=&lt;variablename&gt;</p>
+</td>
+<td class="fielddescription" style="width:370px;"><p class="p_Normal">returns debug log as html in variable &quot;&lt;variablename&gt;&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.debug=html=debughtml</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;debughtml&gt;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px; background-color:#F7F7F7;"><p class="p_Normal">htmlfile=&lt;filename&gt;</p>
+</td>
+<td class="fielddescription" style="width:370px; background-color:#F7F7F7;"><p class="p_Normal">Creates a debugfile in html format in the specified file</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.debug=htmlfile=c:\debug\debug.html</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:175px;"><p class="p_Normal">mirror</p>
+</td>
+<td class="fielddescription" style="width:370px;"><p class="p_Normal">Mirrors the main information of the current window</p>
+<p class="p_Normal">This way you can see &quot;inside&quot; of the function in the actual moment</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.debug=mirror</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.desingfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Folder for the icons of the current design <span class="f_PowerBuilderVariable">gapp.is_pf_design</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.devmode</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns true if development mode is active <span class="f_PowerBuilderVariable">gapp.ib_entwicklung</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.enablemenuitem.XXX</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Enables a menuID. This function works in both environments (Beas Standalone and Beas into SAP)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.eventname.x</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Returns the name of a customization event</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.eventname.1&gt;</span> = Double-click</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.eventname.2&gt;</span> = Form load and so on</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.exit[=true/false]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.kill[=true/false]</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Exits the application</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">system.exit</span> --&gt; tries to close all windows and closes the application</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.exit=true</span> --&gt; asks if the application should be closed</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.kill</span> --&gt; closes the application immediately without closing the open windows</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.kill=true</span> --&gt; asks if the application should be closed</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.form</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.window</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Read: Returns windows information from the current runtime</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.windows.count</span> -&gt; returns count of active windows</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.windows.id</span> -&gt; returns drop-down value (name=id) from all current active windows</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.windows.dwname</span> -&gt; returns drop-down value (name=name) from all current active windows</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">Write: sets commands in this window</a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:211px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">system.form.[name].setfocus</span></p>
+</td>
+<td style="vertical-align:top; width:283px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Window receives the focus</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.form.artikel_browse.setfocus</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:211px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:283px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.insidesap</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Started inside SAP true / false <span class="f_PowerBuilderVariable">gapp.is_beasgui true/false</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.project</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Return current Project Name (for customizing)  <span class="f_PowerBuilderVariable">gapp.is_mandant</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.qualtitycontrol</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">true, if quality mode is active. You can set this in  <span class="f_PowerBuilderVariable">gapp.ib_qualitycontrol</span></p>
+<p class="p_Normal">beas.ini - CONNECT - qualitycontrol=y &nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; height:12px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.servermodus</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; height:12px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; height:12px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; height:12px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns true, if servermodus is activated. In this mode Beas does not display any messages and does not open question or other modal forms.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can set this with</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=servermodus=true/false </span><span class="f_PowerBuilderVariable">gapp.il_servermode 0/1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.location</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">current location (web app - print solution) <span class="f_PowerBuilderVariable">gapp.is_location</span> <span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.app_id</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">current running app ID (web app - print solution) <span class="f_PowerBuilderVariable">gapp.is_app_id</span> <span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.session_id</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">WebApp session ID <span class="f_PowerBuilderVariable">gapp.is_session_id</span> <span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.sessionname</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Windows Session Name <span class="f_PowerBuilderVariable">gapp.is_sessionname</span><br />
+returns the station name, which Beas is using for current session <span class="f_PowerBuilderVariable">gapp.is_stationname</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.stationnameinfo</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">describes, in which way Beas defined the stationname</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.systemtest</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Start parameter requires a systemtest <span class="f_PowerBuilderVariable">gapp.is_systemtest &quot;true&quot;/&quot;false&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.store</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B1','TOGGLE0186B1_ICON')">Reads and writes public variable</a></td></tr></table></div>
+<div id="TOGGLE0186B1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas can work with &quot;public variables&quot;. </p>
+<p class="p_Normal">These are visible in every area, every window, in the complete task. If you close Beas, you will lose all public variables which are only visible between definition and running time.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">write a global variable (store in the system)</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.store.myvariable=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">read a setup variable</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.store.myvariable&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can work with variables on variable name to</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=test=myglobalvariable</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.store.&lt;test&gt;=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">this write your value in the global variable setting &quot;myglobalvariable&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.setup</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B2','TOGGLE0186B2_ICON')">Reads and writes database related settings</a></td></tr></table></div>
+<div id="TOGGLE0186B2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas has a setup table in which all database related &nbsp;settings saved. With this method you can write and read every variable</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">write a setup variable</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.setup.myvariable=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">read a setup variable</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.setup.myvariable&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can work with variables on variable name to</p>
+<p class="p_Normal"><span class="f_CourierFixed">setvar=mysetup=mysetting</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.setup.&lt;mysetup&gt;=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">this writes your value in the database setting &quot;mysetting&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Use internal cache system</span></p>
+<p class="p_Normal">if the variable is not a counter or setting that you do not change every hour, use the variable &quot;<span class="f_CourierFixed">&lt;system.msetup&gt;</span>&quot;. This uses the internal cache and is gradually faster.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.msetup</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B3','TOGGLE0186B3_ICON')">Reads a database related setting from the internal cache system</a></td></tr></table></div>
+<div id="TOGGLE0186B3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas has a setup table in which all database related &nbsp;settings saved. With this method you can write and read every variable</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">read a setup variable from internal cache</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.msetup.myvariable&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can write a setup variable with</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.setup.myvariable=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the variable not inside the cache, Beas loads it from the database</p>
+<p class="p_Normal">if you change a variable, the cache in the current task is updated too, but not on other stations or other tasks.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas performs a refresh every hour.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">use this only if the variable is not a counter or setting, which you don't change every hour.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.counter=value</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B4','TOGGLE0186B4_ICON')">read a counter and increment the counter</a></td></tr></table></div>
+<div id="TOGGLE0186B4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.counter=[value]&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">creates and reads a counter for the defined value</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;system.counter=mycounter1&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">First execute: 1</p>
+<p class="p_Normal">Second execute: 2</p>
+<p class="p_Normal">Third execute: 3</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return -1 in error case, example database error</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">Powerbuilder: ll_counter=gapp.of_counter(var)</span></p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.terminalmodus</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Returns true if Beas is running as terminal <span class="f_PowerBuilderVariable">gapp.is_terminalmodus &quot;true&quot;/&quot;false&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.window.[name]...</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B5','TOGGLE0186B5_ICON')">Returns information from this window</a></td></tr></table></div>
+<div id="TOGGLE0186B5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return ItemCode from current active item master data window</p>
+<p class="p_Normal">if not active, system return nothing</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.window.artikel_edit.dw_1.item.itemcode.value&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.windowsuser</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Current Name of Windows User <span class="f_PowerBuilderVariable">gapp.is_widnowuser</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.hostname</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Return the current host name <span class="f_beas_Version">beas 9.3 PL 3</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.ipaddress</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:47px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:578px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Return own ip address beas <span class="f_beas_Version">9.3 PL 3</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B6','TOGGLE0186B6_ICON')">Version Information</a></td></tr></table></div>
+<div id="TOGGLE0186B6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:209px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:35px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:56px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:490px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:56px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:490px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.versionnumber</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:56px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:490px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Returns Version as Number </p>
+<p class="p_Normal"><span class="f_Example">Example:</span> 92006000000 <span class="f_PowerBuilderVariable">gl_version</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.versionview</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:56px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:490px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Completely visible Version number with Demo/Beta/Hana &nbsp;Information</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">9.2 (6.0) PL: 06 HF: 01 <span class="f_PowerBuilderVariable">gapp.is_versionview</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.shortversion</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:56px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:490px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Short Version text, <span class="f_PowerBuilderVariable">gapp.is_shortversion</span></p>
+<p class="p_Normal">Beas 9.2 PL 06 Build 0 = 92006000</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.version</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:56px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:490px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the Version  <span class="f_PowerBuilderVariable">gapp.is_version</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.wms_installed</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:56px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:490px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B7','TOGGLE0186B7_ICON')">Returns status in case of Boyum WMS Installation</a></td></tr></table></div>
+<div id="TOGGLE0186B7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The first time you read this variable (or is called internally by beas) we check if WMS is installed</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Values:</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-weight: bold;">WMS Installed:</span><span class="f_CourierFixed"> it contains 'Y'</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-weight: bold;">WMS not installed:</span><span class="f_CourierFixed"> it contains 'N'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">message=WMS Version: &lt;system.wms_installed&gt;</span></p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 3</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.wms_version</span></p>
+</td>
+<td style="vertical-align:middle; width:35px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:middle; width:56px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:490px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B8','TOGGLE0186B8_ICON')">Return Version of installed Boyum WMS Software</a></td></tr></table></div>
+<div id="TOGGLE0186B8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The first time you read this variable (or is called internally by beas) we check if WMS is installed</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Values:</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-weight: bold;">WMS Installed:</span><span class="f_CourierFixed"> it contain the WMS version</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-weight: bold;">WMS not installed:</span><span class="f_CourierFixed"> it contain 'n/a'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">message=WMS Version: &lt;system.wms_version&gt;</span></p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 9.3 PL 3</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B9','TOGGLE0186B9_ICON')">Path</a></td></tr></table></div>
+<div id="TOGGLE0186B9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:207px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:33px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:38px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:525px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.homefolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the program home folder</p>
+<p class="p_Normal"><span class="f_CourierFixed">normal: c\program file(x86)\beas software\beas\</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.defaultfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the path of psr standard files <span class="f_PowerBuilderVariable">gapp.is_pf_std</span></p>
+<p class="p_Normal">(normal program\)</p>
+<p class="p_Normal">if you need the entire folder of the psr file</p>
+<p class="p_Normal"><span class="f_CourierFixed">&lt;system.homefolder&gt;&lt;system.defaultfolder&gt;</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">gapp.os_pf_home</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.addonfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the path for Beas addons <span class="f_PowerBuilderVariable">gapp.is_pf_addon</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.tempfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the temp folder for Beas <span class="f_PowerBuilderVariable">gapp.is_pf_tmp2</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.logfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the path of debug logs and other logs <span class="f_PowerBuilderVariable">gapp.is_pf_logpath</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.bitmapfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the bitmap folder of Beas for Beas icons <span class="f_PowerBuilderVariable">gapp.is_pf_bmp</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.programdatafolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the program data folder (%programdata%) <span class="f_PowerBuilderVariable">gapp.is_pf_appdata</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.serverfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the program server folder (b1_shr folder) <span class="f_PowerBuilderVariable">gapp.is_serverfolder</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.sharedfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns B1_SHR or B1_SHF - related to the database system  <span class="f_PowerBuilderVariable">gapp.is_sharedfolder</span> </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.picturefolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns SAP B1 picture folders</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">gapp.of_function(checkbitmappath&quot;) // set instance and checn, if valid</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">gapp.is_pf_picturefolder</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.sapfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the folder of the SAP B1 Program folder</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">gapp.is_pf_sapfolder</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.programfilesfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the program files folder (c:\program files(x86)) <span class="f_PowerBuilderVariable">gapp.is_pf_programfiles</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.excelpath</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the excel path  <span class="f_PowerBuilderVariable">gapp.is_systemtree_excelpath</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.attachpath</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the attachment path <span class="f_PowerBuilderVariable">gapp.is_systemtree_attach</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.wordpath</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the word path <span class="f_PowerBuilderVariable">gapp.is_systemtree_word</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:207px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.projectfolder</span></p>
+</td>
+<td style="vertical-align:middle; width:33px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:38px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:525px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the current project folder <span class="f_PowerBuilderVariable">gapp.is_pf_md</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BA','TOGGLE0186BA_ICON')">SQL Server</a></td></tr></table></div>
+<div id="TOGGLE0186BA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:224px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:34px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:middle; width:40px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:510px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:224px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.sqlversion</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:40px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:510px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns SQL server version, example: 11 or 12 <span class="f_PowerBuilderVariable">sqlca.ii_version</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.sqlversion_long</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:40px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:510px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the long version name <span class="f_PowerBuilderVariable">sqlca.is_sqlversion</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; height:11px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.databasetype</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; height:11px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td style="vertical-align:middle; width:40px; height:11px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:510px; height:11px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the database type MS-SQL or HANA <span class="f_PowerBuilderVariable">sqlca.sqlserver</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BB','TOGGLE0186BB_ICON')">Global Program settings</a></td></tr></table></div>
+<div id="TOGGLE0186BB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:222px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:34px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:top; width:40px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:513px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.reservationsystem</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:40px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:513px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns true if reservation system is active</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">if gapp.of_mget(&quot;reservation_disable&quot;,&quot;N&quot;) &lt;&gt; &quot;J&quot; then return &quot;N&quot;</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">return &quot;J&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.itemspecweight</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:40px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:513px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns true if you can define the weight per item</p>
+<p class="p_Normal">Otherwise the weight is per material art (setting artikel_speggew)</p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">if gapp.of_mget(&quot;artikel_spezgew&quot;,&quot;N&quot;)=&quot;J&quot; then </span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable"> &nbsp;ls_wert=&quot;true&quot;</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">else</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable"> &nbsp;ls_wert=&quot;false&quot;</span></p>
+<p class="p_PowerBuilderVariable"><span class="f_PowerBuilderVariable">end if</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.maincurrency</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:40px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:513px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the main currency value <span class="f_PowerBuilderVariable">gapp.is_maincurrncy</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.companyname</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:40px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:513px; padding:2px; border:solid thin #000000;"><p class="p_Normal">returns the name of current company <span class="f_PowerBuilderVariable">gapp.is_system_cmpnyname</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system.continvnt</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:40px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:513px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Cont. Inventory System active? Y/N <span class="f_PowerBuilderVariable">gapp.is_continvnt</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BC','TOGGLE0186BC_ICON')">Development system</a></td></tr></table></div>
+<div id="TOGGLE0186BC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.source</span>: administrate development help system</p>
+<p class="p_Normal">This object return information for all events and properties. Powerbuilder: It is in datastore gapp.ids_source</p>
+<p class="p_Normal">Beas saves all information in file <span class="f_CourierFixed">sys_event_definitions.psr</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Available columns:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:201px; height:22px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Column</span></p>
+</th>
+<th style="vertical-align:top; width:611px; height:22px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:201px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">eventarea</span></p>
+</td>
+<td style="vertical-align:top; width:611px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BD','TOGGLE0186BD_ICON')">The Main object / Part</a></td></tr></table></div>
+<div id="TOGGLE0186BD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Available areas:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:128px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Area</span></p>
+</th>
+<th style="vertical-align:top; width:461px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">event</span></p>
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Default events</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">beasmenu,workordermanagement, stockmanagement,qcmanagement, sales</span></p>
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Properties for logic Events</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">item</span></p>
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Properties for item event</p>
+<p class="p_Normal">filter: Available for follow object types</p>
+<p class="p_Normal">Script: define value for this property</p>
+<p class="p_Normal">for writable properties</p>
+<p class="p_Normal"><span class="f_CourierFixed">dd:</span> = every input</p>
+<p class="p_Normal"><span class="f_CourierFixed">dd:bmp</span> = bitmap</p>
+<p class="p_Normal"><span class="f_CourierFixed">dd:color</span> = color</p>
+<p class="p_Normal"><span class="f_CourierFixed">dd:display=value,display=value</span> = choose list</p>
+<p class="p_Normal"><span class="f_CourierFixed">dd:dir</span> = file choose</p>
+<p class="p_Normal">&nbsp;<br />
+Readable properties<br />
+<span class="f_CourierFixed">return:value1,value2...</span> List off values<br />
+<span class="f_CourierFixed">da:value</span> List of chooseable sub properties</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">form</span></p>
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Properties for window</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">window</span></p>
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Available windows for openwindow</p>
+<p class="p_Normal">in source you can define additional information</p>
+<p class="p_Normal"><span class="f_CourierFixed">f: </span>the file name of window</p>
+<p class="p_Normal"><span class="f_CourierFixed">p:[name]=[Description]=[variable name]</span> define arguments</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">f:fert_ftpos_browse.psr</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">p:DocEntry=Work order document Number BELNR_ID=str_parm.belnr_id</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">format</span></p>
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><p class="p_Normal">available column formats</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">system</span></p>
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Object &quot;system&quot;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dwx</span></p>
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Object dw_1...dw_7,dw_edit</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:461px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:201px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">eventid</span></p>
+</td>
+<td style="vertical-align:top; width:611px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the Event/Property of this area</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:201px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">eventname</span></p>
+</td>
+<td style="vertical-align:top; width:611px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Long description</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:201px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">description</span></p>
+</td>
+<td style="vertical-align:top; width:611px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Detail in HTML Format</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:201px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Script</span></p>
+</td>
+<td style="vertical-align:top; width:611px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Additional information, see Area</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:201px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Read</span></p>
+</td>
+<td style="vertical-align:top; width:611px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Only for Read commands</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:201px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Write</span></p>
+</td>
+<td style="vertical-align:top; width:611px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Only for Write commands</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:201px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Filter</span></p>
+</td>
+<td style="vertical-align:top; width:611px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Additional filter function</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:222px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Property / Function</span></p>
+</th>
+<th style="vertical-align:middle; width:34px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th style="vertical-align:top; width:52px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th style="vertical-align:top; width:502px; background-color:#C0C0C0; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">reload</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:502px; padding:2px; border:solid thin #000000;"><p class="p_Normal">reloads the help system: system.source.reload</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">filter</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:502px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BE','TOGGLE0186BE_ICON')">Defines a filter for the following functions</a></td></tr></table></div>
+<div id="TOGGLE0186BE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.source.filter=myfilter</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Defines which entry you need from ththe help system for the next functions, example for function setvalues</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setvalues</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:502px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BF','TOGGLE0186BF_ICON')">sets value list for a drop-down field with information the from source help system</a></td></tr></table></div>
+<div id="TOGGLE0186BF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.source.setvalues=&lt;target-dw&gt;=&lt;taget-column&gt;=eventid,eventname</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">With this you can see all datawindow properties in field &quot;object2&quot; as drop-down</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.source.filter=eventarea=&quot;dwx&quot; and write=1</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">system.source.setvalues=dw_1.object2,eventid,eventid</span> </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:222px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setdescription</span></p>
+</td>
+<td style="vertical-align:middle; width:34px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:52px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-align: center;"><span class="f_CourierFixed">x</span></p>
+</td>
+<td style="vertical-align:top; width:502px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C0','TOGGLE0186C0_ICON')">Overwrites a description and saves it</a></td></tr></table></div>
+<div id="TOGGLE0186C0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system.source.setdescription=areaid=eventid=&lt;newdescription&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">use this only for internal development</p>
+<p class="p_Normal">internal object: ue_system_column</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sys_column=edit</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C1','TOGGLE0186C1_ICON')">Open window settings for the current window</a></td></tr></table></div>
+<div id="TOGGLE0186C1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">system=sys_column=edit=&lt;dw_x&gt;=name</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:144px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">edit</span></p>
+</td>
+<td style="vertical-align:top; width:337px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the command</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:144px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">dw_x</span></p>
+</td>
+<td style="vertical-align:top; width:337px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">empty=dw_1, otherwise the datawindow dw_2,..dw_6</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:144px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">name</span></p>
+</td>
+<td style="vertical-align:top; width:337px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the name of the window</p>
+<p class="p_Normal">if empty, beas use the value from <span class="f_CourierFixed">&lt;sys_dynamicbrowsename&gt;</span></p>
+<p class="p_Normal">if empty, beas use the datawindowname from datawindow or current template</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">you can set the following variables:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:144px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sys_dwname</span></p>
+</td>
+<td style="vertical-align:top; width:337px; padding:2px; border:solid thin #000000;"><p class="p_Normal">the datawindow name (if other as current dw name)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:144px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sys_template</span></p>
+</td>
+<td style="vertical-align:top; width:337px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">the current template name. if you set this beas load the information from current tempalte</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:144px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sys_columneditlocked</span></p>
+</td>
+<td style="vertical-align:top; width:337px; padding:2px; border:solid thin #000000;"><p class="p_Normal">if true, then all fields only for view, but not for edit</p>
+<p class="p_Normal">beas delete the the variable after calling</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:144px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sys_columnblocked</span></p>
+</td>
+<td style="vertical-align:top; width:337px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">you can define the fields, which the use can't choose: <span class="f_CourierFixed">*fieldname*;*fieldname*;...</span></p>
+<p class="p_Normal">beas delete the the variable after calling</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">design-reload</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><p class="p_Normal">reload the design : <span class="f_CourierFixed">system=design-reload</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sys_usersetup</span></p>
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">simple setup window</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C2','TOGGLE0186C2_ICON')">SAP Business One system variables</a></td></tr></table></div>
+<div id="TOGGLE0186C2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Direct access to all main SAP Business System Variables (table OADM)</p>
+<p class="p_Normal">Use prefix &quot;s<span class="f_CourierFixed">ystem.sap</span>&quot; - only Read</p>
+<p class="p_Normal"><span class="f_Example">Example: </span><span class="f_CourierFixed">&lt;system.sap.direcrate&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">compatibility: in older Beas versions you can use <span class="f_CourierFixed">&lt;sbodiapi.property&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">directrate</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">userprodwip</p>
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">useprodpl</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">continvnt</span></p>
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C3','TOGGLE0186C3_ICON')">continue stock active (y/n)</a></td></tr></table></div>
+<div id="TOGGLE0186C3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return, if continue stock system is active or not</p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;system.sap.continvnt&gt; = y then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;messagebox=active</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">pricessys</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">negamount</span></p>
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">levelwarn</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">warnbywhs</span></p>
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">syscurrncy</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">maincurncy</span></p>
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">adrsfromwh, adrfromwh</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">multibranch, branch</span></p>
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">format,formate</span></p>
+</td>
+<td style="vertical-align:top; width:581px; padding:2px; border:solid thin #000000;"><p class="p_Normal">reload sap formats &nbsp;for numbers, price and so on (no result)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:169px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:581px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B1\',\'TOGGLE0186B1_ICON\')');
+HMInitToggle('TOGGLE0186B1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B2\',\'TOGGLE0186B2_ICON\')');
+HMInitToggle('TOGGLE0186B2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B3\',\'TOGGLE0186B3_ICON\')');
+HMInitToggle('TOGGLE0186B3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B4\',\'TOGGLE0186B4_ICON\')');
+HMInitToggle('TOGGLE0186B4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B5\',\'TOGGLE0186B5_ICON\')');
+HMInitToggle('TOGGLE0186B5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B6\',\'TOGGLE0186B6_ICON\')');
+HMInitToggle('TOGGLE0186B6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B7\',\'TOGGLE0186B7_ICON\')');
+HMInitToggle('TOGGLE0186B7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B8\',\'TOGGLE0186B8_ICON\')');
+HMInitToggle('TOGGLE0186B8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B9\',\'TOGGLE0186B9_ICON\')');
+HMInitToggle('TOGGLE0186B9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BA\',\'TOGGLE0186BA_ICON\')');
+HMInitToggle('TOGGLE0186BA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BB\',\'TOGGLE0186BB_ICON\')');
+HMInitToggle('TOGGLE0186BB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BC\',\'TOGGLE0186BC_ICON\')');
+HMInitToggle('TOGGLE0186BC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BD\',\'TOGGLE0186BD_ICON\')');
+HMInitToggle('TOGGLE0186BD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BE\',\'TOGGLE0186BE_ICON\')');
+HMInitToggle('TOGGLE0186BE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BF\',\'TOGGLE0186BF_ICON\')');
+HMInitToggle('TOGGLE0186BF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C0\',\'TOGGLE0186C0_ICON\')');
+HMInitToggle('TOGGLE0186C0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C1\',\'TOGGLE0186C1_ICON\')');
+HMInitToggle('TOGGLE0186C1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C2\',\'TOGGLE0186C2_ICON\')');
+HMInitToggle('TOGGLE0186C2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C3\',\'TOGGLE0186C3_ICON\')');
+HMInitToggle('TOGGLE0186C3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

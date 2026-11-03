@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>histogram</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Controls the histogram &nbsp;Construction: &nbsp;histogramcollection &nbsp; &nbsp;|_ histogram &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |_ curvecollection &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|_ curve &nbsp; histogramcollection &nbsp;xgantt.histogra" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "layout.htm",
+   prevP: "group.htm",
+   currP: "histogram.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "histogram",
+   mailsubject: "Feedback on: Beas Script 2026.09 - histogram",
+   sharesubject: "Beas Script 2026.09 - histogram",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Histogram",
+   mailpath: "Beas script &gt; BS Object reference &gt; ue_xgantt &gt; histogram /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - histogram").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "histogram.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>histogram</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">histogram</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Controls the histogram</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Construction:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">histogramcollection</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; |_ histogram</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|_ curvecollection</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |_ curve</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">histogramcollection</span></h1>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.propertie</span></p>
+<p class="p_Normal">z.B.</p>
+<p class="p_Normal"><span class="f_CourierFixed">// Counts of histograms</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.count</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:233px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">count</span></p>
+</td>
+<td style="vertical-align:top; width:664px; padding:0; border:solid thin #000000;"><p class="p_Normal">Counts of histogram</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:233px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">create, add, createhistogram=&lt;name&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:664px; padding:0; border:solid thin #000000;"><p class="p_Normal">creates new histogram</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.add=newname</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:233px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">del, delete, deletehistogran=&lt;name&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:664px; padding:0; border:solid thin #000000;"><p class="p_Normal">deletes a histogram</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogramm.del=histogramname</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:233px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">firsthistogram</span></p>
+</td>
+<td style="vertical-align:top; width:664px; padding:0; border:solid thin #000000;"><p class="p_Normal">gets the name of the first histogram in value</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.firsthistogram</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:233px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">nexthistogram</span></p>
+</td>
+<td style="vertical-align:top; width:664px; padding:0; border:solid thin #000000;"><p class="p_Normal">gets the next name from the histogramcollection</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.nexthistogram</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">histogram</span></h1>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.[histogramname].propertie</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">name</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">returns the name of histogram</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.0.name</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">visible=&lt;true/false&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the visible-Flag of the histogram</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.1.visible=false</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">fitrangeintoview=&lt;start&gt;=&lt;end&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">fits the view in the range<br />
+<span class="f_CourierFixed">start</span> (long) = startvalue of the area<br />
+<span class="f_CourierFixed">end</span> (long) = endvalue of the area</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setmaxyvalue=&lt;yValue&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">sets max-value in the scale</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.1.setmaxyvalue=20</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setminyvalue=&lt;yValue&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">sets min-value in scale</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">curvecollection</span></h1>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.[number].curve.propertie</span></p>
+<p class="p_Normal">OR</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.[numer].propertie</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">Are the names of the properties equal to the histogram properties, the word &quot;curve&quot; should be &nbsp;placed before.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">count</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">return counts of curve</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.1.curve.count</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add=&lt;namestring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">adds a new curve</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">addbyspecification=&lt;csvstring&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">adds a new curve with specification csvstring</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">copy=&lt;fromcurve&gt;=&lt;tocurve&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">copies a curve from curvename to curvename</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.1.curve.copy=curve1=curve2</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">firstcurve</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">returns the name of first curve</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.1.curve.firstcurve</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+<p class="p_Normal">or</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.1.firstcurve</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">messagebox=&lt;value&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">nextcurve</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">name of the next curve</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:232px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">remove=&lt;curvename&gt; or del=&lt;..&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:0; border:solid thin #000000;"><p class="p_Normal">deletes the curve</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">curve</span></h1>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.[histogramname or number].curve.[curvename or number].propertie</span></p>
+<p class="p_Normal">or</p>
+<p class="p_Normal"><span class="f_CourierFixed">xgantt.histogram.[histogramname or number].curve.[curvename or number].propertie</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Properties:</p>
+<p class="p_Normal">curvetype,name,setvalues,specification,clear</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>BS Object reference</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Beas has the following object structure: &nbsp; System The program itself. &nbsp;Form The window inside the program frame. DataWindow The Formula. You can define up to 7 formulas (" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "backward_compatibility_command.htm",
+   prevP: "visible.htm",
+   currP: "beasscriptreferenz.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "BS Object reference",
+   mailsubject: "Feedback on: Beas Script 2026.09 - BS Object reference",
+   sharesubject: "Beas Script 2026.09 - BS Object reference",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Beasscriptreferenz",
+   mailpath: "Beas script &gt; BS Object reference /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - BS Object reference").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "beasscriptreferenz.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>BS Object reference</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">BS Object reference</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas has the following object structure:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="objectstructure" width="484" height="231" style="margin:0;width:484px;height:231px;border:none" src="objectstructure.jpg"/></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="system.htm" class="topiclink">System</a></p>
+</td>
+<td style="vertical-align:top; width:631px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The program itself. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="window.htm" class="topiclink">Form</a></p>
+</td>
+<td style="vertical-align:top; width:631px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The window inside the program frame.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="dw_1.htm" class="topiclink">DataWindow</a></p>
+</td>
+<td style="vertical-align:top; width:631px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The Formula. You can define up to 7 formulas (PSR Files) per window. Name is dw_1....dw_7</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:136px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="item_dw.htm" class="topiclink">Item</a></p>
+</td>
+<td style="vertical-align:top; width:631px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A field (Column, Textfield, Bitmap and so on) of a Formula</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="backward_compatibility_command.htm" class="topiclink hmlinklistitem">beasgui (sbo)</a></p>
+<p class="p_Normal"><a href="dtw.htm" class="topiclink hmlinklistitem">datastore</a></p>
+<p class="p_Normal"><a href="file.htm" class="topiclink hmlinklistitem">file</a></p>
+<p class="p_Normal"><a href="window.htm" class="topiclink hmlinklistitem">form</a></p>
+<p class="p_Normal"><a href="form.htm" class="topiclink hmlinklistitem">form (sbo)</a></p>
+<p class="p_Normal"><a href="druckobject.htm" class="topiclink hmlinklistitem">printobject</a></p>
+<p class="p_Normal"><a href="sql.htm" class="topiclink hmlinklistitem">sqlca (SQL)</a></p>
+<p class="p_Normal"><a href="system.htm" class="topiclink hmlinklistitem">system</a></p>
+<p class="p_Normal"><a href="tools.htm" class="topiclink hmlinklistitem">tools</a></p>
+<p class="p_Normal"><a href="api_batchnumber.htm" class="topiclink hmlinklistitem">ue_api_batchnumber</a></p>
+<p class="p_Normal"><a href="api_bom.htm" class="topiclink hmlinklistitem">ue_api_bom</a></p>
+<p class="p_Normal"><a href="api_chilcat.htm" class="topiclink hmlinklistitem">ue_api_chilkat</a></p>
+<p class="p_Normal"><a href="api_relationshipmap.htm" class="topiclink hmlinklistitem">ue_api_relationshipmap</a></p>
+<p class="p_Normal"><a href="api_routing.htm" class="topiclink hmlinklistitem">ue_api_routing</a></p>
+<p class="p_Normal"><a href="api_time.htm" class="topiclink hmlinklistitem">ue_api_time</a></p>
+<p class="p_Normal"><a href="ue_fert_aufloesen.htm" class="topiclink hmlinklistitem">ue_api_wo</a></p>
+<p class="p_Normal"><a href="ue_api_wobom2.htm" class="topiclink hmlinklistitem">ue_api_wobom</a></p>
+<p class="p_Normal"><a href="ue_chargenbuchung.htm" class="topiclink hmlinklistitem">ue_chargenbuchung</a></p>
+<p class="p_Normal"><a href="ue_produmex.htm" class="topiclink hmlinklistitem">ue_produmex</a></p>
+<p class="p_Normal"><a href="api_itemcode.htm" class="topiclink hmlinklistitem">ue_artikelstamm</a></p>
+<p class="p_Normal"><a href="bsue_bsl.htm" class="topiclink hmlinklistitem">ue_bsl</a></p>
+<p class="p_Normal"><a href="bitmap.htm" class="topiclink hmlinklistitem">ue_bitmap</a></p>
+<p class="p_Normal"><a href="calendar.htm" class="topiclink hmlinklistitem">ue_calendar</a></p>
+<p class="p_Normal"><a href="ue_common.htm" class="topiclink hmlinklistitem">ue_common</a></p>
+<p class="p_Normal"><a href="excel.htm" class="topiclink hmlinklistitem">ue_excel</a></p>
+<p class="p_Normal"><a href="file2datastore.htm" class="topiclink hmlinklistitem">ue_file2datastore</a></p>
+<p class="p_Normal"><a href="ue_form.htm" class="topiclink hmlinklistitem">ue_form</a></p>
+<p class="p_Normal"><a href="ue_json.htm" class="topiclink hmlinklistitem">ue_json</a></p>
+<p class="p_Normal"><a href="api_interruption.htm" class="topiclink hmlinklistitem">ue_interruption</a></p>
+<p class="p_Normal"><a href="api_maintenance.htm" class="topiclink hmlinklistitem">ue_maintenance</a></p>
+<p class="p_Normal"><a href="reservation.htm" class="topiclink hmlinklistitem">ue_reservation</a></p>
+<p class="p_Normal"><a href="mrp_ue_mrp.htm" class="topiclink hmlinklistitem">ue_mrp</a></p>
+<p class="p_Normal"><a href="regexpression.htm" class="topiclink hmlinklistitem">ue_regexp</a></p>
+<p class="p_Normal"><a href="terminal.htm" class="topiclink hmlinklistitem">ue_terminal</a></p>
+<p class="p_Normal"><a href="windowsetup.htm" class="topiclink hmlinklistitem">ue_windowsetup</a></p>
+<p class="p_Normal"><a href="api_xgantt4.htm" class="topiclink hmlinklistitem">ue_xgantt</a></p>
+<p class="p_Normal"><a href="api_xgantt_workorder.htm" class="topiclink hmlinklistitem">ue_xgantt_workorder</a></p>
+<p class="p_Normal"><a href="variant.htm" class="topiclink hmlinklistitem">variant (object)</a></p>
+<p class="p_Normal"><a href="http_and_web_server.htm" class="topiclink hmlinklistitem">HTTP and WEB Server</a></p>
+<p class="p_Normal"><a href="platzhalter.htm" class="topiclink hmlinklistitem">Placeholder and Variables</a></p>
+<p class="p_Normal"><a href="sboform.htm" class="topiclink hmlinklistitem">Sboform</a></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1492,12 +1492,12 @@ get QCORder/CreateQcOrderFromSAPDocument
 <p class="p_Normal">Define the SAP Document by Table Name, example </p>
 <p class="p_Normal">from manual post in document</p>
 <p class="p_Normal"><pre><code>
-QCOrder/CreateQcOrderFromSAPDocment(100,"OIGE")
+QCOrder/CreateQcOrderFromSAPDocument(100,"OIGE")
 </code></pre> </p>
 <p class="p_Normal">beas Script</p>
 <p class="p_Normal"><pre><code>
-declare bsl b
-b.GET QCOrder/CreateQcOrderFromSAPDocment(100,"OIGE")
+instance bsl b
+b.get=QCOrder/CreateQcOrderFromSAPDocument(100,"OIGE")
 </code></pre> </p>
 <p class="p_Normal">Note: The system can generate more then one QC Document. The System don't return the created Document number</p>
 <p class="p_Normal">Note: if QC Document created by transaction notification, you must use the function</p>

@@ -15,10 +15,15 @@ public class BeasDirectSqlDisabledException(string message) : Exception(message)
 public interface IBeasCommandClient
 {
     Task<BeasResult> ExecuteAsync(IReadOnlyList<BeasSqlStatement> statements, BeasConnection? conn, CancellationToken ct = default);
+
+    /// <summary>在碰資料庫之前先檢查是否允許直接寫入(未啟用時丟 BeasDirectSqlDisabledException)。Mock 模式不檢查,以便預覽。</summary>
+    void EnsureWriteAllowed();
 }
 
 public class MockBeasCommandClient(ILogger<MockBeasCommandClient> log) : IBeasCommandClient
 {
+    public void EnsureWriteAllowed() { }
+
     public Task<BeasResult> ExecuteAsync(IReadOnlyList<BeasSqlStatement> statements, BeasConnection? conn, CancellationToken ct = default)
     {
         foreach (var s in statements) log.LogInformation("MOCK sql {Sql} [{Args}]", s.Sql, string.Join(",", s.Args));
@@ -29,6 +34,12 @@ public class MockBeasCommandClient(ILogger<MockBeasCommandClient> log) : IBeasCo
 
 public class OdbcBeasCommandClient(IOptions<BeasConnection> defaults, IOptions<BeasScriptOptions> opt) : IBeasCommandClient
 {
+    public void EnsureWriteAllowed()
+    {
+        if (!opt.Value.AllowDirectSqlWrite)
+            throw new BeasDirectSqlDisabledException("直接寫入 Beas 資料表未啟用(Beas:Script:AllowDirectSqlWrite=false)");
+    }
+
     public async Task<BeasResult> ExecuteAsync(IReadOnlyList<BeasSqlStatement> statements, BeasConnection? conn, CancellationToken ct = default)
     {
         var o = opt.Value;

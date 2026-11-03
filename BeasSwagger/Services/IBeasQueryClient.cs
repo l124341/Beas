@@ -45,7 +45,7 @@ public class OdbcBeasQueryClient(IOptions<BeasConnection> defaults, IOptions<Bea
         var rows = new List<Dictionary<string, object?>>();
         while (await dr.ReadAsync(ct))
         {
-            var row = new Dictionary<string, object?>();
+            var row = new Dictionary<string, object?>(StringComparer.OrdinalIgnoreCase);
             for (int i = 0; i < dr.FieldCount; i++) row[dr.GetName(i)] = dr.IsDBNull(i) ? null : dr.GetValue(i);
             rows.Add(row);
         }

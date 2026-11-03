@@ -120,60 +120,48 @@ public static class BeasBslBuilder
         return Finish(sb, "finished" + mes);
     }
 
-    static Dictionary<string, object?> BomLine(BomItem it, bool withLineNumber)
+    static bool NoValue(string? s) => string.IsNullOrEmpty(s) || s == "''";
+
+    /// <summary>BillOfMaterialLine 欄位對應:PosText→Position、Quanity→Input_Quantity、Uom→Input_Unit、Length、QuantityPerPiece→QuantityPer、Stap→ScrapPercent、WorkRout→UDF1、FaterVersion→VersionFilter(= BEAS_STL.VersionArea)、Version→IVersionId(推測)。</summary>
+    static Dictionary<string, object?> BomLine(BomItem it, string? forcedVersionArea, bool defaultWorkRout, bool setVersion)
     {
-        var l = new Dictionary<string, object?> { ["ItemCode"] = V(it.ItemCode, "ItemCode"), ["Input_Quantity"] = it.Quantity };
-        if (withLineNumber && it.Position is int p) l["LineNumber"] = p;
-        Add(l, "Input_Unit", V(it.Unit, "Unit"));
+        var l = new Dictionary<string, object?>
+        {
+            ["ItemCode"] = V(it.ItemCode, "ItemCode"), ["Input_Quantity"] = it.Quanity, ["Position"] = it.PosText.ToString(),
+        };
+        Add(l, "Input_Unit", V(it.Uom, "Uom"));
+        l["Length"] = it.Length; l["QuantityPer"] = it.QuantityPerPiece; l["ScrapPercent"] = it.Stap;
+        var area = forcedVersionArea ?? it.FaterVersion;
+        if (!NoValue(area)) l["VersionFilter"] = V((area ?? "").Replace("'", ""), "FaterVersion");
+        var udf1 = it.WorkRout;
+        if (defaultWorkRout && string.IsNullOrEmpty(udf1)) udf1 = "01";
+        Add(l, "UDF1", V(udf1, "WorkRout"));
+        if (setVersion && !NoValue(it.Version)) l["IVersionId"] = V(it.Version, "Version");
         return l;
     }
 
-    /// <summary>建立 BOM:BillOfMaterial POST(含 line[])。注意:BSL 預設 replace=true,BOM 已存在時會取代明細(Script 版則會失敗)。</summary>
-    public static (string requestId, string script) BomCreate(BomCreateRequest r)
+    static (string, string) BomPost(string requestId, string father, IReadOnlyList<BomItem> items, string? forcedVersionArea, bool defaultWorkRout, bool setVersion)
     {
-        var father = V(r.FatherItem, "FatherItem");
+        if (items.Count == 0) throw new ArgumentException("InputItems 不可為空");
+        // replace=false:只加入明細,不會清掉同一張 BOM 其他版本的行(BSL 預設 replace=true 會取代全部明細)。
+        // Description:BillOfMaterial 表頭必填,沿用原 DLL 的 "my bom"。
         var doc = new Dictionary<string, object?>
         {
-            ["BillOfMaterialId"] = father,
-            ["line"] = r.InputItems.Select(i => BomLine(i, withLineNumber: true)).ToList(),
+            ["BillOfMaterialId"] = V(father, "FatherItem"), ["Description"] = "my bom", ["replace"] = false,
+            ["line"] = items.Select(i => BomLine(i, forcedVersionArea, defaultWorkRout, setVersion)).ToList(),
         };
         var sb = Begin();
-        Post(sb, "ls_json", "BillOfMaterial", J(doc), "bom create");
-        return Finish(sb, string.IsNullOrWhiteSpace(r.RequestId) ? "bomcreate" + father : V(r.RequestId, "RequestId"));
+        Post(sb, "ls_json", "BillOfMaterial", J(doc), "bom");
+        return Finish(sb, requestId);
     }
 
-    /// <summary>
-    /// 修改 BOM:逐行 BillOfMaterialLine POST(LineNumber 存在則更新,沒給則新增)。
-    /// 有 Version 時先 <c>b.get=ItemVersion("item","ver")/BillOfMaterialId/$value</c> 取得該版本的 BOM id。
-    /// </summary>
-    public static (string requestId, string script) BomChange(BomVersionRequest r)
-    {
-        var father = V(r.FatherItem, "FatherItem");
-        var ver = V(r.Version, "Version");
-        const string Mark = "@@BOM@@";
-        var sb = Begin();
-        string bomId = father;
-        if (ver != "")
-        {
-            sb.Append(NL).Append("b.get=ItemVersion(\"").Append(father).Append("\",\"").Append(ver).Append("\")/BillOfMaterialId/$value");
-            sb.Append(NL).Append("if <b.ret_code> n<> 0 then");
-            sb.Append(NL).Append(" message=error$bom version: <b.ret_text>");
-            sb.Append(NL).Append(" return failure");
-            sb.Append(NL).Append("end if");
-            sb.Append(NL).Append("setvar=ls_bom_id=<b.ret_value>");
-            bomId = Mark;
-        }
-        int n = 0;
-        foreach (var it in r.InputItems)
-        {
-            var l = BomLine(it, withLineNumber: true);
-            var line = new Dictionary<string, object?> { ["BillOfMaterialId"] = bomId };
-            foreach (var kv in l) line[kv.Key] = kv.Value;
-            var json = J(line).Replace(Mark, "<ls_bom_id>");
-            Post(sb, "ls_json" + (++n), "BillOfMaterialLine", json, "bom change");
-        }
-        return Finish(sb, string.IsNullOrWhiteSpace(r.RequestId) ? "bomchange" + father + ver : V(r.RequestId, "RequestId"));
-    }
+    /// <summary>建立 BOM(BSL):BillOfMaterial POST。與 Script 版不同,BOM 已存在時不會失敗,而是加入明細。</summary>
+    public static (string requestId, string script) BomCreate(BomCreateRequest r) =>
+        BomPost("Bom" + V(r.CreateTime, "CreateTime"), r.FatherItem, r.InputItems, null, defaultWorkRout: true, setVersion: true);
+
+    /// <summary>新版本 BOM(BSL):所有行的 VersionFilter(=VersionArea)設為 Version。</summary>
+    public static (string requestId, string script) BomCreateVersion(BomVersionRequest r) =>
+        BomPost("Bom" + V(r.RequestId, "RequestId") + V(r.CreateTime, "CreateTime"), r.FatherItem, r.InputItems, r.Version, defaultWorkRout: false, setVersion: false);
 
     /// <summary>新增途程:Routing POST,replace=false(加入明細)。Operation→CatalogId(文件要求放在第一個)、WorkCenter→ResourceId。</summary>
     public static (string requestId, string script) RoutingAdd(RoutingRequest r)

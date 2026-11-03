@@ -102,89 +102,113 @@ public static class BeasScriptBuilder
     static string Rid(string? given, string prefix, string key) =>
         string.IsNullOrWhiteSpace(given) ? prefix + key : V(given, "RequestId");
 
-    /// <summary>ue_api_bom 開頭:new/load 失敗時中止(文件寫法 if &lt;return&gt; = -1)。</summary>
-    static void BomOpen(StringBuilder sb, string openCmd)
+    static bool NoValue(string? s) => string.IsNullOrEmpty(s) || s == "''";
+    static string CleanQuotes(string? s) => (s ?? "").Replace("'", "");
+
+    /// <summary>
+    /// BOM script(原 CreateM / CreateMultVer / Searchotherversionbom 共用的組法):
+    /// bom=new → 失敗中止 → header(description=my bom)→ 每個品項一組欄位,品項間以 bom=addline 分隔 → update。
+    /// forcedVersionArea 有值時,所有行的 versionarea 都用它(CreateMultVer);否則用各行的 FaterVersion(CreateM)。
+    /// </summary>
+    static string BomScript(string fatherItem, IReadOnlyList<BomItem> items, string? forcedVersionArea, bool defaultWorkRout, bool setVersion)
     {
+        if (items.Count == 0) throw new ArgumentException("InputItems 不可為空");
+        var sb = new StringBuilder();
         sb.Append("declare=bom=ue_api_bom");
-        sb.Append(NL).Append(openCmd);
+        sb.Append(NL).Append("bom=new=").Append(V(fatherItem, "FatherItem"));
         sb.Append(NL).Append("if <return> = -1 then");
         sb.Append(NL).Append(" destroy=bom");
         sb.Append(NL).Append(" return failure");
         sb.Append(NL).Append("end if");
-    }
-
-    static void BomLines(StringBuilder sb, IReadOnlyList<BomItem> items, bool byPosition)
-    {
-        foreach (var it in items)
+        sb.Append(NL).Append("bom=header=description=my bom");
+        sb.Append(NL).Append("bom=addline");
+        for (int i = 0; i < items.Count; i++)
         {
-            // 有 Position 時 goto_pos_id:該 pos_id 不存在就新增,存在就修改(文件:goto_pos_id)
-            if (byPosition && it.Position is int pos)
-                sb.Append(NL).Append("bom=goto_pos_id=").Append(pos);
-            else
-                sb.Append(NL).Append("bom=addline");
-            if (!byPosition && it.Position is int p2) sb.Append(NL).Append("bom=pos_id=").Append(p2);
+            var it = items[i];
             sb.Append(NL).Append("bom=itemcode=").Append(V(it.ItemCode, "ItemCode"));
-            sb.Append(NL).Append("bom=quantity=").Append(Num(it.Quantity));
+            sb.Append(NL).Append("bom=quantity=").Append(Num(it.Quanity));
+            sb.Append(NL).Append("bom=pos_text=").Append(it.PosText);
+            if (!string.IsNullOrEmpty(it.Uom)) sb.Append(NL).Append("bom=input_unit=").Append(V(it.Uom, "Uom"));
+            sb.Append(NL).Append("bom=length=").Append(Num(it.Length));
+            sb.Append(NL).Append("bom=quantityperpiece=").Append(Num(it.QuantityPerPiece));
+            var area = forcedVersionArea ?? it.FaterVersion;
+            if (!NoValue(area)) sb.Append(NL).Append("bom=versionarea=").Append(V(CleanQuotes(area), "FaterVersion"));
+            var udf1 = it.WorkRout;
+            if (defaultWorkRout && string.IsNullOrEmpty(udf1)) udf1 = "01";
+            if (!string.IsNullOrEmpty(udf1)) sb.Append(NL).Append("bom=udf1=").Append(V(udf1, "WorkRout"));
+            if (setVersion && !NoValue(it.Version)) sb.Append(NL).Append("bom=version=").Append(V(it.Version, "Version"));
+            sb.Append(NL).Append("bom=scrappercent=").Append(Num(it.Stap));
+            if (i < items.Count - 1) sb.Append(NL).Append("bom=addline");   // 原 DLL 會移除最後一個 addline
         }
-    }
-
-    static void BomClose(StringBuilder sb)
-    {
         sb.Append(NL).Append("bom=update");
         sb.Append(NL).Append("destroy=bom");
-        sb.Append(NL).Append("setvar=is_answertext=OK");
+        sb.Append(NL).Append("setvar=is_parameter1=<e_belnr_id>");
+        sb.Append(NL).Append("setvar=is_answertext=OK");   // 原 DLL 回 <e_belnr_id>;空值會被輪詢判成「無結果」,改固定 OK
+        return sb.ToString();
     }
 
-    /// <summary>建立 BOM(原 CreateM)。BOM 已存在時 new 會回傳 -1 而失敗。Unit 欄位:文件說明 api_bom 不支援單位換算,未送出。</summary>
-    public static (string requestId, string script) BomCreate(BomCreateRequest r)
-    {
-        var father = V(r.FatherItem, "FatherItem");
-        var sb = new StringBuilder();
-        BomOpen(sb, "bom=new=" + father);
-        BomLines(sb, r.InputItems, byPosition: false);
-        BomClose(sb);
-        return (Rid(r.RequestId, "bomcreate", father), sb.ToString());
-    }
-
-    /// <summary>修改 BOM(原 ChangeBom)。有 Version 時先用 versioncontrol=getbomid 取得該版本的 BOM id。</summary>
-    public static (string requestId, string script) BomChange(BomVersionRequest r)
-    {
-        var father = V(r.FatherItem, "FatherItem");
-        var ver = V(r.Version, "Version");
-        var sb = new StringBuilder();
-        string open = "bom=getbykey=" + father;
-        if (ver != "")
-        {
-            sb.Append("object=ue_api_bom=versioncontrol=getbomid\titemcode=").Append(father).Append("\tversion=").Append(ver);
-            sb.Append(NL).Append("setvar=ls_bom_id=<value1>");
-            sb.Append(NL);
-            open = "bom=getbykey=<ls_bom_id>";
-        }
-        BomOpen(sb, open);
-        BomLines(sb, r.InputItems, byPosition: true);
-        BomClose(sb);
-        return (Rid(r.RequestId, "bomchange", father + ver), sb.ToString());
-    }
+    /// <summary>建立 BOM(原 CreateM)。REQUESTID = "Bom" + CreateTime(與原 DLL 的 sqlresultback 查詢規則一致)。BOM 已存在時 new 回傳 -1 而失敗。</summary>
+    public static (string requestId, string script) BomCreate(BomCreateRequest r) =>
+        ("Bom" + V(r.CreateTime, "CreateTime"), BomScript(r.FatherItem, r.InputItems, null, defaultWorkRout: true, setVersion: true));
 
     /// <summary>
-    /// 新版本 BOM(原 CreateMultVer):versioncontrol=itemversion 由來源版本(Version)複製出新版本,
-    /// 取得新版本的 BOM id 後再套用 InputItems(同 Change:有 Position 則修改/新增該行)。
+    /// 新版本 BOM 插入(原 CreateMultVer):與 CreateM 相同,但所有行的 versionarea 都設為 Version,
+    /// 不預設 udf1、不送 version。REQUESTID = "Bom" + RequestId + CreateTime(原 DLL 如此)。
+    /// 注意:bom=new 在 BOM 已存在時會失敗,所以只能用在尚無此 BOM 的情況。
     /// </summary>
-    public static (string requestId, string script) BomCreateVersion(BomVersionRequest r)
+    public static (string requestId, string script) BomCreateVersion(BomVersionRequest r) =>
+        ("Bom" + V(r.RequestId, "RequestId") + V(r.CreateTime, "CreateTime"),
+         BomScript(r.FatherItem, r.InputItems, r.Version, defaultWorkRout: false, setVersion: false));
+
+    /// <summary>取代某版本的明細(原 Searchotherversionbom 的建立部分):items = 新明細 + 其他版本既有明細。</summary>
+    public static (string requestId, string script) BomReplaceVersion(string itemCode, IReadOnlyList<BomItem> items, string createTime) =>
+        ("Bom" + V(createTime, "CreateTime"), BomScript(itemCode, items, null, defaultWorkRout: true, setVersion: true));
+
+    /// <summary>某版本以外的既有明細(原 Searchotherversionbom 的 SELECT)。version 空白 = 取所有有 VersionArea 的行。</summary>
+    public static BeasSqlStatement BomOtherVersionLinesQuery(string itemCode, string version)
     {
-        var father = V(r.FatherItem, "FatherItem");
-        var ver = V(r.Version, "Version");
-        var sb = new StringBuilder();
-        sb.Append("object=ue_api_bom=versioncontrol=itemversion\titemcode=").Append(father);
-        if (ver != "") sb.Append("\tversion=").Append(ver);
-        sb.Append(NL).Append("setvar=ls_newver=<value>");
-        sb.Append(NL).Append("object=ue_api_bom=versioncontrol=getbomid\titemcode=").Append(father).Append("\tversion=<ls_newver>");
-        sb.Append(NL).Append("setvar=ls_bom_id=<value1>");
-        sb.Append(NL);
-        BomOpen(sb, "bom=getbykey=<ls_bom_id>");
-        BomLines(sb, r.InputItems, byPosition: true);
-        BomClose(sb);
-        return (Rid(r.RequestId, "bomversion", father + ver), sb.ToString());
+        const string cols = @"select t0.""ART1_ID"", t0.""INPUT_QTY"", t0.""POS_TEXT"", t0.""MENGE_JE"", t0.""ABM1"", t0.""VersionArea"", t0.""ScrapPercent"", t0.""UDF1"" from {db}.""BEAS_STL"" t0 where t0.""ItemCode"" = ?";
+        var item = V(itemCode, "ItemCode"); var ver = V(version, "Version");
+        return ver == ""
+            ? new BeasSqlStatement(cols + @" and t0.""VersionArea"" is not null", new object?[] { item })
+            : new BeasSqlStatement(cols + @" and t0.""VersionArea"" not like ?", new object?[] { item, "%" + ver + "%" });
+    }
+
+    /// <summary>取代版本前要刪的資料(原 Searchotherversionbom):整個 BOM 表頭,加上該版本的行(版本空白 = VersionArea 為 NULL 的行)。</summary>
+    public static IReadOnlyList<BeasSqlStatement> BomReplaceVersionStatements(string itemCode, string version)
+    {
+        var item = V(itemCode, "ItemCode"); var ver = V(version, "Version");
+        return new[]
+        {
+            new BeasSqlStatement(@"delete from {db}.""BEAS_STL_HEADER"" where ""ItemCode"" = ?", new object?[] { item }),
+            ver == ""
+                ? new BeasSqlStatement(@"delete from {db}.""BEAS_STL"" where ""ItemCode"" = ? and ""VersionArea"" is null", new object?[] { item })
+                : new BeasSqlStatement(@"delete from {db}.""BEAS_STL"" where ""ItemCode"" = ? and ""VersionArea"" = ?", new object?[] { item, ver }),
+        };
+    }
+
+    /// <summary>原 DeleteBom:刪除 BOM 表頭與全部明細。(原 DLL 的 SQL 少了「.」且把兩句塞進同一個命令,在 HANA 上應該跑不起來;這裡拆成兩句。)</summary>
+    public static IReadOnlyList<BeasSqlStatement> BomDeleteStatements(string itemCode)
+    {
+        var item = V(itemCode, "ItemCode");
+        return new[]
+        {
+            new BeasSqlStatement(@"delete from {db}.""BEAS_STL_HEADER"" where ""ItemCode"" = ?", new object?[] { item }),
+            new BeasSqlStatement(@"delete from {db}.""BEAS_STL"" where ""ItemCode"" = ?", new object?[] { item }),
+        };
+    }
+
+    /// <summary>原 checkbom:該 BOM 的明細行數。</summary>
+    public static BeasSqlStatement BomCountQuery(string itemCode) =>
+        new(@"select count(""ART1_ID"") from {db}.""BEAS_STL"" where ""ItemCode"" = ?", new object?[] { V(itemCode, "ItemCode") });
+
+    /// <summary>原 checkbomversion:該版本的明細行數(版本空白 = VersionArea 為 NULL;否則 VersionArea like %版本%)。</summary>
+    public static BeasSqlStatement BomVersionCountQuery(string itemCode, string version)
+    {
+        var item = V(itemCode, "ItemCode"); var ver = V(version, "Version");
+        return ver == ""
+            ? new BeasSqlStatement(@"select count(""ART1_ID"") from {db}.""BEAS_STL"" where ""ItemCode"" = ? and ""VersionArea"" is null", new object?[] { item })
+            : new BeasSqlStatement(@"select count(""ART1_ID"") from {db}.""BEAS_STL"" where ""ItemCode"" = ? and ""VersionArea"" like ?", new object?[] { item, "%" + ver + "%" });
     }
 
     /// <summary>

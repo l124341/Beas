@@ -1,7 +1,7 @@
 # Beas 範例操作手冊(繁體中文)
 
 > 來源:`fetched/examples/`(Beas Script 2026.09 官方文件的 Examples 章節,共 53 頁)。
-> 補充來源:`fetched/missing/`(14 頁)與 `fetched/missing_b/`(214 頁):使用者事件、Configuration Wizard、DI-API、視窗事件與視窗客製化等,用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面;`missing_b` 共 214 頁中,與本手冊範例直接相關的已逐頁閱讀,其餘(如各 DI-API 物件的完整屬性、SAP 表單 ID、其他使用者事件頁、資料庫與 WEB 前端等)**尚未閱讀**。
+> 補充來源:`fetched/missing/`(14 頁)與 `fetched/missing_b/`(214 頁):使用者事件、Configuration Wizard、DI-API、視窗事件與視窗客製化等,用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面;`missing_b` 共 214 頁已全部整理:與本手冊範例直接相關的由我逐頁閱讀並寫入各節,其餘 194 頁整理成 `docs/ref/` 底下的 5 份參考文件(見[第 11.11 節](#1111-參考文件索引));`fetched/missing_c/`(64 頁)**尚未閱讀**。參考文件由 AI 子代理整理,我已用腳本核對頁數、程式碼逐行與表格內容,但翻譯措辭未逐句審閱。
 > 編排方式:依原文章節順序整理。**程式碼一律保留原文,不做修改**;說明文字翻譯為繁體中文。
 > 原文頁面裡的截圖未收錄,手冊中以「(原文附截圖)」標示。
 > 標示「⚠ 原文疑似筆誤」的地方,是翻譯時發現原文內容前後不一致之處,程式碼仍保持原樣,使用前請自行確認。
@@ -794,7 +794,7 @@ end function
 
 > ⚠ 原文疑似不一致:範例 1 的說明寫「設為 0」,程式碼卻是 `{"Status":"1"}`;兩處皆保持原文,請依實際需求(Beas 批次狀態代碼)確認。
 
-> ⚠ 變數名稱:範例 2 使用 `e_belnr_id`、`e_belpos_id`,但官方事件頁列出的工單變數是 `e_WoDocEntry`、`e_WoLineNumber`。官方使用者事件說明提到舊版名稱仍然有效(相容性超過 99%),所以 `e_belnr_id` 很可能是舊名稱;新寫的腳本建議使用官方列出的變數名。這是依文件推論,未實測。
+> ⚠ 變數名稱:範例 2 使用 `e_belnr_id`、`e_belpos_id`,但官方事件頁列出的工單變數是 `e_WoDocEntry`、`e_WoLineNumber`。官方使用者事件總說明提到舊版名稱仍然有效(相容性超過 99%);工單事件的總覽頁(`usereventworkordermanagement.htm`)也確實出現 `e_belnr_id`、`e_belpos_id`、`e_pos_id`、`e_row`、`e_pers_id` 這類名稱。`beasscript/wotime.htm` 的 `workordermanagement:timerecordingstart` 事件說明也用同樣的 `e_belnr_id,e_belpos_id,e_pos_id` 描述該事件的變數。但**官方沒有任何頁面提供新舊名稱的對照**,所以 `e_belnr_id` 是不是 `e_WoDocEntry` 的舊名,官方文件**無法證實**。新寫的腳本建議使用各事件頁列出的變數名,範例 2 的行為請實測。
 
 ---
 
@@ -1267,7 +1267,7 @@ openwindow=dw=beas_WorkOrder_Structur
 openwindow=dw=beas_WorkOrder_Structur<tab>belnr_id=6002253<tab>belpos_id=10
 ```
 
-參數:`DocEntry` / `belnr_id`(基礎文件)、`LineNumber` / `belpos_id`(基礎文件行)。官方頁面**沒有列出 `zeilentyp` 各值的意義**,所以下面程式碼中 `zeilentyp = 0`(工單)與 `= 10`(工單位置)的對應,仍是依範例上下文的解讀,未獲官方確認。
+參數:`DocEntry` / `belnr_id`(基礎文件)、`LineNumber` / `belpos_id`(基礎文件行)。官方頁面**沒有列出 `zeilentyp` 各值的意義**(已查閱 `fetched/missing_b/` 全部頁面,包括視窗客製化各頁,仍找不到),所以下面程式碼中 `zeilentyp = 0`(工單)與 `= 10`(工單位置)的對應,仍是依範例上下文的解讀,未獲官方確認。
 
 **運作說明**
 
@@ -1615,6 +1615,12 @@ end global
 
 > ⚠ 原文疑似筆誤:`Humidty` 應為 `Humidity`(原文程式碼與說明文字拼法不同);註解 "check only, if minimal not 0 and value not 9" 與實際條件(`value > 0`)不同。程式碼保持原文,請以實際 QC 步驟名稱為準。
 
+> 欄位名稱查證:
+>
+> - 官方 BSL 頁 `QCOrderMeasurement` 的 Get(`bslqcordermeasurementget.htm`)列出了資料表 **`BEAS_QSFTPOS`** 的對應欄位:`QS_ID`、`MESSWERTC`、`SPERRGRUNDID`、`MINIMAL`。所以 `qs_id`、`messwertc`、`sperrgrundid`、`minimal` 確實是量測樣本資料表的欄位名稱。`maximal` 我沒有在該頁找到對應列,未能確認。
+> - 但本範例用的是 `dw_1.item.…` / `dw_2.item.…` 這類**視窗上的欄位**,官方視窗客製化頁(`qs_qsftpos_edit`)只有視窗名稱與「依量測值自動設定封鎖原因」這個延伸範例,沒有列出視窗欄位清單;QC orders、QC Samples 兩頁的原文是空的。因此 `dw_1` 與 `dw_2` 各對應哪一組資料,官方文件無法確認。
+> - 要確認視窗欄位名,請在視窗中按 **CTRL 並將滑鼠移到欄位上**,從系統資訊讀取(見第 0 節)。
+
 ---
 
 ## 6. 工具
@@ -1872,7 +1878,16 @@ printobject=crreport=printout
 |---|---|---|
 | `PrintWorkorder` | `DocEntry,LineNumber [,print,printername,setprintFlag]` | 預覽或列印指定工單位置 |
 
-依官方的參數順序,範例 `print||true` 的意思是:第 3 個參數 `print` = 直接列印(省略則為預覽)、第 4 個參數印表機名稱留空(使用目前印表機)、第 5 個參數 `true` = 設定「已列印」旗標。(第 3、5 個參數各值的確切意義,官方頁面只給了參數名稱,以上為依範例的解讀。)
+依官方的參數順序,範例 `print||true` 的意思是:第 3 個參數 `print` = 直接列印(省略則為預覽)、第 4 個參數印表機名稱留空(使用目前印表機)、第 5 個參數 `true` = 設定「已列印」旗標。B1UP 的官方 BeasFunction 頁對這幾個參數有進一步說明(官方說明):
+
+- `LineNumber` **不填代表全部位置**。
+- `print` 留空 = **檢視(預覽)**;填 `print` = 送到印表機。
+- `printername` 為印表機名稱,留空則使用目前的印表機。
+- `setprintFlag` 為 `true` 時,會把**工單與工單位置都設為已列印**。
+
+寫法:BeasScript 為 `beasFunction=PrintWorkorder=600344`;B1UP 為 `beasFunction(PrintWorkorder|600344|10|print|HS-30421|true);`。在 B1UP 中執行 Beas 函式要用 `ExecuteBeasScript(...)`,且只能寫成**一行**;多行可用 `<cr_lf>` 佔位符。
+
+> ⚠ 官方頁面對 `beasFunction` 的大小寫不一致(`PrintWorkorder` 頁寫 `beasFunction`,`CalculateAPS`、`CalculateMRP` 頁寫 `beasfunction`);`CalculateAPS` 的參數名拼成 `ScneraioId`(String),`CalculateMRP` 的參數是 `ScenarioId`(Number)。
 
 Beas 標準函式(`beasFunction`)清單:
 
@@ -2071,6 +2086,15 @@ end if
 | `close` | 結案文件(之後仍需 `update`) |
 | `getnewobjectkey` | 取得 `add` 剛建立的文件號 |
 
+**交易(Transaction)(官方說明)**
+
+- 開始:`di_item=starttransaction`;結束:`endtransaction=0` 提交(commit)、`-1` 回滾(rollback)。
+- 交易**只對 SAP SDK 連線有效**。Beas 使用自己的資料庫連線,所以在提交之前,用 Beas 的查詢**讀不到**交易中尚未提交的變更(官方範例中該查詢回傳 100,表示 not found)。
+- 官方的 `endTransaction` 頁寫 `endTransacton=endType`,`0`=commit、`1`=Rollback;`starttransaction` 頁的範例用 `-1` 回滾。兩頁的回滾值不一致(⚠),使用前請實測。
+- 只有在資料庫連線為作用中時才能使用 `endTransaction`;若呼叫時發生例外,變更不會提交,需要依序重新 `StartTransaction`、重新提交變更、再 `EndTransaction`。
+
+**連線其他公司資料庫**:`myapi=connect_extern=db=…<tab>username=…<tab>password=…`;`server`、`dbuser`、`dbpassword`、`servertype` 不填時使用目前的值,`servertype`:`1`=automatic、`4`=sql2005、`6`=sql2008。(`db`、`username`、`password` 在官方頁面標為 "Primary",官方沒有解釋其意義。)
+
 **範例中用到的物件類型(官方「DI-API: Objects」)**
 
 | 編號 | 名稱 | 說明 | 用於 |
@@ -2089,7 +2113,9 @@ end if
 
 **明細行(Line)物件**:階層為 `document → Line → batchnumber / serialnumber`。方法:`add`(新增行)、`setcurrentline=<x>`(切換到第 x 行)、`delete=<x>`(刪除第 x 行)。批號物件的寫法為 `vdoc=lines=batchnumbers=<屬性>=<值>`,屬性有 `BatchNumber`(必填,最多 32 字元,與品項、倉庫組合需唯一)、`Quantity`、`ExpiryDate`、`ManufacturingDate` 等。官方並提醒:批號請盡量改用 Beas Service Layer 的 BatchNumber。
 
-> ⚠ 9.3 範例使用的屬性名稱是 `batchnum`(`lines=batchnumber=batchnum=...`),官方批號物件頁列出的屬性是 `BatchNumber`;兩者的差異官方沒有說明(可能是別名),請實際測試。
+> ⚠ 9.3 範例使用的屬性名稱是 `batchnum`(`lines=batchnumber=batchnum=...`)。官方 DI-API 物件的 21 頁中**沒有出現 `batchnum`**,批號物件頁(`batchnumbers`)只列了 `BatchNumber`。`batchnum` 只出現在 Beas 其他功能的說明裡(例如 `incomminggoods2` 頁的計畫單據寫法 `batchnum=A1234<char 9>bincode=1000`,以及 `wotime` 頁的 `oldbatchnum`、`newbatchnum`),那是 Beas 自己的欄位,不是 DI-API 批號物件的屬性。因此無法判斷 DI-API 這裡的 `batchnum` 是不是 `BatchNumber` 的別名,請實際測試。
+>
+> ⚠ 官方的寫法也不一致:`batchnumbers` 頁的語法是 `vdoc=lines=batchnumbers=<屬性>=<值>`(**複數**),但 `document`、`line` 頁的行屬性名是 `batchnumber`(**單數**),兩者的關係官方沒有說明。
 
 ### 9.1 含使用者自訂欄位的收貨 — Goods Receipt with UF
 
@@ -2124,6 +2150,8 @@ destroy=di_doc
 ```
 
 > ⚠ 原文疑似筆誤:最後的訊息使用了 `<di_get.getnewobjectkey>`,物件名稱應為 `di_doc`。程式碼保持原文。
+>
+> ⚠ 使用者自訂欄位的寫法:本範例用 `di_doc.lines=userfield=U_test2=N`。但官方 DI-API 物件頁(`document`、`line`、`item2`、`whsinfo`)的寫法都是**直接把 UDF 欄位名當屬性**,例如 `vdoc=u_ref=...`、`vdoc=lines=u_color=red`、`myitem=u_fieldname=myvalue`;官方 `item2` 頁甚至寫了「Property Userfields does not exist」。官方文件中**找不到 `userfield=` 這種寫法**,所以本範例的寫法無法由文件證實,請實測;若不行,改用直接屬性寫法。
 
 ---
 
@@ -2758,7 +2786,7 @@ system.debug=level=1 // go back to level 1
 | `workordermanagement` | Calc.、creation、manage、Preassign、issue process、receipt process、time recording、wip - Work in Process |
 | `qcmanagement` | QCPlanDetermination、QCorderCreate、QCorderCreateEnd、Print |
 
-> 各事件的完整變數表在 `fetched/missing_b/ue_*.htm` 與 `fetched/missing/ue_*.htm`;下面 11.7–11.9 摘錄與本手冊範例有關的事件。
+> 各事件的完整變數表見 `docs/ref/事件_工單.md`(workordermanagement,58 頁)與 `docs/ref/事件_其他.md`(其餘群組,58 頁);下面 11.7–11.9 摘錄與本手冊範例有關的事件。
 
 ### 11.7 工單建立相關事件(官方說明)
 
@@ -2907,6 +2935,34 @@ end function
 ```
 
 > ⚠ 官方範例的疑似問題:註解寫「`AB` 開頭使用 501-01」,程式碼用的是 `500-03`;範例使用 `e_ProjectId`,但變數表列的是 `e_ProjectCode`,且範例函式是 `IssueLine`、變數表卻是 `ReceiptLine` 的。程式碼保持原文。
+
+> ⚠ `stockmanagement` 的 `ReceiptLine` 與 `workordermanagement.ReceiptLine` 是不同的事件。官方總覽頁說 `ReceiptLine` 可取消,但 `stockmanagement` 的 Allocation / Transfer / Issue / Receipt 四個 `*Line` 頁都說:用 `e_aktiv` 取消是**舊功能,只為相容模式保留,新物件不支援**。詳見 `docs/ref/事件_其他.md`。
+
+### 11.10 取消流程的寫法(官方各頁彙整)
+
+官方各事件頁用的取消方式**並不統一**:
+
+| 寫法 | 出現在 |
+|---|---|
+| `return failure` | `workordermanagement`:ReceiptStart、ReceiptLine、IssueStart、IssueLine 等(`TimeRecording` 官方頁只寫「可以取消流程」,沒有寫取消的方法;本手冊 4.7 的範例用 `return failure`);`aps`:StartCalculation、StartWorkorderPosition;`stockmanagement`:ReceiptCostingCode;`Configurator`:CheckConfigBeforeNewLoad(官方寫「腳本必須以 `return failure` 結束」) |
+| `return -1` | `stockmanagement.GoodsReceiptLine` |
+| `setvar=value=-1` | `beasmenu` 的 `menu[id]` |
+| 說可以取消,但沒寫怎麼做 | `GoodsReceiptPO`、`GoodsReceiptPOBeforeCreate`、`StartWorkorderPositionStep` |
+| 明寫不能停止 | `GoodsReceiptPOEnd` |
+
+另外,取消**收貨 / 發料**時,若它是**倒沖(backflushing)**流程的一部分,系統無法回復倒沖流程中已完成的另一半(見 11.9)。`TimeRecordingEnd` 取消時,時間回報**仍會被建立**,只是不再建立額外的時間回報(錯誤碼 1101)。
+
+### 11.11 參考文件索引
+
+這些文件是把 `fetched/missing_b/` 的官方頁面逐頁翻成繁體中文;**程式碼逐字保留原文**,官方頁面自身的矛盾以「⚠」標出,未自行判斷對錯。
+
+| 文件 | 內容 | 頁數 |
+|---|---|---|
+| `docs/ref/事件_工單.md` | 使用者事件:workordermanagement(計算、建立、複製/更新、刪除、結案/重開、保留、發料、收貨、時間回報、WIP) | 58 |
+| `docs/ref/事件_其他.md` | 使用者事件:addon、beasmenu、aps、Configurator、mrp、sales、stockmanagement、qcmanagement | 58 |
+| `docs/ref/API_方法與屬性.md` | B1UP、DI-API 方法與屬性(含 admininfo 257 列)、Service Types(127 列) | 21 |
+| `docs/ref/API_物件.md` | DI-API 物件:document、line、batchnumbers、item2、whsinfo 等 | 21 |
+| `docs/ref/視窗.md` | Beas 視窗 ID、SAP 表單 ID 與選單 ID 對照表、視窗客製化、視窗事件、datawindow | 36 |
 
 ---
 

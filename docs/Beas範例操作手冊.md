@@ -1056,7 +1056,7 @@ end function
 > 資料表欄位查證(依 `fetched/ref/database_202606.pdf`,此為 2026.06 版文件站的檔案,PDF 建立日期為 2022-02-21):
 >
 > - `BEAS_FTPOS.WMS_PRODLINE` 有(第 139 頁,「Production Line」),`BEAS_FTAPL.SortId` 也有(第 127 頁)。
-> - ⚠ **`BEAS_APLATZ.WMS_PRODLINE` 在 PDF 裡沒有**(`BEAS_APLATZ` 123 個欄位中無此欄位)。而本範例的 SQL 讀的正是 `"BEAS_APLATZ"."WMS_PRODLINE"`。可能是較新的欄位,也可能有誤,請在你的資料庫確認。
+> - ⚠ **`BEAS_APLATZ.WMS_PRODLINE` 在 PDF 裡沒有**(`BEAS_APLATZ` 87 個欄位中無此欄位)。而本範例的 SQL 讀的正是 `"BEAS_APLATZ"."WMS_PRODLINE"`。可能是較新的欄位,也可能有誤,請在你的資料庫確認。
 > - 這個範例對 Beas 資料表做 `update`,官方自己的說明已提醒無法保證(見本節開頭)。
 >
 > 欄位的完整對照見[附錄:資料表欄位查證](#範例用到的資料表欄位查證)。
@@ -3064,7 +3064,7 @@ end function
 |---|---|---|
 | 4.4 批號保留 | `BEAS_FTPOS.CHARGE_ID` | PDF 第 136 頁有:說明為「Batch — **only for information. No functionality!**」,也就是只供參考、Beas 本身沒有功能。範例把批號存在這個欄位是合理的用法,但要自己負責讀取(`BEAS_QSFTHAUPT.CHARGE_ID` 是另一張 QC 表) |
 | 4.3 WMS 生產線 | `BEAS_FTPOS.WMS_PRODLINE` | PDF 第 139 頁有:「Production Line」 |
-| 4.3 WMS 生產線 | **`BEAS_APLATZ.WMS_PRODLINE`** | ⚠ **PDF 中 `BEAS_APLATZ`(第 27–30 頁,123 個欄位)沒有這個欄位**。`WMS_PRODLINE` 在整份 PDF 只出現在 `BEAS_FTPOS`(第 139 頁)與 `BEAS_OWHS_BINDEFLINE`(第 190 頁)。範例讀取 `"BEAS_APLATZ"."WMS_PRODLINE"`,可能是比 PDF 新的欄位,也可能有誤,**請在你的資料庫查詢實際結構確認** |
+| 4.3 WMS 生產線 | **`BEAS_APLATZ.WMS_PRODLINE`** | ⚠ **PDF 中 `BEAS_APLATZ`(第 27–30 頁,87 個欄位)沒有這個欄位**。`WMS_PRODLINE` 在整份 PDF 只出現在 `BEAS_FTPOS`(第 139 頁)與 `BEAS_OWHS_BINDEFLINE`(第 190 頁)。範例讀取 `"BEAS_APLATZ"."WMS_PRODLINE"`,可能是比 PDF 新的欄位,也可能有誤,**請在你的資料庫查詢實際結構確認** |
 | 4.3 WMS 生產線 | `BEAS_FTAPL.SortId` | PDF 第 127 頁有:「Sorting」(先前我寫「官方未說明」,這裡更正) |
 | 3.1 清空庫存 | `BEAS_RESERVATION_LINE`(`ItemCode`、`WhsCode`) | PDF 第 262 頁有表,`ItemCode`、`WhsCode`、`Quantity`(Reserved Quantity)都有 |
 | 3.2 收貨後處理 | `BEAS_FTPOS.UDF2` | PDF 第 139 頁有:「User Field 2」 |

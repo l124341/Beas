@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>BSL Authorization</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="To use BSL as a web service, a login is required to be set up." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsl-authorization-single-reque.htm",
+   prevP: "bsl_and_c.htm",
+   currP: "bsl_authorization.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "BSL Authorization",
+   mailsubject: "Feedback on: Beas Script 2026.09 - BSL Authorization",
+   sharesubject: "Beas Script 2026.09 - BSL Authorization",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "BSL_Authorization",
+   mailpath: "Beas Service Layer &gt; BSL how to use &gt; BSL Authorization /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - BSL Authorization").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsl_authorization.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>BSL Authorization</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">BSL Authorization</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">To use BSL as a web service, a login is required to be set up.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Comment">Use the following syntax to log in and log out:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">ODATA4</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Login</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;all&nbsp;calls</span><br />
+<span class="f_CodeExample" style="color: #666699;">ODATA4</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Logout</span><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use the POST command or define the login parameter in the header information.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following login parameters are available:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Parameter</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">User</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">The user can be a web user, a user defined in personnel data, a card number defined in personnel data.</p>
+<p class="p_Normal">This is defined by the WEB Application.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For the service this is always the employee login name, that is defined in <span class="f_Linklink_link">Personnel Master Data &gt; Login &gt; Name</span>.<br />
+<img alt="personnel_login" width="608" height="311" style="margin:0;width:608px;height:311px;border:none" src="personnel_login.jpg"/></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Pwd</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">The password of the user.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ServicePwd</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">The service password defined in <span class="f_Linklink_link">Administration &gt; Utilities &gt; Beas Manage Server &gt; Extended &gt; BSL Service</span>.</p>
+<p class="p_Normal"><img alt="manageserver_extented" width="529" height="262" style="margin:0;width:529px;height:262px;border:none" src="manageserver_extented.jpg"/></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">StationId</p>
+<p class="p_Normal">StationPwd</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Station ID.</p>
+<p class="p_Normal">Station Password.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">LocationId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Location ID.</p>
+<p class="p_Normal">For using Print solution you must define the LocationId and Station Password,</p>
+<p class="p_Normal">because the printer definition is saved in Location.</p>
+<p class="p_Normal">Alternatively, you can use the StationId, because the location is saved in the Station setup.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ProgramId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Program ID if related to the web program group.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">AppId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">App ID if related to web program group and an application.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">LanguageId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Language. Use Beas Language IDs: E=English, D=German, and so on.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">notFoundCode</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Define the http error code, if the program don't find resource, entity, field name and so on.<br />
+Default is 404. If you define another value, the system return the defined http code and code=404 in the error message</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use this if your application has problems with http code 404.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">POST</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">odata4</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Login</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ServicePwd&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;abc-def&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;StationId&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;machine1&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;LocationID&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;warehouse-left&quot;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="bsl-login" width="673" height="480" style="margin:0;width:673px;height:480px;border:none" src="bsl-login.jpg"/></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

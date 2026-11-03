@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>PrintService</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Documents,Print,PrintService" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Creates and manages print requests over BeasCommonService." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "printserviceget.htm",
+   prevP: "workorderpriority.htm",
+   currP: "bsl_printservice.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "PrintService",
+   mailsubject: "Feedback on: Beas Script 2026.09 - PrintService",
+   sharesubject: "Beas Script 2026.09 - PrintService",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsl_PrintService",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Administration &gt; PrintService /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - PrintService").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsl_printservice.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>PrintService</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">PrintService</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="printnservice" width="389" height="336" style="margin:0;width:389px;height:336px;border:none" src="printnservice.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Creates and manages print requests over BeasCommonService.</p>
+<p class="p_Normal">Allows WEB APP related print requests on the server side and manages of session related print requests.</p>
+<p class="p_Normal">Alternatively, starts Print service over Beas common service in the desktop application.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="printservice-workflow" width="755" height="380" style="margin:0;width:755px;height:380px;border:none" src="printservice-workflow.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: </span></p>
+<p class="p_Normal">This command creates<span style="color: #ff0000;"> </span>only an entry in the Beas common service and does not execute the report itself. </p>
+<p class="p_Notes"><span class="f_Notes">The report will always be created on the server on which the Beas common service is running.</span></p>
+<p class="p_Notes"><span class="f_Notes">Only Network printer is supported.</span></p>
+<p class="p_Normal"><span class="f_See">See</span>  <a href="http://help.beascloud.com/beas/index.html?beas_common_interface.htm" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Beas common service concept </a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The idea of this service is to send print command from the WEB APPs to the backend, or to use it if the backend is running synchronously. The WEB APP's all transactions are asynchronous.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Post:</span></p>
+<p class="p_Normal">WEB Service</p>
+<p class="p_Normal">if StationID, LocationID, ProgramID, AppID or PersnnellID not defined, the system will use the current information (example from current web session)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Print&nbsp;document&nbsp;over&nbsp;BeasCommon&nbsp;Service</span><br />
+<span class="f_CodeExample" style="color: #666699;">post</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">PrintService</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Title&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Workorder&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;PrintType&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Crystal&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ReportName&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;workorder.rpt&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Parameter&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Auftrags-Nr:&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">6002142</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;belpos_id_von&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">10</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;belpos_id_bis&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">10</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Get&nbsp;current&nbsp;Status</span><br />
+<span class="f_CodeExample" style="color: #666699;">get</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">PrintRequest</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">PrintRequest</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">Title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">SessionId</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">eq</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CurrentSessoinId</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

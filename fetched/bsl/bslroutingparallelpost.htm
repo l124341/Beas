@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>POST</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Allow to add or change parallel resources. All properties (see Get) are supported. &nbsp;Add/Change: &nbsp;Follow example add or update the parallel resource position. If no Parallel ty" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsl_itemmanagement.htm",
+   prevP: "bslroutingparallelget.htm",
+   currP: "bslroutingparallelpost.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "POST",
+   mailsubject: "Feedback on: Beas Script 2026.09 - POST",
+   sharesubject: "Beas Script 2026.09 - POST",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslRoutingParallelPOST",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Warehouse Management &gt; Item Area &gt; RoutingParallel &gt; POST /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - POST").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslroutingparallelpost.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>POST</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">POST</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Allow to add or change parallel resources.</p>
+<p class="p_Normal">All properties (<span class="f_See">see</span> Get) are supported.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Add/Change:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Follow example add or update the parallel resource position. If no Parallel type is defined, then the system save this as Tool</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">POST RoutingParallel</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;RoutingId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;0815&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;LineNumber&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">10</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;LineNumber2&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">20</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ResourceId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;s55&quot;</span><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">For creating a new position: don't define Linenumber 2</p>
+<p class="p_Normal"><span class="f_CourierFixed">POST RoutingParallel</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;RoutingId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;0815&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;LineNumber&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">10</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ResourceId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;s55&quot;</span><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">The system will return follow properties</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;value&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;0815&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;LineNumber&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">10</span><span style="font-size: 9pt; font-family: Consolas;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;LineNumber2&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">20</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_Normal">You can do this while creating routing position. In this case you add or replace the parallel resources</p>
+<p class="p_Normal"><span class="f_CourierFixed">POST RoutingLine</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;RoutingId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;0815&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ResourceId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;1800&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;Description&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;MyRoutingPosition&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515; background-color: #ffff00;">&quot;RoutingParallel&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:[</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ResourceId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;s55&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;UDF2&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;test&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;description&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;my Text&quot;</span><span style="font-size: 9pt; font-family: Consolas;">},</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ParallelType&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;A&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ResourceId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;1300&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;description&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;my Work on resource 1300&quot;</span><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp;]</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Or on header Level</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;RoutingId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;0815&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;lines&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:[{</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ResourceId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;1800&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;Description&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;MyRoutingPosition&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515; background-color: #ffff00;">&quot;RoutingParallel&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:[</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ResourceId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;s55&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;UDF2&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;test&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;description&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;my Text&quot;</span><span style="font-size: 9pt; font-family: Consolas;">},</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ParallelType&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;A&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ResourceId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;1300&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;description&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;my Work on resource 1300&quot;</span><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;]</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp;}]</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">} &nbsp; &nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Properties</p>
+<p class="p_Normal">Only Post:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:224px;"><p class="p_Normal">Property</p>
+</th>
+<th class="fielddescription" style="width:182px;"><p class="p_Normal">Type</p>
+</th>
+<th class="fielddescription" style="width:926px;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">RoutingId</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">The id of routing (normal the itemcode)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">LineNumber</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Routing Position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">LineNumber2</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Parallel Position</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">General properties:</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:224px;"><p class="p_Normal">Property</p>
+</th>
+<th class="fielddescription" style="width:182px;"><p class="p_Normal">Type</p>
+</th>
+<th class="fielddescription" style="width:182px;"><p class="p_Normal">Field</p>
+</th>
+<th class="fielddescription" style="width:57px;"><p class="p_Normal">Only</p>
+<p class="p_Normal">Wo</p>
+</th>
+<th class="fielddescription" style="width:501px;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Position</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Pos2_id</p>
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">the visible Position Number </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">ParallelType</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">RESOURCENTYP</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Define the resource type</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">W</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Tool</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">H</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Utilities</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Alternative Resource</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">R</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Parallel Resource</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Description</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">BEZ</p>
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">The description of resource (normal the name of the resource, but you can overwrite it</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">Active</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">AKTIV</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Define if entry is active<br />
+&nbsp;<br />
+Tool with &quot;DefineLeadTime&quot; (only work order)</p>
+<p class="p_Normal">Only one tool with this flag can be active. If you activate this flag, the system disable automatically the flag for all other entries with active &quot;DefineLeadTime&quot; and save the time in main routing position</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example: Activate the tool as main tool:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">PUT</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">WorkorderRoutingParallel</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample">6002510</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">10</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">10</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Active&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">true</span><span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Alternative</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">ALTERNATIV</p>
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Define as alternative resource position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">ResourceId</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">WKZ_ID</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">The resource id (tool or resource)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">SetupTime</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">TRAPLATZ</p>
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Define setup time</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">MachineLaborTime</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">TEAPLATZ</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Define the Machine/Labor time</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">TimesUnit</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">MENGE_ZEITJE</p>
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Define times Unit</p>
+<p class="p_Normal">1=Minute, 60=Hour</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">UseFactor</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">NUTZEN</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Define Use Factor</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">WorkSteps</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">ANZAHL</p>
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Define Work steps</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">ScrapPercent</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">MENGEAUSSCHUSS</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Define Scrap in percent</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">IdleTime</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">LIEGEZEIT</p>
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Define Idle Time</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">ResourceOptimisation</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">OPTIMIZED_ID</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Define Resource Optimisation</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">AllowManualChanges</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">ALLOW_MANUAL_CHANGE</p>
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Define if manual changes allowed</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">IgnoreOwnResourcePrice</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">IgnoreOwnResourcePrice</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Define, if own resource price as to be ignored</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">acquisitioncost</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">KST</p>
+</td>
+<td class="fielddescription" style="width:57px;"><p class="p_Normal">x</p>
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Cost of resource </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">CostInputIn</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">KOSTENJE</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><p class="p_Normal">x</p>
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Cost per minute (1) or hour(60)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">ProductionLifeUnits</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">BETRIEBSDAUER</p>
+</td>
+<td class="fielddescription" style="width:57px;"><p class="p_Normal">x</p>
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Production life in units</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">DefineLeadTime</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">BESTIMMT_ZEIT</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><p class="p_Normal">x</p>
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Only Tool<br />
+Define, if this entry define lead time for routing position</p>
+<p class="p_Normal"><span style="font-weight: bold;">Note</span>: if this is active, the system overwrite always defined Times in Routing position.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">CapacityPlanning</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">KAPAPLANUNG</p>
+</td>
+<td class="fielddescription" style="width:57px;"><p class="p_Normal">x</p>
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Check in capacity planning</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">ViewInAps</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">APSVIEW</p>
+</td>
+<td class="fielddescription" style="width:57px; background-color:#F7F7F7;"><p class="p_Normal">x</p>
+</td>
+<td class="fielddescription" style="width:501px; background-color:#F7F7F7;"><p class="p_Normal">Show in APS</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">UDF1 ... UDF15</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><br />
+</td>
+<td class="fielddescription" style="width:57px;"><br />
+</td>
+<td class="fielddescription" style="width:501px;"><p class="p_Normal">Define UDF1, UDF2 .... UDF15</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

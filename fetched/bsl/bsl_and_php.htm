@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>BSL and PHP</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Connection Example with PHP and Authorization &nbsp;In PHP it is simple to connect to the Beas Service Layer Example: get.php &nbsp;See Video: &nbsp;BSL and PHP &nbsp; &lt;?php &nbsp;// Connection" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsl_and_c.htm",
+   prevP: "bsl_and_web_ux_framework.htm",
+   currP: "bsl_and_php.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "BSL and PHP",
+   mailsubject: "Feedback on: Beas Script 2026.09 - BSL and PHP",
+   sharesubject: "Beas Script 2026.09 - BSL and PHP",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "BSL_and_PHP",
+   mailpath: "Beas Service Layer &gt; BSL how to use &gt; BSL and PHP /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - BSL and PHP").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsl_and_php.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>BSL and PHP</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">BSL and PHP</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Connection Example with PHP and Authorization</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In PHP it is simple to connect to the Beas Service Layer</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> get.php</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">See</span> Video:</p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/kYoy3HE-SHM" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">BSL and PHP</a></p>
+<p class="p_Normal"><iframe width="560" height="315" src="https://www.youtube.com/embed/kYoy3HE-SHM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&lt;?php</span><br />
+<span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Connection&nbsp;information</span><br />
+<span class="f_CodeExample" style="color: #666699;">$bsl_url</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'http://localhost:8080/odata4'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Connection&nbsp;by&nbsp;User&nbsp;and&nbsp;Password.&nbsp;Define&nbsp;this&nbsp;in&nbsp;Personnel&nbsp;-&nbsp;Tab&nbsp;&quot;Login&quot;</span><br />
+<span class="f_CodeExample" style="color: #666699;">$bsl_user</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'test01'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="color: #666699;">$bsl_password</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'1234'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="color: #666699;">$auth_cookie</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">''</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Autenticate</span><br />
+<span class="f_CodeExample" style="color: #666699;">$auth</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CallAPI</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$auth_cookie</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'POST'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$bsl_url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'/Login'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">json_encode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">([</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;User&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&gt;</span><span class="f_CodeExample" style="color: #666699;">$bsl_user</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Pwd&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=&gt;</span><span class="f_CodeExample" style="color: #666699;">$bsl_password</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]));</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$auth</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'ret_code'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]!=</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">die</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Authentication&nbsp;error&lt;br&gt;'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">print_r</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$auth</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">));</span><br />
+<span class="f_CodeExample" style="color: #666699;">$auth_cookie</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'beas-sessionid='</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">$auth</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'beas-sessionid'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">];</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Get&nbsp;Items&nbsp;(ItemCode,ItemName,&nbsp;which&nbsp;start&nbsp;between&nbsp;C&nbsp;and&nbsp;D)</span><br />
+<span class="f_CodeExample" style="color: #666699;">$items</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CallAPI</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$auth_cookie</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'GET'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$bsl_url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'/Item?$select=ItemCode,ItemName&amp;$filter=ItemCode%20gt%20&quot;C&quot;%20and%20ItemCode%20lt%20&quot;D&quot;&amp;$format=json'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$items</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'ret_code'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]!=</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">die</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Error&lt;br&gt;'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">print_r</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$items</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">));</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Display&nbsp;result</span><br />
+<span class="f_CodeExample" style="color: #666699;">echo</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&nbsp;Code&lt;/th&gt;&lt;th&gt;Item&nbsp;Name&lt;/th&gt;&lt;/tr&gt;'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="color: #666699;">foreach</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$items</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'value'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">as</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">echo</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'&lt;tr&gt;&lt;td&gt;'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">$item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'ItemCode'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">].</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'&lt;/td&gt;&lt;td&gt;'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">$item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'ItemName'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">].</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'&lt;/td&gt;&lt;/tr&gt;'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="color: #666699;">echo</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'&lt;/table&gt;'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Display&nbsp;result&nbsp;(no&nbsp;json&nbsp;format!!)</span><br />
+<span class="f_CodeExample" style="color: #666699;">echo</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$items</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Logout</span><br />
+<span class="f_CodeExample" style="color: #666699;">$items</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CallAPI</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$auth_cookie</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'POST'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$bsl_url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'/Logout'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="color: #666699;">exit</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;----------------------------------------------------------------------</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CallAPI</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">cookie</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">method</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$data</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_init</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">();</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">switch</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">method</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">case</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;POST&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_setopt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CURLOPT_POST</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$data</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_setopt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CURLOPT_HTTPHEADER</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">array</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Content-Type:application/json'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">));</span><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_setopt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CURLOPT_POSTFIELDS</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$data</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">break</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">case</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;PUT&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_setopt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CURLOPT_PUT</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">break</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">default</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$data</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$url</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">sprintf</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;%s?%s&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">http_build_query</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$data</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">));</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">cookie</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">!=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">''</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_setopt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CURLOPT_HTTPHEADER</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">array</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Cookie:&nbsp;&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">cookie</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">));</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_setopt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CURLOPT_URL</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_setopt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CURLOPT_RETURNTRANSFER</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">$result</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_exec</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">curl_close</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$curl</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">json_decode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">$result</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">?&gt;</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

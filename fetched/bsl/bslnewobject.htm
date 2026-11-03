@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Register new Object</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="An Object presents an SQL Table. The Beas Service Layer is always only a bridge between ODATA and the SQL Server." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslnewcolumn.htm",
+   prevP: "bslcustomizing.htm",
+   currP: "bslnewobject.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Register new Object",
+   mailsubject: "Feedback on: Beas Script 2026.09 - Register new Object",
+   sharesubject: "Beas Script 2026.09 - Register new Object",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslnewobject",
+   mailpath: "Beas Service Layer &gt; BSL Customization &gt; Register new Object /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Register new Object").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslnewobject.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Register new Object</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">Register new Object</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">An Object presents an SQL Table. The Beas Service Layer is always only a bridge between ODATA and the SQL Server.</p>
+<p class="p_Normal">The table name is mandatory. For every Object you can add function calls or POST commands.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Area [register collections] you can add own objects.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In this area, you can define the collection / object &nbsp;with property: primary-key, description,key-mandatory</p>
+<p class="p_Normal">&nbsp;<br />
+<span class="f_Example">Example:</span><br />
+SAP Activity for work order call. We use the SAP Activity:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="color: #666699;">register</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">collections</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">CompanyWorkOrderActivity</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">primary</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ActivityCode/i</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">description</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Activity</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">for</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Work</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">order</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[/</span><span class="f_CodeExample" style="color: #666699;">register</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">collections</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:218px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:1035px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:218px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">Name</span></p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">On first place you define the name of the object. </p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: The name must be unique.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:218px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">primary</span></p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the primary key (the object field name, not the sql field name) / Field Type (c for char or i for integer/number)</p>
+<p class="p_Normal">In case of more than one field, define fieldname, fieldname, example: <span class="f_CourierFixed">DocEntry/i,LineNumber/i </span>or <span class="f_CourierFixed">ItemCode/c</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:218px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">description</span></p>
+</td>
+<td style="vertical-align:top; width:1035px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Description for this object name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:218px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">keymandatory</span></p>
+</td>
+<td style="vertical-align:top; width:1035px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Mandatory key fields. <br />
+<span class="f_Example">Example:</span> In the warehouse object the warehouse ID is mandatory. <br />
+Normally, this does not need to be defined. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">All additional details described in the same name area:</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Define all Columns, Functions, Table and other properties</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #0000ff;">[register </span><span class="f_CourierFixed" style="color: #ff0000;">CompanyWorkOrderActivity</span><span class="f_CourierFixed" style="color: #0000ff;">]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">table=OCLG</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">post=true</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">column=name=ActivityCode&lt;tab&gt;sql=&quot;OCLG&quot;.&quot;ClgCode&quot;&lt;tab&gt;fieldtype=i</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">column=name=Details&lt;tab&gt;sql=&quot;OCLG&quot;.&quot;Details&quot;&lt;tab&gt;maxlength=20&lt;tab&gt;fieldtype=c</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #0000ff;">function=name=CountOfEntries&lt;tab&gt;description=Return count of existing activities</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #0000ff;">[/register </span><span class="f_CourierFixed" style="color: #ff0000;">CompanyWorkOrderActivity</span><span class="f_CourierFixed" style="color: #0000ff;">]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This returns the following result:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">GET</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CompanyWorkOrderActivity</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;value&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ActivityCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">467</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Details&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;item&nbsp;changed:&nbsp;2-uom-test2&nbsp;from&nbsp;manager&quot;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;and&nbsp;all&nbsp;other&nbsp;entries...</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can use the object with $select, $filter, $order and all other existing BSL functions.</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Always insert the company as suffix, otherwise naming conflicts can occur.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">The following properties are available:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:340px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:871px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:340px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">table={tablename}</span></p>
+</td>
+<td style="vertical-align:top; width:871px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the table related to this object. This is mandatory.</p>
+<p class="p_Normal"><span class="f_Example">Example</span> OCLG</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">post=true/false</span></p>
+</td>
+<td style="vertical-align:top; width:871px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define if the </p>
+<p class="p_Normal">  <a href="bslnewpost.htm" class="topiclink">POST</a></p>
+<p class="p_Normal">command is possible. </p>
+<p class="p_Normal">If you define this as true you must define an area:</p>
+<p class="p_Normal">[objectname/post] </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">mainfilter=[sql filter]</span></p>
+</td>
+<td style="vertical-align:top; width:871px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">You can define a main filter which is always active if you execute a GET command.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">aliasname</span></p>
+</td>
+<td style="vertical-align:top; width:871px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">You can define an alias name for the SQL statement. Use this, if you work with join and you need a table more than once.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">column</span></p>
+</td>
+<td style="vertical-align:top; width:871px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="bslnewcolumn.htm" class="topiclink">Add a column / property to the Object</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">function</span></p>
+</td>
+<td style="vertical-align:top; width:871px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Add a <a href="bslnewfunction.htm" class="topiclink">function</a> with the following properties. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">mainfilter</span></p>
+</td>
+<td style="vertical-align:top; width:871px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Define the main filter </a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Allow to define a general main filter</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: This is only for items starting with &quot;A&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">mainfilter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">substring</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'A'</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">join</span></p>
+</td>
+<td style="vertical-align:top; width:871px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Define joins to another tables</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Allow to create join for the tables </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">example</span>:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">table</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">BEAS_FTHAUPT</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">column</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">sql</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTHAUPT&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">fieldtype</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">i</span><br />
+<span class="f_CodeExample" style="color: #666699;">column</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">sql</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTPOS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">fieldtype</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">c</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;define&nbsp;join,&nbsp;which&nbsp;you&nbsp;need&nbsp;for&nbsp;main&nbsp;SQL&nbsp;Statement&nbsp;(all&nbsp;in&nbsp;one&nbsp;line,&nbsp;linebreak&nbsp;not&nbsp;allowed)</span><br />
+<span class="f_CodeExample">join</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">INNER</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">JOIN</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTPOS&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">on</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTPOS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BELNR_ID&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTHAUPT&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BELNR_ID&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">INNER</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">JOIN</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">on</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTLPSO.ITEMCODE&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">filter_[xxx]</span></p>
+</td>
+<td style="vertical-align:top; width:871px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define filter if property xxx is defined. </p>
+<p class="p_Normal">Supported properties: docentry, linenumber, linenumber2, docentry, personnelid, whscode</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">filterbranch</span></p>
+</td>
+<td style="vertical-align:top; width:871px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define filter for using $branch</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">filtertransaction</span></p>
+</td>
+<td style="vertical-align:top; width:871px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define filter for using $transaction</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">fitertransaction[xxx]</span></p>
+</td>
+<td style="vertical-align:top; width:871px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Define filter for special transactions</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Supported transaction types: issue, issuewo, receipt, receiptwo, timereceipt</p>
+<p class="p_Example"><span class="f_Example">example</span>:</p>
+<p class="p_Normal">Work order filter for $transaction=timereceipt</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">filtertransactiontimereceipt</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">coalesce</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTPOS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;STARTTIMEREQUEST&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:340px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">joincollection</span></p>
+</td>
+<td style="vertical-align:top; width:871px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Define possible joins to other tables</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Support follow properties</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:93px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:1077px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:93px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">name</p>
+</td>
+<td style="vertical-align:top; width:1077px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Name of target object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">join</p>
+</td>
+<td style="vertical-align:top; width:1077px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SQL command for Join</p>
+<p class="p_Normal">Example: Join from Work order position Production UoM to UoM Table</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">joincollection=UoM&lt;tab&gt;join=inner</span><span class="f_CodeExample">&nbsp;join&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_ME&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">on</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_ME&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ME_ID&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTPOS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ME_VERBRAUCH&quot;&lt;tab&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: The Object Item is considered as a special case, because it can create additional relation to other tables. Here you must define the source field only.</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">joincollection</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="font-weight: bold;">join</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #0000ff;">&quot;BEAS_FTPOS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">relation</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemCode</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Examples: </span></p>
+<p class="p_Normal">Relation between Work order Position and Warehouse (here you need always OWHS and BEAS_WHS)</p>
+<p class="p_Normal">(<span class="f_Attention">Note</span>: write all in one line!)</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">joincollection</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">WareHouse</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">LEFT</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">OUTER</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">JOIN</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OWHS&quot;</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">on</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OWHS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTPOS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">&nbsp;&nbsp;&nbsp;&nbsp;LEFT</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">OUTER</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">JOIN</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_WHS&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">on</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_WHS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OWHS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">relation</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">WhsCode</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Relation</p>
+</td>
+<td style="vertical-align:top; width:1077px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Field Name for Link for the $expand function</p>
+<p class="p_Normal"><span class="f_CourierFixed">FieldName</span> (for both sides)</p>
+<p class="p_Normal">or &quot;<span class="f_CourierFixed">Target field name</span>&quot; = &quot;<span class="f_CourierFixed">Source field name</span>&quot;</p>
+<p class="p_Normal">or &quot;<span class="f_CourierFixed">FieldName</span>&quot;,&quot;<span class="f_CourierFixed">FieldName</span>&quot;,...</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: object field name, not database field name.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> Relation between Work order Position and Work order BoM:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">relation</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">LineNumber</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

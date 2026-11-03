@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>External Production</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Present all objects for external Production &nbsp;	External Delivery Provision &nbsp; ExternalPurchaseOrder List of all Purchase order related to external production Only with Extenr" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslexternalpurchaseorder.htm",
+   prevP: "backflush.htm",
+   currP: "external_production.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "External Production",
+   mailsubject: "Feedback on: Beas Script 2026.09 - External Production",
+   sharesubject: "Beas Script 2026.09 - External Production",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "External_Production",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Production &gt; External Production /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - External Production").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "external_production.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>External Production</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">External Production</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="externalProduction" width="419" height="286" style="margin:0;width:419px;height:286px;border:none" src="externalproduction.png"/></p>
+<p class="p_Normal">Present all objects for external Production</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">External Delivery Provision</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="externalPurchaseOrder" width="690" height="252" style="margin:0;width:690px;height:252px;border:none" src="externalpurchaseorder.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="bslexternalpurchaseorder.htm" class="topiclink">ExternalPurchaseOrder</a> List of all Purchase order related to external production</p>
+<p class="p_Normal">Only with ExtenralDocEntry &gt; 0 and Status = O</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">GET</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ExternalPurchaseOrder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$</span><span class="f_CodeExample" style="font-size: 10pt;">select</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=[</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">fieldnames</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">],&amp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ExternalDocEntry</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">bg</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">0</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">and</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ExternalStatus</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">'O'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Read related BoM Position</p>
+<p class="p_Normal"><img alt="workorderpovision" width="800" height="385" style="margin:0;width:800px;height:385px;border:none" src="workorderpovision.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Get with <a href="bslworkorderprovisionbom.htm" class="topiclink">WorkOrderProvisionBom</a> (ExternalDocEntry): List of all BoM with Quantity information or PreAssign Function.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Post PreAssign</span> (<span class="f_See">see</span> <a href="bsl_preassign.htm" class="topiclink">PreAssign</a>)</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;BaseDocEntry&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">6002008</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;BaseLineNumber&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">10</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold; color: #a31515;">&quot;RoutingPosition&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">40</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold; color: #a31515;">&quot;External&quot;</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold;">:</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold; color: #0451a5;">&quot;Y&quot;</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold;">,</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold; color: #a31515;">&quot;PDocType&quot;</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold;">:</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold; color: #0451a5;">&quot;externalsend&quot;</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold;">,</span><span style="font-size: 9pt; font-family: Consolas; font-weight: bold; color: #a31515;">&quot;ExternalDocEntry&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">240</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;Format&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;JSON&quot;</span><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">Create Transfer to the Supplier warehouse with:</p>
+<p class="p_Normal"><span style="font-weight: bold;">Post Transfer</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ExternalDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">240</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;ExternalPurchaseOrder.ExternalDocEntry</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Allocation&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Create&nbsp;Reservation&nbsp;on&nbsp;target&nbsp;warehouse</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseExtProvision&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Close&nbsp;the&nbsp;process.&nbsp;If&nbsp;true,&nbsp;no&nbsp;additional&nbsp;provision&nbsp;possible</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocumentLines&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:[{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseType&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;wo&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">6002008</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseLineNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">10</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseLineNumber2&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">40</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Link&nbsp;to&nbsp;work&nbsp;order</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;RM&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;From&nbsp;Source&nbsp;Warehouse</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DistNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;RFID&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">null</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ToWhsCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;2000-a&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Target&nbsp;warehouse.&nbsp;Must&nbsp;be&nbsp;the&nbsp;same&nbsp;as&nbsp;in&nbsp;ExternalPurchaseOrder/ExternalWhsCode</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ToBinCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;b&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ToRFID&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">null</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DistNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">0.0100</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Item Version is part of Batch/Serial number. You don't need to define this in a transfer document.</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">External Goods receipt PO</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; height:515px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="bslexternalpurchaseorder.htm" class="topiclink">ExternalPurchaseOrder</a> List of all Purchase order related to external production, but </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">ExternalDocEntry can be 0 ( we don't check this)</p>
+<p class="p_Normal">ExternalStatus must be closed ('C')</p>
+<p class="p_Normal">But Purchase order line must be opened PurchaseOrderLines/LineStatus eq 'O'</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">GET</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ExternalPurchaseOrder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$</span><span class="f_CodeExample" style="font-size: 10pt;">select</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=[</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">fieldnames</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">],&amp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ExternalStatus</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">'C'</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">and</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">PurchaseOrderLines</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">'O'</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Create Goods Receipt from external production</span></p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="bslexternalpurchasedelivery.htm" class="topiclink">ExternalPurchaseDelivery</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-size: 10pt;">POST ExternalPurchaseDelivery</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ExternalDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">Number&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Purchaserder/ExternalDocEntry&nbsp;(&nbsp;0&nbsp;=&nbsp;no&nbsp;provision&nbsp;)</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;NumAtCard&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">String</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Remarks&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">String</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Reference2&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">String</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;TrackingNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">String</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocumentLines&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:[{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ExternalPurchaseOrder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseLineNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">PurchaseOrderLines</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">LineNumber</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Decimal</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Quantity&nbsp;Good</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Scrap&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Decimal</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Quantity&nbsp;Scrap.&nbsp;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseId&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">Boolean</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Close&nbsp;Purchase&nbsp;Order&nbsp;and&nbsp;provision&nbsp;process&nbsp;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}]</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: The system closes the Purchase automatically if total quantity is delivered (Scrap quantity ignored) or &quot;CloseId&quot; is true)</span></p>
+<p class="p_Normal">The system activates the next operation automatically (allow to create receipts). </p>
+<p class="p_Normal">The system closes the linked routing position if it</p>
+<p class="p_Normal"> &nbsp; - is not the last routing position</p>
+<p class="p_Normal"> &nbsp; - is not the first routing position, if backflushing process is on first operation</p>
+<p class="p_Normal"> &nbsp; - has provision</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Note">Note: Last or first operation:</span><br />
+The system does not create backflushing or receipt document for material related to this Routing position but not related to the external process.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Notes for settings:</span></p>
+<p class="p_Normal"><img alt="externalProductionSetting" width="647" height="92" style="margin:0;width:647px;height:92px;border:none" src="externalproductionsetting.png"/></p>
+<p class="p_Normal">Stock undercut not checked by Backend. It's part of front end</p>
+<p class="p_Normal">Max. Pur order quantity not checked by Backend. It's part of front end</p>
+<p class="p_Normal">Provision issue: Only automatically issue is supported. Only material which is possible to book automatically. The back end &nbsp;can't open a window</p>
+<p class="p_Normal">In case of a backflushing process error, the system cannot roll back from the goods receipt PO document. Only warning message in the resultString from ExternalPurchaseDelivery post.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">External Issue provision parts</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Get list of open &quot;Issue Provision parts&quot;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Get</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ExternalPurchaseDelivery</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ExternalStatus</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">'O'</span></p>
+<p class="p_Normal">Return all PO Goods receipt with provision part</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;value&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:[{</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">220</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">220</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Document&nbsp;Number&nbsp;from&nbsp;PO&nbsp;Receipt</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Reference2&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">null</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(....)</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocumentStatus&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;O&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Provision&nbsp;part&nbsp;is&nbsp;open</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ExternalDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">100089</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Provision&nbsp;Document</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ExternalStatus&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;O&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(...)}</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]}</span></p>
+<p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">The&nbsp;ExternalDocEnrty&nbsp;must&nbsp;be&nbsp;defined&nbsp;in&nbsp;PreAssign&nbsp;and&nbsp;Issue&nbsp;document.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Post PreAssign</span> (see <a href="bsl_preassign.htm" class="topiclink">PreAssign</a>)</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">6002008</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Work&nbsp;order</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseLineNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">10</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Work&nbsp;order&nbsp;Position</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;RoutingPosition&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">40</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Routing&nbsp;position</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;External&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Y&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;PDocType&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;externalissue&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;DocType&nbsp;for&nbsp;external&nbsp;issue&nbsp;provision&nbsp;part</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ExternalDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:100240,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;The&nbsp;ExternalPurchaseDelivery/ExternalDocEntry</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Format&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;JSON&quot;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;Return&nbsp;result&nbsp;in&nbsp;JSON&nbsp;FOrmat</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-weight: bold;">Issue Provision </span><a href="bsl_issuewo.htm" class="topiclink">Issue</a> function</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;">&nbsp;&nbsp;&nbsp;&nbsp;IssueWo:&nbsp;Use&nbsp;normal&nbsp;Issue&nbsp;function&nbsp;together&nbsp;with&nbsp;Transaction=&quot;issuewo&quot;.&nbsp;</p>
+<p class="p_Normal"> &nbsp; &nbsp;Note: Send <span class="f_CourierFixed">ExternalDocEntry</span> from <span class="f_CourierFixed">ExternalPurchaseDelivery/ExternalDocEntry</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Post</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Issue</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Transaction&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;issuewo&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ExternalDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">100240</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;ExternalPurchaseDelivery/ExternalDocEntry</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseExtIssue&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;set&nbsp;to&nbsp;true,&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;close&nbsp;the&nbsp;complete&nbsp;process</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocumentLines&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Base_DocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">642</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Base_LineNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">10</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Base_LineNumber2&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">20</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;RM&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">5</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Mc&quot;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">Close process:</p>
+<p class="p_Normal"> &nbsp; &nbsp;Set parameter<span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">CloseExtIssue</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Post</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Issue</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Transaction&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;issuewo&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ExternalDocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">100240</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;ExternalPurchaseDelivery/ExternalDocEntry</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; font-weight: bold; color: #0000ff;">&quot;CloseExtIssue&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:true,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">//&nbsp;set&nbsp;to&nbsp;true,&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;close&nbsp;the&nbsp;complete&nbsp;process</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocumentLines&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[..]</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

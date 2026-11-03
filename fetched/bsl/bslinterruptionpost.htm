@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>POST</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="With the following post command, you can start or create an interruption if the &quot;InterruptionId&quot; is set to 0." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslpoolreport.htm",
+   prevP: "bslinterruptionget.htm",
+   currP: "bslinterruptionpost.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "POST",
+   mailsubject: "Feedback on: Beas Script 2026.09 - POST",
+   sharesubject: "Beas Script 2026.09 - POST",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslInterruptionPost",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Production &gt; Interruption &gt; POST /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - POST").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslinterruptionpost.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>POST</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">POST</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With the following post command, you can start or create an interruption if the &quot;InterruptionId&quot; is set to 0.</p>
+<p class="p_Normal">This command is based on &quot;<a href="api_interruption.htm" class="topiclink">ue_interruption</a>&quot;. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Property for the POST command</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">action</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Define Action</p>
+<p class="p_Normal"><span class="f_CourierFixed">Start </span>-&gt; Start interruption</p>
+<p class="p_Normal"><span class="f_CourierFixed">Stop </span>-&gt; Stop interruption</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">ResourceId</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">The resource ID</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">DocEntry</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">The Interruption ID</p>
+<p class="p_Normal">- =0 will create a new one</p>
+<p class="p_Normal">- &gt;0 will load the interruption ID for the resource and allow to modify the information</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">InterruptionReasonId</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">The interruption reason ID</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ReasonInfo</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">The Reason Info; if it's empty we use the Reason text for the given Interruption Reason Id &quot;<span class="f_CourierFixed">InterruptionReasonId</span>&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">ResourceType</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Type of resource: <span class="f_CourierFixed">resource/tool</span></p>
+<p class="p_Normal">If it's empty we use &quot;<span class="f_CourierFixed">resource</span>&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Udf1..4</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">User define fields from Udf1 to Udf4</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">PersonnelId</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Set the personnel number starting the interruption</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">PersonnelId_end</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Set the personnel number ending the interruption</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">BaseType</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Linked to document</p>
+<p class="p_Normal">mtc = maintenance</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">PlanId</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Set the plan id for the maintenance order (<span class="f_See">see</span> maintenancenr)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">DateTime_From</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Set the start date/time for the interruption</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">DateTime_To</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Set the stop date/time for the interruption</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">StatusId</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Set the status for this interruption:<br />
+0 - Active</p>
+<p class="p_Normal">1 - Planned</p>
+<p class="p_Normal">2 - Completed</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">BaseDocNum</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">The linked docnum/docentry</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">BaseLine</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Interruption</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">BaseLine2</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">MaintenanceNr</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">You set a maintenance nr and the flag &quot;BEAS_STILLSTANDGRUND&quot;.&quot;CreateMaintenance&quot; in the reason-settings is active, then beas create a maintenance order</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if nr is empty, Beas gets the correct nr and planid automatically</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_TitleinText">post Interruption</span><br />
+<span class="f_CodeExample">  </span><span class="f_CodeExample" style="color: #ff0000;">{</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;action&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;start&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;ResourceId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;1500&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;ResourceType&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;resource&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;InterruptionId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;InterruptionReasonId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;cleaning&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;ReasonInfo&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;my text for the reason&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;Udf1&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;Udf2&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;Udf3&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;Udf4&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;PersonnelId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;PersonnelId_end&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;BaseType&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;PlanId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample"> &nbsp; </span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;DateTime_From&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;DateTime_To&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;StatusId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;BaseDocNum&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;BaseLine&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;BaseLine2&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample"> &nbsp;  </span><span class="f_CodeExample" style="color: #a04db3;">&quot;MaintenanceNr&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">  </span><span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Returnsyes</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;DocEntry&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;123</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;BaseType&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;mtc&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;BaseDocNum&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;456</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_Example">Example</span><span class="f_TitleinText"> simple Start:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;action&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;start&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ResourceId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;1500&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ResourceType&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;resource&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;InterruptionReasonId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;typ1&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ReasonInfo&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;my&nbsp;text&nbsp;for&nbsp;the&nbsp;reason&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;PersonnelId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;3&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;DateTime_From&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;2019/05/27&nbsp;10:00&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;DateTime_To&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_Example">Example</span><span class="f_TitleinText"> stop</span></p>
+<p class="p_Normal">Primary key is the resource and the reason id</p>
+<p class="p_Normal">if user and time not defined, the system will take current user and / or date / time.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;action&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;stop&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ResourceId&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;1500&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;DocEntry&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">12344</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_TitleinText"><span class="f_Example">Example:</span><span class="f_TitleinText"> Close all open Interruptions for current employee</span></p>
+<p class="p_TitleinText"><img alt="jbs-icon" width="38" height="26" style="margin:0;width:38px;height:26px;border:none" src="jbs-icon.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">#jbs</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">let</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">get</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Interruption?$filter=Closed&nbsp;eq&nbsp;false&amp;$select=ResourceId,DocEntry&quot;</span><span class="f_CodeExample" style="color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">for</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">in</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">)</span><br />
+<span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">bsl</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">post</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Interruption&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,{</span><span class="f_CodeExample" style="color: #3366ff;">action</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;stop&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">ResourceId</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">ResourceId</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample" style="color: #ff0000;">],</span><span class="f_CodeExample" style="color: #3366ff;">DocEntry</span><span class="f_CodeExample" style="color: #ff0000;">:(</span><span class="f_CodeExample" style="color: #3366ff;">b</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">DocEntry</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample" style="color: #3366ff;">loop</span><span class="f_CodeExample" style="color: #ff0000;">])});</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

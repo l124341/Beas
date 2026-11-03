@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>$metadata</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="This command returns the collection of all entity details." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslselect.htm",
+   prevP: "bslmask.htm",
+   currP: "bslmetadata.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "$metadata",
+   mailsubject: "Feedback on: Beas Script 2026.09 - $metadata",
+   sharesubject: "Beas Script 2026.09 - $metadata",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslMetadata",
+   mailpath: "Beas Service Layer &gt; BSL OData Interface &gt; $metadata /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - $metadata").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslmetadata.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>$metadata</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">$metadata</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">This command returns the collection of all entity details.</p>
+<p class="p_Normal">(only XML format)</p>
+<p class="p_Normal">&nbsp;<br />
+<span style="font-weight: bold;">Limitation:</span></p>
+<p class="p_Normal">Metadata uses ODATA syntax but IS NOT FULLY compatible with this protocol, and some functionalities are not implemented in the current protocol. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">$metadata</span> </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;?</span><span class="f_CodeExample" style="color: #666699;">xml</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">version</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1.0&quot;</span><span class="f_CodeExample">&nbsp;encoding</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;utf-8&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">edmx</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">Edmx</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Version</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1.0&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">xmlns</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">edmx</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;http://schemas.microsoft.com/ado/2007/06/edmx&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">edmx</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">DataServices</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">m</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">DataServiceVersion</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1.0&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">m</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">MaxDataServiceVersion</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;3.0&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">xmlns</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">m</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;http://schemas.microsoft.com/ado/2007/08/dataservices/metadata&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">Schema</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Namespace</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;bsl&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">xmlns</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;http://schemas.microsoft.com/ado/2008/09/edm&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;---for&nbsp;all&nbsp;Entities</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">EntityType</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;EntiyName&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">Key</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">PropertyRef</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #666699;">Key</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">Property</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Type</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Edm.String&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Nullable</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;false&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">MaxLength</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;20&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Unicode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;true&quot;</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #666699;">EntityType</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;&lt;-l&nbsp;Loop&nbsp;for&nbsp;all&nbsp;entities</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Overview&nbsp;about&nbsp;all&nbsp;Entities</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">EntityContainer</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;bslEntities&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">m</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">IsDefaultEntityContainer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;true&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">EntitySet</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WareHouse&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">EntityType</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;bsl.WareHouse&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">EntitySet</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Item&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">EntityType</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;bsl.Item&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">EntitySet</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemWareHouse&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">EntityType</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;bsl.ItemWareHouse&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">EntitySet</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WareHouseStock&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">EntityType</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;bsl.WareHouseStock&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;&lt;---&nbsp;loop&nbsp;for&nbsp;all&nbsp;other&nbsp;Entity</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #666699;">EntityContainer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #666699;">Schema</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #666699;">edmx</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">DataServices</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;/</span><span class="f_CodeExample" style="color: #666699;">edmx</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">Edmx</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Other formats or combinations are not supported.</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

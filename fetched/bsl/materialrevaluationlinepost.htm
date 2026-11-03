@@ -1,0 +1,648 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>POST</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Base_BaseDocument Number &nbsp;X Base document from Base document Base_BaseLine Number &nbsp;X Base document from Base document Base_DocEntry Number &nbsp;X Base Document DocEntry (" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsltransfer.htm",
+   prevP: "bslmaterialrevaluationget.htm",
+   currP: "materialrevaluationlinepost.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "POST",
+   mailsubject: "Feedback on: Beas Script 2026.09 - POST",
+   sharesubject: "Beas Script 2026.09 - POST",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "MaterialRevaluationLinePOST",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; TransactionDocuments &gt; MaterialRevaluation &gt; MaterialRevaluationLines &gt; POST /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - POST").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "materialrevaluationlinepost.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>POST</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">POST</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">Base_BaseDocument</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><p class="p_Normal">Base document from Base document</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; height:23px; background-color:#F7F7F7;"><p class="p_Normal">Base_BaseLine</p>
+</td>
+<td class="fielddescription" style="width:63px; height:23px; background-color:#F7F7F7;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px; height:23px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; height:23px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; height:23px; background-color:#F7F7F7;"><p class="p_Normal">Base document from Base document</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">Base_DocEntry</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><p class="p_Normal">Base Document DocEntry (Example RDR1.DocEntry) or Work order BEAS_FTHAUPT.BELNR_ID</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">Base_DocType</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String(5)</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">Document will create from BaseType... example for Work order BoM Position <br />
+Base DocType = wo</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">Base_LineNumber</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><p class="p_Normal">Link to BEAS_FTPOS.BELPOS_ID or Base Document RDR1.LineNum</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">Base_LineNumber2</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">Link to BEAS_FTSTL.POS_ID</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">Base_Link</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">String(1)</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Define the type of Link</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">S=SAP Link</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">B=beas Link (Default)</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span style="font-weight: bold;">SAP Link</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Use this if you want to create a document for a base document</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_Example">Example:</span> </p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Delivery Note from Sales Order</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">In this case you define</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Base_DocType=17</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Base_DocEntry=RDR1.DocEntry</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Base_LineNumber=RDR1.LineNum</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span style="font-weight: bold;">BEAS Link</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Use beas link if you only want to create a reference </p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">In Base_DocType define the base type</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">wo = beas work order</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">17 = SAP Sales Order</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">13 = SAP Pre Invoice</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">BatchAttributes</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">JSON</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Define Batch Attributes (WMS: Attributes, non WMS: UDF from Batches)</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the BatchAttributes. Note: The system does not check the values or whether the Attribute is defined.</p>
+<p class="p_Normal">WMS Database: Save the attribute values in the Batch - Attributes</p>
+<p class="p_Normal">Non WMS: Save the values in the defined Batch-UDF fields</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BatchAttributeCode</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The Code of Attribute</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Value</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The Value</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">Receipt</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;Lines&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:[</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp;{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ItemCode&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;RM_B&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;Quantity&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">2</span><span style="font-size: 9pt; font-family: Consolas;">, </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;DistNumber&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;TestMe123435&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;WhsCode&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;01&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;BatchAttributes&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;[</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;BatchAttributeCode&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;Width&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;Value&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;100&quot;</span><span style="font-size: 9pt; font-family: Consolas;">},</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;BatchAttributeCode&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;Height&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;Value&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;120&quot;</span><span style="font-size: 9pt; font-family: Consolas;">},</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;{</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;BatchAttributeCode&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;Country&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;Value&quot;</span><span style="font-size: 9pt; font-family: Consolas;">:</span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;ES&quot;</span><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;]</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp;}]}</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">CloseEntry</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">Boolean</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">x</p>
+</td>
+<td class="fielddescription" style="width:590px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Close work order position or Bill of Material position</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">only for receiptWo document type</p>
+<p class="p_Normal">if true, the system uses price valuation for the &quot;last receipt&quot; and closes the work order position or Bill of Material position</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Note: </p>
+<p class="p_Normal">If the receipt document is part of a time receipt, it is not allowed to close the work order position in the receipt document. <br />
+Define <span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;doNotClosePosition&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span> &nbsp;in the receipt part:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">TimeReceipt</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">&nbsp;/*&nbsp;Last&nbsp;entry.&nbsp;We&nbsp;will&nbsp;close&nbsp;time&nbsp;receipt&nbsp;and&nbsp;work&nbsp;order&nbsp;position&nbsp;*/</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Receipt&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;doNotClosePosition&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">/*&nbsp;We&nbsp;want&nbsp;to&nbsp;close,&nbsp;but&nbsp;on&nbsp;time&nbsp;receipt&nbsp;level.&nbsp;Don't&nbsp;close&nbsp;in&nbsp;receipt&nbsp;document&nbsp;&nbsp;*/</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Lines</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;:[{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;FP&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">2</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">/*&nbsp;Close&nbsp;document.&nbsp;We&nbsp;need&nbsp;this&nbsp;only&nbsp;for&nbsp;price&nbsp;valuation&nbsp;*/</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}]</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">Currency</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String(6)</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">Currency</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; height:13px;"><p class="p_Normal">DocEntry</p>
+</td>
+<td class="fielddescription" style="width:63px; height:13px;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px; height:13px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:38px; height:13px;"><br />
+</td>
+<td class="fielddescription" style="width:590px; height:13px;"><p class="p_Normal">Internal DocEntry Number</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">ItemCode</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String(50)</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">Item Code</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">ItemDescription</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">String(100)</p>
+</td>
+<td class="fielddescription" style="width:55px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><p class="p_Normal">Item Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">IVersionId</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String(20)</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">Item Version Number</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">Price</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">Decimal</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><p class="p_Normal">Price, only if Document.PriceType=&quot;fromplandocument&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">PrjCode</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String(20)</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">Define the Project Code</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">PTICode</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">String(5)</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Point of Issue User Association.</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"> Reference to table USR8/OPTI. For location Argentinia. Allow to define this on Header and line level. But the system will write this always on Header level. If you define this in more then one line, the system use PTICode always from last line.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">Quantity</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">Decimal</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Define Quantity in Stock Unit</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">ResDocEntry</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Reference to Reservation Document</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define link to Reservation DocEntry / Line Number</p>
+<p class="p_Normal">On header level you must define &quot;delReservation&quot;:true. In this case the system will update / delete all defined reservations after the creation of the document.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: This is not the SAP Document Number. This is the Reservation.DocEntry</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">ResLineNumber</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">Reference to Reservation LineNum</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">Scrap</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Define scrap (only external PO Delivery)</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">External PO &nbsp;to External PO Delivery: We can define the scrap.</p>
+<p class="p_Normal">The system saves this on line level i n column u_beas_von_lag. <span class="f_beas_Version">beas2020.09</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">ToBinCode</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Transfer Document: Target BinCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">ToRFID</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:55px;"><br />
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Transfer Document: Target RFID/LUID</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">toWareHouse</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Transfer Document: Target warehouse</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">U_xxxx</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">Any</p>
+</td>
+<td class="fielddescription" style="width:55px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px;"><p class="p_Normal">Define own UDF fields</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">UDF1...4</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String(20)</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">UDF Fields 1...4</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px;"><p class="p_Normal">UoMCode</p>
+</td>
+<td class="fielddescription" style="width:63px;"><p class="p_Normal">String(20)</p>
+</td>
+<td class="fielddescription" style="width:55px;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:38px;"><br />
+</td>
+<td class="fielddescription" style="width:590px;"><p class="p_Normal">Stock Unit</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:126px; background-color:#F7F7F7;"><p class="p_Normal">WhsCode</p>
+</td>
+<td class="fielddescription" style="width:63px; background-color:#F7F7F7;"><p class="p_Normal">String(20)</p>
+</td>
+<td class="fielddescription" style="width:55px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal">X</p>
+</td>
+<td class="fielddescription" style="width:590px; background-color:#F7F7F7;"><p class="p_Normal">Define the Warehouse</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

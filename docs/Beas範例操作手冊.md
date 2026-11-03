@@ -1,7 +1,7 @@
 # Beas 範例操作手冊(繁體中文)
 
 > 來源:`fetched/examples/`(Beas Script 2026.09 官方文件的 Examples 章節,共 53 頁)。
-> 補充來源:`fetched/missing/`(14 頁)與 `fetched/missing_b/`(214 頁):使用者事件、Configuration Wizard、DI-API、視窗事件與視窗客製化等,用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面;`missing_b` 共 214 頁已全部整理:與本手冊範例直接相關的由我逐頁閱讀並寫入各節,其餘 194 頁整理成 `docs/ref/` 底下的 5 份參考文件(見[第 11.11 節](#1111-參考文件索引));`fetched/missing_c/`(64 頁)**尚未閱讀**。參考文件由 AI 子代理整理,我已用腳本核對頁數、程式碼逐行與表格內容,但翻譯措辭未逐句審閱。
+> 補充來源:`fetched/missing/`(14 頁)與 `fetched/missing_b/`(214 頁):使用者事件、Configuration Wizard、DI-API、視窗事件與視窗客製化等,用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面;`missing_b` 共 214 頁已全部整理:與本手冊範例直接相關的由我逐頁閱讀並寫入各節,其餘 194 頁整理成參考文件;`fetched/missing_c/` 的 64 頁(WEB 函式庫、資料庫、SAP UI-API、關鍵字等)也已整理。`docs/ref/` 共 8 份參考文件(見[第 11.11 節](#1111-參考文件索引)),`fetched/missing_b/` 與 `fetched/missing_c/` 合計 278 頁都已處理。參考文件由 AI 子代理整理,我已用腳本核對頁數、程式碼逐行與表格內容,但翻譯措辭未逐句審閱。
 > 編排方式:依原文章節順序整理。**程式碼一律保留原文,不做修改**;說明文字翻譯為繁體中文。
 > 原文頁面裡的截圖未收錄,手冊中以「(原文附截圖)」標示。
 > 標示「⚠ 原文疑似筆誤」的地方,是翻譯時發現原文內容前後不一致之處,程式碼仍保持原樣,使用前請自行確認。
@@ -520,6 +520,14 @@ end event
 - `open` 事件中建立按鈕,指定名稱、文字、位置(x, y)與寬度。
 - `itempressed` 事件在按下按鈕時顯示訊息。
 
+**官方對 SAP 表單腳本的說明(SAP UI-API 頁)**
+
+- 要在 SAP 表單加入自己的功能:先開啟除錯視窗(Level 1),再開啟 SAP 表單,除錯視窗會顯示 SAP 觸發的所有事件;在其中的 global function 上按兩下,會開啟 script 視窗讓你直接寫程式碼。
+- 要**新增或變更元素**,請使用事件 `form_clicked()`。
+- 官方 NOTE:**不要使用 `windowevent`**,它只為相容性而保留,請改用 `global function`。
+
+> ⚠ 本節兩個範例(2.1、2.2)以及官方「BS Create objects」範例都使用 `windowevent`,與上述 NOTE 互相矛盾;官方沒有說明矛盾的原因。範例程式碼保持原文,新寫的腳本建議依官方 NOTE 改用 `global function`,並實測。
+
 ---
 
 ### 2.2 建立右鍵選單項目 — Create Right Click Entry
@@ -552,6 +560,29 @@ end event
 
 1. 在 `prerightclick` 中直接帶入點擊後要執行的指令(`...===message=Click on my entry`)。
 2. 在 `prerightclick` 只建立項目,另外用 `premmenuclick <項目名稱>` 事件處理點擊。
+
+**`beasgui=rightclickmenu` 參數(官方「BS Right Click」頁)**
+
+```
+beasgui=rightclickmenu=type=caption=uid=[image=[position=[enabled=[checked=[command, if not windowevent...]]]]]
+```
+
+| 參數 | 說明 |
+|---|---|
+| `type` | `1` = 一般項目 |
+| `caption` | 選單中顯示的文字,例:`<translate:My Menu Entry>` |
+| `uid` | 識別碼(物件名稱) |
+| `image` | 圖片,需完整路徑,例:`<global:system_home>bmp\project_red.png` |
+| `position` | 在選單清單中的位置 |
+| `enabled` | boolean:啟用 / 停用 |
+| `checked` | boolean:設定 check 屬性 |
+| `command` | 直接設定指令;也可以改用 windowevent 處理 |
+
+對照本節範例 `beasgui=rightclickmenu=1=<spr:My Entry=myentry1=<global:system_home>bmp\formel.png=3===message=Click on my entry`:`type=1`、`caption=<spr:My Entry`、`uid=myentry1`、`image=…\formel.png`、`position=3`、`enabled` 與 `checked` 留空、`command=message=Click on my entry`。
+
+官方限制:僅適用於 SAP 表單;此函式**只能在 `windowevent prerightclick` 中呼叫**。
+
+> ⚠ 這條「只能在 `windowevent prerightclick` 呼叫」的規定,與 SAP UI-API 頁「不要使用 windowevents」的 NOTE 互相矛盾(見 2.1)。
 
 ---
 
@@ -1022,6 +1053,8 @@ end function
 4. 用 SQL 取第一個途程位置(依 **`SortId`** 排序,**不是** `POS_ID`)的資源之 `WMS_PRODLINE`(因為 BSL 沒有提供此欄位)。
 5. 用 SQL 更新工單位置的 `WMS_PRODLINE`(原文說明:此欄位在 Beas 中沒有額外功能,且沒有 BSL PUT 可用,所以例外使用 update)。
 
+> 資料表欄位查證:官方資料庫文件(`docs/ref/資料庫.md`)**沒有說明** `BEAS_FTPOS.WMS_PRODLINE`,也沒有 `BEAS_APLATZ.WMS_PRODLINE`。這個範例對 Beas 資料表做 `update`,官方自己的說明已提醒無法保證(見本節開頭)。欄位的完整對照見[附錄:資料表欄位查證](#範例用到的資料表欄位查證)。
+
 ---
 
 ### 4.4 批號保留 — Batch number reservation
@@ -1084,6 +1117,8 @@ end function
 
 - `CreateWorkOrderPositionEnd`:呼叫 BSL `GetNextBatchNumber`(它會觸發 `GetBatchNumber`)取得新批號,寫入 `BEAS_FTPOS.CHARGE_ID`。
 - `GetBatchNumber`:若工單位置已有批號(`CHARGE_ID` 非空)就直接沿用;否則依「工單號+行號+日期+時間」產生新批號。
+
+> 資料表欄位查證:`BEAS_FTPOS.CHARGE_ID` 在官方資料庫文件中**沒有說明**(只有品管表 `qs_fthaupt.Charge_id` 被提到)。本範例直接 `update` 這個欄位,無法由官方文件證實;使用前請實測,並留意官方對「直接更新 Beas 資料表」的保證聲明。見[附錄:資料表欄位查證](#範例用到的資料表欄位查證)。
 
 ---
 
@@ -1955,6 +1990,8 @@ odata4/WorkorderPos/Print(6002479,10,"print","",false)
 woPrint/6002482/10
 ```
 
+> WEB APP 呼叫 Beas Service Layer 時(官方 WEB 函式庫頁):`ux.dgrid` 使用 `/odata4/Item?$ProgramId=…&$AppId=…`,而 `ux.saveAll`、`extendedSearch` 使用 `/odata4/v1/…`,**前綴不同,官方沒有解釋差別**。官方註解提醒:使用 BSL 時務必定義 `ProgramId` 與 `AppId`。這批 WEB 函式庫頁面中**沒有出現 `beasFunction` / `application.beasFunction`**,所以上面第三種寫法的 WEB 用法,只能依本節頁面本身的說明。詳見 `docs/ref/WEB函式庫.md`。
+
 ---
 
 ### 7.4 工單建立後自動列印
@@ -2504,6 +2541,8 @@ destroy=itemprice
 
 使用 Beas Service Layer 的範例。
 
+> 官方文件查證:`fetched/missing_c/` 中的 JSON、XML 兩頁只是一般性說明(JSON 的資料型別表等),**沒有任何 Beas 專屬的 JSON 指令、組字串方法或範例**;PSR-File 頁說明 DataStore 的 alias 是 resultSet,處理 resultSet 的範例函式是 `sqlStatement.select`、`bsl.get`,但**沒有 `instance datastore` 指令的語法**。因此本節與前面章節中以 `addvar` 組 JSON 字串、`instance datastore` 取資料的寫法,無法由這幾頁證實,請以各 BSL 指令頁與實測為準。
+
 ### 10.1 BSL:建立收貨單 — create Receipt document
 
 用 Beas Service Layer 建立一張含 **5 個新序號**的收貨單。此範例同時示範如何使用佔位符(place holder)。
@@ -2954,7 +2993,7 @@ end function
 
 ### 11.11 參考文件索引
 
-這些文件是把 `fetched/missing_b/` 的官方頁面逐頁翻成繁體中文;**程式碼逐字保留原文**,官方頁面自身的矛盾以「⚠」標出,未自行判斷對錯。
+這些文件是把 `fetched/missing_b/` 與 `fetched/missing_c/` 的官方頁面逐頁翻成繁體中文;**程式碼逐字保留原文**,官方頁面自身的矛盾以「⚠」標出,未自行判斷對錯。
 
 | 文件 | 內容 | 頁數 |
 |---|---|---|
@@ -2963,6 +3002,9 @@ end function
 | `docs/ref/API_方法與屬性.md` | B1UP、DI-API 方法與屬性(含 admininfo 257 列)、Service Types(127 列) | 21 |
 | `docs/ref/API_物件.md` | DI-API 物件:document、line、batchnumbers、item2、whsinfo 等 | 21 |
 | `docs/ref/視窗.md` | Beas 視窗 ID、SAP 表單 ID 與選單 ID 對照表、視窗客製化、視窗事件、datawindow | 36 |
+| `docs/ref/介面與關鍵字.md` | SAP UI-API(BS Item / Create objects / Right Click)、Addon connector、Beas common service、PSR / JSON / XML / DateTime format | 13 |
+| `docs/ref/資料庫.md` | 資料庫檢視 BEASV_*(欄位與資料表對應)、預存程序、函式、資料模型、DB.INI 結構 | 20 |
+| `docs/ref/WEB函式庫.md` | WEB APP 2.0:ui.js、ux.js、beas.js 與序號/批號/搜尋/附件類別 | 31 |
 
 ---
 
@@ -2988,6 +3030,41 @@ end function
 | 資料集 | `instance datastore d`;`d.setrow=<n>`;`<d.欄位>`(欄位小寫);用完 `destroy=d` |
 | 流程控制 | `if … then … end if`;`for 變數=1 to <n> … next`;`[標籤]` + `goto=標籤` |
 | 使用者事件常見變數 | 以 `e_` 開頭,如 `e_WoDocEntry`、`e_WoLineNumber`、`e_DistNumber`、`e_ReceiptDocEntry` |
+
+### 格式代碼查證(上表各格式在官方文件的出處)
+
+上面「格式轉換」一列是我從範例歸納的。逐項到官方頁面搜尋的結果(`fetched/beasscript/`):
+
+| 格式 | 官方出處 |
+|---|---|
+| `upper`、`left n`、`right n`、`mid n m`、`dbstring`、`tosql`、`hex2int` | `bs_string.htm` 有 |
+| `#0` | `bs_number.htm` 有 |
+| `yyyymmdd`、`date` | `bs_date.htm` 有 |
+| `dbstring`、`dbnum` | `platzhalter.htm` 有 |
+| `#.000000`、`hhmm`、`bsl` | 在上述 `bs_number` / `bs_date` / `platzhalter` 頁中**沒有找到**(可能在其他頁面,我沒有逐頁搜尋全部 `beasscript/`) |
+
+另外,`missing_c` 的「DateTime format」頁(`docs/ref/介面與關鍵字.md`)是 DataWindow 風格的**顯示格式**:日期用 `d`、`dd`、`ddd`、`dddd`、`m`~`mmmm`、`yy`、`yyyy`;時間用 `h`、`hh`、`m`/`mm`(分鐘,必須接在 `h` 或 `hh` 之後)、`s`/`ss`(必須接在 `m` 或 `mm` 之後)、`f`~`ffffff`、`AM/PM` 等。該頁的範例**都帶分隔符號**,沒有 `yyyymmdd`、`hhmm` 這種連在一起的寫法,也沒有說它與 Beas 佔位符 `<今天,yyyymmdd>` 的格式規則相同,所以不能直接當作佔位符格式的依據。
+
+### 範例用到的資料表欄位查證
+
+本手冊的範例直接讀寫 Beas 資料表。對照官方資料庫文件(`docs/ref/資料庫.md`)的結果:
+
+| 範例 | 資料表.欄位 | 官方資料庫文件 |
+|---|---|---|
+| 4.4 批號保留 | `BEAS_FTPOS.CHARGE_ID` | **未說明**(`BEAS_QSFTHAUPT.CHARGE_ID` 是 QC 訂單的欄位,不同表) |
+| 4.3 WMS 生產線 | `BEAS_FTPOS.WMS_PRODLINE`、`BEAS_APLATZ.WMS_PRODLINE` | **未說明** |
+| 4.3 WMS 生產線 | `order by "SortId"`(來自 `BEAS_FTAPL` 的查詢) | `SortId` 是檢視 `BEASV_WORKORDER_BOM`、`BEASV_WORKORDER_ROUTING` 的**排序欄位**;官方未說明 `BEAS_FTAPL` 本身有沒有這個欄位 |
+| 3.1 清空庫存 | `BEAS_RESERVATION_LINE` | 只出現**表名**(BOM 檢視的 `Reserved` 欄位),沒有欄位說明 |
+| 3.2 收貨後處理 | `BEAS_FTPOS.UDF2` | **未說明**(官方只有 `BEAS_FTHAUPT.UDF1…4` 的整段對應) |
+| 4.1 範例 4 | `BEAS_FTHAUPT.UDF4` | 以「`UDF1…UDF4`」整段對應出現,沒有個別說明 |
+| 11.7 CreateWorkOrderEnd | `BEAS_FTHAUPT.SPERRUNG` | 有說明:對應檢視欄位 `Lock` |
+| 4.6 結案工單 | `BEAS_FTHAUPT.ABGKZ` | 有說明:對應檢視欄位 `Closed` |
+| 多個範例 | `BELNR_ID`、`BELPOS_ID` | 有說明:對應檢視的 `DocEntry`、`LineNumber` |
+| 11.7 CreateWorkOrderEnd | `BEAS_APLATZ_STILLSTAND` | **未說明**(官方 `CreateWorkOrderEnd` 頁自己的範例使用) |
+| 5.1 QC | `BEAS_QSFTPOS.QS_ID`、`MESSWERTC`、`SPERRGRUNDID`、`MINIMAL` | 有說明,但出處是 BSL 頁 `bslqcordermeasurementget.htm`,不在資料庫章節;`MAXIMAL` 未確認 |
+| 3.2、4.x | `IBT1`、`OBTN`、`OITM` 等 | SAP 標準資料表,不屬於 Beas 文件 |
+
+> 官方 `database.htm` 連結到一份完整的資料庫文件 `database.pdf`,不在目前抓到的頁面中。要確認「未說明」的欄位,需要這份 PDF 或實際查詢資料庫結構。
 
 ### Beas 視窗事件一覽(官方 `window events (beas)`)
 

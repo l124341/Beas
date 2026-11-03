@@ -1,7 +1,7 @@
 # Beas 範例操作手冊(繁體中文)
 
 > 來源:`fetched/examples/`(Beas Script 2026.09 官方文件的 Examples 章節,共 53 頁)。
-> 補充來源:`fetched/missing/`(14 頁:使用者事件、Configuration Wizard、DI-API itemprice、視窗事件等),用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面。
+> 補充來源:`fetched/missing/`(14 頁)與 `fetched/missing_b/`(214 頁):使用者事件、Configuration Wizard、DI-API、視窗事件與視窗客製化等,用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面;`missing_b` 共 214 頁中,與本手冊範例直接相關的已逐頁閱讀,其餘(如各 DI-API 物件的完整屬性、SAP 表單 ID、其他使用者事件頁、資料庫與 WEB 前端等)**尚未閱讀**。
 > 編排方式:依原文章節順序整理。**程式碼一律保留原文,不做修改**;說明文字翻譯為繁體中文。
 > 原文頁面裡的截圖未收錄,手冊中以「(原文附截圖)」標示。
 > 標示「⚠ 原文疑似筆誤」的地方,是翻譯時發現原文內容前後不一致之處,程式碼仍保持原樣,使用前請自行確認。
@@ -804,6 +804,10 @@ end function
 
 在使用者事件 `workordermangement.GetBatchNumber` 與 `workordermangement.GetSerialNumber` 中,可撰寫腳本來產生工單**收貨/序號保留**時所用的批號或序號。
 
+**事件變數(官方說明)**:`GetBatchNumber` 與 `GetSerialNumber` 可用的變數相同,**只有 `e_DistNumber` 可寫**(放入新的批號/序號;沒定義時系統使用設定精靈的標準計數),`e_ItemCode`、`e_DocEntry`、`e_LineNumber`、`e_LineNumber2` 皆為唯讀。完整說明見 [11.8](#118-getbatchnumber--getserialnumber官方說明)。
+
+> 說明:官方 `GetBatchNumber` 頁面把範例 3、4(其實是 `GetSerialNumber`)也列在一起,與本節相同。
+
 **範例 1:批號 = 今天日期(yyyymmdd)+ "-" + 當日流水號**
 例:`20200501-0001`、`20200501-0002`……
 
@@ -1256,6 +1260,15 @@ end function
 end global
 ```
 
+**工單結構視窗(官方說明)**:視窗檔 `fert_stuktur_browse`,不需參數即可開啟;可選擇只開啟某一個工單位置。
+
+```
+openwindow=dw=beas_WorkOrder_Structur
+openwindow=dw=beas_WorkOrder_Structur<tab>belnr_id=6002253<tab>belpos_id=10
+```
+
+參數:`DocEntry` / `belnr_id`(基礎文件)、`LineNumber` / `belpos_id`(基礎文件行)。官方頁面**沒有列出 `zeilentyp` 各值的意義**,所以下面程式碼中 `zeilentyp = 0`(工單)與 `= 10`(工單位置)的對應,仍是依範例上下文的解讀,未獲官方確認。
+
 **運作說明**
 
 1. `form_loaded`:在右側建立「Close order」按鈕。
@@ -1417,6 +1430,30 @@ end global
 ```
 
 **說明**:當工單號、BOM 位置與 pos_id 都已指定時,呼叫 BSL 檢查;回傳狀態為 `locked`(超出限制)時,把數量重設為 0。
+
+**手動過帳視窗 `mw_manuell_buchen`(官方說明)**
+
+「手動收貨、發料、移轉」是**同一個視窗**。開啟參數:
+
+| 參數 | 說明 |
+|---|---|
+| `s_parm1` | 品項代碼 |
+| `s_parm2` | `F` = 針對工單、`B` = 分配(Allocation)、`U` = 目前不支援 |
+| `s_parm3` | `einbuchen` = 收貨、`ausbuchen` = 發料、`umbuchen` = 移轉 |
+| `s_parm4` | `close` = 交易後關閉視窗 |
+
+另可帶入預設值:`e_batchnum`(批號)、`e_quantity`(數量)、`e_reference`(參考)、`e_info`、`e_whscodedfl`(預設倉庫)、`e_whscode_to`(移轉目標倉庫)、`e_cardcode`(業務夥伴)、`e_intrserial`(內部序號)、`e_liefercharge_id`(供應商批號)、`e_indate` / `e_prddate` / `e_expdate`(入庫、生產、有效日期,格式 `yyyy/mm/dd`)、`e_status`(交易後的批號狀態)、`e_notes`、`e_located`(批號位置)。
+
+視窗專屬事件:
+
+| 事件 | 說明 |
+|---|---|
+| `item-changed` | 品項變更之後(變數 `dw_1` = 此交易的所有欄位) |
+| `item-reset` | 重設品項(交易後,清空所有欄位以開始新交易) |
+| `buchen-start` | 交易開始前。把 `e_ok` 設為 `"N"` 可**取消**流程;`dw_1` 為交易資料,`<dw_1.getrow>` = 目前新增的行 |
+| `buchen-ende` | 文件建立後,變數 `e_docentry` = 建立的文件 |
+
+> 編註:本節範例 4.8 / 4.9 使用的 `dw_1_item_menge_itemchanged` 屬於 `dw_1` 的欄位事件(見附錄的視窗事件表),與上表的視窗專屬事件是不同層級。
 
 > ⚠ 原文疑似筆誤:`CheckMinMaxBom` 的第 4 個參數寫成 `<dw_1.item.pos_id.value>:<dw_1.item.menge.value,dbnum>`,第 1 個 `if` 缺 `end if`。程式碼保持原文。
 
@@ -1970,6 +2007,8 @@ end function
 
 **流程**:用 BSL 取得所有子位置清單(逗號分隔)→ 用 `tools=token` 逐個取出 → 每一個位置呼叫 `PrintWorkorder` → 取完離開迴圈並 `destroy`。
 
+> 備註:官方 `CreateWorkOrderPositionEnd` / `CreateWorkOrderEnd` 事件頁另有一個較短的寫法(只列印目前位置),見 [11.7](#117-工單建立相關事件官方說明)。`CreateWorkOrderPositionEnd` 發生在時間計算之前,本節選用 `Complete` 事件是因為要等時間計算完成。
+>
 > ⚠ 變數名稱:範例中的 `<e_WoLineNum>` 在官方事件頁列出的變數是 **`e_WoLineNumber`**(官方事件頁與本範例頁都有這個不一致)。程式碼保持原文,使用前請改成 `e_WoLineNumber` 並實際測試。
 >
 > ⚠ 更新模式:官方變數說明指出,`e_Refresh = true` 時處理的是「暫時、未存進資料庫」的工單。範例沒有檢查 `e_Refresh`;若你的環境會觸發更新模式,建議自行在腳本開頭判斷(例如 `e_Refresh` 為 true 就直接結束),避免對暫時的工單執行列印。這是依官方變數說明的建議,範例本身未處理,也未實測。
@@ -1993,6 +2032,64 @@ end function
 3. 設定欄位、明細(`lines=…`)。
 4. `add` 新增(或 `update` 更新),檢查 `ret_code`。
 5. `destroy` 釋放物件。
+
+### 9.0 DI-API 基本規則(官方說明)
+
+- **盡量使用 Beas Service Layer**:它是建立文件的介面,並支援所有 Beas 規則。DI-API 沒有 Beas 的檢查。
+- `declare=<物件名>=ue_api_sbo` 之後,可直接透過物件名稱存取 SAP DI-API;幾乎任何屬性都能存取,`ue_api_sbo` **不做任何檢查**。
+- **同一時間只允許一個 DI-API 物件**。不要同時 `declare=b1=ue_api_sbo` 與 `declare=b2=ue_api_sbo`,否則像 `<getlasterror>` 這類特殊變數會有問題。
+- 用完一定要 `destroy`,否則可能造成後續錯誤。(例如 9.3 在建立第二份文件前,先 `destroy=di_doc`,即是這個原因。)
+
+**錯誤處理**
+
+| 項目 | 寫法 |
+|---|---|
+| 回傳碼 | `<物件名.ret_code>`:`-1` = 錯誤、`1` = 成功 |
+| 回傳文字 | `<物件名.ret_text>`:最後的錯誤 |
+| 詳細錯誤 | `<物件名.getlasterror>` |
+| 安靜模式 | `d.silent=true`:不顯示任何錯誤訊息 |
+
+`add`、`getbusinessobject`、`update`、`getbykey` 等函式都會回傳 `value`(`ret_code = 1` 表示成功)。
+
+```
+vdoc.add
+if <vdoc.ret_code> = -1 then
+  message=fehler$error create Order: <vdoc.getlasterror>
+end if
+```
+
+> 另外,`add`、`update` 的官方方法頁寫的是「回傳變數 `value`:0 = 失敗、1 = 成功」(`update` 在安靜模式下,失敗時 `errortext` 帶有錯誤內容);而總覽頁寫的是 `ret_code`:-1 = 錯誤。兩種表達不一致,本手冊的範例都用 `ret_code = -1` 判斷。
+
+**常用方法**
+
+| 方法 | 說明 |
+|---|---|
+| `getbusinessobject=<物件>` | 指定要取得、載入或刪除的 SAP 物件(名稱或編號皆可)。指定後該物件本身就成為此商業物件,不會另外回傳物件 |
+| `getbykey=<值>`、`getbykey=<值1>=<值2>` | 讀取已指定物件的資料;銷售訂單只需文件號(DocEntry)。數值鍵用 `getbynum=<數字>` |
+| `add` | 新增一筆;成功後用 `getnewobjectkey` 取得新文件號 |
+| `update` | 更新(儲存)變更 |
+| `close` | 結案文件(之後仍需 `update`) |
+| `getnewobjectkey` | 取得 `add` 剛建立的文件號 |
+
+**範例中用到的物件類型(官方「DI-API: Objects」)**
+
+| 編號 | 名稱 | 說明 | 用於 |
+|---|---|---|---|
+| 4 | `oItems`、`oitm` | 品項 | 9.9 |
+| 17 | `oOrders`、`ordr` | 銷售訂單 | 9.8 |
+| 20 | `oPurchaseDeliveryNotes` | 採購收貨 PO | 9.5 |
+| 22 | `oPurchaseOrders`、`opor` | 採購訂單 | 9.4、9.5(`basetype`) |
+| 30 | `oJournalEntries` | 日記帳分錄 | 9.7 |
+| 59 | `oInventoryGenEntry` | 一般收貨(Goods Receipt) | 9.1、9.3 |
+| 60 | `oInventoryGenExit` | 一般發料(Goods Issue) | — |
+| 67 | `oStockTransfer` | 庫存移轉 | 9.3 |
+| 73 | `oAlternateCatNum` | 替代目錄編號(業務夥伴目錄編號) | 9.6 |
+
+官方說明指出 `ue_api_sbo` 支援**所有 SAP 物件類型**,完整的編號與名稱對照見 `fetched/missing_b/documenttyp.htm`(資料來源為 SAP Business One SDK)。
+
+**明細行(Line)物件**:階層為 `document → Line → batchnumber / serialnumber`。方法:`add`(新增行)、`setcurrentline=<x>`(切換到第 x 行)、`delete=<x>`(刪除第 x 行)。批號物件的寫法為 `vdoc=lines=batchnumbers=<屬性>=<值>`,屬性有 `BatchNumber`(必填,最多 32 字元,與品項、倉庫組合需唯一)、`Quantity`、`ExpiryDate`、`ManufacturingDate` 等。官方並提醒:批號請盡量改用 Beas Service Layer 的 BatchNumber。
+
+> ⚠ 9.3 範例使用的屬性名稱是 `batchnum`(`lines=batchnumber=batchnum=...`),官方批號物件頁列出的屬性是 `BatchNumber`;兩者的差異官方沒有說明(可能是別名),請實際測試。
 
 ### 9.1 含使用者自訂欄位的收貨 — Goods Receipt with UF
 
@@ -2661,7 +2758,155 @@ system.debug=level=1 // go back to level 1
 | `workordermanagement` | Calc.、creation、manage、Preassign、issue process、receipt process、time recording、wip - Work in Process |
 | `qcmanagement` | QCPlanDetermination、QCorderCreate、QCorderCreateEnd、Print |
 
-> 各事件的完整變數表在官方各事件頁面;目前 repo 只有本手冊用到的 5 個事件頁:`CreateWorkOrderPositionComplete`、`workordermanagement.ReceiptStart`、`workordermanagement.ReceiptEnd`、`stockmanagement.ReceiptEnd`、`TimeRecording`。其餘見 `docs/缺漏頁面清單.md`。
+> 各事件的完整變數表在 `fetched/missing_b/ue_*.htm` 與 `fetched/missing/ue_*.htm`;下面 11.7–11.9 摘錄與本手冊範例有關的事件。
+
+### 11.7 工單建立相關事件(官方說明)
+
+| 事件 | 執行時機 | 備註 |
+|---|---|---|
+| `CreateWorkOrderPositionEnd` | 建立新工單位置之後、**時間保留之前**。位置、BOM、途程已儲存 | 只對**主工單位置**呼叫,不含子位置。**此時尚未計算時間**;需要時間請改用 `CreateWorkOrderPositionComplete` |
+| `CreateWorkOrderPositionComplete` | 建立新工單位置**並完成時間計算之後** | 只對主層級呼叫,不含子位置 |
+| `CreateWorkOrderEnd` | **整張工單建立完成之後** | **使用者手動建立工單時不會觸發** |
+
+三個事件共用的變數(`CreateWorkOrderEnd` 只有第一個),皆為唯讀:
+
+| 變數 | 說明 |
+|---|---|
+| `e_WoDocEntry` | 建立的工單號 |
+| `e_WoLineNumber` | 行號 |
+| `e_Project` | 專案編號 |
+| `e_ItemCode` | 此工單位置的品項代碼 |
+| `e_Refresh` | `true` = 更新(refresh)模式,此時建立的是暫時、未存進資料庫的工單;`false` = 建立模式 |
+
+官方 `CreateWorkOrderEnd` 頁的範例 —— 建立後,若任一使用的資源目前停機,就鎖定工單:
+
+```
+function CreateWorkOrderEnd
+
+// lock workorder if resource with stillstand - message included
+
+select count(*) into ll_count from "BEAS_FTAPL" where "BEAS_FTAPL"."BELNR_ID" = <e_WoDocEntry> &
+
+  and "APLATZ_ID" in (select "APLATZ_ID" from "BEAS_APLATZ_STILLSTAND" where  &
+
+  CAST(TO_VARCHAR("BEAS_APLATZ_STILLSTAND"."DATUM_BIS",'YYYYMMDD') AS CHAR(8))='20500101')
+
+if <ll_count> n> 0 then
+
+   "SQL"=update "BEAS_FTHAUPT" set "SPERRUNG"='J' where "BEAS_FTHAUPT"."BELNR_ID" = <e_WoDocEntry>
+
+   message=info$msg1$One or more resources current not available. Work order will be locked.
+
+end if
+
+end function
+```
+
+> 說明:這個範例使用 `TO_VARCHAR`,是 HANA 的寫法;在 MSSQL 上需要改寫。
+
+官方同一頁還有一個更短的「建立後直接列印」寫法 —— 只列印目前位置,並設定已列印旗標(`print==true`),註解寫「列印目前與所有子位置」,但程式碼本身只呼叫一次,是否涵蓋子位置官方沒有進一步說明:
+
+```
+function CreateWorkOrderPositionEnd
+
+// We want to print current and all sub positions
+
+beasfunction=PrintWorkorder=<e_WoDocEntry>=<e_WoLineNumber>=print==true
+
+end function
+```
+
+### 11.8 GetBatchNumber / GetSerialNumber(官方說明)
+
+用來定義**下一個批號 / 序號**,適用於手動收貨、採購收貨 PO 等。把新號碼放進變數 `e_DistNumber`;**沒有定義時**,系統使用設定精靈中的設定(標準計數)。
+
+| 變數 | 讀 | 寫 | 說明 |
+|---|---|---|---|
+| `e_ItemCode` | ✔ | | 品項代碼(官方頁面此列說明為「Calculation methode ID」,疑似複製錯誤) |
+| `e_DistNumber` | | ✔ | 新的批號(或序號) |
+| `e_DocEntry` | ✔ | | 工單號 |
+| `e_LineNumber` | ✔ | | 工單位置 |
+| `e_LineNumber2` | ✔ | | BOM 位置(例如負數量產生的收貨) |
+
+**只有 `e_DistNumber` 是可寫的**,這與 11.5 的沙箱規則一致。因此 4.1 範例 4 中對 `e_DocEntry` 的 `setvar` 只是在事件內當暫存變數使用,不會影響事件外的值。
+
+### 11.9 收貨流程的事件順序(官方說明)
+
+收貨流程可以是倒沖(backflushing)的一部分。**若在使用者事件中取消收貨流程,系統無法回復整個倒沖流程**。
+
+1. `workordermanagement.ReceiptStart()`
+2. 對送進此流程的**每一行**:
+   - `workordermanagement.PostCalculation()`
+   - `workordermanagement.GetPrice()` / `GetPrice_Negativeposition()`
+   - `workordermanagement.ReceiptLine()`
+3. 全部檢查通過後,系統產生文件。若要為多個工單位置收貨,系統會先檢查所有工單位置,再產生文件。
+4. 對文件的**每一行、批號/序號與(或)儲位**:
+   - `workordermanagement.GetSerialNumber()` / `GetBatchNumber()`(僅在尚未定義時)
+   - `stockmanagement.ReceiptLine()`
+5. 對**每一份產生的文件**:
+   - `workordermanagement.ReceiptEnd()`
+   - `stockmanagement.ReceiptEnd()`
+6. 發生錯誤時:`stockmanagement.ReceiptRollback()`
+
+> 注意:「手動收貨 - 單筆流程」與「生產時間回報 - 倒沖流程」的事件順序不同。
+
+**`workordermanagement.ReceiptLine`**:對送進此函式的每一行執行,可用 `return failure` 取消該工單位置的處理。
+
+- 若品項受批號或序號管理且尚未定義 `DistNumber`,這個事件會在系統**自動產生 `DistNumber` 之前**被呼叫。
+- 序號的特例:若數量 > 3,`workordermanagement.ReceiptLine` 只執行一次,但 `stockmanagement.ReceiptLine` 會對每個序號各執行一次(共 3 次)。
+- 可以在這個事件中變更成本中心(Costing Code)。
+
+| 變數 | 讀 | 寫 | 說明 |
+|---|---|---|---|
+| `e_WoDocEntry` | ✔ | | 工單號 |
+| `e_WoLineNumber` | ✔ | | 工單位置 |
+| `e_WoLineNumber2` | ✔ | | BOM 位置 |
+| `e_ItemCode` | ✔ | | 品項代碼 |
+| `e_Version` | ✔ | | 品項版本 |
+| `e_Quantity` | ✔ | | 庫存單位數量 |
+| `e_ProjectCode` | ✔ | | 專案代碼 |
+| `e_WhsCode` | ✔ | | 倉庫代碼。**變更倉庫後系統不會再檢查**:沒有庫存控制、沒有保留控制;若倉庫不可用或帳戶是依倉庫定義,可能造成收貨失敗或會計錯誤 |
+| `e_BinCode` | ✔ | ✔ | 儲位。時間回報倒沖與桌面倒沖,僅在只收一個批號/序號/一般品項時支援儲位 |
+| `e_RFID` | ✔ | ✔ | RFID / LUID。限制同 `e_BinCode` |
+| `e_CostingCode`、`e_CostingCode2`–`e_CostingCode5` | | ✔ | 成本中心 1–5(僅第一筆可用) |
+| `e_CloseId` | ✔ | | `1` = 收貨後結案該位置 |
+| `e_AccountId` | ✔ | ✔ | 帳戶 ID,可變更此次收貨使用的帳戶。發料:WIP 帳戶;收貨:倉庫帳戶。發料時帳戶必須是 WIP 帳戶且已登錄於 Beas;必須設定 `OACT` 的 `AcctCode`(格式化帳號存在 `OACT.FormatCode`) |
+
+官方範例(依專案改用不同 WIP 帳戶):
+
+```
+// Define WIP for Issue
+
+function IssueLine
+
+// Projects starting with "AZ" using Account 501-01
+
+if <e_ProjectId,left 2> = "AZ" then
+
+  select "AcctCode" into e_AccountId from "OACT" where "FormatCode"='501-01'
+
+  return 1
+
+end if
+
+// Projects starting with "AB" using Account 501-01
+
+if <e_ProjectId,left 2> = "AB" then
+
+  select "AcctCode" into e_AccountId from "OACT" where "FormatCode"='500-03'
+
+  return 1
+
+end if
+
+// For all other :
+
+select "AcctCode" into e_AccountId from "OACT" where "FormatCode"='500-01'
+
+end function
+```
+
+> ⚠ 官方範例的疑似問題:註解寫「`AB` 開頭使用 501-01」,程式碼用的是 `500-03`;範例使用 `e_ProjectId`,但變數表列的是 `e_ProjectCode`,且範例函式是 `IssueLine`、變數表卻是 `ReceiptLine` 的。程式碼保持原文。
 
 ---
 
@@ -2687,6 +2932,65 @@ system.debug=level=1 // go back to level 1
 | 資料集 | `instance datastore d`;`d.setrow=<n>`;`<d.欄位>`(欄位小寫);用完 `destroy=d` |
 | 流程控制 | `if … then … end if`;`for 變數=1 to <n> … next`;`[標籤]` + `goto=標籤` |
 | 使用者事件常見變數 | 以 `e_` 開頭,如 `e_WoDocEntry`、`e_WoLineNumber`、`e_DistNumber`、`e_ReceiptDocEntry` |
+
+### Beas 視窗事件一覽(官方 `window events (beas)`)
+
+事件以 `global function <事件名>` … `end global` 宣告,**宣告函式即登錄事件**。
+**每個事件只能有一個函式**:同一事件宣告第二次,會**覆蓋**第一次。(所以同一個腳本中不要重複宣告 `form_loaded`,多個動作請合併在同一個函式裡。)
+
+*開啟視窗的流程*
+
+| 事件 | 說明 |
+|---|---|
+| `form_opened` | 視窗框架已開啟(只執行 1 次) |
+| `form_preload` | 初始化 `dw_1` 之前;在頁籤之間切換時也會執行 |
+| `form_readsql` | 檢查 data window 背後的 SQL 指令 |
+| `dw_1_load` | `dw_1` 取回資料之後立即執行 |
+| `form_load` | 表單載入資料之後立即執行 |
+| `form_loaded` | 表單載入之後 |
+| `form_show` | 開啟視窗流程結束(表單已載入並完整顯示) |
+
+*其他表單流程*
+
+| 事件 | 說明 |
+|---|---|
+| `form_resize` | 視窗大小改變 |
+| `form_rowfocuschange` | `dw_1` 的列即將變更(變更前) |
+| `form_rowfocuschanged` | `dw_1` 的列已變更 |
+| `form_new` | 視窗以新增模式開啟 |
+| `form_update` / `form_updated` | 更新開始 / 更新之後 |
+| `form_close` / `form_closed` | 開始關閉 / 關閉中 |
+| `form_delete` / `form_deleted` | 刪除指令執行中 / 刪除之後 |
+
+*頁籤事件*:視窗文件內部若有頁籤(不是最上方的頁籤),在多數視窗中,頁籤名稱為 `etab`。
+
+| 事件 | 說明 |
+|---|---|
+| `etab_firstredraw` | 頁籤第一次重繪時。**最適合插入或變更自己的物件** |
+| `etab_redraw` | 重繪頁籤物件 |
+| `etab_tabchanged` | 頁籤已切換 |
+
+*DataWindow 事件*:`dw_1`–`dw_7` 各有自己的事件系統,事件名稱以 `dw_[編號]_` 開頭。以下以 `dw_1` 為例。官方只替 `dw_1_windowsetting`、`dw_1_rowfocuschanging` 附了說明,**其餘各列的說明是依事件名稱的解讀**:
+
+| 事件 | 說明 |
+|---|---|
+| `dw_1_load` | |
+| `dw_1_windowsetting` | 瀏覽型表單:定義欄位 |
+| `dw_1_rowfocuschanging` | 列焦點變更期間 |
+| `dw_1_click`、`dw_1_item_[column]_click` | 點擊 |
+| `dw_1_itemchanged`、`dw_1_item_[column]_itemchanged` | 欄位變更 |
+| `dw_1_update`、`dw_1_updated` | 更新 / 更新之後 |
+| `dw_1_rightclick`、`dw_1_item_[column]_rightclick` | 按右鍵 |
+| `dw_1_inserted` | 新增列之後 |
+| `dw_1_delete`、`dw_1_deleted` | 刪除 / 刪除之後 |
+
+*`dw_master`*:文件的主框架,呈現所有按鈕(上、右、下)與右鍵彈出選單。
+
+| 事件 | 說明 |
+|---|---|
+| `dw_master_item_button_[object]_click` | 點擊按鈕或右鍵選單 |
+| `dw_master_click` | 點擊 `dw_master` 的元素 |
+| `dw_master_item_b_tab_[x]_click` | 點擊主頁籤 x |
 
 ### 常見使用者事件(Userevent)
 

@@ -231,7 +231,7 @@ window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09"
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Normal"><span class="f_CourierFixed" style="color: #800000;">// </span><span class="f_CourierFixed" style="font-weight: bold; color: #800000;">Workaround</span><span class="f_CourierFixed" style="color: #800000;">: A possible way via SQL-Statemend could be:</span></p>
 <p class="p_Normal"><span class="f_CourierFixed" style="color: #800000;">setvar=wert1=0</span></p>
-<p class="p_Normal"><span class="f_CourierFixed" style="color: #800000;">select 1 where (isnull(&lt;value1,dbstring&gt;,'') &lt;&gt; '' or isnull(&lt;value2,dbstring&gt;,'') = ''</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #800000;">select 1 where (isnull(&lt;value1,dbstring&gt;,'') &lt;&gt; '' or isnull(&lt;value2,dbstring&gt;,'') = '')</span></p>
 <p class="p_Normal"><span class="f_CourierFixed" style="color: #800000;">if &lt;wert1&gt; n= 1 then</span></p>
 <p class="p_Normal"><span class="f_CourierFixed" style="color: #800000;"> &nbsp;.....</span></p>
 <p class="p_Normal"><span class="f_CourierFixed" style="color: #800000;">end if</span></p>
@@ -245,7 +245,7 @@ window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09"
 <p class="p_Normal">Can be a command. Use a &quot;!&quot; Return values are</p>
 <p class="p_Normal">1 = Ok</p>
 <p class="p_Normal">0 = Nothing</p>
-<p class="p_Normal">1 = Error</p>
+<p class="p_Normal">-1 = Error</p>
 <p class="p_Normal">Can be a string.</p>
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Normal">&nbsp;</p>
@@ -269,7 +269,7 @@ window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09"
 <p class="p_Normal"><span class="f_CourierFixed">input=Please insert a number=c_number=0=return false</span></p>
 <p class="p_Normal"><span class="f_CourierFixed">if &lt;c_number&gt; n&gt; 10 then</span></p>
 <p class="p_Normal"><span class="f_CourierFixed"> &nbsp; messagebox=You've inserted a number greater 10</span></p>
-<p class="p_Normal"><span class="f_CourierFixed">elseif &lt;c_number&gt; n&lt;= 10 and &lt;c_number&gt; n=&gt; 5 then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">elseif &lt;c_number&gt; n&lt;= 10 and &lt;c_number&gt; n&gt;= 5 then</span></p>
 <p class="p_Normal"><span class="f_CourierFixed"> &nbsp; messagebox=You've inserted a number between 5 an 10</span></p>
 <p class="p_Normal"><span class="f_CourierFixed">else</span></p>
 <p class="p_Normal"><span class="f_CourierFixed"> &nbsp; messagebox=You've inserted a number less 5</span></p>

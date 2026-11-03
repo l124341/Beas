@@ -240,7 +240,7 @@ window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09"
 <p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
 <p class="p_Normal"><span class="f_CourierFixed">if &lt;var:col_docnum&gt; n&gt; 0 then</span></p>
 <p class="p_Normal"><span class="f_CourierFixed"> &nbsp;select docentry,cardcode,cardname,docstatus &amp;</span></p>
-<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp; &nbsp;into :ll_docentry,:ls_cardcode,:ls_cardname,:ll_docstatus from ordr where docnum=&lt;col_docnum&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp; &nbsp;into :ll_docentry,:ls_cardcode,:ls_cardname,:ll_docstatus from ordr where docnum=&lt;col_docnum,num(0)&gt;</span></p>
 <p class="p_Normal"><span class="f_CourierFixed"> &nbsp;if &lt;ll_docentry&gt; n= 0 then</span></p>
 <p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; shtml=message=error$wrong document number!</span></p>
 <p class="p_Normal"><span class="f_CourierFixed"> &nbsp;end if</span></p>

@@ -208,7 +208,8 @@ window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09"
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Normal"><span style="font-weight: bold;">Example with function calls</span></p>
-<p class="p_Normal"><span class="f_CourierFixed">input=Your name=salutation()=you_not()</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">input=Your name=value1=error</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if=&lt;value1&gt;=Peter=salutation()=you_not()</span></p>
 <p class="p_Normal"><span class="f_CourierFixed">goto=end</span></p>
 <p class="p_Normal"><span class="f_CourierFixed">....</span></p>
 <p class="p_Normal"><span class="f_CourierFixed">[end]</span></p>
@@ -240,9 +241,9 @@ window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09"
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Example"><span class="f_Example">Example execute command directly</span></p>
-<p class="p_Normal"><span class="f_CourierFixed">// if value1=V then insert in text field &quot;Detailed&quot;, otherwise &quot;Compacted&quot;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">// if value1=V then insert in text field &quot;Compacted&quot;, otherwise &quot;Detailed&quot;</span></p>
 <p class="p_Normal">&nbsp;</p>
-<p class="p_Normal"><span class="f_CourierFixed">if=&lt;wert1&gt;=V=[setvar=t_text=Compacted]=[!setvar=t_text=Detailed]</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if=&lt;wert1&gt;=V=[!setvar=t_text=Compacted]=[!setvar=t_text=Detailed]</span></p>
 <p class="p_Normal">&nbsp;</p>
 <p class="p_Normal"><span class="f_CourierFixed">or</span></p>
 <p class="p_Normal">&nbsp;</p>

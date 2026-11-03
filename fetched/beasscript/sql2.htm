@@ -160,12 +160,12 @@ window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09"
 <p class="p_Normal"><span class="f_Example">Example:</span> depending on the variable „lb_simple“, a function with different variants is created.</p>
 <p class="p_Normal"><span class="f_CourierFixed">setvar=lb_simple=false</span><br />
 <span class="f_CourierFixed" style="color: #008000;">[sql]</span><br />
-<span class="f_CourierFixed" style="color: #008000;">IF OBJECT_ID ( 'dbo.beas_myfuction', 'FN' ) IS NOT NULL &nbsp;DROP function dbo.beas_myfunction;</span><br />
-<span class="f_CourierFixed" style="color: #008000;">#end</span><br />
+<span class="f_CourierFixed" style="color: #008000;">IF OBJECT_ID ( 'dbo.beas_myfunction', 'FN' ) IS NOT NULL &nbsp;DROP function dbo.beas_myfunction;</span><br />
+<span class="f_CourierFixed" style="color: #008000;">[/sql]</span><br />
 <span class="f_CourierFixed">if &lt;lb_simple&gt; = true then</span><br />
-<span class="f_CourierFixed" style="color: #008000;">#sql</span><br />
+<span class="f_CourierFixed" style="color: #008000;">[sql]</span><br />
 <span class="f_CourierFixed" style="color: #008000;">create function dbo.beas_myfunction</span><br />
-<span class="f_CourierFixed" style="color: #008000;">return datetime</span><br />
+<span class="f_CourierFixed" style="color: #008000;">RETURNS datetime</span><br />
 <span class="f_CourierFixed" style="color: #008000;">with execute as caller</span><br />
 <span class="f_CourierFixed" style="color: #008000;">as</span><br />
 <span class="f_CourierFixed" style="color: #008000;">begin</span><br />
@@ -176,7 +176,7 @@ window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09"
 <span class="f_CourierFixed">else</span><br />
 <span class="f_CourierFixed" style="color: #008000;">[sql]</span><br />
 <span class="f_CourierFixed" style="color: #008000;">create function dbo.beas_myfunction</span><br />
-<span class="f_CourierFixed" style="color: #008000;">return datetime</span><br />
+<span class="f_CourierFixed" style="color: #008000;">RETURNS datetime</span><br />
 <span class="f_CourierFixed" style="color: #008000;">with execute as caller</span><br />
 <span class="f_CourierFixed" style="color: #008000;">as</span><br />
 <span class="f_CourierFixed" style="color: #008000;">begin</span><br />

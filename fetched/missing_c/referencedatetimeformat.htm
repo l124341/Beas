@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>DateTime format</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Date area Character Meaning Example d Day number with no leading zero 9 dd Day number with leading zero if appropriate 09 ddd Day name abbreviation Mon dddd Day nam" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "",
+   prevP: "referencexml.htm",
+   currP: "referencedatetimeformat.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "DateTime format",
+   mailsubject: "Feedback on: Beas Script 2026.09 - DateTime format",
+   sharesubject: "Beas Script 2026.09 - DateTime format",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "referenceDateTimeFormat",
+   mailpath: "Keywords &gt; DateTime format /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - DateTime format").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "referencedatetimeformat.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>DateTime format</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">DateTime format</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_TitleinText"><span class="f_TitleinText">&nbsp;</span></p>
+<p class="p_TitleinText"><span class="f_TitleinText">Date area</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 4px 4px 20px 4px;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:185px;"><p class="p_Normal"><span style="font-weight: bold;">Character</span></p>
+</th>
+<th class="fielddescription" style="width:255px;"><p class="p_Normal"><span style="font-weight: bold;">Meaning</span></p>
+</th>
+<th class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Example</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px;"><p class="p_Normal"><span class="f_CourierFixed">d</span></p>
+</td>
+<td class="fielddescription" style="width:255px;"><p class="p_Normal">Day number with no leading zero</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">9</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">dd</span></p>
+</td>
+<td class="fielddescription" style="width:255px; background-color:#F7F7F7;"><p class="p_Normal">Day number with leading zero if appropriate</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">09</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px;"><p class="p_Normal"><span class="f_CourierFixed">ddd</span></p>
+</td>
+<td class="fielddescription" style="width:255px;"><p class="p_Normal">Day name abbreviation</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Mon</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">dddd</span></p>
+</td>
+<td class="fielddescription" style="width:255px; background-color:#F7F7F7;"><p class="p_Normal">Day name</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Monday</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px;"><p class="p_Normal"><span class="f_CourierFixed">m</span></p>
+</td>
+<td class="fielddescription" style="width:255px;"><p class="p_Normal">Month number with no leading zero</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">6</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">mm</span></p>
+</td>
+<td class="fielddescription" style="width:255px; background-color:#F7F7F7;"><p class="p_Normal">Month number with leading zero if appropriate</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">06</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px;"><p class="p_Normal"><span class="f_CourierFixed">mmm</span></p>
+</td>
+<td class="fielddescription" style="width:255px;"><p class="p_Normal">Month name abbreviation</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Jun</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">mmmm</span></p>
+</td>
+<td class="fielddescription" style="width:255px; background-color:#F7F7F7;"><p class="p_Normal">Month name</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">June</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px;"><p class="p_Normal"><span class="f_CourierFixed">yy</span></p>
+</td>
+<td class="fielddescription" style="width:255px;"><p class="p_Normal">Two-digit year</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">97</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:185px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">yyyy</span></p>
+</td>
+<td class="fielddescription" style="width:255px; background-color:#F7F7F7;"><p class="p_Normal">Four-digit year</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">1997</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Example"><span class="f_Example">Examples</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 4px 4px 20px 4px;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:184px;"><p class="p_Normal"><span style="font-weight: bold;">Format</span></p>
+</th>
+<th class="fielddescription" style="width:484px;"><p class="p_Normal"><span style="font-weight: bold;">Displays</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:184px;"><p class="p_Normal"><span class="f_CourierFixed">[red]m/d/yy</span></p>
+</td>
+<td class="fielddescription" style="width:484px;"><p class="p_Normal">1/30/98 (in red, if this is a format for input field)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:184px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">d-mmm-yy</span></p>
+</td>
+<td class="fielddescription" style="width:484px; background-color:#F7F7F7;"><p class="p_Normal">30-Jan-98</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:184px;"><p class="p_Normal"><span class="f_CourierFixed">dd-mmmm</span></p>
+</td>
+<td class="fielddescription" style="width:484px;"><p class="p_Normal">30-January</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:184px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">mmm-yy</span></p>
+</td>
+<td class="fielddescription" style="width:484px; background-color:#F7F7F7;"><p class="p_Normal">Jan-98</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:184px;"><p class="p_Normal"><span class="f_CourierFixed">dddd, mmm d, yyyy</span></p>
+</td>
+<td class="fielddescription" style="width:484px;"><p class="p_Normal">Friday, Jan 30, 1998</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_TitleinText"><span class="f_TitleinText">Time Area</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 4px 4px 20px 4px;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:181px;"><p class="p_Normal"><span style="font-weight: bold;">Character</span></p>
+</th>
+<th class="fielddescription" style="width:487px;"><p class="p_Normal"><span style="font-weight: bold;">Meaning</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px;"><p class="p_Normal"><span class="f_CourierFixed">h</span></p>
+</td>
+<td class="fielddescription" style="width:487px;"><p class="p_Normal">Hour with no leading zero (for example, 1)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">hh</span></p>
+</td>
+<td class="fielddescription" style="width:487px; background-color:#F7F7F7;"><p class="p_Normal">Hour with leading zero if appropriate (for example, 01)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px;"><p class="p_Normal"><span class="f_CourierFixed">m</span></p>
+</td>
+<td class="fielddescription" style="width:487px;"><p class="p_Normal">Minute with no leading zero (must follow h or hh)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">mm</span></p>
+</td>
+<td class="fielddescription" style="width:487px; background-color:#F7F7F7;"><p class="p_Normal">Minute with leading zero if appropriate (must follow h or hh)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px;"><p class="p_Normal"><span class="f_CourierFixed">s</span></p>
+</td>
+<td class="fielddescription" style="width:487px;"><p class="p_Normal">Second with no leading zero (must follow m or mm)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ss</span></p>
+</td>
+<td class="fielddescription" style="width:487px; background-color:#F7F7F7;"><p class="p_Normal">Second with leading zero (must follow m or mm)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px;"><p class="p_Normal"><span class="f_CourierFixed">ffffff</span></p>
+</td>
+<td class="fielddescription" style="width:487px;"><p class="p_Normal">Microseconds with no leading zeros. You can enter one to six fâ€™s; each f represents a fraction of a second (must follow s or ss)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">AM/PM</span></p>
+</td>
+<td class="fielddescription" style="width:487px; background-color:#F7F7F7;"><p class="p_Normal">Two-character, uppercase abbreviation (AM or PM as appropriate)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px;"><p class="p_Normal"><span class="f_CourierFixed">am/pm</span></p>
+</td>
+<td class="fielddescription" style="width:487px;"><p class="p_Normal">Two-character, lowercase abbreviation (am or pm as appropriate)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">A/P</span></p>
+</td>
+<td class="fielddescription" style="width:487px; background-color:#F7F7F7;"><p class="p_Normal">One-character, uppercase abbreviation (A or P as appropriate)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:181px;"><p class="p_Normal"><span class="f_CourierFixed">a/p</span></p>
+</td>
+<td class="fielddescription" style="width:487px;"><p class="p_Normal">One-character, lowercase abbreviation (a or p as appropriate)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Example"><span class="f_Example">Examples</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 4px 4px 20px 4px;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:179px;"><p class="p_Normal"><span style="font-weight: bold;">Format</span></p>
+</th>
+<th class="fielddescription" style="width:489px;"><p class="p_Normal"><span style="font-weight: bold;">Displays</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px;"><p class="p_Normal"><span class="f_CourierFixed">h:mm AM/PM</span></p>
+</td>
+<td class="fielddescription" style="width:489px;"><p class="p_Normal">9:45 PM</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">hh:mm A/P</span></p>
+</td>
+<td class="fielddescription" style="width:489px; background-color:#F7F7F7;"><p class="p_Normal">09:45 P</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px;"><p class="p_Normal"><span class="f_CourierFixed">h:mm:ss am/pm</span></p>
+</td>
+<td class="fielddescription" style="width:489px;"><p class="p_Normal">9:45:33 pm</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">h:mm</span></p>
+</td>
+<td class="fielddescription" style="width:489px; background-color:#F7F7F7;"><p class="p_Normal">21:45</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px;"><p class="p_Normal"><span class="f_CourierFixed">h:mm:ss</span></p>
+</td>
+<td class="fielddescription" style="width:489px;"><p class="p_Normal">21:45:33</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">h:mm:ss:f</span></p>
+</td>
+<td class="fielddescription" style="width:489px; background-color:#F7F7F7;"><p class="p_Normal">21:45:33:2</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px;"><p class="p_Normal"><span class="f_CourierFixed">h:mm:ss:fff</span></p>
+</td>
+<td class="fielddescription" style="width:489px;"><p class="p_Normal">21:45:33:234</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">h:mm:ss:ffffff</span></p>
+</td>
+<td class="fielddescription" style="width:489px; background-color:#F7F7F7;"><p class="p_Normal">21:45:33:234567</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:179px;"><p class="p_Normal"><span class="f_CourierFixed">m/d/yy h:mm</span></p>
+</td>
+<td class="fielddescription" style="width:489px;"><p class="p_Normal">1/30/98 21:45</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

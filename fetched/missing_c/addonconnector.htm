@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>addon connector</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="With the addon connector you can connect your own addon to Beas." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "be_as_-_common.htm",
+   prevP: "connect-to-beas.htm",
+   currP: "addonconnector.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "addon connector",
+   mailsubject: "Feedback on: Beas Script 2026.09 - addon connector",
+   sharesubject: "Beas Script 2026.09 - addon connector",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "addonConnector",
+   mailpath: "Connect to beas &gt; addon connector /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - addon connector").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "addonconnector.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>addon connector</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">addon connector</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">With the addon connector you can connect your own addon to Beas.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example: </span></p>
+<p class="p_Normal">Create an AddOn for SAP Business One and use the SAP UI Interface.</p>
+<p class="p_Normal">Problem: </p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>This interface does not allow other connected AddOns to communicate with your AddOn.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Beas uses its own windows and an add-on cannot use SAP UI interface to check Beas events or to manipulate the Beas front end.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img src="embim1.jpg" width="645" height="357" style="margin:1px; border:none" alt="" /></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The window event connector creates a bidirectional interface between the add-on and Beas.</p>
+<p class="p_Normal">No additional tools or objects are needed, the Windows Standard System can be used.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With the connector all Beas window properties can be manipulated and BeasScript can be executed in the application.</p>
+<p class="p_Normal">For example, buttons, functionality on a button, work orders, time receipt and lot of more can be created.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To understand the concept, download an <a href="http://beascloud.com/download/addon/addonconnector/beasAddOnConnectorExample.zip" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">example</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="windoweventconnector2" width="700" height="325" style="margin:0;width:700px;height:325px;border:none" src="windoweventconnector2.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To use the Test WindowEvent Connector:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">1. Beas must be started only once.</p>
+<p class="p_Normal">2. Download and extract the example and execute beasAddonConnectorExample.exe.</p>
+<p class="p_Normal">3. Click Connect. </p>
+<p class="p_Normal">4. Insert a BeasScript on left side.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"> &nbsp;  <img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_arrow1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_arrow1.gif"/></td><td style="border:none;padding:0"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Example</a></span></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example for testing WindowEvent Connector<br />
+&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;create&nbsp;a&nbsp;variable,&nbsp;make&nbsp;a&nbsp;loop&nbsp;and&nbsp;add&nbsp;number&nbsp;1-10&nbsp;in&nbsp;brackets</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">for</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ll_loop</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">10</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">addvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=(&lt;</span><span class="f_CodeExample" style="color: #666699;">ll_loop</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;)</span><br />
+<span class="f_CodeExample">next</span><br />
+<span class="f_CodeExample" style="color: #666699;">app</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">external</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">B1UP</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Client</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">ls_test</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">5. Disable &quot;Return Result&quot;. This returns only 1 or 0 and it is not required.</p>
+<p class="p_Normal">6. Click on &quot;Execute Script&quot;.<br />
+The result is displayed.</p>
+<p class="p_Normal">8. Click on &quot;Disconnect&quot;.</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/qPJkZ6BPZbI" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Addon connector</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beas can also communicate with the AddOn.</p>
+<p class="p_Normal"><span class="f_CourierFixed">app=external=&lt;YourAddOnName&gt;=&lt;return text&gt;</span></p>
+<p class="p_Normal">Insert this to Beas directly, to inform the add-on of special events or you can send this commands to Beas. <span class="f_See">See</span> first example:</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Example: Button in a form</a></span></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To insert a button use the form loaded event. Insert the button with the function.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Name of your AddOn: MyAddOn</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 40px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">a.</span>In the form, insert an event, that you want to send to the AddOn.<br />
+Open Customizing editor and insert the following script:<br />
+<span class="f_CodeExample" style="color: #666699;">global</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">form_loaded</span><br />
+<span class="f_CodeExample" style="color: #666699;">app</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">external</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">MyExample</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ResourceFormLoaded</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">global</span></p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 40px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">b.</span>Check the event on the AddOn. If you get the &quot;ResourceFormLoaded&quot; string, you can send follow script to create a button:<br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">// Create the Button</span><br />
+<span class="f_CodeExample" style="color: #666699;">create</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">button</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">MyButton</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">mybutton</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">position</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">0</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">// Create an Event Call, if use click on this Button</span><br />
+<span class="f_CodeExample" style="color: #666699;">global</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">dw_master_item_button_mybutton_click</span><span class="f_CodeExample"> </span><br />
+<span class="f_CodeExample" style="color: #666699;">app</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">external</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">MyExample</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ResourceFormButtonClicked</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #666699;">global</span></p>
+<p class="p_Normal">If the user clicks this button, the AddOn receives the <span class="f_CourierFixed">&quot;ResourceFormButtonClicked&quot; </span>String.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Execute the function.</p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Example: Create a Button in a Beas form to fire a functionality in external Add-on</a></span><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')"> </a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In this example we are going to create a button in a Beas window (using a simple BeasScript) and this button will send a message to connected external Add-On and it will execute an external functionality.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Open Screen where you want to add the button (Operation Catalog screen for example) and go to &quot;Extension for clients&quot; option. </p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Add following code to send the message from Beas to an external App:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">windowevent</span><span class="f_CodeExample">&nbsp;open</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">create</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">button</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">name</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">sendmessage</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">text</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Send</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Message</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">To</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">My</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Addon</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;event</span><br />
+<span class="f_CodeExample" style="color: #666699;">windowevent</span><span class="f_CodeExample">&nbsp;click&nbsp;</span><span class="f_CodeExample" style="color: #666699;">sendmessage</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">app</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">external</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">MyAddOn</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ID_001</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">Message</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Beas</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">to</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">External</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">AddOn</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="color: #666699;">execute</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;event</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&quot;<span class="f_CodeExample" style="color: #800000;">MyAddOn</span>&quot; --&gt; Is the name of the external Add-on you registered in the connection to Beas command (<span style="font-size: 10pt; font-family: Consolas; color: #a31515;">app=external=register=handle=XXX&lt;tab&gt;name=</span><span style="font-size: 10pt; font-family: Consolas; font-weight: bold; color: #a31515;">MyAddOn</span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&lt;tab&gt;subscribe=Y)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">3. Now you have to modify your &quot;WndProc&quot; function to catch this message:</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">protected</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">override</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">void</span><span style="font-size: 10pt; font-family: Consolas;"> WndProc(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">ref</span><span style="font-size: 10pt; font-family: Consolas;"> Message m)</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;"> &nbsp; &nbsp;base</span><span style="font-size: 10pt; font-family: Consolas;">.WndProc(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">ref</span><span style="font-size: 10pt; font-family: Consolas;"> m);</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (m.Msg == 1025)</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp;{</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;is_receipt += </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">char</span><span style="font-size: 10pt; font-family: Consolas;">.ConvertFromUtf32(m.WParam.ToInt32());</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;is_receipt = is_receipt.ToLower();</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (is_receipt.Length &gt;= 9)</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;{</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">string</span><span style="font-size: 10pt; font-family: Consolas;"> strcheck = is_receipt.Substring(is_receipt.Length - 9);</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (strcheck == </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;[execute]&quot;</span><span style="font-size: 10pt; font-family: Consolas;">)</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">string</span><span style="font-size: 10pt; font-family: Consolas;"> strcommand = is_receipt.Substring(0, is_receipt.Length - 9);</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (strcommand.StartsWith(</span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;welcome&quot;</span><span style="font-size: 10pt; font-family: Consolas;">))</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;m_strMsg = </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;Beas is connected&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; font-weight: bold; color: #0000ff;">else</span><span style="font-size: 10pt; font-family: Consolas; font-weight: bold;"> </span><span style="font-size: 10pt; font-family: Consolas; font-weight: bold; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas; font-weight: bold;">(strcommand.StartsWith(</span><span style="font-size: 10pt; font-family: Consolas; font-weight: bold; color: #a31515;">&quot;id_001&quot;</span><span style="font-size: 10pt; font-family: Consolas; font-weight: bold;">))</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas; font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//We cannot execute SAP commands directly because this event is fired by &quot;BEAS Addon&quot; and this addon is executed in a different </span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">//Thread than SAP, if you want to send information to SAP then easy way is throught a &quot;Timer&quot; (There are many other options).</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">//For this example I save my message in a temp variable and the timer will send the message to SAP.</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas; font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;m_strMsg = strcommand;</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas; font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;is_receipt = </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp;}</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">4. It is important to understand when you receive events from Beas AddOn context of this Application is not the same than SAP UI context, it means that both applications are running in different threads, if you receive a message from beas and then you try to modify UI of SAP directly you will receive a error message like this:</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif; font-weight: bold;">System.Runtime.InteropServices.COMException:</span><span style="font-size: 9pt; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif;"> 'An outgoing call cannot be made since the application is dispatching an input-synchronous call. (Exception from HRESULT: 0x8001010D (RPC_E_CANTCALLOUT_ININPUTSYNCCALL))'</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0 0;"> To avoid this tipical issue you have to update UI object using the same thread than connection to SAP UI was created, the easy way to do this is using a &quot;Timer&quot;, you have to save the message in a temp string variable and then you process the message in the &quot;Timer_Tick&quot; event of a created timer.</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0 0;">5. Modify your form to add a Timer and implement Timer Tick event</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">private</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">void</span><span style="font-size: 10pt; font-family: Consolas;"> timer1_Tick(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">object</span><span style="font-size: 10pt; font-family: Consolas;"> sender, EventArgs e)</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (m_strMsg != </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;&quot;</span><span style="font-size: 10pt; font-family: Consolas;">)</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp;{</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">//m_sbo.SBO_Application.StatusBar.SetText(m_strMsg, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Success);</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;m_sbo.SBO_Application.MessageBox(m_strMsg, 1, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;Ok&quot;</span><span style="font-size: 10pt; font-family: Consolas;">, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;&quot;</span><span style="font-size: 10pt; font-family: Consolas;">, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;&quot;</span><span style="font-size: 10pt; font-family: Consolas;">);</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;m_strMsg = </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp;}</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Workflow to connect</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">SAP can be started multiple times. Accordingly, each Add-On is started multiple times. Make sure that you communicate only with an Add-On that is active in the same session.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Arial';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Determine the session number through SAP-SDK using the &nbsp;application.appid property.<br />
+Use the <span class="f_CourierFixed">&quot;FindWindowExA( ulong hParent, ulong hChildAfter, String lpszClass, String lpszWindow )&quot; from user32.dll </span>command.<br />
+&nbsp;<br />
+If Beas is started without SAP, the title of the window is &quot;beaswindow:single&quot;.<br />
+<span class="f_Attention">Attention:</span> This only works, if you start beas only once.<br />
+&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Arial';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Event from beas listining and your window: 1025<br />
+<span class="f_See">See</span> the WndProc function.<br />
+&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Arial';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Send register string to Beas:<br />
+<span class="f_CodeExample" style="color: #666699;">SendMessageToBeas</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">m_hwndBeas</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;app=external=register=handle=&quot;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">+</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">this</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">Handle</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">ToString</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">()</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">+</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&lt;tab&gt;name=B1UP&lt;tab&gt;subscribe=Y&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Arial';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_CourierFixed">Name</span><span style="font-size: 10pt; font-family: Consolas;"> </span>= Your Add-On Name<br />
+<span class="f_CourierFixed">subscribe=0/1/Y/2/ALL</span><span style="font-size: 10pt; font-family: Consolas;"> </span>= Define, what you get back from beas<br />
+<span class="f_CourierFixed">handle</span><span style="font-size: 10pt; font-family: Consolas;"> </span>= The window handle from your AddOn. <br />
+&nbsp;<br />
+Beas returns &quot;<span class="f_CourierFixed">welcome to beas (YourAddOnName)</span>&quot;.<br />
+&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: 'Arial';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>With the SendMessageToBeas command every beasscript command can be sent to beas.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Subscribe Definition</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:188px;"><p class="p_Normal"><span style="font-weight: bold;">Subscribe</span></p>
+</td>
+<td class="fielddescription" style="width:407px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:188px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">0</span></p>
+</td>
+<td class="fielddescription" style="width:407px; background-color:#F7F7F7;"><p class="p_Normal">Beas does not return any value. Only commands can be sent.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:188px;"><p class="p_Normal"><span class="f_CourierFixed">1 or Y</span></p>
+</td>
+<td class="fielddescription" style="width:407px;"><p class="p_Normal">Beas returns a command<br />
+<span class="f_CourierFixed">-1 = failure, 0=no action, 1 = ok</span><br />
+<span class="f_Example">Example:</span> <span class="f_CourierFixed">subscribe=1</span></p>
+<p class="p_Normal">For this bidirectional communication Beas requires the handle id from your add-on.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:188px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">2 or ALL</span></p>
+</td>
+<td class="fielddescription" style="width:407px; background-color:#F7F7F7;"><p class="p_Normal">Beas sends every window event to your add-on.</p>
+<p class="p_Normal">For this bidirectional communication Beas requires the handle id from your add-on.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Structure of a command</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Return a value (for example, a value from a column):</span></p>
+<p class="p_Normal">&quot;<span class="f_CourierFixed" style="color: #ff0000;">[handle=</span><span class="f_CourierFixed" style="color: #0000ff;">&lt;your windowhandle&gt;</span><span class="f_CourierFixed" style="color: #ff0000;">]</span><span class="f_CourierFixed">itemcode=&lt;itemcode&gt;/itemname=&lt;itemname&gt;</span><span class="f_CourierFixed" style="color: #ff0000;">[executevalue]</span>&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">[handle=x]</span> defines the window handle, on which Beas sends the result.<br />
+<span class="f_CourierFixed">[executevalue]</span> sends the command that Beas sends only to the result from current active window.</p>
+<p class="p_Normal">Beas replaces all placeholders.<br />
+Example for this script in itemwindow with item &quot;sofa&quot;, description &quot;red sofa&quot;: <span class="f_CourierFixed">itemcode=sofa/itemname=red sofa</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Execute a beas command:</span></p>
+<p class="p_Normal">&quot;<span class="f_CourierFixed">your beas script[execute]</span>&quot; executes the script in Beas systemwindow</p>
+<p class="p_Normal">&quot;<span class="f_CourierFixed">your beas script[executew]</span>&quot; executes the script in the current window<br />
+&quot;<span class="f_CourierFixed">[handle=x]your beas script[execute]</span> executes the script, return the value (-1=failure, 0=no action, 1=ok)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A simpler method is to use this command:</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">private</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">void</span><span style="font-size: 10pt; font-family: Consolas;"> SendMessageToBeas(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> hwndBeas, </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">Boolean</span><span style="font-size: 10pt; font-family: Consolas;"> bActivewindow, </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">string</span><span style="font-size: 10pt; font-family: Consolas;"> strmessage, </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">Boolean</span><span style="font-size: 10pt; font-family: Consolas;"> bReturnResult)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With a parameter type of execution can be defined.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">C# Example</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">Example of communication between beas and an external C# application</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal">Windows API declarations: </p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;summary&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> The FindWindow API</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;/summary&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;param name=&quot;</span><span style="font-size: 10pt; font-family: Consolas;">lpClassName</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&quot;&gt;</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">the class name for the window to search for</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;/param&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;param name=&quot;</span><span style="font-size: 10pt; font-family: Consolas;">lpWindowName</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&quot;&gt;</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">the name of the window to search for</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;/param&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;returns&gt;&lt;/returns&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">[</span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">DllImport</span><span style="font-size: 10pt; font-family: Consolas;">(</span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;User32.dll&quot;</span><span style="font-size: 10pt; font-family: Consolas;">)]</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">public</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">static</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">extern</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">Int32</span><span style="font-size: 10pt; font-family: Consolas;"> FindWindow(</span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">String</span><span style="font-size: 10pt; font-family: Consolas;"> lpClassName,</span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">String</span><span style="font-size: 10pt; font-family: Consolas;"> lpWindowName);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;summary&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> The SendMessage API</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;/summary&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;param name=&quot;</span><span style="font-size: 10pt; font-family: Consolas;">hWnd</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&quot;&gt;</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">handle to the required window</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;/param&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;param name=&quot;</span><span style="font-size: 10pt; font-family: Consolas;">msg</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&quot;&gt;</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">the system/Custom message to send</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;/param&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;param name=&quot;</span><span style="font-size: 10pt; font-family: Consolas;">wParam</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&quot;&gt;</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">first message parameter</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;/param&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;param name=&quot;</span><span style="font-size: 10pt; font-family: Consolas;">lParam</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&quot;&gt;</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">second message parameter</span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;/param&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #808080;">///</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #808080;">&lt;returns&gt;&lt;/returns&gt;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">[</span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">DllImport</span><span style="font-size: 10pt; font-family: Consolas;">(</span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;user32.dll&quot;</span><span style="font-size: 10pt; font-family: Consolas;">, CharSet=</span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">CharSet</span><span style="font-size: 10pt; font-family: Consolas;">.Auto)]</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">public</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">static</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">extern</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> SendMessage(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> hWnd, </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> msg, </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> wParam, </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">IntPtr</span><span style="font-size: 10pt; font-family: Consolas;"> lParam);</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Function to connect to beas</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">private</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">void</span><span style="font-size: 10pt; font-family: Consolas;"> btnGetWindows_Click(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">object</span><span style="font-size: 10pt; font-family: Consolas;"> sender, System.</span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">EventArgs</span><span style="font-size: 10pt; font-family: Consolas;"> e)</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas; color: #008000;">//Connect to beas is easy, we simple have to connect to &quot;beaswindow:appid&quot; appid--&gt; SAP identifier</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas;">m_hwndBeas = FindWindow(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">null</span><span style="font-size: 10pt; font-family: Consolas;">, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;beaswindow:0&quot;</span><span style="font-size: 10pt; font-family: Consolas;">);</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (m_hwndBeas == 0)</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas; color: #008000;">//Maybe beas was started as Standalone app, we try to find this window</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">m_hwndBeas = FindWindow(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">null</span><span style="font-size: 10pt; font-family: Consolas;">, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;beaswindow:single&quot;</span><span style="font-size: 10pt; font-family: Consolas;">);</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (m_hwndBeas == 0)</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">MessageBox</span><span style="font-size: 10pt; font-family: Consolas;">.Show(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">this</span><span style="font-size: 10pt; font-family: Consolas;">, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;Couldn't find Beas application.&quot;</span><span style="font-size: 10pt; font-family: Consolas;">, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;Test Beas Messages&quot;</span><span style="font-size: 10pt; font-family: Consolas;">);</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas;">SendMessageToBeas(m_hwndBeas, </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">false</span><span style="font-size: 10pt; font-family: Consolas;">, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;app=external=register=handle=&quot;</span><span style="font-size: 10pt; font-family: Consolas;"> + </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">this</span><span style="font-size: 10pt; font-family: Consolas;">.Handle.ToString() + </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;&lt;tab&gt;name=B1UP&lt;tab&gt;subscribe=Y&quot;</span><span style="font-size: 10pt; font-family: Consolas;">);</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Function to disconnect from beas</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">private</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">void</span><span style="font-size: 10pt; font-family: Consolas;"> DisconnectFromBeas()</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas;">SendMessageToBeas(m_hwndBeas, </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">false</span><span style="font-size: 10pt; font-family: Consolas;">, </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;app=external=unregister=handle=&quot;</span><span style="font-size: 10pt; font-family: Consolas;"> + </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">this</span><span style="font-size: 10pt; font-family: Consolas;">.Handle.ToString());</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Function to send a message to Beas. Now this function can receive result of executed operation</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">private</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">void</span><span style="font-size: 10pt; font-family: Consolas;"> SendMessageToBeas(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> hwndBeas, </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">Boolean</span><span style="font-size: 10pt; font-family: Consolas;"> bActivewindow, </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">string</span><span style="font-size: 10pt; font-family: Consolas;"> strmessage, </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">Boolean</span><span style="font-size: 10pt; font-family: Consolas;"> bReturnResult)</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;"> &nbsp; string</span><span style="font-size: 10pt; font-family: Consolas;"> strMessageToSend = </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;"> &nbsp; if</span><span style="font-size: 10pt; font-family: Consolas;"> (bReturnResult == </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">true</span><span style="font-size: 10pt; font-family: Consolas;">)</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; {</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp;strMessageToSend += </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;[handle=&quot;</span><span style="font-size: 10pt; font-family: Consolas;"> + </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">this</span><span style="font-size: 10pt; font-family: Consolas;">.Handle.ToString() + </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;]&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; }</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; strMessageToSend += strmessage;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;"> &nbsp; if</span><span style="font-size: 10pt; font-family: Consolas;"> (bActivewindow == </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">true</span><span style="font-size: 10pt; font-family: Consolas;">)</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp;strMessageToSend += </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;[executew]&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;"> &nbsp; else</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp;strMessageToSend += </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;[execute]&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> &nbsp; //We have to send word by word</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;"> &nbsp; for</span><span style="font-size: 10pt; font-family: Consolas;"> (</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> i=0; i&lt; strMessageToSend.Length;i++)</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; {</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp;SendMessage(hwndBeas, 1025, strMessageToSend[i], </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">IntPtr</span><span style="font-size: 10pt; font-family: Consolas;">.Zero);</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; }</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Function to request a value from beas</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">private</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">void</span><span style="font-size: 10pt; font-family: Consolas;"> GetValueFromBeas(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> hwndBeas, </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">string</span><span style="font-size: 10pt; font-family: Consolas;"> strmessage)</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;"> &nbsp; string</span><span style="font-size: 10pt; font-family: Consolas;"> strMessageToSend = </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;[handle=&quot;</span><span style="font-size: 10pt; font-family: Consolas;"> + </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">this</span><span style="font-size: 10pt; font-family: Consolas;">.Handle.ToString() + </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;]&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; strMessageToSend += strmessage;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; strMessageToSend += </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;[execvalue]&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #008000;"> &nbsp; //We have to send word by word</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;"> &nbsp; for</span><span style="font-size: 10pt; font-family: Consolas;"> (</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">int</span><span style="font-size: 10pt; font-family: Consolas;"> i = 0; i &lt; strMessageToSend.Length; i++)</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; {</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; SendMessage(hwndBeas, 1025, strMessageToSend[i], </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">IntPtr</span><span style="font-size: 10pt; font-family: Consolas;">.Zero);</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;"> &nbsp; }</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Function to process messages received from Beas</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">protected</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">override</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">void</span><span style="font-size: 10pt; font-family: Consolas;"> WndProc(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">ref</span><span style="font-size: 10pt; font-family: Consolas;"> </span><span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">Message</span><span style="font-size: 10pt; font-family: Consolas;"> m)</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">base</span><span style="font-size: 10pt; font-family: Consolas;">.WndProc(</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">ref</span><span style="font-size: 10pt; font-family: Consolas;"> m);</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (m.Msg == 1025)</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">is_receipt += </span><span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">char</span><span style="font-size: 10pt; font-family: Consolas;">.ConvertFromUtf32(m.WParam.ToInt32());</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">is_receipt = is_receipt.ToLower();</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (is_receipt.Length &gt;= 9)</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">string</span><span style="font-size: 10pt; font-family: Consolas;"> strcheck = is_receipt.Substring(is_receipt.Length - 9);</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">if</span><span style="font-size: 10pt; font-family: Consolas;"> (strcheck == </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;[execute]&quot;</span><span style="font-size: 10pt; font-family: Consolas;">)</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas; color: #0000ff;">string</span><span style="font-size: 10pt; font-family: Consolas;"> strcommand = is_receipt.Substring(0, is_receipt.Length - 9);</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas; color: #2b91af;">MessageBox</span><span style="font-size: 10pt; font-family: Consolas;">.Show(strcommand);</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">is_receipt = </span><span style="font-size: 10pt; font-family: Consolas; color: #a31515;">&quot;&quot;</span><span style="font-size: 10pt; font-family: Consolas;">;</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: 10pt; font-family: Consolas;">} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-size: 10pt; font-family: Consolas;">} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;<br />
+&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_arrow0.gif','hm.src1','hmtoggle_arrow1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

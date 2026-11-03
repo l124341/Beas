@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>class_extendedSearch.js</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="With this class, you can build a extended search modal window easily. This class is used for every &quot;magnify icon&quot;." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "class_attachment.htm",
+   prevP: "class_batches_js.htm",
+   currP: "class_extentedsearch_js.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "class_extendedSearch.js",
+   mailsubject: "Feedback on: Beas Script 2026.09 - class_extendedSearch.js",
+   sharesubject: "Beas Script 2026.09 - class_extendedSearch.js",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Class_extentedSearch.js",
+   mailpath: "WEB and Rest Service &gt; Libraries WEB APP 2.0 &gt; class_extendedSearch.js /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - class_extendedSearch.js").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "class_extentedsearch_js.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>class_extendedSearch.js</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">class_extendedSearch.js</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With this class, you can build a extended search modal window easily. This class is used for every &quot;magnify icon&quot;.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="webApps20_extendedSearch" width="373" height="633" style="margin:0;width:373px;height:633px;border:none" src="webapps20_extendedsearch.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To include this library in your app, just add this code to your app source code in beas, between the &quot;_header()&quot; and &quot;_footer()&quot;:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CourierFixed">&lt;script&nbsp;src=&quot;assets21/js/class_extendedSearch.js&quot;&gt;&lt;/script&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Class members</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:260px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method Summary</span></p>
+</th>
+<th style="vertical-align:top; width:1159px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:260px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="class_extentedsearch_js.htm#constructor" class="topiclink">constructor</a></p>
+</td>
+<td style="vertical-align:top; width:1159px; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">constructor(&nbsp;params&nbsp;)</span></p>
+<p class="p_Normal">Initialize the class</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:260px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a href="class_extentedsearch_js.htm#search" class="topiclink">search</a></p>
+</td>
+<td style="vertical-align:top; width:1159px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">search(onclose=null)</span></p>
+<p class="p_Normal">Open the modal window</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:259px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method Detail</span></p>
+</th>
+<th style="vertical-align:top; width:2356px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:259px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a id="constructor" class="hmanchor"></a>constructor</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">constructor(&nbsp;mode,&nbsp;batches&nbsp;)</span></p>
+</td>
+<td style="vertical-align:top; width:2356px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Initialize the class</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Parameters:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CodeExample"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1')">{json&nbsp;object}&nbsp;params</a></span></p>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 24px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The parameters to initialize the search dialog</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:60px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:142px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Data Type</span></p>
+</th>
+<th style="vertical-align:top; width:870px; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:60px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">id</p>
+</td>
+<td style="vertical-align:top; width:142px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string} </span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The dialog ID</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">title</p>
+</td>
+<td style="vertical-align:top; width:142px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string}</span></p>
+</td>
+<td style="vertical-align:top; width:870px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Title to display for the dialog window</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">url</p>
+</td>
+<td style="vertical-align:top; width:142px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string}</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The source of the data, it can be</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2')">Array of Arrays with the data</a></p>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">In this case, the filter is done internally using all the field (string comparison) and the pagination is done automatically also</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">[ ['R1-F1','R1-F2','R1-F3'], ...,['Rn-F1','Rn-F2','Rn-F3'] ]</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3')">BSL data source</a></p>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If you include the token <span class="f_CourierFixed">*q*</span> then it will be replaced automatically by the text into the filter field, and we will call to that url after the user press the search button</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the next example, we display all the warehouse with the <span class="f_CourierFixed">{ItemCode}</span> or <span class="f_CourierFixed">{ItemName}</span> containing the text in the field &quot;filter&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">odata4</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">v1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">WareHouse</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">WhsCode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">WhsName</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">$orderby</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">WhsCode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=(</span><span class="f_CodeExample" style="color: #666699;">WhsCode</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">like</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;*q*&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">or</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">WhsName</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">like</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;*q*&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">fields</p>
+</td>
+<td style="vertical-align:top; width:142px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{array of json objects}</span></p>
+</td>
+<td style="vertical-align:top; width:870px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Field to create the data grid, is an array of json objects with this structure:</p>
+<p class="p_Normal">[ {...}, ..., {...} ]</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Data Type</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">title</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string} </span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The column title</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sort_key</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string} </span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The field name to sort by</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sort_dir</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string}</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The sort direction (<span class="f_CourierFixed">ASC</span> or <span class="f_CourierFixed">DESC</span>) </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">align</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string} </span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Field alignement (<span class="f_CourierFixed">left</span>, <span class="f_CourierFixed">right</span>, <span class="f_CourierFixed">center</span>)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">hidden</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{boolean} </span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Hide the field <span class="f_CourierFixed">true</span>/<span class="f_CourierFixed">false</span>/<span class="f_CourierFixed">&quot;M&quot;</span></p>
+<p class="p_Normal">If a string with the char <span class="f_CourierFixed">&quot;M&quot;</span> is provided then the field is hidden only for small devices (<span class="f_CourierFixed">ux.useMinimalistUI</span>)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">type</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">{string}&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;">Data&nbsp;type&nbsp;for&nbsp;a&nbsp;better&nbsp;rendering&nbsp;of&nbsp;the&nbsp;field&nbsp;(<span class="f_CourierFixed">string</span>,&nbsp;<span class="f_CourierFixed">number</span>,&nbsp;<span class="f_CourierFixed">date</span>,&nbsp;<span class="f_CourierFixed">boolean</span>)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">width</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string} </span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Field width</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ondraw</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{function} </span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">You can overwrite the default cell draw function setting this function (<a href="ux_js.htm" class="topiclink">see ux.dgrid</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">filter</p>
+</td>
+<td style="vertical-align:top; width:142px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">{string}</span></p>
+</td>
+<td style="vertical-align:top; width:870px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The initial value for the field &quot;filter&quot; in the modal window</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="margin: 0 0 2px 24px;">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Heading3"><span class="f_Heading3">Returns:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CourierFixed">{class_extendedSearch&nbsp;object}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4')">Example</a></span></p>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">let</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">s</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">new</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">extendedSearch</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="color: #666699;">id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'warehouseSearch'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">_t</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Warehouse&nbsp;Search'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #666699;">url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'/odata4/v1/WareHouse?$select=WhsCode,WhsName&amp;$orderby=WhsCode&amp;$filter=(WhsCode&nbsp;like&nbsp;&quot;*q*&quot;&nbsp;or&nbsp;WhsName&nbsp;like&nbsp;&quot;*q*&quot;)'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="color: #666699;">fields</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:[</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">_t</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">sort_key</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'WhsCode'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">title</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">_t</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsName&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">sort_key</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'WhsName'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 216px;"><span class="f_CodeExample">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:259px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a id="search" class="hmanchor"></a>search</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">display(onclose=null)</span></p>
+</td>
+<td style="vertical-align:top; width:2356px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Open the modal window</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Parameters: </span></p>
+<p class="p_Normal" style="margin: 0 0 2px 24px;"><span class="f_CourierFixed"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5')">function callback onclose</a></span></p>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 24px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">When the user close the modal window, this function is called</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The selected row can be read from the variable &quot;selected_row&quot;<span style="font-size: 8pt; font-family: Consolas; color: #9cdcfe;">&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading3"><span class="f_Heading3">Returns:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CourierFixed">{void}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6')">Example</a></span></p>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; text-indent: 0; line-height: 1.0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">searchWindow</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample">search</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">()</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">searchWindow</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">selected_row</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">!=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">null</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="color: #666699;">do_something</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">searchWindow</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">selected_row</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">);</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid; margin: 0 0 0 24px;"><span style="width:24px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">x</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

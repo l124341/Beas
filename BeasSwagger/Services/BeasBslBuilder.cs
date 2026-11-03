@@ -213,4 +213,24 @@ public static class BeasBslBuilder
         sb.Append(NL).Append("setvar=is_answertext=<ls_ids>");
         return ("workorder" + (m != "" ? m : V(orders[0].item, "ItemCode")), sb.ToString());
     }
+
+    /// <summary>修改工單 BOM(BSL):對每一行 PUT WorkorderBom(DocEntry,LineNumber,LineNumber2) {"ItemCode":新料號}。
+    /// 與 Script 版 bom_replaceitem 的檢查不一定相同(文件對 PUT 只寫「更多資訊見 POST」)。</summary>
+    public static (string requestId, string script) ChangeWorkOrderBom(IReadOnlyList<ChangeBomItem> items, string mes, string createTime)
+    {
+        if (items.Count == 0) throw new ArgumentException("InputItems 不可為空");
+        var m = V(mes, "Mes");
+        var sb = Begin();
+        foreach (var it in items)
+        {
+            var json = J(new Dictionary<string, object?> { ["ItemCode"] = V(it.NewItem, "NewItem") });
+            sb.Append(NL).Append("b.put=WorkorderBom(").Append(it.Woid).Append(',').Append(it.Woposition).Append(',').Append(it.Woitemposition)
+              .Append(")\t").Append(json);
+            sb.Append(NL).Append("if <b.ret_code> n<> 0 then");
+            sb.Append(NL).Append(" message=error$change bom: <b.ret_text>");
+            sb.Append(NL).Append(" return failure");
+            sb.Append(NL).Append("end if");
+        }
+        return Finish(sb, "changebom" + m + V(createTime, "CreateTime"));
+    }
 }

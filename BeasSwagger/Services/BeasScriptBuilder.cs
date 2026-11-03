@@ -277,4 +277,29 @@ public static class BeasScriptBuilder
         sb.Append(NL).Append("setvar=is_answertext=<ls_ids>");
         return ("workorder" + (m != "" ? m : V(orders[0].item, "ItemCode")), sb.ToString());
     }
+
+    /// <summary>
+    /// 修改工單 BOM(原 changeworkorederbom):ue_api_wo 的 bom_replaceitem,取代工單 BOM 某行的料號。
+    /// 文件:不能換成 phantom 或組件。原 DLL 每筆都重新 declare 且不 destroy,這裡只 declare 一次並在結尾 destroy。
+    /// </summary>
+    public static (string requestId, string script) ChangeWorkOrderBom(IReadOnlyList<ChangeBomItem> items, string mes, string createTime)
+    {
+        if (items.Count == 0) throw new ArgumentException("InputItems 不可為空");
+        var m = V(mes, "Mes");
+        var sb = new StringBuilder();
+        sb.Append("declare=mywo=ue_api_wo");
+        foreach (var it in items)
+        {
+            sb.Append(NL).Append("setvar=ls_newitemcode=").Append(V(it.NewItem, "NewItem"));
+            sb.Append(NL).Append("mywo=bom_replaceitem=").Append(it.Woid).Append('=').Append(it.Woposition)
+              .Append('=').Append(it.Woitemposition).Append("=<ls_newitemcode>");
+            sb.Append(NL).Append("if <return> = -1 then");
+            sb.Append(NL).Append(" destroy=mywo");
+            sb.Append(NL).Append(" return failure");
+            sb.Append(NL).Append("end if");
+        }
+        sb.Append(NL).Append("destroy=mywo");
+        sb.Append(NL).Append("setvar=is_answertext=OK");
+        return ("changebom" + m + V(createTime, "CreateTime"), sb.ToString());
+    }
 }

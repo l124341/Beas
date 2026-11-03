@@ -1,6 +1,7 @@
 # Beas 範例操作手冊(繁體中文)
 
 > 來源:`fetched/examples/`(Beas Script 2026.09 官方文件的 Examples 章節,共 53 頁)。
+> 補充來源:`fetched/missing/`(14 頁:使用者事件、Configuration Wizard、DI-API itemprice、視窗事件等),用來把原先的推測改成依官方說明。標示「(官方說明)」的段落即來自這些頁面。
 > 編排方式:依原文章節順序整理。**程式碼一律保留原文,不做修改**;說明文字翻譯為繁體中文。
 > 原文頁面裡的截圖未收錄,手冊中以「(原文附截圖)」標示。
 > 標示「⚠ 原文疑似筆誤」的地方,是翻譯時發現原文內容前後不一致之處,程式碼仍保持原樣,使用前請自行確認。
@@ -20,7 +21,8 @@
 8. [連接器(Connectors)](#8-連接器)
 9. [DI-API 範例](#9-di-api-範例)
 10. [BSL(Beas Service Layer)範例](#10-bslbeas-service-layer範例)
-11. [附錄:語法速查](#11-附錄語法速查)
+11. [使用者事件(User events)說明](#11-使用者事件user-events說明)
+12. [附錄:語法速查](#12-附錄語法速查)
 
 ---
 
@@ -230,6 +232,40 @@ end global
 
 **行為說明**:點到一般品項(`zeilentyp = 0`)時,在滑鼠位置右下方顯示提示框,內容為品項編號、品名與供應商目錄號;點到其他類型的列則隱藏提示框。
 
+**品項結構視窗的列類型 `<dw_1.item.zeilentyp.value>`(官方說明)**
+
+這個視窗(視窗檔 `artikel_struktur_browse`)是「結構檢視」,同一個列表會顯示不同來源的資料:
+
+| 值 | 說明 |
+|---|---|
+| 0 | 品項主檔 |
+| 3 | 物料清單(BOM)行 |
+| 4 | 途程位置(Routing position) |
+| 50 | 品項版本 |
+| 51 | BOM 表頭 |
+| 1001 | 平行資源;此時 `<dw_1.item.c_typ.value>` 可區分:`W`=工具、`H`=輔助工具、`R`=替代、`A`=平行 |
+
+**開啟此視窗的方式(官方說明)**
+
+```
+openform=beas_ItemStructure
+openwindow=artikel_struktur_browse
+```
+
+參數:`s_parm1`(或第一個參數)= 篩選類型,`s_parm2`(或第二個參數)= 該類型的引數。
+
+| 篩選類型 | 說明 |
+|---|---|
+| `filter` | 設定起始篩選,使用者可在欄位標題上按右鍵覆寫 |
+| `filterfix` | 設定固定篩選,使用者不能更改 |
+| `item` | 開啟指定品項的結構 |
+
+例:開啟單一品項
+
+```
+openform=beas_ItemStructure<tab>item<tab>FP
+```
+
 ---
 
 ### 1.6 新增列印按鈕 — Add Button for Print
@@ -341,6 +377,13 @@ end global
 | `dw_1_item_u_match_itemchanged` | 檢查比對碼是否被**其他品項**使用,若是則顯示錯誤並清空欄位 |
 | `dw_1_item_u_znr_itemchanged` | 第 3 個字元必須是 `-`,輸入 `abc` 會自動變成 `ab-c` |
 
+**事件觸發時機(官方說明)**
+
+| 事件 | 時機與用途 |
+|---|---|
+| `form_loaded` | 在視窗開啟、**資料載入之後**、視窗**顯示之前**執行。最適合用來新增或變更按鈕,或新增、變更欄位屬性(參考 BeasScript 的 `create` 指令) |
+| `dw_1_item_[object]_itemchanged` | 欄位內容變更時呼叫,為 **Post Event**(變更之後才觸發) |
+
 **注意**:
 
 - 欄位 `U_beas_match` 只存在於 HANA,MSSQL 中叫 `U_match`;但在 SQL 語句中系統會自動轉成正確格式。
@@ -421,7 +464,38 @@ Beas 沒有對應的屬性,但可以用 **DataWindow 語法**:
 dw_1.modify=udf1.edit.displayonly=Yes
 ```
 
-結果:下拉選單仍可使用,但鍵盤手動輸入被鎖定。詳見 DataWindow 的 column edit 說明。
+結果:下拉選單仍可使用,但鍵盤手動輸入被鎖定。
+
+**`DisplayOnly` 與條件式控制(官方說明)**
+
+- `Yes`:不允許使用者輸入資料,欄位僅供顯示。
+- `No`:(預設)允許使用者輸入。
+- 若要依條件控制欄位能不能編輯,請改用 **`Protect`** 屬性。
+
+**`column.edit` 可用屬性一覽(官方說明,內容摘自 PowerBuilder 原始文件)**
+
+| 屬性 | 說明(值為 Yes / No 者,Yes 表示啟用) |
+|---|---|
+| `AutoHScroll` | 輸入或刪除資料時,編輯控制項是否自動水平捲動 |
+| `AutoSelect` | 取得焦點時是否自動選取全部內容 |
+| `AutoVScroll` | 輸入或刪除資料時,是否自動垂直捲動 |
+| `Case` | 文字大小寫:`Any`(任意)、`Upper`(轉大寫)、`Lower`(轉小寫) |
+| `CodeTable` | 欄位是否有代碼表 |
+| `DisplayOnly` | 欄位是否僅供顯示(見上) |
+| `FocusRectangle` | 欄位取得焦點時,是否在目前列周圍顯示虛線焦點框 |
+| `Format` | 編輯控制項的顯示格式字串,可為 DataWindow 運算式 |
+| `HScrollBar` | 是否顯示水平捲軸 |
+| `Limit` | 最多可輸入字元數(0 到 32,767,0 = 不限制) |
+| `Name` | 欄位所用的預先定義編輯樣式名稱 |
+| `NilIsNull` | 使用者留空時,是否把值設為 null |
+| `Password` | 是否採用密碼顯示(輸入的字元顯示為 `*`);變更時建議同時調整 `Format` |
+| `Required` | 欄位是否必填 |
+| `Style` | (僅限查詢)回傳欄位的編輯樣式 |
+| `UseEllipsis` | 資料太長時是否截斷並顯示省略號(欄位有焦點時不顯示) |
+| `ValidateCode` | 是否用代碼表驗證使用者輸入的值 |
+| `VScrollBar` | 是否顯示垂直捲軸 |
+
+> 修改方式為 `dw_1.modify=<欄位>.edit.<屬性>=<值>`,例如本節的 `udf1.edit.displayonly=Yes`。
 
 ---
 
@@ -619,6 +693,27 @@ return 1;
 - `materialmanagement.receiptend`、`workordermangement.receiptend`
 - 相關 BSL:`BatchNumber`
 
+**`ReceiptEnd` 事件的可用變數(官方說明,皆為唯讀)**
+
+`workordermanagement.ReceiptEnd`(文件建立之後執行):
+
+| 變數 | 說明 |
+|---|---|
+| `e_WoDocEntry` | 工單號 |
+| `e_WoLineNumber` | 工單位置 |
+| `e_ReceiptDocEntry` | 收貨單 Document Entry |
+| `e_ReceiptDocNumber` | 收貨單單號 |
+| `e_Transaction` | 日記帳交易編號(`OJDT.Transid`) |
+| `e_TimeReceiptEntry` | 連結的時間回報編號(`BEAS_ARBZEIT.BUCHNR_ID`) |
+
+`stockmanagement.ReceiptEnd`:
+
+| 變數 | 說明 |
+|---|---|
+| `e_DocEntry` | 建立的文件 Document Entry |
+| `e_DocNumber` | 建立的文件單號 |
+| `e_Transaction` | 日記帳交易編號(`OJDT.Transid`) |
+
 **範例 1:僅當品項群組 9 設為「N」時,把批次狀態改為 0**
 
 ```
@@ -698,6 +793,8 @@ end function
 ```
 
 > ⚠ 原文疑似不一致:範例 1 的說明寫「設為 0」,程式碼卻是 `{"Status":"1"}`;兩處皆保持原文,請依實際需求(Beas 批次狀態代碼)確認。
+
+> ⚠ 變數名稱:範例 2 使用 `e_belnr_id`、`e_belpos_id`,但官方事件頁列出的工單變數是 `e_WoDocEntry`、`e_WoLineNumber`。官方使用者事件說明提到舊版名稱仍然有效(相容性超過 99%),所以 `e_belnr_id` 很可能是舊名稱;新寫的腳本建議使用官方列出的變數名。這是依文件推論,未實測。
 
 ---
 
@@ -1003,6 +1100,8 @@ end function
 
 > 說明:原文頁面此處**沒有附程式碼**,僅有概述。
 
+**`form_opened` 事件(官方說明)**:在視窗**框架開啟之後**、**文件開啟之前**執行,用來管理視窗上方的頁籤(新增、變更等)。
+
 ---
 
 ### 4.6 結案工單 — Close work orders
@@ -1176,6 +1275,19 @@ end global
 **情境**:**若物料尚未完整發料,不允許建立時間回報(time receipt)。**
 
 時間回報可從很多地方建立:TimeReceipt、桌面終端機(Desktop Terminal)的 LogOff、桌面應用程式、WEB 應用程式,或直接透過 Beas Service Layer。逐一修改所有視窗要耗費大量時間,因此可以直接在**功能本身**內插入自己的腳本,與前端畫面無關 —— 這就是**使用者事件(User event)**。最適合的事件是 **`TimeRecording`**。(原文附說明影片)
+
+**`TimeRecording` 事件(官方說明)**:系統要建立時間回報時觸發,可以**取消流程**,你可以在這個事件中加入自己的規則。可用變數(皆為唯讀):
+
+| 變數 | 說明 |
+|---|---|
+| `e_WoDocEntry` | 工單號(僅數字) |
+| `e_WoLineNumber` | 工單位置行號 |
+| `e_WoLineNumber2` | 作業(Operation)行號 |
+| `e_Employee` | 人員編號(`pers_id`) |
+| `e_Quantity` | 良品數量(倉庫單位) |
+| `e_Scrap` | 報廢數量(倉庫單位) |
+
+另外,`ReceiptStart` 事件是在**建立工單收貨文件之前**執行,可用 `return failure` 取消該工單位置的處理(變數:`e_WoDocEntry`、`e_WoLineNumber`)。注意:若這是**倒沖(backflushing)**流程的一部分,取消收貨時,系統**無法回復**倒沖流程中已完成的發料。
 
 **行為**
 
@@ -1492,7 +1604,7 @@ end global
 2→B→buttontext=Items with standard prices   View   opennewwindow=artikel_struktur_browse.psr<wintab>s_parm1=filterfix<wintab>s_parm2="OITM"."EvalSystem"='S'
 ```
 
-> 其中的 `→` 為分隔符號(原檔以特殊分隔字元分隔欄位)。
+> 其中的 `→` 代表**定位字元(Tab,字元 9)**;原始檔以 Tab 分隔欄位(官方說明),文件頁面把它顯示成 `→`。實際寫檔時請使用真正的 Tab 字元。
 
 **在腳本中取用某個設定**:
 
@@ -1506,17 +1618,95 @@ end if
 
 更多屬性資訊請參閱官方說明中的「properties」。
 
-**各列意義(依範例推得)**
+**定義檔格式(官方說明)**
+
+設定精靈(視窗 `system_option_struktur`)可用來:
+
+- 在標準設定精靈或其他標準設定視窗(例如站台設定)中**新增參數**。
+- 建立**完全自訂**的設定視窗。
+
+定義檔**每一行定義一個設定**,分隔符號為 **Tab(字元 9)**。每行分成兩個區域:前半是擴充功能,後半是值與下拉選項。
+
+*基本欄位*
+
+| 欄位 | 說明 |
+|---|---|
+| Level(層級) | 1 = 主層級 |
+| Type(類型) | 設定的種類(見下表) |
+
+| Type | 說明 |
+|---|---|
+| `U` | 標題 |
+| `G` | 全域設定(Global) |
+| `E` | 站台設定(Station) |
+| `I` | 資訊框 |
+| `IA` | 資訊框,紅色邊框,表示要注意 |
+| `B` | 按鈕 |
+
+*擴充設定(Extended settings)*
+
+| 項目 | 說明 |
+|---|---|
+| `status` | 顯示狀態圖示 |
+| `topic` | 連結到標準說明 |
+| `helptext` | 顯示在頁尾區域的文字 |
+| `buttontext` | 按鈕文字(類型為 `B` 時使用) |
+| `bitmap` | 圖片(僅限主層級、類型 `U`)。圖片需存放在 `...bmp\[設計類型]` 資料夾,例如 `bmp\goldenthread`;寫法 `bitmap=menu_administration` |
+| `height` | 文字高度 |
+| `visible` | 顯示條件,見下方 |
+
+`visible` 的寫法(`設定名稱=x` 或 `設定名稱<>x`,x 可為值、`empty`,或用 `;` 分隔的多個值):
+
+| 寫法 | 意義 |
+|---|---|
+| `visible=myVariable=empty` | 僅當 `myVariable` **未定義**時顯示 |
+| `visible=myVariable=A` | 變數必須是 `A` |
+| `visible=myVariable=A;B;C` | 變數是 `A`、`B` 或 `C` 其中之一 |
+
+*輸入類型(Input type)*
+
+| Input type | 說明 |
+|---|---|
+| `T` | 文字、數字(自由輸入欄位) |
+| `V` | 值清單(List of Values) |
+| `J` | 核取方塊:是(J)或否(N) |
+
+後面依序是 Description(說明)、setup name(設定變數名稱)、Default Value(預設值)、Values(值清單)。Values 可以是 select 指令或值清單,例如:
+
+| 寫法 | 說明 |
+|---|---|
+| `select:fttyp::emptyrow=true` | 可選擇工單類型 |
+| `select:whscode::emptyrow=true` | 可選擇倉庫代碼 |
+| `select "ItemCode","Description" from "BEAS_APL_HEADER"` | 可選擇途程計畫 |
+
+**開啟設定視窗的方式(官方說明)**
+
+```
+opennwewindow=system_option_struktur<tab>s_parm1=system_optionen.ini
+```
+
+> ⚠ 官方頁面此處寫成 `opennwewindow`,應為 `opennewwindow`(本文件其他範例用的是 `opennewwindow`),程式碼保持原文。
+
+| 參數 | 說明 |
+|---|---|
+| `s_parm1` | 設定檔名稱。標準設定精靈用 `system_optionen.ini`。系統會掃描標準資料夾,再掃描所有專案與 Add-on 資料夾 |
+| `as_variable` | 若有定義,直接跳到這個變數 |
+| `s_parm3` | 視窗標題 |
+| `s_parm5` | 以字串直接給定設定定義(此時 `s_parm1` 要設成 `""`) |
+
+**對照本範例各行**
 
 | 列 | 意義 |
 |---|---|
-| `1→U→…` | 第 1 層:新增一個選單群組 `Demo`(圖示 `menu_administration`) |
-| `2→G→…→V→Work order type→demoworkordertype…` | 工單類型選項(來源 `select:fttyp`,允許空白列) |
-| `2→G→…→J→Allow to change the type→demoallowchange→N` | 是/否選項,預設 N |
-| `2→I→…` | 說明文字列 |
-| `2→G→helptext=…→T→Count of days→demodays=0` | 文字輸入,天數,預設 0 |
-| `2→IA→visible=demodays=0 …` | 條件式提示:當 `demodays=0` 時顯示 |
-| `2→B→buttontext=…` | 按鈕,按下開啟「標準價格品項」的視窗 |
+| `1→U→status→bitmap=menu_administration→Demo` | 第 1 層標題 `Demo`,顯示狀態圖示,圖片 `menu_administration` |
+| `2→G→status→V→Work order type→demoworkordertype→→select:fttyp::emptyrow=true` | 全域設定,值清單,說明「Work order type」,設定名稱 `demoworkordertype`,選項來自工單類型,允許空白列 |
+| `2→G→status→J→Allow to change the type→demoallowchange→N` | 全域設定,核取方塊,設定名稱 `demoallowchange`,預設 `N` |
+| `2→I→In next line you can insert the lines` | 資訊框(說明文字) |
+| `2→G→helptext=Count of days for my special setting→T→Count of days→demodays=0` | 全域設定,頁尾說明文字,文字輸入;設定名稱欄位在原文顯示為 `demodays=0` |
+| `2→IA→visible=demodays=0   height=280   It's important to define count of days` | 紅框注意訊息,高度 280;依 `visible` 規則,條件是 `demodays=0` |
+| `2→B→buttontext=Items with standard prices   View   opennewwindow=artikel_struktur_browse.psr<wintab>s_parm1=filterfix<wintab>s_parm2="OITM"."EvalSystem"='S'` | 按鈕,文字「Items with standard prices」,按下後開啟品項結構視窗並套用固定篩選 `EvalSystem='S'` |
+
+> 說明:最後一行按鈕的欄位順序(buttontext、顯示文字、動作)官方頁面沒有進一步拆解,以上為原文照列;`demodays=0` 中 `=0` 的確切意義(預設值或條件)官方頁面也沒有說明,請自行測試確認。
 
 ---
 
@@ -1637,6 +1827,24 @@ printobject=crreport=printout
 
 更多資訊請參閱 `beasFunction`。
 
+**`PrintWorkorder` 參數(官方說明)**
+
+呼叫格式:B1UP 為 `beasFunction(FunctionName|Parameter);`,BeasScript 為 `beasfunction=functionname=parameter`。
+
+| 函式 | 參數 | 說明 |
+|---|---|---|
+| `PrintWorkorder` | `DocEntry,LineNumber [,print,printername,setprintFlag]` | 預覽或列印指定工單位置 |
+
+依官方的參數順序,範例 `print||true` 的意思是:第 3 個參數 `print` = 直接列印(省略則為預覽)、第 4 個參數印表機名稱留空(使用目前印表機)、第 5 個參數 `true` = 設定「已列印」旗標。(第 3、5 個參數各值的確切意義,官方頁面只給了參數名稱,以上為依範例的解讀。)
+
+Beas 標準函式(`beasFunction`)清單:
+
+| 函式 | 參數 | 說明 |
+|---|---|---|
+| `CalculateAPS` | APSScenario-Id | 計算指定的 APS 情境 |
+| `CalculateMRP` | MRP-Id | 計算指定的 MRP 情境 |
+| `PrintWorkorder` | 見上 | 預覽或列印工單位置 |
+
 #### 方式 1:從銷售訂單用 B1UP 巨集
 
 通用函式的原始碼:
@@ -1703,6 +1911,19 @@ woPrint/6002482/10
 
 **最佳方案**:Beas 使用者事件 **`CreateWorkOrderPositionComplete`**。這個事件會對**每一個新的主工單位置**呼叫。列印時必須讀出所有子位置:BSL `WorkorderPos/GetSubPositions`。
 
+**`CreateWorkOrderPositionComplete` 事件(官方說明)**
+
+- 執行時機:建立新的工單位置**並完成時間計算之後**。此時位置、途程與物料清單都已存進資料庫。
+- **只對主層級呼叫,不包含子位置**(所以才需要用 BSL 另外讀出子位置)。
+
+| 變數 | 讀 | 說明 |
+|---|---|---|
+| `e_WoDocEntry` | ✔ | 建立的工單號 |
+| `e_WoLineNumber` | ✔ | 行號 |
+| `e_Project` | ✔ | 專案編號 |
+| `e_ItemCode` | ✔ | 此工單位置的品項代碼 |
+| `e_Refresh` | ✔ | 是否為**更新(refresh)模式**。更新模式下,系統會為了同步變更而**並行建立一份暫時的工單,不存進資料庫**;`true` = 更新模式、`false` = 建立模式 |
+
 檔案:`workordermanagement.src`
 
 ```
@@ -1748,6 +1969,10 @@ end function
 ```
 
 **流程**:用 BSL 取得所有子位置清單(逗號分隔)→ 用 `tools=token` 逐個取出 → 每一個位置呼叫 `PrintWorkorder` → 取完離開迴圈並 `destroy`。
+
+> ⚠ 變數名稱:範例中的 `<e_WoLineNum>` 在官方事件頁列出的變數是 **`e_WoLineNumber`**(官方事件頁與本範例頁都有這個不一致)。程式碼保持原文,使用前請改成 `e_WoLineNumber` 並實際測試。
+>
+> ⚠ 更新模式:官方變數說明指出,`e_Refresh = true` 時處理的是「暫時、未存進資料庫」的工單。範例沒有檢查 `e_Refresh`;若你的環境會觸發更新模式,建議自行在腳本開頭判斷(例如 `e_Refresh` 為 true 就直接結束),避免對暫時的工單執行列印。這是依官方變數說明的建議,範例本身未處理,也未實測。
 
 ---
 
@@ -1828,6 +2053,31 @@ message=<currency> <price> <discount>
 
 destroy=itemprice
 ```
+
+**`itemprice` 物件說明(官方說明)**
+
+- 回傳品項的**價格、幣別與折扣**。
+- 使用的是 SAP DI-API 原生函式,**沒有 Beas 額外功能**。
+- 支援價格表、特殊價格表、**一般協議(blanket agreement)**與 **UoM 群組**。
+- 執行後可從三個字串變數取回結果:`price`、`currency`、`discount`。
+- 需要完整的 Beas 功能時,請改用 Beas Service Layer 的 `item.GetPrice()`。
+
+可設定的屬性:
+
+| 屬性 | 說明 |
+|---|---|
+| `itemcode` | 品項代碼 |
+| `cardcode` | 業務夥伴 |
+| `uomentry` | UoM(官方頁面此列說明為「quantity in uom: uomquantity」) |
+| `uomquantity` | 數量所使用的 UoM(官方頁面此列說明為「UoM for which quantity is defined」) |
+| `inventoryquantity` | 以庫存單位表示的數量 |
+| `currency` | 希望取得的幣別 |
+| `date` | 價格日期 |
+| `pricelist` | 價格表 |
+| `blankedagreementnumber` | 協議編號 |
+| `blankedagreementline` | 協議行 |
+
+> ⚠ 官方屬性表中 `uomentry` 與 `uomquantity` 的兩段說明看起來互相對調(`uomentry` 應為 UoM、`uomquantity` 應為數量);此處照原文列出。
 
 #### 方式 2:Beas 物件(擴充功能)
 
@@ -2288,7 +2538,134 @@ end global
 
 ---
 
-## 11. 附錄:語法速查
+## 11. 使用者事件(User events)說明
+
+(本節內容皆來自官方 `User events` 說明頁。)
+
+### 11.1 什麼是使用者事件
+
+使用者事件是 Beas 的特殊事件,例如物料過帳、生產控制。這些事件**不依附於視窗**,完全在背景執行。你可以在事件中變更或擴充標準功能,例如工單建立、收貨等。
+
+呼叫來源:各種視窗、Integration hub、Beas Service Layer。
+
+### 11.2 建立使用者事件
+
+1. 開啟 **Beas AddOn**。
+2. 開啟第一行。
+3. 選擇 **User event**。
+4. 在右側選擇事件。
+5. 插入腳本。
+6. 儲存(update)。變更**立即生效,不需重啟**;但**其他電腦必須重新啟動**才會生效。
+
+系統會自動插入函式框架:
+
+```
+function CreateWorkOrder
+
+// Script
+
+end function
+```
+
+編輯器右側會列出所有可讀取或寫入的屬性。
+
+### 11.3 一般注意事項
+
+- 宣告的任何物件,用完都必須 `destroy`。
+- 若要讀取視窗相關資訊,必須先確認這個使用者函式是否真的在該視窗內執行。
+- 使用者事件在**沙箱(Sandbox)**中執行:**只有「可變更(changeable)」的變數才能在事件外看到變更**。
+- 函式**之外**的所有定義與宣告都會被**忽略**。
+- 需要額外的函式時,必須宣告在**事件函式內部**。
+
+### 11.4 除錯(Debug)
+
+在腳本中加入除錯點即可看到所有變數或更多細節:
+
+```
+system.debug=mirror  //  insert all variables in debug window
+
+system.debug=level=2 // go level 2
+
+system.debug=level=1 // go back to level 1
+```
+
+更多資訊請參閱官方 `System > Debug`。
+
+### 11.5 相容性(Compatibility)
+
+- **名稱已更改**:舊版使用過其他變數名稱與事件名稱;所有舊名稱仍可運作(相容性超過 99%),但程式邏輯有改變,可能造成問題。
+  例:Beas 9.1 及更早版本只有單一收貨函式,無法在同一份文件收不同批號、儲位或品項;現在可以(新的 PO 收貨、新的品項發料/收貨功能、所有 WEB APP)。因此事件由單純的 receipt 改為 `ReceiptStart` 與 `ReceiptLine`(與舊的 `receipt` 相同),可能造成不相容。
+- **`end function` 為必要**:使用 `function` 宣告使用者事件時,必須以 `end function` 結尾。過去只支援 `end`,現在**必須**寫 `end function`。
+- **忽略事件函式之外的宣告**:
+
+  ```
+  function ReceiptEnd
+
+  test()
+
+  end function
+
+  function test
+
+  messagebox=Hello world
+
+  end function
+  ```
+
+  過去會顯示訊息,現在**不會**,因為 `test` 宣告在 `ReceiptEnd` 之外。正確寫法(子函式宣告在事件函式內,且子函式以 `end` 結尾,**不是** `end function`):
+
+  ```
+  function ReceiptEnd
+
+  test()
+
+  function test
+
+  messagebox=Hello world
+
+  end
+
+  end function
+  ```
+
+- **每個使用者事件都是沙箱**:用 `setvar` 定義的變數,在該事件之外看不到。例如 `ReceiptLine` 與 `ReceiptEnd` 屬於同一個視窗,系統先執行 `ReceiptLine`、再執行 `ReceiptEnd`:
+
+  ```
+  function ReceiptLine
+
+  setvar=myVariable="Test"
+
+  end function
+
+  function ReceiptEnd
+
+  messagebox=<myVariable>
+
+  end function
+  ```
+
+  舊版會顯示 `myVariable` 的內容;目前版本因為該變數未宣告,會顯示字面的 `<myVariable>`。`ReceiptLine` 在沙箱中執行,系統會還原變數。只能變更文件中標示為 `changeable` 的變數(例如範例中的 `e_DistNumber`)。
+
+### 11.6 事件清單(官方目錄)
+
+| 群組 | 事件 |
+|---|---|
+| `addon` | install、start |
+| `beasmenu` | start、poststart、initmenu、stopbeasgui、menu[id] |
+| `aps` | StartCalculation、StartWorkorderPosition、StartWorkorderPositionStep、(<<) Start/Middle/EndCalcRoutingPositionBackward、(>>) Start/Middle/EndCalcRoutingPositionForward、CalcRoutingOverlapping、EndWorkorderPositionStep、EndWorkorderPosition、EndCalculation |
+| `Configurator` | CheckConfigBeforeNewLoad |
+| `fdc` | additionalholiday |
+| `mrp` | Start、End |
+| `sales` | rightclick |
+| `stockmanagement` | GoodsReceiptPo、Allocation、Transfer、Issue、Receipt |
+| `workordermanagement` | Calc.、creation、manage、Preassign、issue process、receipt process、time recording、wip - Work in Process |
+| `qcmanagement` | QCPlanDetermination、QCorderCreate、QCorderCreateEnd、Print |
+
+> 各事件的完整變數表在官方各事件頁面;目前 repo 只有本手冊用到的 5 個事件頁:`CreateWorkOrderPositionComplete`、`workordermanagement.ReceiptStart`、`workordermanagement.ReceiptEnd`、`stockmanagement.ReceiptEnd`、`TimeRecording`。其餘見 `docs/缺漏頁面清單.md`。
+
+---
+
+## 12. 附錄:語法速查
 
 以下整理自各範例,方便查詢(僅為使用範例歸納,詳細定義請以官方指令說明為準)。
 
@@ -2321,4 +2698,4 @@ end global
 | `ReceiptEnd`(`materialmanagement` / `workordermangement`) | 收貨完成後 |
 | `TimeRecording` | 建立時間回報時 |
 
-> 使用者事件的定義方式請參閱官方 `UserEvent` 說明。
+> 使用者事件的建立方式、沙箱規則與相容性說明,見[第 11 節](#11-使用者事件user-events說明)。

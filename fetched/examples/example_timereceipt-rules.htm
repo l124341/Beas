@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>E: TimeReceipt rules</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="In the following example we do not allow the creation of a time receipt if no material is booked." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "example_check_max_qty.htm",
+   prevP: "example_close_work_orders.htm",
+   currP: "example_timereceipt-rules.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "E: TimeReceipt rules",
+   mailsubject: "Feedback on: Beas Script 2026.09 - E: TimeReceipt rules",
+   sharesubject: "Beas Script 2026.09 - E: TimeReceipt rules",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "example_TimeReceipt-rules",
+   mailpath: "Examples &gt; E: Production &gt; E: TimeReceipt rules /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - E: TimeReceipt rules").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "example_timereceipt-rules.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>E: TimeReceipt rules</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">E: TimeReceipt rules</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">In the following example we do not allow the creation of a time receipt if no material is booked.</p>
+<p class="p_Normal"><img alt="exampletimereceipt" width="615" height="444" style="margin:0;width:615px;height:444px;border:none" src="exampletimereceipt.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Time receipts are possible in many different areas: TimeReceipt, LogOff in Desktop Terminal, Desktop Application and WEB Application or directly over <a href="beas_service_layer.htm" class="topiclink">Beas Service Layer</a>.</p>
+<p class="p_Normal">It takes extensive time to change all windows. For this it is possible to insert your own scripts directly in the function itself - it is not user front end-based: The <a href="userevent.htm" class="topiclink">userevents</a>. </p>
+<p class="p_Normal">For more details on how to use it, <span class="f_See">see</span> this video:</p>
+<p class="p_Normal"><iframe width="560" height="315" src="https://www.youtube.com/embed/Rw_6Oq5Xefc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The best user event is in this case the &quot;<a href="ue_workordermanagement_timerecording.htm" class="topiclink">TimeRecording</a>&quot; Event</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Order:</span></p>
+<p class="p_Normal">Allow to create time receipt only if material is booked completely (part receipts not supported)</p>
+<p class="p_Normal">In server mode it returns only an error message and cancels the process.</p>
+<p class="p_Normal">In desktop mode (for example Terminal) we display all lines which are not booked in an HTML message box and cancel the process.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">NOTE: This script is for the following workflow:</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;">BEFORE you create the first time receipt, you must create the complete issue of Bill of Materials manually.</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;">This does not check manual receipts. Additionally, you can check if this is the last position (<span class="f_See">see</span> <a href="bslworkorderrouting.htm" class="topiclink">bsl.workorderrouting</a>) or you can check this in the <a href="ue_workordermanagement_receiptstart.htm" class="topiclink">assembly receipt event</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="beasscript-logo-small" width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="beasscript-logo-small.png"/></p>
+<p class="p_Normal">We use <a href="dtw.htm" class="topiclink">datastorevalues</a>, <a href="bslworkorderbomget.htm" class="topiclink">beas service layer</a>, <a href="bsl_and_beas_script.htm" class="topiclink">bsl and Beas Script</a>, </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">workordermanagement.src</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">function</span><span class="f_CodeExample">&nbsp;TimeRecording</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;check&nbsp;count&nbsp;of&nbsp;entries&nbsp;which&nbsp;not&nbsp;booked&nbsp;completely</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;we&nbsp;use&nbsp;beas&nbsp;service&nbsp;layer</span><br />
+<span class="f_CodeExample">instance&nbsp;datastore&nbsp;d</span><br />
+<span class="f_CodeExample">d.bsl=WorkorderBom?$select=ItemCode,QuantityWhsUoM,UoMWarehouseId,QuantityBooked&amp;$filter=DocEntry&nbsp;eq&nbsp;&lt;e_WoDocEntry&gt;&nbsp;and&nbsp;LineNumber&nbsp;eq&nbsp;&lt;e_WoLineNumber&gt;&nbsp;and&nbsp;QuantityWhsUoM&nbsp;gt&nbsp;QuantityBooked&nbsp;and&nbsp;Closed&nbsp;eq&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">false</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;if&nbsp;no&nbsp;entry&nbsp;found,&nbsp;then&nbsp;all&nbsp;is&nbsp;ok&nbsp;and&nbsp;we&nbsp;can&nbsp;continue</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">if</span><span class="f_CodeExample">&nbsp;&lt;d.rowcount&gt;&nbsp;n=&nbsp;0&nbsp;then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;don't&nbsp;forget&nbsp;to&nbsp;destroy&nbsp;the&nbsp;created&nbsp;datastore</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;destroy=d</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">return</span><span class="f_CodeExample">&nbsp;success</span><br />
+<span class="f_CodeExample">end&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">if</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;if&nbsp;server&nbsp;mode&nbsp;(example&nbsp;Beas&nbsp;service&nbsp;layer&nbsp;or&nbsp;&nbsp;WEB&nbsp;App,&nbsp;we&nbsp;return&nbsp;only&nbsp;an&nbsp;error&nbsp;message</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">if</span><span class="f_CodeExample">&nbsp;&lt;system.servermodus&gt;&nbsp;=&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">true</span><span class="f_CodeExample">&nbsp;then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;messagebox=error$$Not&nbsp;all&nbsp;lines&nbsp;booked&nbsp;completely!</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;destroy=d</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">return</span><span class="f_CodeExample">&nbsp;failure</span><br />
+<span class="f_CodeExample">end&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">if</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;we&nbsp;create&nbsp;a&nbsp;messagebox&nbsp;with&nbsp;all&nbsp;lines,&nbsp;which&nbsp;not&nbsp;booked&nbsp;as&nbsp;html&nbsp;message</span><br />
+<span class="f_CodeExample">setvar=ls_html=&lt;html&gt;&lt;body&gt;Follow&nbsp;lines&nbsp;not&nbsp;booked&nbsp;completely:&lt;/br&gt;&lt;/br&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Item&nbsp;Number&lt;/td&gt;&lt;td&gt;Planned&nbsp;Quantity&lt;/td&gt;&lt;td&gt;Booked&nbsp;Quantity&lt;/td&gt;&lt;/tr&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;create&nbsp;the&nbsp;lines</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Note:&nbsp;All&nbsp;field&nbsp;names&nbsp;must&nbsp;be&nbsp;lower&nbsp;case.</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">for</span><span class="f_CodeExample">&nbsp;ll_line=1&nbsp;to&nbsp;&lt;d.rowcount&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;d.setrow=&lt;ll_line&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;addvar=ls_html=&lt;tr&gt;&lt;td&gt;&lt;d.itemcode&gt;&lt;/td&gt;&lt;td&gt;&lt;d.quantitywhsuom&gt;&nbsp;&lt;d.uomwarehouseid&gt;&lt;/td&gt;&lt;td&gt;&lt;d.quantitybooked&gt;&nbsp;&nbsp;&lt;d.uomwarehouseid&gt;&lt;/td&gt;&lt;/tr&gt;</span><br />
+<span class="f_CodeExample">next</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;don't&nbsp;forget&nbsp;to&nbsp;destroy&nbsp;the&nbsp;created&nbsp;datastore</span><br />
+<span class="f_CodeExample">destroy=d</span><br />
+<span class="f_CodeExample">addvar=ls_html=&lt;/table&gt;&lt;/br&gt;It&nbsp;is&nbsp;not&nbsp;possible&nbsp;to&nbsp;create&nbsp;a&nbsp;time&nbsp;receipt&nbsp;before&nbsp;complete&nbsp;material&nbsp;is&nbsp;booked!&lt;/body&gt;&lt;/html&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Display&nbsp;the&nbsp;message</span><br />
+<span class="f_CodeExample">messagebox=info$popup=</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">true</span><span class="f_CodeExample">&lt;tab&gt;text=&lt;ls_html&gt;</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Cancel&nbsp;the&nbsp;process</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">return</span><span class="f_CodeExample">&nbsp;failure</span><br />
+<span class="f_CodeExample">end&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #3366ff;">function</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><img alt="help-hinweis" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-hinweis.gif"/><span class="f_Example"> <a href="examplenote.htm" class="topiclink">Example Notes</a></span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

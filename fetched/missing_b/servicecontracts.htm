@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ServiceContracts</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Methods (^1) add &nbsp; &nbsp; Properties (^1) attachmententry &nbsp;attachments &nbsp;contactcode &nbsp;contractid &nbsp;contracttemplate &nbsp;contracttype &nbsp;customercode &nbsp;customername &nbsp;d" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "servicetypes.htm",
+   prevP: "speciallines.htm",
+   currP: "servicecontracts.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "ServiceContracts",
+   mailsubject: "Feedback on: Beas Script 2026.09 - ServiceContracts",
+   sharesubject: "Beas Script 2026.09 - ServiceContracts",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ServiceContracts",
+   mailpath: "SAP DI API &gt; DI-API: Objects &gt; ServiceContracts /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - ServiceContracts").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "servicecontracts.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>ServiceContracts</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">ServiceContracts</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="sap-sdk" width="224" height="45" style="margin:0;width:224px;height:45px;border:none" src="sap-sdk.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Methods (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">attachmententry</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">attachments</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">contactcode</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">contractid</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">contracttemplate</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">contracttype</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">customercode</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">customername</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">description</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">durationofcoverage</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">enddate</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">fridayenabled</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">fridayend</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">fridaystart</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">includeholidays</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">includelabor</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">includeparts</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">includetravel</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">Lines</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">mondayenabled</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">mondayend</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">mondaystart</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">owner</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">remarks</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">remindertime</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">remindunit</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">renewal</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">resolutiontime</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">resolutionunit</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">responsetime</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">responseunit</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">saturdayenabled</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">saturdayend</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">saturdaystart</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">servicetype</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">startdate</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">status</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">sundayenabled</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">sundayend</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">sundaystart</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">templateremarks</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">terminationdate</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">thursdayenabled</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">thursdayend</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">thursdaystart</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">userfields</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">wednesdayenabled</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">wednesdayend</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">wednesdaystart</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span style="font-weight: bold;">Lines (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">enddate</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">internalserialnum</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">itemgroup</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">itemgroupname</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">manufacturerserialnumber</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">startdate</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">terminationdate</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:216px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed" style="color: #c0504d;">userfields</span></p>
+</td>
+<td style="vertical-align:top; width:434px; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

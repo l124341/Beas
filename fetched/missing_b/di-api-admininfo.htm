@@ -1,0 +1,1938 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>DI-API: admininfo</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Return Admin information ^1 &nbsp; &nbsp; declare d=ue_api_sbo messagebox=&lt;d.AccountSegmentsSeparator&gt; &nbsp; &nbsp; &nbsp;Account Property Account &nbsp;&nbsp;AccountSegmentsSeparator Sets or retu" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "di-api-getnewobjectkey.htm",
+   prevP: "di-api-companyinfo.htm",
+   currP: "di-api-admininfo.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "DI-API: admininfo",
+   mailsubject: "Feedback on: Beas Script 2026.09 - DI-API: admininfo",
+   sharesubject: "Beas Script 2026.09 - DI-API: admininfo",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "DI-API-admininfo",
+   mailpath: "SAP DI API &gt; DI-API Properties &gt; DI-API: admininfo /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - DI-API: admininfo").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "di-api-admininfo.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>DI-API: admininfo</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">DI-API: admininfo</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="sap-sdk" width="224" height="45" style="margin:0;width:224px;height:45px;border:none" src="sap-sdk.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return Admin information ^1</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><img alt="beasscript-logo-small" width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="beasscript-logo-small.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_sbo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">d</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">AccountSegmentsSeparator</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:302px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;"> Account</span></p>
+</th>
+<th style="vertical-align:top; width:875px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span style="font-weight: bold;">Property Account</span><span style="font-size: 9pt; font-family: Verdana,Geneva,Arial,sans-serif;"> </span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AccountSegmentsSeparator</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;">Sets or returns the Separator character displayed between the account segments (for example:&quot;-&quot; or &quot;_&quot;). Country-specific for US. </p>
+<p style="margin: 0 1px 8px 1px;">Field name: ActSep.</p>
+<p style="margin: 0 1px 8px 1px;">Length: 1 character.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AccuracyofQuantities</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the respective number of decimal places displayed for quantities. This setting only affects the display. The system always calculates precisely to six decimal places. </p>
+<p class="p_Normal">Field name: QtyDec.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ActionWhenDeviateFromBAForAccounting</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ActionWhenDeviateFromBAForAccounting </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ActionWhenDeviateFromBAForGRPO</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ActionWhenDeviateFromBAForGRPO </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; height:14px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ActionWhenDeviateFromBAForPO</span></p>
+</td>
+<td style="vertical-align:top; width:875px; height:14px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ActionWhenDeviateFromBAForPO </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AdditionalIdNumber</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the additional ID number of the company. For example, the tax authority identifies the company as part of a group of companies by this number. </p>
+<p class="p_Normal">Length: 32 characters.</p>
+<p class="p_Normal">Field name: FreeZoneNo.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> Address</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the company address in local language. </p>
+<p class="p_Normal">Length: 254 characters.</p>
+<p class="p_Normal">Field name: CompnyAddr.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AddressinForeignLanguage</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns the company address in foreign language. </p>
+<p class="p_Normal">Length: 254 characters.</p>
+<p class="p_Normal">Field name: CmpnyAddrF.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AdressFromWH</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to display the full warehouse address in purchase documents. </p>
+<p class="p_Normal">Field name: AdrsFromWH.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AdvancesonCorpIncomeTax</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the percentage that must be advanced on account of corporate income tax. </p>
+<p class="p_Normal">Country-specific for Israel. </p>
+<p class="p_Normal">Field name: DpsitPrcnt.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AlertbyWarehouse</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not the system checks the inventory in a specific warehouse or in all warehouses where the item is stored. </p>
+<p class="p_Normal">Field name: WarnByWhs.</p>
+<p class="p_Normal"><span style="font-weight: bold;">1</span> - the system checks the inventory level in the specified warehouse when the sales document is entered. If the current transaction results in this level falling below a set minimum, a warning message is displayed - even if the inventory for the item in all warehouses is greater than the minimum.</p>
+<p class="p_Normal"><span style="font-weight: bold;">0</span> - the inventory level is checked in all warehouses where the item is stored.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AlertTypeforWHStock</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the type of system's response when the inventory level falls below this minimum as the result of a sales document, such as a delivery note or an invoice. Field name: LevelWarn.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AliasName</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property AliasName </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AllowBPWithNoOwner</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property AllowBPWithNoOwner </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AllowClosedSalesQuotations</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether sales quotation documents remain open or closed after being copied (in full) to a follow-up document. </p>
+<p class="p_Normal">Field name: ClosedQuot.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AllowFuturePostingDate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to allow future posting dates at the company level. Field name: AllowFuPos.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AllowInBoundPostingWithZeroPrice</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property AllowInBoundPostingWithZeroPrice </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AllowMultipleBAOnSamePeriod</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property AllowMultipleBAOnSamePeriod </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AltNameForApInvoice</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the alternative name for A/P invoice documents. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: A/P Invoice.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AltNameforCreditMemo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the alternative name for A/P credit memo documents. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: RpcName.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AltNameForGoodsReceipt</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the alternative name for goods receipt PO documents. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: PdnName.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AltNameForGoodsReturn</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the alternative name for goods returns documents. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: RpdName.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AltNameForPurchase</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the alternative name for Purchase documents. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: .</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ApplicationOfIFRS</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ApplicationOfIFRS </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ApplyBaseInactiveStatusToPeriodVolumeDiscounts</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ApplyBaseInactiveStatusToPeriodVolumeDiscounts </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ApplyBaseInactiveStatusToPriceLists</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ApplyBaseInactiveStatusToPriceLists </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ApplyBaseInactiveStatusToSpecialPrices</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ApplyBaseInactiveStatusToSpecialPrices </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AutoAddPackage</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Indicates whether to add all package definitions each time you create a new item, or to automatically add a new package definition to existing items. </p>
+<p class="p_Normal">Field name: AutoAddPkg.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AutoAddUoM</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Indicates whether to add all UoM (Unit of Measurement) group definitions each time you create a new item, or to automatically add a new UoM group definition to existing items. </p>
+<p class="p_Normal">Field name: AutoAddUoM.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AutoAssignOnlyValidAPBA</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property AutoAssignOnlyValidAPBA </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> AutoAssignOnlyValidARBA</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property AutoAssignOnlyValidARBA </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BankCountry</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the country of the default house bank (the company bank) as defined in the Banks object. </p>
+<p class="p_Normal">Length: 3 characters.</p>
+<p class="p_Normal">Field name: BankCountr.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BankStatementInstalled</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns a boolean value specifying whether or not the BankStatementService is activated. </p>
+<p class="p_Normal"><span style="font-weight: bold;">Yes</span> = service is activated (default for 2006 A new installation)</p>
+<p class="p_Normal"><span style="font-weight: bold;">No</span> = service is not activated (default for upgraded companies).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BaseField</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the reference number to include in the Remarks area of sales documents, whether Base Document Number (1) or Customer/Vendor Reference Number (0, in case the Customer/Vendor Reference Number does not exist in the base document, the Remarks field remains blank in the sales document). </p>
+<p class="p_Normal">Field name: BaseFld.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockBookkeeping</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to block deviation from budget in accounting transactions that involves a G/L account relevant to budget. </p>
+<p class="p_Normal">Applicable in case the valid value of CalculateBudget is 1 and the valid value of BlockBudget is either bb_Block or bb_MonthlyAlertOnly (the system displays a warning about any deviation from budget). </p>
+<p class="p_Normal">Field name: BdgtAcctng.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockBudget</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines how the system manages deviations from budget in documents. </p>
+<p class="p_Normal">Applicable in case the valid value of CalculateBudget is 1.</p>
+<p class="p_Normal">Field name: BgtBlock.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockDelNotesforPurchase</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to block deviation from budget in goods receipt POs. </p>
+<p class="p_Normal">Applicable in case the valid value of CalculateBudget is 1 and the valid value of BlockBudget is either bb_Block or bb_MonthlyAlertOnly (the system displays a warning about any deviation from budget). </p>
+<p class="p_Normal">Field name: BdgtPDNDo.</p>
+<p class="p_Normal">LDiscTotal</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockMultipleBAOnSameAPDocument</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property BlockMultipleBAOnSameAPDocument </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockMultipleBAOnSameARDocument</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property BlockMultipleBAOnSameARDocument </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockPostingDateEditing</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to block posting dates editing for individual rows in Journal Entry documents. </p>
+<p class="p_Normal">Field name: RefDNoEdit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockPurchaseOrders</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to block deviation from budget in purchase orders. </p>
+<p class="p_Normal">Applicable in case the valid value of CalculateBudget is 1 and the valid value of BlockBudget is either bb_Block or bb_MonthlyAlertOnly (the system displays a warning about any deviation from budget). </p>
+<p class="p_Normal">Field name: BdgtPORDoc.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockStockNegativeQuantity</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property BlockStockNegativeQuantity </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockSystemCurrencyEditing</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to block editing of total amounts in system currency in Journal Entry documents. </p>
+<p class="p_Normal">Field name: SysCNoEdit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BlockTaxDate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to block document date editing per row in Journal Entry documents. </p>
+<p class="p_Normal">Field name: TaxDNoEdit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BoletoFolderPath</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property BoletoFolderPath </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BPTypeCode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the string length of the Payment Reference, which is used in payment slips. </p>
+<p class="p_Normal">Country-specific for Nordic countries. </p>
+<p class="p_Normal">Field name: CaredType.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> BudgetAlert</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the alert type in case of deviation from budget. </p>
+<p class="p_Normal">Applicable in case the valid value of CalculateBudget is 1 and the valid value of BlockBudget is either bb_Block or bb_MonthlyAlertOnly. </p>
+<p class="p_Normal">Field name: BgtWarning.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CalculateBudget</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable budget management. Field name: DoBudget.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CalculateGrossProfitperTra</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable gross profit calculation for sales documents. </p>
+<p class="p_Normal">Field name: SaleProfit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CalculateInWhseQtyBasedOnPostingDate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property CalculateInWhseQtyBasedOnPostingDate </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CalculateRowDiscount</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns a valid value that determines wether or not to calculate row discount. </p>
+<p class="p_Normal">Field name: LDiscTotal.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CalculateTaxinSalesQuotati</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to calculate tax in sales-quotation documents. When set to 0, the system does not calculate or display the tax in quotations. however, if the user creates an order that refers to a quotation, the system calculates the tax according to the rules for the customer and the item. </p>
+<p class="p_Normal">Field name: AddVat.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CertificateNo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the certificate number of the withholding tax that applies to sales documents. Applicable when SHandleWT is set to 1. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: CrtfcateNO.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ChangeDefReconAPAccounts</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable assignment of different control accounts to different vendors. Assignment of control accounts to each vendor can be done through the BusinessPartners object. The default value is 0, which means &nbsp;the control accounts defined in the Control Accounts - Accounts Payable window are used for all vendors. Field name: ChCtrAPAct.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ChangeDefReconARAccounts</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable assignment of different control accounts to different customers. Assignment of control accounts to each customer can be done through the BusinessPartners object. The default value is 0, which means the control accounts defined in the Control Accounts - Accounts Receivable window are used for all customers. Field name: ChCtrARAct.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ChangedExistingOrders</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to allow changes to existing sales orders. The default value is 1. If set to 0, sales orders, once created, cannot be modified. Field name: ChangeRdr.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ChartofAccountsTemplate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the chart of accounts for the company. The available chart of accounts templates are according to the country localization. The default value is U, that means user defined chart of accounts. Modification to the template is allowed only when creating a new company database. Once the chart of accounts is applied, modification to template is not allowed. Field name: CompType.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CloseCountedRowsWithoutConfirmation</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property CloseCountedRowsWithoutConfirmation </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CloseCountedRowsWithZeroDifference</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property CloseCountedRowsWithZeroDifference </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> Code</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The key for the set of administration settings. </p>
+<p class="p_Normal">For internal use.</p>
+<p class="p_Normal">Field name: Code</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CommitmentRestriction</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to restrict the creation of sales documents for customers and prompt a warning message according to the specified MaxCommitment to the customer. The commitment limit applies to specified types of documents (A/R Invoice, Delivery, and Sales Order). </p>
+<p class="p_Normal">Field name: ObligLimit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CompanyColor</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the number of the background color for active windows. </p>
+<p class="p_Normal">Field name: Color.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed">CompanyName</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Returns the company name (can be an abbreviation). This name appears at the top of the SAP Business One menu. However, this name is not used in printed documents. Field name: CompnyName. </p>
+<p class="p_Normal">Length: 100 characters.</p>
+<p class="p_Normal">Field name: CompnyName.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ConsiderDelNotesinSalesR</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to include delivery notes - for which invoices have not yet been issued - in the total for a specified restriction. Field name: AddDlnBlnc.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ConsumeForecast</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether to subtract (1) or to add (0) item quantities of sales orders and reverse invoices from the forecast. Field name: ConsumeFCT.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ConsumptionMethod</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default method for forecast consumption, either Backward-to-Forward or Forward-to-Backward. Field name: ConsumeMtd.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ContinuousStockManagement</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to manage the inventory as Perpetual Inventory. </p>
+<p class="p_Normal">Field name: ContInvnt.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ContinuousStockSystem</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default inventory valuation method, either Moving Average, Standard Price, or FIFO. Applicable is case the value of ContinuousStockManagement is 1. Field name: InvntSystm.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CopyExchangeRateInCopyTo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Indicates whether to copy the exchange rate to the target document. </p>
+<p class="p_Normal">Field name: CpyExhRate.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 0;"><span class="f_CourierFixed"> CopyOpenRowsToDelivery</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property CopyOpenRowsToDelivery </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CopySingleCounterToIndividualCounter</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Indicates whether to copy the single counter to the individual counter (multiple counters). </p>
+<p class="p_Normal">Field name: INCSingToV.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> Country</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the company Country. </p>
+<p class="p_Normal">Field name: Country). </p>
+<p class="p_Normal">This a foreign key to the Countries table (OCRY - not exposed through the DI API).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CreateAutoVATLineinJDT</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to calculate VAT automatically based on the VAT group defined for the account. Field name: AutoVat.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CreateOnlineQuotation</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property CreateOnlineQuotation </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CreditBalancewithMinusSign</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether credit balances are displayed as negative (1) or positive (0) amounts for G/L accounts and business partners. The default setting is 1. That is, credit balances for G/L accounts and business partners are displayed as negative amounts. </p>
+<p class="p_Normal">Field name: DispPosDeb.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CreditDepositType</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether the credit vouchers are submitted automatically or manually. If credit vouchers are submitted manually, the system records the voucher date as the posting date. If credit vouchers are submitted automatically, they are entered by the system when the deposit is made, and the deposit date is recorded as the credit-voucher posting date. Field name: CreditDpst.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CreditRestriction</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to restrict the creation of sales documents for customers and prompt a warning message according to the specified CreditLimit;of the customer. The credit limit applies to specified types of documents (A/R Invoice, Delivery, and Sales Order). </p>
+<p class="p_Normal">Field name: CreditLimit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CustomerIdNumber</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the default customer ID number (applies only when ISRType is BISR). Used by the automatic payment system in Switzerland. Field name: CustmrDdct.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> CustomersDeductionatSource</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to withhold tax on amounts paid by customers. Country-specfic for Israel. Field name: CustmrDdct.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DataOwnershipManageBy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property DataOwnershipManageBy </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DateSeparator</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the character displayed between the date fields. Field name: DateSep.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DateTemplate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines how dates are displayed. The setting does not affect how dates are entered. DD = day, with two digits. MM = month, with two digits. Month = month, in words. YY = year, with two digits. YYYY = year, with four digits. CCYY = year, beginning with 20__ (21st century) Field name: DateFormat.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DaysBackward</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the number of days to go backward while searching for a forecast to consume. Field name: DaysBack.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DaysForward</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the number of days to go forward while searching for a forecast to consume. Field name: DaysFwrd.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DecimalSeparator</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the character that is used to separate an integer from decimals. In the U.S. and U.K., a dot is used; in German-speaking countries, a comma is generally used. Field name: DecSep.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DeductionFileNo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets and returns the Deduction File No. </p>
+<p class="p_Normal">Length: 50 characters.</p>
+<p class="p_Normal">Field name: .</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultAccountCurrency</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not default AcctCurrency is set for current account. </p>
+<p class="p_Normal">Field name: .</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultBankAccount</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default BankAccount number. Field name: DflBnkAcct.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultBankAccountKey</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the key of the default bank account. Field name: DflBnkCode.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultBankNo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default bank number. Field name: DflBnkCode.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultBranch</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default number of bank branch. Field name: DflBranch. </p>
+<p class="p_Normal">Field name: DflBranch.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultBudgetCostAssessMt</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default budget method key. Field name: BdgtDflt.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultCustomerPaymentTerms</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default payment terms displayed when a new customer master record is entered. Field name: DfCustTerm.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultDunningTerm</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default DunningTerm displayed when a new customer master record is entered.<br />
+Field name: .</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultforBatchStatus</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default batch status. The valid values are: Released, Not Accessible, and Locked. </p>
+<p class="p_Normal">Field name: BtchStatus.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultTaxCode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default sales tax Code. This is a foreign key to Code of the SalesTaxCodes object. </p>
+<p class="p_Normal">Length: 8 characters.</p>
+<p class="p_Normal">Field name: DflTaxCode.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultVendorPaymentTerms</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default payment terms displayed when a new vendor master record is entered. Field name: DfVendTerm.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DefaultWarehouse</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the DefaultWarehouse to be used for new items. Field name: DfltWhs.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DeferredTax</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not the system allows DeferredTax. The deferred tax represents a tax on a current book year earnings that will be paid in a future year. Field name: DeferrTax.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DeferredTaxforVendors</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not the system allows the use of Deferred Tax account by Vendors. Field name: defTaxVend.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DirectIndirectRate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the exchange rate posting: Direct or Indirect. That is, the method for calculating the amount of a transaction in local and foreign currencies. </p>
+<p class="p_Normal">Once a journal entry is posted, this setting cannot be modified.</p>
+<p class="p_Normal">Field name: DirectRate.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayBatchQtyUoMBy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property DisplayBatchQtyUoMBy </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayBookkeepingWindow</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to display account balance by control account. Field name: DspBokpWin.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayCancelDocInReport</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Indicates whether or not to report cancelled and cancellation documents. </p>
+<p class="p_Normal">Field name: CmdDisBoth.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayCurrencyontheRight</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines on which side of an amount the currency symbol is displayed. </p>
+<p class="p_Normal">Field name: CurOnRight.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayInactivePriceListInDocuments</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property DisplayInactivePriceListInDocuments </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayInactivePriceListInReports</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property DisplayInactivePriceListInReports </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayInactivePriceListInSettings</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property DisplayInactivePriceListInSettings </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayPriceforPriceOnly</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to include VAT amount in sales quotations. Field name: TreePricOn.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DisplayRoundingRemark</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not a note is displayed in the Remarks field of a foreign-currency invoice when the discount amount is different from the discount percentage due to rounding. Field name: RoundRmrk.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> DocConfirmation</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not the system validates the authorization of purchase and sales documents. Field name: useDocWrf.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> eMail</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default email address of the user. </p>
+<p class="p_Normal">Length: 100 characters.</p>
+<p class="p_Normal">Field name: E_Mail.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EmployerReference</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the Employer's Reference. Country-Specific for UK. </p>
+<p class="p_Normal">Field name: EmployerRf.</p>
+<p class="p_Normal">Length: 32 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableAdvancedGLAccountDetermination</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether to manage the inventory G/L account determination according to a flexible and centralized method. </p>
+<p class="p_Normal">Field name: NewAcctDe.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableApprovalProcedureInDI</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not the approval procedure is enabled in DI. </p>
+<p class="p_Normal">Field name: EnbApprDI.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableBranches</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnableBranches </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableCentralizedIncomingPayments</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnableCentralizedIncomingPayments </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableCentralizedOutgoingPayments</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnableCentralizedOutgoingPayments </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableMultipleSchedulings</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnableMultipleSchedulings </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnablePaymentDueDates</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnablePaymentDueDates </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableSeparatePriceMode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnableSeparatePriceMode </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableUpdateBAPriceAndPlannedAmount</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnableUpdateBAPriceAndPlannedAmount </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableUpdateDocAfterApproval</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnableUpdateDocAfterApproval </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> EnableUpdateDraftDuringApproval</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property EnableUpdateDraftDuringApproval </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ExcelFolderPath</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the path to the Microsoft Excel documents exported from the SAP Business One application. </p>
+<p class="p_Normal">Field name: ExcelPath.</p>
+<p class="p_Normal">Length: 16 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ExpirationDate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the expiration date of the withholding tax certificate that applies to sales documents. Applicable when SHandleWT is set to 1. </p>
+<p class="p_Normal">Field name: DdctExpire.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ExtendedAdminInfo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Provides access to extended administration properties.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> FaxNumber</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the recipient fax number. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: Fax.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> FaxNumberForeignLang</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default fax number in foreign language. </p>
+<p class="p_Normal">Field name: FaxF.</p>
+<p class="p_Normal">Length: 20 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> FCCheckAccount</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to the use of Foreign Currency Check Account is permitted. </p>
+<p class="p_Normal">Field name: FcNoBlnc.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> FederalTaxID</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the main federal tax ID of the company. </p>
+<p class="p_Normal">Length: 32 characters.</p>
+<p class="p_Normal">See also:Documents Object, Warehouses Object, BPAddresses Object.</p>
+<p class="p_Normal">Field name: TaxIdNum.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> FederalTaxID2</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the second federal tax ID (if relevant) of the company. Field name: TaxIdNum2.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> FederalTaxID3</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the third federal tax ID (if relevant) of the company. </p>
+<p class="p_Normal">Field name: TaxIdNum3.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> FileNumberinIncomeTax</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the IRS file number of the company. </p>
+<p class="p_Normal">Country-specfic for US only. </p>
+<p class="p_Normal">Field name: IRSFileNo.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GeneralManager</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The general manager (local). </p>
+<p class="p_Normal">Field name: Manager1</p>
+<p class="p_Normal">Length: 100 characters</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GeneralManagerForeignLanguage</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The general manager (foreign language). </p>
+<p class="p_Normal">Field name: Manager1F</p>
+<p class="p_Normal">Length: 100 characters</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GLMethod</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns a valid value of BoGLMethods type that specifies the default G/L accounts for posting transactions related to the item. </p>
+<p class="p_Normal">source: Warehouses, ItemGroups, or specified in the item level.</p>
+<p class="p_Normal">Field name: GLMethod.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GrossProfitAfterSale</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable gross profit calculation for sales documents. </p>
+<p class="p_Normal">See also CalculateGrossProfitperTra </p>
+<p class="p_Normal">Field name: GrossBySal.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GrossProfitPercentForServiceDocuments</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The default gross profit percentage rate for calculating gross profit in sales documents of service type. Field name: GPPrcntSrv</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GTSDefaultChecker</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property GTSDefaultChecker </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GTSDefaultPayee</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property GTSDefaultPayee </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GTSInboundFolder</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property GTSInboundFolder </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GTSMaxAmount</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property GTSMaxAmount </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GTSOutboundFolder</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property GTSOutboundFolder </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GTSResponseToExceeding</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property GTSResponseToExceeding </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> GTSSeparateCode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property GTSSeparateCode </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> HolidaysName</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns a foreign key to the OHLD table that defines the holidays of one year.  </p>
+<p class="p_Normal">Field name: HldCode.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> IEMandatoryValidation</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property IEMandatoryValidation </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> InstitutionCode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property InstitutionCode </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> InventoryCountingHighlightCountersDifference</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property InventoryCountingHighlightCountersDifference </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> InventoryCountingHighlightMaxVariance</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property InventoryCountingHighlightMaxVariance </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> InventoryCountingHighlightVariance</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property InventoryCountingHighlightVariance </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> InventoryPostingHighlightVariance</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property InventoryPostingHighlightVariance </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> InventoryPostingReleaseOnlySerialAndBatch</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property InventoryPostingReleaseOnlySerialAndBatch </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> IsPrinterConnected</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property IsPrinterConnected </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ISRBillerID</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the ISRBillerId. (country-specific for Switzerland only). </p>
+<p class="p_Normal">Length: 9 Characters.</p>
+<p class="p_Normal">Field name: ISRBillerID.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> IsRemoveUnpricedValue</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property IsRemoveUnpricedValue </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ISRType</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the ISRType value. (country-specific for Switzerland only).<br />
+See also: UseTax Field name: ISRBillerI.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> IssuePrimarilyBy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Specify whether you want to pick the serial or batch items for issuing according to their bin locations or their serial or batch information.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> LetterHeaderinForeignLangu</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the header (full company name in foreign language) in printed documents. </p>
+<p class="p_Normal">Length: 100 characters.</p>
+<p class="p_Normal">Field name: PrintHdrF.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> LocalCurrency</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The currency of a company code (country currency) in which the local ledgers are managed. The company uses the local currency for reporting to the local tax authorities.<br />
+Note: once a journal entry for an item or its master data record has been entered in SAP Business One, the local currency cannot be modified. Field name: MainCurncy.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ManagingDirector</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the Managing Director's name. </p>
+<p class="p_Normal">Length: 100 characters.</p>
+<p class="p_Normal">Field name: Manager.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ManagingDirectorForeignLan</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the Managing Director's name in Foreign Language. </p>
+<p class="p_Normal">Field name: ManagerF.</p>
+<p class="p_Normal">Length: 100 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> MaxDaysForCancel</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The maximum number of days for cancelling marketing documents after posting. </p>
+<p class="p_Normal">Field name: CnclMaxDay.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> MaxHistory</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the maximum number of records saved in the log file (default: 99). The log file saves the history of changes made in master records (items, business partners and G/L accounts) and in payments. </p>
+<p class="p_Normal">Field name: MaxHistory.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> MaximumNumberOfDaysForDueDate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property MaximumNumberOfDaysForDueDate </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> MeasuringAccuracy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the respective number of decimal places displayed for measurment units. This setting only affects the display. The system always calculates precisely to six decimal places. Field name: MeasureDec.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> MinimumAmountfor347Report</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the minimum reporting threshhold amount to include in the 347 Report. Country-specfic for Spain. Field name: MinAmnt347.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> MultiCurrencyCheck</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to block Multi Currency Journal Entry. </p>
+<p class="p_Normal">Field name: MultiCurr.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> MultiLanguageSupportEnable</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable multi language support. </p>
+<p class="p_Normal">See also: MultiLanguageTranslations.</p>
+<p class="p_Normal">Field name: MultiCurr.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> NationalInsuranceNo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the national insurance number that applies to sales documents. Applicable when SHandleWT is set to 1. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: NINum.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> OrderBlock</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to block posting of documents that automatically create journal entries (invoices, credit memos, deposits, and payments). Field name: OrderBlock.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> OrderingParty</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the ordering party ID for the Payment Engine add-on. Field name: OrderParty.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> OrganizationNumber</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the organization number, which is used for the payment generator (Country-specfic for some EU countries). </p>
+<p class="p_Normal">Field name: OrgNumber</p>
+<p class="p_Normal">Length: 100 characters</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ParamFolderPath</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the Parameters Folder Path. Field name: ParamPath. </p>
+<p class="p_Normal">Length: 16 characters.</p>
+<p class="p_Normal">Field name: ParamPath.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PBSGroupNumber</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&gt;Determines the customer group number, which is used by the PBS (Country-specific for Denmark). </p>
+<p class="p_Normal">Field name: PBSGroupNo.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PBSNumber</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the customer identification number, which is used by the PBS. (Country-specific for Denmark.) Field name: PBSNumber.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PDefaultWTCode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default withholding tax code that applies to purchase documents. This is a foreign key to WithholdingTaxCodes object. Applicable when WithholdingTax is set to 1. </p>
+<p class="p_Normal">Length: 4 characters. </p>
+<p class="p_Normal">Field name: PDfltWT.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PDfltITWT</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns Default Income Tax WTax Code for Purchase documents. </p>
+<p class="p_Normal">Field name: CrdCommUse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PercentageAccuracy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the percentage accuracy. </p>
+<p class="p_Normal">Field name: PercentDec.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PeriodStatusAutoChange</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to automatically change the Period Status to 'Closing Period'. </p>
+<p class="p_Normal">Field name: PStatAutCh.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PeriodStatusChangeDelay</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the delay in days for changing the Period Status to 'Closing Period'. Applicable when the PeriodStatusAutoChange property is set to Y. </p>
+<p class="p_Normal">Field name: PStatDelay.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PhoneNumber1</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the company's first default phone number. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">Field name: Phone1.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PhoneNumber1ForeignLang</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the first default phone number in foreign language. Length: 20 characters. </p>
+<p class="p_Normal">Field name: Phone1F.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PhoneNumber2</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the second default phone number. Length: 20 characters. </p>
+<p class="p_Normal">Field name: Phone2.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PhoneNumber2ForeignLang</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the second default phone number in foreign language. Length: 20 characters. </p>
+<p class="p_Normal">Field name: Phone2F.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PickList</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Indicates whether to enforce the credit\commitment limit check when creating pick lists. </p>
+<p class="p_Normal">Field name: PickLimit</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PriceAccuracy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the respective number of decimal places displayed for prices. This setting only affects the display. The system always calculates precisely to six decimal places. Field name: PriceDec.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PriceListforCostPrice</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the price list on which the gross profit calculation is based. </p>
+<p class="p_Normal">Applicable when CalculateGrossProfitperTra is set to 1. </p>
+<p class="p_Normal">Field name: CostPrcLst.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PriceProceedMethod</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property PriceProceedMethod </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PriceSystem</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable selection of specific warehoses for stock revaluation.<br />
+This field is applicable only ContinuousStockManagement is set to 1. </p>
+<p class="p_Normal">Field name: PriceSys.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PrintingHeader</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the header (full company name in local language) in printed documents. </p>
+<p class="p_Normal">Length: 100 characters.</p>
+<p class="p_Normal">Field name: PrintHeadr.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> PurchaseOrderConfirmed</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable drawing of purchase orders to target documents. Field name: PriceDec.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> QueryAccuracy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the number of decimal places for calculated fields in queries. </p>
+<p class="p_Normal">Field name: QueryDec</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> RateAccuracy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the respective number of decimal places displayed for exchange rates. This setting only affects the display. The system always calculates precisely to six decimal places. </p>
+<p class="p_Normal">Field name: RateDec.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> RefreshInWhseQtyInDI</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property RefreshInWhseQtyInDI </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> RemoveUpdatePricesBasedOnNonStandardPriceLists</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property RemoveUpdatePricesBasedOnNonStandardPriceLists </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ReportAccordingTo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ReportAccordingTo </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> RestrictDelNotesPO</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines if delivery documents are blocked when a limit is applied to the customer and it has been exceeded. Field name: DlnLimit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> RestrictOrders</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines if orders are blocked when a limit is applied to the customer and it has been exceeded. Field name: OrderLimit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> RestrictSales</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines if all sales documents are blocked when a limit is applied to the customer and it has been exceeded. Field name: SalesLimit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ReuseDocumentNum</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ReuseDocumentNum </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ReuseNotaFiscalNum</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property ReuseNotaFiscalNum </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> RoundingMethod</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether the amounts in marketing documents are rounded by currency or by document. Field name: RoundMthd.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> RoundTaxAmounts</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether the amounts in marketing documents are rounded by currency or by document. Field name: RoundMthd.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SalesOrderConfirmed</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable drawing of sales orders to target documents. Field name: RdrConfrmd.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SDefaultWTCode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the default withholding tax code that applies to sales documents. This is a foreign key to WithholdingTaxCodes object. Applicable when SHandleWT is set to 1. </p>
+<p class="p_Normal">Field name: SDfltWT.</p>
+<p class="p_Normal">Length: 4 characters. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SDfltITWT</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns Default Income Tax WTax Code for Sales documents. </p>
+<p class="p_Normal">Field name: CrdCommUse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SEPACreditorID</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property SEPACreditorID </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> Series</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property Series </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ServiceCode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to encrypt data when displaying confidential data. The data includes: G/L account balances, customer and vendor account balances, price lists, and gross profits for the transactions. When selected (Y), the system displays the Encoding Table button. The user can click this button to open the Encoding window for setting the encoding. A different display character can be defined for each character in the table. Field name: UseCode.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ServicePassword</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to encrypt data when displaying confidential data. <br />
+The data includes: G/L account balances, customer and vendor account balances, price lists, and gross profits for the transactions. <br />
+When set to 1, the system displays the Encoding Table button. The user can click this button to open the Encoding window for setting the encoding. A different display character can be defined for each character in the table. </p>
+<p class="p_Normal">Field name: UseCode.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SetCommissionbyCustomer</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to calculate commissions by customer specified in the document. </p>
+<p class="p_Normal">Field name: CrdCommUse</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SetCommissionbyItem</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to calculate commision by Item. </p>
+<p class="p_Normal">Field name: ItmCommUse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SetCommissionbySE</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to calculate commision by sales emploee </p>
+<p class="p_Normal">Field name: SlpCommUse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SetItemsWarehouses</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or no to add all warehouses each time the user creates a new item; and automatically to add a newly defined warehouse to the existing items. </p>
+<p class="p_Normal">Field name: AutoITW.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SetResourcesWarehouses</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property SetResourcesWarehouses </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SHandleWT</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable withholding tax in sales documents. Field name: SHandleWT.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SirenNo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property SirenNo </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SplitPO</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to split a purchase order that relates to more than one warehouse. </p>
+<p class="p_Normal">If set to yes, the system enables to create seoarate purchase orders for each warehouse.</p>
+<p class="p_Normal">Field name: RevisionPo.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> StandardUnitofLength</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the default units of length measurement for items. <br />
+When a new item is defined in SAP Business One, these measurement units are displayed automatically. See Also: Items. </p>
+<p class="p_Normal">Field name: DefLengthU.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> StartingInFiscalYear</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property StartingInFiscalYear </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> State</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the state code of the company. </p>
+<p class="p_Normal">Field name: State.</p>
+<p class="p_Normal">Length: 3 characters.</p>
+<p class="p_Normal">This is a foreign key to the States table (OCST), which is not exposed through the DI API. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> SystemCurrency</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Currency in which the system manages all transactions parallel to the local currency.<br />
+If the system currency is not identical to the local currency, an exchange rate has to be defined. In Accounting, every document is posted in both the system and the local currency. Company reports than can be generated for both local and system currencies. Field name: BankCountr.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxCollection</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns a valid value that determines wether or not to collect vat tax. </p>
+<p class="p_Normal">Field name: VatCharge.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxDefinition</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not this company pays VAT. </p>
+<p class="p_Normal">Field name: PayOutVat.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxDefinitionforVatitem</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the default tax group to be used when selling items. </p>
+<p class="p_Normal">Field name: DfSVatItem.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxDefinitionforVatservice</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the default tax group to be used when selling services. </p>
+<p class="p_Normal">Field name: DfSVatServ.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxGroupforPurchaseItem</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the default tax group to be used when purchasing items. </p>
+<p class="p_Normal">Field name: DfPVatItem.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxGroupforServicePurchase</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the default tax group to be used when purchasing services. </p>
+<p class="p_Normal">Field name: DfPVatServ.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxOffice</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the name of the tax authority. </p>
+<p class="p_Normal">Field name: Revoffice.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxPercentage</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the percentage of tax the company is required to pay and collect. Country-specfic for Israel. </p>
+<p class="p_Normal">Field name: VatPrcnt.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TaxRateDetermination</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property TaxRateDetermination </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> ThousandsSeparator</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the character that is used to separate thousands. In the U.S. and U.K., a comma is used; in German-speaking countries, a dot is generally used. </p>
+<p class="p_Normal">Field name: ThousSep.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TimeTemplate</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether the system displays time in 12-hour or 24-hour format. </p>
+<p class="p_Normal">Field name: TimeFormat.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> TotalsAccuracy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the respective number of decimal places displayed for amounts. This setting only affects the display. The system always calculates precisely to six decimal places. </p>
+<p class="p_Normal">Field name: SumDec.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> UniqueSerialNo</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines by which value the system sets serial numbers as unique. The options are: </p>
+<p class="p_Normal">0 - None<br />
+2 - Manufacturer Serial Number<br />
+3 - Serial Number<br />
+4 - Lot Number </p>
+<p class="p_Normal">Field name: SriUniqFld.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> UniqueTaxPayerReference</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the Unique Taxpayer Reference (UTR). Country-Specific for UK. </p>
+<p class="p_Normal">Field name: TaxPayerRf.</p>
+<p class="p_Normal">Length: 32 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> UseNegativeAmounts</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether to use negative amounts or a debit/credit switch in reverse transaction. This setting can be changed at any time. </p>
+<p class="p_Normal">Field name in the database: NegAmount.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> UseParentWIPInComponents</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">property UseParentWIPInComponents </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> UsePASystem</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to create a record for purchase account in journal entries that are related to continuous stock. Note: Once a journal entries has been made, this setting cannot be changed. </p>
+<p class="p_Normal">Field name: UsePaSys.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> UseProductionProfitAndLossAccount</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The application uses the WIP accounts, inventory accounts, WIP offset accounts, and inventory offset accounts for journal entries of the component transactions between inventory and production. </p>
+<p class="p_Normal">Field: UseProdPL.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> UserConversionCode</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to encrypt data when displaying confidential data. </p>
+<p class="p_Normal">The data includes: G/L account balances, customer and vendor account balances, price lists, and gross profits for the transactions. </p>
+<p class="p_Normal">When selected (Y), the system displays the Encoding Table button. The user can click this button to open the Encoding window for setting the encoding. A different display character can be defined for each character in the table.</p>
+<p class="p_Normal">Field name: UseCode.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> UseTax</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines the fields to be printed on invoices. Used by the automatic payment system in Switzerland. The options include:ISR = with pre-printed amounts.<br />
+BISR = with pre-printed amounts.<br />
+ISR+ = with blank amount fields.<br />
+BISR+ = with blank amount fields.  &nbsp;</p>
+<p class="p_Normal">Field name: ISRType.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WeightUnitDefault</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the default units of weight measurement for items in the Item Master Data form. When a new item is defined in SAP Business One, these weight units are displayed automatically. </p>
+<p class="p_Normal">Field name: DefWeightU.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WholdingTaxDedHierarchy</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to use Withholding Tax deduction hierarch. </p>
+<p class="p_Normal">Country specific for Israel.</p>
+<p class="p_Normal">Field name: useDdctTrc.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WithholdingTaxDdctExpired</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the date when withholding tax deduction expires. </p>
+<p class="p_Normal">Field name: DdctExpire.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WithholdingTaxDdctOffice</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the withholding tax deduction office address. </p>
+<p class="p_Normal">Length: 100 characters.</p>
+<p class="p_Normal">Field name: DdctOffice.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WithholdingTaxPHandle</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether or not to enable withholding tax in purchasing documents. Set this field to 'Y' or 'N'. </p>
+<p class="p_Normal">Field name: PHandleWT</p>
+<p class="p_Normal">Length: 1 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WithholdingTaxTdctPercnt</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the withholding tax deduction percent. </p>
+<p class="p_Normal">Field name: DdctPercnt.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WithholdingTaxVendorDdct</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines wether or not vendor deduction exist. </p>
+<p class="p_Normal">Field name: VendorDdct.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WithTax</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the percentage of tax that must be withheld from amounts paid to the company. </p>
+<p class="p_Normal">Field name: IncomeTax.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WTAccumAmountAP</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the minimum limit for posting the WTax of outgoing payments in local currency, as defined by the government. </p>
+<p class="p_Normal">Field name: WTAccumAmt.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WTAccumAmountAR</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets the minimum limit for posting the WTax of incoming payments in local currency, as defined by the government. </p>
+<p class="p_Normal">Field name: WTAccAmtAR.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> WTLiableExpense</span></p>
+</td>
+<td style="vertical-align:top; width:875px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Not Used. Field name: ExWTLiab.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:302px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 1px 1px 1px 1px;"><span class="f_CourierFixed"> XMLFileFolderPath</span></p>
+</td>
+<td style="vertical-align:top; width:875px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the path to the XML files created with the Export Form to XML function. </p>
+<p class="p_Normal">Field name: XmlPath</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="line-height: 1.28; margin: 0 0 11px 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_Normal">(^1) Source: SAP Business One SDK</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

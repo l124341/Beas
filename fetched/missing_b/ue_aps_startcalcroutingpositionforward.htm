@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>(&gt;&gt;) StartCalcRoutingPositionForward</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Executed during the capacity calculation for every routing position at the beginning of a routing position, before the calculation of transfer time." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ue_aps_middlecalcroutingpositionforward.htm",
+   prevP: "ue_aps_endcalcroutingpositionbackward.htm",
+   currP: "ue_aps_startcalcroutingpositionforward.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "(&gt;&gt;) StartCalcRoutingPositionForward",
+   mailsubject: "Feedback on: Beas Script 2026.09 - (&gt;&gt;) StartCalcRoutingPositionForward",
+   sharesubject: "Beas Script 2026.09 - (&gt;&gt;) StartCalcRoutingPositionForward",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ue_aps_StartCalcRoutingPositionForward",
+   mailpath: "User events &gt; aps &gt; (&gt;&gt;) StartCalcRoutingPositionForward /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - (&gt;&gt;) StartCalcRoutingPositionForward").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_aps_startcalcroutingpositionforward.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>(&gt;&gt;) StartCalcRoutingPositionForward</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">(&gt;&gt;) StartCalcRoutingPositionForward</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Executed during the capacity calculation for every routing position at the beginning of a routing position, before the calculation of transfer time.</p>
+<p class="p_Normal">Only Forward calculation</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="aps_routingcalculation_forward" width="605" height="150" style="margin:0;width:605px;height:150px;border:none" src="aps_routingcalculation_forward.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:148px;"><p class="p_Normal"><span style="font-weight: bold;">Variable</span></p>
+</th>
+<th class="fielddescription" style="width:36px;"><p class="p_Normal"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th class="fielddescription" style="width:38px;"><p class="p_Normal"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th class="fielddescription" style="width:945px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_Method</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><br />
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Calculation Method</p>
+<p class="p_Normal"><span class="f_CourierFixed">MRP</span> Executed by MRP, ATP, CTP</p>
+<p class="p_Normal"><span class="f_CourierFixed">Workorder</span> Executed manually from work order</p>
+<p class="p_Normal">Or the Calculation Method, which defined in APS List</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_MethodStep</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">In the Method you can define more than one step. This is the step. First step is 1</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_DocEntry</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><br />
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Work order document number</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_LineNumber</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Work order position number</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_LineNumber2</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><br />
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Routing Position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_BaseDocEntry</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Base document, example Sales order. Only in MRP</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_BaseLineNumber</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><br />
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Base document line</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_ItemCode</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Calculated Item Code</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_Quantity</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><br />
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Calculated Quantity </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">e_CheckReservedTime</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Check reserved times</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_RoutingSplitt</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><br />
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Allow Routing Split true/false</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_Simulation</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Simulation true/false</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_CalcSaveType</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><br />
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Save type</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:45px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td style="vertical-align:top; width:602px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:45px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:602px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Normal</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:45px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">S</p>
+</td>
+<td style="vertical-align:top; width:602px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Simulation. Don't save time reservation</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:45px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">I</p>
+</td>
+<td style="vertical-align:top; width:602px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Simulation. Save nothing</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:45px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">R</p>
+</td>
+<td style="vertical-align:top; width:602px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Calculation for alternative resource with checking Time reservations</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:45px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">P</p>
+</td>
+<td style="vertical-align:top; width:602px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Planning: Save all results</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_ReservationType</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_Resource</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal">x</p>
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Resource ID</p>
+<p class="p_Normal">If you change the resource, the system makes only the time reservation on this resource, but does not change the resource on the routing position.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_TimeLine</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Time line in format yyyy/mm/dd hh:mm</p>
+<p class="p_Normal">Backward: The End Date</p>
+<p class="p_Normal">Forward: The Start Date</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: The time line is between transit and idle time.</span></p>
+<p class="p_Normal">In forward calculation you can go only forward in time line</p>
+<p class="p_Normal">In backward calculation you can go only backwards.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_Duration</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Duration in minutes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Every Date must have the following format: yyyy/mm/dd hh:mm</p>
+<p class="p_Normal">If you use another format, the system will not save the value correctly.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">NOTE:</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">The system does not check the changes. &nbsp;If you change any parameter, you must check all / calculate other parameters too.</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">The system saves the changes in the Work order routing position, but this does not affect time reservation table BEAS_RESOURCEN!</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">If APS Calculation Method is set to &quot;forward&quot;, the Resource &quot;1900&quot; always starts at 14:00</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// ******* StartCalcRoutingPositionForward ********</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">// Created 2020/02/11 by Martin Heigl</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">function StartCalcRoutingPositionForward</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">if &lt;e_Method&gt; = &quot;forward&quot; and &lt;e_Resource&gt; = &quot;1900&quot; then</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;setvar=e_TimeLine=&lt;e_TimeLine,left 11&gt; 14:00</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end if</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end function</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="calcforwardexample1" width="811" height="313" style="margin:0;width:811px;height:313px;border:none" src="calcforwardexample1.png"/></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

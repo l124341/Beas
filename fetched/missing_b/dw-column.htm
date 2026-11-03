@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>dw column</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Properties for Column controls in DataWindow objects" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "dw-column-edit.htm",
+   prevP: "datawindowcolortable.htm",
+   currP: "dw-column.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "dw column",
+   mailsubject: "Feedback on: Beas Script 2026.09 - dw column",
+   sharesubject: "Beas Script 2026.09 - dw column",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Dw-column",
+   mailpath: "Windows &gt; datawindow &gt; dw column /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - dw column").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "dw-column.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>dw column</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">dw column</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="powerbuilder-logo" width="110" height="24" style="margin:0;width:110px;height:24px;border:none" src="powerbuilder-logo.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Properties for Column controls in DataWindow objects</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">dw_1.modify=columnname.propert=value</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:middle; width:174px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property for a Column</span></p>
+</th>
+<th style="vertical-align:middle; width:29px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">M</span></p>
+</th>
+<th style="vertical-align:middle; width:32px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">S</span></p>
+</th>
+<th style="vertical-align:middle; width:969px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">AccessibleDescription</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A description of the control for use by assistive technology tools.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">AccessibleName</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A descriptive label for the control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">AccessibleRole</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A description of the kind of user-interface element that the control is.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Accelerator</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The accelerator key for the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Alignment</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The alignment of the column's text.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Attributes</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A list of the properties of the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Background.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Background settings for the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Band</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The band containing the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BitmapName</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the column's content names a picture that will be displayed instead of the text.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Border</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The type of border around the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">CheckBox.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for CheckBox edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Color</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The text color.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ColType</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The column's datatype.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Criteria.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for column in Prompt for Criteria dialog box.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">dbAlias</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">An alias for the name of the database column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">dbName</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The name of the database column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">dddw.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for DropDownDataWindow edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ddlb.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for DropDownListBox edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Edit.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for Edit edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">EditMask.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for EditMask edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Font.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Font settings for the column text.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Format</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The column's display format.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Height</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The height of the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Height.AutoSize</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether column height is adjusted to fit the data.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Height.HasMinHeight</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the column should maintain its minimum height.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">HideSnaked</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the control appears once per page when printing newspaper columns.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">HTML.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Settings for creating hyperlinks for column data.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Identity</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the DBMS sets the column's value.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ID</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The number of the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Ink.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for Ink attributes of the InkEdit edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">InkEdit.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for InkEdit edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Initial</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The initial value in the column for a new row.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Key</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether column is part of the table's primary key.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Moveable</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the user can move the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Name</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The name of the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Pointer</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The pointer's image when it is over the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Protect</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Whether the column is protected from changes.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">RadioButtons.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for RadioButton edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Resizeable</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the user can resize the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">RichEdit.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Settings for RichText edit style.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">RightToLeft</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the column is set for right-to-left reading.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SlideLeft</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Whether the column moves left to fill in space.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SlideUp</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) How the column moves up to fill in space.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">TabSequence</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The position of the column in the tab order.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Tag</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The tag text for the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Type</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's type, which is Column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Update</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the column is updatable.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Validation</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The validation expression for the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">ValidationMsg</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The message displayed when validation fails.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Values (for columns)</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The values in the column's code table.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Visible</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Whether the column control is visible.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Width</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The width of the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Width.Autosize</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">In Grid style DataWindows, determines whether the column's width adjusts according to the data it contains.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">X</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The x coordinate of the column.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:174px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Y</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:32px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:969px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The y coordinate of the column.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Note: Copy from original Powerbuilder documentation</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

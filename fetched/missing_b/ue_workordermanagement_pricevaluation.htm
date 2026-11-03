@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>PriceValuation</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Defines the type of valuation &nbsp; Variable Read Write Description e_WoDocEntry x &nbsp;Work order number &nbsp;e_WoLineNumber x &nbsp;Work order Position e_Quantity x &nbsp;Production" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ue_workordermanagement_getprice_negativposition.htm",
+   prevP: "ue_workordermanagement_receiptstart.htm",
+   currP: "ue_workordermanagement_pricevaluation.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "PriceValuation",
+   mailsubject: "Feedback on: Beas Script 2026.09 - PriceValuation",
+   sharesubject: "Beas Script 2026.09 - PriceValuation",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ue_workordermanagement_PriceValuation",
+   mailpath: "User events &gt; workordermanagement &gt; receipt process &gt; PriceValuation /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - PriceValuation").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_workordermanagement_pricevaluation.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>PriceValuation</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">PriceValuation</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Defines the type of valuation</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" style="width:100%;">
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:23px;"><p class="p_Normal"><span style="font-weight: bold;">Variable</span></p>
+</th>
+<th class="fielddescription" style="width:19px;"><p class="p_Normal"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th class="fielddescription" style="width:12px;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th class="fielddescription" style="width:1061px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px;"><p class="p_Normal"><span class="f_CourierFixed">e_WoDocEntry</span></p>
+</td>
+<td class="fielddescription" style="width:19px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:1061px;"><p class="p_Normal">Work order number </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_WoLineNumber</span></p>
+</td>
+<td class="fielddescription" style="width:19px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:1061px; background-color:#F7F7F7;"><p class="p_Normal">Work order Position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px;"><p class="p_Normal"><span class="f_CourierFixed">e_Quantity</span></p>
+</td>
+<td class="fielddescription" style="width:19px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:1061px;"><p class="p_Normal">Production Quantity in Warehouse unit</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_CloseId</span></p>
+</td>
+<td class="fielddescription" style="width:19px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:1061px; background-color:#F7F7F7;"><p class="p_Normal">Close process: N=No, J=Yes</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px;"><p class="p_Normal"><span class="f_CourierFixed">e_ValuationType</span></p>
+</td>
+<td class="fielddescription" style="width:19px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:1061px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Define Valuation Type</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Allows the user to change the valuation type</p>
+<p class="p_Normal">If you want to change any calculation rule, you must choose &quot;U&quot; and define the Text with &quot;ValuationText&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td style="vertical-align:top; width:42px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td style="vertical-align:top; width:91px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Calc.Type </span></p>
+</td>
+<td style="vertical-align:top; width:90px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Material</span></p>
+</td>
+<td style="vertical-align:top; width:92px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Routing</span></p>
+</td>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Surcharge</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Post calculation (Planned Material costs at Part delivery)</p>
+</td>
+<td style="vertical-align:top; width:42px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">N</p>
+</td>
+<td style="vertical-align:top; width:91px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Real</p>
+</td>
+<td style="vertical-align:top; width:90px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Part: Plan<br />
+Close: Real</p>
+</td>
+<td style="vertical-align:top; width:92px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Part: Real<br />
+Close: Real</p>
+</td>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Real</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Post calculation (Actual material costs at Partial delivery)</p>
+</td>
+<td style="vertical-align:top; width:42px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">T</p>
+</td>
+<td style="vertical-align:top; width:91px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Real</p>
+</td>
+<td style="vertical-align:top; width:90px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Real</p>
+</td>
+<td style="vertical-align:top; width:92px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Real</p>
+</td>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Real</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Production planned costs</p>
+</td>
+<td style="vertical-align:top; width:42px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">V</p>
+</td>
+<td style="vertical-align:top; width:91px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Plan</p>
+</td>
+<td style="vertical-align:top; width:90px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Plan</p>
+</td>
+<td style="vertical-align:top; width:92px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Plan</p>
+</td>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Plan</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Post calculation &nbsp;(Partial delivery to Material / Production planned costs)</p>
+</td>
+<td style="vertical-align:top; width:42px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">P</p>
+</td>
+<td style="vertical-align:top; width:91px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Part: Plan</p>
+<p class="p_Normal">Close: Real</p>
+</td>
+<td style="vertical-align:top; width:90px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Part: Plan<br />
+Close: Real</p>
+</td>
+<td style="vertical-align:top; width:92px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Part: Plan<br />
+Close: Real</p>
+</td>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Part: Plan<br />
+Close: Real</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">L+M Cost (Plan) + Material Cost (Actual)</p>
+</td>
+<td style="vertical-align:top; width:42px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">L</p>
+</td>
+<td style="vertical-align:top; width:91px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Part: Real</p>
+</td>
+<td style="vertical-align:top; width:90px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Real</p>
+</td>
+<td style="vertical-align:top; width:92px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Plan</p>
+</td>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Real</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Standard cost method</p>
+</td>
+<td style="vertical-align:top; width:42px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Z</p>
+</td>
+<td style="vertical-align:top; width:91px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-</p>
+</td>
+<td style="vertical-align:top; width:90px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-</p>
+</td>
+<td style="vertical-align:top; width:92px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-</p>
+</td>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Booking Price</p>
+</td>
+<td style="vertical-align:top; width:42px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">S</p>
+</td>
+<td style="vertical-align:top; width:91px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-</p>
+</td>
+<td style="vertical-align:top; width:90px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-</p>
+</td>
+<td style="vertical-align:top; width:92px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-</p>
+</td>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Customizing</p>
+</td>
+<td style="vertical-align:top; width:42px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">U</p>
+</td>
+<td style="vertical-align:top; width:91px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:90px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:92px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_ValuationText</span></p>
+</td>
+<td class="fielddescription" style="width:19px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:1061px; background-color:#F7F7F7;"><p class="p_Normal">Defines the Valuation Text. This is mandatory, if e_ValuationType is &quot;U&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px;"><p class="p_Normal"><span class="f_CourierFixed">e_MaterialPriceSource</span></p>
+</td>
+<td class="fielddescription" style="width:19px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:1061px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Defines the MaterialPrice for post calculation (real)</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the Price source for Material price calculation in the post calculation (real costs)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_TableHeader"><span class="f_TableHeader">Valuation method</span></p>
+</td>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_TableHeader"><span class="f_TableHeader">Type</span></p>
+</td>
+<td style="vertical-align:top; width:806px; padding:2px; border:solid thin #000000;"><p class="p_TableHeader"><span class="f_TableHeader">Description</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Posting price</span></p>
+</td>
+<td style="vertical-align:top; width:128px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">B</p>
+</td>
+<td style="vertical-align:top; width:806px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">The actual posted price is summarized.</p>
+<p class="p_Normal">If a foreign currency was used, it is converted at the moment of the posting.</p>
+<p class="p_Normal">If another item was posted than what is specified in the BoM, its posting price will not be considered for pricing.</p>
+<p class="p_Normal">In plan costs, the last posted price of the BoM is used.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Precalculation</span></p>
+</td>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal">V</p>
+</td>
+<td style="vertical-align:top; width:806px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Corresponds to the price which is entered in the production BoM item. This is to the price of the pre-calculation from which the work order was generated or according to the pricing, which was set up in <span class="f_Linklink_link">Configuration Wizard &gt; Calculation &gt; Precalculation</span>. The price is determined at the moment when the work order is created. In a production BoM item, the price is visible only if  <span class="f_Linklink_link">Production &gt; View &gt; BoM &gt; Prices changeable</span> is enabled.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Last purchase price</span></p>
+</td>
+<td style="vertical-align:top; width:128px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">E</p>
+</td>
+<td style="vertical-align:top; width:806px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Corresponds to the price according to &lt;%SBO%&gt; – last purchase price. All types of inflow are considered (credit vouchers, manual postings). If the price is stored in foreign currency, it is converted at the rate of the last goods movement.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Last valued price</span></p>
+</td>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal">P</p>
+</td>
+<td style="vertical-align:top; width:806px; padding:2px; border:solid thin #000000;"><p class="p_Normal">In &lt;%SBO%&gt; <span class="f_Linklink_link">&gt; Report selection &gt; Warehouse management &gt; Stock valuation Simulation</span> a price can be calculated with different methods. The valuation method refers to the price determined there.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Calculation price</span></p>
+</td>
+<td style="vertical-align:top; width:128px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">K</p>
+</td>
+<td style="vertical-align:top; width:806px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">Corresponds to the price in &lt;%PROGRAMNAME%&gt; <span class="f_Linklink_link">Item master &gt; Calculation &gt; Calculation price</span>. It can be calculated regularly using batch pre-calculation and then can be used as template.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Item valuation method</span></p>
+</td>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal">D</p>
+</td>
+<td style="vertical-align:top; width:806px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Valued at the Item valuation price</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note" style="font-weight: bold;">Note</span><span class="f_Note">: With the FiFo or Series / Batch evaluation method, an average price valuation of all goods on stock is performed. </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Price list</span></p>
+</td>
+<td style="vertical-align:top; width:128px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">1-99</p>
+</td>
+<td style="vertical-align:top; width:806px; background-color:#FFFFFF; padding:2px; border:solid thin #000000;"><p class="p_Normal">The price is according to the selected price list. Price list extensions are considered.</p>
+<p class="p_Normal">If the price is stored in a foreign currency, it is converted at the daily exchange rate to the local currency.</p>
+<p class="p_Normal">A gross price list is considered only in the goods receipt, as well as for posting transactions. In pre-calculation and post-calculation items may not be valued with a gross price list.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note" style="font-weight: bold;">Note</span><span class="f_Note">: &lt;%PROGRAMNAME%&gt; only supports price list with numbers 1–99. </span><br />
+<span class="f_Note">Price lists with internal id &gt; 99 are not supported.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:209px; padding:2px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Last price from goods receipt</span></p>
+</td>
+<td style="vertical-align:top; width:128px; padding:2px; border:solid thin #000000;"><p class="p_Normal">W</p>
+</td>
+<td style="vertical-align:top; width:806px; padding:2px; border:solid thin #000000;"><p class="p_Normal">Relates to Purchase – Goods receipt. If there is no goods receipt, the last purchase price is used as reference (conversion at daily rate). If there is no price, the item is valued at 0. &nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_SurchargeSource</span></p>
+</td>
+<td class="fielddescription" style="width:19px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:1061px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Defines which surcharge you want to use</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The surcharge is the price in point of the Calculation Schema - Material Costs - Production Costs</p>
+<p class="p_Normal">Here you can define which price of &nbsp;the Calculation Schema you want to use</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:248px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_TableHeader"><span class="f_TableHeader">Pricing at valuation (Assembly)</span></p>
+</th>
+<th style="vertical-align:top; width:36px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_TableHeader"><span class="f_TableHeader">Type</span></p>
+</th>
+<th style="vertical-align:top; width:746px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_TableHeader"><span class="f_TableHeader">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Material+Production Marginal Costs</p>
+</td>
+<td style="vertical-align:top; width:36px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">MG</p>
+</td>
+<td style="vertical-align:top; width:746px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sum of the pure material and manufacturing costs, without supplements</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Material+Production Full Costs</p>
+</td>
+<td style="vertical-align:top; width:36px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">MV</p>
+</td>
+<td style="vertical-align:top; width:746px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sum of the pure material and manufacturing costs, without supplements</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Costs of goods sold Marginal costs</p>
+</td>
+<td style="vertical-align:top; width:36px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">HG</p>
+</td>
+<td style="vertical-align:top; width:746px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">According to the calculation scheme in line &quot;manufacturing costs&quot;, usually material costs + material surcharges + manufacturing costs + manufacturing surcharges</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Costs of goods sold Full costs</p>
+</td>
+<td style="vertical-align:top; width:36px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">HV</p>
+</td>
+<td style="vertical-align:top; width:746px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">According to the calculation scheme in line &quot;manufacturing costs&quot;, usually material costs + material surcharges + manufacturing costs + manufacturing surcharges</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Costs of sales Marginal Costs</p>
+</td>
+<td style="vertical-align:top; width:36px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SG</p>
+</td>
+<td style="vertical-align:top; width:746px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">According to the calculation scheme in line &quot;primary costs&quot; usually line of COGS + surcharges</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:248px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Costs of sales Full Costs</p>
+</td>
+<td style="vertical-align:top; width:36px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SV</p>
+</td>
+<td style="vertical-align:top; width:746px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">According to the calculation scheme in line &quot;primary costs&quot; usually line of COGS + surcharges</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:23px;"><p class="p_Normal"><span class="f_CourierFixed">e_Projection</span></p>
+</td>
+<td class="fielddescription" style="width:19px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:12px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:1061px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Activates / Disables projection</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Calculation Plan: The system ignores this flag.</p>
+<p class="p_Normal">Calculation Real (Postcalculation): The system checks this flag</p>
+<p class="p_Normal"><span class="f_CourierFixed">Activate Projection=&quot;J&quot;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">Disable Projection=&quot;N&quot;</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: without Projection the result is not correct.</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Follow settings only working, if <span class="f_CourierFixed">e_ValuationType = &quot;U&quot;</span></p>
+<p class="p_Normal">Here you can define, which calculation type you want to use and which lines from the calculation you want to use for the valuation</p>
+<p class="p_Normal">Note: If you use the calculation type &quot;Plan&quot;, you can't use the results from the &quot;real&quot; side.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Setting is always: </p>
+<p class="p_Normal"><span class="f_CourierFixed">0=Plan</span> (result from Postcalculation - Plan/PreCalculation side)</p>
+<p class="p_Normal"><span class="f_CourierFixed">1=Real</span> (result from Postcalcuation - Real side)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">Part</span> = Valuation for Part receipt</p>
+<p class="p_Normal"><span class="f_CourierFixed">Last</span> = Last Receipt with closing work order</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:148px;"><p class="p_Normal">Variable</p>
+</th>
+<th class="fielddescription" style="width:36px;"><p class="p_Normal">Read</p>
+</th>
+<th class="fielddescription" style="width:38px;"><p class="p_Normal" style="text-align: center;">Write</p>
+</th>
+<th class="fielddescription" style="width:945px;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_MaterialPartReceipt</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Material Price from 0=Plan, 1=Real side for Part Receipt</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_MaterialLastReceipt</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Material Price from 0=Plan, 1=Real side for Last Receipt</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_RoutingPartReceipt</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Routing/Production &nbsp;Price from 0=Plan, 1=Real side for Part Receipt</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_RoutingLastReceipt</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Routing/Production &nbsp;Price from 0=Plan, 1=Real side for Last Receipt</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_SurchargePartReceipt</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Surcharge &nbsp;Price from 0=Plan, 1=Real side for Part Receipt</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_SurchargeLastReceipt</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Surcharge &nbsp;Price from 0=Plan, 1=Real side for Last Receipt</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_CalculationTypePartReceipt</span></p>
+</td>
+<td class="fielddescription" style="width:36px;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:38px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px;"><p class="p_Normal">Calculation Type for part receipt</p>
+<p class="p_Normal">0 = calculate the Plan calculation with the current receipt quantity</p>
+<p class="p_Normal">1 = calculate the real calculation with (current receipt + all existing receipts) &nbsp;- all costs from existing receipts. </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">e_CalculationTypeLastReceipt</span></p>
+</td>
+<td class="fielddescription" style="width:36px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:38px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:945px; background-color:#F7F7F7;"><p class="p_Normal">Calculation Type for last receipt</p>
+<p class="p_Normal">0 = calculate the Plan calculation with the current receipt quantity</p>
+<p class="p_Normal">1 = calculate the real calculation with (current receipt + all existing receipts) &nbsp;- all costs from existing receipts. </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

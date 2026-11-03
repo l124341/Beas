@@ -1,0 +1,1201 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>DI-API: Service Types</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Service Types (^1) &nbsp;Member Description Number DepositsService &nbsp;25 ExternalReconciliationsService &nbsp; 26 CheckLinesService &nbsp;27 SeriesService &nbsp; 35 FormPreferencesS" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "sap-ui-api.htm",
+   prevP: "servicecontracts.htm",
+   currP: "servicetypes.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "DI-API: Service Types",
+   mailsubject: "Feedback on: Beas Script 2026.09 - DI-API: Service Types",
+   sharesubject: "Beas Script 2026.09 - DI-API: Service Types",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ServiceTypes",
+   mailpath: "SAP DI API &gt; DI-API: Service Types /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - DI-API: Service Types").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "servicetypes.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>DI-API: Service Types</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">DI-API: Service Types</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="sap-sdk" width="224" height="45" style="margin:0;width:224px;height:45px;border:none" src="sap-sdk.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Heading1">Service Types</span> (^1)</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:30%; background-color:#C0C0C0; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Member</span></p>
+</th>
+<th style="vertical-align:top; width:31%; background-color:#C0C0C0; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-weight: bold;">Number</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DepositsService</p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">25</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; height:17px; padding:1px; border:solid thin #000000;"><p class="p_Normal">ExternalReconciliationsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; height:17px; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; height:17px; padding:1px; border:solid thin #000000;"><p class="p_Normal">26</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CheckLinesService</p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">27</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">SeriesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">35</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">FormPreferencesService</p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">41</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BusinessPartnerPropertiesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">44</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">TransactionCodesService</p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">45</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ProfitCentersService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">61</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DistributionRulesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">62</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ProjectsService</p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">63</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">LandedCostsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">69</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CreditLinesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">72</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AlertManagementService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">80</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">MessagesService</p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">81</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">SalesOpportunityInterestsSetupService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">98</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">SalesOpportunitySourcesSetupService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">100</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">SalesOpportunityReasonsSetupService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">102</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AlternativeItemsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">107</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">PartnersSetupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">108</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">SalesOpportunityCompetitorsSetupService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">109</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BranchesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">118</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DepartmentsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">119</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ApprovalStagesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">120</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ApprovalTemplatesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">121</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ApprovalRequestsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">122</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CountriesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">129</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">StatesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">130</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CashDiscountsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">133</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">PaymentBlocksService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">159</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ServiceCallStatusService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">167</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ServiceCallTypesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">168</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ServiceCallProblemTypesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">169</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">EmployeeRolesSetupService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">172</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">EmployeeStatusService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">173</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">TerminationReasonService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">174</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ReportFilterService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">180</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BOELinesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">181</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ServiceCallSolutionStatusService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">188</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ServiceCallOriginsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">192</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DunningTermsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">196</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">EmployeePositionService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">210</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">PredefinedTextsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">215</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ReportLayoutsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">232</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AccountCategoryService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">238</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BankChargesAllocationCodesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">239</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CashFlowLineItemsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">242</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DimensionsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">251</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ServiceGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">255</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">MaterialGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">256</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">NCMCodesSetupService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">257</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BOEDocumentTypesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">267</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BOEPortfoliosService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">268</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BOEInstructionsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">269</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CustomsDeclarationService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">283</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AccountsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">1001</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BusinessPartnersService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">1002</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">MaterialRevaluationFIFOService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">1006</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ActivitiesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">1007</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">UserMenuService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal">2002</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BankStatementsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000003</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ExternalCallsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000020</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BatchNumberDetailsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000044</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">SerialNumberDetailsService</p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000045</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">InventoryPostingsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000071</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">FinancialYearsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000073</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">SectionsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000074</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CertificateSeriesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000075</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">NatureOfAssesseesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000077</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ReportTypesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000196</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">UnitOfMeasurementGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000197</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">UnitOfMeasurementsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000199</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BinLocationFieldsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000203</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BinLocationAttributesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000204</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">WarehouseSublevelCodesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000205</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BinLocationsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">10000206</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ChangeLogsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">130000000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DNFCodeSetupService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">140000041</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ElectronicFileFormatsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">410000005</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">EmployeeTransfersService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">480000001</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DeductionTaxSubGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">530000000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">TaxCodeDeterminationsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000005</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CostCenterTypesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000042</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AccrualTypesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000048</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">NFModelsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000056</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BrazilStringIndexersService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000065</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BrazilNumericIndexersService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000066</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BrazilFuelIndexersService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000067</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BrazilBeverageIndexersService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000068</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">LegalDataService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">540000073</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">TaxWebSitesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1160000000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CockpitsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1210000000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DashboardPackagesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1210000008</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">GTIsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1230000004</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BlanketAgreementsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1250000025</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">KPIsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1320000000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">TargetGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1320000002</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ExtendedTranslationsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1320000005</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">CampaignsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1320000012</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">RetornoCodesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1320000028</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">OccurrenceCodesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1320000032</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DepreciationTypesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">FAAccountDeterminationsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000002</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DepreciationAreasService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000003</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DepreciationTypePoolsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000004</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AssetClassesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000032</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">IntrastatConfigurationService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000035</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AssetGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000046</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">DeterminationCriteriasService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000048</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AssetCapitalizationService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000049</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">GLAccountAdvancedRulesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000057</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AssetCapitalizationCreditMemoService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000060</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BarCodesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000062</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">InventoryCountingsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000065</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">FixedAssetItemsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000074</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AssetManualDepreciationService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000075</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">EnhancedDiscountGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000077</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AssetTransferService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000090</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AssetRetirementService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000094</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AssetDepreciationGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000220</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">AttributeGroupsService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000226</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">IntegrationPackagesConfigureService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1470000264</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">ServiceTaxPostingService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1520000001</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">EmployeeIDTypeService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1560000000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">JournalEntryDocumentTypeService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1560000001</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">BrazilMultiIndexersService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1720000001</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">MaterialRevaluationSNBService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1980000001</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:30%; padding:1px; border:solid thin #000000;"><p class="p_Normal">TrackingNotesService </p>
+</td>
+<td style="vertical-align:middle; width:31%; padding:1px; border:solid thin #000000;"><br />
+</td>
+<td style="vertical-align:middle; width:10%; padding:1px; border:solid thin #000000;"><p class="p_Normal"><span style="font-size: 10pt; font-family: Consolas; background-color: #ffffff;">1980000009</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">(^1) Quelle: SAP Business One SDK</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>User events</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="User events &nbsp;are special events in Beas, like material booking, production control. These events are not window-based and completely run in the background." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "usereventaddon.htm",
+   prevP: "beasgui-befehle.htm",
+   currP: "userevent.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "User events",
+   mailsubject: "Feedback on: Beas Script 2026.09 - User events",
+   sharesubject: "Beas Script 2026.09 - User events",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "userevent",
+   mailpath: "User events /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - User events").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "userevent.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>User events</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">User events</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">User events &nbsp;are special events in Beas, like material booking, production control. These events are not window-based and completely run in the background.</p>
+<p class="p_Normal">In this event you can change or add more functions of the standard solution, for example work order creation, receipt and many more.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Called by</p>
+<p class="p_Normal">- different windows</p>
+<p class="p_Normal">- Integration hub</p>
+<p class="p_Normal">- Beas service layer </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><iframe width="560" height="315" src="https://www.youtube.com/embed/Rw_6Oq5Xefc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Create userevent</span></p>
+<p class="p_Normal">1. Open Beas AddOn</p>
+<p class="p_Normal">2. Open first line</p>
+<p class="p_Normal">3. Choose User event</p>
+<p class="p_Normal">4. Choose the event on the right side</p>
+<p class="p_Normal">5. Insert your script</p>
+<p class="p_Normal">6. Save (update). The change is active. You don't need a restart. <span class="f_Note">Note:</span> Other machines must be restarted.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The system will insert the following function:</p>
+<p class="p_Normal">&nbsp;<br />
+<img alt="beasscript-logo-small" width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="beasscript-logo-small.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">CreateWorkOrder</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Script</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Properties </span></p>
+<p class="p_Normal">On right side of the editor you can see all properties which you can read or write</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">General Note:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you declare any object, you must destroy it</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to read window-based information, you must check if the function is running inside this user function.</p>
+<p class="p_Normal">The user event is running in a Sandbox. Only changeable variables are visible outside this user event.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">All definitions and declared properties outside the function will be ignored.<br />
+If you need additional functions, you must declare this INSIDE this function. <span class="f_See">See</span> compatibility.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Debug</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If you want to see all variables or more details inside a user event, you can define additional debug points in your script.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="beasscript-logo-small" width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="beasscript-logo-small.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">debug</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">mirror</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;&nbsp;insert&nbsp;all&nbsp;variables&nbsp;in&nbsp;debug&nbsp;window</span><br />
+<span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">debug</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">level</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">2</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;go&nbsp;level&nbsp;2</span><br />
+<span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">debug</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">level</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">1</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;go&nbsp;back&nbsp;to&nbsp;level&nbsp;1</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">For more information <span class="f_See">see</span> <a href="system.htm#debug" class="topiclink">System &gt; Debug</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Compatibility</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;<br />
+<span style="font-weight: bold;">Name of user events changed</span><br />
+In the past the system used other variable names and other user event names</p>
+<p class="p_Normal">All old names are working. Compatibility &gt; 99%</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">But the logic of the program is changed and this can produce trouble</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Beas 9.1 and older: We'd only single receipt function. It was not possible to receipt more different batch numbers, bin locations or items per document.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It is possible to make a receipt for more then one batch number, different bin locations or different items<br />
+(new PO-Receipt function, new item issue or receipt function, all WEB APPS)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Here we changed the events from only receipt to </p>
+<p class="p_Normal">&nbsp;<br />
+<span class="f_CourierFixed">ReceiptStart</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">ReceiptLine</span> &nbsp;(same as &quot;receipt&quot;)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">this can produce incompatibility.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Problem with &quot;</span><span class="f_CourierFixed" style="font-weight: bold;">end</span><span style="font-weight: bold;">&quot; and &quot;</span><span class="f_CourierFixed" style="font-weight: bold;">end function</span><span style="font-weight: bold;">&quot;</span></p>
+<p class="p_Normal">If you declare a user event with a function, the function must end with &quot;end function&quot;. In the past only &quot;end&quot; was supported. Now the &quot;end function&quot; part is mandatory.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Ignore every declaration outside the user event</span></p>
+<p class="p_Normal">The system ignores all definitions and declared variables outside the user event</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ReceiptEnd</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">test</span><span class="f_CodeExample" style="color: #ff0000;">()</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">test</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">world</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the past a message was displayed, but not any more. Reason: The function &quot;test&quot; is declared outside from function &quot;ReceiptEnd&quot;</p>
+<p class="p_Normal">Correct is</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ReceiptEnd</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">test</span><span class="f_CodeExample" style="color: #ff0000;">()</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">test</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Hello</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">world</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span></p>
+<p class="p_Normal">&nbsp;<br />
+<span class="f_Note">Note: The end of the sub-function is declared with &quot;end&quot; AND NOT with &quot;end function&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">New: Every user event is a Sandbox.</span><br />
+All variables defined with setvar are not visible outside the user event.</p>
+<p class="p_Normal">&nbsp;<br />
+<span class="f_Example">Example:</span><br />
+<span class="f_Example">&nbsp;</span><br />
+The function ReceiptLine and ReceiptEnd have the same window.<br />
+At first, the system executes the ReceiptLine and then the ReceiptEnd function.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ReceiptLine</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myVariable</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Test&quot;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">ReceiptEnd</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">messagebox</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">myVariable</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">function</span></p>
+<p class="p_Normal">&nbsp;<br />
+In old Beas versions the system displayed &quot;myVariable&quot;<br />
+In the current version the system displays &quot;&lt;myVariable&gt;&quot;, because this is not declared. The &quot;ReceiptLine&quot; is running in a sandbox. The system restores the variables.<br />
+You can change only variables, defined in the documentation with &quot;changeable&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a href="usereventaddon.htm" class="topiclink hmlinklistitem">addon</a></p>
+<p class="p_Normal">   <a href="ue_addon_install.htm" class="topiclink hmlinklistitem">install</a></p>
+<p class="p_Normal">   <a href="ue_addon_start.htm" class="topiclink hmlinklistitem">start</a></p>
+<p class="p_Normal"><a href="usereventbeasmenu.htm" class="topiclink hmlinklistitem">beasmenu</a></p>
+<p class="p_Normal">   <a href="ue_beasmenu_start.htm" class="topiclink hmlinklistitem">start</a></p>
+<p class="p_Normal">   <a href="ue_beasmenu_poststart.htm" class="topiclink hmlinklistitem">poststart</a></p>
+<p class="p_Normal">   <a href="ue_beasmenu_initmenu.htm" class="topiclink hmlinklistitem">initmenu</a></p>
+<p class="p_Normal">   <a href="ue_beasmenu_stopbaesgui.htm" class="topiclink hmlinklistitem">stopbeasgui</a></p>
+<p class="p_Normal">   <a href="ue_beasmenu_menuid.htm" class="topiclink hmlinklistitem">menu[id]</a></p>
+<p class="p_Normal"><a href="usereventaps.htm" class="topiclink hmlinklistitem">aps</a></p>
+<p class="p_Normal">   <a href="ue_aps_startcalculation.htm" class="topiclink hmlinklistitem">StartCalculation</a></p>
+<p class="p_Normal">   <a href="ue_aps_startworkorderposition.htm" class="topiclink hmlinklistitem">StartWorkorderPosition</a></p>
+<p class="p_Normal">   <a href="ue_aps_startworkorderpositionstep.htm" class="topiclink hmlinklistitem">StartWorkorderPositionStep</a></p>
+<p class="p_Normal">   <a href="ue_aps_startcalcroutingpositionbackward.htm" class="topiclink hmlinklistitem">(&lt;&lt;) StartCalcRoutingPositionBackward</a></p>
+<p class="p_Normal">   <a href="ue_aps_middlecalcroutingpositionbackw.htm" class="topiclink hmlinklistitem">(&lt;&lt;) MiddleCalcRoutingPositionBackward</a></p>
+<p class="p_Normal">   <a href="ue_aps_endcalcroutingpositionbackward.htm" class="topiclink hmlinklistitem">(&lt;&lt;) EndCalcRoutingPositionBackward</a></p>
+<p class="p_Normal">   <a href="ue_aps_startcalcroutingpositionforward.htm" class="topiclink hmlinklistitem">(&gt;&gt;) StartCalcRoutingPositionForward</a></p>
+<p class="p_Normal">   <a href="ue_aps_middlecalcroutingpositionforward.htm" class="topiclink hmlinklistitem">(&gt;&gt;) MiddleCalcRoutingPositionForward</a></p>
+<p class="p_Normal">   <a href="ue_aps_endcalcroutingpositionforward.htm" class="topiclink hmlinklistitem">(&gt;&gt;) EndCalcRoutingPositionForward</a></p>
+<p class="p_Normal">   <a href="ue_aps_calcroutingoverlapping.htm" class="topiclink hmlinklistitem">CalcRoutingOverlapping</a></p>
+<p class="p_Normal">   <a href="ue_aps_endworkorderpositionstep.htm" class="topiclink hmlinklistitem">EndWorkorderPositionStep</a></p>
+<p class="p_Normal">   <a href="ue_aps_endworkorderposition.htm" class="topiclink hmlinklistitem">EndWorkorderPosition</a></p>
+<p class="p_Normal">   <a href="ue_aps_endcalculation.htm" class="topiclink hmlinklistitem">EndCalculation</a></p>
+<p class="p_Normal"><a href="configurator.htm" class="topiclink hmlinklistitem">Configurator</a></p>
+<p class="p_Normal">   <a href="checkconfigbeforenewload.htm" class="topiclink hmlinklistitem">CheckConfigBeforeNewLoad</a></p>
+<p class="p_Normal">fdc</p>
+<p class="p_Normal">   <a href="ue_fdc_additionalholdiay.htm" class="topiclink hmlinklistitem">additionalholiday</a></p>
+<p class="p_Normal"><a href="usereventmrp.htm" class="topiclink hmlinklistitem">mrp</a></p>
+<p class="p_Normal">   <a href="ue_mrp_start.htm" class="topiclink hmlinklistitem">Start</a></p>
+<p class="p_Normal">   <a href="ue_mrp_end.htm" class="topiclink hmlinklistitem">End</a></p>
+<p class="p_Normal"><a href="usereventsales.htm" class="topiclink hmlinklistitem">sales</a></p>
+<p class="p_Normal">   <a href="uf_sales_rightclick.htm" class="topiclink hmlinklistitem">rightclick</a></p>
+<p class="p_Normal"><a href="usereventstockmanagement.htm" class="topiclink hmlinklistitem">stockmanagement</a></p>
+<p class="p_Normal">   GoodsReceiptPo</p>
+<p class="p_Normal">   Allocation</p>
+<p class="p_Normal">   Transfer</p>
+<p class="p_Normal">   Issue</p>
+<p class="p_Normal">   Receipt</p>
+<p class="p_Normal"><a href="usereventworkordermanagement.htm" class="topiclink hmlinklistitem">workordermanagement</a></p>
+<p class="p_Normal">   Calc.</p>
+<p class="p_Normal">   <a href="creation.htm" class="topiclink hmlinklistitem">creation</a></p>
+<p class="p_Normal">   manage</p>
+<p class="p_Normal">   <a href="userevent_reservationprocess.htm" class="topiclink hmlinklistitem">Preassign</a></p>
+<p class="p_Normal">   <a href="issue_process.htm" class="topiclink hmlinklistitem">issue process</a></p>
+<p class="p_Normal">   <a href="userevent_document.htm" class="topiclink hmlinklistitem">receipt process</a></p>
+<p class="p_Normal">   time recording</p>
+<p class="p_Normal">   <a href="usereventwip.htm" class="topiclink hmlinklistitem">wip - Work in Process</a></p>
+<p class="p_Normal"><a href="usereventqcmanagement.htm" class="topiclink hmlinklistitem">qcmanagement</a></p>
+<p class="p_Normal">   <a href="ue_qcmanagement_qcplandetermination.htm" class="topiclink hmlinklistitem">QCPlanDetermination</a></p>
+<p class="p_Normal">   <a href="ue_qcmanagement_qcordercreate.htm" class="topiclink hmlinklistitem">QCorderCreate</a></p>
+<p class="p_Normal">   <a href="ue_qcmanagement_qcordercreateend.htm" class="topiclink hmlinklistitem">QCorderCreateEnd</a></p>
+<p class="p_Normal">   <a href="ue_qcmanagement_print.htm" class="topiclink hmlinklistitem">Print</a></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

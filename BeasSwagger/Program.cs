@@ -12,6 +12,7 @@ builder.Services.AddControllers().AddJsonOptions(o =>
 });
 builder.Services.Configure<BeasOptions>(builder.Configuration.GetSection("Beas"));
 builder.Services.AddSingleton<BeasScriptRunner>();
+builder.Services.AddSingleton<BeasResultReader>();
 
 builder.Services.Configure<BeasScriptOptions>(builder.Configuration.GetSection("Beas:Script"));
 // 尚未實作 script 的函數仍走 Mock(只回傳收到的參數)

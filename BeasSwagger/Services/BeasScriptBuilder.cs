@@ -8,7 +8,7 @@ public static class BeasScriptBuilder
     const string NL = "\r\n";
 
     /// <summary>script 欄位值不得含換行/Tab/?,否則會被當成 script 指令注入。</summary>
-    static string V(string? s, string field)
+    internal static string V(string? s, string field)
     {
         s ??= "";
         if (s.IndexOfAny(new[] { '\r', '\n', '\t', '?' }) >= 0)

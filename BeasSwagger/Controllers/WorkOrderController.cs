@@ -13,14 +13,18 @@ public class WorkOrderController(IBeasGateway gw, BeasScriptRunner runner) : Con
     [HttpPost("import-single")]
     public async Task<ActionResult<BeasResult>> ImportSingle(WorkOrderSingleRequest req, CancellationToken ct) =>
         Ok(await runner.RunAsync(req, () => BeasScriptBuilder.WorkOrderImport(
-            new[] { (req.ItemCode, (decimal)req.Qty) }, ""), null, ct));
+            new[] { (req.ItemCode, (decimal)req.Qty) }, ""),
+            () => BeasBslBuilder.WorkOrderImport(
+            new[] { (req.ItemCode, (decimal)req.Qty) }, ""), ct));
 
     /// <summary>多筆匯入</summary>
     /// <remarks>DLL 函數:<c>import_work_order_more</c></remarks>
     [HttpPost("import-more")]
     public async Task<ActionResult<BeasResult>> ImportMore(WorkOrderMoreRequest req, CancellationToken ct) =>
         Ok(await runner.RunAsync(req, () => BeasScriptBuilder.WorkOrderImport(
-            req.InputItems.Select(i => (i.ItemCode, (decimal)i.Qty)).ToList(), req.Mes), null, ct));
+            req.InputItems.Select(i => (i.ItemCode, (decimal)i.Qty)).ToList(), req.Mes),
+            () => BeasBslBuilder.WorkOrderImport(
+            req.InputItems.Select(i => (i.ItemCode, (decimal)i.Qty)).ToList(), req.Mes), ct));
 
     /// <summary>工單傳入委單機型 工時</summary>
     /// <remarks>DLL 函數:<c>import_work_order_withstalkWithmachinewithwortime</c></remarks>

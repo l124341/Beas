@@ -14,7 +14,8 @@ public class ProductionController(IBeasGateway gw, BeasScriptRunner runner) : Co
     [HttpPost("issue")]
     public async Task<ActionResult<BeasResult>> Issue(IssueRequest req, CancellationToken ct)
     {
-        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.Issue(req.OigeList), null, ct));
+        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.Issue(req.OigeList),
+            () => BeasBslBuilder.Issue(req.OigeList), ct));
     }
 
     /// <summary>完工回報</summary>
@@ -22,7 +23,8 @@ public class ProductionController(IBeasGateway gw, BeasScriptRunner runner) : Co
     [HttpPost("finished")]
     public async Task<ActionResult<BeasResult>> Finished(FinishedRequest req, CancellationToken ct)
     {
-        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.Finished(req), null, ct));
+        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.Finished(req),
+            () => BeasBslBuilder.Finished(req), ct));
     }
 
     /// <summary>入庫 or 半成品退回</summary>
@@ -30,7 +32,8 @@ public class ProductionController(IBeasGateway gw, BeasScriptRunner runner) : Co
     [HttpPost("return-good")]
     public async Task<ActionResult<BeasResult>> ReturnGood(ReturnGoodRequest req, CancellationToken ct)
     {
-        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.ReturnGood(req), null, ct));
+        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.ReturnGood(req),
+            () => BeasBslBuilder.ReturnGood(req), ct));
     }
 
     /// <summary>成品入庫</summary>
@@ -38,7 +41,8 @@ public class ProductionController(IBeasGateway gw, BeasScriptRunner runner) : Co
     [HttpPost("finished-receipt")]
     public async Task<ActionResult<BeasResult>> FinishedReceipt(FinishedReceiptRequest req, CancellationToken ct)
     {
-        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.FinishedReceipt(req), null, ct));
+        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.FinishedReceipt(req),
+            () => BeasBslBuilder.FinishedReceipt(req), ct));
     }
 
     /// <summary>回傳結果</summary>

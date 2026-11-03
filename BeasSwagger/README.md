@@ -30,5 +30,8 @@ Swagger 端點 → 組出 Beas Script → `INSERT INTO <db>."BEAS_COMMON_INPUT"(
 
 ## 選擇 Beas 接口
 - `appsettings.json` 的 `Beas:Interface`(`Script` 或 `Bsl`)設定全域預設;單一請求可用 `Interface` 欄位覆寫。
-- 目前所有功能只有 `Script` 版(BeasScript 內建物件)。選 `Bsl` 會回 HTTP 501,待取得 Beas Service Layer 的實體文件後逐一補上。
+- `Script`:BeasScript 內建物件(`ue_api_*`、`ue_reservation`)。`Bsl`:在 BeasScript 內以 `ue_bsl`(`instance bsl b` + `b.post=Entity=<json>`)呼叫 Beas Service Layer(`Services/BeasBslBuilder.cs`,依 `fetched/bsl`)。兩者都是寫入 `BEAS_COMMON_INPUT` 的同一流程。
+- 已有 `Bsl` 版:`production/issue`(IssueWo)、`finished-receipt` / `return-good`(ReceiptWo)、`finished`(TimeReceipt)、`bom/create`(BillOfMaterial)、`bom/change`(BillOfMaterialLine)、`routing/add`(Routing)、`workorder/import-single` / `import-more`(Workorder)。其餘選 `Bsl` 會回 HTTP 501。
+- 行為差異:`Bsl` 的 `bom/create` 預設 replace=true,BOM 已存在時會取代明細(Script 版會失敗);`bom/create-version` 暫無 `Bsl` 版(BSL 版本的 BOM id 命名規則文件沒寫);`Bsl` 版 `Finished` 若有 `DoTime` 會以 `Duration`(分鐘)送出。
+- 尚未在實際 Beas 驗證,需確認:`b.ret_value` 是否為單據編號、`ItemVersion(...)/BillOfMaterialId/$value` 取版本 BOM id、`Routing` POST 在途程不存在時是否自動建立表頭。
 - 輸入含換行/Tab/`?` 時回 HTTP 400。

@@ -13,7 +13,8 @@ public class BomController(IBeasGateway gw, BeasScriptRunner runner, IBeasQueryC
     [HttpPost("create")]
     public async Task<ActionResult<BeasResult>> Create(BomCreateRequest req, CancellationToken ct)
     {
-        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.BomCreate(req), null, ct));
+        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.BomCreate(req),
+            () => BeasBslBuilder.BomCreate(req), ct));
     }
 
     /// <summary>尋找其他版本的BOM</summary>
@@ -35,7 +36,8 @@ public class BomController(IBeasGateway gw, BeasScriptRunner runner, IBeasQueryC
     [HttpPost("change")]
     public async Task<ActionResult<BeasResult>> Change(BomVersionRequest req, CancellationToken ct)
     {
-        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.BomChange(req), null, ct));
+        return Ok(await runner.RunAsync(req, () => BeasScriptBuilder.BomChange(req),
+            () => BeasBslBuilder.BomChange(req), ct));
     }
 
     /// <summary>查看BOM</summary>

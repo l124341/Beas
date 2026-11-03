@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Save Configuration</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="API,configurator,REST" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Saving the configuration will create a new configuration in the table BEAS_CAFT_VARIANTE_KOPF, and return the new entry ID (VARIANTE).&nbsp;" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "",
+   prevP: "",
+   currP: "save-configuration.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Save Configuration",
+   mailsubject: "Feedback on: Beas Script 2026.09 - Save Configuration",
+   sharesubject: "Beas Script 2026.09 - Save Configuration",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Save-Configuration",
+   mailpath: "Keywords &gt; DateTime format /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Save Configuration").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "save-configuration.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Save Configuration</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">Save Configuration</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal" style="margin: 0 0 0 0;">Saving the configuration will create a new<span style="font-family: Arial,Helvetica,sans-serif; background-color: #ffffff;">&nbsp;</span><span class="f_CourierFixed" style="font-size: 11pt;">configuration</span><span style="font-family: Arial,Helvetica,sans-serif; background-color: #ffffff;">&nbsp;</span>in the table<span style="font-family: Arial,Helvetica,sans-serif; background-color: #ffffff;">&nbsp;</span>BEAS_CAFT_VARIANTE_KOPF, and return the new entry<span style="font-family: Arial,Helvetica,sans-serif; background-color: #ffffff;">&nbsp;</span>ID (VARIANTE).<span style="font-family: Arial,Helvetica,sans-serif; background-color: #ffffff;">&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-style: italic;">Using this new entry when create a new SAP document or work order will select this configuration.</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:182px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="URL" width="83" height="22" style="margin:0;width:83px;height:22px;border:none" src="url.png"/></p>
+</td>
+<td style="vertical-align:top; width:1257px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">/productConfigurator/exec</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Method" width="91" height="19" style="margin:0;width:91px;height:19px;border:none" src="method.png"/></p>
+</td>
+<td style="vertical-align:top; width:1257px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">POST</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Data_Params" width="126" height="20" style="margin:0;width:126px;height:20px;border:none" src="data_params.png"/></p>
+</td>
+<td style="vertical-align:top; width:1257px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span style="font-weight: bold;"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Content-type:</a></span><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')"> application/x-www-form-urlencoded</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">beasToken</span></p>
+</td>
+<td style="vertical-align:top; width:990px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The token to authenticate yourself (leave it empty for now).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">action</span></p>
+</td>
+<td style="vertical-align:top; width:990px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The action to request, in this case must be &quot;load&quot;.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">action: &quot;itemchanged&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; height:86px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:990px; height:86px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The configurable item.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">itemcode: &quot;Sofa&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">cardcode</span></p>
+</td>
+<td style="vertical-align:top; width:990px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The business partner to consider special prices and discounts.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">cardcode: &quot;JDG&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">currency</span></p>
+</td>
+<td style="vertical-align:top; width:990px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The currency code to display.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">currency: &quot;EUR&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">pricelist</span></p>
+</td>
+<td style="vertical-align:top; width:990px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">integer</span></p>
+<p class="p_Normal">The price list to consider for the items used in the calculations.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">pricelist: 1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">rows</span></p>
+</td>
+<td style="vertical-align:top; width:990px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string : json</span></p>
+<p class="p_Normal">Array of changes made to the initial configuration. All the changes you made to the initial configuration must be included here.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">rows</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">6</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;2&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">17</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;SofaClothRed&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">22</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;SofaLegSteel&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}</span><span class="f_CourierFixed">]</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:227px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">variant</span></p>
+</td>
+<td style="vertical-align:top; width:990px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">number</span></p>
+<p class="p_Normal">You must not send this parameter normally.</p>
+<p class="p_Normal">Allow to overwrite an existing configuration (check <a href="https://help.beascloud.com/" onclick="return HMTrackTopiclink(this);" class="weblink">Beas Help</a> to learn more about the rules)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed" style="font-size: 11pt;">variant: 42</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Success_Response_01" width="165" height="16" style="margin:0;width:165px;height:16px;border:none" src="success_response_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:1257px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span style="font-weight: bold;"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Content-type:</a></span><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')"> application/json</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:229px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">variant</span></p>
+</td>
+<td style="vertical-align:top; width:988px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">number</span></p>
+<p class="p_Normal">The <span class="f_CourierFixed" style="font-size: 11pt;">variant</span> number assigned to this configuration.</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed" style="font-size: 11pt;">variant: 42</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:229px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">price</span></p>
+</td>
+<td style="vertical-align:top; width:988px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">decimal</span></p>
+<p class="p_Normal">The total price calculated for this configuration.</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">price: 1708.197700</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:229px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">title</span></p>
+</td>
+<td style="vertical-align:top; width:988px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The calculated title for this configuration.</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">title: &quot;Brief Description With 1 Cushions&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:229px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">descr</span></p>
+</td>
+<td style="vertical-align:top; width:988px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The calculated description for this configuration.</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">descr: &quot;Text Description With 1 Cushions&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Error_Response" width="144" height="16" style="margin:0;width:144px;height:16px;border:none" src="error_response.png"/></p>
+</td>
+<td style="vertical-align:top; width:1257px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span style="font-weight: bold;"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Content-type:</a></span><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')"> application/json</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:230px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">error</span></p>
+</td>
+<td style="vertical-align:top; width:987px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic;">string</span></p>
+<p class="p_Normal">Error message (<span class="f_See">see</span> <a href="errors.htm" class="topiclink">Errors</a>).</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-family: Arial,Helvetica,sans-serif; background-color: #ffffff;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:182px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Sample_Call" width="117" height="14" style="margin:0;width:117px;height:14px;border:none" src="sample_call.png"/></p>
+</td>
+<td style="vertical-align:top; width:1257px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Request:</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">POST /productConfigurator/exec</p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: 10pt;">Form Data</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #3366ff;">beasToken</span><span class="f_CodeExample" style="color: #ff0000;">=&amp;</span><span class="f_CodeExample" style="color: #3366ff;">action</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">save</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Sofa</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">cardcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">JDG</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">pricelist</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">currency</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">EUR</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><br />
+<span class="f_CodeExample"> &nbsp; &nbsp; &nbsp; </span><span class="f_CodeExample" style="color: #3366ff;">rows</span><span class="f_CodeExample" style="color: #ff0000;">=[{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">6</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;2&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">17</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;SofaClothRed&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">22</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;SofaLegSteel&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}]</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Response:</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">JSON</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;variant&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">42</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;price&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">1708.197700</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;title&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Brief&nbsp;Description&nbsp;With&nbsp;1&nbsp;Cushions&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;descr&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Text&nbsp;Description&nbsp;With&nbsp;1&nbsp;Cushions&quot;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Download image</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="API,configurator,REST" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Pictures linked to the selections must be stored by Beas in the &quot;SAP Directory for images&quot; and they can be downloaded using the alias /BitmapPath/to access to the images folder." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "",
+   prevP: "",
+   currP: "load-image.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Download image",
+   mailsubject: "Feedback on: Beas Script 2026.09 - Download image",
+   sharesubject: "Beas Script 2026.09 - Download image",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Load-image",
+   mailpath: "Keywords &gt; DateTime format /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Download image").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "load-image.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Download image</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">Download image</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Pictures linked to the selections must be stored by Beas in the &quot;<a href="https://help.beascloud.com/beas202111/index.html?reportoption.htm" onclick="return HMTrackTopiclink(this);" class="weblink">SAP Directory for images</a>&quot; and they can be downloaded using the alias <span class="f_CourierFixed" style="font-size: 11pt;">/BitmapPath/</span>to access to the images folder.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:200px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="URL" width="83" height="22" style="margin:0;width:83px;height:22px;border:none" src="url.png"/></p>
+</td>
+<td style="vertical-align:top; width:1239px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">/BitmapPath/<span style="font-style: italic;">pictureName</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:200px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Method" width="91" height="19" style="margin:0;width:91px;height:19px;border:none" src="method.png"/></p>
+</td>
+<td style="vertical-align:top; width:1239px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">GET</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:200px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Success_Response_01" width="165" height="16" style="margin:0;width:165px;height:16px;border:none" src="success_response_01.png"/></p>
+</td>
+<td style="vertical-align:top; width:1239px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Return the requested file</p>
+<p class="p_Normal">Request:</p>
+<p class="p_Normal" style="text-indent: -13px; margin: 0 0 0 40px;"><span style="font-family: 'Courier New',Courier,monospace;">&nbsp;</span></p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="f_CodeExample" style="font-size: 11pt;">GET </span><span class="f_CourierFixed" style="font-size: 11pt;">/BitmapPath/Sofa.jpg</span><br />
+<span class="f_CourierFixed" style="font-size: 11pt;">&nbsp;</span></p>
+<p class="p_Normal">Response:</p>
+<p class="p_Normal" style="text-indent: -13px; margin: 0 0 0 40px;"><span style="font-family: Arial,Helvetica,sans-serif;"> &nbsp; &nbsp; </span>The file as <span style="font-weight: bold;">Content-type</span>: <span class="f_CourierFixed" style="font-size: 11pt;">image/jpeg</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:200px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Error_Response" width="144" height="16" style="margin:0;width:144px;height:16px;border:none" src="error_response.png"/></p>
+</td>
+<td style="vertical-align:top; width:1239px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Return 404 Not Found</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Request:</p>
+<p class="p_Normal" style="text-indent: -13px; margin: 0 0 0 40px;"><span style="font-family: 'Courier New',Courier,monospace;">&nbsp;</span></p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="f_CodeExample" style="font-size: 11pt;">GET </span><span class="f_CourierFixed" style="font-size: 11pt;">/BitmapPath/non-existing-file.jpg</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Response:</p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><img alt="404" width="715" height="163" style="margin:0;width:715px;height:163px;border:none" src="404.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:200px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Sample_Call" width="117" height="14" style="margin:0;width:117px;height:14px;border:none" src="sample_call.png"/></p>
+</td>
+<td style="vertical-align:top; width:1239px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Request:</p>
+<p class="p_Normal" style="text-indent: -13px; background: #ffffff; margin: 0 0 0 40px;"><span style="font-family: 'Courier New',Courier,monospace;">&nbsp;</span></p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <span class="f_CodeExample" style="font-size: 11pt;">GET </span><span class="f_CourierFixed" style="font-size: 11pt;">/BitmapPath/Sofa.png</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Response:</p>
+<p class="p_Normal" style="background: #ffffff; margin: 0 0 0 0;"><img alt="sofa" width="694" height="340" style="margin:0;width:694px;height:340px;border:none" src="sofa.jpg"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

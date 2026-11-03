@@ -1,13 +1,29 @@
 namespace BeasSwagger.Models;
 
 // ===== BOM =====
-/// <summary>BOM 明細。欄位為推測,請依實際 DLL 的 BomItem 調整。</summary>
+/// <summary>BOM 明細(對應原 DLL 的 BomItem,欄位名稱沿用原拼字:Quanity、FaterVersion)。</summary>
 public class BomItem
 {
+    /// <summary>子件料號(BEAS_STL.ART1_ID)</summary>
     public string ItemCode { get; set; } = "";
-    public decimal Quantity { get; set; }
-    public string? Unit { get; set; }
-    public int? Position { get; set; }
+    /// <summary>用量(quanity → quantity)</summary>
+    public decimal Quanity { get; set; }
+    /// <summary>顯示的位置號(pos_text)</summary>
+    public int PosText { get; set; }
+    /// <summary>單位(input_unit);空白則不送出,沿用料號預設單位</summary>
+    public string Uom { get; set; } = "";
+    /// <summary>長度(length,BEAS_STL.ABM1,原 DLL 當「底數」用)</summary>
+    public decimal Length { get; set; }
+    /// <summary>每件用量(quantityperpiece,BEAS_STL.MENGE_JE;0 = 固定用量)</summary>
+    public decimal QuantityPerPiece { get; set; }
+    /// <summary>適用版本(versionarea,BEAS_STL.VersionArea)。空白或 "''" 代表不設。<b>版本是 BOM 明細行上的標記,不是 ItemVersion</b></summary>
+    public string FaterVersion { get; set; } = "";
+    /// <summary>udf1(原 DLL 稱 workrout);空白時 bom/create 預設為 "01"</summary>
+    public string WorkRout { get; set; } = "";
+    /// <summary>version(bom=version=);空白或 "''" 代表不設</summary>
+    public string Version { get; set; } = "";
+    /// <summary>報廢率(stap → scrappercent)</summary>
+    public decimal Stap { get; set; }
 }
 public class BomCreateRequest : BeasRequest
 {

@@ -68,35 +68,42 @@ public class SqlResultBackRequest : BeasRequest
     public string? RequestId { get; set; }
 }
 
-// ===== 物料單位 =====
+// ===== 物料單位(BEAS_ME)=====
+/// <summary>新增單位(對應原 DLL CreateUom.Create)。ErfTStamp 固定為今天(只有日期)、ErfUser 固定為 "MES",都不是參數。</summary>
 public class UnitCreateRequest : BeasRequest
 {
+    /// <summary>單位代碼(ME_ID)</summary>
     public string Meid { get; set; } = "";
     public string TEXTSINGULAR { get; set; } = "";
     public string TEXTPLURAL { get; set; } = "";
     /// <summary>小數位數</summary>
-    public int ANZDEZ { get; set; }
+    public decimal ANZDEZ { get; set; }
     /// <summary>MRP取整方式:-1不取整 0rounding at 5 1取整 2四捨五入</summary>
     public int MRPRUNDUNGTYP { get; set; }
     public int MRPRUNDUNGDEC { get; set; }
     /// <summary>物料清單取整方式:-1不取整 0rounding at 5 1取整 2四捨五入 3Multiple of</summary>
     public int WORKORDERROUNDTYPEDEFAULT { get; set; }
     public int WORKORDERROUNDDECDEFAULT { get; set; }
-    public DateTime ErfTStamp { get; set; } = DateTime.Now;
-    public string ErfUser { get; set; } = "";
+    /// <summary>更新時間(寫入 ANDTSTAMP)</summary>
     public DateTime AndTStamp { get; set; } = DateTime.Now;
-    public string AndUser { get; set; } = "";
+    /// <summary>更新人(寫入 ANDUSER)</summary>
+    public string AndUser { get; set; } = "MES";
 }
+/// <summary>更新單位(對應原 DLL CreateUom.Update)。AndTStamp 固定為今天(只有日期),不是參數。</summary>
 public class UnitUpdateRequest : BeasRequest
 {
     public string Meid { get; set; } = "";
-    public int ANZDEZ { get; set; }
+    public decimal ANZDEZ { get; set; }
     public int MRPRUNDUNGTYP { get; set; }
     public int MRPRUNDUNGDEC { get; set; }
     public int WORKORDERROUNDTYPEDEFAULT { get; set; }
     public int WORKORDERROUNDDECDEFAULT { get; set; }
-    public DateTime AndTStamp { get; set; } = DateTime.Now;
-    public string AndUser { get; set; } = "";
+    public string AndUser { get; set; } = "MES";
+}
+/// <summary>單位的 sqlresultback:確認單位是否存在。</summary>
+public class UnitResultBackRequest : BeasRequest
+{
+    public string Meid { get; set; } = "";
 }
 
 // ===== 完工回報 / 入庫 =====

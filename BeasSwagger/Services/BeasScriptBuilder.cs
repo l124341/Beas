@@ -345,4 +345,34 @@ public static class BeasScriptBuilder
         sb.Append(NL).Append("setvar=is_answertext=OK");
         return ("changebom" + m + V(createTime, "CreateTime"), sb.ToString());
     }
+
+    // ---- 單位(BEAS_ME),對應原 DLL CreateUom;直接 SQL,欄位名不加引號(HANA 會轉成大寫,與 Beas 的欄位一致)----
+
+    /// <summary>原 CreateUom.Create:INSERT BEAS_ME。ErfTStamp=今天(僅日期)、ErfUser="MES" 固定;AndTStamp/AndUser 取自請求。影響 0 筆視為失敗("NO")。</summary>
+    public static IReadOnlyList<BeasSqlStatement> UnitCreateStatements(UnitCreateRequest r) => new[]
+    {
+        new BeasSqlStatement(
+            @"insert into {db}.""BEAS_ME"" (ME_ID, TEXTSINGULAR, TEXTPLURAL, ANZDEZ, MRPRUNDUNGTYP, MRPRUNDUNGDEC, WORKORDERROUNDTYPEDEFAULT, WORKORDERROUNDDECDEFAULT, ERFTSTAMP, ERFUSER, ANDTSTAMP, ANDUSER) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            new object?[]
+            {
+                V(r.Meid, "Meid"), V(r.TEXTSINGULAR, "TEXTSINGULAR"), V(r.TEXTPLURAL, "TEXTPLURAL"), r.ANZDEZ, r.MRPRUNDUNGTYP, r.MRPRUNDUNGDEC,
+                r.WORKORDERROUNDTYPEDEFAULT, r.WORKORDERROUNDDECDEFAULT, DateTime.Today, "MES", r.AndTStamp, V(r.AndUser, "AndUser"),
+            }, RequireRows: true),
+    };
+
+    /// <summary>原 CreateUom.Update:UPDATE BEAS_ME,AndTStamp=今天(僅日期)。找不到單位(0 筆)視為失敗("NO")。ME_ID 是定長字元,比對時先 rtrim。</summary>
+    public static IReadOnlyList<BeasSqlStatement> UnitUpdateStatements(UnitUpdateRequest r) => new[]
+    {
+        new BeasSqlStatement(
+            @"update {db}.""BEAS_ME"" set ANZDEZ = ?, MRPRUNDUNGTYP = ?, MRPRUNDUNGDEC = ?, WORKORDERROUNDTYPEDEFAULT = ?, WORKORDERROUNDDECDEFAULT = ?, ANDTSTAMP = ?, ANDUSER = ? where rtrim(ME_ID) = ?",
+            new object?[]
+            {
+                r.ANZDEZ, r.MRPRUNDUNGTYP, r.MRPRUNDUNGDEC, r.WORKORDERROUNDTYPEDEFAULT, r.WORKORDERROUNDDECDEFAULT,
+                DateTime.Today, V(r.AndUser, "AndUser"), V(r.Meid, "Meid"),
+            }, RequireRows: true),
+    };
+
+    /// <summary>原 CreateUom.sqlresultback:單位是否存在(存在回 ME_ID,否則 "no")。</summary>
+    public static BeasSqlStatement UnitExistsQuery(string meid) =>
+        new(@"select rtrim(ME_ID) from {db}.""BEAS_ME"" where rtrim(ME_ID) = ?", new object?[] { V(meid, "Meid") });
 }

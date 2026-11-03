@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Request Update</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="API,configurator,REST" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="After any change in the configuration, you must send all the changes made to the initial configuration &nbsp;in a compact form to retrieve an updated configuration of the..." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "",
+   prevP: "",
+   currP: "request-update.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Request Update",
+   mailsubject: "Feedback on: Beas Script 2026.09 - Request Update",
+   sharesubject: "Beas Script 2026.09 - Request Update",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Request-Update",
+   mailpath: "Keywords &gt; DateTime format /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Request Update").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "request-update.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Request Update</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">Request Update</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">After any change in the configuration, you must send all the changes made to the initial configuration &nbsp;in a compact form to retrieve an updated configuration of the configurable item.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="URL" width="83" height="22" style="margin:0;width:83px;height:22px;border:none" src="url.png"/></p>
+</td>
+<td style="vertical-align:top; width:1293px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">/productConfigurator/exec</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Method" width="91" height="19" style="margin:0;width:91px;height:19px;border:none" src="method.png"/></p>
+</td>
+<td style="vertical-align:top; width:1293px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">POST</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Data_Params" width="126" height="20" style="margin:0;width:126px;height:20px;border:none" src="data_params.png"/></p>
+</td>
+<td style="vertical-align:top; width:1293px; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span style="font-weight: bold;"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Content-type</a></span><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">: application/x-www-form-urlencoded</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:224px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">beasToken</span></p>
+</td>
+<td style="vertical-align:top; width:1029px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The token to authenticate yourself (leave it empty for now).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">action</span></p>
+</td>
+<td style="vertical-align:top; width:1029px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The action to request, in this case must be &quot;load&quot;.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">action: &quot;itemchanged&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">itemcode</span></p>
+</td>
+<td style="vertical-align:top; width:1029px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The configurable item.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">itemcode: &quot;Sofa&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">cardcode</span></p>
+</td>
+<td style="vertical-align:top; width:1029px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">The business partner to consider special prices and discounts.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">cardcode: &quot;JDG&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">currency</span></p>
+</td>
+<td style="vertical-align:top; width:1029px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The currency code to display.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">currency: &quot;EUR&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">pricelist</span></p>
+</td>
+<td style="vertical-align:top; width:1029px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">integer</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_Normal">The price list to consider for the items used in the calculations.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">pricelist: 1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">itemchanged_nr</span></p>
+</td>
+<td style="vertical-align:top; width:1029px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">integer</span></p>
+<p class="p_Normal">The <span class="f_CourierFixed" style="font-size: 11pt;">ID</span> entry in the table BEAS_OITM_PRODUKTKONFIGURATOR for the definition we are updating.</p>
+<p class="p_Normal"><span style="font-weight: bold;"> deprecated, no need to send it</span></p>
+<p class="p_Normal">&nbsp;<br />
+<span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">itemchanged_nr: 8</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:224px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">rows</span></p>
+</td>
+<td style="vertical-align:top; width:1029px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string : json</span></p>
+<p class="p_Normal">Array of changes made to the initial configuration. All the changes you made to the initial configuration must be included here.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">rows</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #ff0000;">[{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">17</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;SofaClothRed&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">26</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Y&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}]</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:146px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Success_Response" width="168" height="18" style="margin:0;width:168px;height:18px;border:none" src="success_response.png"/></p>
+</td>
+<td style="vertical-align:top; width:1293px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span style="font-weight: bold;"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Content-type: application/json</a></span></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:226px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">rows</span></p>
+</td>
+<td style="vertical-align:top; width:1027px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">array</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;">Array with all rows updates after the requested selections in a more compact way: An <span class="f_CourierFixed" style="font-size: 11pt;">(array[4]) </span>per row. The fields included per row are<span style="font-family: Arial,Helvetica,sans-serif; background-color: #ffffff;">&nbsp;</span><span class="f_CourierFixed" style="font-size: 11pt;">ID, Value, Parameter, Visible, Status</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:221px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">index 0</span></p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">NR</span></p>
+</td>
+<td style="vertical-align:top; width:792px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">integer</span></p>
+<p class="p_Normal">The ID entry in the table BEAS_OITM_PRODUKTKONFIGURATOR for this definition.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:221px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">index 1</span></p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">vorgabe</span></p>
+</td>
+<td style="vertical-align:top; width:792px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">Current value for this control (or possible value in case of radio boxes, and drop-down values)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:221px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">index 2</span></p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">price</span></p>
+</td>
+<td style="vertical-align:top; width:792px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">decimal</span></p>
+<p class="p_Normal">Calculated price</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:221px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">index 3</span></p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">visible</span></p>
+</td>
+<td style="vertical-align:top; width:792px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">integer</span></p>
+<p class="p_Normal">Determine if the control is visible or not. Possible values are<span class="f_CourierFixed"> </span><span class="f_CourierFixed" style="font-size: 11pt;">[ 0 | 1 ]</span><span class="f_CourierFixed"> </span>only.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:221px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">index 4</span></p>
+<p class="p_Normal"><span style="font-style: italic; font-weight: bold;">status</span></p>
+</td>
+<td style="vertical-align:top; width:792px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">integer</span></p>
+<p class="p_Normal">Status of this control (<span class="f_See">see</span> <a href="load-configuration.htm#status_param" class="topiclink">status parameter</a> returned by <span class="f_CourierFixed" style="font-size: 11pt;">action=load</span>)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example:</span><br />
+<span class="f_CodeExample" style="color: #a04db3;">&quot;rows&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:[</span><br />
+<span class="f_CodeExample">  </span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">0</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">  </span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">2</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Y&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">0</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">  </span><span class="f_CodeExample" style="color: #ff0000;">...</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">]</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:226px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">dd</span></p>
+</td>
+<td style="vertical-align:top; width:1027px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">object : associative array</span></p>
+<p class="p_Normal">Associative array where the keys are the cross references names and this contains the arrays of possible values as <span class="f_CourierFixed" style="font-size: 11pt;">[key,value]</span>.</p>
+<p class="p_Normal">This contains updated cross references only - you need to replace the received after the initial load with these ones.</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span><br />
+<span class="f_Example">Example:</span><br />
+<span class="f_CodeExample" style="color: #a04db3;">&quot;dd&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:{</span><br />
+<span class="f_CodeExample" style="color: #a04db3;">&quot;CR012345678910&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:[[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;1&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;one&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;2&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;two&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;3&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;three&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;4&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;four&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;5&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;five&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;6&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;six&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;7&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;seven&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;8&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;eight&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;9&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;nine&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;10&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;ten&quot;</span><span class="f_CodeExample" style="color: #ff0000;">]],</span><br />
+<span class="f_CodeExample" style="color: #a04db3;">&quot;CR02&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:[[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Content 01&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Descr 01&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Content 02&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Descr 02&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">],[</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Content 03&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Descr 03&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">]]</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:226px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">price</span></p>
+</td>
+<td style="vertical-align:top; width:1027px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">decimal</span></p>
+<p class="p_Normal">Calculated price for this selection.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span><br />
+<span class="f_CourierFixed">&quot;price&quot;: 76.000000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:226px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">title</span></p>
+</td>
+<td style="vertical-align:top; width:1027px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">Calculated configuration title.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:226px; height:39px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">description</span></p>
+</td>
+<td style="vertical-align:top; width:1027px; height:39px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Arial,Helvetica,sans-serif; font-style: italic; background-color: #ffffff;">string</span></p>
+<p class="p_Normal">Calculated configuration description.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:146px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><img alt="Sample_Call" width="117" height="14" style="margin:0;width:117px;height:14px;border:none" src="sample_call.png"/></p>
+</td>
+<td style="vertical-align:top; width:1293px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">For this example, we are requesting the updated configuration for the item &quot;Sofa&quot;, where we changed the &quot;line:7 to SofaClothRed&quot; and the &quot;line:26 to Y&quot;</p>
+<p class="p_Normal">You must merge these new values/status with the initial configuration in order to render the changes for the updated configuration.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Request:</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; POST /productConfigurator/exec</p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: 10pt;">Form Data</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">currency</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">EUR</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">beasToken</span><span class="f_CodeExample" style="color: #ff0000;">=&amp;</span><span class="f_CodeExample" style="color: #3366ff;">action</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">itemchanged</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Sofa</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">cardcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">C50003</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">pricelist</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">1</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #3366ff;">itemchanged_nr</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">26</span><span class="f_CodeExample" style="color: #ff0000;">&amp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">rows</span><span class="f_CodeExample" style="color: #ff0000;">=[{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">17</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;SofaClothRed&quot;</span><span class="f_CodeExample" style="color: #ff0000;">},{</span><span class="f_CodeExample" style="color: #a04db3;">&quot;k&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">26</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #a04db3;">&quot;v&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Y&quot;</span><span class="f_CodeExample" style="color: #ff0000;">}]</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Response:</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">JSON</p>
+<p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;rows&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;2</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Y&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;3</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&nbsp;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;4</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&nbsp;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;5</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;6</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&nbsp;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;7</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;N&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;768.000000</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;8</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;N&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1078.000000</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;9</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;N&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1498.000000</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;10</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;N&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;11</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;12</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;1,8&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;13</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;14</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;0&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;15</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;0&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;16</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;17</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;SofaClothRed&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;18</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Y&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;19</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;N&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;20</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;N&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;21</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;22</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;23</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&nbsp;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;24</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&nbsp;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;25</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;26</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Y&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;27</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;1&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;76.000000</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;28</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;N&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;29</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;N&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;1</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample">&nbsp;0&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">]</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;price&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;76.000000</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;title&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Brief&nbsp;Description&nbsp;With&nbsp;1&nbsp;Cushions&quot;</span><span class="f_CodeExample" style="color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;descr&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #a04db3;">&quot;Text&nbsp;Description&nbsp;With&nbsp;1&nbsp;Cushions&quot;</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">}</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

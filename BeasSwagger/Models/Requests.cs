@@ -223,12 +223,17 @@ public class WorkOrderItem
     public string ItemCode { get; set; } = "";
     public double Qty { get; set; }
 }
-/// <summary>修改工單 BOM 項目。欄位為推測,請依 DLL 的 Changebomitem 調整。</summary>
+/// <summary>修改工單 BOM 項目(對應 DLL 的 Changebomitem):把工單 BOM 某一行的料號換成新料號。</summary>
 public class ChangeBomItem
 {
-    public int WorkOrderNo { get; set; }
-    public string ItemCode { get; set; } = "";
-    public decimal Quantity { get; set; }
+    /// <summary>工單號(BEAS_FTHAUPT.BELNR_ID)</summary>
+    public int Woid { get; set; }
+    /// <summary>工單位置(BEAS_FTPOS.BELPOS_ID)</summary>
+    public int Woposition { get; set; }
+    /// <summary>BOM 行號(BEAS_FTSTL.POS_ID)</summary>
+    public int Woitemposition { get; set; }
+    /// <summary>新料號</summary>
+    public string NewItem { get; set; } = "";
 }
 public class WorkOrderSingleRequest : BeasRequest
 {

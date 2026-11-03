@@ -18,9 +18,10 @@ Swagger 端點 → 組出 Beas Script → `INSERT INTO <db>."BEAS_COMMON_INPUT"(
   - `production/finished`(完工回報,`ue_api_time`)
   - `bom/create`、`bom/change`、`bom/create-version`(`ue_api_bom`)
   - `routing/add`(`ue_api_routing`)
+  - `workorder/change-bom`(`ue_api_wo` 的 `bom_replaceitem`:取代工單 BOM 某行料號,欄位 Woid/Woposition/Woitemposition/NewItem 來自原 DLL;Bsl 版為 `PUT WorkorderBom`)
   - `workorder/import-single`、`workorder/import-more`(`ue_api_wo`;建立後工單號用 `<mywo.docentry>` 取得,屬性名稱為推測)
   - `bom/check`、`bom/max-level`:唯讀 SQL 查 `BEAS_STL`(`Services/IBeasQueryClient.cs`,只允許單一 SELECT、值參數化;欄位名稱取自 api_bom 說明,未對真實資料庫驗證;Mock 模式只回傳將執行的 SQL)
-- 其餘端點仍是 Mock,文件沒有對應語法:BOM 刪除、check-version、search-other-version、routing change/delete、unit、scrap、scrapdetail、workorder 的 import-with-machine / change-bom / del-result-back、各 sql-result-back。
+- 其餘端點仍是 Mock,文件沒有對應語法:BOM 刪除、check-version、search-other-version、routing change/delete、unit、scrap、scrapdetail、workorder 的 import-with-machine / del-result-back、各 sql-result-back。
 - `Beas:UseMock=true` 時只回傳產生的 script,不寫庫;改 `false` 後才真的寫入。
 - `Beas:Script:OdbcConnectionString` 要與原 `connection()` 一致(預設是 HANA 的猜測值)。
 

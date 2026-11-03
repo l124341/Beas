@@ -6,7 +6,7 @@ namespace BeasSwagger.Controllers;
 
 [ApiController]
 [Route("api/production")]
-public class ProductionController(IBeasGateway gw, BeasScriptRunner runner) : ControllerBase
+public class ProductionController(BeasScriptRunner runner, BeasResultReader reader) : ControllerBase
 {
     /// <summary>發料(工單領料)</summary>
     /// <remarks>寫入 BEAS_COMMON_INPUT 並等待 BEAS_COMMON_OUTPUT 回傳 DocEntry;最久約 MaxPolls × PollIntervalSeconds 秒。
@@ -48,7 +48,7 @@ public class ProductionController(IBeasGateway gw, BeasScriptRunner runner) : Co
     /// <summary>回傳結果</summary>
     /// <remarks>DLL 函數:<c>sqlresultback</c></remarks>
     [HttpPost("sql-result-back")]
-    public async Task<ActionResult<BeasResult>> SqlResultBack(SqlResultBackRequest req) =>
-        Ok(await gw.InvokeAsync("Production.sqlresultback", req));
+    public async Task<ActionResult<BeasResult>> SqlResultBack(SqlResultBackRequest req, CancellationToken ct) =>
+        Ok(await reader.ReadAsync(string.IsNullOrWhiteSpace(req.RequestId) ? req.Mes + req.CreateTime : req.RequestId, req.Connection, ct));
 
 }

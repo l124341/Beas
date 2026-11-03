@@ -6,7 +6,7 @@ namespace BeasSwagger.Controllers;
 
 [ApiController]
 [Route("api/workorder")]
-public class WorkOrderController(IBeasGateway gw, BeasScriptRunner runner) : ControllerBase
+public class WorkOrderController(IBeasGateway gw, BeasScriptRunner runner, BeasResultReader reader) : ControllerBase
 {
     /// <summary>單一匯入</summary>
     /// <remarks>DLL 函數:<c>import_work_order_single</c></remarks>
@@ -43,7 +43,7 @@ public class WorkOrderController(IBeasGateway gw, BeasScriptRunner runner) : Con
     /// <summary>回傳刪工單列訊息成功與否</summary>
     /// <remarks>DLL 函數:<c>delresultback</c></remarks>
     [HttpPost("del-result-back")]
-    public async Task<ActionResult<BeasResult>> DelResultBack(DelResultBackRequest req) =>
-        Ok(await gw.InvokeAsync("WorkOrder.delresultback", req));
+    public async Task<ActionResult<BeasResult>> DelResultBack(DelResultBackRequest req, CancellationToken ct) =>
+        Ok(await reader.ReadAsync(string.IsNullOrWhiteSpace(req.RequestId) ? "wobominsert" + req.CreateTime : req.RequestId, req.Connection, ct));
 
 }

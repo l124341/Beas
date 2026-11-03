@@ -48,6 +48,8 @@ public class SqlResultBackRequest : BeasRequest
     /// <summary>MES 回傳訊息</summary>
     public string Mes { get; set; } = "";
     public string CreateTime { get; set; } = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+    /// <summary>(選填)直接指定要查的 REQUESTID;留空則用 Mes + CreateTime(推測規則)。</summary>
+    public string? RequestId { get; set; }
 }
 
 // ===== 物料單位 =====
@@ -262,6 +264,8 @@ public class ChangeWorkOrderBomRequest : BeasRequest
 public class DelResultBackRequest : BeasRequest
 {
     public string CreateTime { get; set; } = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+    /// <summary>(選填)直接指定要查的 REQUESTID;留空則用 "wobominsert" + CreateTime(原 DLL 寫死的規則)。</summary>
+    public string? RequestId { get; set; }
 }
 
 // ===== 發料 (issue) =====

@@ -6,7 +6,7 @@ namespace BeasSwagger.Controllers;
 
 [ApiController]
 [Route("api/bom")]
-public class BomController(IBeasGateway gw, BeasScriptRunner runner, IBeasQueryClient query) : ControllerBase
+public class BomController(IBeasGateway gw, BeasScriptRunner runner, IBeasQueryClient query, BeasResultReader reader) : ControllerBase
 {
     /// <summary>建立BOM多明細</summary>
     /// <remarks>DLL 函數:<c>CreateM</c></remarks>
@@ -67,8 +67,8 @@ public class BomController(IBeasGateway gw, BeasScriptRunner runner, IBeasQueryC
     /// <summary>回傳成功與否</summary>
     /// <remarks>DLL 函數:<c>sqlresultback</c></remarks>
     [HttpPost("sql-result-back")]
-    public async Task<ActionResult<BeasResult>> SqlResultBack(SqlResultBackRequest req) =>
-        Ok(await gw.InvokeAsync("Bom.sqlresultback", req));
+    public async Task<ActionResult<BeasResult>> SqlResultBack(SqlResultBackRequest req, CancellationToken ct) =>
+        Ok(await reader.ReadAsync(string.IsNullOrWhiteSpace(req.RequestId) ? req.Mes + req.CreateTime : req.RequestId, req.Connection, ct));
 
     /// <summary>取得itemcode中的最大階層</summary>
     /// <remarks>DLL 函數:<c>selectmaxpostext</c></remarks>

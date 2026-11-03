@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>POST</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Simple way to create a work order. The Post command uses ue_api_wo to create a work order. &nbsp;Return value returnCode with the Work order as string &nbsp;Note: It's not possible to d" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslworkorderput.htm",
+   prevP: "bslworkorderget.htm",
+   currP: "bslworkorderpost.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "POST",
+   mailsubject: "Feedback on: Beas Script 2026.09 - POST",
+   sharesubject: "Beas Script 2026.09 - POST",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslWorkorderPOST",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Production &gt; Workorder &gt; POST /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - POST").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslworkorderpost.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>POST</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">POST</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Simple way to create a work order.</p>
+<p class="p_Normal">The Post command uses ue_api_wo to create a work order.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return value <span class="f_CourierFixed">returnCode</span> with the Work order as string</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Note: It's not possible to define Bill Of Material Lines or Routing lines. Beas will define this always related to the master data definitions.<br />
+If Beas is running in service mode, the variant system will not work with the user interface.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">Example:</span> <a href="examplecreateworkorder.htm" class="topiclink">Work order creation examples</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Note">Note: Property names are not the same as in GET format (compatibility reason).</span><br />
+<span class="f_Note">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</th>
+<th class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">DB field</span></p>
+</th>
+<th class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">AdditionalText</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">String(100)</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">zusatztext</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">additional text </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ApsStatus</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Boolean</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">apsstatus</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Define APS Status </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">BaseEntry</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">String</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">auftrag, auftragint, auftragpos</span></p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Create work order directly based on a sales order 
+</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Set all other parameters automatically (name, street and all other link information)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">baseEntry:&quot;BaseType=BaseDocEntry=LineNumber&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Supported BaseTypes:</p>
+<p class="p_Normal">&quot;OINV&quot; = PreInvoice</p>
+<p class="p_Normal">&quot;ORDR&quot; = Sales Order</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Define:</p>
+<p class="p_Normal"><span class="f_CourierFixed">Name &amp; Address</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">OrderNumber</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">Type</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">Confirmed</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">OrderNumber (DocNumber)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">CalcStart</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Date</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">anfzeit</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Set the calculate start date time</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">CardCode</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">String(20)</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">knd_id</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Business partner ID</p>
+<p class="p_Normal">if set, then city, street etc.</p>
+<p class="p_Normal">Set other information after definition of cardCode</p>
+<p class="p_Normal">The ID must not exist as a business partner</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">CardName</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String(50)</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">kndname</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Name of business partner Name</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Color</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">number</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">colornr</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">define color for this line</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Confirmed</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Boolean</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">set as confirmed &nbsp;(only POST)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">DeliveryDate</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Date</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">lfgdat</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Define delivery date (date)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">DocDate</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Date</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">beldat</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Date of the Work order</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">DocEntry</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Number</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">belnr_id</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">(not changeable)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">DocNum</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String(20)</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">auftrag</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">order number for work order (char)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">EndDate</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Date</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">endzeit</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">set end date and time of work order </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Information2</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String(100)</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">information2</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Information Page Project <span class="f_CourierFixed">(textfield)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Invisible</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">boolean</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">unvisible</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">make work order invisible</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Line</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">BEAS_FTPOS.*</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Define Work order positions (the assemblies) as object-Array [{...}] </p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="bslftposproperties.htm" class="topiclink">WorkorderPos - POST command</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Locked</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Boolean</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">sperrung</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">set lock flag </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">OrderBitmap</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String(50)</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">bitmapclose</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">set bitmap </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">PlanningOrder</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">boolean</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">plannedOrder</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">set Order as &quot;Planned order&quot;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">PrintStatus</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Boolean</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">druckkz</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">set print status </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Priority</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">String(20)</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">prio_id</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Priority from Work order</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">PrjCode</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String(20)</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">prjuid</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Project Activity -<span class="f_CourierFixed"> Uid (beas_prj_line.prjuid)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">PrjId</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Number</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">projekt</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Project</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ProductionTypeId</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String(20)</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">typ</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Type from Work order</p>
+<p class="p_Normal">(only, if you create a new work order. To change an Existing Work order, use <span class="f_CourierFixed">typchange</span>)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">ÜrojectUser1</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">String(20)</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">projectuser1</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Project User 1 <span class="f_CourierFixed">(ousr.u_name)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ProjectUser2</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String(20)</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">projectuser2</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Project User 2 <span class="f_CourierFixed">(ousr.u_name)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">ScheduleAutomatically</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">boolean</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">timecalculate</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">activate automatic time calculation</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">StartDate</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Date</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">anfzeit</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">set start date and time of work order </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">StartStructure</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Date</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">startzeit_structure</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">set structure start date<span class="f_CourierFixed"> (for calculation)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Udf1 ... Udf15</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">String(50)</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">udf1 ... udf15</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UserDefined Fields</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">WorkorderStatus</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">String(20)</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">status_id</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">set status </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

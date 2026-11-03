@@ -1,0 +1,555 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>BSL OData Interface</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="ODATA interface,ODATA syntax" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="What is OData? &nbsp;OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming RESTful APIs. OData helps you..." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslreturn_codes.htm",
+   prevP: "system_requirements.htm",
+   currP: "bsl_odata_interface.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "BSL OData Interface",
+   mailsubject: "Feedback on: Beas Script 2026.09 - BSL OData Interface",
+   sharesubject: "Beas Script 2026.09 - BSL OData Interface",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Bsl_ODATA_Interface",
+   mailpath: "Beas Service Layer &gt; BSL OData Interface /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - BSL OData Interface").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsl_odata_interface.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>BSL OData Interface</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">BSL OData Interface</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">What is OData?</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-style: italic;">OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming RESTful APIs. OData helps you focus on your business logic while building RESTful APIs without having to worry about the various approaches to define request and response headers, status codes, HTTP methods, URL conventions, media types, payload formats, query options, etc. OData also provides guidance for tracking changes, defining functions/actions for reusable procedures, and sending asynchronous/batch requests.</span></p>
+<p class="p_Normal"><span style="font-style: italic;"><a href="http://www.odata.org" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">www.odata.org</a></span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">OData RESTful APIs are easy to consume. The OData metadata, a machine-readable description of the data model of the API, enables the creation of powerful generic client proxies and tools.</p>
+<p class="p_Normal">The Beas Service Layer supports ODATA versions 2, 3 and 4 with <span style="font-weight: bold;">limited compatibility</span>. For compatibility information, <span class="f_See">see</span> the descriptions below.</p>
+<p class="p_Normal"><iframe width="560" height="315" src="https://www.youtube.com/embed/jVoJJBEwJg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://www.youtube.com/watch?v=jVoJJBEwJg0" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">What is OData, main information about collection, $select, $filter and $orderby commands</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/jVoJJBEwJg0" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Differences between ODATA2 and ODATA4 in view of BSL</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/JSYNMkQdBHg" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">OData $expand command. join objects</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/Kl70Pc81IW4" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">OData $format command, export types</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/lcLca1WDFAI" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">OData $skip and $top commands, web page handling and $inlinecount command</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/MsbNLvQG69g" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">OData $batch command. Execute more then one GET command with one Internet request</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/wPMVNxO5qic" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">OData $union command</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/4CxnVnucArA" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">OData $transaction command</a></p>
+<p class="p_Normal"><img alt="youtube" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="youtube.png"/> <a href="https://youtu.be/vVUyeFE2Fhs" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">BSL Customization: Add own columns, functions and objects</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Syntax of OData</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Collection</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">-&gt;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">KeyPredicate</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">-&gt;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">FieldName</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Collection</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">-&gt;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">KeyPredicate</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">-&gt;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">FieldName</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$</span><span class="f_CodeExample" style="font-size: 10pt;">value&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">or</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$sum</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$</span><span class="f_CodeExample" style="font-size: 10pt;">min</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$</span><span class="f_CodeExample" style="font-size: 10pt;">max</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$avg</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$count</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Collection</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">-&gt;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">KeyPredicate</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?[</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Property</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]&amp;[</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Property</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]&amp;[</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Format</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">]</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal"><span style="font-weight: bold;">Area</span></p>
+</td>
+<td class="fielddescription" style="width:958px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal">Collection</p>
+</td>
+<td class="fielddescription" style="width:958px; background-color:#F7F7F7;"><p class="p_Normal">The name of a collection.</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: Item, BusinessPartner</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal">KeyPredicate</p>
+</td>
+<td class="fielddescription" style="width:958px;"><p class="p_Normal">A predicate that identifies the values of the key properties of an entry.</p>
+<p class="p_Example"><span class="f_Example">Example</span>:</p>
+<p class="p_Normal"><span class="f_CourierFixed">Item(&quot;A001&quot;)</span> returns all fields for an item or <span class="f_CourierFixed">Item(ItemCode=&quot;A001&quot;)</span></p>
+<p class="p_Normal"><img alt="odata-adressing2" width="358" height="78" style="margin:0;width:358px;height:78px;border:none" src="odata-adressing2.jpg"/></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal">FieldName</p>
+</td>
+<td class="fielddescription" style="width:958px; background-color:#F7F7F7;"><p class="p_Normal">Returns one set of data.</p>
+<p class="p_TitleinText"><span class="f_Example">Example</span>:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Item</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span>returns&nbsp;the&nbsp;item&nbsp;code&nbsp;for&nbsp;all&nbsp;items&nbsp;in&nbsp;the&nbsp;defined&nbsp;format.<br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Item</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemName</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span>returns&nbsp;the&nbsp;item&nbsp;name&nbsp;for&nbsp;Item&nbsp;A001&nbsp;in&nbsp;the&nbsp;defined&nbsp;format.<br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Item</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemName</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$</span><span class="f_CodeExample" style="font-size: 10pt;">value&nbsp;</span>returns&nbsp;the&nbsp;raw&nbsp;text&nbsp;value&nbsp;of&nbsp;the&nbsp;item.&nbsp;It&nbsp;returns&nbsp;the&nbsp;first&nbsp;result&nbsp;only.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Compatibility:</p>
+<p class="p_Normal">Sub-objects, for example <span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Item</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">UoM</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">UoMName</span><span class="f_CourierFixed">,</span> are not allowed. </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px;"><p class="p_Normal">Query Options</p>
+</td>
+<td class="fielddescription" style="width:958px;"><p class="p_Normal">Property keys, like <span class="f_CourierFixed">$select</span>, <span class="f_CourierFixed">$filter</span>. For example, <span class="f_CourierFixed">/Item?$filter=ItemName eq 'Sofa'</span><span style="font-size: 9pt; color: #505050; background-color: #ffffff;">.</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:158px; background-color:#F7F7F7;"><p class="p_Normal">Format</p>
+</td>
+<td class="fielddescription" style="width:958px; background-color:#F7F7F7;"><p class="p_Normal">Defines the output format. For example, <span class="f_CourierFixed">Item(&quot;A001&quot;)/ItemName?$format=html</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Heading2"><span class="f_Heading2">Query Options </span></p>
+<p class="p_Normal">The system query options are query string parameters that a client may specify to control the amount and the order of the data that an OData service returns for the resource identified by the URL. The names of all system query options are prefixed with a <span class="f_CourierFixed">$</span> character (ODATA4).</p>
+<p class="p_Normal">An ODATA service may support some or all of the defined system query options. If a data service does not support a system query option, it must reject any requests that contain an unsupported option.</p>
+<p class="p_Normal">The semantics of all system query options are defined in the <a href="https://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol" onclick="return HMTrackTopiclink(this);" class="weblink">ODATA:Core</a> document.</p>
+<p class="p_Normal">The grammar and syntax rules for the system query options are defined in the following table.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; background: #ffffff; padding: 0 0 0 0; margin: 10px 0 10px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px;"><p class="p_Normal"><span style="font-weight: bold;">Keyword</span></p>
+</td>
+<td class="fielddescription" style="width:833px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$filter</span></p>
+</td>
+<td class="fielddescription" style="width:833px; background-color:#F7F7F7;"><p class="p_Normal"><a href="bslfilter.htm" class="topiclink">The set of entities returned may be restricted with the $filter system query option</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px;"><p class="p_Normal"><span class="f_CourierFixed">$expand</span></p>
+</td>
+<td class="fielddescription" style="width:833px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslexpand.htm" class="topiclink">Specifies the related entities to be included</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$select</span></p>
+</td>
+<td class="fielddescription" style="width:833px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslselect.htm" class="topiclink">Requests a limited set of properties for each entity</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px;"><p class="p_Normal"><span class="f_CourierFixed">$orderby</span></p>
+</td>
+<td class="fielddescription" style="width:833px;"><p class="p_Normal"><a href="bslorder.htm" class="topiclink">The $orderby system query option specifies the order in which entities are returned from the service</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$top</span></p>
+</td>
+<td class="fielddescription" style="width:833px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="top.htm" class="topiclink">The $top system query option specifies that only the first n records should be returned</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px;"><p class="p_Normal"><span class="f_CourierFixed">$skip</span></p>
+</td>
+<td class="fielddescription" style="width:833px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslskip.htm" class="topiclink">The $skip system query option specifies that the result must not include the first n entities</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$inlinecount</span></p>
+</td>
+<td class="fielddescription" style="width:833px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslinlinecount.htm" class="topiclink">Returns the total count of rows</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px;"><p class="p_Normal"><span class="f_CourierFixed">$count</span></p>
+</td>
+<td class="fielddescription" style="width:833px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslcount.htm" class="topiclink">The $count system query option requests only the count of an entity collection</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$format</span></p>
+</td>
+<td class="fielddescription" style="width:833px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslformat.htm" class="topiclink">The $format system query option, if supported, allows clients to request a response in a particular format.</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px;"><p class="p_Normal"><span class="f_CourierFixed">$batch</span></p>
+</td>
+<td class="fielddescription" style="width:833px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslbatch.htm" class="topiclink">Execute more than one GET command (not ODATA Standard format)</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$union</span></p>
+</td>
+<td class="fielddescription" style="width:833px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslunion.htm" class="topiclink">Define a second get command, which is added to first one </a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px;"><p class="p_Normal"><span class="f_CourierFixed">$grouby</span></p>
+</td>
+<td class="fielddescription" style="width:833px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslgroupby.htm" class="topiclink">Simple group by function</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:136px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$metadata</span></p>
+</td>
+<td class="fielddescription" style="width:833px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bslmetadata.htm" class="topiclink">Return the Metadata from Service Layer</a></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Heading2"><span class="f_Heading2">Special Beas properties</span></p>
+<div style="text-align: left; text-indent: 0; background: #ffffff; padding: 0 0 0 0; margin: 10px 0 10px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:135px;"><p class="p_Normal"><span style="font-weight: bold;">Keyword</span></p>
+</td>
+<td class="fielddescription" style="width:816px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:135px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$mask</span></p>
+</td>
+<td class="fielddescription" style="width:816px; background-color:#F7F7F7;"><p class="p_Normal"><a href="bslmask.htm" class="topiclink">Define a mask for drop-down tables (beas script)</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:135px;"><p class="p_Normal"><span class="f_CourierFixed">$branch=&lt;num&gt;</span></p>
+</td>
+<td class="fielddescription" style="width:816px;"><p class="p_Normal"><a href="bslbatch.htm" class="topiclink">Switches to the specified branch and BSL displays results only related to this branch</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:135px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$transaction=&lt;string&gt;</span></p>
+</td>
+<td class="fielddescription" style="width:816px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><a href="bsltransaction.htm" class="topiclink">Filters for a transaction type and BSL returns only those results, that are allowed for this transaction type</a></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:135px;"><p class="p_Normal"><span class="f_CourierFixed">$ProgramId</span></p>
+</td>
+<td class="fielddescription" style="width:816px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Define the ProgramId, for example &quot;terminal2&quot;. This is mandatory, if you use ODATA via WEB APP. </p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">When working with a UX Library, the following syntax can be used: <span class="f_Sripte">$ProgramId='+appInfo.gid+'&amp;$AppId='+appInfo.appID</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:135px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">$AppId</span></p>
+</td>
+<td class="fielddescription" style="width:816px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Define the App name. This is mandatory if you use ODATA via WEBAPPs</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">When working with a UX Library, the following syntax can be used: <span class="f_Sripte">$ProgramId='+appInfo.gid+'&amp;$AppId='+appInfo.appID</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:135px;"><p class="p_Normal"><span class="f_CourierFixed">asynch=true</span></p>
+</td>
+<td class="fielddescription" style="width:816px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">The system sends a command to the Common service.</p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Heading2"><span class="f_Heading2">Function calls</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">Common Response Semantics</span></p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Response JSON Format</span></p>
+<p class="p_Normal">Reference: <a href="http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html</a></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:193px;"><p class="p_Normal"><span style="font-weight: bold;">Format</span></p>
+</td>
+<td class="fielddescription" style="width:308px;"><p class="p_Normal"><span style="font-weight: bold;">Command</span></p>
+</td>
+<td class="fielddescription" style="width:613px;"><p class="p_Normal"><span style="font-weight: bold;">Result</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:193px; background-color:#F7F7F7;"><p class="p_Normal">Representing a property in a response</p>
+</td>
+<td class="fielddescription" style="width:308px; background-color:#F7F7F7;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span></p>
+</td>
+<td class="fielddescription" style="width:613px; background-color:#F7F7F7;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;CustomerName&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;the&nbsp;value&nbsp;of&nbsp;the&nbsp;property&quot;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:193px;"><p class="p_Normal">Representing multiple entities in a response in ODATA version 2</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td class="fielddescription" style="width:308px;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">ODATA2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$inlinecount</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">allpages</span></p>
+</td>
+<td class="fielddescription" style="width:613px;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;__count&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">37</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;results&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},{</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">],</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:193px; background-color:#F7F7F7;"><p class="p_Normal">Representing multiple entities in a response in ODATA version 4</p>
+</td>
+<td class="fielddescription" style="width:308px; background-color:#F7F7F7;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">ODATA4</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$inlinecount</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">allpages</span></p>
+</td>
+<td class="fielddescription" style="width:613px; background-color:#F7F7F7;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;@count&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">37</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;value&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},{</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">],</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:193px;"><p class="p_Normal">Working joins and the <span class="f_CourierFixed">$expand</span> function</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The join object is exported as a sub-object (JSON array).</p>
+</td>
+<td class="fielddescription" style="width:308px;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">UoM</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">UoMCode</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><span class="f_CodeExample" style="color: #666699;">expand</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">UoM</span></p>
+</td>
+<td class="fielddescription" style="width:613px;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;value&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode:&nbsp;&quot;</span><span class="f_CodeExample" style="color: #666699;">A001</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;UoM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;UoMCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Pcs&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:193px; background-color:#F7F7F7;"><p class="p_Normal">Working joins without the <span class="f_CourierFixed">$expand </span>function</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The response is returned all as one object.</p>
+</td>
+<td class="fielddescription" style="width:308px; background-color:#F7F7F7;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$</span><span class="f_CodeExample">select</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">UoM</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">UoMCode</span></p>
+</td>
+<td class="fielddescription" style="width:613px; background-color:#F7F7F7;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;value&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode:&nbsp;&quot;</span><span class="f_CodeExample" style="color: #666699;">A001</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;,&quot;</span><span class="f_CodeExample" style="color: #666699;">UoMCode</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;:&quot;</span><span class="f_CodeExample" style="color: #666699;">Pcs</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Heading2"><span class="f_Heading2">Keywords</span></p>
+<div style="text-align: left; text-indent: 0; background: #ffffff; padding: 0 0 0 0; margin: 10px 0 10px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span style="font-weight: bold;">odata2</span></p>
+</td>
+<td class="fielddescription" style="width:81px;"><p class="p_Normal"><span style="font-weight: bold;">odata3 and 4</span></p>
+</td>
+<td class="fielddescription" style="width:953px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal">results</p>
+</td>
+<td class="fielddescription" style="width:81px; background-color:#F7F7F7;"><p class="p_Normal">value</p>
+</td>
+<td class="fielddescription" style="width:953px; background-color:#F7F7F7;"><p class="p_Normal">Returns the result.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:81px;"><p class="p_Normal">__count</p>
+</td>
+<td class="fielddescription" style="width:81px;"><p class="p_Normal">@count</p>
+</td>
+<td class="fielddescription" style="width:953px;"><p class="p_Normal">The name/value pair representing the <span class="f_CourierFixed">$inlinecount</span>. The value must be an integer corresponding to the total count of members in the collection represented by the request. If this is present, this name/value pair must come before the result name/value pair. </p>
+</td>
+</tr>
+</table>
+</div>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Heading2"><span class="f_Heading2">Representing Errors in a Response</span></p>
+<p class="p_Normal">The error response is a single JSON/XML object. This object has a single name/value pair. The name is error and the value is a JSON object.</p>
+<p class="p_Normal">The JSON object can have two or three name/value pairs with the code names and messages. </p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>If the value for the code name/value pair is a string, it is a service-defined error code. This code serves as a sub-status for the HTTP error code specified in the response.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>If the value for the message name/value pair is an object, the object has two name/value pairs, with names lang and message. The message name/value pair contains a human-readable representation of the error. The lang name/value pair contains the language code from <a href="https://www.ietf.org/rfc/rfc4646.txt" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">RFC 4646</a> corresponding to the language in which the value for message is written.</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>If the value for the inner error name/value pair is an object. The contents of this object are service-defined. This object usually contains information that helps debugging the service.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;error&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;code&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A&nbsp;custom&nbsp;error&nbsp;code&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;message&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;lang&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;en-us&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;value&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A&nbsp;custom&nbsp;long&nbsp;message&nbsp;for&nbsp;the&nbsp;user.&quot;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">},</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;innererror&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;trace&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[...],</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;context&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{...}</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Heading2"><span class="f_Heading2">&nbsp;</span><br />
+<span class="f_Heading2">&nbsp;</span></p>
+<p class="p_Heading2"><span class="f_Heading2">Attributes</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px;"><p class="p_Normal">Name</p>
+</td>
+<td class="fielddescription" style="width:949px;"><p class="p_Normal">The name attribute allows a name to be assigned to the property.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px; background-color:#F7F7F7;"><p class="p_Normal">Type</p>
+</td>
+<td class="fielddescription" style="width:949px; background-color:#F7F7F7;"><p class="p_Normal">Structural types are composed of other structural types and primitive types. CSDL defines the following fully qualified primitive types:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Edm.Boolean</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Edm.DateTime</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Edm.Decimal</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Edm.String</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Edm.DateTimeOffset</p></td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px;"><p class="p_Normal">Nullable=&quot;true/false&quot;</p>
+</td>
+<td class="fielddescription" style="width:949px;"><p class="p_Normal">The value of this attribute determines whether a value is required for the property for instances of the containing type.</p>
+<p class="p_Normal">If no value is specified, the nullable facet defaults to true.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:165px; background-color:#F7F7F7;"><p class="p_Normal">MaxLength=&quot;x&quot;</p>
+</td>
+<td class="fielddescription" style="width:949px; background-color:#F7F7F7;"><p class="p_Normal">The value of this attribute specifies the maximum length of the value of the property on a type instance.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>BSL Reference</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Entity collections are named sets of entities. In this section, all the available Beas entities are described." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "interruptionreason.htm",
+   prevP: "bslodata_functions.htm",
+   currP: "entity_collections.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "BSL Reference",
+   mailsubject: "Feedback on: Beas Script 2026.09 - BSL Reference",
+   sharesubject: "Beas Script 2026.09 - BSL Reference",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Entity_Collections",
+   mailpath: "Beas Service Layer &gt; BSL Reference /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - BSL Reference").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "entity_collections.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>BSL Reference</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">BSL Reference</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Entity collections are named sets of entities. In this section, all the available Beas entities are described.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Administration</p>
+<p class="p_Normal">   Definition</p>
+<p class="p_Normal">      <a href="interruptionreason.htm" class="topiclink hmlinklistitem">InterruptionReason</a></p>
+<p class="p_Normal">      <a href="bslbranch.htm" class="topiclink hmlinklistitem">Branch</a></p>
+<p class="p_Normal">      <a href="bslbatchattributevalues.htm" class="topiclink hmlinklistitem">BatchAttributeValues</a></p>
+<p class="p_Normal">      <a href="bslitemgroup.htm" class="topiclink hmlinklistitem">ItemGroup</a></p>
+<p class="p_Normal">      <a href="bsllocation.htm" class="topiclink hmlinklistitem">Location</a></p>
+<p class="p_Normal">      <a href="bslmaterialgroup.htm" class="topiclink hmlinklistitem">MaterialGroup</a></p>
+<p class="p_Normal">      <a href="bslrawmaterial.htm" class="topiclink hmlinklistitem">RawMaterial</a></p>
+<p class="p_Normal">      <a href="bsluom.htm" class="topiclink hmlinklistitem">UoM</a></p>
+<p class="p_Normal">      <a href="bsluomconversion.htm" class="topiclink hmlinklistitem">UoMConversion</a></p>
+<p class="p_Normal">      <a href="bslunitgroup.htm" class="topiclink hmlinklistitem">UnitGroup</a></p>
+<p class="p_Normal">      <a href="bsloperationtype.htm" class="topiclink hmlinklistitem">OperationType</a></p>
+<p class="p_Normal">      <a href="productiontype.htm" class="topiclink hmlinklistitem">ProductionType</a></p>
+<p class="p_Normal">      <a href="scrapreason.htm" class="topiclink hmlinklistitem">ScrapReason</a></p>
+<p class="p_Normal">      <a href="bsltimetype.htm" class="topiclink hmlinklistitem">TimeType</a></p>
+<p class="p_Normal">      <a href="workorderpriority.htm" class="topiclink hmlinklistitem">WorkorderPriority</a></p>
+<p class="p_Normal">   <a href="bsl_printservice.htm" class="topiclink hmlinklistitem">PrintService</a></p>
+<p class="p_Normal">      <a href="printserviceget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="printservicepost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">   <a href="bslprotocol.htm" class="topiclink hmlinklistitem">Protocol</a></p>
+<p class="p_Normal">      <a href="bslprotocolget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslprotocolpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">   <a href="bsl_requestanswerservice.htm" class="topiclink hmlinklistitem">RequestAnswerService</a></p>
+<p class="p_Normal">   <a href="bsl_system.htm" class="topiclink hmlinklistitem">System</a></p>
+<p class="p_Normal">   <a href="bsltool.htm" class="topiclink hmlinklistitem">Tool</a></p>
+<p class="p_Normal">      <a href="bsltoolget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bsltoolspost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal"><a href="business_partners.htm" class="topiclink hmlinklistitem">Business Partners</a></p>
+<p class="p_Normal">   <a href="bsl_businesspartner.htm" class="topiclink hmlinklistitem">BusinessPartner</a></p>
+<p class="p_Normal">Warehouse Management</p>
+<p class="p_Normal">   <a href="bslitemarea.htm" class="topiclink hmlinklistitem">Item Area</a></p>
+<p class="p_Normal">      <a href="bslitem.htm" class="topiclink hmlinklistitem">Item</a></p>
+<p class="p_Normal">      <a href="bslitemversion.htm" class="topiclink hmlinklistitem">ItemVersion</a></p>
+<p class="p_Normal">      <a href="bslitemversionstatus.htm" class="topiclink hmlinklistitem">ItemVersionStatus</a></p>
+<p class="p_Normal">      <a href="bslitemwarehouse.htm" class="topiclink hmlinklistitem">ItemWareHouse</a></p>
+<p class="p_Normal">      <a href="bslitemuomlist.htm" class="topiclink hmlinklistitem">ItemUoMList</a></p>
+<p class="p_Normal">      <a href="bslitemuompurchaselist.htm" class="topiclink hmlinklistitem">ItemUoMPurchaseList</a></p>
+<p class="p_Normal">      <a href="bslitemuomsaleslist.htm" class="topiclink hmlinklistitem">ItemUoMSalesList</a></p>
+<p class="p_Normal">      <a href="bslitembatchattributes.htm" class="topiclink hmlinklistitem">ItemBatchAttributes</a></p>
+<p class="p_Normal">      <a href="bslitemdocuments.htm" class="topiclink hmlinklistitem">ItemDocuments</a></p>
+<p class="p_Normal">      <a href="bslbillofmaterial.htm" class="topiclink hmlinklistitem">BillOfMaterial</a></p>
+<p class="p_Normal">      <a href="billofmaterialline.htm" class="topiclink hmlinklistitem">BillOfMaterialLine</a></p>
+<p class="p_Normal">      <a href="bslrouting.htm" class="topiclink hmlinklistitem">Routing</a></p>
+<p class="p_Normal">      <a href="routingline.htm" class="topiclink hmlinklistitem">RoutingLine</a></p>
+<p class="p_Normal">      <a href="bslroutingparallel.htm" class="topiclink hmlinklistitem">RoutingParallel</a></p>
+<p class="p_Normal">   <a href="bsl_itemmanagement.htm" class="topiclink hmlinklistitem">Item management</a></p>
+<p class="p_Normal">      <a href="bslbatchnumber.htm" class="topiclink hmlinklistitem">BatchNumber</a></p>
+<p class="p_Normal">      <a href="bslbatchattributes.htm" class="topiclink hmlinklistitem">BatchAttributes</a></p>
+<p class="p_Normal">      <a href="bslbatchnumberstock.htm" class="topiclink hmlinklistitem">BatchNumberStock</a></p>
+<p class="p_Normal">      <a href="bslserialnumber.htm" class="topiclink hmlinklistitem">SerialNumber</a></p>
+<p class="p_Normal">      <a href="bslserialnumberstock.htm" class="topiclink hmlinklistitem">SerialNumberStock</a></p>
+<p class="p_Normal">   <a href="bslwarehousemanagement.htm" class="topiclink hmlinklistitem">Warehouse</a></p>
+<p class="p_Normal">      <a href="bslwarehouse.htm" class="topiclink hmlinklistitem">WareHouse</a></p>
+<p class="p_Normal">      <a href="bslwarehousestock.htm" class="topiclink hmlinklistitem">WareHouseStock</a></p>
+<p class="p_Normal">      <a href="warehouseitemstock.htm" class="topiclink hmlinklistitem">WareHouseItemStock</a></p>
+<p class="p_Normal">      <a href="bslwarehouserule.htm" class="topiclink hmlinklistitem">WareHouseRule</a></p>
+<p class="p_Normal">   <a href="bslpicklist.htm" class="topiclink hmlinklistitem">PickList</a></p>
+<p class="p_Normal">      <a href="bslpicklistlines.htm" class="topiclink hmlinklistitem">PickListLines</a></p>
+<p class="p_Normal"><a href="bslproduction.htm" class="topiclink hmlinklistitem">Production</a></p>
+<p class="p_Normal">   <a href="bslresource.htm" class="topiclink hmlinklistitem">Resource</a></p>
+<p class="p_Normal">      <a href="bslresourceget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslresourcepost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslresourceput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslresourcedelete.htm" class="topiclink hmlinklistitem">DELETE</a></p>
+<p class="p_Normal">   <a href="bslresourcecalendar.htm" class="topiclink hmlinklistitem">ResourceCalendar</a></p>
+<p class="p_Normal">      <a href="bslresourcecalendarget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslresourcecalendarpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslresourcecalendatput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslresurcecalendardelete.htm" class="topiclink hmlinklistitem">DELETE</a></p>
+<p class="p_Normal">      <a href="bslresourcecalendarrecalculatecalendar.htm" class="topiclink hmlinklistitem">RecalculateCalendar</a></p>
+<p class="p_Normal">   <a href="bslinterruption.htm" class="topiclink hmlinklistitem">Interruption</a></p>
+<p class="p_Normal">      <a href="bslinterruptionget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslinterruptionpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">   <a href="bslpoolreport.htm" class="topiclink hmlinklistitem">PoolReport</a></p>
+<p class="p_Normal">      <a href="bslpoolreportget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslpoolreportcalculate.htm" class="topiclink hmlinklistitem">Calculate</a></p>
+<p class="p_Normal">      <a href="bslpoolreportdelete.htm" class="topiclink hmlinklistitem">Delete</a></p>
+<p class="p_Normal">   <a href="bsl_timereceipt.htm" class="topiclink hmlinklistitem">TimeReceipt</a></p>
+<p class="p_Normal">      <a href="bsltimereceiptget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bsltimereceiptpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">   <a href="bsl_timereceiptscrap.htm" class="topiclink hmlinklistitem">TimeReceiptScrap</a></p>
+<p class="p_Normal">   <a href="bsl_timereceiptrunning.htm" class="topiclink hmlinklistitem">TimeReceiptRunning</a></p>
+<p class="p_Normal">      <a href="bsltimereceiptrunningget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bsltimereceiptrunningpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">   <a href="bslworkorder.htm" class="topiclink hmlinklistitem">Workorder</a></p>
+<p class="p_Normal">      <a href="bslworkorderget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslworkorderpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslworkorderput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslfthauptproperties.htm" class="topiclink hmlinklistitem">bslfthauptproperties</a></p>
+<p class="p_Normal">      <a href="bslworkorderdelete.htm" class="topiclink hmlinklistitem">DELETE</a></p>
+<p class="p_Normal">      <a href="bslworkorderclose.htm" class="topiclink hmlinklistitem">Close</a></p>
+<p class="p_Normal">   <a href="bslworkorderpos.htm" class="topiclink hmlinklistitem">WorkorderPos</a></p>
+<p class="p_Normal">      <a href="bslworkorderposget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslworkorderpospost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslftposproperties.htm" class="topiclink hmlinklistitem">bslftposproperties</a></p>
+<p class="p_Normal">      <a href="workorderposput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="workorderposdelete.htm" class="topiclink hmlinklistitem">DELETE</a></p>
+<p class="p_Normal">      <a href="bslworkorderposgetnextbatchnumber.htm" class="topiclink hmlinklistitem">GetNextBatchNumber</a></p>
+<p class="p_Normal">      <a href="bslworkorderposgetdefaultwarehouse.htm" class="topiclink hmlinklistitem">GetDefaultWareHouse</a></p>
+<p class="p_Normal">      <a href="bslworkorderposcutoffquantity.htm" class="topiclink hmlinklistitem">CutOffQuantity</a></p>
+<p class="p_Normal">      <a href="bslworkorderposbarcode.htm" class="topiclink hmlinklistitem">Barcode</a></p>
+<p class="p_Normal">      <a href="bslworkorderposgetsubpositions.htm" class="topiclink hmlinklistitem">GetSubPositions</a></p>
+<p class="p_Normal">      <a href="bslworkorderposrefreshquantity.htm" class="topiclink hmlinklistitem">RefreshQuantity</a></p>
+<p class="p_Normal">      <a href="bslworkorderposcanmodify.htm" class="topiclink hmlinklistitem">CanModify</a></p>
+<p class="p_Normal">      <a href="bslworkorderposserialnumberreservation.htm" class="topiclink hmlinklistitem">SerialNumberReservation</a></p>
+<p class="p_Normal">      <a href="bslworkorderposwipclear.htm" class="topiclink hmlinklistitem">WipClear</a></p>
+<p class="p_Normal">      <a href="bslworkorderposclose.htm" class="topiclink hmlinklistitem">Close</a></p>
+<p class="p_Normal">      <a href="bslworkorderposprint.htm" class="topiclink hmlinklistitem">Print</a></p>
+<p class="p_Normal">      <a href="bslworkorderposrecalcualtetime.htm" class="topiclink hmlinklistitem">ReCalculateTimes</a></p>
+<p class="p_Normal">   <a href="bslworkorderbom.htm" class="topiclink hmlinklistitem">WorkorderBom</a></p>
+<p class="p_Normal">      <a href="bslworkorderbomget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslworkorderbompost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslworkorderbomput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslworkorderbomdelete.htm" class="topiclink hmlinklistitem">DELETE</a></p>
+<p class="p_Normal">      <a href="bslworkorderbomcalctotalquantity.htm" class="topiclink hmlinklistitem">CalcTotalQuantity</a></p>
+<p class="p_Normal">      <a href="bslworkorderbomcheckminmax.htm" class="topiclink hmlinklistitem">CheckMinMaxRouting</a></p>
+<p class="p_Normal">      <a href="bslworkorderbomcheckminmax2.htm" class="topiclink hmlinklistitem">CheckMinMaxBom</a></p>
+<p class="p_Normal">   <a href="bslworkorderrouting.htm" class="topiclink hmlinklistitem">WorkorderRouting</a></p>
+<p class="p_Normal">      <a href="bslworkorderroutingget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslworkorderroutingpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslworkorderroutingput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslworkorderroutingdelete.htm" class="topiclink hmlinklistitem">DELETE</a></p>
+<p class="p_Normal">   <a href="bslworkorderroutingparallel.htm" class="topiclink hmlinklistitem">WorkorderRoutingParallel</a></p>
+<p class="p_Normal">      <a href="bslworkorderroutingparget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslworkorderroutingparpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslworkorderroutingparput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslworkorderroutingpardelete.htm" class="topiclink hmlinklistitem">DELETE</a></p>
+<p class="p_Normal">   <a href="bslworkorderserialnumberreservatiion.htm" class="topiclink hmlinklistitem">WorkorderSerialNumberReservation</a></p>
+<p class="p_Normal">      <a href="serialnumberreservationget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">   <a href="bsl_preassign.htm" class="topiclink hmlinklistitem">PreAssign</a></p>
+<p class="p_Normal">      <a href="preassignget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bsl_preassignlines.htm" class="topiclink hmlinklistitem">PreAssignLines</a></p>
+<p class="p_Normal">   <a href="bslreservation.htm" class="topiclink hmlinklistitem">Reservation</a></p>
+<p class="p_Normal">      <a href="bslreservationget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslreservationpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslreservationdelete.htm" class="topiclink hmlinklistitem">DELETE</a></p>
+<p class="p_Normal">   <a href="backflush.htm" class="topiclink hmlinklistitem">Backflush</a></p>
+<p class="p_Normal">   <a href="external_production.htm" class="topiclink hmlinklistitem">External Production</a></p>
+<p class="p_Normal">      <a href="bslexternalpurchaseorder.htm" class="topiclink hmlinklistitem">ExternalPurchaseOrder</a></p>
+<p class="p_Normal">      <a href="bslworkorderprovisionbom.htm" class="topiclink hmlinklistitem">WorkorderProvisionBom</a></p>
+<p class="p_Normal">      <a href="bslexternalpurchasedelivery.htm" class="topiclink hmlinklistitem">ExternalPurchaseDelivery</a></p>
+<p class="p_Normal"><a href="qualitycontrol.htm" class="topiclink hmlinklistitem">QualityControl</a></p>
+<p class="p_Normal">   <a href="bslqcorder.htm" class="topiclink hmlinklistitem">QCOrder</a></p>
+<p class="p_Normal">      <a href="bslqcorderget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslqcorderput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslqcordergetinsprectionplan.htm" class="topiclink hmlinklistitem">GetInsprectionPlan</a></p>
+<p class="p_Normal">      <a href="bslqcordercreateqcorderlockedbatches.htm" class="topiclink hmlinklistitem">CreateQcOrderLockedBatches</a></p>
+<p class="p_Normal">      <a href="bslqcordercreateqcorder.htm" class="topiclink hmlinklistitem">CreateQcOrder</a></p>
+<p class="p_Normal">      <a href="bslqcordercreateqcorderfromgoodsreceiptp.htm" class="topiclink hmlinklistitem">CreateQcOrderFromGoodsReceiptPO</a></p>
+<p class="p_Normal">      <a href="bslqcordercreateqcorderfromsapdocument.htm" class="topiclink hmlinklistitem">CreateQcOrderFromSAPDocument</a></p>
+<p class="p_Normal">      <a href="bslqcordercreateqcorderfromsapdocumentdi.htm" class="topiclink hmlinklistitem">CreateQcOrderFromSAPDocumentDirect</a></p>
+<p class="p_Normal">      <a href="bslqcordercheckrelease.htm" class="topiclink hmlinklistitem">CheckRelease</a></p>
+<p class="p_Normal">      <a href="bslqcorderreleaseqcorder.htm" class="topiclink hmlinklistitem">ReleaseQcOrder</a></p>
+<p class="p_Normal">      <a href="bslqcordertransfer.htm" class="topiclink hmlinklistitem">Transfer - Process</a></p>
+<p class="p_Normal">      <a href="bslqcordertransferload.htm" class="topiclink hmlinklistitem">TransferLoad</a></p>
+<p class="p_Normal">      <a href="bslqcordertransfergetwarehouse.htm" class="topiclink hmlinklistitem">TransferGetWareHouse</a></p>
+<p class="p_Normal">   <a href="bslqcordersamples.htm" class="topiclink hmlinklistitem">QCOrderSamples</a></p>
+<p class="p_Normal">      <a href="bslqcordersamplesget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslqcordersamplesput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslqcordersamplerelease1.htm" class="topiclink hmlinklistitem">Release1</a></p>
+<p class="p_Normal">      <a href="bslqcordersamplerelease2.htm" class="topiclink hmlinklistitem">Release2</a></p>
+<p class="p_Normal">   <a href="bslqcordermeasurement.htm" class="topiclink hmlinklistitem">QCOrderMeasurement</a></p>
+<p class="p_Normal">      <a href="bslqcordermeasurementget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslqcordermeasurementput.htm" class="topiclink hmlinklistitem">PUT</a></p>
+<p class="p_Normal">      <a href="bslqcordermeasurementsetvalue.htm" class="topiclink hmlinklistitem">setValue</a></p>
+<p class="p_Normal">      <a href="bslqcordermeasurementsetok.htm" class="topiclink hmlinklistitem">setOK</a></p>
+<p class="p_Normal">      <a href="bslqcordermeasurementsetrelease.htm" class="topiclink hmlinklistitem">setRelease</a></p>
+<p class="p_Normal">   <a href="bslqcorderattachment.htm" class="topiclink hmlinklistitem">QCOrderAttachment</a></p>
+<p class="p_Normal">   <a href="qcinspectionplan.htm" class="topiclink hmlinklistitem">QCInspectionPlan</a></p>
+<p class="p_Normal">   <a href="bslqcvalidation.htm" class="topiclink hmlinklistitem">QCValidation</a></p>
+<p class="p_Normal">   <a href="bslqcblockreason.htm" class="topiclink hmlinklistitem">QCBlockReason</a></p>
+<p class="p_Normal"><a href="personnel.htm" class="topiclink hmlinklistitem">Personnel</a></p>
+<p class="p_Normal">   <a href="employee.htm" class="topiclink hmlinklistitem">Employee</a></p>
+<p class="p_Normal">      <a href="bslgetemployee.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">   <a href="bslemployeetimes.htm" class="topiclink hmlinklistitem">EmployeeTimes</a></p>
+<p class="p_Normal">      <a href="bslemployeetimesget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslattendancearriving.htm" class="topiclink hmlinklistitem">Arriving</a></p>
+<p class="p_Normal">      <a href="employeetimesleaving.htm" class="topiclink hmlinklistitem">Leaving</a></p>
+<p class="p_Normal">      <a href="employeetimesstatus.htm" class="topiclink hmlinklistitem">Status</a></p>
+<p class="p_Normal">      <a href="bslemployeetimesaccountinfo.htm" class="topiclink hmlinklistitem">AccountInfo</a></p>
+<p class="p_Normal">   <a href="bslemployeepresent.htm" class="topiclink hmlinklistitem">EmployeePresent</a></p>
+<p class="p_Normal">      <a href="bslemployeepresentget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal"><a href="bsltransactiondocuments.htm" class="topiclink hmlinklistitem">TransactionDocuments</a></p>
+<p class="p_Normal">   <a href="bslreceipt.htm" class="topiclink hmlinklistitem">Receipt</a></p>
+<p class="p_Normal">      <a href="bslreceiptget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslreceiptpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslreceiptlines.htm" class="topiclink hmlinklistitem">ReceiptLines</a></p>
+<p class="p_Normal">      <a href="bsldocumentpost.htm" class="topiclink hmlinklistitem">DocumentPost</a></p>
+<p class="p_Normal">      <a href="documentlinespost.htm" class="topiclink hmlinklistitem">DocumentLinesPost</a></p>
+<p class="p_Normal">   <a href="bsl_receiptwo.htm" class="topiclink hmlinklistitem">ReceiptWo</a></p>
+<p class="p_Normal">      <a href="bslreceiptwopost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslreceiptlineswopost.htm" class="topiclink hmlinklistitem">ReceiptLines</a></p>
+<p class="p_Normal">   <a href="bslissue.htm" class="topiclink hmlinklistitem">Issue</a></p>
+<p class="p_Normal">      <a href="bslissueget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslissuepost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslissuelines.htm" class="topiclink hmlinklistitem">IssueLines</a></p>
+<p class="p_Normal">   <a href="bsl_issuewo.htm" class="topiclink hmlinklistitem">IssueWo</a></p>
+<p class="p_Normal">      <a href="bslissuewopost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslissuelineswo.htm" class="topiclink hmlinklistitem">IssueLines</a></p>
+<p class="p_Normal">   <a href="bslmaterialrevaluation.htm" class="topiclink hmlinklistitem">MaterialRevaluation</a></p>
+<p class="p_Normal">      <a href="materialrevaluationget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="materialrevaluationpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="materialrevaluationlines.htm" class="topiclink hmlinklistitem">MaterialRevaluationLines</a></p>
+<p class="p_Normal">   <a href="bsltransfer.htm" class="topiclink hmlinklistitem">Transfer</a></p>
+<p class="p_Normal">      <a href="bsltransferget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bsltransferpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="transferlines.htm" class="topiclink hmlinklistitem">TransferLines</a></p>
+<p class="p_Normal">   <a href="bsltransferrequest.htm" class="topiclink hmlinklistitem">TransferRequest</a></p>
+<p class="p_Normal">      <a href="bsltransferrequestget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bsltransferrequestpost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bsltrasnferrequestlines.htm" class="topiclink hmlinklistitem">TransferRequestLines</a></p>
+<p class="p_Normal">   <a href="bslblanketagreements.htm" class="topiclink hmlinklistitem">BlanketAgreements</a></p>
+<p class="p_Normal">      <a href="bslblanketagreementsget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslblanketagreements_itemlines.htm" class="topiclink hmlinklistitem">BlanketAgreements_ItemLines</a></p>
+<p class="p_Normal">   <a href="bslpurchaseorder.htm" class="topiclink hmlinklistitem">PurchaseOrder</a></p>
+<p class="p_Normal">      <a href="purchaseorderget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="purchaorderlines.htm" class="topiclink hmlinklistitem">PurchaOrderLines</a></p>
+<p class="p_Normal">   <a href="bslpurchasedelivery.htm" class="topiclink hmlinklistitem">PurchaseDelivery</a></p>
+<p class="p_Normal">      <a href="bslpurchasedeliveryget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslpurchasedeliverypost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="purchasedeliverylines.htm" class="topiclink hmlinklistitem">PurchaseDeliveryLines</a></p>
+<p class="p_Normal">   <a href="bslsalesorder.htm" class="topiclink hmlinklistitem">SalesOrder</a></p>
+<p class="p_Normal">      <a href="salesorderget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslsalesorderlines.htm" class="topiclink hmlinklistitem">SalesOrderLines</a></p>
+<p class="p_Normal">   <a href="bslsalesdelivery.htm" class="topiclink hmlinklistitem">SalesDelivery</a></p>
+<p class="p_Normal">      <a href="bslsalesdeliveryget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslsalesdeliverypost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslsalesdeliverylines.htm" class="topiclink hmlinklistitem">SalesDeliveryLines</a></p>
+<p class="p_Normal">   <a href="bslsalesinvoice.htm" class="topiclink hmlinklistitem">SalesInvoice</a></p>
+<p class="p_Normal">      <a href="bslsalesinvoiceget.htm" class="topiclink hmlinklistitem">GET</a></p>
+<p class="p_Normal">      <a href="bslsalesinvoicepost.htm" class="topiclink hmlinklistitem">POST</a></p>
+<p class="p_Normal">      <a href="bslsalesinvoicelines.htm" class="topiclink hmlinklistitem">SalesInvoiceLines</a></p>
+<p class="p_Normal">   <a href="bsldocumentserial.htm" class="topiclink hmlinklistitem">DocumentBatchSerial</a></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

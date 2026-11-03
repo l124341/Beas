@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Transfer - Process</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Manage transfer process &nbsp;It is possible to &nbsp;- create transfer, &nbsp;- issue, &nbsp;- move from on item to another item / Batch / bincode - create Po Return docuemtn &nbsp;Only possible f" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslqcordertransferload.htm",
+   prevP: "bslqcorderreleaseqcorder.htm",
+   currP: "bslqcordertransfer.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "Transfer - Process",
+   mailsubject: "Feedback on: Beas Script 2026.09 - Transfer - Process",
+   sharesubject: "Beas Script 2026.09 - Transfer - Process",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslQCOrderTransfer",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; QualityControl &gt; QCOrder &gt; Transfer - Process /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - Transfer - Process").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslqcordertransfer.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Transfer - Process</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">Transfer - Process</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Manage transfer process</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It is possible to </p>
+<p class="p_Normal">- create transfer, </p>
+<p class="p_Normal">- issue, </p>
+<p class="p_Normal">- move from on item to another item / Batch / bincode</p>
+<p class="p_Normal">- create Po Return docuemtn</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Only possible for lines, which the QCOrder/TransferLoad() function returns</p>
+<p class="p_Normal">Primary key is the BatchNumber and BinCode</p>
+<p class="p_Normal">If all items are booked, the system closes the transfer process automatically.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">Load Transfer Lines</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">get QCOrder/TransferLoad(DocEntry)</span></p>
+<p class="p_Normal">This returns all open lines</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="qctransfer_load" width="755" height="341" style="margin:0;width:755px;height:341px;border:none" src="qctransfer_load.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To post the Transfer (all document types) you must send the lines in the following way:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">post</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">QCOrder</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;transfer&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">1000</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;PostingDate&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:...,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DocumentDate&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:...,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Remarks&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;...&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Ref&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;...&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DocumentLines&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="color: #666699;">DistNumber</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;:&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;,&nbsp;&quot;</span><span class="f_CodeExample" style="color: #666699;">BinCode</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;:&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">..</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;,&quot;</span><span class="f_CodeExample" style="color: #666699;">DocType</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;:0-3,&quot;</span><span class="f_CodeExample" style="color: #666699;">Quantity</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;:x,&quot;</span><span class="f_CodeExample" style="color: #666699;">Reijected</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;:true/false,&quot;</span><span class="f_CodeExample" style="color: #666699;">ToQuantity</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;:x,&quot;</span><span class="f_CodeExample" style="color: #666699;">ToItemCode</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;,&quot;</span><span class="f_CodeExample" style="color: #666699;">ToBinCode</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;:&quot;&quot;,ToDistNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ToWhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},{...}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Field</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Mandatory</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">DocEntry</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">QC order DocEntry</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">PostingDate</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Posting Date / Tax Date</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">DocumentDate</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Document Date</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Remarks</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Remarks / Notes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Document Lines</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Object Array<br />
+Here you can define the items which you want to move.</p>
+<p class="p_Normal">It is mandatory to send DocumentLines in correct order: </p>
+<p class="p_Normal"><span class="f_CourierFixed">1. DistNumber</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">2. BinCode (if bin warehouse related)</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">3. All other</span></p>
+<p class="p_Normal">If other order is used, the system may work incorrectly or return an error message.</p>
+<p class="p_Normal">If you send other properties, the system return an error.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; height:23px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-&gt; DistNumber</p>
+</td>
+<td style="vertical-align:top; height:23px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:top; height:23px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Distnumber/Batchnumber from Serial/Batch related item</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-&gt; BinCode</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BinCode, in case of Bin managed warehouse. Beas/SAP/WMS Bin managed warehouses are supported.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-&gt; DocType</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Transaction type.  <span class="f_CourierFixed">0=transfer, 1=issue,2=edit,3=poReturn</span><br />
+Default is <span class="f_CourierFixed">transfer</span><br />
+<img alt="qctransfer_type" width="689" height="301" style="margin:0;width:689px;height:301px;border:none" src="qctransfer_type.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-&gt; Quantity</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Transfer / Move / Issue quantity</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-&gt; ToQuantity, </p>
+<p class="p_Normal">-&gt; ToItemCode</p>
+<p class="p_Normal">-&gt; toVersion<br />
+-&gt; ToBinCode<br />
+-&gt; ToDistNumber<br />
+-&gt; ToWhsCode</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Target Item / Quantity / Warehouse</p>
+<p class="p_Normal">If not defined, the system uses Standard.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">-&gt; rejected</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Booelan: true for rejected (bad) quantity and false for good quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;<br />
+It will return</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;TransferDocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;TransferDocNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;IssueDocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;IssueDocNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ReceiptDocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ReceiptDocNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;PoReturnDocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;PoReturnDocNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;CloseTransfer&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">false</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_Normal">Every entry only if a document is created for this type.</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: If only a transfer document was created, it return</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;TransferDocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;TransferDocNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #666699;">x</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;CloseTransfer&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The system checks if all items are transferred. If yes, it return<span class="f_CourierFixed">&quot;CloseTransfer&quot;:true </span>otherwise <span class="f_CourierFixed">false</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

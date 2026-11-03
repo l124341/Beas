@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>TimeReceiptScrap</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="TimeReceiptScrap &nbsp;Property Description Table &nbsp;BEAS_ARBZEIT_SCRAP Primary key SystemNumber/i,ScrapId/c $transaction no $branch no $mask no &nbsp;Fields Name Type Desc" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsl_timereceiptrunning.htm",
+   prevP: "bsltimereceiptpost.htm",
+   currP: "bsl_timereceiptscrap.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "TimeReceiptScrap",
+   mailsubject: "Feedback on: Beas Script 2026.09 - TimeReceiptScrap",
+   sharesubject: "Beas Script 2026.09 - TimeReceiptScrap",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsl_TimeReceiptScrap",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Production &gt; TimeReceiptScrap /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - TimeReceiptScrap").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsl_timereceiptscrap.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>TimeReceiptScrap</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">TimeReceiptScrap</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><link rel="stylesheet" href="http://beascloud.com/docs/help/beasscript2/highlight/styles/default.css">  <script src="http://beascloud.com/docs/help/beasscript2/highlight/highlight.pack.js"></script>  <script>hljs.initHighlightingOnLoad();</script>  </p>
+<p class="p_Normal">TimeReceiptScrap</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Property</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Table</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed"> BEAS_ARBZEIT_SCRAP</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Primary key</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">SystemNumber/i,ScrapId/c</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">$transaction</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">no</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">$branch</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">no</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">$mask</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">no</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Fields</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Name</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Type</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">SystemNumber</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">System Number</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Entity Relation: <span class="f_CourierFixed"> TimeReceipt -&gt; SystemNumber</span></p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;BUCHNR_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ScrapId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Scrap Id</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: reason for scrap (id) to beas_reasonofscrap</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;SCRAP_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Quantity</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Quantity</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;Quantity&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ScrapReason</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(255)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Scrap Reason</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;SCRAPDESCRIPTION&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ScrapPercent</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Scrap Part %</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;PERCENT_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF1</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">UDF1</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;UDF1&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF2</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">UDF1</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;UDF2&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF3</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">UDF1</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;UDF3&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF4</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">UDF1</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_ARBZEIT_SCRAP&quot;.&quot;UDF4&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Relations</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Join to Entiy Object</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Relation</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">TimeReceipt</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">SystemNumber</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

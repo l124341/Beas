@@ -1,0 +1,686 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>POST</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Post is supported. All fields are supported. If the line exists, the system updates the line. &nbsp;Example &nbsp;RoutingLine &nbsp;{&quot;RoutingId&quot;:&quot;FP&quot;,&quot;ResourceId&quot;:&quot;1800&quot;,&quot;Type&quot;:&quot;Assembly&quot;," />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslroutinglinedelete.htm",
+   prevP: "bslroutinglineget.htm",
+   currP: "bslroutinglinepost.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "POST",
+   mailsubject: "Feedback on: Beas Script 2026.09 - POST",
+   sharesubject: "Beas Script 2026.09 - POST",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslRoutingLinePOST",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Warehouse Management &gt; Item Area &gt; RoutingLine &gt; POST /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - POST").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslroutinglinepost.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>POST</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">POST</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Post is supported.</p>
+<p class="p_Normal">All fields are supported.</p>
+<p class="p_Normal">If the line exists, the system updates the line.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example </span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">RoutingLine</span><br />
+<span class="f_CodeExample" style="color: #666699;">&nbsp;</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;RoutingId&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;FP&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ResourceId&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1800&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Type&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Assembly&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;LineNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">20</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Description&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;MyWork&nbsp;4&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;MachineLaborTime&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">14</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">If LineNumber not defined or &lt;= 0, the system create new Line and return the new line number</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;value&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;FP&quot;</span><span style="font-size: 9pt; font-family: Consolas;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;LineNumber&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: 5</span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">0</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_Normal">If &quot;Not changeable&quot; defined in Routing Header, it's not possible to change a line in the line.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Properties</p>
+<p class="p_Normal">Only Post:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:224px;"><p class="p_Normal">Property</p>
+</th>
+<th class="fielddescription" style="width:182px;"><p class="p_Normal">Type</p>
+</th>
+<th class="fielddescription" style="width:926px;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">RoutingId</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">The id of routing (normal the itemcode)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">LineNumber</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Routing Position</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:224px;"><p class="p_Normal">Property</p>
+</th>
+<th class="fielddescription" style="width:182px;"><p class="p_Normal">Type</p>
+</th>
+<th class="fielddescription" style="width:182px;"><p class="p_Normal">Field</p>
+</th>
+<th class="fielddescription" style="width:926px;"><p class="p_Normal">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Active</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">AKTIV</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Activate or Deactivate this position</p>
+<p class="p_Normal">If you deactivate it, the system delete all DateTimes for the process<br />
+and delete time reservations and pool informations</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">BitmapName</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">BITMAPNAME</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Icon for Desctop view</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Booked</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><br />
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Mark position as booked</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">CatalogId</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">AG_ID</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">The Catalog Id (template)</p>
+<p class="p_Normal">Note: Please use this at first parameter, because this overwrite all other properties<br />
+if resource changed: see ResourceId</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">ClockMandatory</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">BDE</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Define, if time receipt mandatory for this position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">Closed</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">ABGKZ</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Close Routing position</p>
+<p class="p_Normal">Call userEvent CloseOperation, CloseOperationEnd</p>
+<p class="p_Normal">Or userEvent ReopenOperation, ReopenOperationEnd<br />
+&nbsp;<br />
+if closed, the system delete all reserved times and pool informations.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Color</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">COLORID</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Color for Desctop view</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">CosstElementLabor</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">TNTIMETYPE_ID</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">CostCenter</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">KSTST_ID</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Cost Center</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">CostElementMachine</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">THTIMETYPE_ID</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">CostElementMaschineLabor</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">TIMETYPE_ID</p>
+</td>
+<td class="fielddescription" style="width:926px;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">CostElementPersonell</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">PTIMETYPE_ID</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Costelementsetup</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">TRTIMETYPE_ID</p>
+</td>
+<td class="fielddescription" style="width:926px;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">Description</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">BEZ</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Routing Work Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">IdleTimeStart/End</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription" style="width:182px;"><br />
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Define Start and End Date for idle period</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">IdleTime</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">TL</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">InspectionPlanId</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">QS_ID</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Inspection Plan Id (Quality Control)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">Instructions</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">ANWEISUNG</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Additional Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">LaborTime</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">TNAPLATZ</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Second Duration time</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">MachineLaborTime</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">TEAPLATZ</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Main Duration time </p>
+<p class="p_Normal">Note: all times will be overwritten, if a parallel resource - tool with &quot;define time&quot; is defined.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">MachineTime</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">THAPLATZ</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Third Duration time</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">MasterLineNumber</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">MASTER_POS_ID</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">link to master position. If defined, this is the slave position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">NumberOfPlaySlips</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><br />
+</td>
+<td class="fielddescription" style="width:926px;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">Picture1 .. Picture3</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">PICTURE1...3</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Up to 3 Pictures</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Position</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">POS_TEXT</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Position as Text</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">ProcessingTimeStart/End</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Define Start and End Date Time for Processing </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">Reserved</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><br />
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Mark position as reserved (only info)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">ResourceId</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">APLATZ_ID</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">The used Resource. Mandatory</p>
+<p class="p_Normal">Note: Please use this as first parameter, BUT after Catalog Id<br />
+If this not an new entry, the system replace all entries in time reservations and pool list, but without new calculation</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">RoutingType</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">AGTYP</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Routing Type</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">RUoM</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">RM_ME_ID</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Define Unit of Measurement for time receipt for this routing position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">RUoMFactor</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">RM_FACTOR</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Define factor for time receipt Uom to production UoM from Work order Position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">SetupForCalculator</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">TRAPLATZ</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">The setup time for price calculation</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">SetupForSchedule</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">TR2APLATZ</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">The setup time for time calculation</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">ShortVariant</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">ShortVariant</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Short Variant A-Z</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">ShortVariantFilter</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">SHORTVARIANTDEF</p>
+</td>
+<td class="fielddescription" style="width:926px;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">SortId</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">SortId</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Sort Number</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">StartFix</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">ANFZEIT_FIX</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Protect the start time of the routing position </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">StartTime</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">GESAMT_ANFZEIT</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Define Date Time for the start of Routing Position</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">TimesPer</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">MENGE_JE</p>
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Define Times Per</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">TimesUnit</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">MENGE_ZEITJE</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><p class="p_Normal">Define Times Unit: 1=Minute, 60=Hours</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">TransferTimeStart/End</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription" style="width:182px;"><br />
+</td>
+<td class="fielddescription" style="width:926px;"><p class="p_Normal">Define Start and End Date Time for Transfer process</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">UseFactor</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">NUTZEN</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px;"><p class="p_Normal">WageGroup</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:182px;"><p class="p_Normal">LOHNGRUPPE</p>
+</td>
+<td class="fielddescription" style="width:926px;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:224px; background-color:#F7F7F7;"><p class="p_Normal">WorkSteps</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:182px; background-color:#F7F7F7;"><p class="p_Normal">ANZAHL</p>
+</td>
+<td class="fielddescription" style="width:926px; background-color:#F7F7F7;"><br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

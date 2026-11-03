@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>QualityControl</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="In Beas Service layer you have access to the complete Quality control system of Beas." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslqcorder.htm",
+   prevP: "bslexternalpurchasedelivery.htm",
+   currP: "qualitycontrol.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "QualityControl",
+   mailsubject: "Feedback on: Beas Script 2026.09 - QualityControl",
+   sharesubject: "Beas Script 2026.09 - QualityControl",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "QualityControl",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; QualityControl /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - QualityControl").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "qualitycontrol.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>QualityControl</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">QualityControl</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="bsl-qcarea" width="423" height="277" style="margin:0;width:423px;height:277px;border:none" src="bsl-qcarea.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Beas Service layer you have access to the complete Quality control system of Beas.</p>
+<p class="p_beas_Version"><span class="f_beas_Version">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">How the QC System of Beas works</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">For all details <span class="f_See">see</span> <a href="http://www.beascloud.net/docs/help/online_eng/index.html?qualitatssicherung.htm" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Beas Help</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">How to create a QC Order</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Beas creates the QC Order automatically based on SAP Documents.</p>
+<p class="p_Normal">If you create SAP Documents outside the Beas environment, you can use the transaction notification function for create the QC Order.</p>
+<p class="p_Normal"><span class="f_See">See</span> <a href="http://www.beascloud.net/docs/help/online_eng/index.html?neuanlage_qs.htm" target="_blank" onclick="return HMTrackTopiclink(this);" class="weblink">Configuration wizard</a>:<br />
+<img alt="qc-creation-setting" width="568" height="253" style="margin:0;width:568px;height:253px;border:none" src="qc-creation-setting.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Additional functions are available, for example to create QC order manually.</p>
+<p class="p_Normal"><span class="f_CourierFixed">GET QCOrder/CreateQcOrder()</span> -&gt; Create non-SAP document related QC Order<br />
+<span class="f_CourierFixed">GET QCORder/CreateQcORderFromSAPDocument()</span> -&gt; Create SAP document related QC order</p>
+<p class="p_Normal">For more details <span class="f_See">see</span> <a href="bslqcorder.htm" class="topiclink">QCOrder</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: It is not possible to create a QC order with POST Command.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">How to change a QC Order</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">It is possible to change some fields in QC Order or to release it.</p>
+<p class="p_Normal">This is possible with PUT command and a release is possible with different QCOrder-Functions.</p>
+<p class="p_Normal">For more details <span class="f_See">see</span> <a href="bslqcorder.htm" class="topiclink">QC Order</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">How &nbsp;to add or change a sample</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Add a sample is possible with</p>
+<p class="p_Normal"><span class="f_CourierFixed">GET QCOrder/CreateSample()</span>. <span class="f_See">See</span> <a href="bslqcorder.htm" class="topiclink">QC Order</a></p>
+<p class="p_Normal">To release a sample:</p>
+<p class="p_Normal"><span class="f_CourierFixed">GET QCOrderSamples/Release1()</span><br />
+<span class="f_CourierFixed">GET QCOrderSamples/Release2()</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><img alt="qcsamples" title="qcsamples" width="547" height="294" style="margin:0;width:547px;height:294px;border:none" src="qcsamples.png"/></p>
+<p class="p_Normal">or via PUT command. See <a href="bslqcordersamples.htm" class="topiclink">QCOrderSamples</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Electronic signature is not supported in the back-end. This must be developed in the Front-end.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">How to work with Measurements</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">It is possible to set value, set OK flag or to release by function or put command</p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><img alt="qcmeasurementposition" title="qcmeasurementposition" width="601" height="241" style="margin:0;width:601px;height:241px;border:none" src="qcmeasurementposition.png"/></p>
+<p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span class="f_CourierFixed">GET QCOrderMeasurement/setValue(1024,1,10,3.4)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Change Block Reason to &quot;WrongColor&quot;</p>
+<p class="p_Normal"><span class="f_CourierFixed">put QCOrderMeasurement(1407) &nbsp; {&quot;BlockageReasonId&quot;:&quot;WrongColor&quot;}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Electronic signature is not supported in the back-end. This must be developed in the front-end.</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">It is not possible to create a new measurement positions or to change main measurement definitions.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">How to work with Transfer</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The BSL delivers the following functions:</p>
+<p class="p_Normal">- Read all related Items / Batches / Serials / BinCode information with<br />
+<span class="f_CourierFixed">get QCOrder/TransferLoad()</span></p>
+<p class="p_Normal"><img alt="qctransfer_load" width="755" height="341" style="margin:0;width:755px;height:341px;border:none" src="qctransfer_load.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">- Return the default target warehouse (example: If you activate &quot;Rejected&quot;, you can have another warehouse) with <br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">get</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">QCOrder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">TransferGetWareHouse</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">()</span></p>
+<p class="p_Normal">&nbsp;<br />
+- Post the transactions (Transfer, Issue, Edit, POReturn with<br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">post</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">QCOrder</span><span class="f_CodeExample" style="font-size: 10pt;"> &nbsp; &nbsp; </span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;transfer&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,{</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">transfer</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">informatiomations</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}}</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Limitations, not supported functions</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">- 4 eyes concept: Electronic signature is not checked. This is part of the Front end</p>
+<p class="p_Normal">- QC Attachments are not supported</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>$filter</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="$filter" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="The $filter query option defines a filter for the ODATA GET command." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslexpand.htm",
+   prevP: "bslcount.htm",
+   currP: "bslfilter.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "$filter",
+   mailsubject: "Feedback on: Beas Script 2026.09 - $filter",
+   sharesubject: "Beas Script 2026.09 - $filter",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslFilter",
+   mailpath: "Beas Service Layer &gt; BSL OData Interface &gt; $filter /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - $filter").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslfilter.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>$filter</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">$filter</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">The <span class="f_CourierFixed">$filter</span> query option defines a filter for the ODATA GET command.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">$filter=</span><span class="f_CourierFixed" style="color: #008000;">[left property]</span><span class="f_CourierFixed"> [operator] </span><span class="f_CourierFixed" style="color: #0000ff;">[right property]</span><span class="f_CourierFixed"> [ logical operator or/and </span><span class="f_CourierFixed" style="color: #008000;">[left property]</span><span class="f_CourierFixed"> [operator] </span><span class="f_CourierFixed" style="color: #0000ff;">[right property]</span><span class="f_CourierFixed"> ] ...</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The left and right properties can take the following values:</p>
+<p class="p_ListParagraph" style="text-indent: 0; padding-left: 13px; margin-left: 19px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_ListParagraph">String, for example </span>&quot;1234&quot;</p>
+<p class="p_ListParagraph" style="text-indent: 0; padding-left: 13px; margin-left: 19px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_ListParagraph">Number, for example </span>1.442</p>
+<p class="p_ListParagraph" style="text-indent: 0; padding-left: 13px; margin-left: 19px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_ListParagraph">Entity, for example Item or Item/ItemCode</span></p>
+<p class="p_ListParagraph" style="text-indent: 0; padding-left: 13px; margin-left: 19px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_ListParagraph"><a href="bslodata_functions.htm" class="topiclink">Function</a>, for example concat(x,y)</span></p>
+<p class="p_ListParagraph" style="text-indent: 0; padding-left: 13px; margin-left: 19px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_ListParagraph"><a href="bslplaceholder.htm" class="topiclink">Placeholder</a></span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following operators are supported:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Operator</span></p>
+</th>
+<th class="fielddescription" style="vertical-align:middle; width:262px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+<th class="fielddescription" style="vertical-align:middle; width:257px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Example</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" colspan="3"  style="vertical-align:middle; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Logical Operators</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">eq</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:262px; background-color:#FFFFFF;"><p class="p_Normal">Equal</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:257px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Suppliers</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Address</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">City</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">eq</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Redmond'</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">ne</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:262px; background-color:#FFFFFF;"><p class="p_Normal">Not equal</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:257px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Suppliers</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Address</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">City</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ne</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'London'</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">gt</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:262px; background-color:#FFFFFF;"><p class="p_Normal">Greater than</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:257px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Products</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Price</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">gt</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">20</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">ge</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:262px; background-color:#FFFFFF;"><p class="p_Normal">Greater than or equal</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:257px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Products</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Price</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ge</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">10</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">lt</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:262px; background-color:#FFFFFF;"><p class="p_Normal">Less than</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:257px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Products</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Price</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">lt</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">20</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">le</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:262px; background-color:#FFFFFF;"><p class="p_Normal">Less than or equal</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:257px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Products</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Price</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">le</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">100</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note" style="font-weight: bold;">Note</span><span class="f_Note">: Beas supports &lt;, &gt;, &gt;=, &lt;= and &lt;&gt; as well.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Additional operators for strings that are not compatible with the ODATA syntax:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Operator</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">like</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><p class="p_Normal">SQL like ItemName like &quot;red&quot;</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemName</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">like</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;red&quot;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">startwith</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><p class="p_Normal">string starts with ..<span style="font-size: 10pt;">.</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemName</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">startwith</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A00&quot;</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemName</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">startwith</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;A00&quot;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">endwith</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><p class="p_Normal">string ends with...  <span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemName</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">endwith</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;001&quot;</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Item</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ItemName</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">endwith</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;001&quot;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">&quot;n&quot;</span> Operator Prefix</p>
+<p class="p_Normal"><span class="f_CourierFixed">neq, nne, ngt ...</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Convert right side from string to numeric</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">This way you can equal numbers with string.</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">&nbsp;</p>
+<p class="p_Normal">If your framework cannot convert String to numerals, you can use the &quot;n&quot; prefix in the operator, for example neq (Equal).</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Workorder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;1038&quot;</span></p>
+<p class="p_Normal">Produces an error, because left side is numeric and right side is a string.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Workorder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">neq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;1038&quot;</span></p>
+<p class="p_Normal">Works fine, since the system converts the right side to numeric value. If the right side is not a number, the system does not check the operation and the result is always false.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Workorder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">neq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;1038&quot;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">and</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><br />
+Produces&nbsp;the&nbsp;following&nbsp;sql&nbsp;command<br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BELNR_ID&quot;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">1038</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">and</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">'A001'</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><br />
+If&nbsp;the&nbsp;string&nbsp;is&nbsp;not&nbsp;numeric<br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Workorder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">neq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;1038&quot;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">and</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A001&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">it</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">replaces</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">the</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">operation</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">with</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;0&nbsp;=&nbsp;1&quot;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">0</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">1</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">or</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">'A001'</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&nbsp;</span><br />
+The&nbsp;idea&nbsp;behind&nbsp;this&nbsp;is&nbsp;that&nbsp;if&nbsp;a&nbsp;search&nbsp;field&nbsp;wants&nbsp;to&nbsp;search&nbsp;in&nbsp;multiple&nbsp;columns,&nbsp;you&nbsp;can&nbsp;use&nbsp;this&nbsp;command.<br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Workorder</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">neg</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;b&quot;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">or</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;b&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><br />
+You&nbsp;do&nbsp;not&nbsp;need&nbsp;to&nbsp;check&nbsp;if&nbsp;b&nbsp;is&nbsp;numeric&nbsp;or&nbsp;not.&nbsp;It&nbsp;will&nbsp;always&nbsp;work.<br />
+&nbsp;<br />
+The&nbsp;&quot;n&quot;&nbsp;Prefix&nbsp;is&nbsp;supported&nbsp;for&nbsp;the&nbsp;following&nbsp;operators:<br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ne</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">gt</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ge</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">lt</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">le</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">or</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span>(not&nbsp;ODATA&nbsp;Syntax:<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&lt;,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&gt;,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&gt;=,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&lt;=,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span>)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">Workorder</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="color: #666699;">$filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">DocEntry</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">neq</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1038&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following logical operators are supported:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Logical Operator</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">and</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><p class="p_Normal">Combines two Boolean expressions and returns TRUE when both expressions are TRUE.</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">OnHand</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">gt</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">10</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">and</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">gt</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A&quot;</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">or</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><p class="p_Normal">Combines two conditions. When more than one logical operator is used in a statement, it returns TRUE.</p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">OnHand</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">gt</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">10</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">or</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">gt</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Brackets </span>are allowed<span class="f_Note">, for </span>example: <span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">((</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">a</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;1&quot;</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">or</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">a</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;2&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">and</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">b</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;3&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">or</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">b</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;4&quot;</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Functions</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Logical Operator</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="vertical-align:middle; width:148px; background-color:#FFFFFF;"><p class="p_Normal"><span class="f_CourierFixed">concat</span></p>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:264px; background-color:#FFFFFF;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">This function returns a string result of the concatenation, or join, of two or more string values in an end-to-end manner.</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Add up to 20 arguments to one string. The following rules apply:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>All string types are allowed (char, numeric, integer, date...).</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>NULL values are supported and the system ignores NULL values.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">concat</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">arg1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">arg2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;String&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #0000ff;">0</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[,...]</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following is not supported:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">concat</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">arg1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample">concat</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="color: #666699;">arg2</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="color: #666699;">arg3</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">))</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td class="fielddescription" style="vertical-align:middle; width:255px; background-color:#FFFFFF;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">WorkorderBom</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&amp;</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; color: #666699;">&nbsp;&nbsp;$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-size: 10pt;">concat</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">DocEntry</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;/&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">LineNumber</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">eq</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;171/10&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Brackets are allowed, for example:</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Item</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">?</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">$filter</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">=(</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">gt</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;A&quot;</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">and</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">lt</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;C&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">or</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">ItemCode</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">gt</span><span class="f_CodeExample" style="font-size: 10pt;"> </span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;D&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Compatibility:</p>
+<p class="p_Normal">Currently, the ODATA function calls are not working in the Beas Service Layer. You can use additional operators like, <span class="f_CourierFixed">startwith</span>, and so on.</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

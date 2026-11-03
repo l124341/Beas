@@ -1,0 +1,702 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>PreAssign</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="With the following post command a PreAssign document can be generated for a work order." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "preassignget.htm",
+   prevP: "serialnumberreservationget.htm",
+   currP: "bsl_preassign.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "PreAssign",
+   mailsubject: "Feedback on: Beas Script 2026.09 - PreAssign",
+   sharesubject: "Beas Script 2026.09 - PreAssign",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsl_PreAssign",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Production &gt; PreAssign /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - PreAssign").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsl_preassign.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>PreAssign</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">PreAssign</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">With the following post command a PreAssign document can be generated for a work order.</p>
+<p class="p_Normal">It is possible to create a PreAssign document which can be read with get PreAssign or to return all information directly as JSON.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CourierFixed">post&nbsp;PreAssign</span><br />
+<span class="f_CourierFixed">&nbsp;&nbsp;{</span><span class="f_CourierFixed" style="color: #008000;">&quot;BaseDocEntry&quot;:103,</span><br />
+<span class="f_CourierFixed" style="color: #008000;">&nbsp;&nbsp;&nbsp;&quot;BaseLineNumber&quot;:10</span><span class="f_CourierFixed">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">Returns</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The PreAssign document information can be read with the following command:</p>
+<p class="p_Normal"><span class="f_CourierFixed">get PreAssignLines?§filter=DocEntry = </span><span class="f_CourierFixed" style="color: #0000ff;">5</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The PreAssign document information related to the bill of material position can be read with the following command:</p>
+<p class="p_Normal"><span class="f_CourierFixed">get WorkorderBom?$select ItemCode,Quanitty,</span><span class="f_CourierFixed" style="color: #0000ff;">PreAssignLines</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &amp;$filter=</span><span class="f_CourierFixed" style="color: #008000;">DocEntry eq 103 and LineNumber eq 10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &amp;$expand=</span><span class="f_CourierFixed" style="color: #0000ff;">PreAssignLines($filter=DocEntry eq &nbsp;5)</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px;"><p class="p_Normal"><span style="font-weight: bold;">Property for the POST command</span></p>
+</td>
+<td class="fielddescription" style="width:117px;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td class="fielddescription" style="width:719px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">BaseDocEntry</span></p>
+</td>
+<td class="fielddescription" style="width:117px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="width:719px; background-color:#F7F7F7;"><p class="p_Normal">Work order DocEntry <span class="f_CourierFixed">(BEAS_FTPOS.BELNR_ID)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px;"><p class="p_Normal"><span class="f_CourierFixed">BaseLineNumber</span></p>
+</td>
+<td class="fielddescription" style="width:117px;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="width:719px;"><p class="p_Normal">Work order LineNumber <span class="f_CourierFixed">(BEAS_FTPOS.BELPOS_ID)</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">RoutingPosition</span></p>
+</td>
+<td class="fielddescription" style="width:117px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="width:719px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Work order Routing Position</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If you define the Routing position, the system only returns BoM Position linked with this Routing position</p>
+<p class="p_Normal">Related Property:</p>
+<p class="p_Normal"><span class="f_CourierFixed">Extern:&quot;Y&quot;</span>: Only BoM for external delivery. <span class="f_See">See</span> <span class="f_CourierFixed">PDocType, Extern, ExternalDocEntry</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">Extern:&quot;N&quot;</span>: Only BoM not related to external delivery</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px;"><p class="p_Normal"><span class="f_CourierFixed">Quantity</span></p>
+</td>
+<td class="fielddescription" style="width:117px;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:719px;"><p class="p_Normal">Goods Receipt Quantity in Production UoM of the assembly</p>
+<p class="p_Normal">The system calculates the required quantity based on planned quantity and defined quantity.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Scrap</span></p>
+</td>
+<td class="fielddescription" style="width:117px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:719px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Scrap Quantity (part of Quantity)</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">Good = 10<br />
+Scrap = 2</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Define:</p>
+<p class="p_Normal"><span class="f_CourierFixed">Quantity=12</span><br />
+<span class="f_CourierFixed">Scrap=2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px;"><p class="p_Normal"><span class="f_CourierFixed">WhsCode</span></p>
+</td>
+<td class="fielddescription" style="width:117px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:719px;"><p class="p_Normal">Backflushing only from this warehouse (optional).</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">SetBatchNumber</span></p>
+</td>
+<td class="fielddescription" style="width:117px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:719px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">true/false</span> assign BatchNumbers</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px;"><p class="p_Normal"><span class="f_CourierFixed">SetSerialNumbers</span></p>
+</td>
+<td class="fielddescription" style="width:117px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:719px;"><p class="p_Normal"><span class="f_CourierFixed">true/false</span> assign SerialNumbers </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Format</span></p>
+</td>
+<td class="fielddescription" style="width:117px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:719px; background-color:#F7F7F7;"><p class="p_Normal">JSON = Return Result as Json String</p>
+<p class="p_Normal">&quot;&quot; = Create document and return Docenrty</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px;"><p class="p_Normal"><span class="f_CourierFixed">CreateMessage</span></p>
+</td>
+<td class="fielddescription" style="width:117px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:719px;"><p class="p_Normal">If true, the system returns the Shortage in JSON format.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ExternalDocEntry</span></p>
+</td>
+<td class="fielddescription" style="width:117px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Number</p>
+</td>
+<td class="fielddescription" style="width:719px; background-color:#F7F7F7;"><p class="p_Normal">External Docentry (<a href="external_production.htm" class="topiclink">External production process</a>)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px;"><p class="p_Normal"><span class="f_CourierFixed">PDocType</span></p>
+</td>
+<td class="fielddescription" style="width:117px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:719px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Document Type</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the process</p>
+<p class="p_Normal">Allowed:</p>
+<p class="p_Normal"><span class="f_CourierFixed">issuewo</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">externalsend</span> (External production - send to supplier)</p>
+<p class="p_Normal"><span class="f_CourierFixed">externalissue</span> (External production - issue from extern)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: if you work with an external process, set &quot;external&quot;=Y and correct routing position.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:215px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Extern</span></p>
+</td>
+<td class="fielddescription" style="width:117px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:719px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Define for external production process</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Works only together with RoutingPosition</p>
+<p class="p_Normal">Y=Only BoM linked to external Routing Position</p>
+<p class="p_Normal">N=Only BoM linked to not external Routing Position</p>
+<p class="p_Normal">Empty = No filter</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you define Y, </p>
+<p class="p_Normal">set correct <span class="f_CourierFixed">PDocType, ExternalDocEntry </span>and<span class="f_CourierFixed"> RoutingPosition</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Returns the following information:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Property for the POST Command</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Canceled</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edm.Bolean</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Returns true if the process is canceled, for example if there is not enough material with the do not continue setting.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">OpenEntries </span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edm.Bolean</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Returns true if entries exist without enough stock.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">EntryFound</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edm.Bolean</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Returns true if Preassign Material exists.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Shortage</span></p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Shortage</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Property for Post Command</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ItemCode</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">WhsCode</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Default WhsCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Required</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edm.Decimal</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Required Quantity</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Shortage</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edm.Decimal</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Not preassigned Material (Stock not enough)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">UoM</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Stock Unit</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">RoundDec</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edm.Int32</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Count of Decimal places</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td class="fielddescription"><p class="p_Normal">Returns Array of not Preassigned Material only, if <span class="f_CourierFixed">CreateMessage=true</span>.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ShortageMessage</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Returns the &quot;not enough memory&quot; in language of the current user, if <span class="f_CourierFixed">CreateMessage=true</span>.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">PreAsssign</span></p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">PreAssign</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Property for Post Command</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">BaseDocEntry</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edn.Int32</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Document (Example: <span class="f_CourierFixed">BEAS_FTHAUPT.BELNR_ID</span>)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">BaseLineNumber</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edn.Int32</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Document Line (Example: <span class="f_CourierFixed">BEAS_FTPOS.BELPOS_ID</span>)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">BaseLineNumber2</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edn.Int32</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Document Line 2 (Example: <span class="f_CourierFixed">BEAS_FTSTL.POS_ID</span>)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">BaseDocType</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edn.Int32</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Wo for Work order</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">ItemCode</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">WhsCode</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Default WhsCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Quantity</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edm.Decimal</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Required Quantity</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">IVersion</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Item Version</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">BinCode</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Bin Location</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">RFID</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal"><span class="f_CourierFixed">Edm.String</span></p>
+</td>
+<td class="fielddescription"><p class="p_Normal">RFID Code</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td class="fielddescription"><p class="p_Normal">Returns Array of assigned material if <span class="f_CourierFixed">Format=Json</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Complete example return message with shortage information </a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(<span class="f_CourierFixed">Format=Json</span> and <span class="f_CourierFixed">CreateMessage=true</span>):</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Shortage&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-style: italic; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic;">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;AB0020000&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;09&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Required&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">610</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Shortage&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">610</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;UoM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Pcs&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;RoundDec&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">3</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ShortageMessage&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Not&nbsp;enough&nbsp;inventory&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;PreAssign&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseDocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1311</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseLineNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">10</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseLineNumber2&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">41</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseDocType&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;wo&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;C16900&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DistNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">5</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;IVersion&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&quot;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">},</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseDocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">1311</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseLineNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">10</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseLineNumber2&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">11</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseDocType&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;wo&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;C16108&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DistNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #0000ff;">4</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;IVersion&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;&quot;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">],</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OpenEntries&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;EntryFound&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">true</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">
+PreAssign&nbsp;in&nbsp;BeasScript&nbsp;</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; line-height: 1.0; page-break-inside: avoid; padding: 0 0 0 0; margin: 0 0 0 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Available return values:</span></p>
+<p class="p_Normal">(Powerbuilder: gbsl.iu_return.[property]</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:159px;"><p class="p_Normal"><span style="font-weight: bold;">Value</span></p>
+</th>
+<th class="fielddescription" style="width:869px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:159px;"><p class="p_Normal"><span class="f_CourierFixed">is_ret_value</span></p>
+</td>
+<td class="fielddescription" style="width:869px;"><p class="p_Normal">Complete Json String</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:159px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">il_ret_code</span></p>
+</td>
+<td class="fielddescription" style="width:869px; background-color:#F7F7F7;"><p class="p_Normal">0=ok, -1=error</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:159px;"><p class="p_Normal"><span class="f_CourierFixed">docEntry</span></p>
+</td>
+<td class="fielddescription" style="width:869px;"><p class="p_Normal">Beas_Plandocument Docentry</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:159px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">b_parm1</span></p>
+</td>
+<td class="fielddescription" style="width:869px; background-color:#F7F7F7;"><p class="p_Normal">true = can't preassign all positions</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:159px;"><p class="p_Normal"><span class="f_CourierFixed">b_parm2</span></p>
+</td>
+<td class="fielddescription" style="width:869px;"><p class="p_Normal">true = entries found</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:159px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed">s_parm1</span></p>
+</td>
+<td class="fielddescription" style="width:869px; background-color:#F7F7F7;"><p class="p_Normal">Beas_Plandocument.DocType (is_pdocktype)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

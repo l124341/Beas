@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>CheckMinMaxRouting</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Check minimal and maximal issues for all BoM Position linked to a routing position" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslworkorderbomcheckminmax2.htm",
+   prevP: "bslworkorderbomcalctotalquantity.htm",
+   currP: "bslworkorderbomcheckminmax.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "CheckMinMaxRouting",
+   mailsubject: "Feedback on: Beas Script 2026.09 - CheckMinMaxRouting",
+   sharesubject: "Beas Script 2026.09 - CheckMinMaxRouting",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslWorkorderBomCheckMinMax",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Production &gt; WorkorderBom &gt; CheckMinMaxRouting /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - CheckMinMaxRouting").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslworkorderbomcheckminmax.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>CheckMinMaxRouting</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">CheckMinMaxRouting</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Check minimal and maximal issues for all BoM Position linked to a routing position</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In the Configuration wizard it's possible to define the min/max value for Bill of materials position. With this function you can check if the count of issues are correct based on this rule.</p>
+<p class="p_Normal">if LineNumber2 is 0, then the system checks all positions.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">WorkorderBom</span><span class="f_CodeExample" style="color: #ff0000;">/</span><span class="f_CodeExample" style="color: #3366ff;">CheckMinMaxRouting</span><span class="f_CodeExample" style="color: #ff0000;">(</span><span class="f_CodeExample" style="color: #3366ff;">DocEntry</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">LineNumber</span><span class="f_CodeExample" style="color: #ff0000;">,Routing-</span><span class="f_CodeExample" style="color: #3366ff;">LineNumber2</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">IssueQuantityString</span><span class="f_CodeExample" style="color: #ff0000;">,</span><span class="f_CodeExample" style="color: #3366ff;">BaseQuantity</span><span class="f_CodeExample" style="color: #ff0000;">)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Parameter</span></p>
+</th>
+<th style="vertical-align:top; background-color:#C0C0C0; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">DocEntry</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Work order number</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">LineNumber</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Work order position</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Routing-LineNumber</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Routing Position</p>
+<p class="p_Normal">Defines the routing position, for which you want to check BoM Positions</p>
+<p class="p_Normal">Use &quot;0&quot; for backflushing processes </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">If Pos &gt; 0</span>, the system checks all linked Bill of material positions</p>
+<p class="p_Normal"><span class="f_CourierFixed">If Pos = last position</span> (or first position and backflush = first position)<br />
+and it's not an external routing position, the system checks all BoM Positions with link to this routing position and all BoM without any link</p>
+<p class="p_Normal"><span class="f_CourierFixed">If Pos = last position</span> (or first position and backflush = first position)<br />
+and it's external routing position, the system checks all BoM Positions with link to this routing position.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">IssueQuantityString</p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Quantities for the current issue process</p>
+<p class="p_Normal">&quot;pos_id:quantity,pos_id:quantity&quot;<br />
+<span class="f_Note">Note: defined as string</span><br />
+Quantity with point as decimal place</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">BaseQuantity</p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Receipt - Quantity (only as information)</p>
+<p class="p_Normal">0=complete planned quantity</p>
+<p class="p_Normal">If &gt; 0, the system calculates needed material in % to planned quantity</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">return</p>
+<p class="p_Normal"><span class="f_CourierFixed">status</span> = ok -&gt; all ok, question, blocked</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the statusis &nbsp;not OK, the system returns the following information (values are only examples)</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;">&nbsp;<br />
+<span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">{</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;Status&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;question&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;DocEntry&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;4030&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;LineNumber&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;10&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;LineNumber3&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;10&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;PositionText&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;10&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;ItemCode&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;RM&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;MinQuantityAllowed&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;3.000000&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;MaxQuantityAllowed&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;3.000000&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;BookingQuantity&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;5.200000&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;ShortText&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;Maximum overrun&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;  </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;LongText&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #0451a5;">&quot;&quot;</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">Entered posting quantity for item RM is bigger than allowed quantity!\nAllowed quantity: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #098658;">3.0000</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">\nCharge-off quantity: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #098658;">5.2000</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">\nalready posted: </span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #098658;">0.00000</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">\nCharge-off and proceed?</span><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; color: #a31515;">&quot;&quot;</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">}</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

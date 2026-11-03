@@ -1,0 +1,778 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>DocumentPost</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Field Type Description Address String(255) Address of Business Partner Allocation Boolean 	Allocate function. If activated, the system create the reservation on target wa" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "documentlinespost.htm",
+   prevP: "bslreceiptlinepost.htm",
+   currP: "bsldocumentpost.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "DocumentPost",
+   mailsubject: "Feedback on: Beas Script 2026.09 - DocumentPost",
+   sharesubject: "Beas Script 2026.09 - DocumentPost",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslDocumentPost",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; TransactionDocuments &gt; Receipt &gt; DocumentPost /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - DocumentPost").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsldocumentpost.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>DocumentPost</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">DocumentPost</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:238px;"><p class="p_Normal"><span style="font-weight: bold;">Field</span></p>
+</th>
+<th class="fielddescription" style="width:128px;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</th>
+<th class="fielddescription" style="width:769px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">Address</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String(255)</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Address of Business Partner</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">Allocation</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">Boolean</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Allocate function. If activated, the system create the reservation on target warehouse</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Use this for Work order allocation function</p>
+<p class="p_Normal">only for transfer function</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">1. Define &quot;Allocation&quot;:true</p>
+<p class="p_Normal">2. Define Work order reference on line level</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><img alt="beasscript-logo-small" width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="beasscript-logo-small.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #666699;">instance</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">bsl</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">b</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">ll_workorder1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">20</span><br />
+<span class="f_CodeExample" style="color: #666699;">b</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">post</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Transfer</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">={</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;allocation&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DocumentLines&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:[&amp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;RM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">0.1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ToWhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;02&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseType&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;wo&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseDocEntry&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:&lt;</span><span class="f_CodeExample" style="color: #666699;">ll_workorder1</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseLinenumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">10</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BaseLineNumber2&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">10</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}]}</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">BaseDocEntry</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Base DocEntry or Work order</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">BaseLineNumber</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal">Base Line Number (example RDR1.LineNumber) </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">BaseType</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Define base document </a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_Example">Example</span>: 17=Sales Order, 13=PreInvoice</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: </span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Only &nbsp;if RetrievalDocument=false</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Base Information on Header Level have higher Priority. But use base information on line Level.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">BatchGroup</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">boolean</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Define the line / batch grouping</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">This defines the grouping of Serial or Batch managed item in a document</p>
+<p class="p_Normal">Grouping only if Serial/Batch Number has same Warehouse, Linked document, same price and so on</p>
+<p class="p_Normal">NOTE: Always work with grouping, because it has better performance than without grouping.</p>
+<p class="p_Normal">&nbsp;<br />
+<span class="f_Example">Example:</span> this document</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DocumentLines&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;RM_B&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BatchNumbers&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DistNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BT-014&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">2,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DistNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BT-015&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">2</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">The system creates the following document lines:</p>
+<p class="p_Normal"><span class="f_CourierFixed">RM_B, WhsCode 01, Quantity 4</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp;With 2x Batch Number BT-014 and 2x BT015</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">And with the following example</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">BatchGroup</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">false</span><span class="f_CodeExample" style="color: #ff0000;">,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #a04db3;">&quot;DocumentLines&quot;</span><span class="f_CodeExample" style="color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;RM_B&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BatchNumbers&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:[</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DistNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BT-014&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">2,</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">{</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DistNumber&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BT-015&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="color: #0000ff;">2</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">]</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_Normal">creates the document</p>
+<p class="p_Normal">The system createsthe following document lines</p>
+<p class="p_Normal"><span class="f_CourierFixed">RM_B, WhsCode 01, Quantity 2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp;With 2x Batch Number BT-014 </span></p>
+<p class="p_Normal"><span class="f_CourierFixed">RM_B, WhsCode 01, Quantity 2</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp;With 2x Batch Number 2x BT015</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">CardCode</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String(20)</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Business Partner </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">CardName</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">String(100)</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal">Name of Business Partner</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">Comments</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String(255)</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Long comments</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">DelReservation</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">boolean</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Delete reservation</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Delete all resevation entries, which defined in </p>
+<p class="p_Normal">ReservationDocEntry,ReservationLineNumber</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if the document based on reservation, you must define the reservation information on line level</p>
+<p class="p_Normal"><span class="f_CourierFixed">resDocEntry</span> = DocEntry from reservation</p>
+<p class="p_Normal"><span class="f_CourierFixed">resLineNumber</span> = Line Number from reservation</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note:</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Not supported for</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">- Work order Issue</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">- Transfer processes (the system moves the reservations automatically)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">DocDueDate</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">Date</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Sets or returns the document due date (for example, Delivery Date in sales orders, Value Date in invoices, Valid To in quotations, and so on). <span style="font-weight: bold;">Mandatory</span> in Sales documents.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">DocumentDate</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">Date</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal">Document Date. Default=Today</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">DocumentLines</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">DocumentLines</p>
+</td>
+<td class="fielddescription" style="width:769px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Present the Lines from the document</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">This define the Document lines</p>
+<p class="p_Normal">For more information see the Line object in this document.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Attention">Attention</span>: Use always &quot;ObjectTyp&quot;Lines in GET Command</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: ReceiptLines, IssueLines, PoReceiptLines</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">DocumentPerWorkOrder</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">boolean</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal"><span style="font-weight: bold;">true</span>=If you defined WoDocEntry, the system split this for every Work order</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">DocumentsOwner</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Define the Document Owner</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">DontDelete</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">boolean</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal">do not delete entries from table BEAS_PLANDOCUMENT_LINE</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">ExternalDocEntry</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">Number</p>
+</td>
+<td class="fielddescription" style="width:769px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Related to external process ...</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Use this for provision - transfer process</p>
+<p class="p_Normal">set the externalDocentry (from <a href="bslexternalpurchaseorder.htm" class="topiclink">ExternalPurchaseOrder</a>) and Allocation:true</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">FolioNumberFrom</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Property for Argentina location</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">FolioNumberTo</p>
+</td>
+<td class="fielddescription" style="width:128px;"><br />
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Property for Argentina location</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">GenerateQcOrder</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">boolean</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Generate a QC order for the PostIn Document</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if true, the system create a QC document, if a QC document is defined for this transaction and item</p>
+<p class="p_Normal">Current supported: </p>
+<p class="p_Normal">- Manual Receipt</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">Letter</p>
+</td>
+<td class="fielddescription" style="width:128px;"><br />
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Property for Argentina location</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">NumAtCard</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal">Define the Reference Number from Business Partner</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">PDocType</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Define the Document Type</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">empty: Read from Reservation. Define filter in property &quot;Filter&quot;</p>
+<p class="p_Normal">BSL: you define the line in the JSON string</p>
+<p class="p_Normal">all other: You can read this from table BEAS_PLANDOCUMENT_LINE</p>
+<p class="p_Normal">Define the filter in &quot;Filter&quot; and the DocEntry in Parameter &quot;PDocEntry&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Related to follow Properties</p>
+<p class="p_Normal">Filter=[filter for BEAS_RESERVATION&quot; or &quot;BEAS_PLANDOCUMENT_LINE&quot;]</p>
+<p class="p_Normal">PDocEntry=[BEAS_PLANDOCUMENT_LINE.LineNumber]</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">PriceType</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">string</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Define the Price</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define the price determination for every line</p>
+<p class="p_Normal"><span style="font-weight: bold;">manuell</span> &nbsp;= use price defined in BEAS_PLANDOCUMENT_LINE or Json String</p>
+<p class="p_Normal"><span style="font-weight: bold;">none</span> = no price (use SAP Standard functionality)</p>
+<p class="p_Normal"><span style="font-weight: bold;">zeroprice</span> = price is always 0</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if not defined:</p>
+<p class="p_Normal">if this is a retrieval document, then &quot;none&quot; </p>
+<p class="p_Normal">for all other: use beas standard price determination</p>
+<p class="p_Normal">(Related to setting &quot;<span class="f_CourierFixed">mw_zubuchen_price_e</span>&quot; and &quot;<span class="f_CourierFixed">mw_zubuchen_price_k</span>&quot;</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">PrintReport</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">Boolean</p>
+</td>
+<td class="fielddescription" style="width:769px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Print Report after creation</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">If true, the system print the report defined in WEB APP -&gt; App Settings</p>
+<p class="p_Normal">(from current program_id and app_id)</p>
+<p class="p_Normal">Note: Use this only if you work with beas web app framework.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">PTICode</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Point of Issue User Association</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Point of Issue User Association. Reference to table USR8/OPTI for location Argentinia. <span class="f_beas_Version">beas 2020.09</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">Reference2</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String(11)</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Reference 2 on document level</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">Remarks</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">string</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Remarks (comments/notes)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">ReservationDocEntry</p>
+</td>
+<td class="fielddescription" style="width:128px;"><br />
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Link to Reservation BEAS_RESERVATION_LINE.RES_DOCENTRY</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">ResevationLineNumber</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><br />
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Link to Reservation BEAS_RESERVATION_LINE.RES_LINENUM</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">RetrievalDocument</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">boolean</p>
+</td>
+<td class="fielddescription" style="width:769px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Define base type</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">true</span>=Retrieval document from SAP Document</p>
+<p class="p_Normal">Example Sales order to Delivery order</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: </span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Define BaseDocument on LineLevel true</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Header information are not copied from target to source document !</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Expenses Management</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Beas support &quot;Expenses Management&quot; from Sales Order to a target document</p>
+<p class="p_Normal">(&quot;CINF&quot;.&quot;EnblExpns&quot;=Y, system read entries from Table &quot;RDR3&quot;)<br />
+Base document is the Document, which is defined in the first line.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">false</span>=save only link to another document (in beas fields)</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">Series</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">string</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Define the Document Series</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">User alternative Document Number Series (Table NNM1) related to current used Document Type</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_See">See</span> <span class="f_Linklink_link">Administration &gt; System Initialization &gt; Document Numbering </span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">Sort</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">string(255)</p>
+</td>
+<td class="fielddescription" style="width:769px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Define the order of lines</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span style="font-weight: bold;">none:</span> &nbsp;use same sorting as defined in JSON String<br />
+<span class="f_Example">Example</span>: <span class="f_CourierFixed">&quot;Sort&quot;:&quot;none&quot;</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span style="font-weight: bold;">empty</span> (=Not defined, Standard): <br />
+ Retrieval document: By <span class="f_CourierFixed">base line number, Warehouse, DistNumber</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"> &nbsp; &nbsp; &nbsp; New documents: By <span class="f_CourierFixed">Warehouse, ItemCode, DistNumber</span></p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">or define own order (DataWindow syntax)</p>
+<p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;"><span class="f_Example">Example</span>: base document line descending: <span class="f_CourierFixed">&quot;Sort:&quot;,&quot;base_linenum desc&quot;</span></p>
+<p class="p_Normal">Field names: See table BEAS_PLANDOCUMENT_LINE</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">specialLines</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">Define Text and Summary Line in one Text line</a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Not available in Incoming Goods or Work order receipt/issue function</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This allows to define special lines in one String</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">lineType=afterLine [=Text] ++ lineType=afterLine [=Text] ++ </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">lineType: T = Test, S=Summary</p>
+<p class="p_Normal">afterLine: -1 = in first row, all other: Number of item line</p>
+<p class="p_Normal">text = for Text lines: </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example:</p>
+<p class="p_Normal"><img alt="specialline" width="446" height="115" style="margin:0;width:446px;height:115px;border:none" src="specialline.png"/></p>
+<p class="p_Normal">you need follow string</p>
+<p class="p_Normal"><span class="f_CourierFixed">T=-1=Text at first row++T=0=my textline++S=0</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_beas_Version"><span class="f_beas_Version">beas 2020.08</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">TaxDate</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">Date</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Tax Date. Default=SAP Standard</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">TrackingNumber</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal">Define the Tracking Number</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">TransportationCode</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Define the Transportation code</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">U_xxx</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal">Define UDF fields. System support ONLY String format, but can write all data types.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">ToWareHouse</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Transfer Document: Target WareHouse (Note: can be defined in line level too)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px; background-color:#F7F7F7;"><p class="p_Normal">ToBinCode</p>
+</td>
+<td class="fielddescription" style="width:128px; background-color:#F7F7F7;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px; background-color:#F7F7F7;"><p class="p_Normal">Transfer Document: Target Bin Code (Note: can be defined in line level too)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:238px;"><p class="p_Normal">ToRfid</p>
+</td>
+<td class="fielddescription" style="width:128px;"><p class="p_Normal">String</p>
+</td>
+<td class="fielddescription" style="width:769px;"><p class="p_Normal">Transfer Document: Target RFID/LUID (Note: can be defined in line level too)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

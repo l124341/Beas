@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>POST</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="A Time Receipt is a summary of many objects - The Time Receipt itself - Time Receipt Scrap information - Issue Document - Receipt Document In the background - Post Calculat" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bsl_timereceiptscrap.htm",
+   prevP: "bsltimereceiptget.htm",
+   currP: "bsltimereceiptpost.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "POST",
+   mailsubject: "Feedback on: Beas Script 2026.09 - POST",
+   sharesubject: "Beas Script 2026.09 - POST",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bsltimereceiptPOST",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Production &gt; TimeReceipt &gt; POST /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - POST").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bsltimereceiptpost.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>POST</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">POST</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A Time Receipt is a summary of many objects</p>
+<p class="p_Normal">- The Time Receipt itself</p>
+<p class="p_Normal">- Time Receipt Scrap information</p>
+<p class="p_Normal">- Issue Document</p>
+<p class="p_Normal">- Receipt Document</p>
+<p class="p_Normal">In the background</p>
+<p class="p_Normal">- Post Calculation</p>
+<p class="p_Normal">- Additional Warehouse transaction</p>
+<p class="p_Normal">- Quality Control Order</p>
+<p class="p_Normal">- Close Document request</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It is possible to create a time receipt with automatic backflushing process.</p>
+<p class="p_Normal">It is possible to create a time receipt with all information about Issue and Receipt documents.</p>
+<p class="p_Performancenotes"><span class="f_Performancenotes">Note: this produces many SAP Transactions. Don't use this for machine collection directly. Work with middle layer and post time receipt only 1 time / order!</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example</span></p>
+<p class="p_Normal">Create Time Receipt for work order 1314, Line 10, Routing Position 10 and PersonnelId 14 for 2 Pcs from 8 to current time.</p>
+<p class="p_Normal">(Assembly: If Stock and Production unit not the same or Consume Unit is defined:  <span class="f_See">See</span> &quot;<a href="bsl_timereceipt.htm#confirmunit" class="topiclink">Confirm Units</a>&quot;</p>
+<p class="p_Normal"><span style="color: #ff0000;">With Scrap Definition</span></p>
+<p class="p_Normal"><span style="color: #008000;">With Issue Document</span></p>
+<p class="p_Normal"><span style="color: #0000ff;">With Reciept Document</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">[</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">{&quot;DocEntry&quot;:1314,&quot;LineNumber&quot;:10,&quot;LineNumber2&quot;:10,</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">&quot;PersonnelId&quot;:&quot;14&quot;,</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">&quot;QuantityGoodRUoM&quot;:2, </span><span class="f_CourierFixed" style="color: #008000;">// Good Quantity in UoM defined in routing position</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">&quot;FromTime&quot;:&quot;8:00&quot;,</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">&quot;ToTime&quot;:&quot;9:00&quot;,</span><br />
+<span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">&quot;Duration&quot;:60, </span><br />
+<span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed">&quot;TimeReceiptScrap&quot;:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span class="f_CourierFixed" style="color: #ff0000;">{&quot;ScrapId&quot;:&quot;DontCheckQty&quot;,&quot;Quantity&quot;:3,&quot;UDF1&quot;:&quot;test&quot;},</span></p>
+<p class="p_Normal"> &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="f_CourierFixed" style="color: #ff0000;">{&quot;ScrapId&quot;:&quot;Scrap-001&quot;,&quot;Quantity&quot;:3,&quot;UDF1&quot;:&quot;test&quot;}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #ff0000;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;],</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed" style="color: #008000;">&quot;Issue&quot;:{&quot;Lines&quot;:[{&quot;ItemCode&quot;:&quot;RM&quot;,&quot;WhsCode&quot;:&quot;01&quot;,&quot;Quantity&quot;:1,&quot;BaseLineNumber2&quot;:10}]},</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed" style="color: #0000ff;">&quot;Receipt&quot;:{&quot;Lines&quot;:[{&quot;ItemCode&quot;:&quot;FP&quot;,&quot;WhsCode&quot;:&quot;01&quot;,&quot;Quantity&quot;:2}]}</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Result</p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">{</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;value&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">1</span><span style="font-size: 9pt; font-family: Consolas;">,</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;SystemNumber&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: [</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">3624</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp;],</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;values&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: [</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;{</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;TimeReceiptEntry&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">3624</span><span style="font-size: 9pt; font-family: Consolas;">, // System number of created time receipt</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;BoMIssueDocEntry&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">2609</span><span style="font-size: 9pt; font-family: Consolas;">, // Document entry from created Issue document (or 0)</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;BoMReceiptDocEntry&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">0</span><span style="font-size: 9pt; font-family: Consolas;">, // Document entry from created receipt document for negative bom positions (or 0)</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;ReceiptDocEntry&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">3960</span><span style="font-size: 9pt; font-family: Consolas;">, // Document entry from created receipt document for assembly (or 0)</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;TimeReceiptJournalEntry&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">0</span><span style="font-size: 9pt; font-family: Consolas;">, // Document entry from time receipt based journal entry</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;QCOrderId&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #0451a5;">&quot;P6002229/10/10&quot;</span><span style="font-size: 9pt; font-family: Consolas;">, // QC Order Id</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span><span style="font-size: 9pt; font-family: Consolas; color: #a31515;">&quot;QCOrderDocEnrty&quot;</span><span style="font-size: 9pt; font-family: Consolas;">: </span><span style="font-size: 9pt; font-family: Consolas; color: #098658;">1</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;"> &nbsp; &nbsp;]</span></p>
+<p class="p_Normal" style="line-height: 1.80; margin: 0 0 0 0;"><span style="font-size: 9pt; font-family: Consolas;">}</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">All properties are available from TimeReceipt, <a href="bsl_timereceiptscrap.htm" class="topiclink">TimeReceiptScrap</a>, Issue and ReceiptDocument.</p>
+<p class="p_Normal">In Receipt and Issue document you don't need to define <span class="f_CourierFixed">BaseDocentry/BaseLineNumber</span>, only <span class="f_CourierFixed">LineNumber2</span> for BoM Position.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The System does not check if the defined Material is OK. If wrong Material is defined, the system books the wrong Material.</p>
+<p class="p_Normal">The System books Items only for not closed Positions. If the position is closed or the position number is wrong, the system ignores the Information without displaying an error message.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Confirm Units, Unit Conversions</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><a id="confirmunit" class="hmanchor"></a>In routing position &gt; extended &gt; Confirm Unit you can define a Confirm unit &nbsp;and a Conversion Factor.</p>
+<p class="p_Normal">If you want to work with the confirm unit, &nbsp;you must define the quantity in field <span class="f_CourierFixed">QuantityGoodRUoM</span></p>
+<p class="p_Normal">You can read the UoM in <span class="f_CourierFixed">WorkorderRouting/RUoM</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you want to create a receipt for the assembly in same time you must calculate the quantity in Warehouse Unit from the Assembly</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Formula is </p>
+<p class="p_Normal"><span class="f_CourierFixed">Receipt Quantity = QuantityGoodRUoM * WorkorderRouting/RUoMFactor : WorkorderPos/UoMConsumptionFactor</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Additional Properties are Available</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal"><span style="font-weight: bold;">Field</span></p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal"><span style="font-weight: bold;">Type</span></p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">DocEntry</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Integer</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Work order DocEntry</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">LineNumber</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.Integer</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Work order Position </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">LineNumber2</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Integer</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Work order Routing Position (internal Number)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">LineNumber3</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.Integer</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Optional Position Parallel Resource</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">PersonnelId</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">PersonnelId </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">TimeType</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Optional The Time Type</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">ResourceId</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Optional The ResourceId, if not Standard ResourceId</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">QuantityGood</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Optional Quantity in Unit of Assembly</p>
+<p class="p_Normal">If you set the quantity with this property, you don't need to define the QuantityGoodRUoM</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">QuantityGoodRUoM</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Quantity in Unit of Measurement from Routing Position. <br />
+If you set the quantity with this property, you don't need to define the QuantityGood</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">QuantityScrap</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Optional Quantity Scrap in Unit of Assembly</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">QuantityScrapRUoM</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Optional Quantity Scrap in Unit of measurement from Routing position. Don't define this, if scrap information defined</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; height:23px;"><p class="p_Normal">ExternalCosts</p>
+</td>
+<td class="fielddescription" style="width:91px; height:23px;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:1118px; height:23px;"><p class="p_Normal">Price</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">Remarks</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">a Remark</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">CostElementId</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Optional Cost Element Id</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">CostCenter</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Optional Cost Center</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">DocDate</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Define the document (Validation) Date</p>
+<p class="p_Normal">In Beas Userinterface the DocDate and StartDate is always the same<br />
+In BSL you must define the DocDate separately</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">StartDate</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Start date</p>
+<p class="p_Normal">Information: StartDateTime is not allowed. Use Start Date and Start Time<br />
+<span class="f_Note">Note: if StarDate is not today, you must define the DocDate and the Date in Receipt and Issue Document too </span><span class="f_beas_Version">(Beas 2020.02.01).</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Example</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">6001745</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;LineNumber&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;10&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;LineNumber2&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;10&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;PersonnelId&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;1&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;QuantityGood&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">1</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;DocDate&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #008000;">&quot;2020/02/28&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #008000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;StartDate&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #008000;">&quot;2020/02/28&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #008000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;EndDate&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;2020/02/28&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Duration&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;75&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ResourceId&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;R-01-1T.STD.08H&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;QuantityScrap&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">0</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Remarks&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;2554_20_10_4&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #008000;">/*&nbsp;Note:&nbsp;if&nbsp;you&nbsp;set&nbsp;this&nbsp;to&nbsp;true:&nbsp;See&nbsp;CloseEntry&nbsp;*/</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ManualBooking&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Issue&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Date&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #008000;">&quot;2020/02/28&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Lines&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;RM&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">1</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;BaseLineNumber2&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">10</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}]},</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Receipt&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Date&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;2020/02/28&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Lines&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">[{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;FP001&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">1</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">false</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span><span class="f_CourierFixed" style="font-size: 10pt;">]}</span></p>
+<p class="p_Normal"><span class="f_CourierFixed" style="font-size: 10pt;">}]</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">StartTime</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Start time</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">EndDate</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Date</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Optional End Date. If this is the actual Date, you do not need to define it.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">EndTime</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Optional End Time. If this is the actual Time, you do not need to define it.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">FromTimeReceiptRunning</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Integer</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Get all information from the TimeReceiptRunning with defined System Number. In this case you don't need to define StartDate or StartTime</p>
+<p class="p_Normal">The TimeReceiptRunning Entry will be deleted.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">CloseEntry</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Close Routing position</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">if defined as &quot;true&quot;, the system will close the routing position</p>
+<p class="p_Normal">if this the last routing position, the system will related to close the work order position and com </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to close the position with receipt assembly, the system will close the receipt position too<br />
+You don't need to send the close information to the receipt document</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">TimeReceipt</span><span class="f_CodeExample" style="font-size: 10pt;">&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;CloseEntry&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #993300;">true</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #339966;">&nbsp;/*&nbsp;Last&nbsp;entry.&nbsp;We&nbsp;will&nbsp;close&nbsp;time&nbsp;receipt&nbsp;and&nbsp;work&nbsp;order&nbsp;position&nbsp;*/</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Receipt&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;</span><span class="f_CodeExample" style="font-size: 10pt; color: #666699;">Lines</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;:[{</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;FP&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">2</span><br />
+<span class="f_CodeExample" style="font-size: 10pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}]</span><br />
+<span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">&nbsp;&nbsp;}</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">ManualBooking</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Define the material booking process</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Define if the system should create the issue and receipt document automatically, related to the configuration settings or if you define the material itself in this post command.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_TitleinText"><span class="f_TitleinText">&quot;ManualBooking&quot;:</span><span class="f_TitleinText" style="color: #ff0000;">true</span></p>
+<p class="p_Normal">You define the materual for issue in &nbsp;.. <span style="font-weight: bold;">&quot;issue&quot;</span>:{<a href="bsl_issuewo.htm" class="topiclink">IssueWo</a>} and <span style="font-weight: bold;">&quot;receipt&quot;</span>:{<a href="bsl_receiptwo.htm" class="topiclink">receiptWo</a>}</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">{&quot;DocEntry&quot;:1314,&quot;LineNumber&quot;:10,&quot;LineNumber2&quot;:10,&quot;PersonnelId&quot;:&quot;14&quot;,&quot;QuantityGood&quot;:2,&quot;FromTime&quot;:&quot;8:00&quot;,</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed" style="color: #008000;">&quot;Issue&quot;:{&quot;Lines&quot;:[{&quot;ItemCode&quot;:&quot;RM&quot;,&quot;WhsCode&quot;:&quot;01&quot;,&quot;BaseLineNumber2&quot;:10}]},</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_CourierFixed" style="color: #0000ff;">&quot;Receipt&quot;:{&quot;Lines&quot;:[{&quot;ItemCode&quot;:&quot;FP&quot;,&quot;WhsCode&quot;:&quot;01&quot;,&quot;Quantity&quot;:2}]}</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">}</span></p>
+<p class="p_Normal">With the <a href="bsl_preassign.htm" class="topiclink">PreAssign</a> object you can read the material needed for this time receipt</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">&quot;ManualBooking&quot;:</span><span style="font-weight: bold; color: #ff0000;">false</span></p>
+<p class="p_Normal">The system checks the Configuration wizard settings and related to this setting the system create the issue / receipt document automatically.</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: if the assembly is booked on a bin managed warehouse, then this produce an error or an open document</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">TimeReceiptRunningId</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.Integer</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">The System Number of linked TimeReceiptRunning Object. Define this if you don't use &quot;FromTimeReceiptRunning&quot;, but it's linked to the item.</p>
+<p class="p_Normal">Needed for calculating Duration</p>
+<p class="p_Normal">The system will delete the entry after saving.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">TimeReceiptScrap</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Array</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Define Json Array with Scrap Information</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">[</span><br />
+<span class="f_CodeExample" style="font-size: 9pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">{</span><br />
+<span class="f_CodeExample" style="font-size: 9pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 9pt; font-style: italic; color: #0000ff;">&quot;ScrapId&quot;</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 9pt; color: #666699;">edm</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-size: 9pt;">String</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 9pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 9pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 9pt; color: #666699;">edm</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-size: 9pt; color: #666699;">Decimal</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 9pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 9pt; font-style: italic; color: #0000ff;">&quot;UDF1&quot;</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">...</span><span class="f_CodeExample" style="font-size: 9pt; font-style: italic; color: #0000ff;">&quot;UDF4&quot;</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 9pt; color: #666699;">edm</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-size: 9pt;">String</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 9pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 9pt; font-style: italic; color: #0000ff;">&quot;ScrapReason&quot;</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 9pt; color: #666699;">edm</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-size: 9pt;">String</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">,</span><br />
+<span class="f_CodeExample" style="font-size: 9pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 9pt; font-style: italic; color: #0000ff;">&quot;Percent&quot;</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 9pt; color: #666699;">edm</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-size: 9pt; color: #666699;">Decimal</span><br />
+<span class="f_CodeExample" style="font-size: 9pt;">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">}</span><br />
+<span class="f_CodeExample" style="font-size: 9pt; font-weight: bold; color: #ff0000;">]</span></p>
+<p class="p_Normal">Quantity in UoM of Routing Position<br />
+The system calculates the Scrap Quantity automatically. </p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">BatchNum</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Set the Batch number in the Time Receipt object. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example: </span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">bsl.post(&quot;TimeReceipt&quot;,{DocEntry:202200350,LineNumber:10,LineNumber2:10,PersonnelId:&quot;1&quot;,Duration:5.5,QuantityGood:0.1,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; font-weight: bold; color: #0000ff;">BatchNum:&quot;Example&nbsp;BatchNum</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;});</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;">&nbsp;</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">Duration</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Duration in Minute</p>
+<p class="p_Normal">If not defined, the system calculates this automatically.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">Barcode</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Optional: Define Document by Routing Barcode<br />
+(Not compatible if you work with parallel Resource)</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">CalculateDuration</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Bolean</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Define if the system must calculate the duration.<br />
+You don't need to set this. If Duration is not defined, the system calculates this always. But it's possible to disable the automatic calculation.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">Issue</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.Json</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Define the Issue document for all material positions</p>
+<p class="p_Normal">Don't define DocEntry or LineNumber. Only LineNumber2 for Bill of Material positions must be defined.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For more information <span class="f_See">see</span> <a href="bslissue.htm" class="topiclink">Issue Document</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed" style="color: #008000;">&quot;Issue&quot;:{&quot;Lines&quot;:[{&quot;ItemCode&quot;:&quot;RM&quot;,&quot;WhsCode&quot;:&quot;01&quot;,&quot;Quantity&quot;:1,&quot;Number2&quot;:10}]}</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">Receipt</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.Json</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Define the receipt document</p>
+<p class="p_Normal">Don't define DocEntry or LineNumber.</p>
+<p class="p_Normal">For more information <span class="f_See">see</span> <a href="bslreceipt.htm" class="topiclink">Receipt Document</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span> </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Receipt&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Lines&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:[{</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;ItemCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;FP&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;01&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-size: 10pt; font-style: italic; color: #0000ff;">&quot;Quantity&quot;</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-size: 10pt; color: #0000ff;">2</span><span class="f_CodeExample" style="font-size: 10pt; font-weight: bold; color: #ff0000;">}]}</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">LogInfo</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">Information on Time Calculation.</p>
+<p class="p_Normal">The function TimeReceipt.TimeCalculation return this information.</p>
+<p class="p_Normal">You must define this if time Calculation is not inside this process.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px; background-color:#F7F7F7;"><p class="p_Normal">LogInfoHtml</p>
+</td>
+<td class="fielddescription" style="width:91px; background-color:#F7F7F7;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px; background-color:#F7F7F7;"><p class="p_Normal">Information on Time Calculation in HTML Format.</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:78px;"><p class="p_Normal">UDF1...UDF15</p>
+</td>
+<td class="fielddescription" style="width:91px;"><p class="p_Normal">Edm.String</p>
+</td>
+<td class="fielddescription" style="width:1118px;"><p class="p_Normal">UDF 1-15 <span class="f_beas_Version">Beas2020.08</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

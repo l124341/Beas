@@ -1,0 +1,1920 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>GET</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="QCOrder &nbsp;Property Description Table &nbsp;BEAS_QSFTHAUPT Primary key DocEntry/i $transaction no $branch no $mask no &nbsp;Fields Name Type Description DocEntry Edm.Int3" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslqcorderput.htm",
+   prevP: "bslqcorder.htm",
+   currP: "bslqcorderget.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "GET",
+   mailsubject: "Feedback on: Beas Script 2026.09 - GET",
+   sharesubject: "Beas Script 2026.09 - GET",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "BslQCORderGet",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; QualityControl &gt; QCOrder &gt; GET /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - GET").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslqcorderget.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>GET</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">GET</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><link rel="stylesheet" href="http://beascloud.com/docs/help/beasscript2/highlight/styles/default.css">  <script src="http://beascloud.com/docs/help/beasscript2/highlight/highlight.pack.js"></script>  <script>hljs.initHighlightingOnLoad();</script>  </p>
+<p class="p_Normal">QCOrder</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Property</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Table</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed"> BEAS_QSFTHAUPT</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Primary key</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">DocEntry/i</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">$transaction</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">no</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">$branch</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">no</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">$mask</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">no</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Fields</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Name</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Type</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocEntry</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">DocEntry</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Entity Relation: <span class="f_CourierFixed"> QCOrderSamples -&gt; DocEntry</span></p>
+<p class="p_Normal">Entity Relation: <span class="f_CourierFixed"> QCOrderMeasurement -&gt; DocEntry</span></p>
+<p class="p_Normal">Entity Relation: <span class="f_CourierFixed"> QCOrderAttachment -&gt; DocEntry</span></p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;DocEntry&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">DocOrder</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">QC Order Number</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Id of the QC order document </p>
+<p class="p_Normal">First letter present the document type</p>
+<p class="p_Normal">Goods receipt PO (I) Purchase goods receipt</p>
+<p class="p_Normal">Production (E) Assembly posting in production</p>
+<p class="p_Normal">Sales-Return (R) Sales credit or offset</p>
+<p class="p_Normal">Reaching Date of Expiry (C) Set at &quot;batches to be verified&quot;</p>
+<p class="p_Normal">Stock transfer (T) for stock transfer</p>
+<p class="p_Normal">Goods Receipt (M) for all manual postings</p>
+<p class="p_Normal">AP Invoice (X) purchase invoices</p>
+<p class="p_Normal">Negative Purchase returns (Y) for returns from purchase with negative amounts</p>
+<p class="p_Normal">Credit Memos (O) credit memos</p>
+<p class="p_Normal">Negative Delivery (P) deliveries with negative amounts</p>
+<p class="p_Normal">Negative Invoices (Q) invoices with negative amounts</p>
+<p class="p_Normal">Split batch (A) At batch split</p>
+<p class="p_Normal">Transfer batch (B) At a batch transfer</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">At the end, the number of the origin document is displayed (goods receipt, work order document etc.)</p>
+<p class="p_Normal">Primary key</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;CHARGE_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocOrder2</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">QC Order Number 2</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Primary key</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BELNR_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">DocDate</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.DateTimeOffset</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Document Date</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;PRODUZIERT_AM&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Item</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Entity Relation: <span class="f_CourierFixed"> Item -&gt; ItemCode</span></p>
+<p class="p_Normal">Linked table: OITM</p>
+<p class="p_Normal">Linked column: ItemCode</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ItemCode&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemName</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(255)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Item Name</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BEZ&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">IVersionId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Item Version</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;U_beas_ver&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">DrawingNumber</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Drawing Number</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ZNR&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">WhsCode</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Warehouse Id</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;WhsCode_ORG&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Quantity</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Quantity</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Quantity in Stock unit</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;MENGE&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UoMStock</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">UoM Stock</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Stock onut</p>
+<p class="p_Normal">Linked table: BEAS_ME</p>
+<p class="p_Normal">Linked column: ME_ID</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ME_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemInfo</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(16000)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Item Info</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;QcInfo&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DistNumber</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(40)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Batch Number</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> rtrim(&quot;BEAS_QSFTHAUPT&quot;.&quot;BatchNum&quot;)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">QCInspectionPlanId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">QC Inspection plan Id</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Linked table: BEAS_QSARTIKELHAUPT</p>
+<p class="p_Normal">Linked column: ItemCode</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;PRUEFAUFTRAG&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ParentQCOrder</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Parent QC Order</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> If defined: This QC order is part of QC order .... lined to field BEAS_QSFTHAUPT.CHARGE_ID (DocumentNumber)</p>
+<p class="p_Normal">Linked table: BEAS_QSFTHAUPT</p>
+<p class="p_Normal">Linked column: PARENTCHARGEID</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ParentChargeId&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemQcLinkId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">Item Link Id to QC</a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> In Item Master Data you can define the link to the QC Inspection plan</p>
+<p class="p_Normal">In this field the Number of link is saved</p>
+<p class="p_Normal">Linked table: BEAS_QSVERWEIS</p>
+<p class="p_Normal">Linked column: NR</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;QcItemNr&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">RuleId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B1','TOGGLE0186B1_ICON')">Rule Id</a></td></tr></table></div>
+<div id="TOGGLE0186B1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> In Item QC Link you can define a rule</p>
+<p class="p_Normal">This rule is additional check for parallel qc orders.</p>
+<p class="p_Normal">Linked table: BEAS_QSARTIKELSUB</p>
+<p class="p_Normal">Linked column: RuleId</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;RuleId&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Type</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B2','TOGGLE0186B2_ICON')">Base Type</a></td></tr></table></div>
+<div id="TOGGLE0186B2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Type of Base document</p>
+<p class="p_Normal">Constraints: </p>
+<p class="p_Normal">Goods receipt PO=W</p>
+<p class="p_Normal">Manufacturing Access=E</p>
+<p class="p_Normal">Operation=F</p>
+<p class="p_Normal">Exceeded Expiry date=C</p>
+<p class="p_Normal">Stock transfer=U</p>
+<p class="p_Normal">Book in manually=M</p>
+<p class="p_Normal">Return=R</p>
+<p class="p_Normal">Stock transfer=T</p>
+<p class="p_Normal">Batch=B</p>
+<p class="p_Normal">A/P invoice=X</p>
+<p class="p_Normal">Shopping return=Y</p>
+<p class="p_Normal">Incoming credit note=Z</p>
+<p class="p_Normal">Outgoing credit=O</p>
+<p class="p_Normal">Delivery=P</p>
+<p class="p_Normal">Outgoing invoice=Q</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;TYP&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">BaseType</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B3','TOGGLE0186B3_ICON')">Base Type</a></td></tr></table></div>
+<div id="TOGGLE0186B3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BaseType&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">BaseDocEntry</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B4','TOGGLE0186B4_ICON')">Base DocEntry</a></td></tr></table></div>
+<div id="TOGGLE0186B4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BASEDOCENTRY&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">BaseDocOrder</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B5','TOGGLE0186B5_ICON')">Base Order</a></td></tr></table></div>
+<div id="TOGGLE0186B5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BASEORDER&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">BaseLineNumber</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B6','TOGGLE0186B6_ICON')">Base Line Number</a></td></tr></table></div>
+<div id="TOGGLE0186B6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BASELINENUM&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">BaseLineNumber2</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B7','TOGGLE0186B7_ICON')">Base Line Number 2</a></td></tr></table></div>
+<div id="TOGGLE0186B7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BASELINENUM2&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">CardCode</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B8','TOGGLE0186B8_ICON')">Business Partner Id</a></td></tr></table></div>
+<div id="TOGGLE0186B8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> rtrim(&quot;BEAS_QSFTHAUPT&quot;.&quot;CardCode&quot;)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">PrjCode</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B9','TOGGLE0186B9_ICON')">Project Id</a></td></tr></table></div>
+<div id="TOGGLE0186B9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Project Id</p>
+<p class="p_Normal">Linked table: OPRJ</p>
+<p class="p_Normal">Linked column: PrjCode</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;Project&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">PrjUID</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BA','TOGGLE0186BA_ICON')">Project Line</a></td></tr></table></div>
+<div id="TOGGLE0186BA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Link to Project Line</p>
+<p class="p_Normal">Linked table: BEAS_PRJ_LINE</p>
+<p class="p_Normal">Linked column: PRJUID</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;PRJUID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CreatedUserSign</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BB','TOGGLE0186BB_ICON')">Created User Sign</a></td></tr></table></div>
+<div id="TOGGLE0186BB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Internal User Sign</p>
+<p class="p_Normal">Linked table: OUSR</p>
+<p class="p_Normal">Linked column: INTERNAL_K</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;INTERNAL_K&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">CreatedPersonellId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BC','TOGGLE0186BC_ICON')">Created Personell Id</a></td></tr></table></div>
+<div id="TOGGLE0186BC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Created by Personell Id</p>
+<p class="p_Normal">Linked table: BEAS_PERS</p>
+<p class="p_Normal">Linked column: PERS_ID</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;PERS_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CreatedBeasVersion</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BD','TOGGLE0186BD_ICON')">Created Beas Version</a></td></tr></table></div>
+<div id="TOGGLE0186BD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BEASVERSION&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">CreatedStation</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(40)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BE','TOGGLE0186BE_ICON')">Created Station</a></td></tr></table></div>
+<div id="TOGGLE0186BE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;STATION&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">WoDocEntry</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BF','TOGGLE0186BF_ICON')">Work order DocEntry</a></td></tr></table></div>
+<div id="TOGGLE0186BF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;FERT_BELNR_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">WoLineNumber</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C0','TOGGLE0186C0_ICON')">Work order Line</a></td></tr></table></div>
+<div id="TOGGLE0186C0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;FERT_BELPOS_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">WoLineNumber2</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C1','TOGGLE0186C1_ICON')">Work order BoM</a></td></tr></table></div>
+<div id="TOGGLE0186C1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;FERT_POS_ID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">SamplesOpen</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C2','TOGGLE0186C2_ICON')">Open Samples</a></td></tr></table></div>
+<div id="TOGGLE0186C2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> (select count(*) from &quot;BEAS_QSFTMESSUNG&quot; where &quot;BEAS_QSFTMESSUNG&quot;.&quot;CHARGE_ID&quot;=&quot;BEAS_QSFTHAUPT&quot;.&quot;CHARGE_ID&quot; and &quot;BEAS_QSFTMESSUNG&quot;.&quot;BELNR_ID&quot;=&quot;BEAS_QSFTHAUPT&quot;.&quot;BELNR_ID&quot; and Coalesce(&quot;BEAS_QSFTMESSUNG&quot;.&quot;Release&quot;,0)&lt;&gt;1 and &quot;BEAS_QSFTMESSUNG&quot;.&quot;PRUEFKZ&quot; not i</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">SamplesOK</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C3','TOGGLE0186C3_ICON')">Samples OK</a></td></tr></table></div>
+<div id="TOGGLE0186C3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> (select count(*) from &quot;BEAS_QSFTMESSUNG&quot; where &quot;BEAS_QSFTMESSUNG&quot;.&quot;CHARGE_ID&quot;=&quot;BEAS_QSFTHAUPT&quot;.&quot;CHARGE_ID&quot; and &quot;BEAS_QSFTMESSUNG&quot;.&quot;BELNR_ID&quot;=&quot;BEAS_QSFTHAUPT&quot;.&quot;BELNR_ID&quot; and Coalesce(&quot;BEAS_QSFTMESSUNG&quot;.&quot;Release&quot;,0)=1)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">SamplesError</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C4','TOGGLE0186C4_ICON')">Samples Not ok</a></td></tr></table></div>
+<div id="TOGGLE0186C4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> (select count(*) from &quot;BEAS_QSFTMESSUNG&quot; where &quot;BEAS_QSFTMESSUNG&quot;.&quot;CHARGE_ID&quot;=&quot;BEAS_QSFTHAUPT&quot;.&quot;CHARGE_ID&quot; and &quot;BEAS_QSFTMESSUNG&quot;.&quot;BELNR_ID&quot;=&quot;BEAS_QSFTHAUPT&quot;.&quot;BELNR_ID&quot; and Coalesce(&quot;BEAS_QSFTMESSUNG&quot;.&quot;Release&quot;,0)&lt;&gt;1 and &quot;BEAS_QSFTMESSUNG&quot;.&quot;PRUEFKZ&quot; in ('</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">PrintStatus</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C5','TOGGLE0186C5_ICON')">Printed</a></td></tr></table></div>
+<div id="TOGGLE0186C5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> case when &quot;BEAS_QSFTHAUPT&quot;.&quot;DRUCKKZ&quot; = 'J' then 1 else 0 end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">MaterialTransfer</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C6','TOGGLE0186C6_ICON')">Material Transfer Status</a></td></tr></table></div>
+<div id="TOGGLE0186C6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Constraints: </p>
+<p class="p_Normal">no transfer needed=0</p>
+<p class="p_Normal">open=1</p>
+<p class="p_Normal">booked=2</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;BEAS_QSFTHAUPT&quot;.&quot;MaterialTransfer&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Release</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C7','TOGGLE0186C7_ICON')">Release</a></td></tr></table></div>
+<div id="TOGGLE0186C7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;Release&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ReleasePersonnelId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C8','TOGGLE0186C8_ICON')">Release Personnel</a></td></tr></table></div>
+<div id="TOGGLE0186C8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ReleasePersId&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ReleasePersName</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C9','TOGGLE0186C9_ICON')">Release Personnel Name</a></td></tr></table></div>
+<div id="TOGGLE0186C9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ReleasePersName&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ReleaseStationId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CA','TOGGLE0186CA_ICON')">Release Station Id</a></td></tr></table></div>
+<div id="TOGGLE0186CA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ReleaseStationId&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ReleaseDate</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.DateTimeOffset</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CB','TOGGLE0186CB_ICON')">Release Date</a></td></tr></table></div>
+<div id="TOGGLE0186CB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ReleaseDate&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ValuationId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CC','TOGGLE0186CC_ICON')">Valuation Id</a></td></tr></table></div>
+<div id="TOGGLE0186CC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Linked table: BEAS_QSVALUATION</p>
+<p class="p_Normal">Linked column: ValuationId</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BEWERTUNG&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ValuationText</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(255)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CD','TOGGLE0186CD_ICON')">Valuation Text</a></td></tr></table></div>
+<div id="TOGGLE0186CD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BEWERTUNGINFO&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">BlockageReasonId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CE','TOGGLE0186CE_ICON')">Blockage Reason Id</a></td></tr></table></div>
+<div id="TOGGLE0186CE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Linked table: BEAS_QSSPERRGRUND</p>
+<p class="p_Normal">Linked column: SPERRGRUNDID</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;SPERRGRUNDID&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">BlockageReasonText</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(16000)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CF','TOGGLE0186CF_ICON')">Valuation Text</a></td></tr></table></div>
+<div id="TOGGLE0186CF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;SPERRGRUND&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Closed</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D0','TOGGLE0186D0_ICON')">QC order closed</a></td></tr></table></div>
+<div id="TOGGLE0186D0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> case when &quot;BEAS_QSFTHAUPT&quot;.&quot;ABGKZ&quot; = 'J' then 1 else 0 end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CloseDate</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.DateTimeOffset</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D1','TOGGLE0186D1_ICON')">Close Date</a></td></tr></table></div>
+<div id="TOGGLE0186D1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;CloseOrderDate&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ClosePersonellName</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D2','TOGGLE0186D2_ICON')">Close Personell Name</a></td></tr></table></div>
+<div id="TOGGLE0186D2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;CloseOrderPersName&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Picture1</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D3','TOGGLE0186D3_ICON')">Picture 1</a></td></tr></table></div>
+<div id="TOGGLE0186D3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BILD1&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Picture2</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D4','TOGGLE0186D4_ICON')">Picture 2</a></td></tr></table></div>
+<div id="TOGGLE0186D4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BILD2&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Picture3</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D5','TOGGLE0186D5_ICON')">Picture 3</a></td></tr></table></div>
+<div id="TOGGLE0186D5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;BILD3&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF1</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D6','TOGGLE0186D6_ICON')">UDF1</a></td></tr></table></div>
+<div id="TOGGLE0186D6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF1&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF2</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D7','TOGGLE0186D7_ICON')">UDF2</a></td></tr></table></div>
+<div id="TOGGLE0186D7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF2&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF3</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D8','TOGGLE0186D8_ICON')">UDF3</a></td></tr></table></div>
+<div id="TOGGLE0186D8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF3&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF4</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D9','TOGGLE0186D9_ICON')">UDF4</a></td></tr></table></div>
+<div id="TOGGLE0186D9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF4&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF5</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186DA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186DA','TOGGLE0186DA_ICON')">UDF5</a></td></tr></table></div>
+<div id="TOGGLE0186DA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF5&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF6</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186DB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186DB','TOGGLE0186DB_ICON')">UDF6</a></td></tr></table></div>
+<div id="TOGGLE0186DB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF6&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF7</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186DC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186DC','TOGGLE0186DC_ICON')">UDF7</a></td></tr></table></div>
+<div id="TOGGLE0186DC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF7&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF8</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186DD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186DD','TOGGLE0186DD_ICON')">UDF8</a></td></tr></table></div>
+<div id="TOGGLE0186DD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF8&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF9</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186DE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186DE','TOGGLE0186DE_ICON')">UDF9</a></td></tr></table></div>
+<div id="TOGGLE0186DE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF9&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF10</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186DF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186DF','TOGGLE0186DF_ICON')">UDF10</a></td></tr></table></div>
+<div id="TOGGLE0186DF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF10&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF11</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E0','TOGGLE0186E0_ICON')">UDF11</a></td></tr></table></div>
+<div id="TOGGLE0186E0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF11&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF12</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E1','TOGGLE0186E1_ICON')">UDF12</a></td></tr></table></div>
+<div id="TOGGLE0186E1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF12&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF13</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E2','TOGGLE0186E2_ICON')">UDF13</a></td></tr></table></div>
+<div id="TOGGLE0186E2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF13&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UDF14</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E3','TOGGLE0186E3_ICON')">UDF14</a></td></tr></table></div>
+<div id="TOGGLE0186E3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF14&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UDF15</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E4','TOGGLE0186E4_ICON')">UDF15</a></td></tr></table></div>
+<div id="TOGGLE0186E4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;UDF15&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">LastChangeDate</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.DateTimeOffset</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E5','TOGGLE0186E5_ICON')">Last Change Date</a></td></tr></table></div>
+<div id="TOGGLE0186E5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ANDTSTAMP&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">LastChangeUserId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E6','TOGGLE0186E6_ICON')">Last Change User Id</a></td></tr></table></div>
+<div id="TOGGLE0186E6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Primary key</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;BEAS_QSFTHAUPT&quot;.&quot;ANDUSER&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Relations</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Join to Entiy Object</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Relation</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Item</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UoM</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">UoMCode=UoMStock</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">QCOrderSamples</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocEntry</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">QCOrderMeasurement</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">DocEntry</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">QCOrderAttachment</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocEntry</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">DocumentBatchSerial</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">BaseType=DocType,BaseDocEntry=DocEntry,BaseLineNumber=LineNumber</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Functions</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Function</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Parameter</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">GetInspectionPlan</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Type/c,ItemCode/c,Version/c,CardCode/c,Quantity/n,WhsCode/c,Date/d</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E7','TOGGLE0186E7_ICON')">return Inspection Plan</a></td></tr></table></div>
+<div id="TOGGLE0186E7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">CreateQcOrderLockedBatches</p>
+</td>
+<td class="fielddescription"><br />
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E8','TOGGLE0186E8_ICON')">Create QC order for all locked batches</a></td></tr></table></div>
+<div id="TOGGLE0186E8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Generte QC order for all batches, which locked and a Inspection plan is defined for this scenario</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CreateQcOrder</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Type/c,DocEntry/i,BaseDocEntry/i,BaseLineNumber/i,BaseLineNumber2/i</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186E9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186E9','TOGGLE0186E9_ICON')">Create QC order based on linked document</a></td></tr></table></div>
+<div id="TOGGLE0186E9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Create a QC order related to a document</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Type:</p>
+<p class="p_Normal">F = Workorder routing position (Docentry=0, BaseX=Reference to the the Routing Position)</p>
+<p class="p_Normal">E = Work order BoM - PostIn Document (Docentry = PostIn Document, Base = Reference to the BoM Position)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For all other types please use CreateQcORderFromSAPDocument</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example: Create QC Order for a Routing Position</p>
+<p class="p_Normal">The DocEntry is always 0</p>
+<p class="p_Normal"><pre><code>
+get QCOrder/CreateQcOrder("F",0,1000,10,10 )
+</code></pre> </p>
+<p class="p_Normal">Note:</p>
+<p class="p_Normal">If you need QC order related to Issue/Receipt document, please use </p>
+<p class="p_Normal"><pre><code>
+get QCORder/CreateQcOrderFromSAPDocument
+</code></pre> </p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">CreateQcOrderFromGoodsReceiptPO</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">DocEntry/i</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186EA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186EA','TOGGLE0186EA_ICON')">Create QC order ffrom Purchase Order</a></td></tr></table></div>
+<div id="TOGGLE0186EA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Create a QC Order based on a SAP Goods Receipt PO for all lines, if a QC Inspection plan is defined for this items and related rules defined in configuration wizzard </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Example:</p>
+<p class="p_Normal">QCOrder/CreateQcOrderFromGoodsReceiptPO(100) -&gt; Create QC order for Purchase Order with DocEntry=100</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CreateQcOrderFromSAPDocument</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocEntry/i,TableName/c</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186EB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186EB','TOGGLE0186EB_ICON')">Create QC order for from SAP Document</a></td></tr></table></div>
+<div id="TOGGLE0186EB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Create a QC Order based on a SAP Document for all lines, if a QC Inspection plan is defined for this items and related rules defined in configuration wizzard </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Define the SAP Document by Table Name, example </p>
+<p class="p_Normal">from manual post in document</p>
+<p class="p_Normal"><pre><code>
+QCOrder/CreateQcOrderFromSAPDocment(100,"OIGE")
+</code></pre> </p>
+<p class="p_Normal">beas Script</p>
+<p class="p_Normal"><pre><code>
+declare bsl b
+b.GET QCOrder/CreateQcOrderFromSAPDocment(100,"OIGE")
+</code></pre> </p>
+<p class="p_Normal">Note: The system can generate more then one QC Document. The System don't return the created Document number</p>
+<p class="p_Normal">Note: if QC Document created by transaction notification, you must use the function</p>
+<p class="p_Normal"><pre><code>
+CreateQcOrderFromSAPDocumentDirect(DocEntry,Table )
+</code></pre> </p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">CreateQcOrderFromSAPDocumentDirect</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">DocEntry/i,TableName/c</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186EC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186EC','TOGGLE0186EC_ICON')">Create QC order for from SAP Document if transaction system disabled</a></td></tr></table></div>
+<div id="TOGGLE0186EC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Same as CreateQcOrderFromSAPDocument</p>
+<p class="p_Normal">But create QC order always and ignore transaction notification settings.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CheckRelease</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocEntry/i</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186ED_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186ED','TOGGLE0186ED_ICON')">Check the Measurement, Samples and QC order and Relase all, if possible</a></td></tr></table></div>
+<div id="TOGGLE0186ED" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Check Messurements, Samples,</p>
+<p class="p_Normal">Release Samples, if all Measurements ok</p>
+<p class="p_Normal">Release Order, if all Samples released</p>
+<p class="p_Normal">Related to settings in QC Plan.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Return Status 200 if no error, otherwise 400 with Error message.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><pre><code>
+odata4/QCOrder/CheckRelease(1250)
+</code></pre> </p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ReleaseQcOrder</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">DocEntry/i</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186EE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186EE','TOGGLE0186EE_ICON')">Release QC Order </a></td></tr></table></div>
+<div id="TOGGLE0186EE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Check, if Release is possible and release the QC order</p>
+<p class="p_Normal">Note: Electonic Signature not checked. The front end must do this self.</p>
+<p class="p_Normal"><pre><code>
+odata4/QCOrder/ReleaseQcOrder(1408)</code></pre> </p>
+<p class="p_Normal">return only status 200 OK or 404 not ok</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CloseQcOrder</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocEntry/i</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186EF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186EF','TOGGLE0186EF_ICON')">Close QC Order </a></td></tr></table></div>
+<div id="TOGGLE0186EF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Allow to close defined QC Order (DocEntry)</p>
+<p class="p_Normal"><pre><code>
+odata4/QCOrder/CloseQcOrder(1408)</code></pre> </p>
+<p class="p_Normal">return only status 200 OK or 404 not ok</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">CreateSample</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">DocEntry/i</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186F0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186F0','TOGGLE0186F0_ICON')">Create new sample inside the existing QC order</a></td></tr></table></div>
+<div id="TOGGLE0186F0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Allow creation of new sample inside an existing QC order</p>
+<p class="p_Normal"><pre><code>
+odata4/QCOrder/CreateSample(1408)</code></pre> </p>
+<p class="p_Normal">Return Json</p>
+<p class="p_Normal"><pre><code>
+{
+"DocEntry": [current DocEntry],
+"LineNumber": [number of created Sample]
+}</code></pre> </p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">QCOrderBatches</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocEntry/i</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186F1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186F1','TOGGLE0186F1_ICON')">return all related batch numbers from QC order</a></td></tr></table></div>
+<div id="TOGGLE0186F1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> This return all related batches from the QC order</p>
+<p class="p_Normal">this is working, if QC order created from SAP Document AND manually without any transaction</p>
+<p class="p_Normal">This return the array value with follow objects</p>
+<p class="p_Normal">ItemCode, SystemNumber, Status and Batch</p>
+<p class="p_Normal"><pre><code>
+get QCOrder/QCOrderBatches(18)
+</code></pre> </p>
+<p class="p_Normal">return follow JSON (example)</p>
+<p class="p_Normal"><pre><code>
+{
+    "value": [
+        {
+            "ItemCode": "po_batchauto",
+            "SystemNumber": 1011,
+            "Status": "0",
+            "Batch": "abc-1"
+        },
+        {
+            "ItemCode": "po_batchauto",
+            "SystemNumber": 1009,
+            "Status": "0",
+            "Batch": "abc-2"
+        },
+        {
+            "ItemCode": "po_batchauto",
+            "SystemNumber": 1010,
+            "Status": "0",
+            "Batch": "abc-3"
+        }
+    ]
+}
+</code></pre> </p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">TransferLoad</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">DocEntry/i</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186F2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186F2','TOGGLE0186F2_ICON')">return lines for transfer</a></td></tr></table></div>
+<div id="TOGGLE0186F2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Load all items, batch. and serial numbers, which must transfered </p>
+<p class="p_Normal">(Beas: Transfer function)</p>
+<p class="p_Normal"><pre><code>
+get QCOrder/TransferLoad(1410)
+</code></pre> </p>
+<p class="p_Normal"><pre><code>
+{
+    "value": [
+        {
+            "Quantity": 2,
+            "ItemCode": "po_batchauto",
+            "WhsCode": "01",
+            "Version": "1",
+            "DistNumber": "abc-2",
+            "Bincode": "",
+            "RFID": null,
+            "RejectQuantity": 0,
+            "TotalQuantity": 0,
+            "OpenQuantity": 2,
+            "SystemNumber": 1009,
+            "GoodQuantity": 0
+        },
+        {
+            "Quantity": 3,
+            "ItemCode": "po_batchauto",
+            "WhsCode": "01",
+            "Version": "1",
+            "DistNumber": "abc-3",
+            "Bincode": "",
+            "RFID": null,
+            "RejectQuantity": 0,
+            "TotalQuantity": 0,
+            "OpenQuantity": 3,
+            "SystemNumber": 1010,
+            "GoodQuantity": 0
+        }
+	]
+}</code></pre> </p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">TransferGetWareHouse</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DocEntry/i,Rejected/b</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186F3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186F3','TOGGLE0186F3_ICON')">return default target warehouse for transfer process</a></td></tr></table></div>
+<div id="TOGGLE0186F3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Return the target transfer warehouse related to rejected flag</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><pre><code>
+GET QCOrder/TransferGetWareHouse(1413,false)
+</code></pre> </p>
+<p class="p_Normal">return follow properties</p>
+<p class="p_Normal"><pre><code>
+{
+    "ToWhsCode": "SAP_BIN",
+    "ToBinCode": "SAP_BIN-AREA_B",
+	 "RuleId": "test",
+    "Description": "test1 QC"
+}
+</code></pre> </p>
+<p class="p_Normal">The system return the description of warehouse rule, if existing</p>
+<p class="p_Normal">If no rule found, the system return the default warehouse from the item and ToBinCode and Description is empty</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B1\',\'TOGGLE0186B1_ICON\')');
+HMInitToggle('TOGGLE0186B1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B2\',\'TOGGLE0186B2_ICON\')');
+HMInitToggle('TOGGLE0186B2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B3\',\'TOGGLE0186B3_ICON\')');
+HMInitToggle('TOGGLE0186B3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B4\',\'TOGGLE0186B4_ICON\')');
+HMInitToggle('TOGGLE0186B4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B5\',\'TOGGLE0186B5_ICON\')');
+HMInitToggle('TOGGLE0186B5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B6\',\'TOGGLE0186B6_ICON\')');
+HMInitToggle('TOGGLE0186B6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B7\',\'TOGGLE0186B7_ICON\')');
+HMInitToggle('TOGGLE0186B7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B8\',\'TOGGLE0186B8_ICON\')');
+HMInitToggle('TOGGLE0186B8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B9\',\'TOGGLE0186B9_ICON\')');
+HMInitToggle('TOGGLE0186B9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BA\',\'TOGGLE0186BA_ICON\')');
+HMInitToggle('TOGGLE0186BA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BB\',\'TOGGLE0186BB_ICON\')');
+HMInitToggle('TOGGLE0186BB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BC\',\'TOGGLE0186BC_ICON\')');
+HMInitToggle('TOGGLE0186BC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BD\',\'TOGGLE0186BD_ICON\')');
+HMInitToggle('TOGGLE0186BD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BE\',\'TOGGLE0186BE_ICON\')');
+HMInitToggle('TOGGLE0186BE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BF\',\'TOGGLE0186BF_ICON\')');
+HMInitToggle('TOGGLE0186BF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C0\',\'TOGGLE0186C0_ICON\')');
+HMInitToggle('TOGGLE0186C0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C1\',\'TOGGLE0186C1_ICON\')');
+HMInitToggle('TOGGLE0186C1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C2\',\'TOGGLE0186C2_ICON\')');
+HMInitToggle('TOGGLE0186C2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C3\',\'TOGGLE0186C3_ICON\')');
+HMInitToggle('TOGGLE0186C3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C4\',\'TOGGLE0186C4_ICON\')');
+HMInitToggle('TOGGLE0186C4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C5\',\'TOGGLE0186C5_ICON\')');
+HMInitToggle('TOGGLE0186C5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C6\',\'TOGGLE0186C6_ICON\')');
+HMInitToggle('TOGGLE0186C6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C7\',\'TOGGLE0186C7_ICON\')');
+HMInitToggle('TOGGLE0186C7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C8\',\'TOGGLE0186C8_ICON\')');
+HMInitToggle('TOGGLE0186C8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C9\',\'TOGGLE0186C9_ICON\')');
+HMInitToggle('TOGGLE0186C9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CA\',\'TOGGLE0186CA_ICON\')');
+HMInitToggle('TOGGLE0186CA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CB\',\'TOGGLE0186CB_ICON\')');
+HMInitToggle('TOGGLE0186CB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CC\',\'TOGGLE0186CC_ICON\')');
+HMInitToggle('TOGGLE0186CC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CD\',\'TOGGLE0186CD_ICON\')');
+HMInitToggle('TOGGLE0186CD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CE\',\'TOGGLE0186CE_ICON\')');
+HMInitToggle('TOGGLE0186CE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CF\',\'TOGGLE0186CF_ICON\')');
+HMInitToggle('TOGGLE0186CF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D0\',\'TOGGLE0186D0_ICON\')');
+HMInitToggle('TOGGLE0186D0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D1\',\'TOGGLE0186D1_ICON\')');
+HMInitToggle('TOGGLE0186D1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D2\',\'TOGGLE0186D2_ICON\')');
+HMInitToggle('TOGGLE0186D2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D3\',\'TOGGLE0186D3_ICON\')');
+HMInitToggle('TOGGLE0186D3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D4\',\'TOGGLE0186D4_ICON\')');
+HMInitToggle('TOGGLE0186D4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D5\',\'TOGGLE0186D5_ICON\')');
+HMInitToggle('TOGGLE0186D5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D6\',\'TOGGLE0186D6_ICON\')');
+HMInitToggle('TOGGLE0186D6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D7\',\'TOGGLE0186D7_ICON\')');
+HMInitToggle('TOGGLE0186D7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D8\',\'TOGGLE0186D8_ICON\')');
+HMInitToggle('TOGGLE0186D8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D9\',\'TOGGLE0186D9_ICON\')');
+HMInitToggle('TOGGLE0186D9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186DA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186DA\',\'TOGGLE0186DA_ICON\')');
+HMInitToggle('TOGGLE0186DA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186DB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186DB\',\'TOGGLE0186DB_ICON\')');
+HMInitToggle('TOGGLE0186DB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186DC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186DC\',\'TOGGLE0186DC_ICON\')');
+HMInitToggle('TOGGLE0186DC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186DD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186DD\',\'TOGGLE0186DD_ICON\')');
+HMInitToggle('TOGGLE0186DD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186DE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186DE\',\'TOGGLE0186DE_ICON\')');
+HMInitToggle('TOGGLE0186DE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186DF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186DF\',\'TOGGLE0186DF_ICON\')');
+HMInitToggle('TOGGLE0186DF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E0\',\'TOGGLE0186E0_ICON\')');
+HMInitToggle('TOGGLE0186E0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E1\',\'TOGGLE0186E1_ICON\')');
+HMInitToggle('TOGGLE0186E1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E2\',\'TOGGLE0186E2_ICON\')');
+HMInitToggle('TOGGLE0186E2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E3\',\'TOGGLE0186E3_ICON\')');
+HMInitToggle('TOGGLE0186E3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E4\',\'TOGGLE0186E4_ICON\')');
+HMInitToggle('TOGGLE0186E4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E5\',\'TOGGLE0186E5_ICON\')');
+HMInitToggle('TOGGLE0186E5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E6\',\'TOGGLE0186E6_ICON\')');
+HMInitToggle('TOGGLE0186E6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E7\',\'TOGGLE0186E7_ICON\')');
+HMInitToggle('TOGGLE0186E7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E8\',\'TOGGLE0186E8_ICON\')');
+HMInitToggle('TOGGLE0186E8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186E9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186E9\',\'TOGGLE0186E9_ICON\')');
+HMInitToggle('TOGGLE0186E9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186EA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186EA\',\'TOGGLE0186EA_ICON\')');
+HMInitToggle('TOGGLE0186EA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186EB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186EB\',\'TOGGLE0186EB_ICON\')');
+HMInitToggle('TOGGLE0186EB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186EC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186EC\',\'TOGGLE0186EC_ICON\')');
+HMInitToggle('TOGGLE0186EC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186ED_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186ED\',\'TOGGLE0186ED_ICON\')');
+HMInitToggle('TOGGLE0186ED','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186EE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186EE\',\'TOGGLE0186EE_ICON\')');
+HMInitToggle('TOGGLE0186EE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186EF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186EF\',\'TOGGLE0186EF_ICON\')');
+HMInitToggle('TOGGLE0186EF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186F0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186F0\',\'TOGGLE0186F0_ICON\')');
+HMInitToggle('TOGGLE0186F0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186F1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186F1\',\'TOGGLE0186F1_ICON\')');
+HMInitToggle('TOGGLE0186F1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186F2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186F2\',\'TOGGLE0186F2_ICON\')');
+HMInitToggle('TOGGLE0186F2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186F3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186F3\',\'TOGGLE0186F3_ICON\')');
+HMInitToggle('TOGGLE0186F3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

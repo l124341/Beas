@@ -1,0 +1,1431 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>GET</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Item Collection &nbsp;Property Description Table &nbsp;OITM Primary key ItemCode/c $transaction issuewo,receiptwo,issue,receipt,receiptpo $branch no $mask no &nbsp;Fields Name" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "bslitemgetgetdocuments.htm",
+   prevP: "bslitemput.htm",
+   currP: "bslitemget.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "GET",
+   mailsubject: "Feedback on: Beas Script 2026.09 - GET",
+   sharesubject: "Beas Script 2026.09 - GET",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "bslitemGET",
+   mailpath: "Beas Service Layer &gt; BSL Reference &gt; Warehouse Management &gt; Item Area &gt; Item &gt; GET /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - GET").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "bslitemget.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>GET</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">GET</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><link rel="stylesheet" href="http://beascloud.com/docs/help/beasscript2/highlight/styles/default.css">  <script src="http://beascloud.com/docs/help/beasscript2/highlight/highlight.pack.js"></script>  <script>hljs.initHighlightingOnLoad();</script>  </p>
+<p class="p_Normal">Item Collection</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Property</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Table</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal"><span class="f_CourierFixed"> OITM</span></p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Primary key</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">ItemCode/c</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">$transaction</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">issuewo,receiptwo,issue,receipt,receiptpo</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">$branch</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">no</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">$mask</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">no</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Fields</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Name</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Type</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Item Code</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Entity Relation: <span class="f_CourierFixed"> ItemWareHouse -&gt; ItemCode</span></p>
+<p class="p_Normal">Entity Relation: <span class="f_CourierFixed"> ItemVersion -&gt; ItemCode</span></p>
+<p class="p_Normal">Entity Relation: <span class="f_CourierFixed"> ItemDocuments -&gt; ItemCode</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Mandatory field</p>
+<p class="p_Normal">Primary key</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;ItemCode&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemName</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Item Name</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;ItemName&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">IVersionId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Item Version</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> case when rtrim(coalesce(&quot;OITM&quot;.&quot;U_beas_ver&quot;,''))='' then '' else &quot;OITM&quot;.&quot;U_beas_ver&quot; end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ForeignName</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Foreign Name</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;FrgnName&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">MainSupplier</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(15)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Preferred Vendor</a></td></tr></table></div>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Linked table: OCRD</p>
+<p class="p_Normal">Linked column: CardCode</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;CardCode&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Barcode</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(254)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Barcode</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;CodeBars&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CardCode</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Business Partner Id</a></td></tr></table></div>
+<div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Linked table: OCRD</p>
+<p class="p_Normal">Linked column: CardCode</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;CardCode&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemType</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Item Type</a></td></tr></table></div>
+<div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;ItemType&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">InventoryItem</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Inventory Item</a></td></tr></table></div>
+<div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> case when &quot;OITM&quot;.&quot;InvntItem&quot; = 'Y' then 1 else 0 end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ManageBatchNumbers</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Managed Batch</a></td></tr></table></div>
+<div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> case when &quot;OITM&quot;.&quot;ManBtchNum&quot; = 'Y' then 1 else 0 end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ManageSerialNumbers</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Boolean</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Managed Serial</a></td></tr></table></div>
+<div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> case when &quot;OITM&quot;.&quot;ManSerNum&quot; = 'Y' then 1 else 0 end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">BatchnumberGeneration</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">BatchNumber generation type</a></td></tr></table></div>
+<div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Define automatic batch number / serial number generation</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">can generate the batch automatically for a receipt transaction. </p>
+<p class="p_Normal">Here you can set up whether the batch is entered manually or generated automatically when posing in material. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Batch according to material</p>
+<p class="p_Normal">===========================</p>
+<p class="p_Normal">If an assembly is posted in, as batch number is determined that one of the first material in the BOM of the assembly which was last posted in.</p>
+<p class="p_Normal">Example:</p>
+<p class="p_Normal">Assembly: &quot;Paste y in container x&quot;</p>
+<p class="p_Normal">|- Bill of Materials: Paste y</p>
+<p class="p_Normal">|---|- 1. issue batch aaa</p>
+<p class="p_Normal">|---|- 2. issue batch bbb</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If &quot;Paste y in container x&quot; is now produced and posted in, the batch number of &quot;Paste y&quot; of the last posting, i.e. batch &quot;bbb&quot; is assigned.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Automatic batch determination</p>
+<p class="p_Normal">=============================</p>
+<p class="p_Normal">Batches are generated automatically, at stock correction the next number can be requested.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">see Batch generation</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Special case at SAP-posting processes:</p>
+<p class="p_Normal">If the entry field for quantity is left with Ctrl-Tab, the batch assignment screen opens. There is a button &quot;next batch&quot;</p>
+<p class="p_Normal">Clicking there, the next batch number according to SAP - batch determination program is determined and entered to the current field. </p>
+<p class="p_Normal">Batches are always determined automatically.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Manual batch input</p>
+<p class="p_Normal">==================</p>
+<p class="p_Normal">If activated, manual batch input is always performed for this item.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default Value: M</p>
+<p class="p_Normal">Constraints: </p>
+<p class="p_Normal">batchnum is same as last cunsumed material=J</p>
+<p class="p_Normal">automatic batch number generation=N</p>
+<p class="p_Normal">manual batch number=M</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_batchroh&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Breakdown</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Breakdown</a></td></tr></table></div>
+<div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;U_dispo&quot;,'K')</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ProcurementMethod</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Procurement Method</a></td></tr></table></div>
+<div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;PrcrmntMtd&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">PlanningSystem</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Planning Method</a></td></tr></table></div>
+<div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> case when &quot;OITM&quot;.&quot;PlaningSys&quot;= 'Y' then 1 else 0 end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">IssueMethod</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">Issue Method</a></td></tr></table></div>
+<div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Return the Issue Method for this item </p>
+<p class="p_Normal">(Defined in Item Master Data)</p>
+<p class="p_Normal">B = Backflush</p>
+<p class="p_Normal">M = Manual</p>
+<p class="p_Normal">Batch- and Serial number related items always &quot;M&quot;</p>
+<p class="p_Normal">But you can overwrite this in configuration wizzard - Production - Material Posting - Backflush - </p>
+<p class="p_Normal">also post batch numbers</p>
+<p class="p_Normal">also post serial numbers</p>
+<p class="p_Normal">if this is activated, the system return &quot;B&quot; for Batch or/and Serial numbers too</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> case when &quot;OITM&quot;.&quot;ManBtchNum&quot;='Y' and 'J' = 'J' then 'B' when &quot;OITM&quot;.&quot;ManSerNum&quot;='Y' and 'J' = 'J' then 'B' else &quot;OITM&quot;.&quot;IssueMthd&quot; end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemVersionAdministration</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B1','TOGGLE0186B1_ICON')">Item Version Administration</a></td></tr></table></div>
+<div id="TOGGLE0186B1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: 0</p>
+<p class="p_Normal">Constraints: </p>
+<p class="p_Normal">No=0</p>
+<p class="p_Normal">extented view=1</p>
+<p class="p_Normal">separate bom=2</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;U_beas_VerControl&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemVersionCount</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B2','TOGGLE0186B2_ICON')">Count of I-Versions</a></td></tr></table></div>
+<div id="TOGGLE0186B2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> (select count(*) from &quot;BEAS_ITEM_VERSION&quot; where &quot;BEAS_ITEM_VERSION&quot;.&quot;ItemCode&quot;=&quot;OITM&quot;.&quot;ItemCode&quot;)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CalculationPrice</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B3','TOGGLE0186B3_ICON')">Calculation Price</a></td></tr></table></div>
+<div id="TOGGLE0186B3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_kalk_pr&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">CalcLotSizeInventoryUOM</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B4','TOGGLE0186B4_ICON')">Calculation LotSize Warehouse Unit</a></td></tr></table></div>
+<div id="TOGGLE0186B4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;U_losgr_ka&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CalcLotSizeProductionUoM</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B5','TOGGLE0186B5_ICON')">Calculation LotSize Workorder Unit</a></td></tr></table></div>
+<div id="TOGGLE0186B5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;U_beas_CalcLotsizeWoUnit&quot;,&quot;OITM&quot;.&quot;U_losgr_ka&quot;)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ProductionLotSize</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B6','TOGGLE0186B6_ICON')">Production LotSize</a></td></tr></table></div>
+<div id="TOGGLE0186B6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: 0</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;U_losgr&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ProductionLotSizeUnit</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(100)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B7','TOGGLE0186B7_ICON')">Production LotSize Unit</a></td></tr></table></div>
+<div id="TOGGLE0186B7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> case when coalesce(&quot;OITM&quot;.&quot;U_beas_prlotsizeU&quot;,0)=0 then &quot;OITM&quot;.&quot;InvntryUom&quot; else &quot;OITM&quot;.&quot;U_me_verbr&quot; end</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">MinimumOrderQuantity</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B8','TOGGLE0186B8_ICON')">Minimum order amount</a></td></tr></table></div>
+<div id="TOGGLE0186B8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: 0</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;MinOrdrQty&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">OrderMultiple</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186B9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186B9','TOGGLE0186B9_ICON')">Order Multiple</a></td></tr></table></div>
+<div id="TOGGLE0186B9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: 0</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;OrdrMulti&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ScrapPercent</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BA','TOGGLE0186BA_ICON')">Scrap in percent</a></td></tr></table></div>
+<div id="TOGGLE0186BA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: 0</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_aussch&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ScrapTable</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BB','TOGGLE0186BB_ICON')">Scrap link to table</a></td></tr></table></div>
+<div id="TOGGLE0186BB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_verschn&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">InventoryUOM</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BC','TOGGLE0186BC_ICON')">UoM Stock</a></td></tr></table></div>
+<div id="TOGGLE0186BC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;InvntryUom&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ProductionUnit</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BD','TOGGLE0186BD_ICON')">Consumption UoM</a></td></tr></table></div>
+<div id="TOGGLE0186BD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Linked table: BEAS_ME</p>
+<p class="p_Normal">Linked column: ME_ID</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_me_verbr&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">PurchaseUnit</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BE','TOGGLE0186BE_ICON')">Purchase Unit</a></td></tr></table></div>
+<div id="TOGGLE0186BE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;BuyUnitMsr&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UnitGroupId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186BF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186BF','TOGGLE0186BF_ICON')">UnitGroupId</a></td></tr></table></div>
+<div id="TOGGLE0186BF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Entity Relation: <span class="f_CourierFixed"> UnitGroup -&gt; UnitGroupId</span></p>
+<p class="p_Normal">Unit of measure groups (UoM groups) are groups of one or more units of measure that you either </p>
+<p class="p_Normal">allow as units of measure for a product or exclude from the set of possible UoMs for the product. </p>
+<p class="p_Normal">You can assign UoM groups for the products of both the deliverying and receiving locations.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Linked BSL objects: </p>
+<p class="p_Normal">UnitGroup, UnitGroupLines</p>
+<p class="p_Normal">Linked table: OUGP</p>
+<p class="p_Normal">Linked column: UgpEntry</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;UgpEntry&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">OnHand</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C0','TOGGLE0186C0_ICON')">OnHand</a></td></tr></table></div>
+<div id="TOGGLE0186C0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;OnHand&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DefaultWareHouse</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C1','TOGGLE0186C1_ICON')">WareHouse</a></td></tr></table></div>
+<div id="TOGGLE0186C1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Linked table: OWHS</p>
+<p class="p_Normal">Linked column: WhsCode</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;DfltWH&quot;,'')</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">WareHouseRuleId</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C2','TOGGLE0186C2_ICON')">WareHouse Rule Id</a></td></tr></table></div>
+<div id="TOGGLE0186C2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_beas_BinGroup&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">CostAccountingMethod</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C3','TOGGLE0186C3_ICON')">Costing Account Method</a></td></tr></table></div>
+<div id="TOGGLE0186C3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Define the CostAccounting Method (Evaluation Method)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Default Value: A</p>
+<p class="p_Normal">Constraints: </p>
+<p class="p_Normal">Moving Average=A</p>
+<p class="p_Normal">Standard=S</p>
+<p class="p_Normal">FIFO=F</p>
+<p class="p_Normal">Serie | Charge=B</p>
+<p class="p_Normal">=</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;EvalSystem&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ManageStockByWarehouse</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C4','TOGGLE0186C4_ICON')">Inventory managed by WH</a></td></tr></table></div>
+<div id="TOGGLE0186C4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: N</p>
+<p class="p_Normal">Constraints: </p>
+<p class="p_Normal">Yes=Y</p>
+<p class="p_Normal">No=N</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;ByWh&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DrawingNumber</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C5','TOGGLE0186C5_ICON')">Drawing Number</a></td></tr></table></div>
+<div id="TOGGLE0186C5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_znr&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">MatchCode</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C6','TOGGLE0186C6_ICON')">Match Code</a></td></tr></table></div>
+<div id="TOGGLE0186C6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_match&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">DIN</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C7','TOGGLE0186C7_ICON')">DIN</a></td></tr></table></div>
+<div id="TOGGLE0186C7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_din&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemGroupCode</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C8','TOGGLE0186C8_ICON')">Item Group Code</a></td></tr></table></div>
+<div id="TOGGLE0186C8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Entity Relation: <span class="f_CourierFixed"> ItemGroup -&gt; ItemGroupCode</span></p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;ItmsGrpCod&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">MaterialGroupId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186C9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186C9','TOGGLE0186C9_ICON')">Material Group</a></td></tr></table></div>
+<div id="TOGGLE0186C9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Entity Relation: <span class="f_CourierFixed"> MaterialGroupId -&gt; </span></p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_gruppe&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ShelfLife</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Int32</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CA_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CA','TOGGLE0186CA_ICON')">Shelf Life in days</a></td></tr></table></div>
+<div id="TOGGLE0186CA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_haltbark&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">RawMaterialId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CB_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CB','TOGGLE0186CB_ICON')">Raw Material</a></td></tr></table></div>
+<div id="TOGGLE0186CB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Entity Relation: <span class="f_CourierFixed"> RawMaterial -&gt; RawMaterialId</span></p>
+<p class="p_Normal">Linked table: BEAS_WST</p>
+<p class="p_Normal">Linked column: WST_ID</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_wst_id&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">SpecificWeight</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CC_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CC','TOGGLE0186CC_ICON')">Specific Weight</a></td></tr></table></div>
+<div id="TOGGLE0186CC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Related to the settings of &quot;artikel_spezgew&quot;:</p>
+<p class="p_Normal">If &quot;J&quot; (by Item) then OITM.U_BEAS_DICHTE</p>
+<p class="p_Normal">If &quot;N&quot; then BEAS_WST.DICHTE</p>
+<p class="p_Normal">If NULL value, then 1</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;U_spezgew&quot;,1)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">PurchaseUnitHeight1</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CD_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CD','TOGGLE0186CD_ICON')">Purchase Unit Height 2</a></td></tr></table></div>
+<div id="TOGGLE0186CD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: 0</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;BHeight1&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">PurchaseHeightUoM1</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(20)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CE_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CE','TOGGLE0186CE_ICON')">P Height Unit 2</a></td></tr></table></div>
+<div id="TOGGLE0186CE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> (select &quot;OLGT&quot;.&quot;UnitDisply&quot; from &quot;OLGT&quot; where &quot;UnitCode&quot;=&quot;OITM&quot;.&quot;BWdth1Unit&quot;)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">PurchaseUnitWidth1</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186CF_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186CF','TOGGLE0186CF_ICON')">Purchase Unit Height 2</a></td></tr></table></div>
+<div id="TOGGLE0186CF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: 0</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;BWidth1&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">PurchaseWidthUoM1</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D0_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D0','TOGGLE0186D0_ICON')">P Width Unit 2</a></td></tr></table></div>
+<div id="TOGGLE0186D0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> (select &quot;OLGT&quot;.&quot;UnitDisply&quot; from &quot;OLGT&quot; where &quot;UnitCode&quot;=&quot;OITM&quot;.&quot;BWdth1Unit&quot;)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">PurchaseUnitLength1</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.Decimal</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D1','TOGGLE0186D1_ICON')">Purchase Unit Height 2</a></td></tr></table></div>
+<div id="TOGGLE0186D1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Default Value: 0</p>
+<p class="p_Normal">Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> coalesce(&quot;OITM&quot;.&quot;BLength1&quot;,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">PurchaseLengthUoM1</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(1)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D2','TOGGLE0186D2_ICON')">P Length Unit 2</a></td></tr></table></div>
+<div id="TOGGLE0186D2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Database: <span class="f_CourierFixed"> (select &quot;OLGT&quot;.&quot;UnitDisply&quot; from &quot;OLGT&quot; where &quot;UnitCode&quot;=&quot;OITM&quot;.&quot;BLen1Unit&quot;)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Picture1</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D3','TOGGLE0186D3_ICON')">Picture 1</a></td></tr></table></div>
+<div id="TOGGLE0186D3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;PicturName&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Picture2</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D4','TOGGLE0186D4_ICON')">Picture 2</a></td></tr></table></div>
+<div id="TOGGLE0186D4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_picture2&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Picture3</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">Edm.String(50)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D5','TOGGLE0186D5_ICON')">Picture 3</a></td></tr></table></div>
+<div id="TOGGLE0186D5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Integration hub: Importable</p>
+<p class="p_Normal">Database: <span class="f_CourierFixed"> &quot;OITM&quot;.&quot;U_picture3&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Relations</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Join to Entiy Object</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Relation</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">RawMaterial</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">RawMaterialId</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemWareHouse</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">ItemCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UoM</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UoMCode=InventoryUOM</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">WareHouse</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">WhsCode=DefaultWareHouse</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">MaterialGroupId</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><br />
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemGroup</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">ItemGroupCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemVersion</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">ItemVersionDefault</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">ItemCode,IVersionId</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">UoMPurchase</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">PurchaseUoMCode=PurchaseUnit</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">UnitGroup</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">UnitGroupId</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemDocuments</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">Functions</span></h1>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table class="fielddescription" >
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">Function</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Parameter</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">Description</p>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">GetPrice</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode/c,Warehouse/c,CardCode/c,Quantity/i,Valuation/c)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D6','TOGGLE0186D6_ICON')">Return price for this item in home currency</a></td></tr></table></div>
+<div id="TOGGLE0186D6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Return Price from current item</p>
+<p class="p_Normal">if cardcode is defined and valuation is a price list, the system use the DI-API from SAP, otherwise own system</p>
+<p class="p_Normal">Valuation</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">GetDocuments</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">ItemCode/c)</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D7_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D7','TOGGLE0186D7_ICON')">Return List of all documents</a></td></tr></table></div>
+<div id="TOGGLE0186D7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Return all attachment, documents and pictures related to an Item</p>
+<p class="p_Normal">- Beas Attachments</p>
+<p class="p_Normal">- SAP Attachments</p>
+<p class="p_Normal">- Pictures</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">GetAsXML</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><p class="p_Normal">ItemCode/c)</p>
+</td>
+<td class="fielddescription" style="background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D8_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D8','TOGGLE0186D8_ICON')">Return Item as xml</a></td></tr></table></div>
+<div id="TOGGLE0186D8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription"><p class="p_Normal">GetAsJson</p>
+</td>
+<td class="fielddescription"><p class="p_Normal">ItemCode/c,IVersionId/c,NullValues/b,udf/b</p>
+</td>
+<td class="fielddescription"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186D9_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186D9','TOGGLE0186D9_ICON')">Return item as json</a></td></tr></table></div>
+<div id="TOGGLE0186D9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B1\',\'TOGGLE0186B1_ICON\')');
+HMInitToggle('TOGGLE0186B1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B2\',\'TOGGLE0186B2_ICON\')');
+HMInitToggle('TOGGLE0186B2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B3\',\'TOGGLE0186B3_ICON\')');
+HMInitToggle('TOGGLE0186B3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B4\',\'TOGGLE0186B4_ICON\')');
+HMInitToggle('TOGGLE0186B4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B5\',\'TOGGLE0186B5_ICON\')');
+HMInitToggle('TOGGLE0186B5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B6\',\'TOGGLE0186B6_ICON\')');
+HMInitToggle('TOGGLE0186B6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B7\',\'TOGGLE0186B7_ICON\')');
+HMInitToggle('TOGGLE0186B7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B8\',\'TOGGLE0186B8_ICON\')');
+HMInitToggle('TOGGLE0186B8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B9\',\'TOGGLE0186B9_ICON\')');
+HMInitToggle('TOGGLE0186B9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BA\',\'TOGGLE0186BA_ICON\')');
+HMInitToggle('TOGGLE0186BA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BB\',\'TOGGLE0186BB_ICON\')');
+HMInitToggle('TOGGLE0186BB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BC\',\'TOGGLE0186BC_ICON\')');
+HMInitToggle('TOGGLE0186BC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BD\',\'TOGGLE0186BD_ICON\')');
+HMInitToggle('TOGGLE0186BD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BE\',\'TOGGLE0186BE_ICON\')');
+HMInitToggle('TOGGLE0186BE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186BF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186BF\',\'TOGGLE0186BF_ICON\')');
+HMInitToggle('TOGGLE0186BF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C0\',\'TOGGLE0186C0_ICON\')');
+HMInitToggle('TOGGLE0186C0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C1\',\'TOGGLE0186C1_ICON\')');
+HMInitToggle('TOGGLE0186C1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C2\',\'TOGGLE0186C2_ICON\')');
+HMInitToggle('TOGGLE0186C2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C3\',\'TOGGLE0186C3_ICON\')');
+HMInitToggle('TOGGLE0186C3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C4\',\'TOGGLE0186C4_ICON\')');
+HMInitToggle('TOGGLE0186C4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C5\',\'TOGGLE0186C5_ICON\')');
+HMInitToggle('TOGGLE0186C5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C6\',\'TOGGLE0186C6_ICON\')');
+HMInitToggle('TOGGLE0186C6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C7\',\'TOGGLE0186C7_ICON\')');
+HMInitToggle('TOGGLE0186C7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C8\',\'TOGGLE0186C8_ICON\')');
+HMInitToggle('TOGGLE0186C8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186C9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186C9\',\'TOGGLE0186C9_ICON\')');
+HMInitToggle('TOGGLE0186C9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CA\',\'TOGGLE0186CA_ICON\')');
+HMInitToggle('TOGGLE0186CA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CB\',\'TOGGLE0186CB_ICON\')');
+HMInitToggle('TOGGLE0186CB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CC_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CC\',\'TOGGLE0186CC_ICON\')');
+HMInitToggle('TOGGLE0186CC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CD_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CD\',\'TOGGLE0186CD_ICON\')');
+HMInitToggle('TOGGLE0186CD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CE_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CE\',\'TOGGLE0186CE_ICON\')');
+HMInitToggle('TOGGLE0186CE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186CF_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186CF\',\'TOGGLE0186CF_ICON\')');
+HMInitToggle('TOGGLE0186CF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D0_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D0\',\'TOGGLE0186D0_ICON\')');
+HMInitToggle('TOGGLE0186D0','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D1\',\'TOGGLE0186D1_ICON\')');
+HMInitToggle('TOGGLE0186D1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D2\',\'TOGGLE0186D2_ICON\')');
+HMInitToggle('TOGGLE0186D2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D3\',\'TOGGLE0186D3_ICON\')');
+HMInitToggle('TOGGLE0186D3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D4\',\'TOGGLE0186D4_ICON\')');
+HMInitToggle('TOGGLE0186D4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D5\',\'TOGGLE0186D5_ICON\')');
+HMInitToggle('TOGGLE0186D5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D6\',\'TOGGLE0186D6_ICON\')');
+HMInitToggle('TOGGLE0186D6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D7\',\'TOGGLE0186D7_ICON\')');
+HMInitToggle('TOGGLE0186D7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D8\',\'TOGGLE0186D8_ICON\')');
+HMInitToggle('TOGGLE0186D8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186D9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186D9\',\'TOGGLE0186D9_ICON\')');
+HMInitToggle('TOGGLE0186D9','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

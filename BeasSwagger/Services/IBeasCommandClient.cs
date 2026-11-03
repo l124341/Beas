@@ -6,7 +6,8 @@ using Microsoft.Extensions.Options;
 namespace BeasSwagger.Services;
 
 /// <summary>由程式碼固定產生的寫入 SQL(不接受使用者提供的 SQL)。{db} 會被替換成已驗證的資料庫名稱,值一律用 ? 參數。</summary>
-public record BeasSqlStatement(string Sql, object?[] Args);
+// RequireRows:true = 影響 0 筆視為失敗並還原整個交易(對應原 DLL 的 if (result == 0) → "NO")。僅 IBeasCommandClient 使用。
+public record BeasSqlStatement(string Sql, object?[] Args, bool RequireRows = false);
 
 /// <summary>需要明確開啟 Beas:Script:AllowDirectSqlWrite 才允許直接寫入 Beas 資料表。</summary>
 public class BeasDirectSqlDisabledException(string message) : Exception(message);
@@ -57,7 +58,13 @@ public class OdbcBeasCommandClient(IOptions<BeasConnection> defaults, IOptions<B
         try
         {
             foreach (var s in statements)
-                OdbcSql.Run(con, (OdbcTransaction)tx, s, c.Database);
+            {
+                if (OdbcSql.Run(con, (OdbcTransaction)tx, s, c.Database) == 0 && s.RequireRows)
+                {
+                    await tx.RollbackAsync(ct);
+                    return new BeasResult(false, "NO");
+                }
+            }
             await tx.CommitAsync(ct);
             return new BeasResult(true, "success");
         }

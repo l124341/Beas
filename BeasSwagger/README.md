@@ -28,7 +28,8 @@ Swagger 端點 → 組出 Beas Script → `INSERT INTO <db>."BEAS_COMMON_INPUT"(
   - `workorder/import-single`、`workorder/import-more`(`ue_api_wo`;建立後工單號用 `<mywo.docentry>` 取得,屬性名稱為推測)
   - 各 `sql-result-back`、`workorder/del-result-back`:對應原 DLL 的 `sqlresultback`/`delresultback`,只讀一次 `BEAS_COMMON_OUTPUT`(依 REQUESTID 取 COUNTID 最大且 ANSWERTEXT 非空的一筆),查不到回「尚無結果」由呼叫端重試;`del-result-back` 預設 REQUESTID=`wobominsert`+CreateTime(原 DLL 寫死),`sql-result-back` 預設 Mes+CreateTime(推測),兩者都可用 `RequestId` 直接覆寫
   - `bom/check`(`checkbom`,明細行數)、`bom/check-version`(`checkbomversion`:版本空白=VersionArea 為 NULL,否則 `like %版本%`)、`bom/max-level`:唯讀 SQL(`Services/IBeasQueryClient.cs`,只允許單一 SELECT、值參數化;Mock 模式只回傳將執行的 SQL)。`max-level` 原 DLL 對字串取 MAX(字典序),這裡改取數值最大值。`bom/sql-result-back` 的 REQUESTID=`Bom`+CreateTime(原 DLL 會把 mes 清成空字串,Mes 不參與)。
-- 其餘端點仍是 Mock,尚無原始碼/文件依據:unit、scrap、scrapdetail、workorder 的 import-with-machine。
+  - `unit/create`、`unit/update`(原 `CreateUom`):**直接 INSERT / UPDATE `BEAS_ME`**(原 DLL 如此,沒有 Script/BSL 路徑;BSL 的 `UoM` 實體只有 GET)。Create:`ERFTSTAMP`=今天(僅日期)、`ERFUSER`=`MES` 固定,`ANDTSTAMP`/`ANDUSER` 取自請求;Update:`ANDTSTAMP`=今天;影響 0 筆回 `NO`,成功回 `OK`。需 `AllowDirectSqlWrite=true`。`unit/sql-result-back` 只是確認單位是否存在(存在回單位代碼,否則 `no`),不需開關。欄位名不加引號,讓 HANA 轉成大寫。
+- 其餘端點仍是 Mock,尚無原始碼/文件依據:scrap、scrapdetail、workorder 的 import-with-machine。
 - `Beas:UseMock=true` 時只回傳產生的 script,不寫庫;改 `false` 後才真的寫入。
 - `Beas:Script:OdbcConnectionString` 預設已與原 DLL 的 `connection()` 一致:`Driver=HDBODBC32;ServerNode=…;uid=…;pwd=…;DATABASE=…`(HANA;`HDBODBC32` 為 32 位元驅動,64 位元環境請改 `HDBODBC`)。
 

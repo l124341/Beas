@@ -23,6 +23,7 @@
 10. [BSL(Beas Service Layer)範例](#10-bslbeas-service-layer範例)
 11. [使用者事件(User events)說明](#11-使用者事件user-events說明)
 12. [附錄:語法速查](#12-附錄語法速查)
+13. [範例程式碼檢查摘要](#13-範例程式碼檢查摘要)
 
 ---
 
@@ -123,6 +124,8 @@
 按下按鈕後,會顯示 HTML 格式的訊息。(原文附截圖)
 
 > 事件命名規則:`dw_master_item_button_<按鈕名稱>_click`,按鈕名稱需與 `create=button=name=...` 一致(小寫)。
+>
+> ⚠ 官方 `bsbuttoncreate.htm` 同一頁出現兩種事件名寫法:`dw_master_item_button_my_object_name_click`(含 `button_`)與 `dw_master_item_mpos2_click`(不含)。本手冊範例用含 `button_` 的寫法,官方未說明兩者何時用哪一種,請以系統資訊 → Protocol 頁籤實際顯示的事件名為準(見 1.3 的步驟 4)。
 
 ---
 
@@ -721,7 +724,7 @@ return 1;
 使用的使用者事件(User event):
 
 - `materialmangement.receipt`、`workordermanagement.receipt`
-- `materialmanagement.receiptend`、`workordermangement.receiptend`
+- `materialmanagement.receiptend`、`workordermanagement.receiptend`
 - 相關 BSL:`BatchNumber`
 
 **`ReceiptEnd` 事件的可用變數(官方說明,皆為唯讀)**
@@ -833,7 +836,7 @@ end function
 
 ### 4.1 工單序號/批號產生 — Create Wo Serial/Batch Numbers
 
-在使用者事件 `workordermangement.GetBatchNumber` 與 `workordermangement.GetSerialNumber` 中,可撰寫腳本來產生工單**收貨/序號保留**時所用的批號或序號。
+在使用者事件 `workordermanagement.GetBatchNumber` 與 `workordermanagement.GetSerialNumber` 中,可撰寫腳本來產生工單**收貨/序號保留**時所用的批號或序號。
 
 **事件變數(官方說明)**:`GetBatchNumber` 與 `GetSerialNumber` 可用的變數相同,**只有 `e_DistNumber` 可寫**(放入新的批號/序號;沒定義時系統使用設定精靈的標準計數),`e_ItemCode`、`e_DocEntry`、`e_LineNumber`、`e_LineNumber2` 皆為唯讀。完整說明見 [11.8](#118-getbatchnumber--getserialnumber官方說明)。
 
@@ -1073,7 +1076,7 @@ end function
 需要兩個事件:
 
 - `CreateWorkOrderPositionEnd`:位置建立後呼叫。
-- `workordermangement.GetBatchNumber`:回傳下一個批號。
+- `workordermanagement.GetBatchNumber`:回傳下一個批號。
 
 使用者事件定義方式請參閱 `UserEvent`;相關 BSL:`Workorder`。檔案:`workordermanagement.src`
 
@@ -1312,6 +1315,8 @@ openwindow=dw=beas_WorkOrder_Structur<tab>belnr_id=6002253<tab>belpos_id=10
 
 參數:`DocEntry` / `belnr_id`(基礎文件)、`LineNumber` / `belpos_id`(基礎文件行)。官方頁面**沒有列出 `zeilentyp` 各值的意義**(已查閱 `fetched/missing_b/` 全部頁面,包括視窗客製化各頁,以及 `fetched/ref/database_202606.pdf`;使用者也搜尋過所有已抓頁面,`zeilentyp` 只出現在範例頁與 `custom-artikel_struktur_browse.htm`,都只是使用、沒有定義,仍找不到),所以下面程式碼中 `zeilentyp = 0`(工單)與 `= 10`(工單位置)的對應,仍是依範例上下文的解讀,未獲官方確認。
 
+> ⚠ 回傳欄位:本範例用 `<b.ret_status>` 判斷 `Close` 是否成功(`if <b.ret_status> n= -1`)。官方 BSL / BeasScript 頁面(`fetched/beasscript/`、`fetched/bsl/`)中**找不到 `ret_status`**,官方的回傳欄位是 `ret_code`、`ret_text`、`ret_value`,以及 `status`。請以實際回傳確認。
+
 **運作說明**
 
 1. `form_loaded`:在右側建立「Close order」按鈕。
@@ -1474,6 +1479,8 @@ end global
 
 **說明**:當工單號、BOM 位置與 pos_id 都已指定時,呼叫 BSL 檢查;回傳狀態為 `locked`(超出限制)時,把數量重設為 0。
 
+> ⚠ 狀態值:官方 `WorkorderBom/CheckMinMaxBom`(`bslworkorderbomcheckminmax.htm`、`…2.htm`)寫的回傳 `status` 是 **`ok`(全部正常)/ `question` / `blocked`**,沒有 `locked`。本範例(及 4.9、10.3 的相同寫法)比對的是 `locked`;官方範例頁的比對值與官方狀態值不同,官方沒有解釋。請實測確認應比對 `blocked` 還是 `locked`。
+
 **手動過帳視窗 `mw_manuell_buchen`(官方說明)**
 
 「手動收貨、發料、移轉」是**同一個視窗**。開啟參數:
@@ -1555,7 +1562,7 @@ end if
 end global
 ```
 
-(此範例與 [10.3 佔位符與函式呼叫](#103-bsl佔位符與函式呼叫--place-holder-and-function-call) 內容相同,該節有較完整的逐點說明。)
+(狀態值 `locked` 與官方的 `blocked` 不一致,見 4.8 的 ⚠ 說明。此範例與 [10.3 佔位符與函式呼叫](#103-bsl佔位符與函式呼叫--place-holder-and-function-call) 內容相同,該節有較完整的逐點說明。)
 
 ---
 
@@ -2549,6 +2556,8 @@ destroy=itemprice
 
 使用 Beas Service Layer 的範例。
 
+> ⚠ BSL 回傳碼:官方 `bs-bsl.htm` 寫 `<b.ret_code>` 的值是 **`0` = ok、`400` = Syntax error、`404` = not found,其他訊息都是錯誤**;但本手冊多數範例(包括官方範例)判斷成功/失敗用的是 `ret_code = -1`、`<> 1`、`n <> 0` 等不同寫法,官方頁面之間互相矛盾。DI-API 物件的 `ret_code`(`-1` = 錯誤、`1` = 成功)是另一套規則(見 9.0)。使用前請以實際回傳值確認。
+
 > 官方文件查證:`fetched/missing_c/` 中的 JSON、XML 兩頁只是一般性說明(JSON 的資料型別表等),**沒有任何 Beas 專屬的 JSON 指令、組字串方法或範例**;PSR-File 頁說明 DataStore 的 alias 是 resultSet,處理 resultSet 的範例函式是 `sqlStatement.select`、`bsl.get`,但**沒有 `instance datastore` 指令的語法**。因此本節與前面章節中以 `addvar` 組 JSON 字串、`instance datastore` 取資料的寫法,無法由這幾頁證實,請以各 BSL 指令頁與實測為準。
 
 ### 10.1 BSL:建立收貨單 — create Receipt document
@@ -2656,7 +2665,7 @@ b.get=WorkorderBom/CheckMinMaxBom(<dw_1.item.belnr_id.value>,&
 <dw_1.item.belpos_id.value>,0,"",<lc_bookedQty,dbnum>,true)
 ```
 
-回傳 JSON 物件(結構請參閱該函式的說明):
+回傳 JSON 物件(結構請參閱該函式的說明;狀態值官方為 `ok` / `question` / `blocked`,見 4.8 的 ⚠ 說明):
 
 ```
    if <b.Status> = locked then
@@ -2991,7 +3000,7 @@ end function
 
 | 寫法 | 出現在 |
 |---|---|
-| `return failure` | `workordermanagement`:ReceiptStart、ReceiptLine、IssueStart、IssueLine 等(`TimeRecording` 官方頁只寫「可以取消流程」,沒有寫取消的方法;本手冊 4.7 的範例用 `return failure`);`aps`:StartCalculation、StartWorkorderPosition;`stockmanagement`:ReceiptCostingCode;`Configurator`:CheckConfigBeforeNewLoad(官方寫「腳本必須以 `return failure` 結束」) |
+| `return failure` | `workordermanagement`:ReceiptStart、ReceiptLine、IssueStart、IssueLine 等(`TimeRecording` 官方頁只寫「可以取消流程」,沒有寫取消的方法;本手冊 4.7 的範例用 `return failure`);`aps`:StartCalculation、StartWorkorderPosition;`stockmanagement`:ReceiptCostingCode;`Configurator`:CheckConfigBeforeNewLoad(官方說可「停止新配置的載入流程」,並寫「腳本必須以 `return failure` 結束」;這裡取消的是配置載入,不是一般交易) |
 | `return -1` | `stockmanagement.GoodsReceiptLine` |
 | `setvar=value=-1` | `beasmenu` 的 `menu[id]` |
 | 說可以取消,但沒寫怎麼做 | `GoodsReceiptPO`、`GoodsReceiptPOBeforeCreate`、`StartWorkorderPositionStep` |
@@ -3013,6 +3022,9 @@ end function
 | `docs/ref/介面與關鍵字.md` | SAP UI-API(BS Item / Create objects / Right Click)、Addon connector、Beas common service、PSR / JSON / XML / DateTime format | 13 |
 | `docs/ref/資料庫.md` | 資料庫檢視 BEASV_*(欄位與資料表對應)、預存程序、函式、資料模型、DB.INI 結構 | 20 |
 | `docs/ref/WEB函式庫.md` | WEB APP 2.0:ui.js、ux.js、beas.js 與序號/批號/搜尋/附件類別 | 31 |
+| `docs/ref/資料庫欄位_1.md` … `_6.md` | `fetched/ref/database_202606.pdf`(2026.06 版文件站的檔案,**PDF 建立日期 2022-02-21**)的完整資料表欄位說明,6 份合計約 5,660 個欄位(欄位名與原文說明逐字保留,中文為翻譯) | 362 頁(PDF) |
+| `docs/ref/審閱/審閱_R1.md` … `_R8.md` | 對上列 8 份參考文件的逐頁審閱報告:翻譯忠實度與「⚠」標註核實。結論:沒有嚴重度高的問題;已套用修正 | — |
+| `docs/ref/examples檢查報告.md` | `fetched/examples/` 54 頁範例程式碼的檢查報告(見第 13 節) | 54 |
 
 ---
 
@@ -3032,7 +3044,7 @@ end function
 | 修改 DataWindow | `dw_1.modify=…`(使用 DataWindow 原生語法) |
 | SQL 取值 | `select … into :變數 from …` |
 | 宣告 BSL | `instance bsl b`;`b.get=…`、`b.post=…`、`b.put=…` |
-| BSL 回傳 | `b.ret_code`、`b.ret_text`、`b.ret_value`、`b.ret_status` |
+| BSL 回傳 | `b.ret_code`、`b.ret_text`、`b.ret_value`(`b.ret_status` 只出現在 4.6 的範例,官方 BSL / BeasScript 頁面找不到,官方的回傳欄位是 `status`) |
 | 佔位符內的 BSL | `<bsl.實體(參數1|參數2).欄位/$value>`:佔位符內不能有逗號,用 `|`;巢狀佔位符用 `[]` |
 | 宣告 DI-API | `declare=<名稱>=ue_api_sbo`;`<名稱>.getbusinessobject=<類型>`;`<名稱>.add / update / close`;`<名稱>.ret_code` |
 | 資料集 | `instance datastore d`;`d.setrow=<n>`;`<d.欄位>`(欄位小寫);用完 `destroy=d` |
@@ -3144,8 +3156,52 @@ end function
 |---|---|
 | `CreateWorkOrderPositionEnd` | 工單位置建立後 |
 | `CreateWorkOrderPositionComplete` | 每個新的主工單位置完成後 |
-| `workordermangement.GetBatchNumber` / `GetSerialNumber` | 工單收貨/序號保留需要新批號/序號時 |
-| `ReceiptEnd`(`materialmanagement` / `workordermangement`) | 收貨完成後 |
+| `workordermanagement.GetBatchNumber` / `GetSerialNumber` | 工單收貨/序號保留需要新批號/序號時 |
+| `ReceiptEnd`(`materialmanagement` / `workordermanagement`) | 收貨完成後 |
 | `TimeRecording` | 建立時間回報時 |
 
 > 使用者事件的建立方式、沙箱規則與相容性說明,見[第 11 節](#11-使用者事件user-events說明)。
+
+---
+
+## 13. 範例程式碼檢查摘要
+
+完整報告在 `docs/ref/examples檢查報告.md`(由 AI 子代理檢查 `fetched/examples/` 全部 54 頁、其中 40 頁共 65 段程式碼)。報告把問題分成四級:
+
+| 等級 | 數量 | 意義 |
+|---|---|---|
+| 確定錯誤 | 9 | 有明確證據(語法不成對、與官方定義明確不同) |
+| 與官方不一致 | 28 | 官方文件另有寫法,但不確定哪個才對 |
+| 存疑 | 37 | 可疑但證據不足 |
+| 手冊已記錄 | 25 | 本手冊已用 ⚠ 標出 |
+
+> 這是 AI 檢查的結果。下表中標「已驗證」的項目,是我對照原始頁面或官方文件親自確認過的;其餘引自報告,尚未逐項驗證。「與官方不一致」與「存疑」兩類都需要在 Beas 環境實測才能下定論。
+
+### 「確定錯誤」九項
+
+| # | 頁面 | 問題 | 驗證 |
+|---|---|---|---|
+| 1 | `create_button.htm` | 按鈕名稱是 `mybutton`,點擊事件卻寫 `windowevent itempressed beas_lyt`。官方 `beasgui-befehle.htm` 的 `windowevent itempressed` 後面接的是**按鈕名稱**(`myButton`、`beas_kalk`),所以這個事件不會被 `mybutton` 觸發(依官方文件推論,未實測) | 已驗證(官方文件) |
+| 2 | `create_right_click_entry.htm` | `<spr:My Entry` 缺收尾的 `>`。官方文件中 11 處 `<spr:…>` 都有收尾的 `>` | 已驗證(官方文件) |
+| 3 | `examplecleanstock.htm` | `let stock` 宣告在 `if/else` 區塊內,區塊外使用 `stock.rowcount()` 會出 ReferenceError。依標準 JavaScript 的區塊作用域判斷;JBS 引擎官方沒有文件,是否相同未知 | 報告以 node 執行確認標準 JS 行為;JBS 未驗證 |
+| 4 | `examplecleanstock.htm` | 「ItemCode is empty」與「Item is defined」兩個註解的位置和條件對調了(`if (e_ItemCode != "")` 上方的註解寫的是「empty」) | 已驗證(我讀原文) |
+| 5 | `example-fieldchanged.htm` | 訊息文字裡的雙引號不成對(`The match code "<…>` 後沒有收尾引號),只影響顯示 | 已驗證(我讀原文) |
+| 6 | `example_configuration-wizzard.htm` | 檔名 `system_opionen.ini`,官方 Configuration Wizard 頁寫的是 `system_optionen.ini` | 已驗證(官方頁面) |
+| 7–9 | `example_batch-number-reservation.htm`、`example_serialnumberbywo.htm`、`exampleafterreceipt.htm` | 說明文字把 `workordermanagement` 拼成 `workordermangement`(程式碼裡的檔名 `workordermanagement.src` 是對的)。官方多份頁面都有這個拼法,本手冊已統一改為正確拼法 | 已驗證 |
+
+### 反覆出現的「與官方不一致」
+
+這些項目已分別在對應章節加上 ⚠ 說明:
+
+| 項目 | 手冊位置 |
+|---|---|
+| `CheckMinMaxBom` 的回傳狀態:範例比對 `locked`,官方寫 `ok` / `question` / `blocked` | 4.8、4.9、10.3 |
+| BSL 回傳碼:`bs-bsl.htm` 寫 `0` = ok,其他範例用 `-1`、`<> 1` | 第 10 節開頭 |
+| `b.ret_status`:官方 BSL / BeasScript 頁面找不到(官方回傳欄位是 `status`) | 4.6、第 12 節速查表 |
+| 按鈕點擊事件名要不要帶 `button_`:官方 `bsbuttoncreate.htm` 兩種寫法並存 | 1.3 |
+| BSL 佔位符路徑:範例 `.QuantityProduced`,官方寫 `/QuantityProduced` | 見 `examples檢查報告.md`(本手冊未另加註) |
+| `windowevent` 與 `global function`:官方 SAP UI-API 頁說不要用 `windowevent` | 2.1、2.2 |
+
+### 檢查的限制
+- 只有截圖的程式碼、沒有官方屬性頁的 DI-API 物件編號 73、B1UP 巨集語法、JBS 專屬 API、SAP 標準資料表欄位,都**無法檢查**。
+- JBScript 指令頁 `jbsmessagebox`、`jbsopenwindow`、`jbssql` 官方本來就不存在,JBS 範例(3.1 `cleanStock`)的語法只能依標準 JavaScript 推測。

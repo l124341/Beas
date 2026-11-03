@@ -175,7 +175,7 @@ openform(BEAS:BOM_Pos_Edit|FP|10|del);
 
 使用 B1UP 直接從 SAP 選單開啟 Work list(工作清單)
 
-(原文此範例標題之後無任何內容。)
+(原文此範例標題之後沒有文字內容;頁面嵌有一段 YouTube 影片 `WxCdQQTRH-c`。)
 
 ### CalculateAPS(`beasfunctioncalculateaps.htm`)
 

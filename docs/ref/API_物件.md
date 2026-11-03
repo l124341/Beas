@@ -744,7 +744,7 @@ end if
 | MovingAveragePrice | 傳回依數量與價格計算的物料平均價格。 |
 | ManageStockByWareHouse | (原文無說明) |
 | NCMCode | 傳回由巴西政府發布、用於決定 IPI 稅率的物料分類。<br>(field name: NCMCode)<br>這是指向 NCM Code 資料表(ONCM)的外鍵,未透過 DI API 公開。 |
-| OrderIntervals | 設定盤點/庫存週期,例如每週一,或每月第一天。庫存週期在 SAP Business One 中定義(OCYC 資料表,未透過 DI API 公開)。 |
+| OrderIntervals | 設定庫存週期,例如每週一,或每月第一天。庫存週期在 SAP Business One 中定義(OCYC 資料表,未透過 DI API 公開)。 |
 | OrderMultiple | 設定單一訂單中,在最小數量之外的倍數數量。 |
 | OutgoingServiceCode | 設定銷項服務代碼(Outgoing Service Code)。<br>(field name: OSvcCode)<br>這是指向服務代碼資料表(OSCD)的外鍵,未透過 DI API 公開。 |
 | Picture | 設定要附加到物料的圖片檔名。<br>(field name: PicturName)<br>長度:200 字元。 |

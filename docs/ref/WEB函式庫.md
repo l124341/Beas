@@ -1296,7 +1296,7 @@ ux.dgrid('ux-dgrid').page(1);
 
 Preview：在範例的預覽中，可以看到此字串的結果：〔圖：ux_dgrid_ex_01.png〕
 
-⚠ 原文疑似不一致：Example 01 標示「using Beas Service Layer」，但用的是 `url:'/odata4/Item?...'` 而非 `bsl` 屬性；其中 `&$select=ItemCode,ItemName'` 一行前缺少開頭引號與 `+`（程式碼照原文保留）。另 URL 範例第一行 `ux.dgrid('ux-dgrid', {` 後接 `,fields:`（物件開頭即有逗號）。
+⚠ 原文疑似不一致：Example 01 標示「using Beas Service Layer」，但用的是 `url:'/odata4/Item?...'` 而非 `bsl` 屬性；其中 `&$select=ItemCode,ItemName'` 一行缺少開頭的單引號（上一行行尾已有 `+`）（程式碼照原文保留）。另 URL 範例第一行 `ux.dgrid('ux-dgrid', {` 後接 `,fields:`（物件開頭即有逗號）。
 
 ---
 
@@ -1705,7 +1705,7 @@ console.log( res );
 
 | AI | 說明（原文） | 說明（中譯） | Type | Length |
 |---|---|---|---|---|
-| 00 | Serial Shipping Container Code (SSCC) | 系列貨櫃運送碼（SSCC） | string | 18 |
+| 00 | Serial Shipping Container Code (SSCC) | 序列貨櫃運送碼（SSCC） | string | 18 |
 | 01 | Global Trade Item Number (GTIN) ( Item Code ) | 全球貿易品項代碼（GTIN）（品號） | number | 14 |
 | 02 | GTIN of Contained Trade Items | 所含貿易品項的 GTIN | number | 14 |
 | 10 | Batch/Lot Number (DistNumber) | 批次／批號（DistNumber） | string | 1-20 |

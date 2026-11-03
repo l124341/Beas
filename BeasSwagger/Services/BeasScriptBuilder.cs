@@ -187,30 +187,49 @@ public static class BeasScriptBuilder
         return (Rid(r.RequestId, "bomversion", father + ver), sb.ToString());
     }
 
-    /// <summary>新增途程(原 routing.add)。Operation→ag_id、WorkCenter→aplatz_id。</summary>
-    public static (string requestId, string script) RoutingAdd(RoutingRequest r)
+    /// <summary>
+    /// 途程 script(原 routing.add / routing.change 共用):ue_api_routing 新增一行。
+    /// REQUESTID 與原 DLL 一致:"Rot:" + Mes + CreateDate;結果回傳新行的 pos_id(&lt;e_pos_id&gt;)。
+    /// 原 DLL 另外設了 routing=aplatz_id=&lt;operation&gt;,但隨後 workcenter(同為 aplatz_id)會覆寫,故省略。
+    /// </summary>
+    static (string requestId, string script) RoutingScript(RoutingRequest r)
     {
         var item = V(r.Item, "Item");
         var sb = new StringBuilder();
         sb.Append("declare=routing=ue_api_routing");
         sb.Append(NL).Append("routing=new=").Append(item);
-        sb.Append(NL).Append("if <return> = -1 then");
-        sb.Append(NL).Append(" destroy=routing");
-        sb.Append(NL).Append(" return failure");
-        sb.Append(NL).Append("end if");
         sb.Append(NL).Append("routing=addline");
         sb.Append(NL).Append("routing=operation=").Append(V(r.Operation, "Operation"));
         sb.Append(NL).Append("routing=description=").Append(V(r.Description, "Description"));
-        sb.Append(NL).Append("routing=workcenter=").Append(V(r.WorkCenter, "WorkCenter"));
         sb.Append(NL).Append("routing=setupforcalculator=").Append(r.SetupForCalculator);
-        sb.Append(NL).Append("routing=setupforsched=").Append(r.SetupForSched);
         sb.Append(NL).Append("routing=maschinetime=").Append(r.MaschineTime);
         sb.Append(NL).Append("routing=labortime=").Append(r.LaborTime);
         sb.Append(NL).Append("routing=maschinelabortime=").Append(r.MaschineLaborTime);
+        sb.Append(NL).Append("routing=workcenter=").Append(V(r.WorkCenter, "WorkCenter"));
+        sb.Append(NL).Append("routing=setupforsched=").Append(r.SetupForSched);
         sb.Append(NL).Append("routing=update");
         sb.Append(NL).Append("destroy=routing");
-        sb.Append(NL).Append("setvar=is_answertext=OK");
-        return (Rid(null, "routingadd", V(r.Mes, "Mes") + item), sb.ToString());
+        sb.Append(NL).Append("setvar=is_answertext=<e_pos_id>");
+        return (RoutingRequestId(r), sb.ToString());
+    }
+
+    internal static string RoutingRequestId(RoutingRequest r) => "Rot:" + V(r.Mes, "Mes") + V(r.CreateDate, "CreateDate");
+
+    /// <summary>新增途程(原 routing.add)。</summary>
+    public static (string requestId, string script) RoutingAdd(RoutingRequest r) => RoutingScript(r);
+
+    /// <summary>更新途程(原 routing.change):與 add 相同的 script;呼叫端要先在同一交易刪除舊途程(見 RoutingDeleteStatements)。</summary>
+    public static (string requestId, string script) RoutingChange(RoutingRequest r) => RoutingScript(r);
+
+    /// <summary>原 routing.delete:刪除該料號的 BEAS_APL_WKZ 與 BEAS_APL(整條途程)。注意是直接對 Beas 表下 DELETE。</summary>
+    public static IReadOnlyList<BeasSqlStatement> RoutingDeleteStatements(string itemCode)
+    {
+        var item = V(itemCode, "ItemCode");
+        return new[]
+        {
+            new BeasSqlStatement(@"delete from {db}.""BEAS_APL_WKZ"" where ""ItemCode"" = ?", new object?[] { item }),
+            new BeasSqlStatement(@"delete from {db}.""BEAS_APL"" where ""ItemCode"" = ?", new object?[] { item }),
+        };
     }
 
     /// <summary>

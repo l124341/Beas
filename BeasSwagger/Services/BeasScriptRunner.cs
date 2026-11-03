@@ -24,7 +24,7 @@ public class BeasInterfaceNotSupportedException(string message) : Exception(mess
 public class BeasScriptRunner(IBeasScriptClient client, IOptions<BeasOptions> opt)
 {
     public Task<BeasResult> RunAsync(BeasRequest req, Func<(string requestId, string script)> script,
-        Func<(string requestId, string script)>? bsl, CancellationToken ct)
+        Func<(string requestId, string script)>? bsl, CancellationToken ct, IReadOnlyList<BeasSqlStatement>? pre = null)
     {
         var which = req.Interface ?? opt.Value.Interface;
         (string id, string text) built;
@@ -35,6 +35,6 @@ public class BeasScriptRunner(IBeasScriptClient client, IOptions<BeasOptions> op
             built = bsl();
         }
         else built = script();
-        return client.RunScriptAsync(built.id, built.text, req.Connection, ct);
+        return client.RunScriptAsync(built.id, built.text, req.Connection, ct, which == BeasInterface.Bsl ? null : pre);
     }
 }

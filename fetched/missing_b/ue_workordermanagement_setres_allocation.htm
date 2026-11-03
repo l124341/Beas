@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>setres_allocation</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Define rules for Pre-Assign in Allocation window &nbsp; For more information see PreAssign &nbsp; &nbsp;Variable Read Write Description e_res_dfltwhs x x 	Default warehouse from whi" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ue_workordermanagement_setres_issuewo.htm",
+   prevP: "ue_workordermanagement_setres_reservation.htm",
+   currP: "ue_workordermanagement_setres_allocation.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "setres_allocation",
+   mailsubject: "Feedback on: Beas Script 2026.09 - setres_allocation",
+   sharesubject: "Beas Script 2026.09 - setres_allocation",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ue_workordermanagement_Setres_allocation",
+   mailpath: "User events &gt; workordermanagement &gt; Preassign &gt; setres_allocation /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - setres_allocation").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_workordermanagement_setres_allocation.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>setres_allocation</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">setres_allocation</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Define rules for Pre-Assign in Allocation window</p>
+<p class="p_Normal"><img alt="Issue_pre-assign" width="473" height="292" style="margin:0;width:473px;height:292px;border:none" src="issue_pre-assign.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For more information <span class="f_See">see</span> <a href="userevent_reservationprocess.htm" class="topiclink">PreAssign</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table class="fielddescription" >
+<thead>
+<tr class="fielddescription">
+<th class="fielddescription" style="width:148px;"><p class="p_Normal"><span style="font-weight: bold;">Variable</span></p>
+</th>
+<th class="fielddescription" style="width:49px;"><p class="p_Normal"><span style="font-weight: bold;">Read</span></p>
+</th>
+<th class="fielddescription" style="width:52px;"><p class="p_Normal"><span style="font-weight: bold;">Write</span></p>
+</th>
+<th class="fielddescription" style="width:833px;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_CourierFixed">e_res_dfltwhs</span></p>
+</td>
+<td class="fielddescription" style="width:49px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:833px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Default warehouse from which goods are taken or reserved</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">By default, the following value is stored:</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">case</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">when</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">ifnull</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTSTL&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">''</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">''</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">then</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_FTSTL&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">else</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;DfltWh&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">end</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If always the same warehouse is to be set as default in the Reservation window: &nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">setres_reservation</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">e_res_dfltwhs</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'01'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte">&nbsp;</span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Important: </span>brackets, otherwise the ' -character could be misinterpreted</p>
+<p class="p_Normal">Alternatively <span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">e_res_dflthws</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;'01'&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Available tables:</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte">BEAS_FTSTL, BEAS_FTPOS, BEAS_FTHAUPT, OITM, O2 (OITM </span>from assembly<span class="f_Sripte">), BEAS_ME, BEAS_AGTYP</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px; background-color:#F7F7F7;"><p class="p_Normal"><span class="f_Sripte">e_res_whscode_std</span></p>
+</td>
+<td class="fielddescription" style="width:49px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:52px; background-color:#F7F7F7;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:833px; background-color:#F7F7F7;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Warehouses considered at preassign</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Available tables:</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte">OITM, OWHS</span></p>
+<p class="p_Normal">batch item: <span class="f_Sripte">OBTN, OBTQ</span>, </p>
+<p class="p_Normal">serial number item: <span class="f_Sripte">OSRN, OSRQ</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Withdrawal always with priority:</p>
+<p class="p_Normal">1. Reservation (the switch has no effect)</p>
+<p class="p_Normal">2. Allocation warehouse – if included in the list</p>
+<p class="p_Normal">3. Default warehouse which may be overwritten by a warehouse list. Extended definition of sorting is not possible.</p>
+<p class="p_Normal">The withdrawal sorting set up in configuration wizard is applied for batches and serial numbers.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To consider additionally the default warehouse insert the place holder &quot;*****&quot; </p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">e_res_issuewo</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">e_res_whscode_std</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OWHS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">in</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'*****'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'01'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'02'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">functoin</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="fielddescription">
+<td class="fielddescription" style="width:148px;"><p class="p_Normal"><span class="f_Sripte">e_res_filter</span></p>
+</td>
+<td class="fielddescription" style="width:49px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:52px;"><p class="p_Normal" style="text-align: center;">x</p>
+</td>
+<td class="fielddescription" style="width:833px;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Filter determining which BoM position is to be considered</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Used to determine for which BoM positions to create a reservation or allocation</p>
+<p class="p_Normal">The following tables are available:</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte">BEAS_FTSTL, BEAS_FTPOS, BEAS_FTHAUPT, OITM, O2 (OITM </span>from assembly<span class="f_Sripte">), BEAS_ME, BEAS_AGTYP</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte">&nbsp;</span></p>
+<p class="p_Normal"><span class="f_Example">Example</span>: For reservation, consider only batch-related items, for which a &quot;Y&quot; was entered in the material group in field &quot;UDF1&quot;. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">setres_reservation</span><br />
+<span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">e_res_filter</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">cr_lf</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">and</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;ManBtchNum&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Y'</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">or</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">coalesce</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">((</span><span class="f_CodeExample">select&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_MATGRP&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;UDF1&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">from</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_MATGRP&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&amp;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">where</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;BEAS_MATGRP&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;GRUPPE&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OITM&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;U_gruppe&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">),</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'N'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'Y'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="text-decoration: underline;">Why &nbsp;WoDocEntry / WoLineNumber not available?</span></p>
+<p class="p_Normal">Reason: &nbsp;In the Reservation list you can have more than one work order. You must define the rules in the SQL query.</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample">&nbsp;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;reservation:&nbsp;User&nbsp;&quot;1&quot;&nbsp;has&nbsp;only&nbsp;access&nbsp;to&nbsp;warehouse&nbsp;01&nbsp;and&nbsp;02</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">setres_reservation</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">currentuser</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;1&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #666699;">setvar</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">e_res_whscode_std</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;OWHS&quot;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">&quot;WhsCode&quot;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">in</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">(</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'01'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">,</span><span class="f_CodeExample" style="font-style: italic; color: #0000ff;">'02'</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">)</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">if</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span></p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

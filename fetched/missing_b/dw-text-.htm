@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>dw text&nbsp;</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Properties for Text controls in DataWindow objects" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "web_app_version_2.htm",
+   prevP: "dw-columpute.htm",
+   currP: "dw-text-.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "dw text&nbsp;",
+   mailsubject: "Feedback on: Beas Script 2026.09 - dw text",
+   sharesubject: "Beas Script 2026.09 - dw text",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Dw-text-",
+   mailpath: "Windows &gt; datawindow &gt; dw text&nbsp; /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - dw text&nbsp;").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "dw-text-.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>dw text&nbsp;</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">dw text </span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="powerbuilder-logo" width="110" height="24" style="margin:0;width:110px;height:24px;border:none" src="powerbuilder-logo.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Properties for Text controls in DataWindow objects</p>
+<p class="p_Normal">An x in the M (Modify) column means you can change the property. An x in the S column means you can use the property with the SyntaxFromSQL method. When (exp) is included in the description, you can specify a DataWindow expression as the value for that property.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:middle; width:178px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property for text</span></p>
+</th>
+<th style="vertical-align:middle; width:29px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">M</span></p>
+</th>
+<th style="vertical-align:middle; width:28px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">S</span></p>
+</th>
+<th style="vertical-align:middle; width:967px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">AccessibleDescription</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A description of the control for use by assistive technology tools.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">AccessibleName</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A descriptive label for the control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">AccessibleRole</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A description of the kind of user-interface element that the control is.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Alignment</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The alignment of the text.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Attributes</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">A list of the properties of the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Background.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Background settings for the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Band</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The band containing the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Border</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The type of border around the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Color</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The text color.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Enabled</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Determines whether the control on a DataWindow is enabled.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">FocusRectangle</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Determines whether a rectangle displays around the select control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Font.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Font settings for the text.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Height</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The height of the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Height.AutoSize</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the control's height is adjusted to fit the data.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Height.HasMinHeight</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the control should maintain its minimum height.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">HideSnaked</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the control appears once per page when printing newspaper columns.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">HTML.property</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Settings for creating a hyperlink for the text.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Moveable</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the user can move the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Name</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The name of the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Pointer</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The pointer image when it is over the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Resizeable</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Whether the user can resize the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SlideLeft</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Whether the text control moves left to fill space.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">SlideUp</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) How the text control moves up to fill empty space.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">TabSequence</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The position of the text in the tab order.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Tag</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The tag text for the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Text</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The displayed text.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Type</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">The control's type, which is Text.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Visible</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) Whether the control is visible.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Width</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The width of the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">X</p>
+</td>
+<td style="vertical-align:middle; width:29px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The x coordinate of the text control.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:178px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Y</p>
+</td>
+<td style="vertical-align:middle; width:29px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">x</p>
+</td>
+<td style="vertical-align:middle; width:28px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+<td style="vertical-align:middle; width:967px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">(exp) The y coordinate of the text control.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 0;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Copied from the original Powerbuilder documentation.</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

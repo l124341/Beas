@@ -1,0 +1,813 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>document</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Methods (^1) Method Description add &nbsp;cancel &nbsp;close &nbsp;getasxml &nbsp;getbykey &nbsp;savetofile &nbsp;savexml &nbsp;update &nbsp;setbpl=&lt;warehouse&gt; sets the branch from warehouse (only" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "forecast.htm",
+   prevP: "customerequipmentcard.htm",
+   currP: "document.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "document",
+   mailsubject: "Feedback on: Beas Script 2026.09 - document",
+   sharesubject: "Beas Script 2026.09 - document",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Document",
+   mailpath: "SAP DI API &gt; DI-API: Objects &gt; document /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - document").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "document.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>document</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">document</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="sap-sdk" width="224" height="45" style="margin:0;width:224px;height:45px;border:none" src="sap-sdk.jpg"/></p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span style="font-weight: bold;">Methods (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Method</span></p>
+</th>
+<th style="vertical-align:top; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">add</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">cancel</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">close</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">getasxml</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">getbykey</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">savetofile</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">savexml</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">update</span></p>
+</td>
+<td style="vertical-align:top; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">setbpl=&lt;warehouse&gt;</span></p>
+</td>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">sets the branch from warehouse (only if multi-branch is active)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Properties (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:314px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Property</span></p>
+</th>
+<th style="vertical-align:top; width:900px; background-color:#DDDDDD; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span style="font-weight: bold;">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">acivity, action</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns a valid value of BoActivities type that specifies an activity with the business partner.</p>
+<p class="p_Normal">Set: activity=1 (meeting)</p>
+<p class="p_Normal">Get: activity= return value in &lt;value&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">activitytype, cntcttype</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Set or get the activity.</p>
+<p class="p_Normal">Set: activitytype=1</p>
+<p class="p_Normal">Get: activitytype= return value in &lt;e_activitytype&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">address</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">adress2</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">agentcode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">bpl_idassignedtoinvoice</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">only if multi-branch is active</p>
+<p class="p_Normal">set the bpl_id for branch OBPL</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">cardcode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">cardname</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">comments</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">confirmed</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">y/n</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">contactcode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the code of the contact person</p>
+<p class="p_Normal">Set: contactcode=112</p>
+<p class="p_Normal">Get: contactcode= &nbsp; &nbsp; &nbsp; &nbsp;return value in &lt;e_contactcode&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">contactpersoncode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the contact person code of the specified business partner.</p>
+<p class="p_Normal">Set: contactpersoncode=23</p>
+<p class="p_Normal">Get: contactpersoncode= &nbsp; &nbsp;return value in &lt;e_ContactPersonCode&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">contactdate, cntctdate</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the contact date.</p>
+<p class="p_Normal">Set: contactdate=2014.04.23</p>
+<p class="p_Normal">Get: contactdate= &nbsp; &nbsp; &nbsp; &nbsp;return value in &lt;e_ContactDate&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">details</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the details.</p>
+<p class="p_Normal">Set: details=Set my details text </p>
+<p class="p_Normal">Get: details= &nbsp; return value in &lt;e_detail&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">doccurrency</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">docdate</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">docduedate</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">delivery date in sale, value date in invoice, validate to in quotations ...</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">docentry</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">internal number - not set!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">docnum</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the number of the document.</p>
+<p class="p_Normal">Set: docnum=10002341</p>
+<p class="p_Normal">Get: docnum= &nbsp; return value in &lt;e_docnum&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">docnum_str</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the import or export document number.</p>
+<p class="p_Normal">Set: docnum_str=A23ZR</p>
+<p class="p_Normal">Get: docnum_str= &nbsp; return value in &lt;e_ls_docnum&gt;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">docobjectcode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">refered to <a href="documenttyp.htm" class="topiclink">getbusinessobject</a>. must be set in drafdocuments. only for backward compatibility.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">docobjectcodeex</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">new function for docobjectcode. see <a href="documenttyp.htm" class="topiclink">getbusinessobject</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">fromwarehouse</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">only transfer: from warehouse</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">handwritten</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">y/n</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">languagecode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">lines</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">lines-object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">manualnumber</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">char(20)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">numatcard</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">char(16) Sets or returns a unique code by which your vendor/customer identifies your company.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">project</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">reference1</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">char(11)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">reference2</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">char(11)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">shiptocode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Sets or returns the Ship To address name. </p>
+<p class="p_Normal">Length: 50 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed"><a href="serialnumbers.htm" class="topiclink">serialnumbers</a></span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">transportationcode,trnspcode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:314px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"><span class="f_CourierFixed">SequenceCode</span></p>
+</td>
+<td style="vertical-align:top; width:900px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="text-indent: -18px; margin: 0 0 2px 18px;">Generate SAP documents. The field is enabled in Beas but not filled in automatically in Beas processes. <br />
+<img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_Example"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Example to test:</a></span></p>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">declare=di_doc=ue_api_sbo&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">di_doc=getbusinessobject=20&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">di_doc=cardcode=C0001&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">di_doc=BPL_IDAssignedToInvoice=1&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">di_doc=SequenceCode=23&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">di_doc=line.itemcode=ItemXXX&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">di_doc=line.price=1&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">di_doc=line.quantity=1&nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 0 0;"><span style="font-size: 8pt; font-family: 'Courier New',Courier,monospace; background-color: #eaeaea;">di_doc=add</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Lines-Methods</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setcurrentline</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setcurrentline=1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">setcurrentline_linenum</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Select a line based on the &quot;lineNum&quot; field. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"><a href="speciallines.htm" class="topiclink">speciallines</a></span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Properties for special lines</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Line-Properties (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">accountcode</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">address</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">barcode</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the bar code (EAN code) for this item. </p>
+<p class="p_Normal">Length: 16 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">baseentry</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">baseline</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">basetype</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"><a href="batchnumbers.htm" class="topiclink">batchnumber</a></span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">batchnumber-object</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">backorder</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns a valid value of Y/N type that specifies whether or not to enable partial quantities of items per row in the document. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">commisionpercent</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">consumersalesforcast</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal">y/n</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">costingcode, profitcenter</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">countryorg</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">currency</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">discountpercent, discprcnt</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">factor1 .... factor4</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height1</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height2</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height1unit</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">height2unit</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">itemcode</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">itemdescription, itemname</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lengh1</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lengh1unit</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lengh2</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">lengh2unit</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">price</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">priceaftervat</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">projectcode, project</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">quantity</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">rate</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">salespersoncode</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">serialnumbers</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shipdate</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">shippingmethod</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">suppliercatnum</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">sww</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">taxcode</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">vatgroup</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><img alt="help-beispiel" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-beispiel.gif"/><span class="f_Example">Example: </span></p>
+<p class="p_Normal">Order</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare vdoc=ue_api_sbo</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=getbusinessobject=ordr</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=doctype=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=docduedate=&lt;today&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=numatcard=mycreference</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=cardcode=KundeA</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=itemcode=bau01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=quantity=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=shipdate=2006/08/01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=price=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=add</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy vdoc</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><img alt="help-beispiel" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-beispiel.gif"/><span class="f_Example">Example:</span></p>
+<p class="p_Normal"> Draft-Purcaseorder</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare vdoc=ue_api_sbo</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=getbusinessobject=odrafts</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=docobjectcode=opurchaseorders</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=doctype=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=docduedate=&lt;today&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=numatcard=mycreference</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=cardcode=KundeA</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=itemcode=bau01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=quantity=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=shipdate=2006/08/01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=price=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=add</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy vdoc</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><img alt="help-beispiel" width="35" height="35" style="margin:0;width:35px;height:35px;border:none" src="help-beispiel.gif"/><span class="f_Example">Example with UDF</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">declare vdoc=ue_api_sbo</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=getbusinessobject=ordr</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=doctype=0</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=docduedate=&lt;today&gt;</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=numatcard=mycreference</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=cardcode=KundeA</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=u_ref=3246535-55</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=itemcode=bau01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=quantity=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=shipdate=2006/08/01</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=price=10</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=lines=u_color=red</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">vdoc=add</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">destroy vdoc</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">(^1) Quelle: SAP Business One SDK</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

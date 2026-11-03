@@ -1,0 +1,743 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>dw expression</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Datawindow objects allow to work with expressions &nbsp;In Variant generator, Unit of measurement calculation and in other areas for formulas DataWindow-Syntax is used. This is to" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "datawindowcolortable.htm",
+   prevP: "datawindow.htm",
+   currP: "datawindowexpression.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "dw expression",
+   mailsubject: "Feedback on: Beas Script 2026.09 - dw expression",
+   sharesubject: "Beas Script 2026.09 - dw expression",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "DataWindowExpression",
+   mailpath: "Windows &gt; datawindow &gt; dw expression /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - dw expression").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "datawindowexpression.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>dw expression</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">dw expression</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="powerbuilder-logo" width="110" height="24" style="margin:0;width:110px;height:24px;border:none" src="powerbuilder-logo.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Datawindow objects allow to work with expressions</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Variant generator, Unit of measurement calculation and in other areas for formulas DataWindow-Syntax is used. This is to give a short overview of available functions. Further details <span class="f_See">see</span> Powerbuilder-description available on the Internet.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Mathematical symbols (operators)</a></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_TitleinText"><span class="f_TitleinText">Mathematical symbols (operators)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp;+</span></p>
+</td>
+<td style="vertical-align:top; width:303px; padding:0; border:solid thin #000000;"><p class="p_Normal"> Addition (numbers) or consolidation (characters)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp;-</span></p>
+</td>
+<td style="vertical-align:top; width:303px; padding:0; border:solid thin #000000;"><p class="p_Normal"> Subtraction</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp;*</span></p>
+</td>
+<td style="vertical-align:top; width:303px; padding:0; border:solid thin #000000;"><p class="p_Normal"> Multiplication</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp;/</span></p>
+</td>
+<td style="vertical-align:top; width:303px; padding:0; border:solid thin #000000;"><p class="p_Normal"> Division</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp;^</span></p>
+</td>
+<td style="vertical-align:top; width:303px; padding:0; border:solid thin #000000;"><p class="p_Normal"> Power</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Auxiliary symbols</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:61px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp;(</span></p>
+</td>
+<td style="vertical-align:top; width:303px; padding:0; border:solid thin #000000;"><p class="p_Normal"> Left parenthesis</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:61px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp;)</span></p>
+</td>
+<td style="vertical-align:top; width:303px; padding:0; border:solid thin #000000;"><p class="p_Normal"> Right parenthesis</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:61px; padding:0; border:solid thin #000000;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp;.</span></p>
+</td>
+<td style="vertical-align:top; width:303px; padding:0; border:solid thin #000000;"><p class="p_Normal"> Decimal separators <span style="font-weight: bold;">(all nationalities !!!)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">- The formula must be logical, '('must be followed by')' etc. </p>
+<p class="p_Normal">- Any level of nesting is permitted.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Numeric functions</a></td></tr></table></div>
+<div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">abs</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Absolute – removes the sign</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">abs(-3) = 3</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">abs(3) = 3</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">ceiling</span></p>
+</td>
+<td style="vertical-align:top; width:292px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Return of the next higher integer</p>
+</td>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">ceiling(-4.2) = 4</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">ceiling(-4.8) = 4</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">cos</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> The angle (in rad) for which the </p>
+<p class="p_Normal"> cosine should be calculated</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">cos(0) = 1</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">cos(1) = 0.540302</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">exp</span></p>
+</td>
+<td style="vertical-align:top; width:292px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> The power for the exponential </p>
+<p class="p_Normal"> e (2.71828)</p>
+</td>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Exp(2) = 7.3890560989</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">fact</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Value for the faculty</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">fact(4) = 24</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">fact(0) = 1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">int</span></p>
+</td>
+<td style="vertical-align:top; width:292px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Rounds down to the next integer</p>
+</td>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">int (3.8) = 3</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">int (-3.2) = 4</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">log</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Calculates the natural logarithm of</p>
+<p class="p_Normal"> a number</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">log(10) = 2.302585092</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">logten</span></p>
+</td>
+<td style="vertical-align:top; width:292px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Calculates the logarithm to base 10 </p>
+</td>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">logten(10) = 1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">mod</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Calculates the remainder of a division</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">mod(20, 6) = 2</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">mod(25, 4.5) = 2.5</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">pi</span></p>
+</td>
+<td style="vertical-align:top; width:292px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Multiplies Pi by the specified number</p>
+</td>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Pi ( 1 ) = 3.14159265</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Border</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Random number between 1 and</p>
+<p class="p_Normal"> specified number</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">rand(20) = 1 ... 20</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">round</span></p>
+</td>
+<td style="vertical-align:top; width:292px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Rounds the number from the</p>
+<p class="p_Normal"> specified position</p>
+</td>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">round(3.333,2) = 3.33</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">round(3.335,2) = 3.34</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">round(324,-2) = 300</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">sign</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Calculates whether the number is</p>
+<p class="p_Normal"> negative, zero or positive.</p>
+<p class="p_Normal"> (by checking the sign)</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">sign(5) = 1</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">sin</span></p>
+</td>
+<td style="vertical-align:top; width:292px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Calculates the sine of an angle</p>
+</td>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">sin(1)=0.84147098</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">sqrt</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Calculates the square root of a </p>
+<p class="p_Normal"> number</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">sqrt(2) = 1.414213562</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">tan</span></p>
+</td>
+<td style="vertical-align:top; width:292px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Calculates the tangent of an angle</p>
+</td>
+<td style="vertical-align:top; width:202px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">tan(1) =  1.55741</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">truncate</span></p>
+</td>
+<td style="vertical-align:top; width:292px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Reduces a number to the specified</p>
+<p class="p_Normal"> places</p>
+</td>
+<td style="vertical-align:top; width:202px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">truncate(9.22, 1) = 9.2</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">truncate(9.28, 1) = 9.2</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Logical formulas</a></td></tr></table></div>
+<div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_TitleinText">&lt;%PROGRAMNAME%&gt;<span style="font-weight: bold;"> </span>also permits the use of logical formulas with the following structure:</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">if ( logic , value by true , value by false)</span></p>
+<p class="p_Normal">e.g.</p>
+<p class="p_Normal"><span class="f_Sripte" style="font-family: Courier,monospace;">if ( red = blue , 3.34 * x , 0 ) + (x * 2)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Logical characters and functions</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> =</span></p>
+</td>
+<td style="vertical-align:top; width:263px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Both values are identical</p>
+</td>
+<td style="vertical-align:top; width:191px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace;">=</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 100</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &gt;</span></p>
+</td>
+<td style="vertical-align:top; width:263px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value greater than right value</p>
+</td>
+<td style="vertical-align:top; width:191px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace;">&gt;</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 100</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &lt;</span></p>
+</td>
+<td style="vertical-align:top; width:263px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value smaller than right value</p>
+</td>
+<td style="vertical-align:top; width:191px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">&lt; </span><span class="f_Sripte" style="font-family: Courier,monospace;">100</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &lt;&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:263px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value is not right value</p>
+</td>
+<td style="vertical-align:top; width:191px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace;">&lt;&gt;</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 100</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &gt;=</span></p>
+</td>
+<td style="vertical-align:top; width:263px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value greater than or equal </p>
+<p class="p_Normal"> to right value</p>
+</td>
+<td style="vertical-align:top; width:191px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace;">&gt;=</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 100</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &lt;=</span></p>
+</td>
+<td style="vertical-align:top; width:263px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value smaller than or equal</p>
+<p class="p_Normal"> to right value</p>
+</td>
+<td style="vertical-align:top; width:191px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">price &lt;= 100</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> NOT=</span></p>
+</td>
+<td style="vertical-align:top; width:263px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value is not right value</p>
+</td>
+<td style="vertical-align:top; width:191px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">not =</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 100</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> LIKE</span></p>
+</td>
+<td style="vertical-align:top; width:263px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value is part of right value</p>
+</td>
+<td style="vertical-align:top; width:191px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Name </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">like</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 'C%' </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> IN</span></p>
+</td>
+<td style="vertical-align:top; width:263px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value contained in right list</p>
+</td>
+<td style="vertical-align:top; width:191px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">in</span><span class="f_Sripte" style="font-family: Courier,monospace;"> (100,200,300)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> BETWEEN</span></p>
+</td>
+<td style="vertical-align:top; width:263px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value is in the range of</p>
+</td>
+<td style="vertical-align:top; width:191px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">between</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 1000 and 2000</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> NOT LIKE</span></p>
+</td>
+<td style="vertical-align:top; width:263px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value is not in right value</p>
+</td>
+<td style="vertical-align:top; width:191px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">not like</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 'C%'</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> NOT IN</span></p>
+</td>
+<td style="vertical-align:top; width:263px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value is not in right list</p>
+</td>
+<td style="vertical-align:top; width:191px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">not in</span><span class="f_Sripte" style="font-family: Courier,monospace;"> (100,200,300)</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:110px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> NOT BETWEEN</span></p>
+</td>
+<td style="vertical-align:top; width:263px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Left value is not in range</p>
+</td>
+<td style="vertical-align:top; width:191px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Price </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">not between</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 1000 </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">and</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 2000</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">LIKE</span> works with placeholders:</p>
+<p class="p_Normal"><span class="f_Sripte">% &nbsp; &nbsp; &nbsp; &nbsp;</span>Any number of characters</p>
+<p class="p_Normal"><span class="f_Sripte">_ &nbsp; &nbsp; &nbsp; &nbsp;</span>Any single character</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example</span>: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_Normal"><span class="f_Sripte">'c%'</span> &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;corresponds to any string beginning with c</p>
+<p class="p_Normal"><span class="f_Sripte">'c_' &nbsp; &nbsp; &nbsp; &nbsp;</span>corresponds to any string beginning with c and containing one additional arbitrary character</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Logical links with &quot;if&quot;</a></td></tr></table></div>
+<div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Conditions can be linked with AND and OR as well as with NOT AND/OR:</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">if ( x = y </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">and</span><span class="f_Sripte" style="font-family: Courier,monospace;"> x = z ,1,0)</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">if ( x = y </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">or</span><span class="f_Sripte" style="font-family: Courier,monospace;"> x = z,1,0)</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">if ( x = y </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">and not</span><span class="f_Sripte" style="font-family: Courier,monospace;"> x = z,1,0)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/> &nbsp; <a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Logical formulas with &quot;case&quot;</a></p>
+<div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 0 18px;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">With <span style="font-weight: bold;">case</span> different results can be returned depending on a condition.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">case</span><span class="f_Sripte" style="font-family: Courier,monospace;"> ( column </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">when</span><span class="f_Sripte" style="font-family: Courier,monospace;"> value1 </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">then</span><span class="f_Sripte" style="font-family: Courier,monospace;"> result1 { </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">when</span><span class="f_Sripte" style="font-family: Courier,monospace;"> value2 </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">then</span><span class="f_Sripte" style="font-family: Courier,monospace;"> result2 </span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;"> &nbsp; &nbsp;{ ... } } { else resultelse } ) </span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">case</span><span class="f_Sripte" style="font-family: Courier,monospace;"> (marriage_status </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">when</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 'S' </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">then</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 'Single' </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">when</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 'M' </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">then</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 'Married' </span><span class="f_Sripte" style="font-family: Courier,monospace; font-weight: bold;">else</span><span class="f_Sripte" style="font-family: Courier,monospace;"> 'Unknown')</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Working with characters (strings)</a></td></tr></table></div>
+<div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal">Characters can be processed.</p>
+<p class="p_Normal">Characters are combined through +</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">a = &quot;Adam&quot;</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">b = &quot;Eve&quot;</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">a + &quot; &quot; + b = &quot;Adam Eve&quot;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Beginning and end of a string must be identified.</p>
+<p class="p_Normal">The following are permitted as identifier fields:</p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">&quot; &nbsp; &nbsp; &nbsp; &nbsp;&quot;Hello World&quot;</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">' &nbsp; &nbsp; &nbsp; &nbsp;'Hello World'</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">[.] &nbsp; &nbsp; &nbsp; &nbsp;[Hello World]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The use of identifier fields in string fields is permitted if the string begins with a different identifier field:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Sripte" style="font-family: Courier,monospace;">&quot;[Hello] 'World'&quot; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>Result: <span style="font-weight: bold;">[Hello] 'World'</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">There are many character editing functions</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="width:100%; border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:86px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">fill</span></p>
+</td>
+<td style="vertical-align:top; width:325px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Returns a filled string</p>
+</td>
+<td style="vertical-align:top; width:246px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">fill(&quot;*&quot;),3) = &quot;***&quot;</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">fill(&quot;-+&quot;),5) = &quot;-+-+-&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">left</span></p>
+</td>
+<td style="vertical-align:top; width:325px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> String that is truncated at the right</p>
+</td>
+<td style="vertical-align:top; width:246px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">left(&quot;hello world,6)=&quot;hello &quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">lefttrim</span></p>
+</td>
+<td style="vertical-align:top; width:325px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> String that is truncated at the right and</p>
+<p class="p_Normal"> has blank spaces removed</p>
+</td>
+<td style="vertical-align:top; width:246px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">leftright(&quot;hello world,6)=&quot;hello&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">len</span></p>
+</td>
+<td style="vertical-align:top; width:325px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Return of number of characters in a string</p>
+</td>
+<td style="vertical-align:top; width:246px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">len(&quot;hello&quot;) = 5</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; height:32px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">lower</span></p>
+</td>
+<td style="vertical-align:top; width:325px; height:32px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Swaps uppercase letters in a string for</p>
+<p class="p_Normal"> lowercase letters </p>
+</td>
+<td style="vertical-align:top; width:246px; height:32px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">lower(&quot;Hello&quot;) = hello</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">match</span></p>
+</td>
+<td style="vertical-align:top; width:325px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Checks characters used (for more</p>
+<p class="p_Normal"> information, <span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif;">see</span> Sybase Infomaker)</p>
+</td>
+<td style="vertical-align:top; width:246px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">match(&quot;A&quot;,&quot;^[A-Z]) = true</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">mid</span></p>
+</td>
+<td style="vertical-align:top; width:325px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Returns the specified part of a string</p>
+</td>
+<td style="vertical-align:top; width:246px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">mid(&quot;Hello&quot;,2,2)= &quot;al&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Pos</span></p>
+</td>
+<td style="vertical-align:top; width:325px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Returns the position of a given string in</p>
+<p class="p_Normal"> the first string</p>
+</td>
+<td style="vertical-align:top; width:246px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">pos(&quot;Hello&quot;,&quot;l&quot;) = 3</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">replace</span></p>
+</td>
+<td style="vertical-align:top; width:325px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Replaces a string in another string</p>
+</td>
+<td style="vertical-align:top; width:246px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">replace(&quot;David&quot;, 4, 2, &quot;e&quot;) = &quot;Dave&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">right</span></p>
+</td>
+<td style="vertical-align:top; width:325px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> String which is truncated at the left</p>
+</td>
+<td style="vertical-align:top; width:246px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">right(&quot;hello world&quot;,5)=&quot; world&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">righttrim</span></p>
+</td>
+<td style="vertical-align:top; width:325px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> String which is truncated at the left and</p>
+<p class="p_Normal"> has blank spaces removed</p>
+</td>
+<td style="vertical-align:top; width:246px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">righttrim(&quot;hello world&quot;,5)=&quot;world&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">space</span></p>
+</td>
+<td style="vertical-align:top; width:325px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Returns specified number of spaces</p>
+</td>
+<td style="vertical-align:top; width:246px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">space(5)=&quot;  &nbsp; &nbsp;&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">string</span></p>
+</td>
+<td style="vertical-align:top; width:325px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Converts a number, date, character into a</p>
+<p class="p_Normal"> formatted string. </p>
+<p class="p_Normal"> Observes international settings in doing so.</p>
+</td>
+<td style="vertical-align:top; width:246px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">string(5.2344,&quot;#,#0.00&quot;)</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">Germany: &quot;5,23&quot;</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">USA: 5.23</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">trim</span></p>
+</td>
+<td style="vertical-align:top; width:325px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Removes the spaces left and right</p>
+</td>
+<td style="vertical-align:top; width:246px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">trim(&quot; hello &quot;) = &quot;hello&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">upper</span></p>
+</td>
+<td style="vertical-align:top; width:325px; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Swaps lowercase letters in a string for</p>
+<p class="p_Normal"> uppercase letters </p>
+</td>
+<td style="vertical-align:top; width:246px; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">upper(&quot;Hello &quot;) = &quot;HELLO&quot;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:86px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">wordcap</span></p>
+</td>
+<td style="vertical-align:top; width:325px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p class="p_Normal"> Converts first letter into a capital letter and</p>
+<p class="p_Normal"> the remainder into lowercase letters.</p>
+</td>
+<td style="vertical-align:top; width:246px; background-color:#FFFFFF; padding:2px; border:solid thin #7d7d7d;"><p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">wordcap(&quot;boston, MASSACHUSETTS&quot;)</span></p>
+<p style="margin: 0 0 0 0;"><span class="f_Sripte" style="font-family: Courier,monospace;">= &quot;Boston, Massachusetts&quot;</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

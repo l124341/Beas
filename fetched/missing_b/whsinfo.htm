@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>whsinfo</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="whsinfo (^1) is a child object of the Items object that represents the items in the warehouse. This object is part of the Inventory and Production module. This object enables..." />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "diapi_itemprice.htm",
+   prevP: "items_prices.htm",
+   currP: "whsinfo.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "whsinfo",
+   mailsubject: "Feedback on: Beas Script 2026.09 - whsinfo",
+   sharesubject: "Beas Script 2026.09 - whsinfo",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Whsinfo",
+   mailpath: "SAP DI API &gt; DI-API: Objects &gt; item &gt; whsinfo /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - whsinfo").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "whsinfo.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>whsinfo</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">whsinfo</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="sap-sdk" width="224" height="45" style="margin:0;width:224px;height:45px;border:none" src="sap-sdk.jpg"/></p>
+<p class="p_Normal">whsinfo (^1) is a child object of the Items object that represents the items in the warehouse. This object is part of the Inventory and Production module. This object enables you to add an item to the warehouse.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">Example</span>: Lock an item warehouse</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Row&nbsp;from&nbsp;OWHS&nbsp;(you&nbsp;must&nbsp;read&nbsp;it&nbsp;before</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">my_row</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #ffffff;">11</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;from&nbsp;item</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">my_itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">FP</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">​declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_sbo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbusinessobject</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">oitems</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">my_itemcode</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">whsinfo</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">SetCurrentLine</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">my_row</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">whsinfo</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">locked</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Y</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">update</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myitem</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_See">Example</span>: Add warehouse to an item</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">setvar</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">my_itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">FP</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_sbo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbusinessobject</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">oitems</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=&lt;</span><span class="f_CodeExample" style="color: #3366ff;">my_itemcode</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">whsinfo</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">warehousecode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">01</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">whsinfo</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">add</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">whsinfo</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">whscode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">02</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Source table: OITW.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Public Methods</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Add</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Adds a record to the object table in SAP Business One company database. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SetCurrentLine</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets the active row to a specified row number. </p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Public Properties</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Committed</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the quantity of items committed to customers.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CostAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the cost-of-sale of an item. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CostInflationAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse G/L decrease account. (field name: DecresGlAc). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CostInflationOffsetAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse cost inflation account. (field name: CostRvlAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Count</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the total rows in the ItemWarehouseInfo object. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Counted</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the current number of the counted items in stock.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CountedQuantity</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the counted inventory quantity.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> DecreasingAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the inventory decreasing. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> EUExpensesAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the total expenses inside the European Union. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> EUPurchaseCreditAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the EU Purchase Credit Account. (field name: APCMEUAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> EURevenuesAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the total revenue inside the European Union. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ExchangeRateDifferencesAcct</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Exchange Rate Differences Account. (field name: ExchangeAc). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ExemptedCredits</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Tax Exempt Credits account. (field name: ARCMExpAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ExemptIncomeAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the exempt revenue. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ExpenseClearingAct</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated with Expenses clearing Account. </p>
+<p class="p_Normal">(field name: ExpClrAct).</p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ExpenseOffsettingAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Expense Offset Account. (field name: ExpOfstAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+<p class="p_Normal">This is a Foreign Key to the ChartOfAccounts Object.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ExpensesAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the expenses account. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ForeignExpensAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the total expenses outside the European Union. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ForeignPurchaseCreditAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Foreign Purchase Credit Account. (field name: APCMFrnAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ForeignRevenueAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the total revenue outside the European Union. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> GLDecreaseAcct</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse G/L decrease account. (field name: DecresGlAc). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> GLIncreaseAcct</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse PA return account. (field name: PAReturnAc). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> GoodsClearingAcct</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Goods Clearing Account. (field name: BalanceAcc). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> IncreasingAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the inventory increasing. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> InStock</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the items quantity in the warehouse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> InventoryAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the inventory account. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ItemCycleCount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the ItemCycleCount object.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Locked</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns a valid value of BoYesNoEnum type that specifies whether or not the item is locked entry or exit in the warehouse. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MaximalStock</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the maximum allowed quantity of an item in the warehouse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MinimalOrder</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the minimum allowed quantity of an order.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MinimalStock</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the minimum allowed quantity of an item in the warehouse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> NegativeInventoryAdjustmentAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Negative Inventory Adjustment. (field name: NegStckAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+<p class="p_Normal">This is a Foreign Key to the ChartOfAccounts Object.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Ordered</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the quantity of items ordered from vendors.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PAReturnAcct</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse PA return acct. (field name: PAReturnAc). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PriceDifferenceAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the price difference between the invoice and the shipping document. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseAcct</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Purchase Account. (field name: PurchaseAc). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseCreditAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Purchase Credit Account. (field name: APCMAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseOffsetAcct</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse purchase offset account. (field name: PurchOfsAc). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ReturningAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the inventory returned to the vendor. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> RevenuesAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the total revenue. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesCreditAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Sales Credit Account. (field name: ARCMAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesCreditEUAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Sales Credit EU Account. (field name: ARCMEUAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesCreditForeignAcc</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the Sales Credit Foreign Acct. (field name: ARCMFrnAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ShippedGoodsAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse Shipped Goods Account. (field name: ShpdGdsAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> StandardAveragePrice</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the Item Cost. </p>
+<p class="p_Normal">(field name: AvgPrice).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> StockInflationAdjustAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse stock inflation adjust account. (field name: StokRvlAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> StockInflationOffsetAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse stock inflation offset account. (field name: StkOffsAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> TransferAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the transfer account number. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> UserFields</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the UserFields object.</p>
+<p class="p_Normal">Fill &quot;Userfield&quot; information related with WhsInfo of Items object with BeasScript.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="hmtoggle_plus1" width="9" height="9" style="margin:0;width:9px;height:9px;border:none" src="hmtoggle_plus1.gif"/></td><td style="border:none;padding:0"><span class="f_See"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Example</a></span></td></tr></table></div>
+<div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 2px 18px;"><table style="border:solid 2px #7d7d7d; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; padding:2px; border:solid thin #7d7d7d;"><p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">destroy</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">myitem</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">ue_api_sbo</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">getbusinessobject</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">oitems</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">RM</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">whsinfo</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">SetCurrentLine</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">0</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">whsinfo</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">U_myfield</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">Test</span></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #0000ff;">myitem</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">update</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> VarienceAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the variance between the actual price and the standard price. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> VATInRevenueAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns this warehouse VAT in revenue account. (field name: VatRevAct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> WarehouseCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the warehouse code. </p>
+<p class="p_Normal">Mandatory property. </p>
+<p class="p_Normal">Length: 8 characters. (field name: whscode)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> WasCounted</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns a valid value of BoYesNoEnum type that specifies whether or not the inventory was counted. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> WipAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to the WIP Material Account. (field name: WipAcct). </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:35%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> WipVarianceAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Sets or returns the G/L account associated to Work In Progress (WIP) differences. That is, the account for posting differences between the value of the row material (before production) and the value of the complete product (after production). </p>
+<p class="p_Normal">(field name: WipVarAcct).</p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">(^1) Quelle: SAP Business One SDK</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

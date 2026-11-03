@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>poststart</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Insert menu entries inside SAP B1 Menu &nbsp;if you want to add further menus to the SBO-environment &nbsp;function poststart end function &nbsp;because entries to &quot;start&quot; are not consider" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "ue_beasmenu_initmenu.htm",
+   prevP: "ue_beasmenu_start.htm",
+   currP: "ue_beasmenu_poststart.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "poststart",
+   mailsubject: "Feedback on: Beas Script 2026.09 - poststart",
+   sharesubject: "Beas Script 2026.09 - poststart",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "ue_beasmenu_poststart",
+   mailpath: "User events &gt; beasmenu &gt; poststart /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - poststart").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "ue_beasmenu_poststart.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>poststart</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">poststart</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal">Insert menu entries inside SAP B1 Menu</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if you want to add further menus to the SBO-environment</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_CourierFixed">function poststart</span></p>
+<p class="p_Normal"><span class="f_CourierFixed">end function</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">because entries to &quot;start&quot; are not considered.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Example">Example:</span> (part of standard solution)</p>
+<p class="p_Normal">Add menu entries in SAP HELP AREA</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">poststart</span><br />
+<span class="f_CodeExample" style="color: #666699;">beasgui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">addmenu</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">parent</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">help</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">menu_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beash1002</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">caption</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Über</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Beas</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">...&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">command</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beasgui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">info</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">bitmap</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">mbeaslogo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">bmp</span><br />
+<span class="f_CodeExample" style="color: #666699;">beasgui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">addmenu</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">parent</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">290</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">menu_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beash0006</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">caption</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Beas</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Dokumentation</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">command</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">helponline</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">topic</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">main</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">html</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">bitmap</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">mbeaslogo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">bmp</span><br />
+<span class="f_CodeExample" style="color: #666699;">beasgui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">addmenu</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">parent</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">290</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">menu_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beash0006</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">caption</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Beas</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Script</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Dokumentation</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">command</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">system</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">helponline</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">topic</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">script</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">/</span><span class="f_CodeExample" style="color: #666699;">main</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">html</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">bitmap</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">mbeaslogo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">bmp</span><br />
+<span class="f_CodeExample" style="color: #666699;">beasgui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">addmenu</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">parent</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">290</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">menu_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beash1009</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">caption</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Beas</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Activity</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Log</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">command</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">tools</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">link2url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">http</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">:</span><span class="f_CodeExample" style="font-style: italic; color: #339966;">//www.beascloud.com/beasweb/tfsActivityLog.php&lt;tab&gt;bitmap=mbeaslogo.bmp</span><br />
+<span class="f_CodeExample" style="color: #666699;">beasgui</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">addmenu</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample">parent</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #0000ff;">290</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">menu_id</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">beash0008</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">caption</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">Boyum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">IT</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #666699;">Homepage</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">command</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">tools</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">link2url</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">www</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">boyum</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">-</span><span class="f_CodeExample" style="color: #666699;">it</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">com</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #666699;">tab</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">&gt;</span><span class="f_CodeExample" style="color: #666699;">bitmap</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">=</span><span class="f_CodeExample" style="color: #666699;">mbeaslogo</span><span class="f_CodeExample" style="font-weight: bold; color: #ff0000;">.</span><span class="f_CodeExample" style="color: #666699;">bmp</span><br />
+<span class="f_CodeExample" style="color: #666699;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #993300;">function</span></p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

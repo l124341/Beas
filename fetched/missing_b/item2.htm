@@ -1,0 +1,1194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>item</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="content-language" content="en-us" />
+   <meta name="description" content="Working with Item Object Administration of items &nbsp;NOTE: If possible, use BeasServiceLayer Item Only this Object supports the complete Beas functionality. &nbsp; Example for usi" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
+<style type="text/css">
+/* No header topics */
+
+/* Breadcrumb trail */
+p#breadcrumbs {
+font-family: Verdana, Tahoma, Helvetica, Sans-Serif;   padding: 2px 0 1px 2px;
+   margin: 0;
+   font-size: 8pt; 
+   color: #999;
+   }   
+p#breadcrumbs a { color: #999; text-decoration: none;}
+p#breadcrumbs a:visited {color: #999;}
+p#breadcrumbs a:hover { color: #333; border-bottom: 1px dotted #333; }
+
+/* Search hightlight color */
+span.highlight {background-color: #ffff40;}
+</style>
+<script type="text/javascript">
+var hmHeaderTopic = true;
+
+</script> 
+<!--[if IE 9]>
+<link id="iesvgcss" rel="stylesheet" type="text/css" href="hm_webhelp_svg.css" />
+<![endif]-->	
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+<script type="text/javascript"> 
+// General topic variables
+var tVars = {
+   hmHelpPage: "index.html",
+   nextP: "items_prices.htm",
+   prevP: "generalservice.htm",
+   currP: "item2.htm",
+   defP: "main.htm",
+   mailUrl: "",
+   mailUrlQuery: "",
+   titleP: "item",
+   mailsubject: "Feedback on: Beas Script 2026.09 - item",
+   sharesubject: "Beas Script 2026.09 - item",
+   simplesubject: "Documentation%20Feedback",
+   mailid: "Item2",
+   mailpath: "SAP DI API &gt; DI-API: Objects &gt; item /",
+   mailbody: "Dear Support Staff,",
+   fbtype: false,
+   header: true,
+   background: "bg.png",
+   tablesReady: false,
+   togglesReady: false,
+   webRedirect: true,
+   topicTitleBar: true,
+   printFooter: true,
+   zoomTip: "Click to view full size image",
+   autoPrint: true,
+   printButton: "Print",
+   printButtonTip: "Print the current topic"
+   }
+// Popup configuration
+ var hmpBShadow = true;
+ var hmPopSmallDim = 500;
+ var hmPopKillVideo = true;
+ // AutoTOC variables
+ var hmatocvars = {
+   atoc_show: true,
+   atoc_title: "Contents",
+   atoc_tip: "Jump to:&nbsp;",
+   atoc_minHeaders: 3,
+   atoc_btntip_off: "No contents entries on this page",
+   atoc_btntip_on: "Display/hide topic directory",
+   atoc_toptip: "Jump to top of page",
+   atoc_top: "Scroll to Top of Page",
+   atoc_bg: "#f6f6f6",
+   atoc_border: "silver",
+   atoc_linkcolor: "#444",
+   atoc_linklimit: 45,
+   atoc_hovercolor: "#000",
+   atoc_hoverbgcolor: "#e0e0e0"
+}
+// Sortable tables
+var sortVars = {
+   europeandate: false,
+   germanNumbers: false,
+   imagePath: "",
+   image_up: "arrow-up.gif",
+   image_down: "arrow-down.gif",
+   image_empty: "arrow-empty.gif",
+   image_none: "arrow-none.gif",
+   sort_tip: "Click to sort on this column",
+   umlauts: "false"
+   }
+
+</script>
+
+<script type="text/javascript">
+if (tVars.topicTitleBar) { 
+$(document).ready(function() {
+var doc = document;  
+try {
+if (parent.hmWebHelp.navWidth != null) doc = parent.document;
+doc.title = $("<div/>").html("Beas Script 2026.09 - item").text();
+window.onunload = function() {doc.title = $("<div/>").html("Beas Script 2026.09").text();}
+} catch(err) {}
+});
+}
+</script>
+
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script type="text/javascript" src="hmtopic.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "item2.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!-- Help & Manual Premium Pack templates by Tim Green, Copyright (c) 2011-2013, All Rights Reserved -->
+<!--ZOOMSTOP-->
+
+
+
+<ul id="topictabs" class="tabs">
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>item</span></a></li>
+</ul>
+<div id="hmbox">
+<div id="hmheader">
+<div id="hmheadercontents">
+ 
+<h1 class="p_Heading1"><span class="f_Heading1">item</span></h1>
+
+</div>
+<div id="atocIcon" class="navdivs">
+<img class="navicon" id="hmAtocLink" src="contents_off.png" alt="No contents entries on this page" title="No contents entries on this page" />
+<br /><span>Contents</span>
+</div>
+</div>
+<div id="autoTocWrapper" class="topicmenu"></div>
+<div id="idcontent">
+<div id="unclicker"></div>
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="sap-sdk" width="224" height="45" style="margin:0;width:224px;height:45px;border:none" src="sap-sdk.jpg"/></p>
+<p class="p_Normal">Working with Item Object</p>
+<p class="p_Normal">Administration of items</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">NOTE: </span>If possible, use BeasServiceLayer <a href="bslitem.htm" class="topiclink">Item</a></p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Only this Object supports the complete Beas functionality.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">&nbsp;</span></p>
+<p class="p_Example"><span class="f_Example">Example for using SAP SDK for items</span></p>
+<p class="p_Normal">Load Item 10003 and change Item Name and default warehouse</p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_sbo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbusinessobject</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">oitems</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">10003</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample">&nbsp;1&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">message</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">error$item</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">not</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">found</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getlasterror</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">&nbsp;&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">newname</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;with&nbsp;di-api-name</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">defaultaultwarehouse</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">01</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;or&nbsp;width&nbsp;columnname</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">dfltwh</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">01</span><br />
+<span class="f_CodeExample" style="font-style: italic; color: #339966;">//&nbsp;Write&nbsp;change</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">update</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Note" style="border-top: none; border-right: none; border-bottom: none;"><span class="f_Note">Note: Wrong: declare=item=ue_api_spo &nbsp;user is not &quot;item&quot;. This is a sbo-gui-api-method.</span></p>
+<p class="p_Normal">&nbsp;<br />
+&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Objectmodel</span></p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span class="f_CourierFixed">items</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;|_ Pricelist</span></p>
+<p class="p_Normal"><span class="f_CourierFixed"> &nbsp;|_ whsinfo</span></p>
+<p class="p_Normal">&nbsp;</p>
+<h1 class="p_Heading1"><span class="f_Heading1">&nbsp;</span></h1>
+<p class="p_Normal"><span style="font-weight: bold;">Methods (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">add</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal">add item</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">cancel</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal">Cancels a record from the object table. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">close</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Not supported. </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getasxml</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the object from XML data, which is stored as string in a buffer. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">getbykey</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal">get itemcode. value=1=ok<br />
+<span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_sbo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbusinessobject</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">oitems</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbykey</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">10003</span><br />
+<span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">value</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #ff0000;">&lt;&gt;</span><span class="f_CodeExample"> 1 </span><span class="f_CodeExample" style="color: #3366ff;">then</span><br />
+<span class="f_CodeExample">  </span><span class="f_CodeExample" style="color: #3366ff;">message</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">error$item</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #3366ff;">not</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #3366ff;">found</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #ff0000;">&lt;</span><span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">.</span><span class="f_CodeExample" style="color: #3366ff;">getlasterror</span><span class="f_CodeExample" style="color: #ff0000;">&gt;</span><br />
+<span class="f_CodeExample">  </span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">return</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="color: #3366ff;">failure</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">end</span><span class="f_CodeExample"> </span><span class="f_CodeExample" style="font-weight: bold; color: #800080;">if</span><br />
+<span class="f_CodeExample" style="color: #ff0000;">...</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">savetofile</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Save the object to a file as XML data.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">remove</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal">delete the item</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">savexml</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Saves the object data to XML formatted data. </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:93px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">update</span></p>
+</td>
+<td style="vertical-align:top; width:504px; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed">Updates the object data in the company database. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_Attention">Attention:</span> Refer to the SAP documentation for more details on each field definition below:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Property (^1)</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 2px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> AssetItem</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Determines whether or not this item is a Fixed Assets. </p>
+<p class="p_Normal">(field name: AssetItem).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> AvgStdPrice</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Item Cost. </p>
+<p class="p_Normal">(field name: AvgPrice).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> BarCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Bar Code (EAN code) for this item. </p>
+<p class="p_Normal">(field name: CodeBars).</p>
+<p class="p_Normal">Length: 16 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> BaseUnitName</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the inventory Unit Name. </p>
+<p class="p_Normal">(field name: BaseUnit).</p>
+<p class="p_Normal">Length: 20 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Browser</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the DataBrowser object. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CommissionGroup</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Commission Group code. </p>
+<p class="p_Normal">(field name: CommisGrp).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CommissionPercent</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the commission percentage for the specified Business Partner. </p>
+<p class="p_Normal">(field name: CommisPcnt).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CommissionSum</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Total Commission for Item. </p>
+<p class="p_Normal">(field name: CommisSum).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CostAccountingMethod</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Valuation Method used to evaluate inventory. </p>
+<p class="p_Normal">(field name: EvalSystem).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> CustomsGroupCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Customs Group code. Customs groups determine the customs duty for an item purchased abroad.<br />
+(field name: CstGrpCode).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> DataExportCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Data Export Code. </p>
+<p class="p_Normal">(field name: ExportCode).</p>
+<p class="p_Normal">Length: 20 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> DefaultWarehouse</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Default Warehouse. </p>
+<p class="p_Normal">(field name: DfltWH).</p>
+<p class="p_Normal">Length: 8 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> DefaultCountingUom</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> DesiredInventory</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Preferred Quantity in Purchase Units. </p>
+<p class="p_Normal">(field name: ReorderQty).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ForceSelectionOfSerialNumber</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not to force selection of serial numbers for documents. </p>
+<p class="p_Normal">(field name: BlockOut).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ForeignExpensesAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the foreign expenses account. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ForeignName</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the item name or a description in foreign language. </p>
+<p class="p_Normal">Length: 100 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Frozen</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is on hold. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> FrozenFrom</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the start date for keeping the item on hold. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> FrozenRemarks</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the remarks regarding the on hold period. </p>
+<p class="p_Normal">Length: 30 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> FrozenTo</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the end date for keeping the item on hold. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> GLMethod</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">valid values are:</p>
+<p class="p_Normal">0 - Warehouses</p>
+<p class="p_Normal">1 - Item Group</p>
+<p class="p_Normal">2 - Item Level &nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> IncomeAccount</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Not used from DI API version 6.2 and up. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> IncomingServiceCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the incoming service code. </p>
+<p class="p_Normal">(field name: ISvcCode).</p>
+<p class="p_Normal">This is a foreign key to the Service Code table (OSCD), not exposed through the DI API.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> IndirectTax</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not to apply indirect tax. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> InventoryItem</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is a warehouse item (not a service). </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> InventoryUOM</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Unit of Measurement for the item (for example: box, case, piece). </p>
+<p class="p_Normal">Length: 5 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> IsPhantom</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not the item is a phantom item. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> IssueMethod (issuemthd)</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value that specifies the method for issuing the item from the inventory: Backflash (automatic) or Manual. <br />
+0 or B = SAP Business One issues items automatically from the inventory.</p>
+<p class="p_Normal">1 or M = The user issues specified items manually from the inventory. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ItemClass</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets that determines wether or not current Item is a Service or Material. </p>
+<p class="p_Normal">(field name: ItemClass).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ItemCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the item code in the inventory. The item code must be unique. </p>
+<p class="p_Normal">Mandatory property.</p>
+<p class="p_Normal">Length: 20 characters.</p>
+<p class="p_Normal">ItemCode is the primary key of item records in SAP Business One and used to distinguish between items in the system. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ItemCountryOrg</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the origin country of the item. </p>
+<p class="p_Normal">Length: 3 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ItemName</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the item name/description. </p>
+<p class="p_Normal">Length: 100 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ItemsGroupCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the items group code. The user can classify items by groups. Each item can be assigned to one group only. The items group is used for reports and evaluations. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ItemType</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of this Item Type. </p>
+<p class="p_Normal">(field name: ItemType).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> IUomEntry</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> LeadTime</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the lead time in days for ordering the item.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Mainsupplier</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the card code of the main supplier of this item. </p>
+<p class="p_Normal">Length: 15 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ManageBatchNumbers</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is managed by batch numbers. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ManageSerialNumbers</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is managed by serial numbers. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ManageSerialNumbersOnReleaseOnly</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that determines whether or not to create automatic serial numbers upon reception. </p>
+<p class="p_Normal">(field name: ManOutOnly).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ManageStockByWarehouse</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not the inventory is managed by the warehouse quantity levels. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Manufacturer</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the manufacturer code of the item (foreign key of the Manufacturers object). </p>
+<p class="p_Normal">Mandatory property.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MaterialGroup</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Material Group. </p>
+<p class="p_Normal">(field name: MatGrp).</p>
+<p class="p_Normal">This is a foreign key to the Material Group OMGP object, not exposed through the DI API.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MaterialType</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of BoMaterialTypes that determines current material state from Raw Material to Finished Goods. </p>
+<p class="p_Normal">(field name: MatType).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MaxInventory</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the maximum inventory quantity for this item. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MinInventory</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the minimum inventory quantity for this item. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MinOrderQuantity</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets this Item Minimum Order Quantity limitation . (field name: MinOrdrQty).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> MovingAveragePrice</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the average price of an item calculated according to quantities and prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ManageStockByWareHouse</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> NCMCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns the classification of item that is issued by the Brazilian government and used to determine the IPI tax rate. </p>
+<p class="p_Normal">(field name: NCMCode). </p>
+<p class="p_Normal">This is a foreign key to the NCM Code table (ONCM), not exposed through the DI API.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> OrderIntervals</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the inventory cycle such as, every week on Monday, or every first day of the month. The inventory cycles are defined in SAP Business One (OCYC table, which is not exposed through the DI API). </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> OrderMultiple</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the multiple quantity in addition to the minimum quantity of items in a single order. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> OutgoingServiceCode</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Outgoing Service Code. </p>
+<p class="p_Normal">(field name: OSvcCode).</p>
+<p class="p_Normal">This is a foreign key to the Service Code Table (OSCD), not exposed through the DI API.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Picture</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the picture file name to attach to an item. </p>
+<p class="p_Normal">(field name: PicturName).</p>
+<p class="p_Normal">Length: 200 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PlanningSystem</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of BoPlanningSystem type that specifies the inventory planning system: MRP or None. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PriceList</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">set pricelist. see <a href="items_prices.htm" class="topiclink">pricelistmethode</a></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ProcurementMethod</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of BoProcurementMethod type that specifies the procurement method of items: Buy or Make. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ProductSource</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of BoProductSources that determines the product source. </p>
+<p class="p_Normal">(field name: ProductSrc).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Properties</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item belongs to one or more query groups. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseFactor1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the factor #1 by which the base price list is multiplied to calculate the purchase prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseFactor2</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the factor #2 by which the base price list is multiplied to calculate the purchase prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseFactor3</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the factor #3 by which the base price list is multiplied to calculate the purchase prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseFactor4</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the factor #4 by which the base price list is multiplied to calculate the purchase prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseHeightUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseHeightUnit1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase height unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseItem</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is for purchase (for example, an item can be defined as an asset). </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseItemsPerUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the number of items per purchasing unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseLengthUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase length unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseLengthUnit1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary purchase length unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchasePackagingUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase packaging unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseQtyPerPackUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase packaging unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitHeight</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase unit height with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitHeight1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary purchase unit height with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitLength</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase unit length with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitLength1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary purchase unit length with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitVolume</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase unit volume with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitWeight</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase unit weight with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitWeight1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary purchase unit weight with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitWidth</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase unit width with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseUnitWidth1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary purchase unit width with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseVATGroup</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the VAT group for a purchase item. </p>
+<p class="p_Normal">Length: 8 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseVolumeUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase volume unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseWeightUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase weight unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseWeightUnit1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary purchase weight unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseWidthUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the purchase width unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PurchaseWidthUnit1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary purchase width unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> PUomEntry</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> QuantityOnStock</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the total quantity of the item in the warehouse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> QuantityOrderedByCustomers</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the total quantity of the items ordered by customers.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> QuantityOrderedFromVendors</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the total quantity of the items ordered from vendors.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesFactor1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the factor #1 by which the base price list is multiplied to calculate the sale prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesFactor2</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the factor #2 by which the base price list is multiplied to calculate the sale prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesFactor3</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the factor #3 by which the base price list is multiplied to calculate the sale prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesFactor4</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the factor #4 by which the base price list is multiplied to calculate the sale prices. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesHeightUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales height unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesHeightUnit1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary sales height unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesItem</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is a sales item. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesItemsPerUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the number of items per sales unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesLengthUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales length unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesLengthUnit1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary sales length unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesPackagingUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales packaging unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesQtyPerPackUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the number of items per sales packaging unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitHeight</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales height unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitHeight1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary sales height unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitLength</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales length unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitLength1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary sales length unit with the ID of the measure unit. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitVolume</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales unit volume with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitWeight</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales unit weight with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitWeight1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary sales unit weight with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitWidth</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the sales unit width with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesUnitWidth1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary sales unit width with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesVATGroup</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the VAT group for a sales item. </p>
+<p class="p_Normal">Length: 8 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesVolumeUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the unit for the sales volume unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesWeightUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the unit for the sales weight unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesWeightUnit1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary unit for the sales weight unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesWidthUnit</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the unit for the sales width unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SalesWidthUnit1</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Define the secondary unit for the sales width unit with the ID of the measure unit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SerialNum</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the serial number of the item. </p>
+<p class="p_Normal">Length: 17 characters</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ServiceGroup</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the Service Group. </p>
+<p class="p_Normal">(field name: ServiceGrp).</p>
+<p class="p_Normal">This is a foreign key to the OSGP object, not exposed through the DI API).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ShipType</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the shipping type of the item (air cargo, courier, etc.).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SRIAndBatchManageMethod</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value that specifies the method for managing serial numbers and batch numbers. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SupplierCatalogNo</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the item catalog number as provided by the main supplier. </p>
+<p class="p_Normal">Length: 17 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SWW</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets an additional identifier of the item. </p>
+<p class="p_Normal">Length: 16 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> SUomEntry</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> TreeType</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Returns a valid value of BoItemTreeTypes type that specifies the product tree type of the item (also known as bill of material type). </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> User_Text</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a free text string for this item. </p>
+<p class="p_Normal">Length: 10 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> UomGroupEntry</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> UserFields</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">Property Userfields does not exist.</p>
+<p class="p_Normal">Example to set userfield</p>
+<p class="p_Normal"><span class="f_CourierFixed">myitem=u_fieldname=myvalue</span></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> Valid</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is valid. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ValidFrom</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the start date of the item's validity. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ValidRemarks</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the remarks regarding the validity period. </p>
+<p class="p_Normal">Length: 30 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> ValidTo</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the end date of the item's validity. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> VatLiable</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is subject to VAT. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> WarrantyTemplate</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets the template for service warranty. </p>
+<p class="p_Normal">Length: 20 characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> WhsInfo</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">set whsinfo. see <a href="whsinfo.htm" class="topiclink">whsinfo</a> methode</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:25%; padding:0; border:solid thin #000000;"><p class="p_Normal"><span class="f_CourierFixed"> WTLiable</span></p>
+</td>
+<td style="vertical-align:middle; width:70%; padding:0; border:solid thin #000000;"><p class="p_Normal">sets a valid value of &quot;Y&quot; or &quot;N&quot; type that specifies whether or not this item is subject to Withholding tax. </p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">(^1) Quelle: SAP Business One SDK</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Example"><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><img alt="beasscript-logo-small" width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="beasscript-logo-small.png"/></p>
+<p class="p_CodeExample" style="page-break-inside: avoid;"><span class="f_CodeExample" style="color: #3366ff;">declare</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">ue_api_sbo</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">getbusinessobject</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">oitems</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">itemcode</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample">10003</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">itemname</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Sofa</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">invntryuom</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Peace</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">u_me_verbr</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Peace</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">saleunitmsr</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Peace</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">buyunitmsr</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">Peace</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">di_item</span><span class="f_CodeExample" style="color: #ff0000;">=</span><span class="f_CodeExample" style="color: #3366ff;">add</span><br />
+<span class="f_CodeExample" style="color: #3366ff;">destroy</span><span class="f_CodeExample">&nbsp;</span><span class="f_CodeExample" style="color: #3366ff;">di_item</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Differences to DI-API</span></p>
+<p class="p_Normal">All Properties can be mentioned about the table field name. </p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">di_item=defaultaultwarehouse=01</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">di_item=dfltwh=01</span></p>
+<p class="p_Normal">Partly available discrepancies are avoided </p>
+<p class="p_Example"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_Example">Example:</span></p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CourierFixed">di_item=validfrom=</span></p>
+<p class="p_Normal"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;delete the date in the field.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+
+
+</div> <!-- idcontent -->
+</div><!-- hmbox --> 
+</body>
+</html>

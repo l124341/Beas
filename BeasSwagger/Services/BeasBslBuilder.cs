@@ -20,9 +20,10 @@ public static class BeasBslBuilder
 
     static StringBuilder Begin() => new StringBuilder("instance bsl b");
 
-    /// <summary>送出一筆 POST 並檢查 ret_code(0 = ok)。</summary>
-    static void Post(StringBuilder sb, string varName, string entity, string json, string errPrefix)
+    /// <summary>送出一筆 POST 並檢查 ret_code(0 = ok);同時記錄成 HTTP 呼叫。</summary>
+    static void Post(StringBuilder sb, List<BslCall> calls, string varName, string entity, string json, string errPrefix)
     {
+        calls.Add(new BslCall("POST", entity, json, errPrefix));
         sb.Append(NL).Append("#define ").Append(varName);
         sb.Append(NL).Append(json);
         sb.Append(NL).Append("#end");
@@ -33,14 +34,14 @@ public static class BeasBslBuilder
         sb.Append(NL).Append("end if");
     }
 
-    static (string, string) Finish(StringBuilder sb, string requestId)
+    static BslPlan Finish(StringBuilder sb, List<BslCall> calls, string requestId)
     {
         sb.Append(NL).Append("setvar=is_answertext=<b.ret_value>");
-        return (requestId, sb.ToString());
+        return new BslPlan(requestId, sb.ToString(), calls);
     }
 
     /// <summary>發料:IssueWo。Base_LineNumber2 = BOM 位置;批號用 DistNumber。</summary>
-    public static (string requestId, string script) Issue(IReadOnlyList<WmsOigeM> list)
+    public static BslPlan Issue(IReadOnlyList<WmsOigeM> list)
     {
         if (list.Count == 0) throw new ArgumentException("OigeList 不可為空");
         var mes = V(list[0].Oid, "Oid");
@@ -60,11 +61,12 @@ public static class BeasBslBuilder
             ["Transaction"] = "issuewo", ["Date"] = D(list[0].DocDate), ["Remarks"] = "MES:" + mes, ["DocumentLines"] = lines,
         };
         var sb = Begin();
-        Post(sb, "ls_json", "IssueWo", J(doc), "issue");
-        return Finish(sb, "issue" + mes);
+        var calls = new List<BslCall>();
+        Post(sb, calls, "ls_json", "IssueWo", J(doc), "issue");
+        return Finish(sb, calls, "issue" + mes);
     }
 
-    static (string requestId, string script) ReceiptWo(string prefix, DateTime docDate, int baseDocEntry, int baseLine, int baseLine2,
+    static BslPlan ReceiptWo(string prefix, DateTime docDate, int baseDocEntry, int baseLine, int baseLine2,
         string itemCode, string whsCode, string binCode, decimal qty, string batchNum, string mesId, string? version)
     {
         var mes = V(mesId, "MesId");
@@ -82,23 +84,24 @@ public static class BeasBslBuilder
             ["Transaction"] = "receiptwo", ["Date"] = D(docDate), ["Remarks"] = "MES:" + mes, ["DocumentLines"] = new[] { line },
         };
         var sb = Begin();
-        Post(sb, "ls_json", "ReceiptWo", J(doc), prefix);
-        return Finish(sb, prefix + mes);
+        var calls = new List<BslCall>();
+        Post(sb, calls, "ls_json", "ReceiptWo", J(doc), prefix);
+        return Finish(sb, calls, prefix + mes);
     }
 
     /// <summary>成品入庫:ReceiptWo,Base_LineNumber2=0(父項);Version → IVersionId。</summary>
-    public static (string requestId, string script) FinishedReceipt(FinishedReceiptRequest r) =>
+    public static BslPlan FinishedReceipt(FinishedReceiptRequest r) =>
         ReceiptWo("finishedrecipt", r.DocDate, r.BaseDocEntry, r.BaseLineNum, 0, r.ItemCode, r.WhsCode, r.BinCode, r.Quanity, r.BatchNum, r.MesId, r.Version);
 
     /// <summary>入庫 / 半成品退回:ReceiptWo,Base_LineNumber2 = BOM 行號。</summary>
-    public static (string requestId, string script) ReturnGood(ReturnGoodRequest r) =>
+    public static BslPlan ReturnGood(ReturnGoodRequest r) =>
         ReceiptWo("returngood", r.DocDate, r.BaseDocEntry, r.BaseLineNum, r.BaseLineNum2, r.ItemCode, r.WhsCode, r.BinCode, r.Quanity, r.BatchNum, r.MesId, null);
 
     /// <summary>
     /// 完工回報:TimeReceipt(陣列)。DocEntry=工單、LineNumber=工單位置、LineNumber2=途程位置(PosId)。
     /// DoTime 有值時以 Duration(分鐘)送出並關閉自動計算;否則由起訖時間計算。
     /// </summary>
-    public static (string requestId, string script) Finished(FinishedRequest r)
+    public static BslPlan Finished(FinishedRequest r)
     {
         var mes = V(r.MesId, "MesId");
         var t = new Dictionary<string, object?>
@@ -116,8 +119,9 @@ public static class BeasBslBuilder
             t["CalculateDuration"] = false;
         }
         var sb = Begin();
-        Post(sb, "ls_json", "TimeReceipt", J(new[] { t }), "finished");
-        return Finish(sb, "finished" + mes);
+        var calls = new List<BslCall>();
+        Post(sb, calls, "ls_json", "TimeReceipt", J(new[] { t }), "finished");
+        return Finish(sb, calls, "finished" + mes);
     }
 
     static bool NoValue(string? s) => string.IsNullOrEmpty(s) || s == "''";
@@ -140,7 +144,7 @@ public static class BeasBslBuilder
         return l;
     }
 
-    static (string, string) BomPost(string requestId, string father, IReadOnlyList<BomItem> items, string? forcedVersionArea, bool defaultWorkRout, bool setVersion)
+    static BslPlan BomPost(string requestId, string father, IReadOnlyList<BomItem> items, string? forcedVersionArea, bool defaultWorkRout, bool setVersion)
     {
         if (items.Count == 0) throw new ArgumentException("InputItems 不可為空");
         // replace=false:只加入明細,不會清掉同一張 BOM 其他版本的行(BSL 預設 replace=true 會取代全部明細)。
@@ -151,20 +155,21 @@ public static class BeasBslBuilder
             ["line"] = items.Select(i => BomLine(i, forcedVersionArea, defaultWorkRout, setVersion)).ToList(),
         };
         var sb = Begin();
-        Post(sb, "ls_json", "BillOfMaterial", J(doc), "bom");
-        return Finish(sb, requestId);
+        var calls = new List<BslCall>();
+        Post(sb, calls, "ls_json", "BillOfMaterial", J(doc), "bom");
+        return Finish(sb, calls, requestId);
     }
 
     /// <summary>建立 BOM(BSL):BillOfMaterial POST。與 Script 版不同,BOM 已存在時不會失敗,而是加入明細。</summary>
-    public static (string requestId, string script) BomCreate(BomCreateRequest r) =>
+    public static BslPlan BomCreate(BomCreateRequest r) =>
         BomPost("Bom" + V(r.CreateTime, "CreateTime"), r.FatherItem, r.InputItems, null, defaultWorkRout: true, setVersion: true);
 
     /// <summary>新版本 BOM(BSL):所有行的 VersionFilter(=VersionArea)設為 Version。</summary>
-    public static (string requestId, string script) BomCreateVersion(BomVersionRequest r) =>
+    public static BslPlan BomCreateVersion(BomVersionRequest r) =>
         BomPost("Bom" + V(r.RequestId, "RequestId") + V(r.CreateTime, "CreateTime"), r.FatherItem, r.InputItems, r.Version, defaultWorkRout: false, setVersion: false);
 
     /// <summary>新增途程:Routing POST,replace=false(加入明細)。Operation→CatalogId(文件要求放在第一個)、WorkCenter→ResourceId。</summary>
-    public static (string requestId, string script) RoutingAdd(RoutingRequest r)
+    public static BslPlan RoutingAdd(RoutingRequest r)
     {
         var item = V(r.Item, "Item");
         var line = new Dictionary<string, object?>();
@@ -178,16 +183,18 @@ public static class BeasBslBuilder
         line["MachineLaborTime"] = r.MaschineLaborTime;
         var doc = new Dictionary<string, object?> { ["RoutingId"] = item, ["replace"] = false, ["line"] = new[] { line } };
         var sb = Begin();
-        Post(sb, "ls_json", "Routing", J(doc), "routing add");
-        return Finish(sb, BeasScriptBuilder.RoutingRequestId(r));
+        var calls = new List<BslCall>();
+        Post(sb, calls, "ls_json", "Routing", J(doc), "routing add");
+        return Finish(sb, calls, BeasScriptBuilder.RoutingRequestId(r));
     }
 
     /// <summary>工單匯入:每個品項一次 Workorder POST({"WorkorderPos":[...]}),MES 單號寫入 AdditionalText;回傳所有工單號。</summary>
-    public static (string requestId, string script) WorkOrderImport(IReadOnlyList<(string item, decimal qty)> orders, string mes)
+    public static BslPlan WorkOrderImport(IReadOnlyList<(string item, decimal qty)> orders, string mes)
     {
         if (orders.Count == 0) throw new ArgumentException("InputItems 不可為空");
         var m = V(mes, "Mes");
         var sb = Begin();
+        var calls = new List<BslCall>();
         sb.Append(NL).Append("setvar=ls_ids=");
         int n = 0;
         foreach (var (item, qty) in orders)
@@ -195,23 +202,25 @@ public static class BeasBslBuilder
             var doc = new Dictionary<string, object?>();
             if (m != "") doc["AdditionalText"] = "MES:" + m;
             doc["WorkorderPos"] = new[] { new Dictionary<string, object?> { ["ItemCode"] = V(item, "ItemCode"), ["Quantity"] = qty } };
-            Post(sb, "ls_json" + (++n), "Workorder", J(doc), "workorder");
+            Post(sb, calls, "ls_json" + (++n), "Workorder", J(doc), "workorder");
             sb.Append(NL).Append("addvar=ls_ids=<b.ret_value>,");
         }
         sb.Append(NL).Append("setvar=is_answertext=<ls_ids>");
-        return ("workorder" + (m != "" ? m : V(orders[0].item, "ItemCode")), sb.ToString());
+        return new BslPlan("workorder" + (m != "" ? m : V(orders[0].item, "ItemCode")), sb.ToString(), calls);
     }
 
     /// <summary>修改工單 BOM(BSL):對每一行 PUT WorkorderBom(DocEntry,LineNumber,LineNumber2) {"ItemCode":新料號}。
     /// 與 Script 版 bom_replaceitem 的檢查不一定相同(文件對 PUT 只寫「更多資訊見 POST」)。</summary>
-    public static (string requestId, string script) ChangeWorkOrderBom(IReadOnlyList<ChangeBomItem> items, string mes, string createTime)
+    public static BslPlan ChangeWorkOrderBom(IReadOnlyList<ChangeBomItem> items, string mes, string createTime)
     {
         if (items.Count == 0) throw new ArgumentException("InputItems 不可為空");
         var m = V(mes, "Mes");
         var sb = Begin();
+        var calls = new List<BslCall>();
         foreach (var it in items)
         {
             var json = J(new Dictionary<string, object?> { ["ItemCode"] = V(it.NewItem, "NewItem") });
+            calls.Add(new BslCall("PUT", $"WorkorderBom({it.Woid},{it.Woposition},{it.Woitemposition})", json, "change bom"));
             sb.Append(NL).Append("b.put=WorkorderBom(").Append(it.Woid).Append(',').Append(it.Woposition).Append(',').Append(it.Woitemposition)
               .Append(")\t").Append(json);
             sb.Append(NL).Append("if <b.ret_code> n<> 0 then");
@@ -219,14 +228,14 @@ public static class BeasBslBuilder
             sb.Append(NL).Append(" return failure");
             sb.Append(NL).Append("end if");
         }
-        return Finish(sb, "changebom" + m + V(createTime, "CreateTime"));
+        return Finish(sb, calls, "changebom" + m + V(createTime, "CreateTime"));
     }
 
     /// <summary>
     /// 版本建立/更新:ItemVersion POST(版本不存在就建立,存在就更新)。僅送出有值的欄位,避免把既有資料清空。
     /// StatusId 未指定時,BSL 會使用狀態表的第一筆。Remark 在 ItemVersion 沒有對應欄位,不送出。
     /// </summary>
-    static (string requestId, string script) ItemVersion(string prefix, string itemCode, string versionId, string? description, string? drawingNumber)
+    static BslPlan ItemVersion(string prefix, string itemCode, string versionId, string? description, string? drawingNumber)
     {
         var item = V(itemCode, "ItemCode");
         var ver = V(versionId, "Version");
@@ -234,13 +243,14 @@ public static class BeasBslBuilder
         Add(doc, "Description", V(description, "Description"));
         Add(doc, "DrawingNumber", V(drawingNumber, "Znr"));
         var sb = Begin();
-        Post(sb, "ls_json", "ItemVersion", J(doc), prefix);
-        return Finish(sb, prefix + item + ver);
+        var calls = new List<BslCall>();
+        Post(sb, calls, "ls_json", "ItemVersion", J(doc), prefix);
+        return Finish(sb, calls, prefix + item + ver);
     }
 
-    public static (string requestId, string script) VersionCreate(VersionCreateRequest r) =>
+    public static BslPlan VersionCreate(VersionCreateRequest r) =>
         ItemVersion("versioncreate", r.ItemCode, r.Version, r.Description, null);
 
-    public static (string requestId, string script) VersionUpdate(VersionUpdateRequest r) =>
+    public static BslPlan VersionUpdate(VersionUpdateRequest r) =>
         ItemVersion("versionupdate", r.ItemCode, r.VersionId, r.Description, r.Znr);
 }

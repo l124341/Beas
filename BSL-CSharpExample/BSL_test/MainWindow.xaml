@@ -1,0 +1,48 @@
+﻿<Window x:Class="BSL_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BSL_test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="510">
+    <Grid HorizontalAlignment="Left" Width="510">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="215*"/>
+            <RowDefinition Height="219*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="bt_login" Content="Log in" HorizontalAlignment="Left" Height="26" Margin="407,10,0,0" VerticalAlignment="Top" Width="46" Click="bt_login_Click"/>
+        <Button x:Name="bt_logout" Content="Logout" HorizontalAlignment="Left" Height="26" Margin="458,10,0,0" VerticalAlignment="Top" Width="42" Click="bt_logout_Click"/>
+        <Button x:Name="bt_get" Content="GET" HorizontalAlignment="Left" Height="26" Margin="407,41,0,0" VerticalAlignment="Top" Width="93" Click="bt_get_Click"/>
+        <Button x:Name="bt_post" Content="POST" HorizontalAlignment="Left" Height="89" Margin="407,72,0,0" VerticalAlignment="Top" Width="93" Click="bt_post_Click"/>
+        <Label Content="User:" HorizontalAlignment="Left" Margin="178,9,0,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox x:Name="bsl_user" HorizontalAlignment="Left" Margin="214,14,0,0" Text="test01" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="276,9,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="bsl_pwd" HorizontalAlignment="Left" Margin="338,13,0,0" Text="1234" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,41,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="374"/>
+        <TextBox x:Name="post_resource" HorizontalAlignment="Left" Margin="10,72,0,0" Text="/Reservation" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <TextBox x:Name="get_resource" HorizontalAlignment="Left" Margin="10,41,0,0" Text="/Item?$select=ItemCode,ItemName" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <RichTextBox x:Name="result" Margin="10,179,10,10" Grid.RowSpan="2" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible">
+            <FlowDocument>
+                <Paragraph>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="bsl_url" HorizontalAlignment="Left" Margin="10,13,0,0" Text="http://localhost:8081/odata4" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+        <RichTextBox x:Name="post_json" HorizontalAlignment="Left" Width="392" Height="66" VerticalAlignment="Top" Margin="10,95,0,0" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
+            <FlowDocument>
+                <Paragraph>
+                    {
+                           "BaseType":"wo",
+                           "BaseDocEntry":429,     
+                           "BaseLineNumber":10,
+                           "BaseLineNumber2":20,
+                           "ItemCode":"RM",
+                           "WhsCode":"01",
+                           "Quantity":2
+                        }
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>

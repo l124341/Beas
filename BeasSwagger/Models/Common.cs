@@ -17,7 +17,7 @@ public abstract class BeasRequest
     /// <summary>(選填)覆寫連線資訊</summary>
     public BeasConnection? Connection { get; set; }
 
-    /// <summary>(選填)指定 Beas 接口:Script 或 Bsl;留空則用 appsettings 的 Beas:Interface。目前所有功能只有 Script 版。</summary>
+    /// <summary>(選填)指定 Beas 接口:Script、Bsl 或 BslHttp;留空則用 appsettings 的 Beas:Interface。BslHttp 直接呼叫 Beas Service Layer(不經資料庫),設定見 Beas:Bsl。</summary>
     public BeasInterface? Interface { get; set; }
 }
 

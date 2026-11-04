@@ -35,11 +35,16 @@ Swagger 端點 → 組出 Beas Script → `INSERT INTO <db>."BEAS_COMMON_INPUT"(
 
 ## 待確認
 - `BomItem`、`WorkOrderItem`、`ChangeBomItem` 的欄位是推測的,Excel 沒有定義,請依 DLL 調整。
-- `appsettings.json` 內密碼勿提交真實值。
+- `appsettings.json` 內密碼勿提交真實值(`Beas:Connection:Password`、`Beas:Bsl:Password` 皆為 `CHANGE_ME`;建議用環境變數或 user-secrets)。
 
 ## 選擇 Beas 接口
 - `appsettings.json` 的 `Beas:Interface`(`Script` 或 `Bsl`)設定全域預設;單一請求可用 `Interface` 欄位覆寫。
 - `Script`:BeasScript 內建物件(`ue_api_*`、`ue_reservation`)。`Bsl`:在 BeasScript 內以 `ue_bsl`(`instance bsl b` + `b.post=Entity=<json>`)呼叫 Beas Service Layer(`Services/BeasBslBuilder.cs`,依 `fetched/bsl`)。兩者都是寫入 `BEAS_COMMON_INPUT` 的同一流程。
+- **`BslHttp`:直接呼叫 Beas Service Layer(不經資料庫)**。依官方範例(`BSL-CSharpExample`、`fetched/bsl/bsl_and_php.htm`、`bsl_authorization.htm`):`POST {BaseUrl}/Login`(`{"User","Pwd"}`,另可帶 `ServicePwd`、`StationId`、`StationPwd`、`LocationId`、`ProgramId`)→ 回應的 `beas-sessionid` 以 `Cookie: beas-sessionid=…` 帶在後續請求 → `POST`/`PUT {BaseUrl}/<Entity>` → `POST {BaseUrl}/Logout`。每個請求各自登入、登出;多筆呼叫(如 `workorder/import-more`)依序送出,**任何一步失敗就停止**並仍登出。
+  - 設定:`Beas:Bsl`(`BaseUrl`、`User`、`Password`、`TimeoutSeconds`…);`Beas:Interface` 設為 `BslHttp` 或單一請求用 `Interface` 欄位指定。需先在 Beas Tools > WEB Server 啟動服務,並在人員主檔 Login 頁籤設定帳密(文件的 PHP/C# 範例預設 port 8080 / 8081,以實際為準)。
+  - 與 `Bsl` 共用同一份 builder,**送出的 JSON 與 `Bsl` 的 script 版相同**,所以有 `Bsl` 版的端點(含只有 Bsl 版的 `version/*`)都能用;沒有 `Bsl` 版的端點回 HTTP 501。
+  - 結果:`Data` 直接是 BSL 的回應 JSON(單一呼叫為該回應,多個呼叫為陣列),**不需輪詢、不需 `*/sql-result-back`**。成功條件:HTTP 2xx 且回應若含 `ret_code` 則為 0;失敗時 `Message` 為 `<步驟>: (<ret_code>) <ret_text>`,`Data` 為原始回應。連不上、逾時、登入失敗都回 `Success=false`(不是 HTTP 500)。
+  - **尚未對真實 BSL 驗證**:只用假的 BSL 伺服器測過登入/Cookie/順序/失敗停止/登出。需確認:資源路徑是否需要版本段(文件的 `bslissue.htm` 範例寫 `odata4/v1/issue`,C# 範例是 `/odata4/Reservation`;若需要,把 `/v1` 放進 `BaseUrl`)、POST 回應裡單據編號所在欄位(目前原樣回傳整份 JSON)、`PUT WorkorderBom(...)` 的 HTTP 寫法。
 - 已有 `Bsl` 版:`production/issue`(IssueWo)、`finished-receipt` / `return-good`(ReceiptWo)、`finished`(TimeReceipt)、`bom/create` / `bom/create-version`(BillOfMaterial POST;欄位對應:PosText→Position、Quanity→Input_Quantity、Uom→Input_Unit、QuantityPerPiece→QuantityPer、Stap→ScrapPercent、WorkRout→UDF1、FaterVersion→VersionFilter〔文件:資料庫欄位即 BEAS_STL.VersionArea〕、Version→IVersionId〔推測〕)、`routing/add`(Routing)、`workorder/import-single` / `import-more`(Workorder)、`version/create` / `version/update`(ItemVersion,**只有 Bsl 版**,未指定接口時自動用 Bsl;明確指定 Script 回 501;版本已存在時 create 會更新、update 只送有值的欄位,`Remark` 無對應欄位不送出)。其餘選 `Bsl` 會回 HTTP 501。
 - 行為差異:`Bsl` 的 `bom/create` 使用 `replace=false`(加入明細,BOM 已存在時**不會失敗**,也不會清掉其他版本的行);`bom/change` 的「取代版本」分支與 `bom/search-other-version`、`bom/delete`、`routing/change`、`routing/delete` 只有 Script 版(BSL 的 script 介面沒有 delete);`Bsl` 版 `Finished` 若有 `DoTime` 會以 `Duration`(分鐘)送出。
 - 尚未在實際 Beas 驗證,需確認:`b.ret_value` 是否為單據編號、`Routing` POST 在途程不存在時是否自動建立表頭、`VersionFilter` 的值格式(BSL 文件寫成 CSV 加引號 `"3","5"`,原 DLL 存的是去掉單引號的原值)。
